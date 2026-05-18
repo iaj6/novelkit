@@ -4,3 +4,11 @@ node_modules/
 *.log
 dist/
 .DS_Store
+
+# Press build artifacts (regenerable from library/<book>/draft/ + canon/)
+# - /build/ — global outputs (fontconfig cache, voices.tsv)
+# - library/*/manuscript.md — produced by press/concat_chapters.sh
+# - library/*/build/ — per-book HTML/EPUB/PDF/cover/audio
+/build/
+library/*/manuscript.md
+library/*/build/

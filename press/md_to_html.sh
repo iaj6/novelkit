@@ -1,26 +1,25 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-source "$ROOT/scripts/common.sh"
+PRESS_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+source "$PRESS_DIR/common.sh"
 
 need_cmd pandoc
 
 book="${1:-}"
-[[ -n "$book" ]] || die "usage: scripts/md_to_html.sh <book-one|book-two|book-three>"
+[[ -n "$book" ]] || die "usage: press/md_to_html.sh <book>"
 
 in="$(book_path "$book")"
-[[ -f "$in" ]] || die "missing manuscript: $in"
+[[ -f "$in" ]] || die "missing manuscript: $in (run press/concat_chapters.sh $book first)"
 
 out_dir="$(build_dir "$book")"
 mkdir -p "$out_dir"
 
 out="$out_dir/$book.html"
-css="$ROOT/scripts/book.css"
-template="$ROOT/scripts/templates/book.html"
-filter="$ROOT/scripts/filters/chapter_headings.lua"
-cover_src="$(repo_root)/build/assets/cover-${book}.png"
-cover_dst="$out_dir/cover.png"
+css="$PRESS_DIR/book.css"
+template="$PRESS_DIR/templates/book.html"
+filter="$PRESS_DIR/filters/chapter_headings.lua"
+cover_src="$out_dir/cover.png"
 
 meta=()
 while IFS= read -r line; do
@@ -28,7 +27,6 @@ while IFS= read -r line; do
 done < <(metadata_args "$book")
 
 if [[ -f "$cover_src" ]]; then
-  cp -f "$cover_src" "$cover_dst"
   meta+=(--metadata "cover_image=cover.png")
 fi
 

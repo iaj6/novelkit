@@ -1,10 +1,15 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-source "$ROOT/scripts/common.sh"
+PRESS_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+source "$PRESS_DIR/common.sh"
 
-for book in book-one book-two book-three; do
-  "$ROOT/scripts/build_book.sh" "$book"
+shopt -s nullglob
+for d in "$(repo_root)"/library/*/; do
+  book="$(basename "$d")"
+  if [[ ! -f "$d/manuscript.md" ]]; then
+    note "skip: $book (no manuscript.md — run press/concat_chapters.sh $book first)"
+    continue
+  fi
+  "$PRESS_DIR/build_book.sh" "$book"
 done
-

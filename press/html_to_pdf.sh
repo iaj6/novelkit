@@ -1,16 +1,16 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-source "$ROOT/scripts/common.sh"
+PRESS_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+source "$PRESS_DIR/common.sh"
 
 need_cmd pandoc
 
 book="${1:-}"
-[[ -n "$book" ]] || die "usage: scripts/html_to_pdf.sh <book-one|book-two|book-three>"
+[[ -n "$book" ]] || die "usage: press/html_to_pdf.sh <book>"
 
 in_html="$(build_dir "$book")/$book.html"
-[[ -f "$in_html" ]] || die "missing HTML (build it first): $in_html"
+[[ -f "$in_html" ]] || die "missing HTML (build it first with press/md_to_html.sh $book): $in_html"
 
 out_dir="$(build_dir "$book")"
 mkdir -p "$out_dir"
@@ -39,8 +39,7 @@ then
   note "using python -m weasyprint"
   python3 -m weasyprint "$in_html" "$out_pdf"
 else
-  # Fallback: use pandoc + LaTeX, which is installed in this environment.
-  # This won’t match CSS-based HTML rendering, but it produces a reliable PDF.
+  # Fallback: use pandoc + LaTeX. Won't match CSS-based HTML rendering but produces a reliable PDF.
   note "no HTML->PDF engine found; falling back to pandoc --pdf-engine=xelatex"
   in_md="$(book_path "$book")"
   meta=()

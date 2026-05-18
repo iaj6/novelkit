@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-source "$ROOT/scripts/common.sh"
-source "$ROOT/scripts/load_env.sh" "$ROOT/.env"
+PRESS_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+source "$PRESS_DIR/common.sh"
+source "$PRESS_DIR/load_env.sh" "$(repo_root)/.env"
 
 need_cmd python3
 
-[[ -n "${ELEVENLABS_API_KEY:-}" ]] || die "ELEVENLABS_API_KEY is not set (expected in $ROOT/.env or your shell environment)"
+[[ -n "${ELEVENLABS_API_KEY:-}" ]] || die "ELEVENLABS_API_KEY is not set (expected in $(repo_root)/.env or your shell environment)"
 
 out_dir="$(repo_root)/build/elevenlabs"
 mkdir -p "$out_dir"
@@ -19,8 +19,7 @@ note "writing: $out_tsv"
 note "log: $out_log"
 
 (
-  python3 "$ROOT/scripts/tts_elevenlabs.py" --list-voices
+  python3 "$PRESS_DIR/tts_elevenlabs.py" --list-voices
 ) >"$out_tsv" 2>"$out_log" || true
 
 note "done"
-

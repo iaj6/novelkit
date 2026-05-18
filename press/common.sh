@@ -16,23 +16,52 @@ repo_root() {
   git rev-parse --show-toplevel 2>/dev/null || pwd
 }
 
-book_path() {
+# Resolve <book> to its library directory; die if missing.
+book_dir() {
   local book="$1"
-  case "$book" in
-    book-one|book-two|book-three) ;;
-    *) die "unknown book '$book' (expected: book-one|book-two|book-three)" ;;
-  esac
-  echo "$(repo_root)/manuscript/$book.md"
+  local d="$(repo_root)/library/$book"
+  [[ -d "$d" ]] || die "unknown book '$book' (not found in library/)"
+  echo "$d"
 }
 
+# Concatenated manuscript for a book (produced by concat_chapters.sh).
+book_path() {
+  local book="$1"
+  echo "$(book_dir "$book")/manuscript.md"
+}
+
+# Canon directory (used by build_cover_prompt.py).
+book_canon_dir() {
+  local book="$1"
+  echo "$(book_dir "$book")/canon"
+}
+
+# Per-book build directory. Build outputs live alongside each book.
 build_dir() {
   local book="$1"
-  echo "$(repo_root)/build/$book"
+  echo "$(book_dir "$book")/build"
+}
+
+# Read title from cdk.config.json. Empty string if absent or unparseable.
+book_title() {
+  local book="$1"
+  local cfg="$(book_dir "$book")/cdk.config.json"
+  if [[ -f "$cfg" ]]; then
+    if command -v jq >/dev/null 2>&1; then
+      jq -r '.title // empty' "$cfg" 2>/dev/null
+    else
+      grep -oE '"title"[[:space:]]*:[[:space:]]*"[^"]*"' "$cfg" \
+        | head -1 \
+        | sed -E 's/.*"title"[[:space:]]*:[[:space:]]*"([^"]*)"/\1/'
+    fi
+  fi
 }
 
 metadata_args() {
   local book="$1"
-  local title="${TITLE:-$book}"
+  # Title precedence: $TITLE env > cdk.config.json > book slug
+  local title="${TITLE:-$(book_title "$book")}"
+  [[ -n "$title" ]] || title="$book"
   local author="${AUTHOR:-}"
   local lang="${LANG:-en}"
   local dedication="${DEDICATION:-}"

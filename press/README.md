@@ -1,94 +1,117 @@
-# Scripts
+# Press
 
-This folder contains local build utilities for converting the Markdown manuscripts into more book-like formats.
+The publishing pipeline. Turns a book's per-chapter drafts (under `library/<book>/draft/`) into HTML, EPUB, PDF, cover art, and audiobook MP3s.
+
+## Layout assumed
+
+```
+library/<book>/
+├── brief.md
+├── cdk.config.json     # title is read from here
+├── canon/              # used by the cover prompt
+├── draft/              # NN-*.md per chapter
+└── build/              # produced by these scripts
+    ├── <book>.html
+    ├── <book>.epub
+    ├── <book>.pdf
+    ├── cover.png
+    ├── tts/            # per-chapter cleaned text + manifest.json
+    ├── audiobook/      # ElevenLabs MP3s
+    └── audiobook-openai/  # OpenAI TTS MP3s
+```
 
 ## Requirements
-- `pandoc` (installed at `/opt/homebrew/bin/pandoc` in this environment)
-- For PDF:
-  - Preferred: `weasyprint` or `wkhtmltopdf` (HTML/CSS-based)
-  - Fallback: a LaTeX engine (this environment has `xelatex`)
 
-## Quick Start
-- Install WeasyPrint (recommended for CSS-based PDFs):
-  - `scripts/install_weasyprint.sh`
-- Regenerate concatenated manuscripts (if you edit `draft/`):
-  - `scripts/regen_manuscripts.sh`
-- Scaffold a new project from this repo’s template:
-  - `scripts/novelkit.sh init ../my-new-novel --title "My New Novel" --author "Your Name"`
-- Build HTML/PDF/EPUB for a single book:
-  - `scripts/build_book.sh book-one`
-  - `scripts/build_book.sh book-two`
-  - `scripts/build_book.sh book-three`
-- Build all books:
-  - `scripts/build_all.sh`
-- Generate cover art (requires `OPENAI_API_KEY` + `pip install openai`):
-  - `scripts/generate_cover.sh book-one`
-  - Optional (requests rendered title/author text in the image; less reliable): `scripts/generate_cover.sh book-one --with-text`
-- Generate all covers and rebuild everything:
-  - `scripts/build_assets.sh`
-  - Optional: `scripts/build_assets.sh --with-text`
+- `pandoc` (Homebrew: `brew install pandoc`)
+- For PDF: `weasyprint` (preferred) or `wkhtmltopdf`, otherwise pandoc's `xelatex` fallback runs but won't honor the CSS
+- For cover art: Python `openai` package, `OPENAI_API_KEY`
+- For ElevenLabs audio: `ELEVENLABS_API_KEY`, `ELEVENLABS_VOICE_ID`
+- For OpenAI TTS audio: `OPENAI_API_KEY`
 
-## Audiobook (ElevenLabs)
-- Single-narrator TTS pipeline that generates per-chapter MP3s.
-- Requirements:
-  - `ELEVENLABS_API_KEY` in `/.env`
-  - `ELEVENLABS_VOICE_ID` in `/.env` (or pass `--voice-id` when testing)
-- List voices:
-  - `source scripts/load_env.sh .env && python3 scripts/tts_elevenlabs.py --list-voices`
-  - or write to a file: `scripts/list_elevenlabs_voices.sh` (outputs `build/elevenlabs/voices.tsv`)
-- Build one book:
-  - `scripts/build_audiobook.sh book-one`
-- Build all:
-  - `scripts/build_audiobooks_all.sh`
-- Outputs:
-  - `build/audiobook/<book>/*.mp3`
+Install WeasyPrint with macOS dylib shims:
 
-## Audiobook (OpenAI TTS)
-- Cheaper, good-quality single-narrator TTS (keeps ElevenLabs for “premium” later).
-- Requirements:
-  - `OPENAI_API_KEY` in `/.env`
-  - `python3 -m pip install --user openai`
-- Build one book:
-  - `scripts/build_audiobook_openai.sh book-one`
-- Outputs:
-  - Usually: `build/audiobook-openai/<book>/*.mp3`
-  - For long chapters (API input limit): `*.partNN.mp3` plus a `*.m3u` playlist listing the parts in order
+```bash
+press/install_weasyprint.sh
+```
 
-### TTS knobs (optional env vars)
-- `OPENAI_TTS_MODEL` (default: `gpt-4o-mini-tts`)
-- `OPENAI_TTS_VOICE` (default: `alloy`)
-- `OPENAI_TTS_FORMAT` (default: `mp3`)
-- `OPENAI_TTS_MAX_CHARS` (default: `4500`; the script also auto-splits further if the API still rejects a chunk)
-- `OPENAI_TTS_SPEED` (default: `1.0`; if supported, `0.95`–`1.0` often sounds more natural)
+## Quick start (one book)
 
-Outputs land in `build/<book>/`:
-- `build/<book>/<book>.html`
-- `build/<book>/<book>.pdf`
-- `build/<book>/<book>.epub`
-Cover art lands in `build/assets/`.
+```bash
+# 1. Concatenate the drafts produced by cdk into a single manuscript.
+press/concat_chapters.sh coldwater-reach
+
+# 2. Build HTML, EPUB, and PDF.
+press/build_book.sh coldwater-reach
+
+# 3. (Optional) Generate cover art and rebuild so it embeds.
+press/generate_cover.sh coldwater-reach
+press/build_book.sh coldwater-reach
+
+# 4. (Optional) Generate audiobook MP3s.
+press/build_audiobook_openai.sh coldwater-reach    # OpenAI TTS, cheaper
+press/build_audiobook.sh coldwater-reach           # ElevenLabs, premium
+```
+
+Outputs land under `library/coldwater-reach/build/`.
+
+## All books at once
+
+```bash
+press/concat_chapters.sh                          # every book
+press/build_all.sh                                # every book that has a manuscript.md
+press/build_assets.sh [--with-text]               # covers for every book, then rebuild
+press/build_audiobooks_all.sh [--openai]          # audiobooks for every book
+```
+
+`build_all.sh` and `build_audiobooks_all.sh` skip any book under `library/` that doesn't yet have a `manuscript.md`.
+
+## Per-book overrides
+
+The metadata in HTML/EPUB front matter is read from `library/<book>/cdk.config.json`'s `title`, with optional env-var overrides:
+
+```bash
+AUTHOR="Anonymous" \
+DEDICATION="For the ones who stayed." \
+EPIGRAPH="A door, then a road." \
+EPIGRAPH_ATTRIBUTION="Old saying" \
+press/build_book.sh coldwater-reach
+```
+
+Other env vars: `TITLE` (overrides config), `LANG` (default `en`).
+
+## TTS knobs (OpenAI)
+
+Override defaults via env vars:
+
+- `OPENAI_TTS_MODEL` (default `gpt-4o-mini-tts`)
+- `OPENAI_TTS_VOICE` (default `alloy`)
+- `OPENAI_TTS_FORMAT` (default `mp3`)
+- `OPENAI_TTS_SPEED` (default `1.0`)
+- `OPENAI_TTS_MAX_CHARS` (default `4500`; auto-splits further if the API rejects)
+
+Long chapters that exceed the API input limit produce `<slug>.partNN.mp3` files plus a `<slug>.m3u` playlist.
+
+## TTS knobs (ElevenLabs)
+
+- `ELEVENLABS_MODEL_ID` (default `eleven_multilingual_v2`)
+- `ELEVENLABS_STABILITY` (default `0.35`)
+- `ELEVENLABS_SIMILARITY` (default `0.75`)
+- `ELEVENLABS_STYLE` (default `0.15`)
+
+List voices: `press/list_elevenlabs_voices.sh` writes `build/elevenlabs/voices.tsv`.
+
+## Cover art
+
+`press/generate_cover.sh <book> [--with-text]` reads `library/<book>/canon/{pitch,world,style,continuity}.md`, synthesizes an image prompt, and calls OpenAI's image API (default model `gpt-image-1`). The prompt is genre-neutral — period and visual register are inferred from the canon. Pass `--art-direction "..."` to `press/build_cover_prompt.py` directly if you want to override.
+
+`--with-text` asks the model to render the title and author in the image. Less reliable than overlaying type yourself; use at your own risk.
 
 ## Customization
-- Edit `scripts/book.css` for HTML + EPUB styling.
-- Edit `scripts/templates/book.html` for title page / TOC layout.
-- Set metadata via env vars:
-  - `TITLE`, `AUTHOR`, `LANG`
-  - Optional: `DEDICATION`, `EPIGRAPH`, `EPIGRAPH_ATTRIBUTION`
-  - Example: `AUTHOR="Ian" scripts/build_all.sh`
 
-Default front matter (if not overridden):
-- `DEDICATION`: `For the ones who ran.`
-- `EPIGRAPH`: `Names are doors.`
-- `EPIGRAPH_ATTRIBUTION`: `Old road saying`
+- `press/book.css` — typography for HTML and EPUB
+- `press/templates/book.html` — pandoc title-page / TOC layout
+- `press/filters/chapter_headings.lua` — turns `# Chapter N — Title` headings into structured HTML
 
-## Image generation
-- Requires: `python3 -m pip install --user openai`
-- Requires: `OPENAI_API_KEY` (recommended via `.env`)
-- `scripts/generate_image.py` is a general-purpose helper used by `scripts/generate_cover.sh`.
-- The image API may return either base64 (`b64_json`) or a hosted `url`; the script handles both.
-- If `build/assets/cover-<book>.png` exists, it is automatically embedded:
-  - HTML: on the title page
-  - EPUB: as the EPUB cover image
+## `.env` setup
 
-### `.env` setup
-- Copy `/.env.example` to `/.env`
-- Put your key in `OPENAI_API_KEY="..."`
+Copy `.env.example` at the repo root to `.env` and fill in the keys you need. Scripts source it via `press/load_env.sh`.

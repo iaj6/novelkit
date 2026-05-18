@@ -69,8 +69,12 @@ def split_manuscript(manuscript: str) -> list[dict]:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Prepare per-chapter TTS text files from a manuscript.")
-    parser.add_argument("--book", required=True, choices=["book-one", "book-two", "book-three"])
-    parser.add_argument("--out-dir", default="build/tts", help="Output directory root (default: build/tts).")
+    parser.add_argument("--book", required=True, help="Book slug (must exist as library/<book>/).")
+    parser.add_argument(
+        "--out-dir",
+        default=None,
+        help="Output directory (default: library/<book>/build/tts).",
+    )
     parser.add_argument(
         "--speak-headings",
         action="store_true",
@@ -79,11 +83,18 @@ def main() -> int:
     args = parser.parse_args()
 
     root = Path(__file__).resolve().parents[1]
-    manuscript_path = root / "manuscript" / f"{args.book}.md"
-    if not manuscript_path.exists():
-        raise SystemExit(f"Missing manuscript: {manuscript_path}")
+    book_dir = root / "library" / args.book
+    if not book_dir.is_dir():
+        raise SystemExit(f"Missing book directory: {book_dir}")
 
-    out_root = root / args.out_dir / args.book
+    manuscript_path = book_dir / "manuscript.md"
+    if not manuscript_path.exists():
+        raise SystemExit(
+            f"Missing manuscript: {manuscript_path}\n"
+            f"(Run press/concat_chapters.sh {args.book} first.)"
+        )
+
+    out_root = Path(args.out_dir) if args.out_dir else (book_dir / "build" / "tts")
     out_root.mkdir(parents=True, exist_ok=True)
 
     parts = split_manuscript(manuscript_path.read_text(encoding="utf-8"))

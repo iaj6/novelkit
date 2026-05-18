@@ -1,13 +1,12 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-source "$ROOT/scripts/common.sh"
+PRESS_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+source "$PRESS_DIR/common.sh"
 
 book="${1:-}"
-[[ -n "$book" ]] || die "usage: scripts/build_book.sh <book-one|book-two|book-three>"
+[[ -n "$book" ]] || die "usage: press/build_book.sh <book>"
 
-"$ROOT/scripts/md_to_html.sh" "$book"
-"$ROOT/scripts/md_to_epub.sh" "$book"
-"$ROOT/scripts/html_to_pdf.sh" "$book"
-
+"$PRESS_DIR/md_to_html.sh" "$book"
+"$PRESS_DIR/md_to_epub.sh" "$book"
+"$PRESS_DIR/html_to_pdf.sh" "$book"
