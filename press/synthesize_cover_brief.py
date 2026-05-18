@@ -84,7 +84,13 @@ COMPOSITION_RULES = """# Cover specifications (apply regardless of subject)
 - Vertical book cover, front cover only.
 - Strong silhouette and clear focal point.
 - Period-accurate detail. No anachronistic objects.
-- Leave breathing room near the top for the title and near the bottom for the author line.
+- Compose so the upper third and lower sixth of the frame are visually quieter
+  than the focal area (so title and author can be overlaid later in design).
+  DO NOT render any text, lettering, words, numerals, or typography on the
+  image — not the title, not the author, not a publisher mark, not page
+  numbers, not signage on a building in the scene. Hand-written marks inside
+  a depicted object (e.g. notation on a chart, an inscription on a map) are
+  acceptable if they support the subject; freestanding cover text is not.
 - No visible brand logos, watermarks, signatures, or QR codes.
 - No depiction of recognizable real persons."""
 

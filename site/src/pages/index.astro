@@ -28,40 +28,33 @@ const books = getBooks();
           read what you like; download what you want.
         </p>
       </div>
-      <div class="hero-figure reveal reveal-3" aria-hidden="true">
-        <div class="hero-lantern">
-          <svg viewBox="0 0 240 360" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <radialGradient id="glow" cx="50%" cy="50%" r="55%">
-                <stop offset="0%" stop-color="#C99A4A" stop-opacity="0.50" />
-                <stop offset="55%" stop-color="#C99A4A" stop-opacity="0.10" />
-                <stop offset="100%" stop-color="#C99A4A" stop-opacity="0" />
-              </radialGradient>
-            </defs>
-
-            <circle cx="120" cy="180" r="135" fill="url(#glow)" />
-
-            <line x1="120" y1="38" x2="120" y2="68" stroke="#5C4F40" stroke-width="2" stroke-linecap="round" />
-            <ellipse cx="120" cy="70" rx="22" ry="6" stroke="#4A3F35" stroke-width="2" fill="#ECE0CA" />
-            <path d="M88 80 Q120 70 152 80 L142 100 Q120 92 98 100 Z"
-                  fill="#806E5D" stroke="#4A3F35" stroke-width="1.8" stroke-linejoin="round" />
-            <line x1="98" y1="102" x2="95" y2="262" stroke="#4A3F35" stroke-width="2" stroke-linecap="round" />
-            <line x1="142" y1="102" x2="145" y2="262" stroke="#4A3F35" stroke-width="2" stroke-linecap="round" />
-            <line x1="98" y1="104" x2="142" y2="104" stroke="#4A3F35" stroke-width="2" />
-            <line x1="95" y1="262" x2="145" y2="262" stroke="#4A3F35" stroke-width="2" />
-            <rect x="100" y="106" width="42" height="156" fill="#C99A4A" fill-opacity="0.08" />
-            <path d="M120 140 C 108 175, 108 195, 120 215 C 132 195, 132 175, 120 140 Z"
-                  fill="#C99A4A" />
-            <path d="M120 158 C 114 178, 114 192, 120 205 C 126 192, 126 178, 120 158 Z"
-                  fill="#F4EBD9" fill-opacity="0.7" />
-            <path d="M88 262 L 92 282 L 148 282 L 152 262" stroke="#4A3F35" stroke-width="2" fill="#806E5D" stroke-linejoin="round" />
-            <line x1="105" y1="284" x2="135" y2="304" stroke="#4A3F35" stroke-width="2" stroke-linecap="round" />
-            <line x1="135" y1="284" x2="105" y2="304" stroke="#4A3F35" stroke-width="2" stroke-linecap="round" />
-          </svg>
-        </div>
-      </div>
+      <figure class="hero-figure reveal reveal-3">
+        <img
+          src="/generated/lantern.png"
+          alt=""
+          class="hero-lantern"
+          aria-hidden="true"
+          width="220"
+          height="220"
+        />
+      </figure>
     </div>
   </section>
+
+  <figure class="hero-scene reveal reveal-4" aria-label="the reading room">
+    <div class="hero-scene-frame">
+      <img
+        src="/generated/hero.png"
+        alt="a small bookstore interior at dusk — wooden shelves, a brass lantern, an open book on a table near a window"
+        width="1536"
+        height="1024"
+        loading="eager"
+      />
+    </div>
+    <figcaption class="meta scene-caption">
+      <em>the reading room.</em> &nbsp; lantern lit at the end of the afternoon.
+    </figcaption>
+  </figure>
 
   <Ornament variant="rule" />
 
@@ -143,16 +136,49 @@ const books = getBooks();
 
   .hero-figure {
     justify-self: center;
+    margin: 0;
   }
 
   .hero-lantern {
-    width: min(280px, 100%);
-    aspect-ratio: 240 / 360;
+    width: clamp(180px, 22vw, 280px);
+    height: auto;
+    mix-blend-mode: multiply;     /* lantern PNG cream blends into paper */
+    filter: drop-shadow(0 22px 28px rgba(28, 20, 15, 0.10));
   }
 
-  .hero-lantern svg {
+  /* ── hero scene banner ─────────────────────────────────────── */
+
+  .hero-scene {
+    margin: var(--space-5) auto 0;
+    width: min(76rem, 100% - 1.5rem);
+  }
+
+  .hero-scene-frame {
+    aspect-ratio: 3 / 2;
+    border: 1px solid var(--paper-edge);
+    box-shadow: var(--shadow-page);
+    overflow: hidden;
+    background: var(--paper-deep);
+  }
+
+  .hero-scene img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .scene-caption {
+    margin-top: 0.85rem;
+    text-align: center;
+    font-style: italic;
+    letter-spacing: 0.005em;
+    color: var(--ink-faded);
+  }
+
+  .scene-caption em {
+    color: var(--ink-soft);
+    font-style: italic;
   }
 
   .catalogue {
