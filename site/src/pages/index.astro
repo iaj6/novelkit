@@ -2,7 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import BookCard from "../components/BookCard.astro";
 import Ornament from "../components/Ornament.astro";
-import { getBooks } from "../lib/library";
+import { getBooks, url } from "../lib/library";
 
 const books = getBooks();
 ---
@@ -30,7 +30,7 @@ const books = getBooks();
       </div>
       <figure class="hero-figure reveal reveal-3">
         <img
-          src="/generated/lantern.webp"
+          src={url("/generated/lantern.webp")}
           alt=""
           class="hero-lantern"
           aria-hidden="true"
@@ -44,7 +44,7 @@ const books = getBooks();
   <figure class="hero-scene reveal reveal-4" aria-label="the reading room">
     <div class="hero-scene-frame">
       <img
-        src="/generated/hero.webp"
+        src={url("/generated/hero.webp")}
         alt="a small bookstore interior at dusk — wooden shelves, a brass lantern, an open book on a table near a window"
         width="1536"
         height="1024"

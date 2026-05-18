@@ -113,6 +113,16 @@ The pipeline incurs API spend at multiple stages. Rough order of magnitude per ~
 
 Skip what you don't need. The text outputs alone (no cover, no audio) are cheap to read.
 
+## Deploying the site
+
+The reading room deploys to GitHub Pages via `.github/workflows/deploy.yml`. After pushing the repo to `github.com/<user>/novelkit`:
+
+1. Enable Pages in repo settings (Source: GitHub Actions).
+2. Push to `main`. The workflow builds `site/` and deploys.
+3. Site lands at `https://<user>.github.io/novelkit/`.
+
+See [site/README.md](site/README.md) for custom-domain instructions.
+
 ## Status
 
 Showcase repo. Not productized. Not on a roadmap. Code is provided as-is for demonstration and for forking by anyone interested in the same approach.

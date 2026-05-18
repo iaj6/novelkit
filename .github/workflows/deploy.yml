@@ -1,0 +1,74 @@
+name: deploy site to github pages
+
+on:
+  push:
+    branches: [main]
+    # Only redeploy when something that affects the site changes.
+    paths:
+      - "site/**"
+      - "library/**"
+      - ".github/workflows/deploy.yml"
+  workflow_dispatch:
+
+# Pages deployment requires these permissions on the workflow.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Only one Pages deploy at a time. Cancel in-flight runs if a newer one starts.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: site
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+          cache-dependency-path: site/package-lock.json
+
+      - name: Install cwebp
+        # cwebp is invoked by site/scripts/sync-library.sh to (re)generate
+        # the optimized WebP cover files. The committed WebP variants are
+        # already up to date, so cwebp is mostly there as a safety net.
+        run: sudo apt-get update && sudo apt-get install -y webp
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Build site
+        env:
+          # Astro reads GITHUB_REPOSITORY_OWNER and bakes it into the
+          # `site` config so canonical URLs and Open Graph tags are correct.
+          GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
+        run: npm run build
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

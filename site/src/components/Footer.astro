@@ -1,5 +1,6 @@
 ---
 import Wordmark from "./Wordmark.astro";
+import { url } from "../lib/library";
 
 const year = new Date().getFullYear();
 ---
@@ -16,7 +17,7 @@ const year = new Date().getFullYear();
     </p>
     <div class="quiet">
       <p class="meta">
-        <a href="/about">about the process</a>
+        <a href={url("/about/")}>about the process</a>
         ·
         <a href="https://github.com/" target="_blank" rel="noopener noreferrer">source</a>
       </p>

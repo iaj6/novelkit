@@ -63,7 +63,10 @@ for book_dir in "$LIBRARY"/*/; do
 
   dest="$PUBLIC_BOOKS/$slug"
   mkdir -p "$dest"
-  cp -R "$build_dir/." "$dest/"
+  # -p preserves mtimes so the WebP regen check below sees stable timestamps
+  # (otherwise every cp would mark the PNG as "newer" than its WebP and force
+  # a regeneration on every sync).
+  cp -Rp "$build_dir/." "$dest/"
   synced=$((synced + 1))
   echo "info: synced $slug"
 

@@ -4,18 +4,37 @@ The reading room for the NovelKit library. An Astro static site that indexes the
 
 The imprint is *lantern & page*. The aesthetic is "reading room at dusk": warm cream paper, deep ink, a single brass-amber accent, italic Fraunces display + Newsreader editorial body.
 
-## Quick start
+## Quick start (local)
 
 ```bash
 cd site
 npm install        # first time only
-npm run dev        # serves at http://localhost:4321 (auto-syncs library/ first)
+npm run dev        # serves at http://localhost:4321/novelkit/ (auto-syncs library/ first)
 npm run build      # builds to dist/ (auto-syncs library/ first)
 npm run preview    # serves the built site
 npm run sync       # manually re-sync library/<slug>/build/ → public/books/<slug>/
 ```
 
-The `predev` and `prebuild` hooks call `scripts/sync-library.sh` to copy each book's `build/` artifacts (cover, EPUB, PDF, HTML, audiobook MP3s) into `public/books/<slug>/`. This keeps the synced artifacts out of git (see `.gitignore`) while making them static-servable.
+The site is configured for GitHub Pages at `username.github.io/novelkit/` — `npm run dev` serves at the same path locally so internal links exercise the production URL shape.
+
+The `predev` and `prebuild` hooks call `scripts/sync-library.sh` to copy each book's `build/` artifacts (cover, EPUB, PDF, HTML) into `public/books/<slug>/` and generate optimized WebP versions. `public/books/` IS tracked in git (the deployed source of truth); audio subdirectories and `cover-prompt.md` files are gitignored.
+
+## Deploying to GitHub Pages
+
+1. Push the repo to GitHub at `github.com/<your-user>/novelkit`.
+2. In repo settings → Pages, set **Source** to **GitHub Actions**.
+3. Push to `main`. The workflow at `.github/workflows/deploy.yml` runs `npm ci && npm run build` in `site/`, uploads `dist/`, and deploys.
+4. The site appears at `https://<your-user>.github.io/novelkit/`.
+
+The workflow only triggers on changes under `site/`, `library/`, or `.github/workflows/deploy.yml` to avoid redeploying for cdk/press-only changes.
+
+### Switching to a custom domain
+
+Two edits when you're ready:
+- `site/astro.config.mjs`: drop the `base` line and update `site` to your domain.
+- Add `site/public/CNAME` containing your domain (one line, no protocol).
+
+The `url()` helper picks up the new BASE_URL automatically — no other code changes needed.
 
 ## Routes
 

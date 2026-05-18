@@ -1,6 +1,6 @@
 ---
 import type { Book } from "../lib/library";
-import { artifactUrl } from "../lib/library";
+import { artifactUrl, url } from "../lib/library";
 
 interface Props {
   book: Book;
@@ -22,7 +22,7 @@ const revealClass = `reveal reveal-${Math.min((index % 5) + 1, 5)}`;
 ---
 
 <article class={`book-card ${revealClass}`}>
-  <a href={`/book/${book.slug}/`} class="card-link" aria-label={`open ${book.title}`}>
+  <a href={url(`/book/${book.slug}/`)} class="card-link" aria-label={`open ${book.title}`}>
     <div class="cover-frame">
       {coverUrl ? (
         <img src={coverUrl} alt={`cover of ${book.title}`} class="cover" loading="lazy" />

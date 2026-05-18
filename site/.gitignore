@@ -2,8 +2,18 @@
 dist/
 # generated types
 .astro/
-# synced from ../library/ by scripts/sync-library.sh
-public/books/
+
+# Book artifacts live under public/books/ — these ARE tracked
+# (they're the deployed source of truth, populated by sync-library.sh
+# from the gitignored library/<slug>/build/ workshop output).
+#
+# Audio is excluded — MP3s can run hundreds of MB per book and shouldn't
+# bloat the repo. They're regenerable via press/build_audiobook*.sh.
+public/books/*/audiobook/
+public/books/*/audiobook-openai/
+public/books/*/tts/
+# Cover prompts are useful locally but not for the deployed site.
+public/books/*/cover-prompt.md
 
 # dependencies
 node_modules/

@@ -1,4 +1,6 @@
 ---
+import { url } from "../lib/library";
+
 /**
  * lantern & page — type-only wordmark.
  *
@@ -28,7 +30,7 @@ const inner = `
 
 {
   link ? (
-    <a href="/" class="wordmark-link" aria-label="lantern & page — home">
+    <a href={url("/")} class="wordmark-link" aria-label="lantern & page — home">
       <Fragment set:html={inner} />
     </a>
   ) : (

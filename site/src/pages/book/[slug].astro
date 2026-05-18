@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Ornament from "../../components/Ornament.astro";
-import { getBooks, artifactUrl, type Book } from "../../lib/library";
+import { getBooks, artifactUrl, url, type Book } from "../../lib/library";
 
 export async function getStaticPaths() {
   return getBooks().map((book) => ({
@@ -109,7 +109,7 @@ const audioFiles = book.artifacts.audioElevenlabs.length > 0
               )}
               {hasAudio && (
                 <li>
-                  <a href={`/books/${book.slug}/${audioSrc}/`} class="format-link">
+                  <a href={url(`/books/${book.slug}/${audioSrc}/`)} class="format-link">
                     <span class="format-name">audiobook</span>
                     <span class="format-note">
                       {audioFiles.length} {audioFiles.length === 1 ? "chapter" : "chapters"}
