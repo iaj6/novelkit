@@ -1,0 +1,248 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-05-16T12:28:28.243Z",
+  "summary": {
+    "critical": 1,
+    "high": 5,
+    "medium": 3,
+    "low": 1
+  },
+  "findings": [
+    {
+      "id": "continuity-fact-001",
+      "category": "continuity-fact",
+      "severity": "critical",
+      "title": "Macomber's port of origin contradicts itself in Eira's own records",
+      "description": "Ch04 has Eira tell Lt. Pruitt that the Macomber ran 'Machias to Lubec, calling here on the way,' establishing Machias as the vessel's port of origin. Ch07 has Eira read her own harbor log: 'arrived October eighth out of Calais with lime and general goods,' establishing Calais as the origin. Machias and Calais, Maine are approximately sixty miles apart. A harbormaster whose characterization rests on precision in exactly these matters — the draft specifies she notices vessel trim before a person's expression — cannot give incompatible ports of origin for the same voyage in her own records. One must yield; the revision should choose the authoritative port and apply it consistently.",
+      "evidence": [
+        {
+          "file": "draft/ch04.md",
+          "text": "Bagged lime. Machias to Lubec, calling here on the way."
+        },
+        {
+          "file": "draft/ch07.md",
+          "text": "arrived October eighth out of Calais with lime and general goods"
+        }
+      ],
+      "suggested_action": "Decide which Maine port is the Macomber's origin (the log entry in ch07 is the authoritative official record; Machias in ch04 is Eira's verbal report to Pruitt). Apply the chosen port consistently to both chapters and any subsequent references.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "continuity-fact-002",
+      "category": "continuity-fact",
+      "severity": "high",
+      "title": "Portland postmark on general-delivery postcard attributed to Ada Gile but absent from her dialogue",
+      "description": "In ch12, Ada Gile tells Marcus about the general-delivery postcard addressed to 'A. Schell'; in ch13, Ada tells Eira about the same card. Neither Ada conversation as drafted includes a mention of a Portland postmark. Yet in ch13, Eira's notebook entry records 'Portland postmark' as a fact; and in ch19, Marcus's retrospective summary of the ch12 conversation includes 'Portland postmark, received the first week of October 1943' as if Ada said it. Both characters attribute the postmark to their Ada conversations, but the dialogue scenes do not support the attribution. This is a consistency gap that affects both characters' subsequent reasoning and the reader's confidence in the assembled picture.",
+      "evidence": [
+        {
+          "file": "draft/ch12.md",
+          "text": "Ada Gile dialogue — postmark not mentioned in the conversation as drafted"
+        },
+        {
+          "file": "draft/ch13.md",
+          "text": "Ada Gile dialogue — postmark not mentioned in the conversation as drafted; Eira's notebook entry subsequently reads 'A. Schell — general delivery — postcard — Portland postmark — early October'"
+        },
+        {
+          "file": "draft/ch19.md",
+          "text": "Marcus's retrospective summary includes 'Portland postmark, received the first week of October 1943' as recalled from Ada"
+        }
+      ],
+      "suggested_action": "Make a deliberate choice: either add the postmark to Ada's dialogue in both ch12 and ch13, or change both characters' subsequent recollections to present the postmark as independent inference rather than recalled fact. The second option creates a structural opportunity — if Ada tells Eira but not Marcus, Marcus's independent inference of the Portland origin carries distinct weight.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "continuity-fact-003",
+      "category": "continuity-fact",
+      "severity": "high",
+      "title": "Karl's jacket described as dark wool in ch23 and Army-issue denim in ch30, same narrator",
+      "description": "In ch23 (Hannah POV), Karl is wearing 'the jacket she always saw him wear — dark wool, too thin for October, the only coat he had.' In ch30 (same Hannah POV, eighteen months later), the narration refers to 'the denim jacket the Army had issued him' as worn at the shoulder seams. Hannah has observed Karl at the fence daily for eighteen months; these are not the same garment, and the narrative provides no transition. The contradiction is in a single narrator's continuous field of observation.",
+      "evidence": [
+        {
+          "file": "draft/ch23.md",
+          "text": "He was wearing the jacket she always saw him wear — dark wool, too thin for October, the only coat he had."
+        },
+        {
+          "file": "draft/ch30.md",
+          "text": "The denim jacket the Army had issued him was worn at the shoulder seams."
+        }
+      ],
+      "suggested_action": "Choose one fabric and material for Karl's work jacket and apply it consistently to both chapters. Army-issue denim is historically plausible for POW labor details and the more specific description; ch23 could be revised to match.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "character-voice-drift-001",
+      "category": "character-voice-drift",
+      "severity": "high",
+      "title": "Hannah's narration recurrently adopts Marcus's analytical and etymological register",
+      "description": "The style guide assigns philological analysis — systematic word-examination, semantic range, the displacement scholar's attention to what a word betrays — exclusively to Marcus's narration. In four Hannah chapters spanning all three acts, the narration shifts into this mode, producing careful adult retrospective analysis that the style guide explicitly prohibits for Hannah ('not an intellectual,' 'avoids self-consciousness about her own narration,' 'no adult retrospective wisdom'). The failure mode is consistent: Hannah's narration names what the surrounding action or image has already shown.",
+      "evidence": [
+        {
+          "file": "draft/ch08.md",
+          "text": "Extended meditation beginning 'She thought about the word Heimweh' — distinguishes Weh as ongoing ache from English 'sickness' as recoverable condition, analyzes whether Albrecht's knowledge of Karl constitutes 'proof of the place's continued reality.' Several hundred words of etymological-psychological analysis in Hannah's narration."
+        },
+        {
+          "file": "draft/ch11.md",
+          "text": "She had learned — not from anywhere in particular, from the general running of a house — that you didn't say a thing until you knew what it would cost."
+        },
+        {
+          "file": "draft/ch14.md",
+          "text": "She had understood it before he finished saying it. [Following a notebook-margin action that already demonstrates the understanding.]"
+        },
+        {
+          "file": "draft/ch30.md",
+          "text": "Extended classroom-reflection section in which Hannah retrospectively accounts for the year's choices — the word-cards, Karl's father's full name, the V-Mail, the nursing-school question — with comprehensiveness that the preceding twenty-nine chapters have already achieved through accumulation."
+        }
+      ],
+      "suggested_action": "In each flagged passage, test whether the surrounding action or image already carries the meaning. If yes, cut the analytical sentence or passage. The revision criterion: Hannah can hold the opinion; she cannot account for it. The Rolf-coat smell paragraph in ch14 ('or maybe that was the coat's own smell by now, her smell') is the in-text model for the correct register.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "character-voice-drift-002",
+      "category": "character-voice-drift",
+      "severity": "medium",
+      "title": "Karl's ch28 narration adopts Marcus's philological mode of elimination",
+      "description": "Ch28 is Karl Reinmar's exceptional POV chapter. Most of it is correctly calibrated to Karl's register: physical memories of Regensburg (the spire, the tile floor, the shop's smell of blood and sawdust), flat practicality of ending. One extended passage breaks register: Karl systematically considers and eliminates German nouns for what he shares with Hannah — 'There was Freundschaft, friendship, but that was a category. There was Freundlichkeit, kindness, but that was also a category, and also not exactly right.' This is the philological process of semantic elimination that is Marcus's defining mode of attention. A butcher's apprentice from Regensburg, conscripted out of an apprenticeship, does not work through German nouns by their semantic range. The passage should give us the absence of the word — the feeling of reaching for something that isn't there in either language — not the academic process of elimination.",
+      "evidence": [
+        {
+          "file": "draft/ch28.md",
+          "text": "He had been trying since October to find a word for this kind of exchange in either of his languages and the word had not come. There was Freundschaft, friendship, but that was a category. There was Freundlichkeit, kindness, but that was also a category, and also not exactly right."
+        }
+      ],
+      "suggested_action": "Replace the semantic-elimination passage with sensory or behavioral rendering of the word's absence: Karl reaching for something and finding blank — the feeling, not the logic. The physical memory register established elsewhere in the chapter (the tile floor, the spire) is the correct model.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "ending-mode-uniformity-001",
+      "category": "ending-mode-uniformity",
+      "severity": "high",
+      "title": "Sleeping or prone character as default chapter closing across six chapters",
+      "description": "The style guide specifies: 'End on an image, an action, or a piece of dialogue — not on a summarizing reflection.' A prone or sleeping character is the absence of action and concentrates in the quietest possible emotional register — resolution, rest, ceasing — at points in the narrative where the threads are still opening or building. The pattern appears in Act 1 (four of the first nine chapters), recurs in Act 3 (two more chapters across different POVs). The best chapter endings in the manuscript — the dash in the vessel-traffic column (ch01), *Present* in the headcount book (ch22), washing the cup and going upstairs (ch27), the vessel arrival log and the coat (ch29) — are all active or imagistic.",
+      "evidence": [
+        {
+          "file": "draft/ch02.md",
+          "text": "Hannah ending: 'she was asleep.'"
+        },
+        {
+          "file": "draft/ch07.md",
+          "text": "Eira pours out the cold tea and goes to bed."
+        },
+        {
+          "file": "draft/ch08.md",
+          "text": "Hannah closes her eyes and lies still."
+        },
+        {
+          "file": "draft/ch09.md",
+          "text": "Marcus lies on the bed with his coat over him and 'did not think further.'"
+        },
+        {
+          "file": "draft/ch25.md",
+          "text": "Eira chapter ending: character going to bed."
+        },
+        {
+          "file": "draft/ch28.md",
+          "text": "Karl chapter ending: character going to sleep in the icehouse."
+        }
+      ],
+      "suggested_action": "For each of the six flagged chapters, identify the last active moment before the character goes horizontal and consider ending on that action or on an image from the scene's environment. Each chapter has such a moment; the sleeping-character close is the default that has been chosen instead of finding it.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "over-articulation-001",
+      "category": "over-articulation",
+      "severity": "high",
+      "title": "Extended reflective aftermath explains scenes that have already demonstrated their meaning",
+      "description": "Across four chapters, major scenes are followed by passages of interior analysis that re-state or elaborate what the preceding action has already shown. The pattern: a scene achieves its meaning through concrete action or dialogue, and then the narration continues to articulate the meaning in abstract or essayistic terms. This undercuts the style guide's core directive — 'trust the reader to feel what is not said' — and specifically contradicts the rule against chapters that end on 'a summarizing reflection.'",
+      "evidence": [
+        {
+          "file": "draft/ch04.md",
+          "text": "Middle section works through three possibilities for the Macomber departure entry (~400 words); two carefully chosen possibilities would carry more impact and trust the reader with the third."
+        },
+        {
+          "file": "draft/ch13.md",
+          "text": "After the post-office visit, Eira returns to her desk and works through the postcard/Macomber/pier-night geometry in a passage beginning 'A postcard, sent from Portland — the postmark was Portland, which she had not known before this morning.' The passage adds no new inference; the correct ending (coffee not poured, harbor through the window) arrives eight paragraphs too late."
+        },
+        {
+          "file": "draft/ch24.md",
+          "text": "After the hearing's economical close ('I did' / 'Five to two' / 'Yes'), the chapter continues approximately two full pages meditating on the etymology of loyal and the distinction between heimisch and practicing presence — articulating what the preceding scene has already demonstrated."
+        },
+        {
+          "file": "draft/ch30.md",
+          "text": "Extended classroom-reflection section in which Hannah retrospectively accounts for the year's choices with comprehensiveness that the preceding twenty-nine chapters have already achieved."
+        }
+      ],
+      "suggested_action": "For each flagged chapter: identify the last concrete image or action that carries the scene's meaning, and end there. The reflective material following that point should be cut or compressed to a single sentence at most. Ch24's correct ending is at or near the snow assembling itself above the town; ch13's is the harbor through the window; ch04's is Eira's entry of the third possibility without articulating what she cannot yet name.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "stylistic-tic-001",
+      "category": "stylistic-tic",
+      "severity": "medium",
+      "title": "Elm outside the Crow house window used as formulaic Marcus chapter closing across three Act 2 chapters",
+      "description": "Three of Marcus's Act 2 chapters close with a variation of the same image: Marcus inside the Crow house, the elm outside visible from a window or from his position, with a seasonal marker indicating the time of year. The motif is intentional and the first two uses are defensible as a continuity signal. By the third instance in ch19, the construction reads as a default template rather than an earned choice. The elm as recurring image is not the problem; its use as a chapter-ending mechanism three times in the same act is.",
+      "evidence": [
+        {
+          "file": "draft/ch12.md",
+          "text": "Marcus chapter ending: March buds visible in the elm outside the Crow house."
+        },
+        {
+          "file": "draft/ch15.md",
+          "text": "Marcus chapter ending: elm full-leafed in June dark as Marcus goes to sleep."
+        },
+        {
+          "file": "draft/ch19.md",
+          "text": "Marcus chapter ending: elm in the yard 'holding the last of the evening light' as Marcus comes home from Bangor."
+        }
+      ],
+      "suggested_action": "Retain the elm as a periodic continuity marker but vary its placement within chapters rather than using it as a terminal image in Act 2. Ch19 in particular — which ends a significant solo chapter (the Bangor trip, the discovery of Schell's name) — deserves a closing image generated by that chapter's specific action rather than the standing motif.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "thread-drift-001",
+      "category": "thread-drift",
+      "severity": "medium",
+      "title": "Thread 5 (Pfeiffer Silence): Magda's return to speech in ch26 lacks a planted preparatory beat",
+      "description": "The canon specifies that Thread 5 advances in chs 02, 05, 08, 14, 21, and pivots toward resolution in ch26 when Magda begins making 'small sentences about the cellar, the pipes, the weather.' The ch26 shift is handled correctly at the prose level, but it has been set up only at the thematic level (grief as climate, a condition Hannah inhabits rather than observes as change). No specific behavioral beat in chs 14–21 registers a shift in Magda's silence — no moment where Hannah notices something slightly different in her mother's posture, breath, or small action — that would make the ch26 loosening feel accumulated rather than arrived at for narrative convenience.",
+      "evidence": [
+        {
+          "file": "draft/ch26.md",
+          "text": "Magda begins speaking in small sentences — 'small sentences about the cellar, the pipes, the weather' — without a prior beat in Hannah's narration registering any change in the behavioral pattern."
+        },
+        {
+          "file": "logs/reader-act-2.md",
+          "text": "Act 2 assessment note: 'Magda's return to speech, which the thread notes show beginning in ch26, may need a slightly stronger planted beat here to avoid the later movement feeling abrupt.'"
+        }
+      ],
+      "suggested_action": "Plant one small behavioral anomaly in a Hannah chapter between ch14 and ch21 — Magda doing something that breaks the silence's established pattern without yet speaking: humming the Bavarian song again, handing Hannah something without being asked, standing for a moment at the kitchen window in a posture Hannah reads as slightly different. This beat need not be large; it only needs to register as signal so that ch26's shift reads as the arrival of something Hannah has been half-watching for.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "other-001",
+      "category": "other",
+      "severity": "low",
+      "title": "August Schell's name revealed to two POV characters three chapters apart, diluting the second discovery",
+      "description": "Ch16 has Commander Whitmore name August Schell to Eira in July 1944. Ch19 has Marcus independently discover the same name in Bangor in August 1944. The structural logic — each POV has their version of the spine-question's revelation — is sound in theory, but the proximity (three chapters) means the second revelation arrives before the first has had time to settle into the novel's field. The reader, having just received the name from Whitmore, absorbs Marcus's Bangor discovery as confirmation rather than independent revelation. Ch19's most valuable material — Marcus's recognition of Schell's kind of displacement as legible to him in a way it is not to others — is slightly obscured by this effect.",
+      "evidence": [
+        {
+          "file": "draft/ch16.md",
+          "text": "Commander Whitmore names August Schell — German-born Swedish national, crew of the Ångermanälven — to Eira."
+        },
+        {
+          "file": "draft/ch19.md",
+          "text": "Marcus independently finds August Schell's name in the Bangor Daily News seamen's bureau notice, three chapters after Whitmore has already named him."
+        }
+      ],
+      "suggested_action": "Consider whether one additional chapter between ch16 and ch19 — or a reordering of the Marcus Bangor chapter to earlier — would give the Whitmore reveal time to settle before Marcus's independent discovery. Alternatively, lean into Marcus's discovery as being about what the name means to him specifically (a displaced man reading the record of another displaced man's death) rather than about the name itself, which the reader already has.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "title": "The Bottle",
+  "model": "claude-sonnet-4-6",
+  "maxTurnsPerPhase": {
+    "architect": 50,
+    "plotter": 30,
+    "drafter": 30,
+    "editor": 20
+  }
+}

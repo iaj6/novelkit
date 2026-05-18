@@ -1,0 +1,15 @@
+{
+  "title": "The Cold Signal",
+  "model": "claude-sonnet-4-6",
+  "modelByPhase": {},
+  "maxTurnsPerPhase": {
+    "architect": 60,
+    "plotter": 50,
+    "threads": 40,
+    "drafter": 30,
+    "editor-continuity": 40,
+    "editor-pacing": 40,
+    "editor-voice": 40,
+    "reader": 50
+  }
+}

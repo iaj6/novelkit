@@ -1,0 +1,15 @@
+{
+  "title": "The Bottle",
+  "model": "claude-sonnet-4-6",
+  "modelByPhase": {},
+  "maxTurnsPerPhase": {
+    "architect": 50,
+    "plotter": 30,
+    "threads": 30,
+    "drafter": 30,
+    "editor-continuity": 20,
+    "editor-pacing": 20,
+    "editor-voice": 20,
+    "reader": 30
+  }
+}

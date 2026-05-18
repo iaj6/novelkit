@@ -1,0 +1,15 @@
+{
+  "title": "Coldwater Reach",
+  "model": "claude-sonnet-4-6",
+  "modelByPhase": {},
+  "maxTurnsPerPhase": {
+    "architect": 80,
+    "plotter": 80,
+    "threads": 60,
+    "drafter": 30,
+    "editor-continuity": 20,
+    "editor-pacing": 40,
+    "editor-voice": 20,
+    "reader": 40
+  }
+}

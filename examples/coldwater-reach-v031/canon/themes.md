@@ -1,0 +1,17 @@
+# Themes
+
+## 1. Authority Without Invitation
+
+Eira did not pursue the harbormaster's post; she stepped into it because no one else would. The story asks what it costs to hold a position the institution never meant to offer you — and what it means to hold it competently for eight years and still feel the vacancy of the original intention. Authority in this story is not conferred by recognition; it is maintained by the daily labor of doing the thing. Eira's arc is not vindication. It is the slower, harder question of whether she can own the post as hers — not as a stand-in, not as an exception — before the war ends and able-bodied men come home to want it back. The body on the breakwater tests her because what she knows about it is known in her capacity as harbormaster. Using it means using the post. Using the post means claiming it.
+
+## 2. The Slow Architecture of Character
+
+Hannah's arc is not a coming-of-age story in the sense of a single revelation. It is the working model of how character is built: not by epiphany but by accumulation — the small choices made under specific pressures, each one closing some futures and opening others. Hannah's choices around Karl Reinmar, around her father's silence, around what she tells and withholds from the people in her life, are not dramatic. They are ordinary. That is the point. The story asserts that ordinary choices made in an ordinary life across eighteen months add up to something durable — a person — and that the person Hannah becomes is not what the war made her, but what she chose inside the war's weather.
+
+## 3. Displacement as Permanent Condition
+
+Marcus arrived in Coldwater Reach still traveling. The Emergency Committee, the internment, the transatlantic route through three countries — these are not backstory; they are his ongoing posture toward any given place. The story takes seriously the possibility that displacement is not a temporary state that ends when you find the right place, but a condition that alters you permanently — so that even if you stop moving, the sense of being elsewhere persists. Marcus's arc is not the immigrant's triumph of assimilation, nor the exile's tragedy of irrecoverable loss. It is the smaller and more honest question: can a person who has been unmade by history choose to invest in the place where they have landed, knowing it may not hold? His friendship with Henry Crow — another man who lives in a place that never fully invited him — is the axis on which this theme turns.
+
+## 4. The War as Weather
+
+The Second World War is not the plot; it is the atmosphere. It is the medium through which all three characters move — the thing that put them where they are (Eira in authority by default, Hannah with POWs in her icehouse, Marcus in a Maine fishing town rather than a Vienna lecture hall), the thing that shapes what is possible, and the thing that ends in the background while the story's smaller resolutions finish on their own terms. The brief asserts that the body on the breakwater is not the war's violence come to Maine in the form of a spy thriller — it is the war's ordinary consequence: a man, unidentified, dead, for reasons that turn out to be smaller and sadder than geopolitics. The war that killed him was not extraordinary. This is the hardest theme to execute: to write a war novel in which the war is real and present without ever being the hero of its own story.
