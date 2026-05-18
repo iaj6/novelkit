@@ -93,16 +93,18 @@ Long chapters that exceed the API input limit produce `<slug>.partNN.mp3` files 
 
 ## TTS knobs (ElevenLabs)
 
-- `ELEVENLABS_MODEL_ID` (default `eleven_multilingual_v2`)
+- `ELEVENLABS_MODEL_ID` (default `eleven_v3` — latest, best emotional range)
+  - Other valid models: `eleven_multilingual_v2`, `eleven_flash_v2_5`
 - `ELEVENLABS_STABILITY` (default `0.35`)
 - `ELEVENLABS_SIMILARITY` (default `0.75`)
 - `ELEVENLABS_STYLE` (default `0.15`)
+- `ELEVENLABS_SPEED` (default `1.0` — new field in voice_settings as of 2025)
 
 List voices: `press/list_elevenlabs_voices.sh` writes `build/elevenlabs/voices.tsv`.
 
 ## Cover art
 
-`press/generate_cover.sh <book> [--with-text]` reads `library/<book>/canon/{pitch,world,style,continuity}.md`, synthesizes an image prompt, and calls OpenAI's image API (default model `gpt-image-1`). The prompt is genre-neutral — period and visual register are inferred from the canon. Pass `--art-direction "..."` to `press/build_cover_prompt.py` directly if you want to override.
+`press/generate_cover.sh <book> [--with-text]` reads `library/<book>/canon/{pitch,world,characters,themes,continuity,style}.md`, synthesizes a book-specific image prompt, and calls OpenAI's image API (default model `gpt-image-1.5`; override via `OPENAI_IMAGE_MODEL` env var). The prompt asks the image model to infer the book's genre, era, and visual register from the canon before composing — covers should reflect what the specific book is, not its genre's conventional packaging. Pass `--art-direction "..."` to `press/build_cover_prompt.py` directly to inject explicit composition guidance.
 
 `--with-text` asks the model to render the title and author in the image. Less reliable than overlaying type yourself; use at your own risk.
 

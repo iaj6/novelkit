@@ -19,7 +19,7 @@ def read_prompt(prompt: Optional[str], prompt_file: Optional[str]) -> str:
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Generate an image using OpenAI (gpt-image-1) and save it to disk."
+        description="Generate an image using the OpenAI image API and save it to disk."
     )
     parser.add_argument(
         "--prompt",
@@ -36,8 +36,11 @@ def main() -> int:
     )
     parser.add_argument(
         "--model",
-        default="gpt-image-1",
-        help="Image model to use (default: gpt-image-1).",
+        default=os.getenv("OPENAI_IMAGE_MODEL", "gpt-image-1.5"),
+        help=(
+            "Image model to use (default: gpt-image-1.5). "
+            "Other valid options: gpt-image-1, gpt-image-1-mini, gpt-image-2."
+        ),
     )
     parser.add_argument(
         "--format",

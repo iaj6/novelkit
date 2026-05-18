@@ -37,11 +37,13 @@ def main() -> int:
     parser.add_argument("--text-file", help="Input UTF-8 text file.")
     parser.add_argument("--out", help="Output .mp3 path.")
     parser.add_argument("--voice-id", default=os.getenv("ELEVENLABS_VOICE_ID", ""), help="ElevenLabs voice_id.")
-    parser.add_argument("--model-id", default=os.getenv("ELEVENLABS_MODEL_ID", "eleven_multilingual_v2"))
+    parser.add_argument("--model-id", default=os.getenv("ELEVENLABS_MODEL_ID", "eleven_v3"))
     parser.add_argument("--api-key", default=os.getenv("ELEVENLABS_API_KEY", ""), help="ElevenLabs API key (or env).")
     parser.add_argument("--stability", type=float, default=float(os.getenv("ELEVENLABS_STABILITY", "0.35")))
     parser.add_argument("--similarity", type=float, default=float(os.getenv("ELEVENLABS_SIMILARITY", "0.75")))
     parser.add_argument("--style", type=float, default=float(os.getenv("ELEVENLABS_STYLE", "0.15")))
+    parser.add_argument("--speed", type=float, default=float(os.getenv("ELEVENLABS_SPEED", "1.0")),
+                        help="Speech rate (1.0 = normal). Available in voice_settings since 2025.")
     parser.add_argument("--retry", type=int, default=3)
     parser.add_argument("--rate-limit-sleep", type=float, default=2.0)
     parser.add_argument("--list-voices", action="store_true", help="List available voices and exit.")
@@ -90,6 +92,7 @@ def main() -> int:
             "similarity_boost": args.similarity,
             "style": args.style,
             "use_speaker_boost": True,
+            "speed": args.speed,
         },
     }
 
