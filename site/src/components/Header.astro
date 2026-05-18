@@ -1,0 +1,93 @@
+---
+import Wordmark from "./Wordmark.astro";
+
+/**
+ * Site header. Restrained, asymmetric.
+ *
+ * Props:
+ *   compact: if true, render the small wordmark variant (used on book pages
+ *     where the title is the focal element).
+ */
+interface Props {
+  compact?: boolean;
+}
+
+const { compact = false } = Astro.props;
+
+const path = Astro.url.pathname;
+const isHome = path === "/" || path === "";
+---
+
+<header class={compact ? "compact" : ""}>
+  <div class="container header-grid">
+    <div class="brand">
+      <Wordmark
+        size={compact ? "sm" : "md"}
+        muted={compact}
+        link={!isHome}
+      />
+    </div>
+    <nav aria-label="primary">
+      <ul>
+        <li><a href="/" class:list={["nav-link", { active: isHome }]}>library</a></li>
+        <li><a href="/about" class:list={["nav-link", { active: path.startsWith("/about") }]}>about</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<style>
+  header {
+    padding-block: var(--space-4) var(--space-3);
+    border-bottom: 1px solid transparent; /* reserved for compact variant */
+  }
+
+  header.compact {
+    padding-block: var(--space-3) var(--space-2);
+    border-bottom-color: var(--rule);
+  }
+
+  .header-grid {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: var(--space-3);
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: var(--space-3);
+    align-items: baseline;
+    margin: 0;
+  }
+
+  .nav-link {
+    font-family: var(--font-body);
+    font-style: italic;
+    font-size: 0.98rem;
+    color: var(--ink-soft);
+    border-bottom: 1px solid transparent;
+    transition: color 180ms ease, border-color 180ms ease;
+    padding-bottom: 2px;
+  }
+
+  .nav-link:hover {
+    color: var(--ink);
+    border-bottom-color: var(--lantern);
+  }
+
+  .nav-link.active {
+    color: var(--ink);
+    border-bottom-color: var(--lantern);
+  }
+
+  @media (max-width: 600px) {
+    .header-grid {
+      gap: var(--space-2);
+    }
+    nav ul {
+      gap: var(--space-2);
+    }
+  }
+</style>

@@ -1,0 +1,256 @@
+/* ─────────────────────────────────────────────────────────────────
+   lantern & page — global design system
+   ─────────────────────────────────────────────────────────────────
+   Tokens, reset, base typography. Component-specific styles live
+   in scoped <style> blocks inside their .astro files.
+
+   Design direction: "reading room at dusk."
+   Warm cream paper, deep ink, a single brass-amber accent for the
+   lantern. No purple gradients. No system fonts. No generic AI palette.
+   ───────────────────────────────────────────────────────────────── */
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..600,50..100&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Newsreader:ital,opsz,wght@1,6..72,400&display=swap');
+
+:root {
+  /* ── colour ─────────────────────────────────────────────────── */
+  --paper:        #F4EBD9;   /* base warm cream */
+  --paper-deep:   #ECE0CA;   /* card insets, inset surfaces */
+  --paper-edge:   #E2D2B4;   /* page-edge tone, subtle borders */
+
+  --ink:          #1C140F;   /* primary text */
+  --ink-soft:     #4A3F35;   /* secondary text */
+  --ink-faded:    #806E5D;   /* meta, captions, page numbers */
+
+  --lantern:      #C99A4A;   /* accent — links, marks */
+  --lantern-deep: #A8783A;   /* hover state for accent */
+  --lantern-glow: rgba(201, 154, 74, 0.18);
+
+  --cloth:        #5C6B5C;   /* book-cloth muted green, secondary accent */
+  --rule:         #D8C9AE;   /* dividers */
+
+  /* ── type ───────────────────────────────────────────────────── */
+  --font-display: "Fraunces", "Garamond", "Times New Roman", serif;
+  --font-body:    "Newsreader", "Iowan Old Style", Georgia, serif;
+  --font-mono:    "ui-monospace", "SF Mono", "Menlo", monospace;
+
+  --weight-light:   300;
+  --weight-regular: 400;
+  --weight-medium:  500;
+  --weight-semi:    600;
+
+  /* Optical sizing for Fraunces (display) and Newsreader (body) */
+  --opsz-display: 96;
+  --opsz-body:    18;
+
+  /* ── scale (modular, but human-tuned) ───────────────────────── */
+  --size-mono-sm:  0.78rem;
+  --size-meta:     0.82rem;     /* small caps marks, captions */
+  --size-body:     1.125rem;    /* 18px */
+  --size-lead:     1.25rem;
+  --size-h3:       1.45rem;
+  --size-h2:       1.85rem;
+  --size-h1:       2.5rem;
+  --size-display:  clamp(3rem, 8vw, 5.5rem);
+
+  /* ── rhythm ─────────────────────────────────────────────────── */
+  --rhythm:        1.45;          /* body line-height */
+  --rhythm-tight:  1.18;          /* display line-height */
+  --space-1:       0.5rem;
+  --space-2:       1rem;
+  --space-3:       1.5rem;
+  --space-4:       2.25rem;
+  --space-5:       3.5rem;
+  --space-6:       5.5rem;
+  --space-7:       8rem;
+
+  /* ── layout ─────────────────────────────────────────────────── */
+  --container:     min(64rem, 100% - 3rem);
+  --reading:       min(38rem, 100% - 3rem);
+
+  /* ── effects ────────────────────────────────────────────────── */
+  --shadow-page:   0 1px 0 var(--paper-edge), 0 22px 38px -28px rgba(28, 20, 15, 0.30);
+  --shadow-card:   0 0.5px 0 var(--paper-edge), 0 14px 28px -22px rgba(28, 20, 15, 0.32);
+}
+
+/* ── reset ─────────────────────────────────────────────────────── */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+       text-size-adjust: 100%;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button, input, select, textarea {
+  font: inherit;
+  color: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ── paper background ──────────────────────────────────────────── */
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: var(--size-body);
+  font-variation-settings: "opsz" var(--opsz-body);
+  line-height: var(--rhythm);
+  font-weight: var(--weight-regular);
+  letter-spacing: -0.003em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  /* Subtle paper texture — fine warm noise barely visible on cream */
+  background-image:
+    radial-gradient(at 20% 12%, rgba(201, 154, 74, 0.05) 0%, transparent 38%),
+    radial-gradient(at 88% 88%, rgba(92, 107, 92, 0.04) 0%, transparent 42%);
+  background-attachment: fixed;
+}
+
+/* ── headings ──────────────────────────────────────────────────── */
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: var(--weight-regular);
+  line-height: var(--rhythm-tight);
+  letter-spacing: -0.012em;
+  font-variation-settings: "opsz" var(--opsz-display), "SOFT" 50;
+  color: var(--ink);
+}
+
+h1 { font-size: var(--size-h1); }
+h2 { font-size: var(--size-h2); }
+h3 { font-size: var(--size-h3); }
+
+/* ── prose ─────────────────────────────────────────────────────── */
+
+p, ul, ol {
+  margin-bottom: var(--space-2);
+}
+
+p:last-child { margin-bottom: 0; }
+
+a {
+  color: var(--ink);
+  border-bottom: 1px solid var(--lantern);
+  text-decoration: none;
+  transition: color 180ms ease, border-color 180ms ease;
+}
+
+a:hover {
+  color: var(--lantern-deep);
+  border-bottom-color: var(--lantern-deep);
+}
+
+/* Selection sits in the lantern glow */
+::selection {
+  background: var(--lantern-glow);
+  color: var(--ink);
+}
+
+/* ── utility ───────────────────────────────────────────────────── */
+
+.container {
+  width: var(--container);
+  margin-inline: auto;
+}
+
+.reading {
+  width: var(--reading);
+  margin-inline: auto;
+}
+
+.small-caps {
+  font-family: var(--font-body);
+  font-size: var(--size-meta);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-faded);
+  font-feature-settings: "smcp" on;
+}
+
+.meta {
+  font-family: var(--font-body);
+  font-size: var(--size-meta);
+  color: var(--ink-faded);
+  letter-spacing: 0.005em;
+}
+
+/* Accessibility */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Focus rings — restrained but visible */
+:focus-visible {
+  outline: 2px solid var(--lantern);
+  outline-offset: 3px;
+  border-radius: 1px;
+}
+
+a:focus-visible {
+  outline-offset: 4px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ── page-load reveal ──────────────────────────────────────────── */
+
+@keyframes lantern-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reveal {
+  animation: lantern-fade-in 700ms ease-out both;
+}
+
+.reveal-1 { animation-delay: 0ms; }
+.reveal-2 { animation-delay: 140ms; }
+.reveal-3 { animation-delay: 280ms; }
+.reveal-4 { animation-delay: 420ms; }
+.reveal-5 { animation-delay: 560ms; }

@@ -2,6 +2,8 @@
 dist/
 # generated types
 .astro/
+# synced from ../library/ by scripts/sync-library.sh
+public/books/
 
 # dependencies
 node_modules/

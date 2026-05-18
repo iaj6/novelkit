@@ -1,0 +1,331 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Ornament from "../../components/Ornament.astro";
+import { getBooks, artifactUrl, type Book } from "../../lib/library";
+
+export async function getStaticPaths() {
+  return getBooks().map((book) => ({
+    params: { slug: book.slug },
+    props: { book },
+  }));
+}
+
+interface Props {
+  book: Book;
+}
+
+const { book } = Astro.props;
+const coverUrl = book.artifacts.cover ? artifactUrl(book.slug, book.artifacts.cover) : null;
+const epubUrl = book.artifacts.epub ? artifactUrl(book.slug, book.artifacts.epub) : null;
+const pdfUrl  = book.artifacts.pdf  ? artifactUrl(book.slug, book.artifacts.pdf)  : null;
+const htmlUrl = book.artifacts.html ? artifactUrl(book.slug, book.artifacts.html) : null;
+
+const hasAudio =
+  book.artifacts.audioElevenlabs.length > 0 ||
+  book.artifacts.audioOpenai.length > 0;
+
+// Determine which audio source to link (prefer ElevenLabs if both exist).
+const audioSrc = book.artifacts.audioElevenlabs.length > 0 ? "audiobook" : "audiobook-openai";
+const audioFiles = book.artifacts.audioElevenlabs.length > 0
+  ? book.artifacts.audioElevenlabs
+  : book.artifacts.audioOpenai;
+---
+
+<BaseLayout
+  title={book.title}
+  description={book.oneLine || `${book.title} — a book from lantern & page.`}
+  compactHeader={true}
+>
+  <article class="book-page">
+    <div class="container book-grid">
+      {/* ── Left column: cover ───────────────────────────────────── */}
+      <aside class="cover-column reveal reveal-1">
+        <div class="cover-frame">
+          {coverUrl ? (
+            <img src={coverUrl} alt={`cover of ${book.title}`} class="cover" />
+          ) : (
+            <div class="cover cover-placeholder" aria-hidden="true">
+              <div class="cover-title">{book.title}</div>
+              <div class="cover-meta">[ cover pending ]</div>
+            </div>
+          )}
+        </div>
+        <p class="meta cover-meta-line">
+          {book.chapterCount > 0 && (
+            <>
+              {book.chapterCount} {book.chapterCount === 1 ? "chapter" : "chapters"}
+              {book.status !== "complete" && <span> &middot; in progress</span>}
+            </>
+          )}
+          {book.chapterCount === 0 && <>brief only &middot; not yet drafted</>}
+        </p>
+      </aside>
+
+      {/* ── Right column: title, blurb, downloads ────────────────── */}
+      <div class="meta-column">
+        <header class="book-head">
+          <p class="vol-label small-caps reveal reveal-1">a novel &middot; lantern &amp; page</p>
+          <h1 class="book-title reveal reveal-2">{book.title}</h1>
+        </header>
+
+        {book.blurb && (
+          <section class="blurb reveal reveal-3">
+            <p>{book.blurb}</p>
+          </section>
+        )}
+
+        <Ornament variant="single" />
+
+        <section class="downloads reveal reveal-4">
+          <p class="small-caps downloads-label">take it with you</p>
+
+          {(epubUrl || pdfUrl || htmlUrl || hasAudio) ? (
+            <ul class="format-list">
+              {epubUrl && (
+                <li>
+                  <a href={epubUrl} download class="format-link">
+                    <span class="format-name">epub</span>
+                    <span class="format-note">for any e-reader</span>
+                  </a>
+                </li>
+              )}
+              {pdfUrl && (
+                <li>
+                  <a href={pdfUrl} download class="format-link">
+                    <span class="format-name">pdf</span>
+                    <span class="format-note">for screen or print</span>
+                  </a>
+                </li>
+              )}
+              {htmlUrl && (
+                <li>
+                  <a href={htmlUrl} class="format-link">
+                    <span class="format-name">html</span>
+                    <span class="format-note">read in the browser</span>
+                  </a>
+                </li>
+              )}
+              {hasAudio && (
+                <li>
+                  <a href={`/books/${book.slug}/${audioSrc}/`} class="format-link">
+                    <span class="format-name">audiobook</span>
+                    <span class="format-note">
+                      {audioFiles.length} {audioFiles.length === 1 ? "chapter" : "chapters"}
+                    </span>
+                  </a>
+                </li>
+              )}
+            </ul>
+          ) : (
+            <p class="meta no-downloads">
+              this book has not yet been published. its drafts are kept in
+              the source repository while editing passes are pending.
+            </p>
+          )}
+        </section>
+
+        <Ornament variant="single" />
+
+        <section class="provenance reveal reveal-5">
+          <p>
+            drafted autonomously by an AI agent from a one-page brief.
+            no human editing was performed.
+            {book.chapterCount > 0 && (
+              <span class="meta-detail">
+                {" "}&mdash; {book.chapterCount} chapters, written in sequence,
+                each reading the canon, the outline, and what came before.
+              </span>
+            )}
+          </p>
+        </section>
+      </div>
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .book-page {
+    padding-block: var(--space-5) var(--space-5);
+  }
+
+  .book-grid {
+    display: grid;
+    grid-template-columns: minmax(260px, 1fr) 1.5fr;
+    gap: var(--space-5);
+    align-items: start;
+  }
+
+  /* ── cover column ────────────────────────────────────────────── */
+
+  .cover-column {
+    position: sticky;
+    top: var(--space-4);
+  }
+
+  .cover-frame {
+    position: relative;
+    aspect-ratio: 2 / 3;
+    background: var(--paper-deep);
+    border: 1px solid var(--paper-edge);
+    box-shadow: var(--shadow-page);
+    overflow: hidden;
+  }
+
+  .cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .cover-placeholder {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: var(--space-4);
+    background:
+      radial-gradient(at 25% 30%, rgba(201, 154, 74, 0.12), transparent 60%),
+      linear-gradient(to bottom, var(--paper-deep), var(--paper-edge));
+    color: var(--ink);
+  }
+
+  .cover-title {
+    font-family: var(--font-display);
+    font-size: 1.9rem;
+    line-height: 1.05;
+    font-variation-settings: "opsz" 48, "SOFT" 65;
+    letter-spacing: -0.012em;
+  }
+
+  .cover-meta {
+    font-family: var(--font-body);
+    font-style: italic;
+    font-size: 0.85rem;
+    color: var(--ink-faded);
+    letter-spacing: 0.04em;
+  }
+
+  .cover-meta-line {
+    margin-top: 0.8rem;
+    text-align: center;
+    font-style: italic;
+  }
+
+  /* ── meta column ─────────────────────────────────────────────── */
+
+  .book-head {
+    margin-bottom: var(--space-4);
+  }
+
+  .vol-label {
+    margin-bottom: var(--space-2);
+  }
+
+  .book-title {
+    font-family: var(--font-display);
+    font-variation-settings: "opsz" 108, "SOFT" 70;
+    font-weight: 400;
+    font-style: italic;
+    font-size: clamp(2.6rem, 6vw, 4.4rem);
+    line-height: 0.96;
+    letter-spacing: -0.018em;
+    color: var(--ink);
+  }
+
+  .blurb {
+    font-size: var(--size-lead);
+    line-height: 1.6;
+    color: var(--ink);
+    max-width: 36rem;
+  }
+
+  /* ── downloads ───────────────────────────────────────────────── */
+
+  .downloads-label {
+    margin-bottom: var(--space-2);
+  }
+
+  .format-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .format-list li {
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .format-list li:last-child {
+    border-bottom: 0;
+  }
+
+  .format-link {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: baseline;
+    padding-block: var(--space-2);
+    border: 0;
+    color: var(--ink);
+    transition: padding-left 240ms ease, color 240ms ease;
+  }
+
+  .format-link:hover,
+  .format-link:focus-visible {
+    color: var(--lantern-deep);
+    padding-left: var(--space-1);
+  }
+
+  .format-name {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 1.45rem;
+    font-variation-settings: "opsz" 30, "SOFT" 50;
+    letter-spacing: -0.005em;
+  }
+
+  .format-note {
+    font-family: var(--font-body);
+    font-size: 0.92rem;
+    color: var(--ink-faded);
+    font-style: italic;
+  }
+
+  .no-downloads {
+    margin-top: var(--space-1);
+    font-style: italic;
+    max-width: 32rem;
+  }
+
+  /* ── provenance ──────────────────────────────────────────────── */
+
+  .provenance {
+    color: var(--ink-faded);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    font-style: italic;
+    max-width: 34rem;
+  }
+
+  .meta-detail {
+    font-style: italic;
+  }
+
+  /* ── responsive ──────────────────────────────────────────────── */
+
+  @media (max-width: 760px) {
+    .book-grid {
+      grid-template-columns: 1fr;
+      gap: var(--space-4);
+    }
+    .cover-column {
+      position: static;
+      max-width: 280px;
+      margin-inline: auto;
+    }
+    .book-title {
+      font-size: clamp(2.4rem, 9vw, 3rem);
+    }
+  }
+</style>

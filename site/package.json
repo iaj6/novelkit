@@ -6,6 +6,9 @@
     "node": ">=22.12.0"
   },
   "scripts": {
+    "sync": "./scripts/sync-library.sh",
+    "predev": "./scripts/sync-library.sh",
+    "prebuild": "./scripts/sync-library.sh",
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",

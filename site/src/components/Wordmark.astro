@@ -1,0 +1,79 @@
+---
+/**
+ * lantern & page — type-only wordmark.
+ *
+ * Italic lowercase Fraunces. The italic ampersand carries the visual
+ * rhythm — no icon needed at this scale. For favicon and small marks,
+ * the bare ampersand suffices.
+ *
+ * Props:
+ *   size: "sm" | "md" | "lg" — relative scaling
+ *   muted: render in --ink-soft instead of --ink
+ *   link: wrap in an <a href="/"> (default true on non-home pages)
+ */
+interface Props {
+  size?: "sm" | "md" | "lg";
+  muted?: boolean;
+  link?: boolean;
+}
+
+const { size = "md", muted = false, link = true } = Astro.props;
+
+const inner = `
+  <span class="mark mark-${size}${muted ? " muted" : ""}" aria-label="lantern & page">
+    <span class="word">lantern</span><span class="amp">&nbsp;&amp;&nbsp;</span><span class="word">page</span>
+  </span>
+`;
+---
+
+{
+  link ? (
+    <a href="/" class="wordmark-link" aria-label="lantern & page — home">
+      <Fragment set:html={inner} />
+    </a>
+  ) : (
+    <Fragment set:html={inner} />
+  )
+}
+
+<style>
+  .wordmark-link {
+    border-bottom: 0;
+    display: inline-block;
+  }
+  .wordmark-link:hover .amp,
+  .wordmark-link:focus-visible .amp {
+    color: var(--lantern-deep);
+  }
+
+  .mark {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: -0.012em;
+    line-height: 1;
+    color: var(--ink);
+    display: inline-flex;
+    align-items: baseline;
+    white-space: nowrap;
+    font-variation-settings: "opsz" 60, "SOFT" 50;
+  }
+
+  .mark.muted { color: var(--ink-soft); }
+
+  .mark-sm  { font-size: 1.05rem; }
+  .mark-md  { font-size: 1.55rem; }
+  .mark-lg  { font-size: clamp(2.2rem, 5.5vw, 3.4rem); }
+
+  .word {
+    font-style: italic;
+  }
+
+  .amp {
+    color: var(--lantern);
+    font-style: italic;
+    font-weight: 400;
+    font-feature-settings: "ss01" on;     /* alternate ampersand if available */
+    transition: color 200ms ease;
+  }
+</style>

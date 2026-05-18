@@ -1,0 +1,208 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Ornament from "../components/Ornament.astro";
+---
+
+<BaseLayout
+  title="about"
+  description="how the books at lantern & page are made — brief, canon, outline, draft, cover, audiobook."
+>
+  <article class="about reading">
+    <header class="about-head">
+      <p class="small-caps reveal reveal-1">a note on how this works</p>
+      <h1 class="about-title reveal reveal-2">
+        about <em>lantern &amp; page</em>
+      </h1>
+      <p class="lede reveal reveal-3">
+        lantern &amp; page is a small press of novels drafted, autonomously,
+        by AI agents. one human writes a single brief. every other word in
+        every book on this shelf was produced by an agent from that brief.
+      </p>
+    </header>
+
+    <Ornament variant="single" />
+
+    <section class="prose reveal reveal-4">
+      <h2>the process, in six steps</h2>
+      <ol class="steps">
+        <li>
+          <strong>brief.</strong>
+          a single markdown file. one to two pages. premise, characters,
+          tone, hard constraints. this is the only human input.
+        </li>
+        <li>
+          <strong>canon.</strong>
+          the <em>architect</em> agent reads the brief and writes the book&rsquo;s
+          internal scaffolding &mdash; pitch, world, characters, themes,
+          continuity, style. these become the contract every later phase
+          must honor.
+        </li>
+        <li>
+          <strong>outline.</strong>
+          the <em>plotter</em> agent reads the canon and produces a per-chapter
+          outline, plus a threads document that braids the book&rsquo;s
+          questions and tracks where each must resolve.
+        </li>
+        <li>
+          <strong>draft.</strong>
+          the <em>drafter</em> agent writes each chapter, in order, reading the
+          previous chapter, the canon, the outline, and the continuity log.
+          it updates a continuity log and a scene log as it goes.
+        </li>
+        <li>
+          <strong>edit.</strong>
+          focused editor passes &mdash; continuity, pacing, voice. these
+          read the manuscript and revise where the agent itself catches
+          drift. then a reader pass produces a letter on the finished book.
+        </li>
+        <li>
+          <strong>publish.</strong>
+          the press subsystem concatenates the drafts, builds the HTML / EPUB
+          / PDF, synthesizes a cover brief from the canon via Claude, and
+          generates the cover art and audiobook from there.
+        </li>
+      </ol>
+    </section>
+
+    <section class="prose reveal reveal-5">
+      <h2>what isn&rsquo;t done</h2>
+      <p>
+        no human edits the prose. no human picks the cover image. the brief
+        is the only thing a human writes. typos and infelicities are left in.
+        an author&rsquo;s name does not appear on the books because there is
+        no author in the sense the word usually carries.
+      </p>
+      <p>
+        this is the point of the exercise. these books are not pretending to
+        be written by anyone. they are demonstrations of what a particular
+        kind of agent infrastructure can produce when set loose on a brief
+        and allowed to finish.
+      </p>
+    </section>
+
+    <Ornament variant="single" />
+
+    <section class="prose reveal reveal-5">
+      <h2>what the brief looks like</h2>
+      <p>
+        a brief is one to two pages of markdown. it names a premise, sketches
+        the main characters, sets the period and place, fixes a target length,
+        and lists a few hard constraints &mdash; what the book is not allowed
+        to do, what it must honor, what the prose register must feel like.
+        the more specific the brief, the more specific the result.
+      </p>
+      <p>
+        if you would like to see one, every book on the shelf has its
+        brief visible in the source repository, alongside the canon documents
+        the agents wrote in response.
+      </p>
+      <p class="callout">
+        the source code, the briefs, and every artifact is on
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">github</a>.
+      </p>
+    </section>
+  </article>
+</BaseLayout>
+
+<style>
+  .about {
+    padding-block: var(--space-5) var(--space-5);
+  }
+
+  .about-head {
+    margin-bottom: var(--space-4);
+  }
+
+  .about-title {
+    font-family: var(--font-display);
+    font-variation-settings: "opsz" 84, "SOFT" 65;
+    font-weight: 400;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    line-height: 1;
+    letter-spacing: -0.018em;
+    margin-block: var(--space-2) var(--space-3);
+    color: var(--ink);
+  }
+
+  .about-title em {
+    font-style: italic;
+    color: var(--ink);
+  }
+
+  .lede {
+    font-size: var(--size-lead);
+    line-height: 1.55;
+    color: var(--ink-soft);
+  }
+
+  .prose {
+    margin-block: var(--space-5);
+  }
+
+  .prose h2 {
+    font-family: var(--font-display);
+    font-variation-settings: "opsz" 42, "SOFT" 50;
+    font-weight: 400;
+    font-size: 1.7rem;
+    letter-spacing: -0.01em;
+    margin-bottom: var(--space-3);
+    color: var(--ink);
+  }
+
+  .prose p {
+    margin-bottom: var(--space-2);
+    color: var(--ink-soft);
+  }
+
+  .steps {
+    list-style: none;
+    counter-reset: step;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .steps li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 3.5rem;
+    color: var(--ink-soft);
+  }
+
+  .steps li::before {
+    content: counter(step, decimal-leading-zero);
+    position: absolute;
+    left: 0;
+    top: 0.15rem;
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: var(--lantern);
+    font-variation-settings: "opsz" 24;
+    line-height: 1;
+  }
+
+  .steps strong {
+    color: var(--ink);
+    font-style: italic;
+    font-weight: 400;
+    font-family: var(--font-display);
+    font-variation-settings: "opsz" 18;
+  }
+
+  .callout {
+    margin-top: var(--space-3);
+    padding: var(--space-2) var(--space-3);
+    background: rgba(201, 154, 74, 0.08);
+    border-left: 2px solid var(--lantern);
+    font-style: italic;
+    color: var(--ink-soft);
+  }
+
+  .callout a {
+    color: var(--lantern-deep);
+    border-bottom-color: var(--lantern-deep);
+  }
+</style>

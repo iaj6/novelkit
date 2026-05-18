@@ -1,0 +1,213 @@
+import { readFileSync, readdirSync, existsSync } from "node:fs";
+import { join, resolve } from "node:path";
+
+/**
+ * Astro builds run from the site/ directory (the project root for Astro).
+ * The library lives at ../library/ relative to that. Using process.cwd()
+ * is more robust than import.meta.url, which Vite rewrites during bundling.
+ */
+const LIBRARY_DIR = resolve(process.cwd(), "..", "library");
+
+export interface BookArtifacts {
+  epub?: string;
+  pdf?: string;
+  html?: string;
+  cover?: string;
+  audioElevenlabs: string[];
+  audioOpenai: string[];
+}
+
+export interface Book {
+  slug: string;
+  title: string;
+  blurb: string;
+  oneLine: string;
+  chapterCount: number;
+  hasManuscript: boolean;
+  status: "draft" | "in-progress" | "complete";
+  artifacts: BookArtifacts;
+}
+
+const PITCH_BLURB_MAX_CHARS = 600;
+const ONE_LINE_MAX_CHARS = 180;
+
+function safeReadFile(path: string): string {
+  try {
+    return readFileSync(path, "utf-8");
+  } catch {
+    return "";
+  }
+}
+
+function safeReadJson<T = unknown>(path: string): T | null {
+  try {
+    return JSON.parse(readFileSync(path, "utf-8")) as T;
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * Read the first prose paragraph from canon/pitch.md (skipping headings
+ * and blank lines). Returns the paragraph as a single-line string, capped.
+ */
+function readBlurb(bookDir: string): string {
+  const md = safeReadFile(join(bookDir, "canon", "pitch.md"));
+  if (!md) return "";
+
+  const lines = md.split("\n");
+  let i = 0;
+  // Skip leading headings and blanks.
+  while (i < lines.length && (lines[i].startsWith("#") || lines[i].trim() === "")) {
+    i++;
+  }
+  // Collect until next blank line.
+  const para: string[] = [];
+  while (i < lines.length && lines[i].trim() !== "") {
+    para.push(lines[i].trim());
+    i++;
+  }
+
+  let text = para.join(" ").trim();
+  // Strip markdown emphasis markers for plain display.
+  text = text.replace(/\*\*([^*]+)\*\*/g, "$1");
+  text = text.replace(/\*([^*]+)\*/g, "$1");
+  text = text.replace(/_([^_]+)_/g, "$1");
+
+  if (text.length > PITCH_BLURB_MAX_CHARS) {
+    const cut = text.slice(0, PITCH_BLURB_MAX_CHARS);
+    const lastSpace = cut.lastIndexOf(" ");
+    text = (lastSpace > 0 ? cut.slice(0, lastSpace) : cut) + "…";
+  }
+  return text;
+}
+
+/**
+ * Derive a one-line summary by taking the first sentence of the blurb.
+ */
+function deriveOneLine(blurb: string): string {
+  if (!blurb) return "";
+  // Split on sentence terminators; keep the first.
+  const match = blurb.match(/^[^.!?]+[.!?]/);
+  let one = match ? match[0].trim() : blurb;
+  if (one.length > ONE_LINE_MAX_CHARS) {
+    const cut = one.slice(0, ONE_LINE_MAX_CHARS);
+    const lastSpace = cut.lastIndexOf(" ");
+    one = (lastSpace > 0 ? cut.slice(0, lastSpace) : cut) + "…";
+  }
+  return one;
+}
+
+function countChapters(bookDir: string): number {
+  const draftDir = join(bookDir, "draft");
+  if (!existsSync(draftDir)) return 0;
+  try {
+    return readdirSync(draftDir).filter((f) => /^\d{2}-.+\.md$/.test(f)).length;
+  } catch {
+    return 0;
+  }
+}
+
+function listMp3s(dir: string): string[] {
+  if (!existsSync(dir)) return [];
+  try {
+    return readdirSync(dir)
+      .filter((f) => f.endsWith(".mp3"))
+      .sort();
+  } catch {
+    return [];
+  }
+}
+
+function readArtifacts(bookDir: string, slug: string): BookArtifacts {
+  const buildDir = join(bookDir, "build");
+  const artifacts: BookArtifacts = {
+    audioElevenlabs: [],
+    audioOpenai: [],
+  };
+  if (!existsSync(buildDir)) return artifacts;
+
+  const tryFile = (relName: string): string | undefined => {
+    const full = join(buildDir, relName);
+    return existsSync(full) ? relName : undefined;
+  };
+
+  artifacts.epub = tryFile(`${slug}.epub`);
+  artifacts.pdf = tryFile(`${slug}.pdf`);
+  artifacts.html = tryFile(`${slug}.html`);
+  artifacts.cover = tryFile("cover.png");
+  artifacts.audioElevenlabs = listMp3s(join(buildDir, "audiobook"));
+  artifacts.audioOpenai = listMp3s(join(buildDir, "audiobook-openai"));
+
+  return artifacts;
+}
+
+function determineStatus(
+  chapterCount: number,
+  hasManuscript: boolean,
+  artifacts: BookArtifacts
+): Book["status"] {
+  // Complete if any publishable artifact exists.
+  if (artifacts.epub || artifacts.pdf || artifacts.html) return "complete";
+  // In-progress if drafted but not published.
+  if (chapterCount > 0 || hasManuscript) return "in-progress";
+  return "draft";
+}
+
+interface CdkConfig {
+  title?: string;
+  model?: string;
+}
+
+/**
+ * Returns the books in the library, sorted by title. Books are included
+ * whether or not they have published build artifacts; downloads are
+ * gracefully hidden when artifacts aren't present.
+ */
+export function getBooks(): Book[] {
+  if (!existsSync(LIBRARY_DIR)) return [];
+
+  const entries = readdirSync(LIBRARY_DIR, { withFileTypes: true });
+  const books: Book[] = [];
+
+  for (const entry of entries) {
+    if (!entry.isDirectory()) continue;
+    if (entry.name.startsWith(".")) continue;
+
+    const slug = entry.name;
+    const bookDir = join(LIBRARY_DIR, slug);
+    const config = safeReadJson<CdkConfig>(join(bookDir, "cdk.config.json"));
+    if (!config) continue; // Skip non-book directories.
+
+    const blurb = readBlurb(bookDir);
+    const oneLine = deriveOneLine(blurb);
+    const chapterCount = countChapters(bookDir);
+    const hasManuscript = existsSync(join(bookDir, "manuscript.md"));
+    const artifacts = readArtifacts(bookDir, slug);
+
+    books.push({
+      slug,
+      title: config.title || slug,
+      blurb,
+      oneLine,
+      chapterCount,
+      hasManuscript,
+      status: determineStatus(chapterCount, hasManuscript, artifacts),
+      artifacts,
+    });
+  }
+
+  return books.sort((a, b) => a.title.localeCompare(b.title));
+}
+
+export function getBook(slug: string): Book | null {
+  return getBooks().find((b) => b.slug === slug) ?? null;
+}
+
+/**
+ * Resolve a book artifact path for use as a static URL. Assumes files
+ * have been synced into site/public/books/<slug>/ by scripts/sync-library.sh.
+ */
+export function artifactUrl(slug: string, name: string): string {
+  return `/books/${slug}/${name}`;
+}

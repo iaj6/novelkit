@@ -1,0 +1,84 @@
+---
+import Wordmark from "./Wordmark.astro";
+
+const year = new Date().getFullYear();
+---
+
+<footer>
+  <div class="container footer-grid">
+    <div class="brand">
+      <Wordmark size="sm" muted link={true} />
+      <p class="meta">a small press of agent-drafted novels.</p>
+    </div>
+    <p class="honesty">
+      every book here was drafted autonomously by an AI agent from a single brief.
+      no human editing was performed on the prose. the brief is the only human input.
+    </p>
+    <div class="quiet">
+      <p class="meta">
+        <a href="/about">about the process</a>
+        ·
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">source</a>
+      </p>
+      <p class="meta">© {year}</p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  footer {
+    margin-top: var(--space-7);
+    padding-block: var(--space-5) var(--space-4);
+    border-top: 1px solid var(--rule);
+    background:
+      linear-gradient(to bottom, transparent, rgba(201, 154, 74, 0.04));
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 1.4fr 0.9fr;
+    gap: var(--space-4);
+    align-items: start;
+  }
+
+  .brand p.meta {
+    margin-top: 0.55rem;
+    font-style: italic;
+    font-size: 0.9rem;
+    max-width: 16rem;
+  }
+
+  .honesty {
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    line-height: 1.55;
+    color: var(--ink-soft);
+    max-width: 32rem;
+  }
+
+  .quiet {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .quiet a {
+    color: var(--ink-soft);
+    border-bottom: 1px solid transparent;
+  }
+  .quiet a:hover {
+    color: var(--lantern-deep);
+    border-bottom-color: var(--lantern-deep);
+  }
+
+  @media (max-width: 800px) {
+    .footer-grid {
+      grid-template-columns: 1fr;
+      gap: var(--space-3);
+    }
+    .quiet {
+      text-align: left;
+    }
+  }
+</style>
