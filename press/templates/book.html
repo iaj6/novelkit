@@ -1,0 +1,57 @@
+$if(lang)$
+<!doctype html>
+<html lang="$lang$">
+$else$
+<!doctype html>
+<html>
+$endif$
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  $if(title)$<title>$title$</title>$endif$
+  $if(css)$
+  $for(css)$<link rel="stylesheet" href="$css$" />$endfor$
+  $endif$
+</head>
+<body>
+  <main class="book">
+    $if(title)$
+    <section class="title-page">
+      $if(cover_image)$
+      <figure class="cover-figure" aria-label="Cover illustration">
+        <img class="cover-image" src="$cover_image$" alt="Cover illustration for $title$" />
+      </figure>
+      $endif$
+      <h1 class="book-title">$title$</h1>
+      $if(author)$<div class="book-author">$author$</div>$endif$
+    </section>
+    $endif$
+
+    $if(dedication)$
+    <section class="dedication" aria-label="Dedication">
+      <p class="dedication-text">$dedication$</p>
+    </section>
+    $endif$
+
+    $if(epigraph)$
+    <section class="epigraph" aria-label="Epigraph">
+      <blockquote class="epigraph-quote">
+        <p>$epigraph$</p>
+        $if(epigraph_attribution)$
+        <footer class="epigraph-attrib">— $epigraph_attribution$</footer>
+        $endif$
+      </blockquote>
+    </section>
+    $endif$
+
+    $if(toc)$
+    <nav id="TOC" role="doc-toc">
+      <h2 class="toc-title">Contents</h2>
+      $table-of-contents$
+    </nav>
+    $endif$
+
+    $body$
+  </main>
+</body>
+</html>
