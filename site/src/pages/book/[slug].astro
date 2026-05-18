@@ -15,7 +15,9 @@ interface Props {
 }
 
 const { book } = Astro.props;
-const coverUrl = book.artifacts.cover ? artifactUrl(book.slug, book.artifacts.cover) : null;
+// Prefer full-size WebP on the detail page; fall back to PNG.
+const coverFile = book.artifacts.coverWebp ?? book.artifacts.cover ?? null;
+const coverUrl = coverFile ? artifactUrl(book.slug, coverFile) : null;
 const epubUrl = book.artifacts.epub ? artifactUrl(book.slug, book.artifacts.epub) : null;
 const pdfUrl  = book.artifacts.pdf  ? artifactUrl(book.slug, book.artifacts.pdf)  : null;
 const htmlUrl = book.artifacts.html ? artifactUrl(book.slug, book.artifacts.html) : null;

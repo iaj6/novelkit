@@ -9,7 +9,14 @@ interface Props {
 
 const { book, index = 0 } = Astro.props;
 
-const coverUrl = book.artifacts.cover ? artifactUrl(book.slug, book.artifacts.cover) : null;
+// Prefer the WebP thumbnail (~50KB) for the grid; fall back to the full
+// WebP, then the PNG.
+const coverFile =
+  book.artifacts.coverThumb ??
+  book.artifacts.coverWebp ??
+  book.artifacts.cover ??
+  null;
+const coverUrl = coverFile ? artifactUrl(book.slug, coverFile) : null;
 const isComplete = book.status === "complete";
 const revealClass = `reveal reveal-${Math.min((index % 5) + 1, 5)}`;
 ---
