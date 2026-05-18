@@ -24,7 +24,9 @@ library/<book>/
 
 - `pandoc` (Homebrew: `brew install pandoc`)
 - For PDF: `weasyprint` (preferred) or `wkhtmltopdf`, otherwise pandoc's `xelatex` fallback runs but won't honor the CSS
-- For cover art: Python `openai` package, `OPENAI_API_KEY`
+- For cover art:
+  - Python `openai` package (`pip install --user openai`), `OPENAI_API_KEY`
+  - Python `anthropic` package (`pip install --user anthropic`), `ANTHROPIC_API_KEY` (used to synthesize the visual brief — see "Cover art" below)
 - For ElevenLabs audio: `ELEVENLABS_API_KEY`, `ELEVENLABS_VOICE_ID`
 - For OpenAI TTS audio: `OPENAI_API_KEY`
 
@@ -104,7 +106,24 @@ List voices: `press/list_elevenlabs_voices.sh` writes `build/elevenlabs/voices.t
 
 ## Cover art
 
-`press/generate_cover.sh <book> [--with-text]` reads `library/<book>/canon/{pitch,world,characters,themes,continuity,style}.md`, synthesizes a book-specific image prompt, and calls OpenAI's image API (default model `gpt-image-1.5`; override via `OPENAI_IMAGE_MODEL` env var). The prompt asks the image model to infer the book's genre, era, and visual register from the canon before composing — covers should reflect what the specific book is, not its genre's conventional packaging. Pass `--art-direction "..."` to `press/build_cover_prompt.py` directly to inject explicit composition guidance.
+Two-stage pipeline:
+1. **Synthesis** — `synthesize_cover_brief.py` reads canon (`brief.md`, `canon/{pitch,world,characters,themes,continuity}.md`) and passes it through Claude (default `claude-sonnet-4-6`; override via `ANTHROPIC_COVER_MODEL`). Claude returns a focused ~200-word visual brief: genre, era, register, subject, composition, palette, and what to avoid for THIS book.
+2. **Generation** — the brief is passed to OpenAI's image API (default `gpt-image-1.5`; override via `OPENAI_IMAGE_MODEL`).
+
+```bash
+press/generate_cover.sh <book>                    # full pipeline (default)
+press/generate_cover.sh <book> --with-text        # ask the model to render title/author
+press/generate_cover.sh <book> --no-synthesis     # skip Claude, send raw canon directly
+```
+
+Approximate cost: ~$0.01–0.02 Anthropic + ~$0.04–0.20 OpenAI image per cover (image cost depends on size/quality). Use `--no-synthesis` for cheaper iteration; results will be less book-specific.
+
+The synthesized brief is saved to `library/<book>/build/cover-prompt.md` for inspection or reproducibility — you can edit it and re-run `generate_image.py` directly to refine without burning another Claude call.
+
+To inspect a brief without generating an image:
+```bash
+python3 press/synthesize_cover_brief.py --book <book> --brief-only
+```
 
 `--with-text` asks the model to render the title and author in the image. Less reliable than overlaying type yourself; use at your own risk.
 
