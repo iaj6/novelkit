@@ -1,9 +1,17 @@
 node_modules/
 .env
 .env.local
+.env.production
 *.log
 dist/
+
+# OS / editor cruft
 .DS_Store
+*.swp
+*.swo
+*~
+.~lock.*
+Thumbs.db
 
 # Press build artifacts (regenerable from library/<book>/draft/ + canon/)
 # - /build/ — global outputs (fontconfig cache, voices.tsv)
