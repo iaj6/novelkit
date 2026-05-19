@@ -180,30 +180,50 @@ async function runQueryOnce(ctx: QueryContext): Promise<AgentRunResult> {
   let toolCalls = 0;
   let finalText = "";
 
-  for await (const message of q) {
-    if (message.type === "assistant") {
-      const blocks = (message.message?.content ?? []) as Array<{
-        type: string;
-        name?: string;
-        input?: unknown;
-        text?: string;
-      }>;
-      for (const block of blocks) {
-        if (block.type === "tool_use") {
-          toolCalls++;
-          const argSummary = summarizeToolInput(block.input);
-          const argSuffix = argSummary ? ` ${c.dim(argSummary)}` : "";
-          console.log(
-            `${c.phase(ctx.args.phase)} ${c.dim(`tool ${toolCalls}:`)} ${block.name ?? ""}${argSuffix}`
-          );
-          ctx.log.event("tool_use", { name: block.name, input: block.input });
-        } else if (block.type === "text" && block.text && block.text.trim()) {
-          const first = block.text.trim().split("\n")[0].slice(0, 200);
-          console.log(`${c.phase(ctx.args.phase)} ${c.dim("say:")} ${c.italic(first)}`);
-          ctx.log.event("text", { text: block.text });
+  // Heartbeat: if no event lands for HEARTBEAT_THRESHOLD seconds, emit a
+  // "still thinking…" line so the user knows the process isn't hung.
+  const HEARTBEAT_THRESHOLD_MS = 20_000;
+  let lastEventAt = Date.now();
+  const heartbeatTimer = setInterval(() => {
+    const elapsedMs = Date.now() - lastEventAt;
+    if (elapsedMs >= HEARTBEAT_THRESHOLD_MS) {
+      const elapsedSec = Math.round(elapsedMs / 1000);
+      console.log(
+        `${c.phase(ctx.args.phase)} ${c.dim(`(still thinking, ${elapsedSec}s since last event…)`)}`
+      );
+    }
+  }, 15_000);
+
+  const noteActivity = () => {
+    lastEventAt = Date.now();
+  };
+
+  try {
+    for await (const message of q) {
+      noteActivity();
+      if (message.type === "assistant") {
+        const blocks = (message.message?.content ?? []) as Array<{
+          type: string;
+          name?: string;
+          input?: unknown;
+          text?: string;
+        }>;
+        for (const block of blocks) {
+          if (block.type === "tool_use") {
+            toolCalls++;
+            const argSummary = summarizeToolInput(block.input);
+            const argSuffix = argSummary ? ` ${c.dim(argSummary)}` : "";
+            console.log(
+              `${c.phase(ctx.args.phase)} ${c.dim(`tool ${toolCalls}:`)} ${block.name ?? ""}${argSuffix}`
+            );
+            ctx.log.event("tool_use", { name: block.name, input: block.input });
+          } else if (block.type === "text" && block.text && block.text.trim()) {
+            const first = block.text.trim().split("\n")[0].slice(0, 200);
+            console.log(`${c.phase(ctx.args.phase)} ${c.dim("say:")} ${c.italic(first)}`);
+            ctx.log.event("text", { text: block.text });
+          }
         }
-      }
-    } else if (message.type === "result") {
+      } else if (message.type === "result") {
       const m = message as {
         subtype?: string;
         result?: string;
@@ -247,8 +267,11 @@ async function runQueryOnce(ctx: QueryContext): Promise<AgentRunResult> {
       console.log(
         `${c.phase(ctx.args.phase)} ${c.dim("cumulative:")} ${c.bold(c.cost(cumulativeUsd))} ${c.dim(`(${cumulativeCalls} call${cumulativeCalls === 1 ? "" : "s"}, ${formatDuration(cumulativeDurationMs)})`)}`
       );
-      ctx.log.event("result", { subtype: m.subtype });
+        ctx.log.event("result", { subtype: m.subtype });
+      }
     }
+  } finally {
+    clearInterval(heartbeatTimer);
   }
 
   console.log(`${c.phase(ctx.args.phase)} ${c.green("done")} ${c.dim(`(${toolCalls} tool calls)`)}`);
