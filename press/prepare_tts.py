@@ -31,11 +31,57 @@ def clean_markdown_for_tts(text: str) -> str:
 
 
 def split_manuscript(manuscript: str) -> list[dict]:
+    """Split a manuscript into chapters.
+
+    Supports two formats:
+
+    A. **Source-comment markers** (what `concat_chapters.sh` emits for CDK):
+
+       ```
+       # Book Title
+
+       <!-- source: /path/to/draft/01-the-finding.md -->
+
+       # The Finding
+       …body…
+
+       <!-- source: /path/to/draft/02-the-interval.md -->
+
+       # The Interval
+       …body…
+       ```
+
+       Each `<!-- source: …NN-slug.md -->` opens a new chapter. The chapter
+       number comes from the `NN-` prefix in the filename; the title comes
+       from the next `# Heading` line (with the leading `# ` stripped).
+
+    B. **Explicit chapter headings** (TLT-style):
+
+       ```
+       # Chapter 1 — The Finding
+       …body…
+
+       # Prologue — Something
+       …body…
+       ```
+
+       This style ignores source markers and parses the headings directly.
     """
-    Splits on H1 headings used in manuscripts:
-      # Prologue — Title
-      # Chapter N — Title
-    """
+    # Pick parser based on what the manuscript actually contains.
+    has_source_markers = bool(re.search(r"^<!--\s*source:.*?-->", manuscript, re.MULTILINE))
+    explicit_chapter_pattern = re.compile(r"^#\s+Chapter\s+\d+\s+—\s+.+$", re.MULTILINE)
+    has_explicit_headings = bool(explicit_chapter_pattern.search(manuscript))
+
+    if has_explicit_headings:
+        return _split_by_explicit_headings(manuscript)
+    if has_source_markers:
+        return _split_by_source_markers(manuscript)
+    # Fallback: no chapter structure detected, treat the whole manuscript as one chapter.
+    return _split_as_single(manuscript)
+
+
+def _split_by_explicit_headings(manuscript: str) -> list[dict]:
+    """Format A: # Chapter N — Title / # Prologue — Title."""
     parts: list[dict] = []
     current = None
 
@@ -55,8 +101,7 @@ def split_manuscript(manuscript: str) -> list[dict]:
             continue
 
         if current is None:
-            # Ignore any preamble.
-            continue
+            continue  # Pre-chapter preamble (book title, dedication, etc.).
         current["lines"].append(line)
 
     if current:
@@ -65,6 +110,76 @@ def split_manuscript(manuscript: str) -> list[dict]:
     for p in parts:
         p["body"] = clean_markdown_for_tts("\n".join(p.pop("lines")))
     return parts
+
+
+def _split_by_source_markers(manuscript: str) -> list[dict]:
+    """Format B: <!-- source: …NN-slug.md --> opens each chapter."""
+    parts: list[dict] = []
+    current = None
+
+    source_re = re.compile(r"^<!--\s*source:\s*.*?/(\d{2})[-_](.+?)\.md\s*-->\s*$")
+
+    for line in manuscript.splitlines():
+        m = source_re.match(line.strip())
+        if m:
+            if current:
+                parts.append(current)
+            number = int(m.group(1))
+            kind = "prologue" if number == 0 else "chapter"
+            # Title comes from the next `# ` line; placeholder until we see one.
+            current = {
+                "kind": kind,
+                "number": number,
+                "title": "",
+                "lines": [],
+                "_awaiting_title": True,
+            }
+            continue
+
+        if current is None:
+            continue  # Pre-chapter preamble (book title, etc.).
+
+        # First `# Heading` after a source marker is the chapter title.
+        if current.get("_awaiting_title"):
+            stripped = line.strip()
+            if stripped.startswith("# ") and not stripped.startswith("## "):
+                current["title"] = stripped[2:].strip()
+                current["_awaiting_title"] = False
+                continue
+            # Skip blank lines while waiting for the title.
+            if not stripped:
+                continue
+            # Anything else: the chapter has no `# heading` of its own.
+            # Synthesize a title from the slug (e.g. "the-finding" → "The Finding").
+            current["title"] = _slug_to_title("untitled")
+            current["_awaiting_title"] = False
+            # Fall through and include this line in the body.
+
+        current["lines"].append(line)
+
+    if current:
+        parts.append(current)
+
+    for p in parts:
+        p.pop("_awaiting_title", None)
+        p["body"] = clean_markdown_for_tts("\n".join(p.pop("lines")))
+    return parts
+
+
+def _split_as_single(manuscript: str) -> list[dict]:
+    """Fallback: no chapter structure detected — treat the whole thing as one chapter."""
+    body = clean_markdown_for_tts(manuscript)
+    if not body:
+        return []
+    # Try to pull a title from a leading `# Title` line.
+    first_line = body.splitlines()[0] if body else ""
+    title = first_line[2:].strip() if first_line.startswith("# ") else "Untitled"
+    return [{"kind": "chapter", "number": 1, "title": title, "body": body}]
+
+
+def _slug_to_title(slug: str) -> str:
+    """Convert a kebab-case slug to Title Case."""
+    return " ".join(part.capitalize() for part in slug.replace("_", "-").split("-") if part)
 
 
 def main() -> int:
