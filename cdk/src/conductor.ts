@@ -11,6 +11,7 @@ import { runReader } from "./phases/reader.js";
 import { runContinuityFactAudit } from "./phases/continuity-fact-audit.js";
 import { runRepairFactNormalize } from "./phases/repair-fact-normalize.js";
 import { readCostSummary, formatCostSummary } from "./runlog.js";
+import * as c from "./ansi.js";
 
 export type PhaseName =
   | "architect"
@@ -81,6 +82,7 @@ export async function runAll(projectRoot: string) {
     await runPhase(p, projectRoot);
   }
   const summary = await readCostSummary(projectRoot);
-  console.log("\n=== run summary ===");
+  console.log(`\n${c.bold("=== run summary ===")}`);
   console.log(formatCostSummary(summary));
+  console.log(`\n${c.dim("total spend:")} ${c.bold(c.cost(summary.totalUsd))}`);
 }

@@ -2,6 +2,7 @@ import * as fs from "node:fs/promises";
 import * as path from "node:path";
 import { runAgent, type AgentRunResult } from "../agentRunner.js";
 import { loadState, isComplete, markComplete } from "../state.js";
+import * as c from "../ansi.js";
 
 export async function runDrafter(projectRoot: string): Promise<AgentRunResult[]> {
   const outlineDir = path.join(projectRoot, "outline");
@@ -11,12 +12,12 @@ export async function runDrafter(projectRoot: string): Promise<AgentRunResult[]>
       .filter((f) => f.endsWith(".md") && /^\d{2}-/.test(f) && f !== "00-chapter-map.md")
       .sort();
   } catch {
-    console.log("[drafter] outline/ not found — skipping. Run the plotter first.");
+    console.log(`${c.phase("drafter")} ${c.yellow("outline/ not found")} — skipping. Run the plotter first.`);
     return [];
   }
 
   if (outlineFiles.length === 0) {
-    console.log("[drafter] no chapter outline files found in outline/ — skipping.");
+    console.log(`${c.phase("drafter")} ${c.yellow("no chapter outline files in outline/")} — skipping.`);
     return [];
   }
 
@@ -32,10 +33,10 @@ export async function runDrafter(projectRoot: string): Promise<AgentRunResult[]>
     const chapterId = outlineFile.replace(/\.md$/, "");
     const key = `drafter:${chapterId}`;
     if (isComplete(state, key)) {
-      console.log(`[drafter] ${progress} ${chapterId} already complete — skipping`);
+      console.log(`${c.phase("drafter")} ${c.dim(progress)} ${chapterId} ${c.dim("already complete — skipping")}`);
       continue;
     }
-    console.log(`[drafter] ${progress} drafting ${chapterId}…`);
+    console.log(`${c.phase("drafter")} ${c.dim(progress)} drafting ${chapterId}…`);
     const result = await runAgent({
       phase: "drafter",
       projectRoot,

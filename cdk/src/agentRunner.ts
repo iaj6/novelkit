@@ -5,6 +5,7 @@ import { buildToolServer } from "./tools.js";
 import { openRunLog, readCostSummary, type RunLog } from "./runlog.js";
 import { loadConfig, modelForPhase, type PhaseId } from "./config.js";
 import { PROMPTS_DIR } from "./paths.js";
+import * as c from "./ansi.js";
 
 export type { PhaseId };
 
@@ -109,7 +110,7 @@ export async function runAgent(args: AgentRunArgs): Promise<AgentRunResult> {
   const maxTurns = args.maxTurnsOverride ?? config.maxTurnsPerPhase[args.phase];
 
   log.event("phase_start", { model, maxTurns });
-  console.log(`[${args.phase}] start (model=${model}, maxTurns=${maxTurns})`);
+  console.log(`${c.phase(args.phase)} start ${c.dim(`(model=${model}, maxTurns=${maxTurns})`)}`);
 
   try {
     for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
@@ -131,9 +132,9 @@ export async function runAgent(args: AgentRunArgs): Promise<AgentRunResult> {
         const msg = err instanceof Error ? err.message : String(err);
         const backoffMs = BASE_BACKOFF_MS * Math.pow(2, attempt - 1);
         console.log(
-          `[${args.phase}] transient error (attempt ${attempt}/${MAX_ATTEMPTS}): ${msg.slice(0, 120)}`
+          `${c.phase(args.phase)} ${c.yellow("transient error")} (attempt ${attempt}/${MAX_ATTEMPTS}): ${c.dim(msg.slice(0, 120))}`
         );
-        console.log(`[${args.phase}] retrying in ${backoffMs / 1000}s…`);
+        console.log(`${c.phase(args.phase)} ${c.yellow("retrying")} in ${backoffMs / 1000}s…`);
         log.event("retry", {
           attempt,
           maxAttempts: MAX_ATTEMPTS,
@@ -191,12 +192,14 @@ async function runQueryOnce(ctx: QueryContext): Promise<AgentRunResult> {
         if (block.type === "tool_use") {
           toolCalls++;
           const argSummary = summarizeToolInput(block.input);
-          const argSuffix = argSummary ? ` ${argSummary}` : "";
-          console.log(`[${ctx.args.phase}] tool ${toolCalls}: ${block.name}${argSuffix}`);
+          const argSuffix = argSummary ? ` ${c.dim(argSummary)}` : "";
+          console.log(
+            `${c.phase(ctx.args.phase)} ${c.dim(`tool ${toolCalls}:`)} ${block.name ?? ""}${argSuffix}`
+          );
           ctx.log.event("tool_use", { name: block.name, input: block.input });
         } else if (block.type === "text" && block.text && block.text.trim()) {
           const first = block.text.trim().split("\n")[0].slice(0, 200);
-          console.log(`[${ctx.args.phase}] say: ${first}`);
+          console.log(`${c.phase(ctx.args.phase)} ${c.dim("say:")} ${c.italic(first)}`);
           ctx.log.event("text", { text: block.text });
         }
       }
@@ -233,19 +236,21 @@ async function runQueryOnce(ctx: QueryContext): Promise<AgentRunResult> {
         subtype: m.subtype,
       });
       const cacheStr = cacheRead ? ` cache=${cacheRead}` : "";
+      const subtype = m.subtype ?? "ok";
+      const subtypeStr = subtype === "success" ? c.green(subtype) : subtype;
       console.log(
-        `[${ctx.args.phase}] result: ${m.subtype ?? "ok"} | $${usd.toFixed(4)} | in=${inputTokens} out=${outputTokens}${cacheStr} | ${(durationMs / 1000).toFixed(1)}s | ${numTurns} turn${numTurns === 1 ? "" : "s"}`
+        `${c.phase(ctx.args.phase)} ${c.dim("result:")} ${subtypeStr} | ${c.cost(usd)} | ${c.dim(`in=${inputTokens} out=${outputTokens}${cacheStr}`)} | ${c.dim(`${(durationMs / 1000).toFixed(1)}s`)} | ${c.dim(`${numTurns} turn${numTurns === 1 ? "" : "s"}`)}`
       );
       cumulativeUsd += usd;
       cumulativeCalls += 1;
       cumulativeDurationMs += durationMs;
       console.log(
-        `[${ctx.args.phase}] cumulative: $${cumulativeUsd.toFixed(4)} (${cumulativeCalls} call${cumulativeCalls === 1 ? "" : "s"}, ${formatDuration(cumulativeDurationMs)})`
+        `${c.phase(ctx.args.phase)} ${c.dim("cumulative:")} ${c.bold(c.cost(cumulativeUsd))} ${c.dim(`(${cumulativeCalls} call${cumulativeCalls === 1 ? "" : "s"}, ${formatDuration(cumulativeDurationMs)})`)}`
       );
       ctx.log.event("result", { subtype: m.subtype });
     }
   }
 
-  console.log(`[${ctx.args.phase}] done (${toolCalls} tool calls)`);
+  console.log(`${c.phase(ctx.args.phase)} ${c.green("done")} ${c.dim(`(${toolCalls} tool calls)`)}`);
   return { toolCalls, finalText };
 }
