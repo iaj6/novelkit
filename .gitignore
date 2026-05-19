@@ -13,6 +13,9 @@ dist/
 .~lock.*
 Thumbs.db
 
+# JetBrains IDE config — user-specific, shouldn't be in the repo
+.idea/
+
 # Press build artifacts (regenerable from library/<book>/draft/ + canon/)
 # - /build/ — global outputs (fontconfig cache, voices.tsv)
 # - library/*/manuscript.md — produced by press/concat_chapters.sh
