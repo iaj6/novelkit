@@ -1,0 +1,82 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "cdk/**"
+      - "press/**"
+      - "site/**"
+      - ".github/workflows/test.yml"
+  pull_request:
+    paths:
+      - "cdk/**"
+      - "press/**"
+      - "site/**"
+      - ".github/workflows/test.yml"
+  workflow_dispatch:
+
+# One run per ref; cancel any in-flight earlier ones.
+concurrency:
+  group: tests-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  cdk:
+    name: cdk (vitest)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: cdk
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+          cache-dependency-path: cdk/package-lock.json
+      - name: Install
+        run: npm ci
+      - name: Typecheck
+        run: npm run typecheck
+      - name: Test with coverage
+        run: npm run test:coverage
+
+  press:
+    name: press (pytest)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: press
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install pytest pytest-cov
+      - name: Test with coverage
+        run: python -m pytest --cov --cov-report=term-missing
+
+  site:
+    name: site (vitest)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: site
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+          cache-dependency-path: site/package-lock.json
+      - name: Install
+        run: npm ci
+      - name: Test with coverage
+        # Tests read from ../library/, which IS committed (modulo the audio
+        # subdirs). The committed fixtures are stable and don't require sync.
+        run: npm run test:coverage

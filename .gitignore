@@ -23,3 +23,12 @@ Thumbs.db
 /build/
 library/*/manuscript.md
 library/*/build/
+
+# Test coverage artifacts (generated; not source)
+coverage/
+.coverage
+.coverage.*
+htmlcov/
+__pycache__/
+*.pyc
+.pytest_cache/

@@ -1,0 +1,32 @@
+[run]
+# Restrict coverage to the press/ scripts themselves — not pytest's internals
+# or third-party packages.
+source =
+    build_cover_prompt
+    prepare_tts
+    tts_openai
+    tts_elevenlabs
+
+omit =
+    tests/*
+    # Wrappers around external APIs — exercised in integration runs, not
+    # unit tests. Their helper functions ARE tested individually.
+    synthesize_cover_brief.py
+    generate_image.py
+
+[report]
+# Don't count CLI entrypoints or trivial branches that only exist for
+# argparse/error handling toward the threshold.
+exclude_lines =
+    pragma: no cover
+    if __name__ == .__main__.:
+    raise NotImplementedError
+    raise SystemExit
+    \.\.\.
+    # main() functions wrap CLI argparse + network calls — covered by
+    # integration runs, not units.
+    def main\(
+
+fail_under = 80
+show_missing = True
+skip_covered = False
