@@ -1,0 +1,49 @@
+version: 2
+
+# Dependabot keeps third-party dependencies up to date by opening PRs.
+# Weekly cadence; grouped where reasonable to avoid PR storms.
+
+updates:
+  # Astro site
+  - package-ecosystem: npm
+    directory: /site
+    schedule:
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 5
+    labels:
+      - dependencies
+      - site
+    groups:
+      astro:
+        patterns:
+          - "astro"
+          - "@astrojs/*"
+      dev:
+        dependency-type: development
+
+  # CDK drafter
+  - package-ecosystem: npm
+    directory: /cdk
+    schedule:
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 5
+    labels:
+      - dependencies
+      - cdk
+    groups:
+      anthropic:
+        patterns:
+          - "@anthropic-ai/*"
+      dev:
+        dependency-type: development
+
+  # GitHub Actions used by the deploy workflow
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+    labels:
+      - dependencies
+      - ci
