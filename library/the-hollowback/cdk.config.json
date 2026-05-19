@@ -1,6 +1,7 @@
 {
   "title": "The Hollowback",
   "model": "claude-sonnet-4-6",
+  "visibility": "private",
   "modelByPhase": {},
   "maxTurnsPerPhase": {
     "architect": 60,

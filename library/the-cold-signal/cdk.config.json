@@ -1,6 +1,7 @@
 {
   "title": "The Cold Signal",
   "model": "claude-sonnet-4-6",
+  "visibility": "public",
   "modelByPhase": {},
   "maxTurnsPerPhase": {
     "architect": 60,

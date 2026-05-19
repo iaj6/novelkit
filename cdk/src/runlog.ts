@@ -11,15 +11,21 @@ export async function openRunLog(projectRoot: string, phase: string): Promise<Ru
   await fs.mkdir(logDir, { recursive: true });
   const file = path.join(logDir, "run.jsonl");
   const start = Date.now();
-  const pending: Promise<unknown>[] = [];
+
+  // Serialize writes through a single chain so events land in call order.
+  // Two unawaited fs.appendFile calls to the same file are NOT guaranteed
+  // to apply in submission order under Node's fs promise impl; we saw real
+  // test flakes when they raced. Chaining each call onto the previous one
+  // preserves the order events were emitted.
+  let chain: Promise<unknown> = Promise.resolve();
 
   const event = (kind: string, payload: Record<string, unknown> = {}) => {
     const line = JSON.stringify({ t: Date.now() - start, phase, kind, ...payload }) + "\n";
-    pending.push(fs.appendFile(file, line, "utf-8").catch(() => {}));
+    chain = chain.then(() => fs.appendFile(file, line, "utf-8")).catch(() => {});
   };
 
   const close = async () => {
-    await Promise.all(pending);
+    await chain;
   };
 
   return { event, close };

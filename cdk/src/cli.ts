@@ -4,8 +4,10 @@ import { runPhase, runAll, ALL_PHASE_NAMES, type PhaseName } from "./conductor.j
 import { TEMPLATES_DIR } from "./paths.js";
 import { clearState, loadState, saveState } from "./state.js";
 import { readCostSummary, formatCostSummary } from "./runlog.js";
+import { setVisibility, type Visibility } from "./config.js";
 import { runRepairFactNormalize } from "./phases/repair-fact-normalize.js";
 import { SEVERITIES, type Severity } from "./findings.js";
+import * as c from "./ansi.js";
 
 function usage(): never {
   console.error(`usage:
@@ -19,8 +21,22 @@ function usage(): never {
     where <name> is one of: ${ALL_PHASE_NAMES.join(", ")}
     (\`editor\` runs continuity, pacing, and voice passes in sequence)
   cdk status <dir>                          show output files and completed-task state
+  cdk publish <dir>                         mark book as public (visible on the deployed site)
+  cdk unpublish <dir>                       mark book as private (hidden from the deployed site)
 `);
   process.exit(1);
+}
+
+async function cmdPublish(target: string, visibility: Visibility) {
+  const result = await setVisibility(target, visibility);
+  const verb = result === "public" ? "published" : "unpublished";
+  const tag = result === "public" ? c.green("public") : c.dim("private");
+  console.log(`${verb}: ${target}  ${c.dim("→")} visibility = ${tag}`);
+  console.log(
+    c.dim(
+      "(local change to cdk.config.json — commit and push to deploy)"
+    )
+  );
 }
 
 async function copyDir(src: string, dest: string) {
@@ -173,6 +189,14 @@ async function main() {
     const target = positional[0];
     if (!target) usage();
     await cmdStatus(path.resolve(target));
+  } else if (cmd === "publish") {
+    const target = positional[0];
+    if (!target) usage();
+    await cmdPublish(path.resolve(target), "public");
+  } else if (cmd === "unpublish") {
+    const target = positional[0];
+    if (!target) usage();
+    await cmdPublish(path.resolve(target), "private");
   } else {
     usage();
   }

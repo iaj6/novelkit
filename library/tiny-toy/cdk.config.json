@@ -1,6 +1,7 @@
 {
   "title": "The Bottle",
   "model": "claude-sonnet-4-6",
+  "visibility": "private",
   "modelByPhase": {},
   "maxTurnsPerPhase": {
     "architect": 50,

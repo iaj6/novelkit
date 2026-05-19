@@ -89,20 +89,59 @@ function readBlurb(bookDir: string): string {
   return text;
 }
 
+// Minimum length for a candidate "first sentence". Avoids one-liners
+// that turn into things like "Coldwater Reach, Maine." or "It is.".
+const ONE_LINE_MIN_CHARS = 30;
+
+// Abbreviations whose trailing period is NOT a sentence boundary. Without
+// this guard, a pitch starting with "Dr. Elena Hartmann…" extracts as just
+// "Dr." for the one-line summary. Add more if other pitches break.
+const ABBREV_TERMINATOR_RE =
+  /\b(?:Dr|Mr|Mrs|Ms|Sr|Jr|St|Mt|Lt|Capt|Gen|Sgt|Prof|vs|etc|e\.g|i\.e|U\.S|U\.K)\.$/;
+
 /**
- * Derive a one-line summary by taking the first sentence of the blurb.
+ * Derive a one-line summary from the blurb.
+ *
+ * Walks through sentence terminators; skips any that:
+ *   - are part of a known abbreviation (Dr., Mr., etc.) — otherwise
+ *     pitches like "Dr. Elena Hartmann…" extract as just "Dr.";
+ *   - produce a candidate shorter than ONE_LINE_MIN_CHARS — otherwise
+ *     "Coldwater Reach, Maine. Autumn 1943. …" extracts as just the
+ *     non-informative town name.
+ *
+ * Falls through to the raw blurb (capped) if no acceptable boundary is
+ * found in the input.
  */
-function deriveOneLine(blurb: string): string {
+export function deriveOneLine(blurb: string): string {
   if (!blurb) return "";
-  // Split on sentence terminators; keep the first.
-  const match = blurb.match(/^[^.!?]+[.!?]/);
-  let one = match ? match[0].trim() : blurb;
-  if (one.length > ONE_LINE_MAX_CHARS) {
-    const cut = one.slice(0, ONE_LINE_MAX_CHARS);
-    const lastSpace = cut.lastIndexOf(" ");
-    one = (lastSpace > 0 ? cut.slice(0, lastSpace) : cut) + "…";
+
+  let searchFrom = 0;
+  while (searchFrom < blurb.length) {
+    const rest = blurb.slice(searchFrom);
+    // Find the next sentence terminator within the remainder.
+    const m = rest.match(/[.!?]/);
+    if (!m || m.index === undefined) break;
+
+    const endPos = searchFrom + m.index + 1;
+    const candidate = blurb.slice(0, endPos).trim();
+
+    if (ABBREV_TERMINATOR_RE.test(candidate) || candidate.length < ONE_LINE_MIN_CHARS) {
+      searchFrom = endPos;
+      continue;
+    }
+
+    return capOneLine(candidate);
   }
-  return one;
+
+  // No acceptable sentence boundary — cap the whole blurb.
+  return capOneLine(blurb);
+}
+
+function capOneLine(text: string): string {
+  if (text.length <= ONE_LINE_MAX_CHARS) return text;
+  const cut = text.slice(0, ONE_LINE_MAX_CHARS);
+  const lastSpace = cut.lastIndexOf(" ");
+  return (lastSpace > 0 ? cut.slice(0, lastSpace) : cut) + "…";
 }
 
 function countChapters(bookDir: string): number {
@@ -174,12 +213,19 @@ function determineStatus(
 interface CdkConfig {
   title?: string;
   model?: string;
+  visibility?: string;
 }
 
 /**
- * Returns the books in the library, sorted by title. Books are included
- * whether or not they have published build artifacts; downloads are
- * gracefully hidden when artifacts aren't present.
+ * Returns the public books in the library, sorted by title.
+ *
+ * Books are filtered by their `visibility` field in cdk.config.json:
+ * only `"public"` books appear here. `"private"` (or any other / missing
+ * value) is treated as not-publishable and excluded. Authors flip the
+ * field with `cdk publish <dir>` / `cdk unpublish <dir>`.
+ *
+ * Within the included set, downloads gracefully hide when their
+ * artifacts aren't present.
  */
 export function getBooks(): Book[] {
   if (!existsSync(LIBRARY_DIR)) return [];
@@ -195,6 +241,10 @@ export function getBooks(): Book[] {
     const bookDir = join(LIBRARY_DIR, slug);
     const config = safeReadJson<CdkConfig>(join(bookDir, "cdk.config.json"));
     if (!config) continue; // Skip non-book directories.
+
+    // Only books explicitly marked "public" appear on the site.
+    // Anything else (missing field, "private", typo) → hidden.
+    if (config.visibility !== "public") continue;
 
     const blurb = readBlurb(bookDir);
     const oneLine = deriveOneLine(blurb);
