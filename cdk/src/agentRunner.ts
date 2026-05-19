@@ -2,7 +2,7 @@ import { query } from "@anthropic-ai/claude-agent-sdk";
 import * as fs from "node:fs/promises";
 import * as path from "node:path";
 import { buildToolServer } from "./tools.js";
-import { openRunLog, type RunLog } from "./runlog.js";
+import { openRunLog, readCostSummary, type RunLog } from "./runlog.js";
 import { loadConfig, modelForPhase, type PhaseId } from "./config.js";
 import { PROMPTS_DIR } from "./paths.js";
 
@@ -34,7 +34,69 @@ function sleep(ms: number): Promise<void> {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
+/**
+ * Pull a one-line "key arg" from a tool's input for human-readable logging.
+ *
+ * Tries common arg shapes in priority order:
+ *   - path-like (read_file / write_file)
+ *   - id-like   (update_story_arc chapterId, record_scene sceneId, glossary term)
+ *   - small typed knobs (read_recent_scenes n=3)
+ *   - fallback to the first non-empty string value, truncated.
+ */
+function summarizeToolInput(input: unknown): string {
+  if (!input || typeof input !== "object") return "";
+  const obj = input as Record<string, unknown>;
+
+  for (const key of ["path", "file", "filename"]) {
+    const v = obj[key];
+    if (typeof v === "string" && v) return v;
+  }
+
+  for (const key of ["chapterId", "sceneId", "id", "term"]) {
+    const v = obj[key];
+    if (typeof v === "string" && v) return v;
+  }
+
+  for (const key of ["n", "count", "name"]) {
+    const v = obj[key];
+    if (typeof v === "string" || typeof v === "number") return `${key}=${v}`;
+  }
+
+  for (const v of Object.values(obj)) {
+    if (typeof v === "string" && v.length > 0) {
+      return v.length > 50 ? v.slice(0, 47) + "…" : v;
+    }
+  }
+  return "";
+}
+
+function formatDuration(ms: number): string {
+  if (ms < 60_000) return `${(ms / 1000).toFixed(1)}s`;
+  const m = Math.floor(ms / 60_000);
+  const s = Math.round((ms % 60_000) / 1000);
+  return `${m}m${s}s`;
+}
+
+/**
+ * Process-scoped cumulative cost. Seeded once from the project's existing
+ * run.jsonl so resumed runs continue the tally instead of restarting at zero.
+ */
+let cumulativeUsd = 0;
+let cumulativeCalls = 0;
+let cumulativeDurationMs = 0;
+let cumulativeSeededFor: string | null = null;
+
+async function ensureCumulativeSeeded(projectRoot: string): Promise<void> {
+  if (cumulativeSeededFor === projectRoot) return;
+  const summary = await readCostSummary(projectRoot);
+  cumulativeUsd = summary.totalUsd;
+  cumulativeCalls = summary.totalCalls;
+  cumulativeDurationMs = summary.totalDurationMs;
+  cumulativeSeededFor = projectRoot;
+}
+
 export async function runAgent(args: AgentRunArgs): Promise<AgentRunResult> {
+  await ensureCumulativeSeeded(args.projectRoot);
   const config = await loadConfig(args.projectRoot);
   const model = modelForPhase(config, args.phase);
   const log = await openRunLog(args.projectRoot, args.phase);
@@ -128,7 +190,9 @@ async function runQueryOnce(ctx: QueryContext): Promise<AgentRunResult> {
       for (const block of blocks) {
         if (block.type === "tool_use") {
           toolCalls++;
-          console.log(`[${ctx.args.phase}] tool ${toolCalls}: ${block.name}`);
+          const argSummary = summarizeToolInput(block.input);
+          const argSuffix = argSummary ? ` ${argSummary}` : "";
+          console.log(`[${ctx.args.phase}] tool ${toolCalls}: ${block.name}${argSuffix}`);
           ctx.log.event("tool_use", { name: block.name, input: block.input });
         } else if (block.type === "text" && block.text && block.text.trim()) {
           const first = block.text.trim().split("\n")[0].slice(0, 200);
@@ -171,6 +235,12 @@ async function runQueryOnce(ctx: QueryContext): Promise<AgentRunResult> {
       const cacheStr = cacheRead ? ` cache=${cacheRead}` : "";
       console.log(
         `[${ctx.args.phase}] result: ${m.subtype ?? "ok"} | $${usd.toFixed(4)} | in=${inputTokens} out=${outputTokens}${cacheStr} | ${(durationMs / 1000).toFixed(1)}s | ${numTurns} turn${numTurns === 1 ? "" : "s"}`
+      );
+      cumulativeUsd += usd;
+      cumulativeCalls += 1;
+      cumulativeDurationMs += durationMs;
+      console.log(
+        `[${ctx.args.phase}] cumulative: $${cumulativeUsd.toFixed(4)} (${cumulativeCalls} call${cumulativeCalls === 1 ? "" : "s"}, ${formatDuration(cumulativeDurationMs)})`
       );
       ctx.log.event("result", { subtype: m.subtype });
     }

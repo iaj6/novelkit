@@ -24,14 +24,18 @@ export async function runDrafter(projectRoot: string): Promise<AgentRunResult[]>
   const state = await loadState(projectRoot);
 
   const results: AgentRunResult[] = [];
+  const total = outlineFiles.length;
+  let chapterIndex = 0;
   for (const outlineFile of outlineFiles) {
+    chapterIndex++;
+    const progress = `(${chapterIndex}/${total})`;
     const chapterId = outlineFile.replace(/\.md$/, "");
     const key = `drafter:${chapterId}`;
     if (isComplete(state, key)) {
-      console.log(`[drafter] ${chapterId} already complete — skipping`);
+      console.log(`[drafter] ${progress} ${chapterId} already complete — skipping`);
       continue;
     }
-    console.log(`[drafter] drafting ${chapterId}…`);
+    console.log(`[drafter] ${progress} drafting ${chapterId}…`);
     const result = await runAgent({
       phase: "drafter",
       projectRoot,
