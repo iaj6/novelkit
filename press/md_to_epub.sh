@@ -37,8 +37,8 @@ pandoc "$in" \
   --split-level=2 \
   --lua-filter "$filter" \
   --css "$css" \
-  "${epub_cover_args[@]}" \
-  "${meta[@]}" \
+  ${epub_cover_args[@]+"${epub_cover_args[@]}"} \
+  ${meta[@]+"${meta[@]}"} \
   -o "$out"
 
 note "done: $out"
