@@ -2,13 +2,13 @@
 
 The Samoset was twenty-five minutes late, and Eira had been watching the harbor mouth since quarter past eleven.
 
-The channel was clear — nothing coming, nothing going, the anchorage sitting flat and bright in the July heat, the moorings undisturbed. She had noted the time at eleven and noted it again at eleven-fifteen and again at twenty past, the same reflex that made her note the barometric reading each morning before she opened the windows: not because the information was urgent but because the harbor was a system and anomalies were the system's language. A tender running twenty-five minutes behind its schedule was a minor anomaly in July. She would not mention it. She was already noting it.
+The channel was clear — nothing coming, nothing going, the anchorage sitting flat and bright in the July heat, the moorings undisturbed. She had noted the time at eleven and noted it again at eleven-fifteen and again at twenty past, the same reflex that made her note the barometric reading each morning before she opened the windows: not because the information was urgent but because the harbor was a system and anomalies were the system's language. A tender running twenty-five minutes behind its schedule was a minor anomaly in July. She would not mention it.
 
 The Samoset came around the bar at half past, making for the south mooring at half throttle, Sprague at the wheel. Commander Whitmore was visible at the rail before the tender made the slip — the summer khaki, the folio under one arm, the manner of a man conducting his fourth or fifth stop on a circuit that had several more to go. She had been through two of these inspections. She knew the form.
 
 She had the desk prepared. The vessel logs open to the current year — arrival and departure, full run since October. The documentation folder for the registered working craft: the smacks, the Doris V., Willits's lobster boat at the south dock. The communication records in their district-standard binding. The safety equipment inventory with the two May addenda — south float mooring line, north face ring buoy. A fresh district compliance form in the wire tray.
 
-The harbor office was in order. It was always in order. This was not something she had arranged for the inspection; it was the state the office maintained.
+The harbor office was in order. It was always in order.
 
 ---
 
@@ -40,7 +40,7 @@ He made a final notation and set the pen down. Sprague collected the compliance 
 
 ---
 
-She made the coffee on the small burner beside the stove and brought two cups to the desk. Whitmore was still in the chair. He had the folio closed in front of him and his hands around the cup in the manner of a man who was not finished but had stepped outside the formal portion of his business. The July heat was in the office now without the transit of walking to cut through it.
+She made the coffee on the small burner beside the stove and brought two cups to the desk. Whitmore was still in the chair. He had the folio closed in front of him and his hands around the cup. The July heat was in the office now without the transit of walking to cut through it.
 
 "I have a civilian matter to mention," he said, "while I'm here."
 
@@ -48,7 +48,7 @@ She said nothing. She sat down.
 
 He opened the folio and produced a folder from behind the compliance forms — not the district's standard buff but a gray-blue, the color she had come to associate with closed referrals and pending reviews. He opened it and turned the front page toward her.
 
-She recognized the form number. The coastal incident report filed October 1943, form D-7 from the coastal incident series, her district registration at the top right, the date: 13 October. Her own document. She had filled out that form at this desk within three hours of the body coming off the breakwater, written in the careful manner she used for all official entries, and filed it with the district office by certified post the following day.
+She recognized the form number. The coastal incident report filed October 1943, form D-7 from the coastal incident series, her district registration at the top right, the date: 13 October. Her own document. She had filled out that form at this desk within three hours of the body coming off the breakwater and filed it with the district office by certified post the following day.
 
 "The naval district has been conducting a cross-reference review of coastal incidents from the autumn of forty-three," Whitmore said. "The period before the Zone B rules were relaxed. Standard review — a good number of them close without additional findings." He set a smaller sheet inside the folder, turned so she could read it. "This one has a probable cross-reference."
 
@@ -64,7 +64,7 @@ She held his attention for a moment. He waited in the way she had noticed he alw
 
 "I may have come across it," she said, "in the course of the ordinary mail."
 
-This was true. The name had come to her at the post office counter in March, from Ada Gile, in the course of a conversation about mail — mail addressed to general delivery, mail that had no local addressee, mail that the Coast Guard had already collected before she got there. She had come across the name A. Schell in the course of the ordinary mail. She had not sought it beyond what any person with a professional reason might do. She had not manufactured the information. What she had done was remember it, and hold it, and add it to the black notebook in the second left-hand drawer.
+This was true. The name had come to her at the post office counter in March, from Ada Gile, in the course of a conversation about mail — mail addressed to general delivery, mail that had no local addressee, mail that the Coast Guard had already collected before she got there. What she had done was remember it, and hold it, and add it to the black notebook in the second left-hand drawer.
 
 Whitmore made a note. "If you have anything in the office record referencing the name, pass it to the district office." He set the pen down. "This is not an active investigation. We're calling it likely the same man and leaving it in the open files." He closed the folder. "German-born but Swedish national, no indication of anything other than a maritime fatality. No security implication."
 
@@ -90,9 +90,9 @@ She read the line she had written, then the line above it, then turned back thro
 
 July.
 
-Eight months of these. She had not gone out looking for any of it; she had logged what came to her and where it came from and kept it separate from the official record, which was the correct thing to do with information that was not evidence. This was how the notebook existed: not as an investigation but as a secondary record, the record of what a working harbormaster accumulates over the course of a winter and a spring when a question does not resolve.
+Eight months of these.
 
-August Schell had been on the Ångermanälven. He was German-born, which in 1943 meant something she did not and probably would never fully know — there were Germans on neutral vessels for reasons that were not simple, and she had no way of knowing which reason had been his. He had taken a berth on a merchant ship running the Atlantic in wartime, which was not a safe thing to do. He had received a postcard from Portland telling him a date and a time.
+August Schell had been on the Ångermanälven. He had taken a berth on a merchant ship running the Atlantic in wartime. He had received a postcard from Portland telling him a date and a time.
 
 He had come to Coldwater Reach.
 
@@ -102,9 +102,7 @@ She did not know what happened after. She had been in the harbor office with the
 
 She did not know what had happened between the night of the ninth and the morning of the thirteenth. She did not know what Birch Macomber's Portland contract had been for or whether it was connected to anything she had since written in the notebook. She did not know who had sent the postcard from Portland. She did not know what meeting the date and time had been for.
 
-August Schell. He was forty years old, approximately. He had come from Germany by whatever route to a berth on a neutral ship on the North Atlantic, and he had come to this harbor on a night in October with a bag on the pier, and she had walked past him. He drowned here. She had not prevented it and she did not know whether prevention had been possible, and she did not know that it had not been.
-
-These were the boundaries of what she knew.
+August Schell. He was forty years old, approximately. He had come from Germany by whatever route to a berth on a neutral ship on the North Atlantic, and he had come to this harbor on a night in October with a bag on the pier, and she had walked past him. He drowned here.
 
 She closed the notebook and put it back in the second left-hand drawer.
 

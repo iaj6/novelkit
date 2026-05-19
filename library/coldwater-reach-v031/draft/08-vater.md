@@ -1,8 +1,8 @@
 # Vater
 
-The cows had been in their stalls since four, and by the time Hannah came for the evening feeding the barn had gone warm in that particular way it did in winter — the heat that had nothing to do with any stove but with eight large bodies breathing in close quarters, their warmth filling the space until the cold outside became a different world. She moved down the alley with the grain bucket, starting with Else as always, going to Hilde, going down the line. Their breath came off in small clouds that dissolved before they reached the rafters. The sound of grain falling into the wooden feed-box was the same sound every evening and she did not hear it anymore, in the way you stop hearing a familiar sound.
+The cows had been in their stalls since four, and by the time Hannah came for the evening feeding the barn had gone warm in that particular way it did in winter — the heat that had nothing to do with any stove but with eight large bodies breathing in close quarters, their warmth filling the space until the cold outside became a different world. She moved down the alley with the grain bucket, starting with Else as always, going to Hilde, going down the line. Their breath came off in small clouds that dissolved before they reached the rafters. The sound of grain falling into the wooden feed-box was the same sound every evening and she did not hear it anymore.
 
-Through the east wall she could hear, faintly, the icehouse. A door — the heavy sound of it, wood on frozen wood. Then a voice, low, and then nothing. She could not make out the words. She had listened for them in the first weeks with a particular attention and then stopped, when it became clear the wall gave her only sound-shape, not meaning: the rhythm of German without its content, the way a conversation sounds in another room of a house.
+Through the east wall she could hear, faintly, the icehouse. A door — the heavy sound of it, wood on frozen wood. Then a voice, low, and then nothing. She could not make out the words. She had listened for them in the first weeks with a particular attention and then stopped.
 
 She set the last bucket, checked the water in the back trough — still open, she would have to watch it when the temperature dropped further tonight — and went back down the alley, unlatching the barn door and pulling it shut behind her.
 
@@ -24,11 +24,11 @@ She looked up. He was looking at his bowl.
 
 He said: the young one was quick with the post driver. Knew how to set the weight before the swing, not after. Good technique.
 
-He said *der Junge* — the young one. Not a name. But there was only one young one, and her father did not speak of things he did not mean.
+He said *der Junge* — the young one. Not a name. But there was only one young one.
 
-She watched him pick up his spoon and take another mouthful. He had named Karl without naming him, in the way that he moved around the edges of things that mattered to him. The observation itself was not nothing. Her father did not offer observations about people's technique unless the technique had caught at him.
+She watched him pick up his spoon and take another mouthful.
 
-She had been thinking about the question since the afternoon. She had been rehearsing the German of it in the back of her thinking while she was doing the feeding, working out the verb — *gesagt*, past participle, the verb for having said something, for a thing already said and sitting in the air. Whether she had the grammar right. Whether she wanted the grammar to be wrong, as an excuse not to ask.
+She had been thinking about the question since the afternoon. She had been rehearsing the German of it in the back of her thinking while she was doing the feeding, working out the verb — *gesagt*, past participle. Whether she had the grammar right. Whether she wanted the grammar to be wrong, as an excuse not to ask.
 
 She put her spoon down.
 
@@ -40,7 +40,7 @@ Her father set his spoon down. This was different from the way he usually set it
 
 He said: *Regensburg ist nicht weit.*
 
-He said it the way he said things that had been sitting in him for a while: flat, without inflection, no particular weight on any word. The way you say a thing you already know and have known, and it does not need emphasis because it is only a fact. Regensburg is not far. From Straubing. From where he came from. From the river they shared.
+Regensburg is not far. From Straubing. From where he came from. From the river they shared.
 
 He picked up his spoon. He finished the soup.
 
@@ -60,11 +60,11 @@ They washed in the order they always washed: bowls first, then the bread knife, 
 
 *Regensburg ist nicht weit.*
 
-Not far. Fifty kilometers, she thought — she had looked at it in the school atlas two months ago, in the room at the back of the library where the old reference books were kept, too large to check out. The map of Bavaria, the Danube running through it like a seam. Straubing at one point on the river; Regensburg at another. The distance between them the width of three fingers on that scale, which was nothing. Which was, in the language of geography, not far.
+Not far. Fifty kilometers, she thought — she had looked at it in the school atlas two months ago, in the room at the back of the library where the old reference books were kept, too large to check out. The map of Bavaria, the Danube running through it like a seam. Straubing at one point on the river; Regensburg at another. The distance between them the width of three fingers on that scale, which was nothing.
 
-He had not said: *I know where that is.* He had not said: *that is near where I grew up.* He had said the one compressed thing, the thing that acknowledged the geography and nothing else, and then he had picked up his spoon.
+He had not said: *I know where that is.* He had not said: *that is near where I grew up.*
 
-She thought: this is how he does everything. With the minimum that communicates the fact without opening the fact to discussion. The fence needs repair; the fence will be repaired. The young one knows how to set the weight before the swing. Regensburg is not far. These were facts. What he did with the facts beyond stating them was somewhere she did not have access to.
+She thought: What he did with the facts beyond stating them was somewhere she did not have access to.
 
 Her mother went to bed early, as she always did in winter. Hannah dried the bowls and set them in the cupboard. Her father turned a page in the newspaper. The stove clicked and settled.
 
@@ -80,7 +80,7 @@ He knew. He had always known.
 
 She had understood this since the evening in the second week when she had been carrying dishes from the table to the counter and heard him say it — *Regensburg ist nicht weit* — to no one in particular, or to her mother's back, or to the air above the table. She had heard it and understood what it meant and had not known what to do with it, and had been carrying it since then the way you carry something in a pocket that you keep reaching for without taking out.
 
-Tonight was different. Tonight she had asked, and he had responded to her question with the same fact he had been sitting with, and in responding he had pointed it at her rather than at the air. That was the difference. Small, maybe. But she had felt it.
+Tonight was different. Tonight she had asked, and he had responded to her question with the same fact he had been sitting with, and in responding he had pointed it at her rather than at the air. Small, maybe. But she had felt it.
 
 She lay back on the bed with her hands on her ribs and looked up at the ceiling she could not see.
 
@@ -88,11 +88,11 @@ The question was not whether he knew. The question was what the knowing cost him
 
 She thought about the word *Heimweh*.
 
-She had heard him use it, not often, and not about Germany specifically — not about Straubing or the river or any particular place he had left. He used it in the abstract, the way you use a word that has its own weight and does not need to be aimed at anything specific to be felt. The English said homesickness, and sickness was a thing you had for a time and then recovered from, a condition with an end. But *Weh* was not sickness. *Weh* was ache, pain, the thing that went on. Home-ache. The ache toward a place you had left or lost or been taken from, and the ache did not end because the home it was aimed at was no longer accessible and maybe had never been quite real even when you lived in it, the way you sometimes don't fully see a place until you have left it.
+She had heard him use it, not often, and not about Germany specifically — not about Straubing or the river or any particular place he had left. He used it in the abstract. Home-ache.
 
-She did not think her father was home-aching for Straubing in any simple sense. He had come here because he chose to come, or because circumstances had made choosing necessary, and he had built this farm and this life and he had not gone back. But she thought the young man in the icehouse might be, for him, a particular kind of proof. Not proof of anything good or bad. Proof that the place was still real. That Regensburg existed and was still producing twenty-year-old men who knew how to set a post driver correctly. That the distance between Straubing and Regensburg was still fifty kilometers and not larger or different or erased.
+He had come here because he chose to come, or because circumstances had made choosing necessary, and he had built this farm and this life and he had not gone back. But she thought the young man in the icehouse might be, for him, a particular kind of proof. Not proof of anything good or bad. Proof that the place was still real. That Regensburg existed and was still producing twenty-year-old men who knew how to set a post driver correctly.
 
-She did not know if Karl's presence made the cost of knowing higher or lower. She did not know if her father had looked at Karl directly yet — she had not seen it happen — or if he managed the nearness the way you manage something that might break if you handled it without care. She thought: I will not ask him again. Not because she was afraid to ask but because she understood now that asking was not the way in. The way in did not exist, probably. What existed was the thing he had given her: the same fact, delivered twice now, the second time at close range: *nicht weit.* Not far. That would have to be enough, because it was what he had, and what he had was all he was going to give.
+She did not know if her father had looked at Karl directly yet — she had not seen it happen. She thought: I will not ask him again. Not because she was afraid to ask but because she understood now that asking was not the way in. What existed was the thing he had given her: the same fact, delivered twice now, the second time at close range: *nicht weit.* Not far. That would have to be enough.
 
 She reached over without getting up and touched the sleeve of Rolf's coat. The wool was rough under her fingers and faintly warm from the room's heat. Outside the east window the dark was complete, but the snow on the ridge above the farm held whatever light was left — not much, only the faint paleness of it visible at the window's edge if she looked.
 

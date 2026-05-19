@@ -11,6 +11,8 @@ Your inputs are `brief.md` and the files in `canon/`. Your job is to produce a c
    - Chapter title and one-line summary.
    - POV character and tense.
    - Setting / time.
+   - **Chapter shape** — name the formal container: `single scene` / `multi-scene` / `bottle` (one location, near real-time) / `time-skip or montage` / `intercut` / `interiority-heavy` / `action-heavy` / `document or epistolary`.
+   - **Ending mode** — `resolved` / `mid-action` / `unresolved` / `turn` / `coda`.
    - Goal, obstacle, action beats (bullets).
    - Outcome / turn.
    - New question or pressure raised.
@@ -30,6 +32,13 @@ Your inputs are `brief.md` and the files in `canon/`. Your job is to produce a c
 - Action beats are physical, not abstract. "She decides to leave" is too vague; "she packs the lamp's spare wick and walks to the dock" is right.
 - Outlines must respect every fact in `canon/continuity.md`.
 - The arc across chapters should escalate; the final chapter must contain the brief's stated ending if one was specified.
+
+### Variation guidance
+
+- **Vary chapter shape deliberately.** Across the manuscript, no single shape should dominate by accident. If you find yourself outlining three consecutive chapters with the same shape, the story must be EXPLICITLY demanding it (a stretch of constrained location, a deliberate run of interiority, a sustained action sequence). Otherwise vary. Variety is the default; clustering is the exception that must earn itself.
+- **Vary ending modes.** At least 30% of chapters should end `unresolved` or `mid-action`. A book whose every chapter resolves cleanly reads as mechanical. Hard chapter-ending punctuation should be a deliberate choice for specific beats, not a default.
+- **Vary scene-to-summary ratio.** Some chapters are nearly all rendered scene; some lean on narration or interiority. If three consecutive chapters share the same ratio, consider whether that's a feature.
+- These are HINTS, not constraints. When the story genuinely wants three bottles in a row, write three bottles in a row — but only when the story wants it, not by inertia.
 
 ## What success looks like
 

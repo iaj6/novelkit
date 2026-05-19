@@ -3,7 +3,7 @@ import { z } from "zod";
 import * as fs from "node:fs/promises";
 import * as path from "node:path";
 import type { RunLog } from "./runlog.js";
-import { FindingSchema, writeFindings as persistFindings } from "./findings.js";
+import { FindingSchema, writeFindings as persistFindings, appendFindings as persistAppendFindings } from "./findings.js";
 
 export const SERVER_NAME = "cdk";
 
@@ -219,6 +219,33 @@ export function buildToolServer(deps: ToolDeps) {
     }
   );
 
+  const appendFindings = tool(
+    "append_findings",
+    "Append findings to the existing logs/findings.json (creating it if missing). Unlike write_findings, this preserves any findings other agents already produced. Dedupes by `id` — if a finding with the same id exists, the new version replaces it. Use this when adding findings to a shared findings file alongside other review-style phases.",
+    {
+      findings: z.array(FindingSchema),
+    },
+    async (args) => {
+      const relpath = await persistAppendFindings(projectRoot, args.findings);
+      log.event("tool", {
+        name: "append_findings",
+        count: args.findings.length,
+        bySeverity: args.findings.reduce<Record<string, number>>((acc, f) => {
+          acc[f.severity] = (acc[f.severity] ?? 0) + 1;
+          return acc;
+        }, {}),
+      });
+      return {
+        content: [
+          {
+            type: "text",
+            text: `appended ${args.findings.length} findings to ${relpath}`,
+          },
+        ],
+      };
+    }
+  );
+
   const readRecentScenes = tool(
     "read_recent_scenes",
     "Return only the most recent N entries from logs/scene-log.md. Use this when drafting a later chapter — it gives you the immediate-context entries without dragging in the full accumulated log.",
@@ -255,6 +282,7 @@ export function buildToolServer(deps: ToolDeps) {
       updateStoryArc,
       readRecentScenes,
       writeFindings,
+      appendFindings,
     ],
   });
 
@@ -270,6 +298,7 @@ export function buildToolServer(deps: ToolDeps) {
     "update_story_arc",
     "read_recent_scenes",
     "write_findings",
+    "append_findings",
   ];
 
   return {

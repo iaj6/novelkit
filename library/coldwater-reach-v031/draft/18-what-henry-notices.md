@@ -2,9 +2,9 @@
 
 The piano lid in the music room was up again.
 
-Henry set his bucket down and brought the lid closed, careful not to let it drop. Talmadge taught summer students on Wednesdays and Fridays — children whose parents wanted something to occupy the weeks before September — and she never remembered the lid. He always did. The instrument hadn't held its pitch reliably since the pipe-sweat situation above the ceiling in 1941, but that was no argument for leaving it open to the August humidity. He closed it and straightened the bench against the keys.
+Henry set his bucket down and brought the lid closed, careful not to let it drop. Talmadge taught summer students on Wednesdays and Fridays — children whose parents wanted something to occupy the weeks before September — and she never remembered the lid. He always did. The instrument hadn't held its pitch reliably since the pipe-sweat situation above the ceiling in 1941, but that was no argument for leaving it open to the August humidity. He straightened the bench against the keys.
 
-He started at the top of the building and worked down. Third floor to first: the mop bucket was easier on the stairs in that direction, and the third floor stayed cleaner than the floors below because people used those rooms and left. They didn't linger. The building at six in the evening was not quiet — it was never quite quiet; it lowered itself into a register of pipes and settling joists and the particular creak the third-floor crossbeam made when the temperature dropped toward dark — but it was as empty as it got. Three classrooms and a storage room for the band chairs and stands, plus the room labeled EXAMINATIONS since 1931 and still labeled that, though what was examined in it had changed twice since Henry arrived. He collected two music stands from the hall and racked them. He checked the east window latch, which had been intermittently failing since the winter of 1937. The requisition for a new mechanism had gone through three times without result. He was prepared to submit it a fourth.
+He started at the top of the building and worked down. Third floor to first: the mop bucket was easier on the stairs in that direction, and the third floor stayed cleaner than the floors below because people used those rooms and left. The building at six in the evening was not quiet — it was never quite quiet; it lowered itself into a register of pipes and settling joists and the particular creak the third-floor crossbeam made when the temperature dropped toward dark — but it was as empty as it got. Three classrooms and a storage room for the band chairs and stands, plus the room labeled EXAMINATIONS since 1931 and still labeled that, though what was examined in it had changed twice since Henry arrived. He collected two music stands from the hall and racked them. He checked the east window latch, which had been intermittently failing since the winter of 1937. The requisition for a new mechanism had gone through three times without result. He was prepared to submit it a fourth.
 
 Down one flight.
 
@@ -14,15 +14,13 @@ He went through the other second-floor rooms in order: the science room with its
 
 The principal's office at the end of the hall: dark, door locked. Through the glass panel above the handle he could see the desk, and on the desk a letter on school committee stationery — the blue-grey kind with the raised seal in the upper corner. He could read the name in the address block; he recognized it. He could read the first sentence of the first paragraph, which said *the matter of Dr. Klein's continued appointment*, and he didn't read further.
 
-He had not developed the habit of reading what sat on principals' desks.
-
 He mopped the second-floor hallway and the north bathroom and went down.
 
 ---
 
 The teacher's lounge was off the main hall — originally a loading dock, still with the old iron rings along one wall and a floor that sloped slightly toward the former freight door. Three wastebaskets. A long table, six chairs. The coffee urn on the sideboard, there when Henry started and going to outlast him, the same as it had outlasted the urn before it. He knew this room's particular habits: the two cups always put in the basket under the sideboard rather than the sink, the chalk-dust footprints that gathered near the door in winter, the way the third basket — near the table, near the spot where people stood and talked in the mornings before the classrooms filled — collected things of a different kind than the others. Papers reconsidered. Notes started and set aside.
 
-He went through them in order. Near the door: corrected papers, a wax paper bag, a pencil ground to nothing. Under the sideboard: two coffee cups in the basket instead of the sink, which was a practice teachers had and would keep. The third basket held one piece of paper that had been crumpled and then worked nearly flat again — the creases still in it, the corners not quite square — as if whoever crumpled it had paused and then decided to leave it anyway.
+He went through them in order. Near the door: corrected papers, a wax paper bag, a pencil ground to nothing. Under the sideboard: two coffee cups in the basket instead of the sink. The third basket held one piece of paper that had been crumpled and then worked nearly flat again — the creases still in it, the corners not quite square.
 
 He didn't take it out.
 
@@ -36,7 +34,7 @@ He put the paper back. The same angle against the basket's side. Crumpled the sa
 
 He emptied the other two baskets, swapped the liners, and mopped the floor from the windows back toward the door. He finished the building at half past seven, locked the front door, and walked home.
 
-The August evening had some cool in it from the sea, not much. The street was quiet — Burleigh's dark, the post office dark, a light or two in the upstairs rooms of houses along the main road, and in one of them a radio playing something he couldn't make out from the street. The elms on the last block before the turn had gone darker than the sky behind them. He walked steadily and didn't think about the basket.
+The August evening had some cool in it from the sea, not much. The street was quiet — Burleigh's dark, the post office dark, a light or two in the upstairs rooms of houses along the main road, and in one of them a radio playing something he couldn't make out from the street. The elms on the last block before the turn had gone darker than the sky behind them. He walked steadily.
 
 ---
 

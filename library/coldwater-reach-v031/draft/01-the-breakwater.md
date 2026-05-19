@@ -4,7 +4,7 @@ Halfway down the breakwater she could see them: two yellow slickers at the far e
 
 She had walked this granite in every condition the Maine coast produced. She walked it now at the same pace she always walked, reading each course of stone by the memory of her feet.
 
-She placed them as she got close. Roy Blaine's height and the way his hands were in his pockets. His nephew Eddie Dunst, Roy's sister's boy, standing with his weight on his right leg. They had not touched the body. They stood back from it six feet or so, which was the right instinct, and they said nothing when she came up because they understood she needed a moment and they had nothing to add to what was already visible.
+She placed them as she got close. Roy Blaine's height and the way his hands were in his pockets. His nephew Eddie Dunst, Roy's sister's boy, standing with his weight on his right leg. They had not touched the body. They stood back from it six feet or so, and they said nothing when she came up.
 
 "Morning," she said.
 
@@ -22,7 +22,7 @@ She crouched at the edge and looked without touching. The iron ladder's lowest r
 
 She checked his pockets. One hand in each side pocket of the oilskin, methodical, feeling without looking. Left pocket was empty. Right pocket had water in it and something that had been cloth before three days in the sound had taken whatever shape it had. She could not retrieve it without tearing it apart. She withdrew her hands.
 
-His left hand — the one she could see, the outflung arm — was a working hand. Weather-roughened. The nails were close-cut and one was cracked at the quick. He had worked outside, and not recently become someone who did so.
+His left hand — the one she could see, the outflung arm — was a working hand. Weather-roughened. The nails were close-cut and one was cracked at the quick.
 
 She stood up.
 
@@ -48,7 +48,7 @@ He went past her to look, and she stepped back to give him the space for it. His
 
 She gave them to him in order of relevance: body position, angle inconsistent with a fall from the structure, placement consistent with arrival from the anchorage side on eastern chop. Clothing: oilskin, wool sweater, rubber boots, no insignia, no vessel markings. Apparent age thirty-five to forty-five. Working hands. Pockets empty or waterlogged, nothing retrievable.
 
-He listened without writing anything down. She noted this: he was carrying it in his head.
+He listened without writing anything down.
 
 "Any unusual vessel traffic in the past seventy-two hours?" he said.
 
@@ -60,7 +60,7 @@ She looked at the anchorage. The fog was thinning. She could see the *Macomber* 
 
 "Nothing unusual," she said.
 
-He asked several more questions in the same efficient order, and she answered them the same way — precisely, within the scope of what she had noted in the official record. He thanked her. The crew moved to the body with the litter, and Eira stepped back farther and let them work. When they were done and the canvas was lashed, Gervais turned and looked at the anchorage the way she had looked at it, though he was looking for different things.
+He asked several more questions in the same efficient order, and she answered them the same way — precisely, within the scope of what she had noted in the official record. He thanked her. The crew moved to the body with the litter, and Eira stepped back farther and let them work. When they were done and the canvas was lashed, Gervais turned and looked at the anchorage the way she had looked at it.
 
 "She'll hear from the First District," he said, not quite to her. "When there's anything."
 
@@ -106,7 +106,7 @@ She had not found him in the morning. The blow came in at 0130, earlier than she
 
 She looked at the dash in the column.
 
-A dash in her log meant no anomalies noted. She had not written that; she had made a mark. The column had been blank before, and it was filled now — with a notation that meant one thing and described another. A man standing at the end of the pier, before a three-day blow, canvas bag at his feet, facing the water: this was not vessel traffic. There was no column in the vessel-traffic log for a man standing on the pier.
+A dash in her log meant no anomalies noted. She had not written that; she had made a mark. The column had been blank before, and it was filled now. A man standing at the end of the pier, before a three-day blow, canvas bag at his feet, facing the water: this was not vessel traffic.
 
 She had not entered him because she had not known where he was berthed, and without a vessel she could not make the entry complete, and then the storm had come. She could not enter him now.
 
@@ -128,7 +128,7 @@ She drank her coffee.
 
 She rinsed her cup at the utility sink and hung it on the hook below the barometer. She had put both hooks in herself, the week she moved into the office: a length of copper pipe from the bilge of a derelict smack, cut and bent and mounted below Owen's barometer on the east wall. She had put the second hook in the month after Owen died, when the office was hers and she had been deciding where things would go. His cup had been on its hook since 1935. She washed them both each morning and hung them back — hers on the left, Owen's on the right — and had done so for eight years.
 
-She took Owen's oilskin from the wall peg. It was the right weight for the work. It had always been the right weight for the work.
+She took Owen's oilskin from the wall peg. It was the right weight for the work.
 
 Outside, the breakwater lay in the October morning — granite and ordinary, the sea beyond it running a low swell, nothing that asked anything of anyone. She began the inspection at the pier shed door and worked seaward, the way she always did.
 

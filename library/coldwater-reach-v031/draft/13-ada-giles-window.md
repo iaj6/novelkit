@@ -6,7 +6,7 @@ The bollards were holding. The float gangway had come through the winter without
 
 She checked the splice on one of the Doris V.'s mooring lines — showing chafe at the thimble, not urgent but worth noting — and came back into the pier shed out of the wind.
 
-The harbor office mail had been accumulating at the post office for the better part of a week. She had sent one of the dock hands for it the two Thursdays previous, and the week before that, and this morning, without making a decision she could have articulated, she pulled her oilskin off the peg and went herself. The dock hands could manage the pier for an hour. The walk to Reach Road was twenty minutes each way in good weather and somewhat longer in sleet, and she had been meaning to go for a week, and she was done meaning to.
+The harbor office mail had been accumulating at the post office for the better part of a week. She had sent one of the dock hands for it the two Thursdays previous, and the week before that, and this morning she pulled her oilskin off the peg and went herself. The dock hands could manage the pier for an hour. The walk to Reach Road was twenty minutes each way in good weather and somewhat longer in sleet, and she had been meaning to go for a week, and she was done meaning to.
 
 ---
 
@@ -30,7 +30,7 @@ Eira checked the return addresses on the circulars. Standard district distributi
 
 She stayed at the counter.
 
-Ada had returned her attention to the pigeonhole grid. She placed three envelopes in three boxes without looking at the boxes — the motion of someone who knows a geography by its contents rather than its coordinates. She did not press Eira with a look or a question. The counter was the counter; people stood at it until their business was done, and Ada understood the difference between business concluded and business ongoing.
+Ada had returned her attention to the pigeonhole grid. She placed three envelopes in three boxes without looking at the boxes — the motion of someone who knows a geography by its contents rather than its coordinates. She did not press Eira with a look or a question.
 
 "Ada." Eira set the V-Mail aside. "That business last fall. The body."
 
@@ -48,7 +48,7 @@ Ada set down the envelope she held. She faced Eira directly with the expression 
 
 "Was there something," Eira said. "Before they came."
 
-Ada considered. The consideration was not hesitation; it was the particular calibration Eira had recognized over eight years — the assessment of what fell within scope, which Ada conducted with the same precision she applied to everything else, and which had less to do with willingness than with the judgment of professional category. She answered questions asked correctly and she did not answer questions asked otherwise.
+Ada considered. She answered questions asked correctly and she did not answer questions asked otherwise.
 
 "A postcard," she said. "Came in the first week of October. Addressed to general delivery, Coldwater Reach. The name on it was A. Schell." She paused in the way of someone giving a listener time to be accurate. "No last name used as a first name or any other way I could place it. Coldwater Reach has no one by that name."
 
@@ -86,7 +86,7 @@ She read the line back. She set the pen down and sat back.
 
 She looked at what she had.
 
-A postcard, sent from Portland — the postmark was Portland, which she had not known before this morning — addressed to a name that had no established presence in Coldwater Reach. General delivery meant the sender expected the recipient to pass through the town, to check the post office counter, to know to look for mail under the name A. Schell. No boardinghouse registration, no rental on the town books, no family she had heard of. The name not in any directory she could consult. The Coast Guard had known the name before they arrived to collect the postcard, which was what it meant for them to have come knowing what they were looking for.
+A postcard, sent from Portland — the postmark was Portland, which she had not known before this morning — addressed to a name that had no established presence in Coldwater Reach. No boardinghouse registration, no rental on the town books, no family she had heard of. The name not in any directory she could consult. The Coast Guard had known the name before they arrived to collect the postcard.
 
 The postcard had contained a date and a time.
 
@@ -96,17 +96,15 @@ On the night of October ninth, past midnight, she had gone out to the pier to ch
 
 The blow came in on the tenth. The body came in from the anchorage side on the thirteenth, three days later, on an eastern chop.
 
-She did not write any of this down in the notebook.
-
 What she had was a set of coincidences, and coincidences were what the record looked like when it was incomplete. A postcard was not a coaster, and a coaster was not a man on a pier, and a man on a pier was not a drowned man on the breakwater. The four points had positions. They formed a shape. The shape was specific. It was not evidence.
 
-She held the theory the way she held a theory about the set of a mooring or the behavior of a tide at the inlet: as a working assessment from available data, held open to revision, not committed until confirmed. The theory explained the shape.
+She held the theory the way she held a theory about the set of a mooring or the behavior of a tide at the inlet. The theory explained the shape.
 
 What she could not answer: what was the meeting? Who had sent the postcard from Portland?
 
-What she could not ask without answering the first question: how to approach either inquiry without clarifying why she was making it, which would require clarifying what the existing record was missing, which was the man on the pier on the ninth of October. That was why she was sitting at this desk with the plain brown notebook and not the official incident log.
+What she could not ask without answering the first question: how to approach either inquiry without clarifying why she was making it, which would require clarifying what the existing record was missing.
 
-She had not committed a falsehood. The vessel-traffic column for the night of October ninth was marked with a dash, her convention for no anomalies noted, and there had been no anomaly recorded — what there had been was an observation she had not recorded, which was a distinction that remained technically accurate. She had been holding this distinction for five months. She understood it precisely and she did not expect to resolve it today.
+She had not committed a falsehood. The vessel-traffic column for the night of October ninth was marked with a dash, her convention for no anomalies noted, and there had been no anomaly recorded — what there had been was an observation she had not recorded, which was a distinction that remained technically accurate. She had been holding this distinction for five months.
 
 She capped the pen. She closed the notebook and put it back in the second left-hand drawer.
 

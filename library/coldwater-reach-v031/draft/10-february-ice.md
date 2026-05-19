@@ -16,7 +16,7 @@ Eira went down the dock ladder to the float. The coaster's name was painted in d
 
 She called up: who's master.
 
-A woman in a wool watch cap came to the rail. She said: I am. Hartley. Estelle Hartley. Her expression was the expression Eira recognized — not from a mirror exactly, but from having lived inside a version of it for eight years: the look of a competent person confronting a situation that is inconvenient and non-catastrophic and requires patience rather than action. There were three or four women skippers working the Maine coast, the war having opened certain posts that would not otherwise have opened, and Hartley's manner made clear she had been sailing this water well before any of those openings. Eira noted it and did not remark on it.
+A woman in a wool watch cap came to the rail. She said: I am. Hartley. Estelle Hartley. Her expression was the expression Eira recognized — not from a mirror exactly, but from having lived inside a version of it for eight years: the look of a competent person confronting a situation that is inconvenient and non-catastrophic and requires patience rather than action. There were three or four women skippers working the Maine coast, the war having opened certain posts that would not otherwise have opened, and Hartley's manner made clear she had been sailing this water well before any of those openings.
 
 She said: when did you come in.
 
@@ -34,7 +34,7 @@ Hartley said: and if the tide doesn't do it.
 
 Eira said: I'll call the buoy tender. It can take you under tow from seaward and haul you over the ledge's edge. The ledge depth at the inner face runs about nine feet at this tide stage — your keel clears by half a foot.
 
-She said it plainly, as a plan with a clear sequence. Hartley received it as the same. She said: what's the tender's ETA.
+She said: what's the tender's ETA.
 
 Eira said: the Samoset's on its coastal run out of Jonesport. I'd have it here by half past nine.
 
@@ -62,13 +62,13 @@ Eira said: four measures.
 
 They were quiet for a while. The harbor outside the mooring field was open water, gray-green and working, the chop from an easterly still running cross to the channel current and making the anchorage's surface irregular in the way that looked colder than it was. Above the harbor mouth the sky was February-white and flat.
 
-Hartley knew the coast the way you knew it after the years on it — not the broad strokes but the specifics, the behavior of particular passages in particular conditions, which anchorages froze first and which didn't, where the ledges were that didn't appear on the charts until you were on top of them. She said she had been sailing it since 1927. She said this once, in passing, as a date that explained what she knew rather than as something requiring acknowledgment. Eira received it as the former.
+Hartley knew the coast the way you knew it after the years on it — not the broad strokes but the specifics, the behavior of particular passages in particular conditions, which anchorages froze first and which didn't, where the ledges were that didn't appear on the charts until you were on top of them. She said she had been sailing it since 1927.
 
 They went through the tow plan. The Samoset would bring a line to the *Wren*'s bow cleat, take a strain, haul from seaward; Hartley would put the engine ahead slow on the pull to help. Fenders on the port side, though the ledge was smooth and the risk of hull damage was low if they came off cleanly. Four minutes to agree on this, another four to stop talking about it.
 
 Then they were back to standing.
 
-The cold off the ice had a smell to it as well — something dry and faintly mineral, different from the salt and diesel of the open harbor. Eira had registered it in past winters without naming it; standing here now she named it: chalk. The ice-cold smelled like chalk. She filed this without knowing what she would do with it.
+The cold off the ice had a smell to it as well — something dry and faintly mineral, different from the salt and diesel of the open harbor. The ice-cold smelled like chalk.
 
 After a while she said: you work far down this way often?
 
@@ -92,7 +92,7 @@ Hartley said: is there something with Birch?
 
 Eira said: he was through here last fall. I've been reconciling his circuit for the annual fee schedule — trying to account for the stops.
 
-Hartley accepted this. It was plausible; it was the kind of thing a harbormaster did. She poured what remained in the thermos lid and looked at the ice-ledge, which was doing what ice-ledges did in February, which was nothing.
+Hartley accepted this. She poured what remained in the thermos lid and looked at the ice-ledge, which was doing what ice-ledges did in February, which was nothing.
 
 Twenty-two minutes past nine, the Samoset came around the harbor's outer point. Its gray hull was the color of the February sky and the color of the harbor water — visible by its shape and movement, not by any contrast with the weather around it.
 
@@ -108,7 +108,7 @@ She said: looks right.
 
 Eira said: have her hauled when you're next in port.
 
-Hartley said: I'll do that. She looked down at Eira on the dock with the direct look of someone who has transacted business satisfactorily. She said: I appreciate the tow call.
+Hartley said: I'll do that. She looked down at Eira on the dock and said: I appreciate the tow call.
 
 Eira said: safe weather.
 

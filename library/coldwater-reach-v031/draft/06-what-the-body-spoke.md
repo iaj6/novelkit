@@ -20,9 +20,9 @@ The word *European* was doing considerable work. Marcus allowed it to do that wo
 
 He had chosen the phrase *civic resource* with some care; Marcus felt the care in it. He was being used and also being asked, and Fenn was trying to accomplish both without the use becoming visible. This was decent of Fenn, whose decency on most matters was genuine if occasionally misaimed.
 
-"I'd be glad to help," Marcus said. He meant this and was also aware that saying otherwise would have read as avoidance, and that avoidance in a particular direction was itself a kind of statement. But the genuine part was true. The body had been on the breakwater, and someone had heard what the man said, and what the man said may have been in a language that was Marcus's by birth and training. The connection was not exotic. It was simple.
+"I'd be glad to help," Marcus said. He meant this and was also aware that saying otherwise would have read as avoidance, and that avoidance in a particular direction was itself a kind of statement. The body had been on the breakwater, and someone had heard what the man said, and what the man said may have been in a language that was Marcus's by birth and training.
 
-"Thank you." Fenn's relief was brief but visible, which told Marcus something about how Fenn understood his position in Coldwater Reach — that some real possibility of refusal had seemed available. He filed this without responding to it.
+"Thank you." Fenn's relief was brief but visible, which told Marcus something about how Fenn understood his position in Coldwater Reach — that some real possibility of refusal had seemed available.
 
 "I'll stop at the harbor office after my last class."
 
@@ -34,7 +34,7 @@ He had Latin in the afternoon — the third declension, eight students, a standa
 
 The light was going. Not dark yet but committed to it: the sky a flat ash gray, the sun already behind the inland ridge, what remained of the day a kind of residual illumination without source or direction. He went south on Main Street. Burleigh's was closed, as it was on Tuesdays. The post office showed Ada Gile's handwritten notice about V-Mail hours. The general store had ration-book advisories taped to the inside of the glass. He passed all of it without entering any of it — the town familiar in the way a foreign country became familiar after sustained residence, which was to say: known without being owned.
 
-He had been to the harbor office once before. He remembered the occasion exactly, as he tended to remember occasions in Coldwater Reach exactly, each one still distinct enough to locate precisely. He had gone in the spring of 1942, preparing a classroom exercise on maritime regulation — the Lighthouse Service's jurisdiction, the harbor log as a legal document, the intersection of admiralty law and local authority. An exercise that had ultimately not been used. He had not been sure, when it came to it, whether a visit to the harbormaster's office would be received as a legitimate pedagogical inquiry or as something less clearly categorized. He had decided the uncertainty was sufficient reason to use a different exercise, and he had not examined this decision afterward.
+He had been to the harbor office once before. He remembered the occasion exactly, as he tended to remember occasions in Coldwater Reach exactly, each one still distinct enough to locate precisely. He had gone in the spring of 1942, preparing a classroom exercise on maritime regulation — the Lighthouse Service's jurisdiction, the harbor log as a legal document, the intersection of admiralty law and local authority. An exercise that had ultimately not been used. He had not been sure, when it came to it, whether a visit to the harbormaster's office would be received as a legitimate pedagogical inquiry or as something less clearly categorized. He had decided the uncertainty was sufficient reason to use a different exercise.
 
 The pier lane smelled of salt and diesel even from the road. He heard the harbor before he saw it: the draw of water against pier pilings, the creak of mooring lines taking the tide's shift, a bell buoy at the anchorage's outer edge. The pier shed stood at the lane's end with a light burning over its door. At the near end of the shed the harbor office, where the structure changed from newer plank to older converted pilot house.
 
@@ -50,13 +50,13 @@ Eira Bowman was at her desk. She looked up when he came in. She did not stand. H
 
 "Mrs. Bowman." He stood inside the door. "I apologize for coming without notice. Principal Fenn asked me to stop by — regarding the inquiry about the man on the breakwater."
 
-She waited. This was not impatience; it was the professional economy of someone who had found that waiting for the substance of a statement cost less than responding to its approach.
+She waited.
 
 "A fisherman — Ed Larrabee, I understand — reported hearing the man say something that sounded European. Possibly German. The report went from the Coast Guard to the selectmen to Mr. Fenn, who asked whether I might be of use as —" Marcus applied Fenn's phrase with intention "— as a civic resource. In case there were any materials. A phrase, a written word. Something that might benefit from identification."
 
 She considered him for a moment with the attention of someone gathering information rather than forming judgment. Then she said: "The Coast Guard has what I know."
 
-He heard this carefully. The sentence was precise in the way of a sentence chosen for its precision: it said the Coast Guard possessed what she presently knew, which was true, and it said nothing about the conditions under which what she knew might later change, or expand, or become applicable in a different context. He registered the precision and did not indicate that he had.
+The sentence was precise in the way of a sentence chosen for its precision: it said the Coast Guard possessed what she presently knew, which was true, and it said nothing about the conditions under which what she knew might later change, or expand, or become applicable in a different context.
 
 "Of course," he said. "I won't take up your time."
 
@@ -80,11 +80,11 @@ In German the phrase was *ein Mensch ohne Papiere*. The word *Mensch* was not *M
 
 He had arrived from somewhere and come to rest at the foot of an iron ladder at the end of a granite breakwater. The question of who he was could not be answered from the body because the body's authorship had been removed — by the water, or by whoever had placed him in it, or by himself, if the removal had been intentional.
 
-Had he known, Marcus wondered. Had the man understood what he was without — not just the practical inconvenience of it but the full weight of what the last decade had loaded into that absence. Had he understood himself to be *staatenlos*: without a state to claim him, without a floor of legal existence to stand on. The word in German carried both the administrative condition and a physical image: stateless, floorless, unsupported. The man who could not be proved.
+Had he known, Marcus wondered. Had the man understood what he was without — not just the practical inconvenience of it but the full weight of what the last decade had loaded into that absence. Had he understood himself to be *staatenlos*: without a state to claim him, without a floor of legal existence to stand on. The man who could not be proved.
 
 It was possible the man had been an ordinary sailor with inadequate records, a document lost to water or carelessness. Marcus did not exclude this. He was also aware that he was carrying his own experience into the question, which was not sound methodology. But he carried it regardless, because this kind of knowledge did not wait for an invitation.
 
-He had learned the weight of papers in a particular room, in a particular year, when a man in a uniform had looked at his documents and then looked at him and made a decision about what they proved. That was a kind of knowledge that did not translate cleanly across cases. It was, however, knowledge. He was not sure he could do anything useful with it here. He had made the offer anyway.
+He had learned the weight of papers in a particular room, in a particular year, when a man in a uniform had looked at his documents and then looked at him and made a decision about what they proved. He was not sure he could do anything useful with it here. He had made the offer anyway.
 
 The ridge crested ahead. Below: the town's lights spread across the valley floor, the Congregational steeple white against the dark sky, chimney smoke running south on the harbor wind.
 
@@ -110,10 +110,10 @@ Henry nodded once.
 
 Henry ate. After a moment: "She'll use you when she needs you. Not before."
 
-Marcus considered this. He found it correct. Henry's readings of these kinds of transactions were, as a general rule, more reliable than his own, which tended toward the philological and away from the practical.
+He found it correct. Henry's readings of these kinds of transactions were, as a general rule, more reliable than his own, which tended toward the philological and away from the practical.
 
 "Yes," he said. "That is what I understood."
 
-They ate. Lillian moved in the adjacent room, the sound of her work steady and unremarkable. Outside the kitchen window, the wind off the harbor worked the bare branches of the elm in the yard. Marcus ate his supper and said nothing further.
+They ate. Lillian moved in the adjacent room, the sound of her work steady and unremarkable. Outside the kitchen window, the wind off the harbor worked the bare branches of the elm in the yard.
 
 After supper he washed his bowl at the sink and dried it and went upstairs. He sat at the desk with the annotating pen in his hand. On the desk: the Latin papers, the open dictionary, the grade book in its brown cover. He did not open the grade book. He sat for a while with the pen, and then he capped it and put it down.

@@ -73,7 +73,7 @@ She took it out and unfolded it on the desk.
 
 She read through it. The handwriting was her September handwriting — even, compressed, slightly smaller than her correspondence hand because that was how she wrote in official documents. Six pages on harbor office stationery, the ink still dark. The bridle inspection that had put her on the pier at 0130. The individual at the far end of the public pier: canvas bag over the right shoulder, maritime working dress, good physical condition, not a known user of the harbor. The sound from the Macomber's mooring. The five minutes at the starboard chock. The bridle adjusted and confirmed. Looking back toward the far end and finding the pier empty. *The undersigned assumed that he had taken shelter in the pier shed, which was standing open.*
 
-She had known, writing that sentence, that it was not an assumption she had actually made. It said so without saying so. *No entry was made in the vessel traffic log. No further investigation was conducted.*
+She had known, writing that sentence, that it was not an assumption she had actually made. *No entry was made in the vessel traffic log. No further investigation was conducted.*
 
 She read those two sentences and moved on. Her signature at the bottom of the last page, and the date.
 
@@ -99,11 +99,11 @@ The April sea. The small swell lifted against the breakwater's foot and let back
 
 She could see the approach channel from here — the two gear buoys strung out toward the mouth, the fairway buoy on the south side that the service tender had repositioned in March. The northeast point where the harbor's outer granite head turned the swell was visible clearly in the April light. Inland, the town ridge, the upper maples showing the first new green.
 
-The tidal set from a position north of the harbor mouth over three days, with the swell running southeast: the body would have come in against the north face of the seaward section and settled into the angle between sections at this end. She had worked it through in November of 1943 and had not needed to work it again. The calculation was what it was. The body had come in at this end and she had been the first person from the harbor to find it.
+The tidal set from a position north of the harbor mouth over three days, with the swell running southeast: the body would have come in against the north face of the seaward section and settled into the angle between sections at this end. She had worked it through in November of 1943 and had not needed to work it again. The body had come in at this end and she had been the first person from the harbor to find it.
 
 She stood.
 
-She knew the geography. She knew what the record contained and what it did not. She had been at this end of the dock in the early hours of October 10 looking toward the far end of the public pier, and she had walked back across the pier to the harbor office, and three days later there had been a body at the angle of the granite below where she was now standing, and she had filed what she had seen and what she had not done in a document that was now in her coat pocket.
+She had been at this end of the dock in the early hours of October 10 looking toward the far end of the public pier, and she had walked back across the pier to the harbor office, and three days later there had been a body at the angle of the granite below where she was now standing, and she had filed what she had seen and what she had not done in a document that was now in her coat pocket.
 
 The swell lifted and let back. Above the harbor the ridge was fully in the morning sun.
 
@@ -117,7 +117,7 @@ The tabs ran forward from the back: vessel inspection reports from 1937, the ice
 
 She filed the addendum behind the tab.
 
-She filed the notebook behind the addendum — the fourteen pages of entries from November 6, 1943, to July 22, 1944, now in the same drawer as the addendum and the cross-reference form, behind the tab with the name. She settled both until they lay flat.
+She filed the notebook behind the addendum. She settled both until they lay flat.
 
 She closed the drawer.
 
@@ -141,7 +141,7 @@ She set the empty cup on the draining board and went to the desk for the Lightho
 
 She was reading it when she heard the buoy tender.
 
-The engine note: a slower, heavier frequency than the lobster boats, a frequency that belonged to a vessel of that tonnage running at service speed in a flat harbor approach. She was at the east window before she had consciously decided to cross the room.
+The engine note: a slower, heavier frequency than the lobster boats, a frequency that belonged to a vessel of that tonnage running at service speed in a flat harbor approach. She was at the east window.
 
 The tender came around the northeast point — the granite head that was the harbor's outer protection on the northeast side — at twenty past ten. She was running her Lighthouse Service ensign and the service pennant, both clear in the April air, the flag staff at the bow picking up the morning light. Her hull was the standard service gray. The working deck forward of the wheelhouse was staged for the run: the davit rigged, locker hatches open, the foredeck crew in their working positions for a harbor approach. First full spring run.
 

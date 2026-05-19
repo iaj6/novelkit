@@ -8,7 +8,7 @@ The icehouse was cold enough that you could see the men's breath when the door o
 
 Karl had not spoken to her at the fence in four days.
 
-She noticed this the way she noticed the second milker's feed intake, or the temperature of the water in the barn troughs — not as alarm, but as information. He came to the fence when the work brought him there. He took the bucket she set on the post. He did not linger, and he did not quite meet her eyes, and when she looked at him she had the sense of something turned inward, some weather she was not seeing the front of. Not avoidance — he was there, he did the task, he gave the bucket back. Something else. She had no word for it in either language.
+She noticed this the way she noticed the second milker's feed intake, or the temperature of the water in the barn troughs. He came to the fence when the work brought him there. He took the bucket she set on the post. He did not linger, and he did not quite meet her eyes, and when she looked at him she had the sense of something turned inward, some weather she was not seeing the front of. She had no word for it in either language.
 
 ---
 
@@ -28,11 +28,11 @@ He said, in German — not the abbreviated German of their fence-line exchanges,
 
 She looked at him. He held the bucket.
 
-The thing about *gestorben* — she had the thought at the edge of the larger thought — was that there was no way around it. The plainest word.
+The thing about *gestorben* was that there was no way around it. The plainest word.
 
 She said: *Das tut mir leid.*
 
-She had said those words before, in small circumstances — when a calf did not make it, when her father cut his hand on the fence wire, when the radio announced something bad had happened somewhere far away. This time she meant all of it.
+She had said those words before, in small circumstances — when a calf did not make it, when her father cut his hand on the fence wire, when the radio announced something bad had happened somewhere far away.
 
 He nodded. He did not say more about it. He turned and carried the bucket to the feed trough and poured it and came back with the empty pail and set it on the fence post. He went toward the equipment barn without looking back.
 
@@ -42,7 +42,7 @@ She stood at the fence for another minute. The wind off the north pasture. Behin
 
 The morning continued to be what it was. She milked; she cleaned; she refilled the water troughs. She carried hay from the loft. She did not think about Karl's father specifically, but the fact of it was in the barn with her like the cold — not in front of her but surrounding her, something she moved inside.
 
-Dinner was soup and the heel of a bread loaf and the half-cup of butter that had to do for the week. Her father ate without speaking, which was the usual. After he ate he crossed to the radio chair in the sitting room and turned on the set and found the news, which was what he did every evening — the announcer's careful voice saying names that had not been places to Hannah until this past year and now were: Bastogne, Aachen, the Siegfried Line. She heard the names the way she heard them through a wall, their geography arriving in her gradually.
+Dinner was soup and the heel of a bread loaf and the half-cup of butter that had to do for the week. Her father ate without speaking, which was the usual. After he ate he crossed to the radio chair in the sitting room and turned on the set and found the news, which was what he did every evening — the announcer's careful voice saying names that had not been places to Hannah until this past year and now were: Bastogne, Aachen, the Siegfried Line.
 
 Her mother set the soup bowls in the basin and began to wash them.
 
@@ -56,7 +56,7 @@ Her mother nodded. She lifted a bowl, rinsed it, set it on the draining board. "
 
 "That makes sense," Hannah said.
 
-This was the fifth or sixth time in as many days. Not a long speech; none of the sentences were long. But her mother was in them — actually there, thinking about the root bin and the carrots and March. It had started a week ago: the barn pipes — *leave the tap running or they will freeze* — and then the weather, and then something about the wood supply, and now the carrots. Small sentences, offered without inflection, the way a person tested whether the habit of speech still worked. Hannah answered them the way she answered any question that had an answer: *Yes. I'll check. That makes sense. I'll do it in the morning.* She did not try to extend the sentences. She did not reach for more than what was offered.
+This was the fifth or sixth time in as many days. But her mother was in them — actually there, thinking about the root bin and the carrots and March. It had started a week ago: the barn pipes — *leave the tap running or they will freeze* — and then the weather, and then something about the wood supply, and now the carrots. Hannah answered them the way she answered any question that had an answer: *Yes. I'll check. That makes sense. I'll do it in the morning.* She did not reach for more than what was offered.
 
 She did not tell her mother about Karl's father.
 
@@ -64,15 +64,15 @@ She did not tell her father either, though she watched him in his radio chair wi
 
 In November — the middle of November, the week after the first snow — she had been at the kitchen window doing the breakfast dishes when she looked up and saw her father crossing the yard toward the woodpile where Karl was splitting. She had stood still. Karl looked up when Albrecht got close, and then her father said something, and Karl set the axe down, and they talked. Twenty minutes. She stood at the window with her hands in the dishwater and watched them: two figures in the gray November light, her father's breath and Karl's breath both rising in the cold air, her father's hands moving once in a gesture she did not recognize from any conversation she had seen him have. She could not hear anything. When her father came back inside he did not say where he had been or what they had talked about, and she did not ask. He poured himself a glass of water at the sink and stood for a while with his hand on the edge of the counter, looking at something that was not in the room. Then he went to his chair.
 
-She had no account of what they said. She had only the shape of it: twenty minutes, in German, private, and her father's hand on the counter afterward.
+She had only the shape of it: twenty minutes, in German, private, and her father's hand on the counter afterward.
 
 ---
 
-The barn pipes did not freeze that night. She had left the tap running as her mother suggested, a thin thread of water that moved enough to keep the lines from dropping past the point. She checked them at five in the morning when she came in to do the first milking, and they were fine, and she felt something that was not quite relief — more like confirmation. She had done the correct thing and the correct thing had worked.
+The barn pipes did not freeze that night. She had left the tap running as her mother suggested, a thin thread of water that moved enough to keep the lines from dropping past the point. She checked them at five in the morning when she came in to do the first milking, and they were fine, and she felt something that was not quite relief — more like confirmation.
 
 She thought about Karl's father while she milked.
 
-December 28 was what she knew — she was not certain how: perhaps something Karl had said at the fence during those four days, one word she had caught through the wind, or something she had heard Lonzo say to one of the other men. December 28, 1944, was in her as a fixed fact.
+December 28 was what she knew — she was not certain how: perhaps something Karl had said at the fence during those four days, one word she had caught through the wind, or something she had heard Lonzo say to one of the other men.
 
 Regensburg. The city had been bombed — she knew this from the radio. The Messerschmitt works, the announcer said, and later she had heard the city more generally, the way the bombs had moved past the specific factory and into the streets around it. She did not know if Karl knew how his father had died. She did not know what the Red Cross notification said exactly, whether it gave the cause or only the date. She did not ask.
 
@@ -82,9 +82,7 @@ He had: three men in a cold icehouse in Maine, the smell of sawdust and wet wool
 
 She had: Rolf's last letter from November, from somewhere in Italy — the envelope worn soft from folding and unfolding. She had her father asleep in the radio chair with the BBC voice in the background naming the Allied advance. She had her mother at the sink saying the carrot supply would hold to March. She had the barn, the fifteen cows, the north fence, the ridge road, the harbor lights she had shown him from the high ground in October.
 
-She had things Karl did not have, and she was holding his grief not because she had been asked to but because it had come across the fence with the empty bucket and it was there and someone had to carry part of it.
-
-*Die Bürde trägt sich nicht allein.* Her father's words — she had heard him say this once, to himself, in the kitchen, in what he must have thought was private. He had been talking about the war generally, she thought now — about whatever it was he carried in German about the country he had left and the country that was destroying itself and everything near it. She had been fourteen, and she had heard it and not fully understood it and had not thought about it much since.
+*Die Bürde trägt sich nicht allein.* Her father's words — she had heard him say this once, to himself, in the kitchen, in what he must have thought was private. She had been fourteen, and she had heard it and not fully understood it and had not thought about it much since.
 
 She finished the last cow. She carried the cans to the straining cloth. The barn was cold in the particular way barns were cold in January: not wind-cold but still-cold, the cold of a closed space that had taken the night's temperature and was holding it. She could see her breath at the straining cloth.
 
@@ -94,7 +92,7 @@ She went back to the house. The kitchen lamp was on; her mother had not yet come
 
 The candle on the shelf was burning low. She did not blow it out.
 
-Outside the kitchen window the January dark was complete: no moon, no stars, the clouds that had come in the afternoon making the night a single featureless thing. Somewhere in the icehouse across the yard, Karl was either awake or asleep, and his father had died on December 28 in Regensburg, and this was a fact now in the world, one of the fixed ones, the kind that did not change.
+Outside the kitchen window the January dark was complete: no moon, no stars, the clouds that had come in the afternoon making the night a single featureless thing. Somewhere in the icehouse across the yard, Karl was either awake or asleep, and his father had died on December 28 in Regensburg, and this was a fact now in the world.
 
 She sat with her hands flat on the table.
 

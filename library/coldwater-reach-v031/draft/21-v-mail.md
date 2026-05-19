@@ -4,7 +4,7 @@ The kitchen smelled of the previous night's potatoes — that particular root-ce
 
 The V-Mail form was on the table where she'd left it, under the salt dish.
 
-Magda was not in the kitchen. Hannah could hear her somewhere in the back of the house — a door, the sound of movement in the room above — and then nothing. Her mother had been like this for weeks, appearing and disappearing through the rooms in a way that made the house feel larger than it was. It was not different from how she'd been since the news about Onkel Franz in 1942. It was the same. Hannah had stopped being frightened by it. She wasn't sure when that had happened.
+Magda was not in the kitchen. Hannah could hear her somewhere in the back of the house — a door, the sound of movement in the room above — and then nothing. Her mother had been like this for weeks, appearing and disappearing through the rooms in a way that made the house feel larger than it was. It was not different from how she'd been since the news about Onkel Franz in 1942. It was the same. Hannah had stopped being frightened by it.
 
 From the barn, through the open kitchen window: her father's voice. The particular cadence of Bavarian German delivered to someone who understood it, which was different from the rhythm of a sentence you were meant to catch. He and the men were at the north pasture fence — four posts that had heaved over the summer and needed resetting before the ground hardened. She could hear Karl's voice too, shorter phrases, a question and then Vati's answer, and then silence, and then the sound of a post maul.
 
@@ -14,25 +14,25 @@ The top block was already filled in: her name, the farm address, Rolf's APO numb
 
 *Dear Rolf,* she wrote. *I hope this finds you well.*
 
-The form gave her five inches of lined space, which was never enough and always more than she managed to fill. She knew the shape of these letters by now — she'd written eight of them since October of last year, and before that the ordinary airmail. You chose. The censors saw it anyway, whatever you chose, and blacked out the things that put information where it shouldn't be. It was not only the censors. There were other reasons to choose.
+The form gave her five inches of lined space, which was never enough and always more than she managed to fill. She knew the shape of these letters by now — she'd written eight of them since October of last year, and before that the ordinary airmail. You chose. The censors saw it anyway, whatever you chose, and blacked out the things that put information where it shouldn't be.
 
-*The potatoes came in good,* she wrote. *Better than last year. I think Vati is pleased.* He had asked about the potatoes in his April letter — *How do the fields look this spring?* — which was the kind of question you asked when you were somewhere that didn't have fields, or had different fields, or had fields you were not permitted to think of as fields. She thought about this when she wrote about the potatoes. She always sent him what he asked for.
+*The potatoes came in good,* she wrote. *Better than last year. I think Vati is pleased.* He had asked about the potatoes in his April letter — *How do the fields look this spring?* — which was the kind of question you asked when you were somewhere that didn't have fields, or had different fields, or had fields you were not permitted to think of as fields. She always sent him what he asked for.
 
 She looked at the next line.
 
 Martha.
 
-Martha had died in July. A mastitis case — the big Holstein Rolf had named when they were seven and nine, for a reason Hannah couldn't remember anymore. He'd called her Martha with great ceremony, an announcement rather than a suggestion: *That one. She is Martha.* And Martha she had been for eleven years. The infection came on fast, the left quarter, and her father had called the veterinarian in from Machias, and they had done what they could for three days. She had been a good cow. Patient in the way that big cows were patient, which was an entirely different quality from what you'd call patience in a person.
+Martha had died in July. A mastitis case — the big Holstein Rolf had named when they were seven and nine, for a reason Hannah couldn't remember anymore. He'd called her Martha with great ceremony, an announcement rather than a suggestion: *That one. She is Martha.* And Martha she had been for eleven years. The infection came on fast, the left quarter, and her father had called the veterinarian in from Machias, and they had done what they could for three days. She had been a good cow. Patient in the way that big cows were patient.
 
 She could write it. There was space.
 
-She thought: Rolf reading the letter. Some room, some tent, some building where men read letters while the war was nearby. She thought of the sentence arriving on a reproduced form and Rolf holding it — *Martha died this summer; it was her left side; we couldn't save her* — and the word Martha, which had no military significance whatsoever, going through the censor's eyes and out the other side untouched, arriving whole. She thought: this is the thing you should be able to tell someone. The cow you both named.
+She thought: Rolf reading the letter. Some room, some tent, some building where men read letters while the war was nearby. She thought of the sentence arriving on a reproduced form and Rolf holding it — *Martha died this summer; it was her left side; we couldn't save her* — and the word Martha, which had no military significance whatsoever, going through the censor's eyes and out the other side untouched, arriving whole.
 
 She would tell him when he came home.
 
-She wrote instead: *The cows are still out on the pasture but not for much longer.* She said *the cows* and meant all of them and did not mean Martha and moved on to the next line.
+She wrote instead: *The cows are still out on the pasture but not for much longer.*
 
-*The weather has turned cooler already. There is fog every morning off the ridge.* She looked at the fog sentence and let it stand. It was true. *Mutti sends her love.* Her mother had not said anything to send, but it didn't require asking. Magda's love for Rolf was not something you had to articulate; you could convey it on her behalf without lying about it. *Vati says the north pasture fence should hold through another winter.* Vati had said this two days ago, flat and declarative, to no one in particular, while she carried the fence brace past him. She had heard it and filed it and now it was in the letter. The north pasture fence would hold.
+*The weather has turned cooler already. There is fog every morning off the ridge.* She looked at the fog sentence and let it stand. *Mutti sends her love.* Her mother had not said anything to send, but it didn't require asking. *Vati says the north pasture fence should hold through another winter.* Vati had said this two days ago, flat and declarative, to no one in particular, while she carried the fence brace past him. She had heard it and filed it and now it was in the letter. The north pasture fence would hold.
 
 She looked at the lined space that remained.
 
@@ -40,9 +40,9 @@ She could not put Karl's name down. She had not decided not to put his name — 
 
 She would have to begin with October of last year, when the Army truck came up the farm road with four men in the back. She would have to explain the icehouse and Lonzo Reed and the kind of fence that was both a boundary and a place where things happened. She would have to explain the word-cards, the cedar rectangles passing back and forth under the stone at the fence post. She would have to explain what it was like to have a conversation in two languages across a fence post with someone who was, technically, the enemy, who was also from a town fifty kilometers from where Vati grew up, and who had a father who ran a butcher shop in Regensburg, and who had never seen the sea before the troop ship brought him to this coast.
 
-She would have to explain all of it without making it sound like a story, because it wasn't a story. It was the situation she was inside.
+She would have to explain all of it without making it sound like a story.
 
-And she couldn't write *mündig* — the word Dr. Klein had put on the board in April, *having your own mouth* — and what she'd been quietly doing with it, on her side of the fence, over these months. What it meant to choose what you said and to whom, and what that was making her.
+And she couldn't write *mündig* — the word Dr. Klein had put on the board in April, *having your own mouth* — and what she'd been quietly doing with it, on her side of the fence, over these months.
 
 The censors would have none of that anyway.
 
@@ -54,7 +54,7 @@ She looked at what remained and wrote: *I think of you.*
 
 She signed her name.
 
-She read the letter over once, the way you read something you already knew was insufficient before you read it. The potatoes. The cows, unnamed. The fog on the ridge. Mutti's love by proxy. Vati's opinion of the north fence. I am well. The weather is changing. I think of you. It was true. All of it was true. It left out most of what was happening and it was still, she thought, the letter she had to offer him, at this distance, in this September.
+She read the letter over once. The potatoes. The cows, unnamed. The fog on the ridge. Mutti's love by proxy. Vati's opinion of the north fence. I am well. The weather is changing. I think of you.
 
 She capped her pen, folded the form, and went to the hook by the door for Rolf's coat.
 
@@ -76,7 +76,7 @@ On an impulse she hadn't planned, Hannah said: "Do you hear news from the boys?"
 
 Ada did not look up from the letters. "Some. Fewer letters than there were."
 
-She said it neutrally. She was stating an observable fact about the volume of mail that passed through her hands, the way she stated facts about mail. Hannah heard what lay beneath it: that some of the correspondents had stopped, and they had stopped for a reason that came first by telegram. The telegram came to Ada before anyone. Ada knew things by their shapes in the mail before anyone in town knew them by their names.
+She said it neutrally. Hannah heard what lay beneath it: that some of the correspondents had stopped, and they had stopped for a reason that came first by telegram. The telegram came to Ada before anyone. Ada knew things by their shapes in the mail before anyone in town knew them by their names.
 
 "Thank you," Hannah said.
 
@@ -86,7 +86,7 @@ She said it neutrally. She was stating an observable fact about the volume of ma
 
 She went home the long way.
 
-The long way added a quarter mile and went past the school, which was the nicer road in September — more trees, the road slightly sheltered from the harbor wind. She was not in a hurry. She wanted to walk and the road through town was where her feet went.
+The long way added a quarter mile and went past the school, which was the nicer road in September — more trees, the road slightly sheltered from the harbor wind.
 
 The school building sat at the north end, the old mill converted, the upper windows tall and south-facing for the loom light that was now classroom light. She passed the front entrance, the sign she had walked past since she was six: COLDWATER REACH HIGH SCHOOL. The building was quiet. School had been out more than an hour.
 
@@ -96,13 +96,11 @@ The afternoon sun came in from the west side, which meant the room's far side wa
 
 She stood on the road.
 
-He was doing something private. She could not see what was in his hands. She could see only his posture — the same posture he maintained in class, very straight, very contained, the quality that made you think at first he wasn't breathing until you caught the small adjustment of his head as he worked down a page. She had been in his class for two years. She had looked at that posture across a classroom for two years and she had thought: this is what a person looks like when they are keeping themselves in order. She did not know why she thought that. She just thought it.
+He was doing something private. She could not see what was in his hands. She could see only his posture — the same posture he maintained in class, very straight, very contained, the quality that made you think at first he wasn't breathing until you caught the small adjustment of his head as he worked down a page. She had been in his class for two years. She had looked at that posture across a classroom for two years.
 
-From the road, through the glass, he looked like a man doing what you'd expect him to be doing after four on a school day. He looked settled. He looked like someone whose stillness had a reason she couldn't see from where she was standing.
+From the road, through the glass, he looked like a man doing what you'd expect him to be doing after four on a school day. He looked like someone whose stillness had a reason she couldn't see from where she was standing.
 
 She thought: she had just put a letter in the outgoing mail that did not say the things that were actually happening on the farm. Her father was out at the north pasture fence right now, speaking Bavarian German with a man from Regensburg about posts and frozen ground. Her mother was upstairs moving through the house on tasks Hannah couldn't follow. Ada Gile stood at her counter knowing things by their envelopes that the families of those men did not yet know by name. And Marcus Klein was sitting in his classroom after four in the afternoon reading something by a lamp he did not need to keep lit for anyone who required it of him.
-
-Everyone in this town was keeping something. She thought it the way she'd noted the fog that morning — as a fact about the weather.
 
 She walked on.
 

@@ -4,9 +4,11 @@ import { runThreads } from "./phases/threads.js";
 import { runDrafter } from "./phases/drafter.js";
 import { runEditor } from "./phases/editor.js";
 import { runEditorContinuity } from "./phases/editor-continuity.js";
+import { runEditorCompression } from "./phases/editor-compression.js";
 import { runEditorPacing } from "./phases/editor-pacing.js";
 import { runEditorVoice } from "./phases/editor-voice.js";
 import { runReader } from "./phases/reader.js";
+import { runContinuityFactAudit } from "./phases/continuity-fact-audit.js";
 import { runRepairFactNormalize } from "./phases/repair-fact-normalize.js";
 import { readCostSummary, formatCostSummary } from "./runlog.js";
 
@@ -17,12 +19,14 @@ export type PhaseName =
   | "drafter"
   | "editor"
   | "editor-continuity"
+  | "editor-compression"
   | "editor-pacing"
   | "editor-voice"
   | "reader"
+  | "continuity-fact-audit"
   | "repair-fact-normalize";
 
-/** Phases that `cdk run` iterates through. `editor` here expands into all three sub-passes. Repair phases are opt-in via `cdk repair`. */
+/** Phases that `cdk run` iterates through. `editor` here expands into all four sub-passes. Repair phases are opt-in via `cdk repair`. */
 export const RUN_ALL_PHASES: PhaseName[] = [
   "architect",
   "plotter",
@@ -30,12 +34,14 @@ export const RUN_ALL_PHASES: PhaseName[] = [
   "drafter",
   "editor",
   "reader",
+  "continuity-fact-audit",
 ];
 
 /** Every phase name `cdk phase ...` accepts. */
 export const ALL_PHASE_NAMES: PhaseName[] = [
   ...RUN_ALL_PHASES,
   "editor-continuity",
+  "editor-compression",
   "editor-pacing",
   "editor-voice",
   "repair-fact-normalize",
@@ -55,12 +61,16 @@ export async function runPhase(phase: PhaseName, projectRoot: string) {
       return runEditor(projectRoot);
     case "editor-continuity":
       return runEditorContinuity(projectRoot);
+    case "editor-compression":
+      return runEditorCompression(projectRoot);
     case "editor-pacing":
       return runEditorPacing(projectRoot);
     case "editor-voice":
       return runEditorVoice(projectRoot);
     case "reader":
       return runReader(projectRoot);
+    case "continuity-fact-audit":
+      return runContinuityFactAudit(projectRoot);
     case "repair-fact-normalize":
       return runRepairFactNormalize(projectRoot);
   }

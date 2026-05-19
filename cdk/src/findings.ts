@@ -101,3 +101,14 @@ export function filterByMinSeverity(
   const rank: Record<Severity, number> = { critical: 4, high: 3, medium: 2, low: 1 };
   return findings.filter((f) => rank[f.severity] >= rank[minSeverity]);
 }
+
+/** Append new findings to the existing findings.json (or create it if missing). Dedupes by id; later additions win for duplicate ids. */
+export async function appendFindings(projectRoot: string, newFindings: Finding[]): Promise<string> {
+  const existing = await readFindings(projectRoot);
+  const existingFindings = existing?.findings ?? [];
+  const byId = new Map<string, Finding>();
+  for (const f of existingFindings) byId.set(f.id, f);
+  for (const f of newFindings) byId.set(f.id, f);
+  const combined = Array.from(byId.values());
+  return writeFindings(projectRoot, combined);
+}

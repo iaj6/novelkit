@@ -36,13 +36,13 @@ She found her pocketknife and opened the small blade and cut around the wax at t
 
 The paper inside was dry. She turned the bottle over and the roll dropped into her palm. She unrolled it on the table.
 
-She recognized the handwriting before she had read a single word. The particular form of the letter *r* — a gesture in two strokes, not three, a habit she had never corrected because correcting it would require noticing it. The hard black full stop at the end of each sentence. The slight leftward lean of her capital T. The spacing between words, which was slightly too wide, and which she had kept since she was twelve years old.
+She recognized the handwriting before she had read a single word. The particular form of the letter *r* — a gesture in two strokes, not three, a habit she had never corrected. The hard black full stop at the end of each sentence. The slight leftward lean of her capital T. The spacing between words, which was slightly too wide, and which she had kept since she was twelve years old.
 
 She read the message.
 
 Three short lines and a closing instruction. She read it a second time. The kettle began to knock on the range.
 
-The first line said the *Morven* would come on Tuesday, not Wednesday, and that the forward crate would have a cracked demijohn. She knew the *Morven* was due Wednesday.
+The first line said the *Morven* would come on Tuesday, not Wednesday, and that the forward crate would have a cracked demijohn.
 
 The second and third lines described other things. Not large things. They were precise enough that she could not write them off as coincidence if they occurred, and ordinary enough that she could not disprove them in advance. She looked at the lines again, at the hand that had written them. There was the *r*. There was the T.
 
@@ -60,6 +60,6 @@ She rolled the message carefully and eased it back into the bottle. The cork sea
 
 The second winding was at 08:00. She climbed to the lamp room and wound the drum and noted the time. The beam swept the water in its four-second interval. The sea was gray and largely flat now, only a low swell from the northwest, the foam patches from the night dispersing.
 
-She stood at the east-facing glass for a minute past what the winding required. The iron stair was visible below, and the boulder shelf at its foot, and the line of basalt where she had found the bottle. From this height she could not see the crack. She could not see what was or was not in it.
+She stood at the east-facing glass for a minute past what the winding required. The iron stair was visible below, and the boulder shelf at its foot, and the line of basalt where she had found the bottle. From this height she could not see the crack.
 
 She went back downstairs.

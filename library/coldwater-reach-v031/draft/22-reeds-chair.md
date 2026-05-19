@@ -34,9 +34,9 @@ The knee told him the temperature. The winch accident had been 1937, on Murchie'
 
 He had known since July. Not known the way you'd be required to put it in a report — known the way you knew a thing when you'd been sitting in the same chair watching the same yard for eleven months. You learned the yard when nothing was happening. You learned the particular shape of each man's way of moving through it and what each man looked like when the movement had a reason and when it was looking for one. The youngest one had started going to the north fence line more than the work required. The girl had started appearing on the far side of the fence at times that corresponded.
 
-He had watched this by not watching it. There was a way to sit in a chair with your eyes open and your attention distributed across the whole yard that involved not directing your attention at the thing you weren't supposed to be seeing. He had not learned this method on this farm. He had learned it earlier, in other situations — on the boats, mostly, where you understood early that three men in a small space for fourteen hours needed a particular kind of privacy that wasn't available in any material sense and had to be manufactured from attention. You learned to see what you needed to see. The rest you saw and put somewhere that wasn't the front of your mind.
+He had watched this by not watching it. There was a way to sit in a chair with your eyes open and your attention distributed across the whole yard that involved not directing your attention at the thing you weren't supposed to be seeing. He had not learned this method on this farm. He had learned it earlier, in other situations — on the boats, mostly, where you understood early that three men in a small space for fourteen hours needed a particular kind of privacy that wasn't available in any material sense and had to be manufactured from attention.
 
-The word-cards had been obvious from the start. Cedar pieces, small enough to pass under a stone at the fence post — he'd seen the exchange more than once, English on one side, German on the other, a side going out and a different side coming back. He didn't read German. He didn't need to. He understood what the cards were for.
+The word-cards had been obvious from the start. Cedar pieces, small enough to pass under a stone at the fence post — he'd seen the exchange more than once, English on one side, German on the other, a side going out and a different side coming back. He didn't read German. He understood what the cards were for.
 
 He had been watching the youngest one for eleven months. What he had seen:
 
@@ -46,13 +46,13 @@ Lonzo took the flask out of his coat pocket and held it. He turned it in his han
 
 What filing the count accurately would cost: the Bangor provost marshal's office would send someone within two days. The man from Bangor would review the arrangement — the farm, the icehouse, the work contract, Lonzo's logs going back to November 1943. Reviews of arrangements, in Lonzo's experience, tended to conclude that the arrangement was the problem. The Pfeiffers would lose the labor. The four men would go somewhere with more supervision per man — not Houlton, somewhere stricter, somewhere appropriate for men whose guard had taken his eye off. The youngest one would go there with the others. Lonzo could not say what happened after that, because what happened after that was not his to say.
 
-He thought about what useful looked like, at sixty-one, with a bad knee, on a farm outside Coldwater Reach, with a folding camp chair and a rifle he hadn't fired at anything in two years. He thought about it the way you thought about whether a particular piece of line had another season in it. You assessed the condition. You made a judgment. The judgment was either that the line would hold or it wouldn't, and you made your call and lived with what the call cost you.
+He thought about what useful looked like, at sixty-one, with a bad knee, on a farm outside Coldwater Reach, with a folding camp chair and a rifle he hadn't fired at anything in two years. He thought about it the way you thought about whether a particular piece of line had another season in it. You made a judgment. The judgment was either that the line would hold or it wouldn't, and you made your call and lived with what the call cost you.
 
 He sat.
 
 ---
 
-At ten-fifteen he heard footsteps on the path from the direction of the ridge road. Light, careful on the gravel — the step of someone who knew how to move quietly and was doing so with a purpose. He heard the footsteps come around the barn corner and then the creak of the icehouse door opening and closing, and then nothing.
+At ten-fifteen he heard footsteps on the path from the direction of the ridge road. Light, careful on the gravel — the step of someone who knew how to move quietly. He heard the footsteps come around the barn corner and then the creak of the icehouse door opening and closing, and then nothing.
 
 He did not turn around.
 
@@ -66,7 +66,7 @@ The gray-bearded one: asleep. The big one: Bible closed, face to the wall now. T
 
 The youngest one was in his bunk. Eyes shut. Breathing even.
 
-Lonzo looked at him for the length of time it took to be certain of what he was looking at. Then he was certain. He did the rest of the lockup and went out.
+Lonzo looked at him for the length of time it took to be certain of what he was looking at. He did the rest of the lockup and went out.
 
 ---
 
@@ -78,8 +78,8 @@ The headcount book was still in his coat pocket. He did not take it out.
 
 *What does it cost*, he thought. *What does it cost.*
 
-He lay there with the question. He did not finish it. It was a question with the shape of something that wanted a number at the end — something you could put in a column and settle. He had looked at it long enough to know it was not that kind of question. Maybe it cost nothing. Maybe it cost something he didn't have a word for yet. He would find out or he wouldn't, and it would not be tonight, and there was nothing further to be done about it tonight.
+He lay there with the question. He did not finish it. It was a question with the shape of something that wanted a number at the end — something you could put in a column and settle. Maybe it cost nothing. Maybe it cost something he didn't have a word for yet. He would find out or he wouldn't, and it would not be tonight.
 
-Somewhere in the barn, one of the cows shifted in her stall with the sound of a large animal redistributing its weight — the sound of the world at night, the same sound it had been making since he was young enough that it was just the ordinary noise of things. He closed his eyes.
+Somewhere in the barn, one of the cows shifted in her stall with the sound of a large animal redistributing its weight. He closed his eyes.
 
 He went to sleep.

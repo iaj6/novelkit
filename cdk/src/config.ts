@@ -7,9 +7,11 @@ export type PhaseId =
   | "threads"
   | "drafter"
   | "editor-continuity"
+  | "editor-compression"
   | "editor-pacing"
   | "editor-voice"
   | "reader"
+  | "continuity-fact-audit"
   | "repair-fact-normalize";
 
 export type Config = {
@@ -25,9 +27,11 @@ const DEFAULT_MAX_TURNS: Record<PhaseId, number> = {
   threads: 40,
   drafter: 30,
   "editor-continuity": 40,
+  "editor-compression": 40,
   "editor-pacing": 40,
   "editor-voice": 40,
   reader: 50,
+  "continuity-fact-audit": 80,
   "repair-fact-normalize": 30,
 };
 

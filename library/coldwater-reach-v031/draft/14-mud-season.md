@@ -14,17 +14,17 @@ Today she was eighteen.
 
 Her mother had set the plate before anyone came down.
 
-It was a cake in the way you could call it that — flat, pale, the color of the inside of a winter potato, which was to say a kind of beige that was almost white, which was to say it had no icing because there was no sugar for icing, and the texture when she cut it was somewhere between dense bread and the thing it was trying to be. There was a hint of sweetness in the smell. Whatever Mutti had found to sweeten it — the last of the powdered milk, something put by — had worked partway.
+It was a cake in the way you could call it that — flat, pale, the color of the inside of a winter potato, which was to say it had no icing because there was no sugar for icing, and the texture when she cut it was somewhere between dense bread and the thing it was trying to be. There was a hint of sweetness in the smell. Whatever Mutti had found to sweeten it — the last of the powdered milk, something put by — had worked partway.
 
 Her father looked at the cake. Then he looked at her.
 
 *Herzlichen Glückwunsch, Hannchen.*
 
-Hannchen. She had been too old for Hannchen since she was twelve and she knew it the way she knew which boards in the upstairs hall would creak if you stepped on the left side rather than the right — perfectly, without minding. He had been calling her Hannchen since before she could remember him calling her anything else. She was too old for it. He was still using it.
+Hannchen. She had been too old for Hannchen since she was twelve and she knew it the way she knew which boards in the upstairs hall would creak if you stepped on the left side rather than the right — perfectly, without minding. He had been calling her Hannchen since before she could remember him calling her anything else.
 
 *Danke, Vater.*
 
-She ate the cake. It was not bad. It was dry and only faintly sweet and the texture was wrong, but it was cake in the sense that counted: her mother had made it and set it on the plate and it was on the table in the morning like proof of a thing that didn't require saying aloud. Her mother sat with her coffee and said nothing, which was usual. What was different was the angle of her — a slight orientation toward Hannah rather than away, the quality of the silence altered by a degree or two from its ordinary direction. She was paying attention. She was present at the birthday in the way that didn't produce words but was present nonetheless.
+She ate the cake. It was not bad. It was dry and only faintly sweet and the texture was wrong, but it was cake in the sense that counted: her mother had made it and set it on the plate and it was on the table in the morning like proof of a thing that didn't require saying aloud. Her mother sat with her coffee and said nothing, which was usual. What was different was the angle of her — a slight orientation toward Hannah rather than away, the quality of the silence altered by a degree or two from its ordinary direction.
 
 Hannah finished the cake and washed the plate and put her coat on.
 
@@ -56,9 +56,9 @@ He moved on to the next term on the lesson sheet. Curtis Aiken in the front row 
 
 She looked at what she'd written.
 
-The word-cards she left on the fence post were six inches by two, cedar planks from the butter boxes, English on the left and German on the right, a ruled pencil line down the center. Barn and Scheune. Gate and Tor. Harbor and Hafen. They were about naming things: the right German word for the world of the farm, the right English word for the world Karl was learning. But *mündig* was not about naming things. *Mündig* was about whose voice the naming came from. Who had the right to put the name in.
+The word-cards she left on the fence post were six inches by two, cedar planks from the butter boxes, English on the left and German on the right, a ruled pencil line down the center. Barn and Scheune. Gate and Tor. Harbor and Hafen. They were about naming things: the right German word for the world of the farm, the right English word for the world Karl was learning. But *mündig* was not about naming things. *Mündig* was about whose voice the naming came from.
 
-She was eighteen today. *Hannchen* was too old for *Hannchen* and Vater still called her that, and Marcus Klein had written the German word for the thing she was becoming on the board, and the root of it was *Mund*, and she had understood it before he finished saying it.
+She was eighteen today. *Hannchen* was too old for *Hannchen* and Vater still called her that, and Marcus Klein had written the German word for the thing she was becoming on the board, and the root of it was *Mund*.
 
 She underlined what she had written and turned the page.
 
@@ -68,15 +68,15 @@ She heard the post-driving before she reached the fence — the dull percussion 
 
 Karl had shed his jacket and was working the line of posts along the near edge of the north field, not his usual south yard assignment but spring work, the fence-repair work that came out when the ground softened enough to take posts. He worked the twelve-pound sledge with both hands, raising it square and bringing it down on the post-cap with the accuracy of someone who has learned to let the weight do the labor rather than fighting it. The post took it and went in another inch. He raised the sledge again.
 
-She said, in English, before she had decided to: "Today I am eighteen."
+She said, in English: "Today I am eighteen."
 
-He set the sledge down — handle against the post, the motion unhurried — and looked at her. She could see the English working through him: *today, I, am, eighteen.* The sentence assembling itself into its meaning.
+He set the sledge down — handle against the post, the motion unhurried — and looked at her. She could see the English working through him: *today, I, am, eighteen.*
 
 "I see," he said.
 
 Then, in German: *Glückwunsch.*
 
-Not *Herzlichen Glückwunsch* — not the full ceremony. Just *Glückwunsch.* Said without decoration, in the tone he had for things he meant: not dressed up, just accurate. The same tone he'd used for *Ich auch* in November — placing himself in the same sentence she had opened, not making more of it than the sentence required.
+Not *Herzlichen Glückwunsch* — not the full ceremony. Just *Glückwunsch.* Said without decoration, in the tone he had for things he meant: not dressed up, just accurate. The same tone he'd used for *Ich auch* in November.
 
 She nodded. She walked home.
 
@@ -98,7 +98,7 @@ Hannah washed her hands at the kitchen basin and sat down and opened it.
 
 *Alles Gute, dein Rolf*
 
-He had written her name at the top of the letter in the hand she recognized from every letter he'd sent — the letters slightly larger than they needed to be, the r in Hannah rounded like he was drawing it, the H at the crossbar a little uncertain. He was not a natural writer. He put potatoes in his letters home because that was what he knew how to say. He thought about the north corner. He thought about the farm.
+He had written her name at the top of the letter in the hand she recognized from every letter he'd sent — the letters slightly larger than they needed to be, the r in Hannah rounded like he was drawing it, the H at the crossbar a little uncertain. He put potatoes in his letters home. He thought about the north corner. He thought about the farm.
 
 She read it again.
 
@@ -132,7 +132,7 @@ After she washed the dishes she took Rolf's pen and the V-Mail form from the des
 
 *Hannah*
 
-She didn't write: Marcus Klein said *mündig* today and I wrote it in the margin of my notebook and thought about it for most of the afternoon. She didn't write: Karl said *Glückwunsch* at the fence and I went home. Rolf needed to know about the potatoes. He needed to know the farm was the same.
+She didn't write: Marcus Klein said *mündig* today and I wrote it in the margin of my notebook and thought about it for most of the afternoon. She didn't write: Karl said *Glückwunsch* at the fence and I went home.
 
 She folded the form and left it on the counter to post in the morning.
 

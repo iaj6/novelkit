@@ -34,7 +34,7 @@ He knew how to work a library. He had worked the university reading room in Vien
 
 Microfilm, the reference librarian said. She was a precise woman of perhaps forty-five who wore her glasses on a cord and handled the request with the manner of someone who has found all requests to be reasonable at the level of category, if not always at the level of execution.
 
-He sat at the reader and moved through the October issues at a working pace — not hurried, not slow. The *Bangor Daily News* ran its shipping notices on the third page of each edition, in a narrow column of compressed type: vessel names, ports of origin, tonnage when significant, Portland arrivals and departures listed separately from the Bangor and Rockland columns. He had verified this format before making the trip. He had verified the library's holdings. He had done this kind of work many times in many languages and was not sentimental about the mechanics of it; the mechanics were the point.
+He sat at the reader and moved through the October issues at a working pace — not hurried, not slow. The *Bangor Daily News* ran its shipping notices on the third page of each edition, in a narrow column of compressed type: vessel names, ports of origin, tonnage when significant, Portland arrivals and departures listed separately from the Bangor and Rockland columns. He had verified this format before making the trip. He had verified the library's holdings. He had done this kind of work many times in many languages; the mechanics were the point.
 
 October 8th issue. Portland column:
 
@@ -46,7 +46,7 @@ October 13th issue:
 
 *SS Ångermanälven, dep. Portland Oct. 12, bound Halifax.*
 
-He paused on that. Arrived the seventh, departed the twelfth: five days in Portland. Ada Gile had said the postcard carried a Portland postmark and had been received the first week of October. The ship was in port through the twelfth. Someone had mailed a postcard from Portland to a general delivery address in a small coastal town, and five days later a man had gone into the water during a passage from Portland to Halifax.
+He paused on that. Arrived the seventh, departed the twelfth: five days in Portland. Ada Gile had said the postcard carried a Portland postmark and had been received the first week of October. The ship was in port through the twelfth. Someone had mailed a postcard from Portland to a small Maine harbor town's general delivery — a date, a time — addressed to the name he sailed under. He came to the town. He died on the night of October ninth, or the night of October tenth, or sometime in the three days afterward, and three days later he was on the breakwater.
 
 He took out his notebook and wrote, in Kurrent: *Å. Ankunft Portland 7. Okt. Abfahrt 12. Okt.*
 
@@ -62,7 +62,7 @@ The name was complete now. Not *A. Schell*, with its administrative flatness, it
 
 He took the notebook out again and wrote: *August Schell. Deutsch. Schwed. Staatsbürger. Geb. ca. 1903. Ångermanälven. Okt. '43.* Not a summary; a fixing of facts in the form he used for things that needed to hold their shape. He looked at the page for a moment. Then he put the notebook in his coat pocket, stood up from the reader, and returned the microfilm to the reference librarian.
 
-She thanked him for coming in on such a warm day. He thanked her for the access. Both statements were courteous and accurate.
+She thanked him for coming in on such a warm day. He thanked her for the access.
 
 ---
 
@@ -74,7 +74,7 @@ The argument was careful and, in one place where it addressed a competing claim 
 
 Then he returned the envelope to the desk, said goodbye to the librarian — who was occupied with a boy's schoolbook question and acknowledged him with a nod — and went outside and ate the apples and the ginger snaps on a bench in the August sun.
 
-He had known the article would be exactly as good as the abstract had suggested. He had been correct.
+He had known the article would be exactly as good as the abstract had suggested.
 
 ---
 
@@ -86,7 +86,7 @@ He thought about August Schell.
 
 *German national, Swedish citizen.* Born, by the arithmetic of *age approximately 40*, somewhere around 1903. Which meant thirty-five when the Anschluss happened — when the annexation folded Austria into the Reich and made the taxonomy of what the state owned and what it would do a single category regardless of where you were born within its new perimeter. Thirty-seven when France fell. Thirty-nine when Marcus arrived in Coldwater Reach in March 1942.
 
-A man who had — at some point in the decade between 1930 and 1940 — left Germany, or acquired Swedish citizenship, or both in some sequence, and was sailing neutral merchant vessels through Atlantic waters in wartime under a Swedish flag. This was a specific biography. Neutral ships were not safe. They ran the same water as military tonnage and took torpedoes from submarines that couldn't always read flags in the North Atlantic winter. Sailing that water on a German name with Swedish papers required a particular calculation — the calculation you made when the alternative was to become legible to a state that had stopped being interested in your continued existence as a free person.
+A man who had — at some point in the decade between 1930 and 1940 — left Germany, or acquired Swedish citizenship, or both in some sequence, and was sailing neutral merchant vessels through Atlantic waters in wartime under a Swedish flag. Neutral ships were not safe. They ran the same water as military tonnage and took torpedoes from submarines that couldn't always read flags in the North Atlantic winter. Sailing that water on a German name with Swedish papers required a particular calculation — the calculation you made when the alternative was to become legible to a state that had stopped being interested in your continued existence as a free person.
 
 Marcus recognized the arithmetic of that calculation. Not from having made it himself in that form — his route had run overland, through documents of a different kind, and he had arrived here by a different sequence of rooms. But the shape of the calculation was familiar. He knew what it looked like from a particular kind of inside.
 
@@ -96,7 +96,7 @@ Of this Marcus was nearly certain, with the certainty that belongs to a man who 
 
 What the evidence said: a German-born man with Swedish citizenship sailed a neutral merchant vessel into Portland in the first week of October 1943. A postcard went out from Portland to a small Maine harbor town's general delivery — a date, a time — addressed to the name he sailed under. He came to the town. He died on the night of October ninth, or the night of October tenth, or sometime in the three days afterward, and three days later he was on the breakwater.
 
-What Marcus had brought to the evidence: the recognition of a certain kind of displacement. A man who had made himself difficult to find on paper while continuing to move through the world — who had become, in the technical German sense, *staatenlos* in everything but the letter of the documents, because the state that might have claimed him was a state he had chosen not to belong to. This was not the profile of an agent. This was the profile of a man trying to remain alive and useful in a world where those conditions had become complicated.
+What Marcus had brought to the evidence: the recognition of a certain kind of displacement. A man who had made himself difficult to find on paper while continuing to move through the world — who had become, in the technical German sense, *staatenlos* in everything but the letter of the documents, because the state that might have claimed him was a state he had chosen not to belong to. This was the profile of a man trying to remain alive and useful in a world where those conditions had become complicated.
 
 He came for the meeting. He drowned in a storm. Nobody knew what had happened at the pier.
 
@@ -105,8 +105,6 @@ Marcus held the reading, and held the uncertainty inside it, and watched the las
 The Harrington marshes came in on the left. The smell of the coast arrived through the bus window before the road turned back toward it — salt, low-tide mud, the particular cool that the sea put into the air even in August.
 
 He thought, without urgency, about whether to say anything to anyone. To Henry. To Eira Bowman, who was after all the person whose professional work made the question hers by right. To Commander Whitmore at the naval district, theoretically, although that would require an explanation of how a high school teacher came to be working the periodicals room in Bangor on a Wednesday in August, and the explanation would change the question from what had happened to what Marcus was doing asking.
-
-He thought about it in the manner of a man who has already answered a question and is reviewing the answer.
 
 He was not going to say anything.
 
@@ -130,8 +128,8 @@ Then he went up the porch steps and in through the door.
 
 Lillian said supper was in ten minutes.
 
-Henry looked up from the newspaper and said nothing, which was his way of acknowledging that Marcus was back.
+Henry looked up from the newspaper and said nothing.
 
 Marcus put his coat on the hook by the door. He could feel the notebook in the inside pocket — the slight weight of it, the hard cover against the cloth. He went to the kitchen sink and washed his hands and stayed at the water a moment longer than he needed to, not thinking about anything in particular, watching the water run. Then he dried his hands on the kitchen towel and turned to find his chair.
 
-The elm outside the window had given up its light. The kitchen smelled of the corned beef hash Lillian made when she had the red points for it. Henry turned a page of the newspaper. Outside, somewhere, a car passed on Reach Road, and then the street was quiet, and the evening settled into the ordinary shape of an evening at the Crow house.
+The elm outside the window had given up its light. The kitchen smelled of the corned beef hash Lillian made when she had the red points for it. Henry turned a page of the newspaper. Outside, somewhere, a car passed on Reach Road, and then the street was quiet.

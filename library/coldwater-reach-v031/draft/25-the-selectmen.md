@@ -8,9 +8,9 @@ She heard him before she saw him — the quality of footsteps on the pier planki
 
 Dwight Orcutt came in.
 
-He was a big man, well-fed in the particular way of men who had not found the war inconvenient in the usual ways. Good dark wool coat; the gray scarf he had been wearing since about 1940. Somewhere under forty, not called up. She had heard a murmur mentioned, though not confirmed. He was on the selectmen because his uncle was Briggs Orcutt, who ran the fish-buying operation from the south pier, and because Dwight had the kind of good intentions that made him comfortable holding authority he had never had to earn. He was not a malicious man.
+He was a big man, well-fed in the particular way of men who had not found the war inconvenient in the usual ways. Good dark wool coat; the gray scarf he had been wearing since about 1940. Somewhere under forty, not called up. She had heard a murmur mentioned, though not confirmed. He was on the selectmen because his uncle was Briggs Orcutt, who ran the fish-buying operation from the south pier, and because Dwight had the kind of good intentions that made him comfortable holding authority he had never had to earn.
 
-He surveyed the office — her desk, the ledgers, the windows overlooking the anchorage, the chart cabinet against the wall — and he looked at the chair across from the desk and sat in it. She had not offered the chair. He was the kind of man who would not have waited for the offer; not rudeness, exactly, but the practiced ease of a man who expected to be received without condition.
+He surveyed the office — her desk, the ledgers, the windows overlooking the anchorage, the chart cabinet against the wall — and he looked at the chair across from the desk and sat in it. She had not offered the chair.
 
 "Morning, Eira," he said.
 
@@ -22,7 +22,7 @@ He put his elbows on his knees and looked out at the anchorage. Three boats on t
 
 "Two inches." She returned to her figures. "Gone by Thursday."
 
-He nodded at the anchorage and did not say anything for a moment. She moved the mooring count from the scrap sheet to the report. Fourteen active through October. Two vacated. The harbor's revenue was a modest thing and was not the point; the harbor existed because the harbor had to exist and her job was to manage it correctly.
+He nodded at the anchorage and did not say anything for a moment. She moved the mooring count from the scrap sheet to the report. Fourteen active through October. Two vacated.
 
 "Howie Beal is coming home," Orcutt said.
 
@@ -30,7 +30,7 @@ She set down her pen and looked at him.
 
 "December, they think. His family had a letter." He opened his hands toward the window, a gesture in the direction of civic warmth. "The town is glad. He was the marine engineer on the *Sentinel* before he signed up — knows the harbor as well as most men. He'll need something to come back to."
 
-She had known Howie Beal by sight and little more. Marine engineer, competent by reputation. They had spoken perhaps six times over the years: on the pier, once at a civil defense wardens' meeting in the winter of 1943. A capable man; she had no reason to doubt it.
+She had known Howie Beal by sight and little more. Marine engineer, competent by reputation. They had spoken perhaps six times over the years: on the pier, once at a civil defense wardens' meeting in the winter of 1943.
 
 "Is Howie interested in harbor management?" she said.
 
@@ -38,7 +38,7 @@ The small shift of Orcutt's hands on his knees. "Well. He'll need work he knows.
 
 "I imagine he will."
 
-"The harbor's a natural fit. There'll be men coming home who'll need reintegration into the work they know. That's the situation we're all facing. The harbor's a natural fit for a man like Howie." He paused, the pause of a man approaching the sentence he had come to say. "He could learn the administrative side, with time."
+"The harbor's a natural fit. There'll be men coming home who'll need reintegration into the work they know. That's the situation we're all facing. The harbor's a natural fit for a man like Howie." He paused. "He could learn the administrative side, with time."
 
 "The administrative side is the job, Dwight."
 
@@ -52,9 +52,9 @@ The pause lasted perhaps three seconds. He stood.
 
 "I expect we'll have occasion to speak again," he said.
 
-"My door's open," she said. It was not an invitation.
+"My door's open," she said.
 
-He went to the door. He was too careful a man for slamming; the door was too heavy in any case. But the click of the latch as it caught had a quality she registered the way she registered the barometer: a specific pressure, worth noting, filed.
+He went to the door. He was too careful a man for slamming; the door was too heavy in any case. But the click of the latch as it caught had a quality she registered the way she registered the barometer.
 
 ---
 
@@ -62,31 +62,27 @@ She stood at the window.
 
 The anchorage was quiet. Three boats, the float line, the white breakwater cap. Beyond the breakwater the water ran pewter-gray to a horizon she could not find today — sky and sea nearly the same color, the line between them somewhere out in the cold she could not see. The Lighthouse Service tender due in on Friday if the weather held.
 
-She had been making this argument since November 1935.
-
-When Howie Beal came home in December she would be at this desk.
-
 She went back to her desk and finished the remaining columns of the report in ink. Then she crossed to the chart cabinet.
 
 ---
 
 Five drawers, pine, painted gray. Owen had bought the cabinet in 1924 from a chandler in Machias who was closing his shop; she could still see, faintly, the price chalked on the back of the second drawer when you pulled it all the way out. She opened the fourth drawer from the top — the main chart drawer, the working charts for the harbor and its approaches — and took it out entirely and set it on the desk.
 
-Twenty-three folders, Owen's hand on every tab: the dates he had first created each one, from 1922 through 1935. Not the chart dates but the folder dates — when he had opened that file and made it his. She knew his handwriting the way you knew a handwriting read over years: the slant, the flat crossbar on his sevens, the particular width of his capital letters. In the first months after Owen died she had thought she would reorganize the drawer. She had not. She had opened it daily, taken what she needed, replaced it when she was done. The system worked; there was no urgent reason to change it; the harbor's work got done. She had told herself this for nine years, and every word of it was true.
+Twenty-three folders, Owen's hand on every tab: the dates he had first created each one, from 1922 through 1935. Not the chart dates but the folder dates — when he had opened that file and made it his. She knew his handwriting the way you knew a handwriting read over years: the slant, the flat crossbar on his sevens, the particular width of his capital letters. In the first months after Owen died she had thought she would reorganize the drawer. She had not. She had opened it daily, taken what she needed, replaced it when she was done. The system worked; there was no urgent reason to change it; the harbor's work got done.
 
 She pulled the first folder at random: June 1927. Harbor chart, inner anchorage. Owen's hand from that year: the mooring field as it had been, twenty-seven moorings in two rows, each one noted with his shorthand for the mooring type and the holding ground, his soundings in fathoms taken from a dinghy on a calm August day she could not have been present for. In the lower right corner, in her own hand, a penciled note from April 1940: the reconfiguration she had done after six outer-row moorings came out of service, the spacing adjusted, the coordinates updated. She had dated her addition. His folder date was June 1927; her notation was April 1940; the chart held fourteen years of the harbor's changes in both their hands.
 
 She set it aside and pulled another: August 1929. The approach chart for the harbor mouth, the bar at the south side. Owen's original soundings in his notation — fathoms in a diamond symbol, every buoy position in his shorthand. Her addendum from 1938 after the first dredge run, and again from 1941 after the second — she had used a smaller symbol for her own soundings to keep them legible against his, a circled figure where he had used the diamond. The paper was the good linen stock the chandler in Machias had stocked before the war took the supply; it had held up well through the years of daily handling.
 
-She went through all twenty-three folders. Each one she opened, checked the chart inside, set it face-up on the desk in its group. When she had seen them all she had the full picture.
+She went through all twenty-three folders. Each one she opened, checked the chart inside, set it face-up on the desk in its group.
 
 She made seven new folders from the card stock on the supply shelf and labeled them in her hand: *Approach — outer*, *Approach — inner*, *Anchorage — main field*, *Anchorage — winter moorings*, *Buoy positions*, *Tide records*, *Maintenance*. Owen had filed by date of creation because that was how he had thought — by when things had occurred, what year the harbor had been in what condition. She thought by function: what a chart was for, what it answered, where you went in the drawer when you needed to know a specific kind of thing.
 
-She moved each chart from his folders to hers. His original folder tabs she discarded — they were the filing mechanism, not the record — but his dates in the corners of the charts themselves she left exactly where they were. His hand in the corners, her hand in the margins and on the new labels. When she came to charts she had drawn entirely herself — the 1941 post-dredge approach charts, the mooring-field schedule she had redrawn from scratch in 1942 when the configuration changed again — she filed them alongside his in the same functional folders, in date order within the category. Her charts rested next to his in the same drawer.
+She moved each chart from his folders to hers. His original folder tabs she discarded, but his dates in the corners of the charts themselves she left exactly where they were. His hand in the corners, her hand in the margins and on the new labels. When she came to charts she had drawn entirely herself — the 1941 post-dredge approach charts, the mooring-field schedule she had redrawn from scratch in 1942 when the configuration changed again — she filed them alongside his in the same functional folders, in date order within the category.
 
 It was past four when she finished. She checked each new folder in sequence, confirmed the contents, confirmed the label. She slid the drawer back into the cabinet. The wood moved cleanly on the runners and seated at the bottom with an even stop.
 
-She stood with her hand on the drawer front for a moment. Seven labels in her hand. Owen's dates still in every corner of every chart back to 1922. She had not covered anything. She had not erased anything. She had made room.
+She stood with her hand on the drawer front for a moment. Seven labels in her hand. Owen's dates still in every corner of every chart back to 1922. She had made room.
 
 She washed her hands at the basin — pencil dust and old paper, the brown edge of linen that had been handled for a long time — and put the kettle on and made coffee and stood at the window while the harbor went to its late-afternoon color. The snow on the breakwater cap had been worked off by what thin sun there was. The boats sat easy on their moorings; the water in the anchorage flattened toward evening, the light going off it.
 
@@ -100,7 +96,7 @@ His oilskin coat was on the hook by the door.
 
 She hung her coat on the hook beside it and went into the kitchen and put the kettle on.
 
-The tea came up. She stood at the kitchen table and drank it without sitting, without adding anything to it. The kitchen window gave onto the back lot, dark now, the fence top a pale line where the snow still held. The temperature was dropping; she could feel it at the window glass. She would need to check the mooring lines in the morning before the day's work started. The Lighthouse Service tender on Friday. The quarterly report on the first.
+The tea came up. She stood at the kitchen table and drank it without adding anything to it. The kitchen window gave onto the back lot, dark now, the fence top a pale line where the snow still held. The temperature was dropping; she could feel it at the window glass. She would need to check the mooring lines in the morning before the day's work started. The Lighthouse Service tender on Friday. The quarterly report on the first.
 
 She rinsed the cup and set it on the shelf.
 

@@ -4,7 +4,7 @@ The schedule came to him near the end of Mrs. Farwell's circuit — she distribu
 
 *Klein, M. German I, MWF 8–9. German II, MWF 9–10. Latin I, TR 10–11. Latin III, TR 1–2.*
 
-He refolded it along its original crease and set it beside his pen. Fenn was already on the gymnasium floor — a warping in the stage corner, Henry Crow's November report laying out the dimensions of it, the question of a portable drying heater before spring — and Marcus attended with the portion of himself he kept available for institutional proceedings. He had no standing on the gymnasium floor and nothing to contribute to it. He noted that a warping existed and would require resolution and understood he was not the relevant party.
+He refolded it along its original crease and set it beside his pen. Fenn was already on the gymnasium floor — a warping in the stage corner, Henry Crow's November report laying out the dimensions of it, the question of a portable drying heater before spring — and Marcus attended with the portion of himself he kept available for institutional proceedings. He had no standing on the gymnasium floor and nothing to contribute to it.
 
 The meeting room was cold. The old mill building stored whatever temperature came in at the windows and accumulated it in the upper air, which meant that in January the high ceiling was the temperature of January and the chairs were the temperature of the high ceiling. He was in the older suit — Thursday — and had worn the long wool scarf over it, which was inadequate but better than nothing, and had left the scarf on the back of his chair where it was doing no work. The walk from the Crow house had been twenty minutes at fifteen degrees; the walk back would be the same, in light that was already thinning toward its winter end.
 
@@ -24,7 +24,7 @@ She waited at the table while he stood at the hook. The last footstep had recede
 
 She said: at the December board meeting there had been some talk.
 
-She said it steadily, without the apologetic framing some people applied to difficult information, as if the apology could absorb some of the impact and leave both parties less exposed. He found the absence of this useful. He listened.
+She said it steadily, without the apologetic framing some people applied to difficult information. He found the absence of this useful.
 
 She said: concern from some parents. About the appropriateness of the appointment. After the holidays there might be a formal item on the board's agenda.
 
@@ -40,7 +40,7 @@ She said: I wanted you to hear it from someone who thought it mattered that you 
 
 He said: I appreciate it. He said: I mean both sentences.
 
-She nodded once, gathered her coat from the nearest hook, and went out. She had a class in four minutes, and she was not a person who lingered past the point of use. He stood at the table where she had been sitting and looked at the window — a long horizontal strip of pale January sky, the color that in Vienna would have suggested snow but here was simply the sky's winter expression — and then put on his coat and went downstairs.
+She nodded once, gathered her coat from the nearest hook, and went out. He stood at the table where she had been sitting and looked at the window — a long horizontal strip of pale January sky, the color that in Vienna would have suggested snow but here was simply the sky's winter expression — and then put on his coat and went downstairs.
 
 ---
 
@@ -54,15 +54,15 @@ Curtis Aiken was in the second row and treated every grammatical construction as
 
 Marcus said: because *because* claims to understand the causal relationship between the events. The ablative absolute does not claim this. It says: here was the prior condition; here is what had already occurred. The main action then proceeds. Whether the second event happened *because of* the first, or merely *after* it, is left to the reader's understanding. The Latin declines to overstate what it knows.
 
-Aiken looked at his notes. He wrote something. The two girls in the front row were writing simultaneously at the same pace, a phenomenon Marcus had observed since September without arriving at a satisfying explanation.
+Aiken looked at his notes. He wrote something. The two girls in the front row were writing simultaneously at the same pace.
 
-He gave the second example, the third. He had the class construct a fourth from components he placed on the board in disordered form and watched them work through it — some from the verb, some from context, Aiken from the syntax outward. He moved through the remaining minutes with the working attention that was his most reliable classroom tool: the genuine interest he took in the material, which was real and which his students could distinguish from performed engagement even if they could not have said how. The ablative absolute interested him. The compression of it. The structural decision to allow an entire subordinate world to stand at the clause's edge in two words, present and contextual without requiring explanation.
+He gave the second example, the third. He had the class construct a fourth from components he placed on the board in disordered form and watched them work through it — some from the verb, some from context, Aiken from the syntax outward. He moved through the remaining minutes with the working attention that was his most reliable classroom tool: the genuine interest he took in the material. The ablative absolute interested him. The compression of it. The structural decision to allow an entire subordinate world to stand at the clause's edge in two words, present and contextual without requiring explanation.
 
 Aiken stayed after with a follow-on question about the range of participial forms available for the construction. Marcus resolved it in four minutes. Then the room was empty and he collected his papers and his coat.
 
 ---
 
-The walk back to the Crow house took twenty minutes. At the ridge point — eight minutes from the school, where the road crested before its descent to the north end of town — the harbor came in as smell rather than sight: brine and cold water and the diesel note of a working harbor that was still working. He had noted this point in his first October and in each season since. The smell was part of what the walk was. Not a comfort and not a discomfort. A datum: the harbor was down there, the town went about its business, the cold was seventeen degrees if it was anything and would be lower by supper.
+The walk back to the Crow house took twenty minutes. At the ridge point — eight minutes from the school, where the road crested before its descent to the north end of town — the harbor came in as smell rather than sight: brine and cold water and the diesel note of a working harbor that was still working. Not a comfort and not a discomfort.
 
 He thought, briefly, about the word *rumor*. He thought about what Henry Crow would say. Then he stopped thinking about it, because the walk required attention to the footing — the road had a thin glaze of compressed snow in the ruts — and he had time.
 
@@ -88,11 +88,11 @@ Marcus said: and when they act.
 
 Henry said: then you have a case. Right now you have a rumor.
 
-Marcus looked at the board. He moved his bishop to a square that secured nothing immediately but bought time, and thought about the logic of what Henry had said. It was not passivity. It was the deliberate practice of making the other party expose the shape of what they intended before you were required to respond to it. He had seen the principle deployed in settings considerably more consequential than a school board in a coastal Maine town — in Paris, in the late 1930s, among colleagues who were making very careful calculations about the direction from which the next thing would arrive. The instinct to pre-empt — to write letters establishing good faith, to appear cooperative before cooperation was requested — was the instinct that put you on record against a charge not yet defined. What you wanted, if what you wanted was a defensible position, was for the action to come from the other side, named and specific, of a shape that could be addressed on its own terms.
+Marcus looked at the board. He moved his bishop to a square that secured nothing immediately but bought time, and thought about the logic of what Henry had said. He had seen the principle deployed in settings considerably more consequential than a school board in a coastal Maine town — in Paris, in the late 1930s, among colleagues who were making very careful calculations about the direction from which the next thing would arrive. What you wanted, if what you wanted was a defensible position, was for the action to come from the other side, named and specific, of a shape that could be addressed on its own terms.
 
 Right now you have a rumor and a schedule with your name on it.
 
-Henry moved again. The game ran for another twenty minutes, and at some point during it Lillian came through from the back room and set two pieces of pie at the board's edges — apple, with a crust that held — and returned without comment. Marcus ate his and found it good. He noted this as a fact about the household, one of the accumulated small specific facts that made a place recognizable to itself: two years of Thursday evenings and this kitchen and this pie when there was pie and Henry's patience across the board, which was a form of patience Marcus had come to understand as a practice and not merely a quality. Henry won in thirty-four moves from a position Marcus had considered favorable to himself at move twenty. This was also consistent with the pattern.
+Henry moved again. The game ran for another twenty minutes, and at some point during it Lillian came through from the back room and set two pieces of pie at the board's edges — apple, with a crust that held — and returned without comment. Marcus ate his and found it good. Two years of Thursday evenings and this kitchen and this pie when there was pie and Henry's patience across the board. Henry won in thirty-four moves from a position Marcus had considered favorable to himself at move twenty.
 
 ---
 
@@ -110,8 +110,8 @@ He lay down on the bed without fully undressing — the furnace had not held the
 
 He thought about the word *Duldung*.
 
-The grammar was passive: one did not *dulden* oneself; one was *geduldet* by whoever held the relevant power and chose to exercise it in the permissive direction. He had occupied this position in several countries and knew its texture with precision — not acceptance, not welcome, not even the more reliable forms of indifference, but a space defined by someone else's tolerance, maintained at their discretion, sustained as long as it served their purposes to sustain it. It was not the condition of being *heimisch*, at home in a place in a way that required no effort or external permission or ongoing awareness of the permission. It was a different thing entirely. But it was a space. He had learned the specific value of the space in a year he did not review directly, in a particular room, when a man in a uniform had looked at his documents and then looked at him and had taken a long moment before arriving at his decision. He knew what it meant for the space to be revoked. He knew therefore what it meant for the space to hold.
+The grammar was passive: one did not *dulden* oneself; one was *geduldet* by whoever held the relevant power and chose to exercise it in the permissive direction. He had occupied this position in several countries and knew its texture with precision — not acceptance, not welcome, not even the more reliable forms of indifference, but a space defined by someone else's tolerance, maintained at their discretion, sustained as long as it served their purposes to sustain it. It was not the condition of being *heimisch*, at home in a place in a way that required no effort or external permission or ongoing awareness of the permission. But it was a space. He had learned the specific value of the space in a year he did not review directly, in a particular room, when a man in a uniform had looked at his documents and then looked at him and had taken a long moment before arriving at his decision. He knew what it meant for the space to be revoked. He knew therefore what it meant for the space to hold.
 
-His name was on the spring schedule. That was a fact. The spring term was what was in front of him.
+His name was on the spring schedule. The spring term was what was in front of him.
 
 He closed his eyes and lay still while the house settled around him in the cold, the furnace in its slow rhythm below, the January dark clear at the edge of the window, and did not think further.

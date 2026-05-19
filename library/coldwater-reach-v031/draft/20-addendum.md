@@ -12,7 +12,7 @@ She moved these to the right side of the desk.
 
 Then she opened the center drawer and took out a sheet of harbor office stationery.
 
-The stationery had the harbor office heading printed at the top — HARBOR OFFICE, COLDWATER REACH, MAINE — in a dark blue-green that had been close to black when the stock was new and had come out slightly paler in the last order, the ink thin in a way she had noted without yet complaining about. She placed the sheet square on the blotter in front of her. She took up her pen.
+The stationery had the harbor office heading printed at the top — HARBOR OFFICE, COLDWATER REACH, MAINE — in a dark blue-green that had been close to black when the stock was new and had come out slightly paler in the last order, the ink thin. She placed the sheet square on the blotter in front of her. She took up her pen.
 
 She wrote the date: *September 14, 1944.*
 
@@ -24,7 +24,7 @@ She looked at the heading. Then she wrote.
 
 *On the night of October 9, 1943, at approximately 0130 hours, the undersigned Harbor Master departed the harbor office and proceeded to the main pier to inspect the mooring bridle of the motor vessel Macomber, which was berthed at slip 4 on the south side of the pier. The mooring had been rigged the previous afternoon and the undersigned had noted in the vessel traffic log that conditions over the following sixteen hours would include gusting to 20–25 knots from the northwest, with an incoming swell from the south expected after midnight. In the undersigned's judgment the bridle was at risk of chafing against the starboard bollard as the wind shifted. The inspection was conducted at 0130 to allow time for adjustment before the first gusts of the incoming blow.*
 
-She wrote that in one pass without stopping. The handwriting was the same as it was in the harbor log: even, slightly compressed, legible at a working distance. This was the voice she used for official records. It was not a voice she had to think about.
+The handwriting was the same as it was in the harbor log: even, slightly compressed, legible at a working distance.
 
 *On proceeding to the pier, the undersigned observed a male individual at the far end of the public pier — the fixed structure south of the private vessel berths. The individual was standing still, facing the anchorage. He was carrying a canvas bag, single strap, worn over the right shoulder. He appeared to be in good physical condition. His clothing was consistent with maritime working dress. The undersigned did not recognize him as a resident of Coldwater Reach or as a known user of the harbor.*
 
@@ -38,7 +38,7 @@ She set down the pen. She read the last sentence. She picked up the pen.
 
 She stopped.
 
-She had been carrying the fact of that sentence for eleven months. She looked at it now. The sentence was six words. It stated a fact. It did not accuse, and it did not exonerate, and it was accurate.
+She had been carrying the fact of that sentence for eleven months. She looked at it now.
 
 She wrote the next sentence.
 
@@ -58,23 +58,23 @@ Then:
 
 She read it back.
 
-It took two minutes. The handwriting was even throughout — no place where she had pressed the pen harder or released it. She had written it in the same voice she used for official records: arrival logs, departure records, incident reports, the weekly summary for the Lighthouse Service, the semi-annual vessel inspection sheets. The same voice she had been using for eleven months of ordinary harbor work that had continued without interruption around the fact she was not writing down.
+It took two minutes. The handwriting was even throughout — no place where she had pressed the pen harder or released it.
 
 She read the third paragraph again.
 
 *The undersigned did not approach the individual.*
 
-Five words. In the context of an official harbor record they were five words like any others — weight, draft, bearing, heading. They stated a fact in the voice of a person doing her job, without modifier and without editorial, which was what they were supposed to do and which was true and which did not change what the five words said.
+Five words.
 
 She looked at this for a while.
 
 Through the east window the harbor was fully lit now. One of the lobster boats had started its engine — the *Gertrude B.*, she knew the engine by sound. The diesel carried cleanly across the flat water the way sounds carried in September, when the air had thinned enough to let things through without distortion. In six weeks those boats would be pulling the last of the gear. By the first week of November the inner anchorage would be down to whatever Mayhew still chose to take out and the trap skiffs at the south mooring that nobody used after October.
 
-She was not thinking about November. She was looking at the addendum.
+She was looking at the addendum.
 
 She folded it in three.
 
-She folded it the way she folded documents for the pending drawer: two crisp parallel folds, no overlap, the corners squared. Owen had shown her the fold the first winter of their marriage, when she had started helping him with the harbor correspondence. She had not had any reason to develop a different fold. She ran her thumb along the crease to set it.
+She folded it the way she folded documents for the pending drawer: two crisp parallel folds, no overlap, the corners squared. Owen had shown her the fold the first winter of their marriage, when she had started helping him with the harbor correspondence. She ran her thumb along the crease to set it.
 
 She went to the chart cabinet.
 
@@ -86,7 +86,7 @@ At the back of the drawer were two manila folders in Owen's handwriting. She had
 
 *Tidal survey, pending, 1935.*
 
-He had been working on the tidal survey the autumn he drowned. She had not known what to do with an unfinished survey for nine years, and so it had stayed where he put it, in the place he put things he had not finished. She had put other things in front of it and taken them out again and put new things in front of it, and the survey had stayed at the back where he left it, waiting for a disposition she had not known how to give it.
+He had been working on the tidal survey the autumn he drowned.
 
 She placed the folded addendum in front of his two folders.
 
@@ -102,11 +102,11 @@ She walked to the end of the dock.
 
 The *Gertrude B.* had her engine running but was still at mooring, the old man doing his pre-departure check — she could see him moving on the afterdeck. Mayhew's skiff alongside at the north mooring, no name readable on the transom. The *Calvert* at anchor further out, her deck cargo covered in canvas, her anchor light still burning from the night, a pale smudge in the morning brightness. Beyond the barge the open water, and beyond that the breakwater: granite, running northeast, three hundred and forty feet of it in two sections with the gap for the passage channel, the far end just visible as a darker line against the lighter water outside.
 
-She had walked the breakwater two hundred and some times since Owen drowned. She had walked it in November ice when the footing was wrong and in August fog when she could not see the far end from the near end, and she had not stopped walking it because it was the breakwater and it was the job and the job required it.
+She had walked the breakwater two hundred and some times since Owen drowned. She had walked it in November ice when the footing was wrong and in August fog when she could not see the far end from the near end.
 
 The far end was where the body had come in.
 
-She stood at the end of the dock and looked at the end of the breakwater, which was empty, as it was on most mornings, as the far end of the public pier was empty now behind her, the boards bare in the September morning. She had been at this end of the dock eleven months ago on the night in question, and the man had been at the far end of the pier, and she had looked back and he had not been there.
+She stood at the end of the dock and looked at the end of the breakwater, which was empty, as it was on most mornings, as the far end of the public pier was empty now behind her, the boards bare in the September morning.
 
 She looked at the distance.
 
@@ -122,10 +122,8 @@ She sat back down at her desk and drank it while it was hot.
 
 The vessel traffic log was still open. She picked up her pen and wrote the date at the top of the new line: *September 14, 1944.* She noted the time: *0718.* Weather: *clear, light wind west-northwest, glass 30.14 and steady.* Anchorage: two lobster boats at mooring, one barge at anchor. Buoy tender expected Friday. Fairway buoy south channel continues approximately 12 feet out of position — see Lighthouse Service correspondence, pending.
 
-She wrote the entry in the same hand she had been writing harbor entries in for nine years.
-
 The *Gertrude B.* cleared the north mooring at 0723. She noted that too.
 
-In Owen's pending drawer, behind her working files: a document on harbor office stationery, folded in three, with his two unfinished files behind it. She did not note this in the vessel traffic log. There was no category in the vessel traffic log for a thing that had been placed rather than sent. It was in the pending drawer where it was supposed to be, pending.
+In Owen's pending drawer, behind her working files: a document on harbor office stationery, folded in three, with his two unfinished files behind it. She did not note this in the vessel traffic log.
 
 She picked up the Lighthouse Service letter and began to draft her reply in full.

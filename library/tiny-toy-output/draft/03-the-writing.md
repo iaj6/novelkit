@@ -4,7 +4,7 @@ The day's log entry was already written when she made tea. Barometer 29.8, wind 
 
 The bottle was on the logbook table where she had put it that morning: in the center, above the day's entry, alongside the pen she had placed beside it and then capped again. She had not unrolled the message. She took her tea to the table and sat.
 
-She turned the logbook back. The drum-slip entry — *02:14, tooth re-seated, twelve minutes* — then the Morven delivery, then the post-gale inspection in which she had cleared the cliff drain, noted the new rock slab, and carried a glass bottle up the iron stair inside her oilskin. Eleven pages. All in her hand, all in the same format. She read each entry the way she would check a lamp part: confirm it, set it down. She turned forward to the current page and left the book open.
+She turned the logbook back. The drum-slip entry — *02:14, tooth re-seated, twelve minutes* — then the Morven delivery, then the post-gale inspection in which she had cleared the cliff drain, noted the new rock slab, and carried a glass bottle up the iron stair inside her oilskin. Eleven pages. All in her hand, all in the same format. She read each entry the way she would check a lamp part. She turned forward to the current page and left the book open.
 
 She stood up for coal.
 
@@ -46,8 +46,8 @@ At the top she latched the cliff gate and went inside.
 
 At the logbook table she opened the book to the current page and wrote: *20:00 — drum wound, lamp on station. Barometer 29.4 and falling. Wind backing SW. Sea moderate.*
 
-The original message was still on the table. She looked at it once. She carried it to the range and opened the door and set the paper on the coals and watched until the edges caught and the lines darkened and curled and were gone, and then not even the shape of them remained.
+The original message was still on the table. She looked at it once. She carried it to the range and opened the door and set the paper on the coals and watched until the edges caught and the lines darkened and curled, and then not even the shape of them remained.
 
 She closed the range door.
 
-Wind pressed under the cottage door. The clockwork clicked in the lamp room overhead. The swell ground low against the rock below. The range ticked as the fire settled. The lamp turned in the tower, exactly as it always had.
+Wind pressed under the cottage door. The clockwork clicked in the lamp room overhead. The swell ground low against the rock below. The range ticked as the fire settled. The lamp turned in the tower.

@@ -12,13 +12,13 @@ At 18:00 on Friday she switched the radio on for the weather bulletin. The bulle
 
 ---
 
-She heard the *Morven* on Tuesday morning before she saw it. The engine note came from the south, the low and slightly uneven rhythm she had catalogued without deciding to, over nine years of fortnightly calls. She was writing the 08:00 entry when she heard it.
+She heard the *Morven* on Tuesday morning before she saw it. The engine note came from the south, the low and slightly uneven rhythm she had catalogued, over nine years of fortnightly calls. She was writing the 08:00 entry when she heard it.
 
 She checked the clock. The *Morven* was due Wednesday.
 
 She capped the ink and went to the jetty.
 
-Cal brought the boat alongside and made her fast at the bollard without ceremony. He was in the short-billed cap he wore in all weathers. His first words were about the passage.
+Cal brought the boat alongside and made her fast at the bollard without ceremony. He was in the short-billed cap he wore in all weathers.
 
 "Channel was clear. No point in waiting."
 
@@ -70,7 +70,7 @@ She took the bottle out and set it on the table. It sat in the lamplight, heavy,
 
 She woke on Wednesday at a few minutes past two.
 
-Not to sound. To the wrong quality of quiet, and then to a clicking from the lamp room overhead that arrived in wrong intervals. She was dressed and on the stairs before she had fully resolved what she had heard.
+Not to sound. To the wrong quality of quiet, and then to a clicking from the lamp room overhead that arrived in wrong intervals. She was dressed and on the stairs.
 
 In the lamp room the beam was rotating but had slowed. She could see it in the movement of the lens, the interval between sweeps lengthening by a fraction. The drum had lost tension. She set her oil lamp on the bracket and felt along the winding gear with both hands. The third tooth on the upper ratchet had slipped from its seat.
 
@@ -88,4 +88,4 @@ She went downstairs and wrote in the log:
 
 She looked at what she had written. She put the pen down.
 
-She did not open the drawer. The second thing had arrived. The third had not.
+She did not open the drawer. The third had not.

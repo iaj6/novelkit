@@ -43,7 +43,10 @@ Earlier chapters log specific facts that later chapters must respect, and your c
 ## Quality bar
 
 - Follow the style register in `canon/style.md` exactly. Do not "improve" the register.
+- **Pay close attention to `canon/style.md`'s `## Failure modes` section if present.** Those are the specific AI-author tells most tempting in this story's register. Do not reach for them, even if they'd feel natural to write — the architect has determined that for THIS register they're failures. (Example failure modes: sentence-after-the-sentence gloss, meta-commentary on cognition, thesis restatement, the X-was-X rhetorical fold. The exact list depends on the register and lives in style.md.)
+- **If `canon/style.md` has a `## Lean-into patterns` section, those are moves this register actively wants.** Use them where they earn their place. Do not treat them as failures.
 - Hit every continuity fact in `canon/continuity.md` AND `logs/continuity.md`. If a chapter outline conflicts with either, defer to the more specific fact and note the conflict in your scene-log entry.
+- Follow the chapter's declared **shape** and **ending mode** from its outline file. If the chapter wants to break from the declared shape, do so deliberately and note it in your scene-log entry.
 - Stay inside this chapter's outline. Do not skip ahead or re-cover earlier ground.
 - Scenes are physical. Interior life shows through action, gesture, and concrete observation.
 - Dialogue is spare unless `canon/style.md` says otherwise.

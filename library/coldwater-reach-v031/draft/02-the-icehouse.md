@@ -12,7 +12,7 @@ The truck stopped somewhere past the barn. Then the engine cut.
 
 She gave Berta another thirty seconds and then moved to the gap in the boards.
 
-She had known about the gap since she was nine years old. It was between the fourth and fifth boards on the east wall, knee-high when she was nine and now at her waist, and it gave her a narrow rectangle of the yard and the lane and the icehouse front. She did not think of it as a secret. It was simply a gap that was there, and she used it the way she used any feature of a place she knew better than she knew most things.
+She had known about the gap since she was nine years old. It was between the fourth and fifth boards on the east wall, knee-high when she was nine and now at her waist, and it gave her a narrow rectangle of the yard and the lane and the icehouse front.
 
 The truck was Army. Olive drab, a canvas-covered bed, two soldiers in the cab. Another one standing in the truck bed with his back against the cab wall, rifle at sling arms. He was young — younger than she'd expected, though she hadn't known what she'd expected until she saw him and understood he wasn't it. The four men were already stepping down from the bed.
 
@@ -26,11 +26,7 @@ The fourth was young.
 
 She knew how old she was, which was seventeen, and she knew the arithmetic: he was maybe two years older than she was. Maybe three. He stepped down last, after the careful man, and stood in the lane with his hands at his sides and looked at the icehouse. Not at the barn. Not at the farmhouse. At the icehouse, which was what he would be living in, and which was a long low building of board-and-batten she had grown up next to and taken entirely for granted until three days ago when a man from the Army had come to talk to her father.
 
-He looked at it the way you look at something you are trying to understand from the outside before you go into it.
-
-She had seen that look before. It was the look of a person doing a calculation. She had seen it on Rolf's face the morning he left for Bangor on the bus, standing in the yard with his bag, looking at the farmhouse. He had been nineteen.
-
-This one was no older than Rolf had been when Rolf left.
+She had seen that look before. She had seen it on Rolf's face the morning he left for Bangor on the bus, standing in the yard with his bag, looking at the farmhouse. He had been nineteen.
 
 ---
 
@@ -52,7 +48,7 @@ The soldier went back to the truck.
 
 Hannah moved her hands back to Berta without meaning to. Berta made a sound that was impatience.
 
-Gut, she thought, gut, ich komme schon — not thinking it in German on purpose, just thinking it the way she thought things when she was busy, which was in whatever language arrived first. She worked and watched and worked.
+Gut, she thought, gut, ich komme schon.
 
 The older soldier gestured toward the icehouse door. The four men went. The careful man went first, the young one last. Before he went through the door the young one turned and looked at the farmhouse for a moment — not at anything specific, just at the building itself, the way he had looked at the icehouse — and then he went inside.
 
@@ -91,7 +87,6 @@ Her father said nothing. He looked at his hands on the table.
 They ate. Her mother had made the soup and also bread, dark bread from the rye flour, and there was butter for it because they made their own and the rationing only bit so deep into what you produced yourself. Her father ate with the systematic attention he brought to eating, which was the same attention he brought to most things: complete, and turned inward.
 
 After a while he said: *Die Arbeit, die sie machen sollen, ist gut.*
-
 The work they're supposed to do. It's good work.
 
 He was not talking to either of them. He was stating a fact in the way he stated facts that he had been working out on his own and arrived at a conclusion about. He said: *Der Zaun auf der Nordweide muss repariert werden. Sie werden damit anfangen.* The fence on the north pasture needs to be repaired. They will start with that.
@@ -109,8 +104,6 @@ She could not have said what his expression was. Not frightened, she thought. No
 *Schau nicht so*, her mother said — don't look like that — without looking at her. Hannah looked down at her soup. She had not known she was making a face.
 
 Her father said: *Morgen früh.* Tomorrow morning.
-
-He meant the fence. He meant they would begin tomorrow morning.
 
 ---
 

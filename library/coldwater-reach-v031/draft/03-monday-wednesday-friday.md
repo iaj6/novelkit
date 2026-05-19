@@ -10,7 +10,7 @@ The Congregational church sat at the corner where the ridge road met the main st
 
 The high school occupied what had been a wool processing mill at the north end of the village — three stories of timber-frame and brick, the brick the dark orange-red of nineteenth-century New England industry, the smell inside a compound of chalk dust and old wood and the heat from the basement plant that Henry Crow had been managing for nineteen years. Henry's connection to the building and Marcus's were of entirely different kinds, and they arrived at different hours and by different doors; but they lived in the same house, and the school was the shared fact of their days in the way that the harbor and the farm were shared facts for others in the town.
 
-He arrived before his students and wrote the paradigm on the board in chalk. *Ich habe. Du hast. Er hat.* He had trained himself to print for the blackboard, because his natural hand was the old Viennese Kurrent — letters joined in a form that a stranger would read as encryption — and there was no pedagogical advantage in writing what the students could not read. In his grade book, in the margins of examinations, he still wrote Kurrent: faster, more exact, and his, in the way that certain things remain one's own even when one has given most of the rest away.
+He arrived before his students and wrote the paradigm on the board in chalk. *Ich habe. Du hast. Er hat.* He had trained himself to print for the blackboard, because his natural hand was the old Viennese Kurrent — letters joined in a form that a stranger would read as encryption — and there was no pedagogical advantage in writing what the students could not read. In his grade book, in the margins of examinations, he still wrote Kurrent: faster, more exact, and his.
 
 ---
 
@@ -46,9 +46,9 @@ Marcus drank his coffee.
 
 The pause lasted four seconds. Then Fenn said something about the coal delivery and the conversation reorganized itself around that.
 
-He had been calculating this particular reflex — the half-second redirection of gaze — since at least 1936. He had been calculating it long enough that he no longer experienced it as injury. What it was, precisely, was a category error: when a German-seeming thing appeared in proximity to a German-seeming subject, the category operated. That he was Austrian rather than German, and that his relation to Germany's current behavior was rather different from what the category implied, was not information the reflex could accommodate. Reflexes were by definition prior to information.
+He had been calculating this particular reflex — the half-second redirection of gaze — since at least 1936. He had been calculating it long enough that he no longer experienced it as injury.
 
-He noted it, as he noted all such things, with accuracy rather than feeling. He was not offended. He had expended a certain portion of himself on being offended, between 1936 and 1940, and found the expenditure disproportionate to the result.
+He noted it, as he noted all such things, with accuracy rather than feeling. He had expended a certain portion of himself on being offended, between 1936 and 1940, and found the expenditure disproportionate to the result.
 
 Walking back to his classroom, he thought: the reflex was a fact. Like the harbor smell at the ridge. One could know where the water was without seeing it.
 
@@ -58,13 +58,13 @@ The evenings at the Crow house ran on Lillian's schedule, which was a reasonable
 
 That week — the last of October, the body still recent enough to surface in conversation — he told Henry about the teacher's lounge.
 
-Lillian had made salt fish with potatoes and there was bread, and they ate with the attention that a good plain meal rewards. After a while Henry said, without particular weight: "They find out who he was?" He meant the body.
+Lillian had made salt fish with potatoes and there was bread, and they ate with the attention that a good plain meal rewards. After a while Henry said, without particular weight: "They find out who he was?"
 
 "Not yet," Marcus said. "The Coast Guard is handling it."
 
 Henry considered the bread. "They will or they won't," he said. "Doesn't change anything for us."
 
-Marcus thought about this. It was a sentence that could have been resignation and was not; what it was instead was more precise — a declarative that came from a position Marcus recognized: the position of a man who has lived long enough inside systems that do not recalibrate for his presence to be surprised any longer by that fact. *They will or they won't.* An accurate forecast of probability. *Doesn't change anything for us* — and by *us*, the specificity was deliberate: this table, these two men, the house around them. Not offered with emphasis. Offered as a fact.
+Marcus thought about this. It was a sentence that could have been resignation and was not.
 
 He thought about the word *Duldung*. Toleration: being-permitted-to-remain. One was *geduldet* by a town, by a board, by a room that looked at one for half a second. The grammar was passive; the condition was not chosen. In most of Coldwater Reach he was *geduldet*. In this kitchen he was not any particular category. He was at the table.
 
@@ -82,7 +82,7 @@ He was there as the faculty representative for the building. It was his Tuesday 
 
 Across the table from him: Eira Bowman.
 
-He knew who she was. He had seen her at the harbor — the figure in the oilskin coat at the pier shed door, the person who walked the breakwater at low water. He had known her name since his second month in Coldwater Reach and had encountered it since in the context of harbor business. She was the only woman at the table. She was not performing this fact; she had a folder of papers in front of her and she was listening to Haverstock with the quality of attention that assesses what is being said against what is already known, registering the difference without announcing it.
+He knew who she was. He had seen her at the harbor — the figure in the oilskin coat at the pier shed door, the person who walked the breakwater at low water. He had known her name since his second month in Coldwater Reach and had encountered it since in the context of harbor business. She was the only woman at the table. She was not performing this fact; she had a folder of papers in front of her and she was listening to Haverstock with the quality of attention that assesses what is being said against what is already known.
 
 The meeting was procedural. Blackout compliance — the winter schedule, adjusted for the earlier nightfall. Fire watch rotation for the coming month. His Tuesday assignment was confirmed; he wrote it in his notebook. Forty-five minutes of the careful management of theoretical emergencies, conducted by men who understood that the theoretical and the practical were not entirely separated by geography. Then Haverstock said that was all, and the men pushed back from the table.
 
@@ -100,9 +100,9 @@ At the main door she stopped and looked at the sky. Clear, and cold; there would
 
 "Austrian, in fact," he said.
 
-She turned slightly and looked at him — not with surprise, with the expression of a person indexing a correction — and then looked at the road. "Same road home," she said. Meaning the direction.
+She turned slightly and looked at him and then looked at the road. "Same road home," she said.
 
-He fell in beside her. They walked without speaking. The silence had the quality of two people who had established, without discussion, that talk requires a reason. Fifty yards along, her road diverged from his and she turned left without a word — not abruptly, not with any social announcement; simply turned, because the road went that way, and she went with it.
+He fell in beside her. They walked without speaking. Fifty yards along, her road diverged from his and she turned left without a word — not abruptly, not with any social announcement; simply turned, because the road went that way, and she went with it.
 
 He walked on alone.
 
@@ -114,13 +114,13 @@ He kept things in order — the papers stacked on the right side of the desk, th
 
 He opened to the German class. His annotations in the margins were in Kurrent — *GU* for *gut*, *S.* for *Schwäche*, weakness, and occasional longer notes where the nature of the weakness rewarded recording. Beside Hannah Pfeiffer's name, in the margin of her last examination, he had written: *Sie weiß mehr, als sie zeigt.*
 
-He had meant it as an observation of her method, which was a teacher's legitimate concern. Looking at it now in the script that no one else in Coldwater Reach could read, he thought that it might also be said of several people in this town — the harbormaster who had turned left without farewell; the men who had looked at him for a fraction of a second and looked at the table; the town itself, which had permitted him to be present for nineteen months without quite closing around him.
+Looking at it now in the script that no one else in Coldwater Reach could read, he thought that it might also be said of several people in this town — the harbormaster who had turned left without farewell; the men who had looked at him for a fraction of a second and looked at the table; the town itself, which had permitted him to be present for nineteen months without quite closing around him.
 
 He thought about the word *unheimlich*.
 
 It had no precise English equivalent — he had looked, professionally, and found only approximations. *Uncanny* came closest but carried a note of the supernatural that the German did not require. The literal structure of the word was plainer: *un-heimlich*, the negation of *heimlich*, which was itself double. *Heimlich* meant familiar, intimate, belonging to the house — and also, by extension, hidden, secret, kept from outside view. To be *heimlich* in a place was to be absorbed by it, to have grown so native to it that the place no longer showed you from the outside. *Unheimlich* was the reversal: the sensation of being in a place where you were exposed precisely because you had not grown familiar enough to disappear into it.
 
-He had not been *heimisch* anywhere since 1937. He was not, in noting this, doing anything he would have called self-pity; he was being accurate, which was a different exercise, and one he had considerably more practice with.
+He had not been *heimisch* anywhere since 1937.
 
 Outside the north window, the night was clearing toward frost. The harbor smell came over the ridge in the wind — faint, cold, exact.
 
