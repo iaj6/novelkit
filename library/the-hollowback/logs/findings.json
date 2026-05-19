@@ -1,0 +1,258 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-05-19T13:29:52.669Z",
+  "summary": {
+    "critical": 1,
+    "high": 4,
+    "medium": 4,
+    "low": 2
+  },
+  "findings": [
+    {
+      "id": "stylistic-tic-001",
+      "category": "stylistic-tic",
+      "severity": "high",
+      "title": "Dialogue gloss — narration annotates what the dialogue has already demonstrated",
+      "description": "Multiple instances across Acts 1 and 2 where the narration labels the register or weight of a dialogue exchange immediately after that exchange has made its own register and weight visible. Each instance tells us the scene is doing what it is visibly doing. Per the style guide: 'The dialogue already said what it said. Gloss is the narrator not trusting the scene.'",
+      "evidence": [
+        {
+          "file": "draft/04-aftertaste.md",
+          "text": "\"That was the whole explanation.\" — appearing immediately after Corvin's \"Seven years. It ended.\" The sparseness is already demonstrated; the annotation adds nothing."
+        },
+        {
+          "file": "draft/04-aftertaste.md",
+          "text": "\"Two words.\" — appearing immediately after \"Good decision.\" annotating the brevity of a moment that communicates its own brevity."
+        },
+        {
+          "file": "draft/02-east.md",
+          "text": "\"By morning he would be planning his fifth attempt to make Agda Stonebrook laugh.\" — the deflection mechanism has already been shown in the watch-section's structure; naming his plan to resume it explains what was just dramatized."
+        },
+        {
+          "file": "draft/11-the-thing-the-empire-kept.md",
+          "text": "\"He answered her questions with the attentiveness of someone not often met with that level of specific interest.\" — the map scene already communicated Ren's attentiveness through action and dialogue; this observation names what the scene showed."
+        }
+      ],
+      "suggested_action": "In each cited instance, delete the gloss sentence. The preceding exchange carries the weight without annotation. Check the full manuscript for additional instances of the same construction before passing to copy.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "over-articulation-001",
+      "category": "over-articulation",
+      "severity": "high",
+      "title": "Meta-commentary on cognition — narration labels the perceptual or suppression process rather than trusting it",
+      "description": "Multiple instances across all three acts where the narration describes the act of perceiving, filing, or suppressing rather than delivering the perception itself. The style guide explicitly names 'she noted,' 'she registered,' 'she observed,' 'she realized' as failure modes. These instances are analogous — they announce the cognitive act rather than performing it. In Sela's POV, the cataloging is the voice; but when the prose steps back to describe the cataloging mechanism, it breaks the close distance. In Corvin's POV, the tactical self-labeling of his own avoidance is itself the thing being avoided.",
+      "evidence": [
+        {
+          "file": "draft/08-the-antechamber.md",
+          "text": "\"The vibration's character communicated the window in the way that urgency communicated itself before language — a ramp, an escalation threshold, a margin that was not generous.\" Followed fourteen lines later by: \"the certainty arrived in the same way the vibration's urgency had arrived — before language, before reasoning, in the register the body used when the body had already made its assessment.\" Same construction repeated: narrating the register of an experience rather than delivering the experience."
+        },
+        {
+          "file": "draft/13-the-hollowed.md",
+          "text": "\"He filed it in the column where he kept facts about himself that were not useful for the current situation.\" — Corvin labeling his own suppression mechanism rather than demonstrating the suppression."
+        },
+        {
+          "file": "draft/15-the-road-tells-you-things.md",
+          "text": "\"The thing he was not doing: counting how many specific facts about her he had accumulated.\" — Again Corvin announcing the avoidance rather than performing it."
+        }
+      ],
+      "suggested_action": "In each instance, delete the meta-label and trust the preceding observation or action to carry the cognitive content. The double-instance in Ch08 should be reduced to one straightforward physical description of what Sela perceives. The Corvin instances in Chs 13 and 15 should be cut; the surrounding physical action already communicates his state.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "over-articulation-002",
+      "category": "over-articulation",
+      "severity": "medium",
+      "title": "Post-scene subtext naming — narration explains the emotional or thematic import of a scene the scene has already communicated",
+      "description": "Two significant instances in Act 3 where the narration steps back to explain what a character moment or thread closure means, after the scene has already made it visible. Per the style guide: 'after a romance beat or a character moment, the prose will want to explain what just happened emotionally. Don't. The scene means what it means.'",
+      "evidence": [
+        {
+          "file": "draft/12-what-we-do-now.md",
+          "text": "Sela's extended Ren-psychology gloss: \"a person who is right about the thing they're arguing but who knows they don't have complete enough information to act on it alone, and who is arguing as a substitute for acting, which was perhaps the most functional possible response to that situation.\" This diagrams Ren's psychology after the scene has dramatized it, then tags the gloss as 'perhaps the most functional possible response' — narrating a conclusion about a scene that should conclude itself."
+        },
+        {
+          "file": "draft/16-thorngate.md",
+          "text": "The alarm-file metaphor extension: good work through 'The file remained open'; everything after that point tells the reader the Sela/Ren thread is deliberately unresolved rather than simply leaving it unresolved. The thread should close at 'The file remained open.' The subsequent sentences explain the deliberate non-resolution, which the non-resolution already communicates."
+        }
+      ],
+      "suggested_action": "In Ch12, cut Sela's taxonomy entry at the point where the observation turns into evaluation of Ren's decision-making process; the preceding observation is sufficient. In Ch16, cut everything after 'The file remained open' in the alarm-file passage and let the thread close there.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "over-articulation-003",
+      "category": "over-articulation",
+      "severity": "high",
+      "title": "Thesis restatement in dialogue — character voices the book's central theme directly",
+      "description": "A single high-severity instance in Act 3: Corvin delivers a summary of Thread 3's thematic argument at the campfire in Chapter 15, in dialogue, in the voice least likely to produce a thesis statement. The substance is correct, but the book has been showing it since the garrison rooms in Chapter 11. The showing has done the work; the speech repeats it as declaration. The style guide names 'a paragraph near a chapter's end that steps back and re-states the theme' as an explicit failure mode.",
+      "evidence": [
+        {
+          "file": "draft/15-the-road-tells-you-things.md",
+          "text": "\"The decision. Keeping it from the crown, from the Church. That's not how things are supposed to be handled. But it was there for three hundred years and the crown didn't handle it and the Church didn't handle it. And we did.\" — This is a direct statement of Thread 3's thematic resolution, delivered in Corvin's voice, at the campfire scene where the five-person decision is made."
+        }
+      ],
+      "suggested_action": "Replace Corvin's three-sentence summary with a short declarative in his actual register — one sentence, possibly two, focused on the practical decision rather than its thematic meaning. The surrounding material (Agda, Evren) is already at the correct register. The theme should be felt through the decision and its circumstances, not stated by the character who embodies it.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "character-voice-drift-001",
+      "category": "character-voice-drift",
+      "severity": "medium",
+      "title": "Evren's interiority adopts Sela's taxonomic cognitive register in two chapters",
+      "description": "Two instances where Evren's POV voice drifts from its defined mode (fast, associative, joke-first, deflective) into a classified-framework style that belongs to Sela's POV. Evren's interiority runs on velocity and association; he doesn't analyze, classify, or 'adjust theories.' When his POV produces that mode, it reads as the wrong character's brain. A secondary drift occurs in Ch09's corridor descriptions, which lose the particular Evren slant and trend toward a neutral narrator voice.",
+      "evidence": [
+        {
+          "file": "draft/02-east.md",
+          "text": "\"He adjusted his theory. Jokes were not the right currency. He would try truth-adjacent material.\" — This is analytical self-classification. Evren processes by doing, not by naming strategies. The construction belongs to Sela's cataloging mode."
+        },
+        {
+          "file": "draft/09-interior.md",
+          "text": "Corridor descriptions in the garrison rooms section losing the associative four-things-before-the-fifth quality that defines Evren's POV. Compare Ch07's 'Three days of data, which was not a word he used out loud, but which was accurate' (in-register) with Ch09's corridor passages (drifting toward neutral narrator)."
+        }
+      ],
+      "suggested_action": "In Ch02, replace the 'adjusted his theory' passage with an associative observation — what he notices next, what he does with his hands, where his attention moves — that demonstrates the shift in approach without naming it as a strategy. In Ch09, audit the garrison-room paragraphs for the Evren-specific slant; if descriptions read as neutral, add a quick observational beat that routes through his sensibility.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "stylistic-tic-002",
+      "category": "stylistic-tic",
+      "severity": "medium",
+      "title": "Atmospheric motif (irregular/too-regular sound) over-deployed in Act 1, depleting its signal value",
+      "description": "The 'sound that is not water, not animal, too regular' motif — intended to accumulate dread toward the waystation and the Hollowed One — appears five times across four consecutive chapters in Act 1. By the time the motif should be doing its heaviest work at the waystation threshold in Acts 2 and 3, it reads as ambient furniture rather than signal. The brief requires at least one moment of real awe; the motif is the primary atmospheric vehicle for that buildup, and it needs spacing to retain its register.",
+      "evidence": [
+        {
+          "file": "draft/02-east.md",
+          "text": "First appearance of the irregular sound / ambient dread at the inn."
+        },
+        {
+          "file": "draft/04-aftertaste.md",
+          "text": "Second appearance, forest night."
+        },
+        {
+          "file": "draft/05-charter.md",
+          "text": "Third appearance, closing lines of the Vott chapter."
+        },
+        {
+          "file": "draft/06-what-the-empire-paved.md",
+          "text": "Fourth and fifth appearances: camp setup and the night-waking scene. Five instances in four consecutive chapters before the party has entered the Hollowback proper."
+        }
+      ],
+      "suggested_action": "Remove or substantially alter the Ch04 and Ch05 instances — the most dispensable of the five — and reserve the motif's active signal deployments for Ch06 (one instance, the camp-edge movement) and the waystation chapters. Two Act 1 instances are sufficient to establish the pattern; five instances exhaust it.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "over-articulation-004",
+      "category": "over-articulation",
+      "severity": "medium",
+      "title": "Ren's Chapter 11 exposition opens too organized for the character and situation",
+      "description": "Ren's explanation of the Hollowed One to the party opens with two polished paragraphs before any interruption. The register reads like information arranged for the reader's benefit — a character brief — rather than a nineteen-year-old who has been alone in a basement for three weeks presenting findings to strangers he is still assessing. The interruptions from Sela and Agda that follow are correctly rough and provisional; the problem is the organized fluency before those interruptions arrive.",
+      "evidence": [
+        {
+          "file": "draft/11-the-thing-the-empire-kept.md",
+          "text": "\"The Vethic Empire's late-period mage-scholars\" as an opening gambit for Ren's explanation — phrasing and organization that implies rehearsal for an audience rather than provisional delivery to strangers."
+        }
+      ],
+      "suggested_action": "Rough up the opening two paragraphs of Ren's exposition before the first interruption. He should make assumptions about what they know that turn out to be wrong, restart a sentence, use a technical term and then have to walk it back. The information itself is necessary; the delivery should feel like someone presenting findings under mild duress, not briefing a reader.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "other-001",
+      "category": "other",
+      "severity": "low",
+      "title": "Withheld Agda dialogue in Chapter 16 final Ren scene leaves the relationship's last beat thinner than it earns",
+      "description": "Agda's final scene with Ren in Chapter 16 withholds her actual dialogue, offering only that 'she said something direct and flat that made him look at her for a moment, the look of someone reassessing a piece of data, before he nodded.' This is consistent with the book's mode of keeping significant content offpage — but this is the last substantive beat of the Agda/Ren relationship for the entire book, and the evasion creates a gap where there should be a note. The withheld line also foregoes the opportunity to deploy Agda's deadpan delivery of warm or challenging content, which is one of the book's signature modes.",
+      "evidence": [
+        {
+          "file": "draft/16-thorngate.md",
+          "text": "\"To Agda: she said something direct and flat that made him look at her for a moment, the look of someone reassessing a piece of data, before he nodded.\" — the last Agda/Ren beat in the book, rendered without her actual line."
+        }
+      ],
+      "suggested_action": "Give Agda one line of actual dialogue in this beat. It should be direct and flat and slightly uncomfortable — her register — and it should acknowledge something true about Ren that nobody else in the party would say to him. It does not need to be long; one sentence in her voice is worth more than the description of a line withheld.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "thread-drift-001",
+      "category": "thread-drift",
+      "severity": "low",
+      "title": "Sela/Ren thread final beat in Chapter 16 underwritten relative to its Act 2 setup",
+      "description": "The Sela/Ren thread receives strong development in Chapters 10–12 (first real look as a specific person, parallel technical conversation, working the mechanism together). The Chapter 16 goodbye — 'You left the door open for us' / 'Habit' / 'Good habit' — is efficient but not charged. Against the other two pairing closings (Sela/Corvin's sidewalk beat, Evren/Agda's manure-and-standard exchange), this reads as thread-service rather than a scene with its own earned weight. The brief requires that all three pairings get at least three notable scenes and a deliberate non-resolution; the count is met, but the final beat is the weakest of the three closings.",
+      "evidence": [
+        {
+          "file": "draft/16-thorngate.md",
+          "text": "\"You left the door open for us.\" / \"Habit.\" / \"Good habit.\" — the Sela/Ren thread's final beat. Functional but not charged against the setup in Chs 10–12."
+        }
+      ],
+      "suggested_action": "Extend the Sela/Ren goodbye by one additional exchange — not a declaration, but something that catches the specific register of their connection (technical interest shading into something more complicated). The thread's mode is 'two people who file other people by what they know recognizing each other across a context that forecloses the easy version.' The closing exchange should feel like that recognition, briefly, before the practical goodbye.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "continuity-fact-audit-001",
+      "category": "continuity-fact",
+      "severity": "critical",
+      "title": "Step count from archive floor to containment passage contradicts between Ch10 and Ch13/Ch14",
+      "description": "Chapter 10 states that the stair section descending from the archive floor landing to the containment passage end is 31 steps. Chapter 10 also states the garrison-to-archive service stair is 18 steps, giving a garrison-to-containment total of 49. But Chapters 13 and 14 independently state the full garrison-service-stair to containment-passage count is 36 steps, implying the archive-to-containment portion is only 18 steps. The two counts (31 vs. 18 for archive-to-containment; 49 vs. 36 for garrison-to-containment) are mutually exclusive.",
+      "evidence": [
+        {
+          "file": "draft/10-found.md",
+          "text": "She was at thirty-one past the archive floor landing when the stair ended."
+        },
+        {
+          "file": "draft/10-found.md",
+          "text": "Eighteen steps. Sela counted. The stairwell was close enough on both sides that she kept her arms slightly forward rather than at her sides, and the stone was cold where her fingers grazed it."
+        },
+        {
+          "file": "draft/13-the-hollowed.md",
+          "text": "The steps from the garrison stair down to the containment passage: thirty-six. He had counted them the first time they descended, in the dark with Ren's lantern ahead, and he counted them again now."
+        },
+        {
+          "file": "draft/14-threshold.md",
+          "text": "The garrison stair was thirty-six steps from the passage entry to the corridor junction. She had counted them going down and she counted them going up, because counting was something her body could do while the rest of her was doing the inventory."
+        }
+      ],
+      "suggested_action": "Change 'thirty-one' to 'eighteen' in Ch10 so that the archive-to-containment count (18) plus the established garrison-to-archive count (18) sums to the 36 total independently confirmed in Ch13 and Ch14. Ch13 and Ch14 are the canonical authority: two separate POV characters counting on separate descents/ascents.",
+      "auto_repair_safe": true,
+      "repair_agent": "repair-fact-normalize",
+      "repair_params": {
+        "canon_source": "draft/13-the-hollowed.md",
+        "edits": [
+          {
+            "file": "draft/10-found.md",
+            "wrong_text": "She was at thirty-one past the archive floor landing when the stair ended.",
+            "correct_text": "She was at eighteen past the archive floor landing when the stair ended."
+          }
+        ]
+      }
+    },
+    {
+      "id": "continuity-fact-audit-002",
+      "category": "continuity-fact",
+      "severity": "high",
+      "title": "Workspace described as 'five levels below the surface' in Ch12, contradicting the depth the glossary assigns to the deeper containment chamber",
+      "description": "Chapter 12 states that the party is in 'the sealed stone workspace five levels below the surface of the Eastmark Waystation.' The glossary entry for the Eastmark Waystation's containment chamber, however, assigns that same depth — 'five levels below the surface' — to the containment chamber, which lies two levels below the workspace (per Ch10: 'two levels below his workspace'). Both the workspace and the containment chamber cannot be five levels below the surface; one of these values is wrong. The chapter arithmetic (16-step main stairwell = 1 level to garrison; 18-step service stair from Ch10 = 1 level to archive) places the workspace at approximately surface+2, not surface+5.",
+      "evidence": [
+        {
+          "file": "draft/12-what-we-do-now.md",
+          "text": "Day 6, morning. Sealed stone workspace five levels below the surface of the Eastmark Waystation, which had not improved overnight."
+        },
+        {
+          "file": "canon/glossary.md",
+          "text": "Containment chamber (Eastmark Waystation) — A large vaulted room five levels below the surface of the Eastmark Waystation, accessible via a narrow pale-stone passage and a massive iron pivot-door with four locking mechanisms."
+        },
+        {
+          "file": "draft/10-found.md",
+          "text": "Two levels below his workspace — three below the garrison corridor — below the water table, and she had stopped estimating depth by sensation and was counting treads instead."
+        }
+      ],
+      "suggested_action": "Determine the intended depth of the workspace and correct Ch12 accordingly. If the glossary's 'five levels below the surface' for the containment chamber is canonical, and the containment is two levels below the workspace (Ch10), then the workspace is three levels below the surface — Ch12's 'five' should be 'three.' A human editor should confirm which depth convention is intended before repair, since the glossary's own depth figures for this location are internally inconsistent (it gives the containment as both 'three levels below the garrison corridor' and 'five levels below the surface,' which do not reconcile if the garrison is one level below the surface).",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    }
+  ]
+}

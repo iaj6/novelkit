@@ -23,7 +23,7 @@ export type AgentRunResult = {
 const MAX_ATTEMPTS = 4;
 const BASE_BACKOFF_MS = 10_000;
 const RETRYABLE_PATTERN =
-  /\b(429|502|503|504|408|529)\b|overloaded|stream idle timeout|socket (?:connection|closed)|connection (?:closed|reset|refused|aborted|terminated)|econnreset|econnrefused|econnaborted|enetunreach|etimedout|epipe|rate.?limit|temporarily unavailable|service unavailable|fetch failed|network (?:error|unavailable)|bad gateway|gateway timeout/i;
+  /\b(429|502|503|504|408|529)\b|overloaded|stream idle timeout|request timed out|deadline exceeded|socket (?:connection|closed)|connection (?:closed|reset|refused|aborted|terminated)|econnreset|econnrefused|econnaborted|enetunreach|etimedout|epipe|rate.?limit|temporarily unavailable|service unavailable|fetch failed|network (?:error|unavailable)|bad gateway|gateway timeout/i;
 
 function isRetryable(err: unknown): boolean {
   const msg = err instanceof Error ? err.message : String(err);
