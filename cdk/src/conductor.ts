@@ -1,6 +1,7 @@
 import { runArchitect } from "./phases/architect.js";
 import { runPlotter } from "./phases/plotter.js";
 import { runThreads } from "./phases/threads.js";
+import { runCalibrateDrafter } from "./phases/calibrate-drafter.js";
 import { runDrafter } from "./phases/drafter.js";
 import { runEditor } from "./phases/editor.js";
 import { runEditorContinuity } from "./phases/editor-continuity.js";
@@ -20,6 +21,7 @@ export type PhaseName =
   | "architect"
   | "plotter"
   | "threads"
+  | "calibrate-drafter"
   | "drafter"
   | "editor"
   | "editor-continuity"
@@ -35,6 +37,7 @@ export const RUN_ALL_PHASES: PhaseName[] = [
   "architect",
   "plotter",
   "threads",
+  "calibrate-drafter",
   "drafter",
   "editor",
   "reader",
@@ -59,6 +62,8 @@ export async function runPhase(phase: PhaseName, projectRoot: string) {
       return runPlotter(projectRoot);
     case "threads":
       return runThreads(projectRoot);
+    case "calibrate-drafter":
+      return runCalibrateDrafter(projectRoot);
     case "drafter":
       return runDrafter(projectRoot);
     case "editor":

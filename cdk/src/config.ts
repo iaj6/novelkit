@@ -5,6 +5,8 @@ export type PhaseId =
   | "architect"
   | "plotter"
   | "threads"
+  | "calibrate-sample"
+  | "calibrate-grade"
   | "drafter"
   | "editor-continuity"
   | "editor-compression"
@@ -15,6 +17,13 @@ export type PhaseId =
   | "repair-fact-normalize";
 
 export type Visibility = "private" | "public";
+
+export type CalibrationConfig = {
+  /** Whether the drafter calibration loop runs before drafter. Default: true. */
+  enabled: boolean;
+  /** Hard cap on iterations of the sample→grade→revise cycle. Default: 2. */
+  max_iterations: number;
+};
 
 export type Config = {
   title: string;
@@ -29,6 +38,14 @@ export type Config = {
    * Flip with `cdk publish <dir>` / `cdk unpublish <dir>`.
    */
   visibility: Visibility;
+  /**
+   * Drafter calibration loop (runs between threads and drafter). When enabled,
+   * the pipeline drafts a short sample of chapter 1's opening, has a grader
+   * compare it against the brief's audience/exemplars, and revises
+   * canon/agent-guidance/drafter.md if the sample drifts from the briefed
+   * register. Capped iteration; the pipeline always proceeds eventually.
+   */
+  calibration: CalibrationConfig;
   modelByPhase: Partial<Record<PhaseId, string>>;
   maxTurnsPerPhase: Record<PhaseId, number>;
 };
@@ -38,6 +55,8 @@ const DEFAULT_MAX_TURNS: Record<PhaseId, number> = {
   plotter: 50,
   threads: 40,
   drafter: 30,
+  "calibrate-sample": 20,
+  "calibrate-grade": 30,
   "editor-continuity": 40,
   "editor-compression": 40,
   "editor-pacing": 40,
@@ -47,10 +66,16 @@ const DEFAULT_MAX_TURNS: Record<PhaseId, number> = {
   "repair-fact-normalize": 30,
 };
 
+const DEFAULT_CALIBRATION: CalibrationConfig = {
+  enabled: true,
+  max_iterations: 2,
+};
+
 const DEFAULT_CONFIG: Config = {
   title: "Untitled",
   model: "claude-sonnet-4-6",
   visibility: "private",
+  calibration: DEFAULT_CALIBRATION,
   modelByPhase: {},
   maxTurnsPerPhase: DEFAULT_MAX_TURNS,
 };
@@ -70,6 +95,7 @@ export async function loadConfig(projectRoot: string): Promise<Config> {
       // Anything other than the literal "public" is treated as "private"
       // — safer default for legacy configs without the field.
       visibility: normalizeVisibility(parsed.visibility),
+      calibration: { ...DEFAULT_CALIBRATION, ...(parsed.calibration ?? {}) },
       modelByPhase: { ...(parsed.modelByPhase ?? {}) },
       maxTurnsPerPhase: { ...DEFAULT_MAX_TURNS, ...(parsed.maxTurnsPerPhase ?? {}) },
     };

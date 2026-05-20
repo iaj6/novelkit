@@ -6,6 +6,9 @@
     "threads",
     "drafter:01-the-eleven-bell",
     "drafter:02-the-archive",
-    "drafter:03-the-passage"
+    "drafter:03-the-passage",
+    "calibrate-drafter:iter-1-sample",
+    "calibrate-drafter:iter-1-grade",
+    "calibrate-drafter:complete"
   ]
 }
