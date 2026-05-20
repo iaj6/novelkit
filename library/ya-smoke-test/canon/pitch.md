@@ -1,0 +1,3 @@
+# Pitch
+
+Three sixteen-year-old apprentices at Thornwick — a magic school carved into a chalk headland above a cold grey sea — have one hour between the eleven-bell and midnight patrols to break into the school's locked archive and recover Emric's confiscated notebook before his academic misconduct hearing in the morning. Mira, the youngest and sharpest of the three, expects to find a notebook in a box. Instead she finds a ledger with a red binding and a name that stops her cold: her own, written in the Conclave's hand alongside Emric's and Cass's, marked for collection at the end of the year. The school has been selling its best students. And now Mira has to decide what to do with that knowledge before the midnight bell rings and the prefects come down the hall.
