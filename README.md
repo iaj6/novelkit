@@ -183,8 +183,8 @@ cd press && python3 -m pytest          # pytest — 78 tests, ~80ms
 cd press && python3 -m pytest --cov    # 86% across modules
 
 # site
-cd site && npm test                    # vitest — 39 tests, ~150ms
-cd site && npm run test:coverage       # ~85% on library.ts
+cd site && npm test                    # vitest — 44 tests, ~150ms
+cd site && npm run test:coverage       # ~93% on library.ts
 ```
 
 CI runs all three suites on every push and PR via `.github/workflows/test.yml`. Dependabot keeps the npm packages (cdk + site) and GitHub Actions versions up to date with weekly PRs.
