@@ -143,11 +143,14 @@ def main() -> int:
     parser.add_argument(
         "--max-chars",
         type=int,
-        default=int(os.getenv("ELEVENLABS_MAX_CHARS", "38000")),
+        default=int(os.getenv("ELEVENLABS_MAX_CHARS", "4500")),
         help=(
-            "Chunk size for long inputs (default: 38000; the API's hard limit is "
-            "40000). All chapters in the current library are well under this, "
-            "so this is mostly a safety net."
+            "Chunk size for long inputs (default: 4500). ElevenLabs's newer "
+            "models (eleven_v3 etc.) enforce a 5000-character cap per request, "
+            "so chapters above that get split into multiple chunks and stitched "
+            "back together. The script passes previous_text / next_text across "
+            "chunk boundaries to keep prosody continuous. Override with "
+            "ELEVENLABS_MAX_CHARS env var if a different model permits longer."
         ),
     )
     parser.add_argument("--retry", type=int, default=3)
@@ -198,6 +201,10 @@ def main() -> int:
     }
     url = f"https://api.elevenlabs.io/v1/text-to-speech/{args.voice_id}"
 
+    # eleven_v3 doesn't yet support previous_text / next_text prosody-stitching
+    # params. Other models (multilingual_v2, turbo_v2, etc.) do. Skip them on v3.
+    supports_context = "v3" not in args.model_id
+
     def render(chunk_text_: str, previous_text: str = "", next_text: str = "") -> bytes:
         payload: dict[str, Any] = {
             "text": chunk_text_,
@@ -205,11 +212,13 @@ def main() -> int:
             "voice_settings": voice_settings,
         }
         # `previous_text` / `next_text` keep prosody continuous across chunks.
-        # Only useful when chunking; omit when there's only one piece.
-        if previous_text:
-            payload["previous_text"] = previous_text
-        if next_text:
-            payload["next_text"] = next_text
+        # Only useful when chunking; omit when there's only one piece or when
+        # the model doesn't support these params.
+        if supports_context:
+            if previous_text:
+                payload["previous_text"] = previous_text
+            if next_text:
+                payload["next_text"] = next_text
 
         last_err: Optional[Exception] = None
         for attempt in range(1, args.retry + 1):

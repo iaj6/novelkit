@@ -1,3 +1,4 @@
+import { runResearcher } from "./phases/researcher.js";
 import { runArchitect } from "./phases/architect.js";
 import { runPlotter } from "./phases/plotter.js";
 import { runThreads } from "./phases/threads.js";
@@ -13,11 +14,13 @@ import { runContinuityFactAudit } from "./phases/continuity-fact-audit.js";
 import { runRepairFactNormalize } from "./phases/repair-fact-normalize.js";
 import { readCostSummary, formatCostSummary } from "./runlog.js";
 import { estimateRun, formatDurationRange } from "./estimate.js";
+import { loadConfig } from "./config.js";
 import * as c from "./ansi.js";
 import * as fs from "node:fs/promises";
 import * as path from "node:path";
 
 export type PhaseName =
+  | "researcher"
   | "architect"
   | "plotter"
   | "threads"
@@ -32,7 +35,11 @@ export type PhaseName =
   | "continuity-fact-audit"
   | "repair-fact-normalize";
 
-/** Phases that `cdk run` iterates through. `editor` here expands into all four sub-passes. Repair phases are opt-in via `cdk repair`. */
+/**
+ * Phases that `cdk run` iterates through. `editor` here expands into all four sub-passes. Repair phases are opt-in via `cdk repair`.
+ *
+ * `researcher` is NOT in this list — it is a conditional phase prepended by `runAll` only when the brief opts in (via a `## Research scope` section in brief.md or `"research": true` in cdk.config.json). It IS in `ALL_PHASE_NAMES` so `cdk phase researcher` can invoke it directly regardless of trigger.
+ */
 export const RUN_ALL_PHASES: PhaseName[] = [
   "architect",
   "plotter",
@@ -46,6 +53,7 @@ export const RUN_ALL_PHASES: PhaseName[] = [
 
 /** Every phase name `cdk phase ...` accepts. */
 export const ALL_PHASE_NAMES: PhaseName[] = [
+  "researcher",
   ...RUN_ALL_PHASES,
   "editor-continuity",
   "editor-compression",
@@ -56,6 +64,8 @@ export const ALL_PHASE_NAMES: PhaseName[] = [
 
 export async function runPhase(phase: PhaseName, projectRoot: string) {
   switch (phase) {
+    case "researcher":
+      return runResearcher(projectRoot);
     case "architect":
       return runArchitect(projectRoot);
     case "plotter":
@@ -83,6 +93,29 @@ export async function runPhase(phase: PhaseName, projectRoot: string) {
     case "repair-fact-normalize":
       return runRepairFactNormalize(projectRoot);
   }
+}
+
+/**
+ * Returns true if the researcher phase should run for this project.
+ *
+ * Trigger sources (either is sufficient):
+ *   - `brief.md` contains a `## Research scope` heading
+ *   - `cdk.config.json` has `"research": true`
+ *
+ * Exported so tests and tooling can ask the same question the conductor asks.
+ */
+export async function researcherShouldRun(projectRoot: string): Promise<boolean> {
+  const config = await loadConfig(projectRoot);
+  if (config.research === true) return true;
+
+  try {
+    const brief = await fs.readFile(path.join(projectRoot, "brief.md"), "utf-8");
+    if (/^##\s+Research scope\b/im.test(brief)) return true;
+  } catch {
+    // No brief.md — fall through.
+  }
+
+  return false;
 }
 
 async function printPreRunBanner(projectRoot: string): Promise<void> {
@@ -133,7 +166,17 @@ export async function runAll(projectRoot: string) {
   const startMs = Date.now();
   await printPreRunBanner(projectRoot);
 
-  for (const p of RUN_ALL_PHASES) {
+  const includeResearcher = await researcherShouldRun(projectRoot);
+  const phases: PhaseName[] = includeResearcher
+    ? ["researcher", ...RUN_ALL_PHASES]
+    : RUN_ALL_PHASES;
+
+  if (includeResearcher) {
+    console.log(c.dim("(researcher phase enabled — brief opts in or config.research=true)"));
+    console.log("");
+  }
+
+  for (const p of phases) {
     await runPhase(p, projectRoot);
   }
 

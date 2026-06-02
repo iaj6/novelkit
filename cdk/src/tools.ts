@@ -5,6 +5,38 @@ import * as path from "node:path";
 import type { RunLog } from "./runlog.js";
 import { FindingSchema, writeFindings as persistFindings, appendFindings as persistAppendFindings } from "./findings.js";
 
+/**
+ * Per-chapter capture facets — the contract between drafter, downstream phases, and the canon.
+ *
+ * The drafter calls a separate tool for each facet at end-of-chapter. Different facets serve
+ * different consumers; the separation is deliberate, not redundant. Subsequent drafters and
+ * downstream phases (reader, editor-pacing macro mode, continuity-fact-audit) read different
+ * subsets of these files depending on what they need.
+ *
+ * | Facet                | File                    | Writer tool             | Read by                                  |
+ * |----------------------|-------------------------|-------------------------|------------------------------------------|
+ * | What happened        | logs/story-arc.md       | update_story_arc        | drafter, editor-continuity,              |
+ * |                      |                         |                         | editor-pacing, reader, fact-audit        |
+ * | What happened (full) | logs/scene-log.md       | record_scene            | drafter (via read_recent_scenes)         |
+ * | What is now true     | logs/continuity.md      | append_continuity       | drafter, editor-continuity, fact-audit   |
+ * | What is now named    | canon/glossary.md       | append_glossary         | drafter, fact-audit                      |
+ * | How it was made      | logs/chapter-craft.md   | record_chapter_craft    | drafter (via read_recent_craft), reader, |
+ * |                      |                         |                         | editor-pacing (macro mode)               |
+ *
+ * Facets that look adjacent but are NOT redundant:
+ *   - `record_scene.newFacts` records short-term context for the next drafter's awareness.
+ *     `append_continuity` records durable cross-chapter assertions for the fact audit.
+ *     Different consumers, different lifecycle — the drafter calls both intentionally.
+ *   - `logs/scene-log.md` is the verbose per-scene record; `logs/story-arc.md` is the
+ *     chronological one-liner digest used when reading the full scene log would be wasteful.
+ *
+ * "How it was made" (chapter-craft) is the newest facet — added after the reader phase began
+ * catching cross-chapter pattern problems (ending-mode uniformity, recurring stylistic
+ * constructions, opening-texture overlap) that no per-chapter editor pass could detect.
+ * Capturing craft choices as the chapter is drafted lets the next drafter break repeating
+ * patterns before they accumulate.
+ */
+
 export const SERVER_NAME = "cdk";
 
 export type ToolDeps = {
@@ -12,13 +44,146 @@ export type ToolDeps = {
   log: RunLog;
 };
 
-function resolveInProject(projectRoot: string, p: string): string {
+/**
+ * Resolve an agent-supplied path against the project root, refusing anything
+ * that escapes it (parent traversal, absolute paths outside the tree). This is
+ * the file-path jail every tool callback routes through; exported for tests.
+ */
+export function resolveInProject(projectRoot: string, p: string): string {
   const abs = path.isAbsolute(p) ? path.resolve(p) : path.resolve(projectRoot, p);
   const rel = path.relative(projectRoot, abs);
   if (rel.startsWith("..") || path.isAbsolute(rel)) {
     throw new Error(`Path escapes project root: ${p}`);
   }
   return abs;
+}
+
+/**
+ * Shape for `record_chapter_craft`. Declared at module scope so the schema and
+ * formatting logic are unit-testable; the same shape is passed to the SDK's
+ * `tool()` inside buildToolServer.
+ */
+const chapterCraftShape = {
+  chapterId: z.string().describe("Chapter identifier matching the outline file slug, e.g. '01-the-opening'."),
+  ending_mode: z.enum([
+    "cliffhanger",
+    "mid-action-cut",
+    "literary-fade",
+    "resolved-beat",
+    "turn",
+    "coda",
+    "declarative-close",
+    "elliptical",
+    "other",
+  ]).describe(
+    "Closed-vocabulary classification of the chapter's ending shape. Cross-chapter pattern " +
+    "detection depends on string equality, so use 'other' rather than stretching a category. " +
+    "Definitions: " +
+    "cliffhanger = unresolved tension or imminent peril at chapter close; " +
+    "mid-action-cut = chapter ends inside an action sequence without resolving it; " +
+    "literary-fade = quiet image, atmosphere, weather, or sensory close with no action resolution; " +
+    "resolved-beat = the chapter's central question, pressure, or sub-arc resolves on the page; " +
+    "turn = sudden reveal, pivot, or new information that recontextualizes; " +
+    "coda = brief aftermath or reflective beat after the main close; " +
+    "declarative-close = chapter ends on a flat factual statement or pronouncement; " +
+    "elliptical = deliberate ambiguity, open question, or unfinished gesture. " +
+    "If the chapter does something hybrid that no single category fits, use 'other' and " +
+    "describe the hybrid in craft_notes."
+  ),
+  opening_texture: z.enum([
+    "routine-procedure",
+    "drill-or-practice",
+    "transit",
+    "observation",
+    "dialogue",
+    "interior",
+    "set-piece",
+    "arrival",
+    "summons",
+    "atmosphere",
+    "other",
+  ]).describe(
+    "Closed-vocabulary classification of the opening scene type. Cross-chapter pattern matching " +
+    "depends on string equality, so use 'other' rather than stretching a category. Definitions: " +
+    "routine-procedure = familiar work/task; drill-or-practice = training, rehearsal, repetition; " +
+    "transit = movement between places; observation = watching/witnessing without acting; " +
+    "dialogue = conversation-led; interior = POV thought with no immediate sensory anchor; " +
+    "set-piece = staged action beat; arrival = entering a new place; summons = being called, " +
+    "ordered, or woken; atmosphere = sensory mood without action."
+  ),
+  heavy_stylistic_moves: z.array(z.string()).min(2).max(7).describe(
+    "Named craft techniques the chapter leaned on heavily. Concrete and specific to THIS chapter's " +
+    "work — not generic labels that could describe any chapter. Good entries name the technique AND " +
+    "where it landed, e.g., 'short declaratives clustered in the action paragraph', " +
+    "'free indirect interiority through the POV's professional vocabulary', " +
+    "'sensory anchor before dialogue throughout the middle section'. Bad entries are generic, e.g., " +
+    "'descriptive prose', 'third-person limited', 'good pacing' — these do not differentiate."
+  ),
+  recurring_constructions: z.array(z.string()).max(5).describe(
+    "Verbatim 3-8 word patterns the chapter used more than once. These are the micro-tics that, " +
+    "when repeated across chapters, become stylistic-tic findings at the reader phase. Examples of " +
+    "the SHAPE (not the content) of valid entries: 'thought it but did not say', 'knew without " +
+    "knowing', 'wondered if it was'. Empty array if the chapter has no repeated verbatim patterns."
+  ),
+  pov_register: z.array(z.object({
+    character: z.string().min(1).describe("POV character name as used in canon/characters.md."),
+    register_note: z.string().min(1).describe(
+      "One sentence on the specific register decisions made for this POV in this chapter — " +
+      "what was kept tight, what was loosened, what was avoided. e.g., 'POV's interior stayed " +
+      "professional/technical throughout, no abstract reflection' or 'POV admitted one moment of " +
+      "extended interiority at the chapter's midpoint, otherwise close-action.'"
+    ),
+  })).min(1).describe(
+    "One entry per POV character present in this chapter (most books have 1–3). Used by " +
+    "subsequent drafters and by the reader phase to detect voice-drift across chapters for the " +
+    "same POV."
+  ),
+  craft_notes: z.string().min(1).describe(
+    "2-4 sentences of free-text on craft choices not captured above. Anything the next drafter " +
+    "should know about to avoid pattern repetition or to extend a deliberate thread. Be specific " +
+    "to THIS chapter's choices, not the book's general register."
+  ),
+};
+
+/** Z.object form of the chapter-craft shape — exported for schema-validation tests. */
+export const ChapterCraftSchema = z.object(chapterCraftShape);
+export type ChapterCraftArgs = z.infer<typeof ChapterCraftSchema>;
+
+/**
+ * Format a validated chapter-craft entry as the markdown chunk that gets
+ * appended to `logs/chapter-craft.md`. Pure function — no filesystem.
+ * The output begins with a leading newline so it appends cleanly to an
+ * existing file without needing the file to end in a newline.
+ */
+export function formatChapterCraftEntry(args: ChapterCraftArgs): string {
+  const movesList = args.heavy_stylistic_moves.map((m) => `- ${m}`).join("\n");
+  const constructionsList = args.recurring_constructions.length
+    ? args.recurring_constructions.map((c) => `- \`${c}\``).join("\n")
+    : "- (none)";
+  const povList = args.pov_register
+    .map((p) => `- **${p.character}:** ${p.register_note}`)
+    .join("\n");
+  return [
+    `\n## ${args.chapterId}`,
+    `**Ending mode:** ${args.ending_mode}`,
+    `**Opening texture:** ${args.opening_texture}`,
+    `**Heavy stylistic moves:**\n${movesList}`,
+    `**Recurring constructions:**\n${constructionsList}`,
+    `**POV register:**\n${povList}`,
+    `**Craft notes:** ${args.craft_notes}`,
+  ].join("\n") + "\n";
+}
+
+/**
+ * Extract the most recent N entries from chapter-craft file contents.
+ * Splits on chapter heading boundaries (`## ...`) and returns the tail N
+ * joined back together. Returns `"(empty)"` if the file content has no
+ * recognizable entries. Pure function — no filesystem.
+ */
+export function extractRecentCraftEntries(text: string, n: number): string {
+  const entries = text.split(/\n(?=## )/).filter((e) => e.trim());
+  const recent = entries.slice(-n).join("\n").trim();
+  return recent || "(empty)";
 }
 
 export function buildToolServer(deps: ToolDeps) {
@@ -148,6 +313,19 @@ export function buildToolServer(deps: ToolDeps) {
     }
   );
 
+  const recordChapterCraft = tool(
+    "record_chapter_craft",
+    "Record craft choices for the just-drafted chapter in logs/chapter-craft.md. Call this after record_scene and BEFORE append_continuity / append_glossary — the order matters because agents tend to drop last items in long checklists. The recorded craft data is read by subsequent drafters (via read_recent_craft) to detect cross-chapter pattern-pressure, and by the reader and editor-pacing macro pass to surface cross-chapter pattern problems efficiently.",
+    chapterCraftShape,
+    async (args) => {
+      const file = resolveInProject(projectRoot, "logs/chapter-craft.md");
+      await fs.mkdir(path.dirname(file), { recursive: true });
+      await fs.appendFile(file, formatChapterCraftEntry(args), "utf-8");
+      log.event("tool", { name: "record_chapter_craft", chapterId: args.chapterId });
+      return { content: [{ type: "text", text: `recorded chapter craft for ${args.chapterId}` }] };
+    }
+  );
+
   const projectState = tool(
     "project_state",
     "Summarize what files exist in canon/, outline/, draft/. Use as a 'where am I' check.",
@@ -267,6 +445,26 @@ export function buildToolServer(deps: ToolDeps) {
     }
   );
 
+  const readRecentCraft = tool(
+    "read_recent_craft",
+    "Return only the most recent N entries from logs/chapter-craft.md. Call this when drafting a later chapter to see craft choices made in recent chapters — used to detect cross-chapter pattern-pressure (e.g., to notice if recent chapters keep ending in the same mode, opening with the same texture, or reusing a recurring construction). Mirrors read_recent_scenes; do not read the full chapter-craft.md directly. Returns '(no chapter-craft log yet)' if the file is missing.",
+    {
+      n: z.number().int().min(1).max(20).describe("How many of the most recent chapter-craft entries to return (3 is the usual choice for drafting)."),
+    },
+    async (args) => {
+      const file = resolveInProject(projectRoot, "logs/chapter-craft.md");
+      let text = "";
+      try {
+        text = await fs.readFile(file, "utf-8");
+      } catch {
+        return { content: [{ type: "text", text: "(no chapter-craft log yet)" }] };
+      }
+      const recent = extractRecentCraftEntries(text, args.n);
+      log.event("tool", { name: "read_recent_craft", n: args.n });
+      return { content: [{ type: "text", text: recent }] };
+    }
+  );
+
   const server = createSdkMcpServer({
     name: SERVER_NAME,
     version: "0.1.0",
@@ -278,9 +476,11 @@ export function buildToolServer(deps: ToolDeps) {
       appendContinuity,
       appendGlossary,
       recordScene,
+      recordChapterCraft,
       projectState,
       updateStoryArc,
       readRecentScenes,
+      readRecentCraft,
       writeFindings,
       appendFindings,
     ],
@@ -294,9 +494,11 @@ export function buildToolServer(deps: ToolDeps) {
     "append_continuity",
     "append_glossary",
     "record_scene",
+    "record_chapter_craft",
     "project_state",
     "update_story_arc",
     "read_recent_scenes",
+    "read_recent_craft",
     "write_findings",
     "append_findings",
   ];

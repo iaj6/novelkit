@@ -23,8 +23,10 @@ The three subsystems are deliberately independent. They communicate through the 
 ```
 brief.md                              ──┐
                                         │
-  cdk: architect, plotter, threads,     │
-       drafter, editor, reader,         │
+  cdk: researcher (opt-in), architect,  │
+       plotter, threads,                │
+       calibrate-drafter, drafter,      │
+       editor, reader,                  │
        continuity-fact-audit            │
                                         ▼
 library/<book>/
@@ -92,10 +94,15 @@ cd ../press
                                           #   gpt-image-1.5 paints it)
 ./build_audiobook_openai.sh my-book       # → MP3s (optional, costs OpenAI TTS spend)
 
-# 5. Mark it as public on the site.
+# 5. Mark it as public, then stage its files for the site.
 cd ../cdk
-npm run cdk -- publish ../library/my-book
-# Local change to cdk.config.json — commit and push to deploy.
+npm run cdk -- publish ../library/my-book   # visibility → public in cdk.config.json
+cd ../site
+npm run sync                                # copies build/ → public/books/<slug>/ (public books only)
+# Commit BOTH the cdk.config.json change AND site/public/books/<slug>/, then push.
+# CI builds only the Astro site (not the press), so public/books/ is the
+# deployed source of truth for downloads. (Audiobook MP3s are gitignored — large
+# and regenerable — so audio is not served from the deployed site by default.)
 
 # 6. Serve the reading room locally.
 cd ../site
@@ -117,9 +124,14 @@ cdk publish <dir>     # set visibility: public
 cdk unpublish <dir>   # set visibility: private (default)
 ```
 
-This lives as a `"visibility"` field in `cdk.config.json`. The site filters `getBooks()` to `visibility === "public"` and ignores everything else — even if a book has chapters, a cover, and an audiobook, it won't show up until you publish it. After flipping the field, commit and push to deploy.
+This lives as a `"visibility"` field in `cdk.config.json`, and it gates **both** layers of the site:
 
-Why: CDK runs produce a lot of in-flight drafts. A draft you're iterating on shouldn't auto-appear on the public reading room.
+- **Pages** — the site filters `getBooks()` to `visibility === "public"` and ignores everything else, so a private book gets no landing entry and no `/book/<slug>/` route.
+- **Files** — `site/scripts/sync-library.sh` (the `predev`/`prebuild` hook) copies only public books' artifacts into `site/public/books/<slug>/`, and **prunes** the copy of any book that is private or removed. So a private book never leaks its EPUB/PDF/cover onto the deployed site, and `cdk unpublish` + a sync retracts a book's files as well as its page.
+
+Because CI builds only the Astro site (it does not run the press), `site/public/books/` is the deployed source of truth for downloads. Flipping `visibility` alone changes the *pages*; to also move (or retract) the *files*, run `npm run sync` in `site/` and commit `site/public/books/` along with the `cdk.config.json` change, then push. `library/<book>/build/` is gitignored, so an artifact that isn't synced-and-committed won't appear on the live site even for a public book.
+
+Why: CDK runs produce a lot of in-flight drafts. A draft you're iterating on shouldn't auto-appear on the public reading room — in its pages or as a quietly-fetchable file.
 
 ## What's in `library/` already
 
@@ -144,7 +156,7 @@ Calibrated against real `run.jsonl` data from completed pipeline runs. Per ~80K-
 | Drafting + editor passes + reader | ~$4 fixed + ~$2/chapter | Pre-run banner shows a band before each run starts |
 | Cover brief synthesis (Anthropic) | ~$0.01–0.02 | Claude reads the canon, writes a focused visual brief |
 | Cover image (OpenAI gpt-image-1.5) | ~$0.04–0.20 | One call, ~30 seconds |
-| Audiobook (OpenAI TTS, Flash) | ~$0.05/1K chars | ~$20 for a 30-chapter novel |
+| Audiobook (OpenAI TTS, gpt-4o-mini-tts) | ~$0.05/1K chars | ~$20 for a 30-chapter novel |
 | Audiobook (ElevenLabs eleven_v3) | ~$0.30/1K chars | Higher quality; ~$120 for the same novel |
 
 Skip what you don't need. Text outputs alone (no cover, no audio) are cheap.
@@ -163,7 +175,7 @@ See [site/README.md](site/README.md) for the custom-domain swap (drop the base p
 
 ```bash
 # cdk
-cd cdk && npm test                     # vitest — 45 tests, ~150ms
+cd cdk && npm test                     # vitest — 106 tests, ~300ms
 cd cdk && npm run test:coverage        # >80% on ansi, runlog, estimate, state
 
 # press
@@ -171,11 +183,11 @@ cd press && python3 -m pytest          # pytest — 78 tests, ~80ms
 cd press && python3 -m pytest --cov    # 86% across modules
 
 # site
-cd site && npm test                    # vitest — 33 tests, ~150ms
-cd site && npm run test:coverage       # 93% on library.ts
+cd site && npm test                    # vitest — 39 tests, ~150ms
+cd site && npm run test:coverage       # ~85% on library.ts
 ```
 
-CI runs all three suites on every push and PR via `.github/workflows/test.yml`. Dependabot keeps npm packages, Python deps, and GitHub Actions versions up to date with weekly PRs.
+CI runs all three suites on every push and PR via `.github/workflows/test.yml`. Dependabot keeps the npm packages (cdk + site) and GitHub Actions versions up to date with weekly PRs.
 
 ## Security
 

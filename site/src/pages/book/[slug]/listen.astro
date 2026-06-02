@@ -1,0 +1,220 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import Ornament from "../../../components/Ornament.astro";
+import {
+  getBooks,
+  getAudiobook,
+  artifactUrl,
+  url,
+  type Book,
+  type Audiobook,
+} from "../../../lib/library";
+
+// Only books with audio synced into public/books/<slug>/ get a listen page.
+// On the deployed site (mp3s gitignored) this set is empty unless audio was
+// committed — which keeps this route in lockstep with the book page's
+// audiobook link (both keyed on the same artifacts).
+export function getStaticPaths() {
+  const entries = getBooks()
+    .map((book) => ({ book, audiobook: getAudiobook(book.slug) }))
+    .filter((e) => e.audiobook !== null) as {
+    book: Book;
+    audiobook: Audiobook;
+  }[];
+
+  return entries.map(({ book, audiobook }) => ({
+    params: { slug: book.slug },
+    props: { book, audiobook },
+  }));
+}
+
+interface Props {
+  book: Book;
+  audiobook: Audiobook;
+}
+
+const { book, audiobook } = Astro.props;
+const coverFile = book.artifacts.coverThumb ?? book.artifacts.cover ?? null;
+const coverUrl = coverFile ? artifactUrl(book.slug, coverFile) : null;
+const trackCount = audiobook.tracks.length;
+const pad = (n: number) => String(n).padStart(2, "0");
+---
+
+<BaseLayout
+  title={`${book.title} — audiobook`}
+  description={`Listen to ${book.title}, an agent-drafted audiobook from lantern & page.`}
+  compactHeader={true}
+>
+  <article class="listen">
+    <div class="container">
+      <p class="backlink reveal reveal-1">
+        <a href={url(`/book/${book.slug}/`)}>&larr; back to {book.title}</a>
+      </p>
+
+      <header class="listen-head reveal reveal-2">
+        {coverUrl && (
+          <img
+            src={coverUrl}
+            alt={`cover of ${book.title}`}
+            class="listen-cover"
+            width="64"
+          />
+        )}
+        <div>
+          <p class="vol-label small-caps">audiobook &middot; lantern &amp; page</p>
+          <h1 class="listen-title">{book.title}</h1>
+          <p class="meta listen-meta">
+            {trackCount} {trackCount === 1 ? "track" : "tracks"} &middot; a
+            synthetic voice, generated from the text
+          </p>
+        </div>
+      </header>
+
+      <Ornament variant="single" />
+
+      <ol class="tracks reveal reveal-3">
+        {audiobook.tracks.map((track, i) => (
+          <li class="track">
+            <div class="track-head">
+              <span class="track-num">{pad(i + 1)}</span>
+              <span class="track-label">{track.label}</span>
+            </div>
+            <audio
+              class="track-audio"
+              controls
+              preload="none"
+              src={artifactUrl(book.slug, `${audiobook.source}/${track.file}`)}
+            ></audio>
+          </li>
+        ))}
+      </ol>
+
+      <Ornament variant="single" />
+
+      <p class="provenance reveal reveal-4">
+        the narration is machine-generated from the book&rsquo;s text. no human
+        read these chapters aloud, just as no human wrote them.
+      </p>
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .listen {
+    padding-block: var(--space-5) var(--space-5);
+  }
+
+  .backlink {
+    margin-bottom: var(--space-3);
+  }
+
+  .backlink a {
+    color: var(--ink-faded);
+    font-style: italic;
+    border-bottom: 0;
+  }
+
+  .backlink a:hover,
+  .backlink a:focus-visible {
+    color: var(--lantern-deep);
+  }
+
+  .listen-head {
+    display: flex;
+    gap: var(--space-3);
+    align-items: center;
+    margin-bottom: var(--space-3);
+  }
+
+  .listen-cover {
+    width: 64px;
+    height: auto;
+    border: 1px solid var(--paper-edge);
+    box-shadow: var(--shadow-page);
+    flex: none;
+  }
+
+  .vol-label {
+    margin-bottom: var(--space-1);
+  }
+
+  .listen-title {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 400;
+    font-variation-settings: "opsz" 60, "SOFT" 60;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    line-height: 1;
+    letter-spacing: -0.015em;
+    color: var(--ink);
+  }
+
+  .listen-meta {
+    margin-top: var(--space-1);
+    font-style: italic;
+  }
+
+  .tracks {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .track {
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: var(--space-3);
+  }
+
+  .track:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .track-head {
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-2);
+    margin-bottom: var(--space-2);
+  }
+
+  .track-num {
+    font-family: var(--font-display);
+    font-style: italic;
+    color: var(--lantern);
+    font-variation-settings: "opsz" 24;
+    font-size: 1.3rem;
+    line-height: 1;
+  }
+
+  .track-label {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 400;
+    font-variation-settings: "opsz" 30, "SOFT" 50;
+    font-size: 1.3rem;
+    color: var(--ink);
+  }
+
+  .track-audio {
+    width: 100%;
+    height: 38px;
+  }
+
+  .provenance {
+    color: var(--ink-faded);
+    font-size: 0.95rem;
+    font-style: italic;
+    line-height: 1.6;
+    max-width: 34rem;
+    margin-top: var(--space-3);
+  }
+
+  @media (max-width: 760px) {
+    .listen-cover {
+      display: none;
+    }
+  }
+</style>

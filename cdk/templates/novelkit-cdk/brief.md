@@ -33,6 +33,8 @@ These fields tell the architect how to tailor per-agent guidance for this book. 
 - **POV count intent**: (e.g., "one anchor protagonist", "two co-leads", "ensemble of 3-5", "rotating per chapter")
 - **Chapter-ending convention**: (cliffhangers common / mid-action common / literary fades / mixed by design)
 
+*Brief-writing note on closing register: avoid prescriptive language elsewhere in the brief (especially in `## Voice` or `## Constraints`) about a uniform closing style — phrases like "literary fade at the close of the book" tend to produce 80%+ of chapters ending in the same mode across the manuscript. Descriptive guidance ("quiet endings welcome where the chapter wants them" or "the closing register may resolve quietly when the substance calls for it") gives the drafter room to vary while still honoring the voice. Mixed-by-design above is the safest default unless the genre demands otherwise.*
+
 ## Exemplar passages
 
 Paste 1-3 short opening passages (100-300 words each) from real books whose voice and cadence you want this to read like. These give the architect concrete anchors — much stronger than describing the voice abstractly.
@@ -50,3 +52,27 @@ If you have no exemplars, leave this section empty and describe the voice in pro
 ## Constraints (optional)
 
 - (Hard rules the agent must respect. Leave empty if none.)
+
+## Research scope (optional — including this section enables the researcher phase)
+
+Use this section if the story depends on real-world facts the pipeline should ground before canon is built. Including this section (or setting `"research": true` in `cdk.config.json`) triggers the **researcher phase**, which runs before the architect and produces `canon/research.md` — a dossier of cited facts that downstream phases treat as ground truth.
+
+Skip this section for fully invented worlds (fantasy, sci-fi, contemporary fiction with no historical anchors) — the researcher is wasted on briefs that don't need grounding.
+
+What to put here: a short bulleted list of the topics the researcher should dig into. Be specific. The researcher classifies your brief and designs its own dossier sections, but a focused scope keeps it honest about what matters for *your* story.
+
+Examples of useful scope items (illustrative — yours should match your brief):
+
+- A specific historical event your story sits inside or alongside (with the named participants, places, timeline)
+- A specialist procedure the plot depends on (and the period-correct vocabulary for it)
+- A real place whose physical and social texture must be accurate
+- A profession or trade whose daily practice the protagonist lives inside
+- Period material culture (tools, dress, foodways, money) where modern defaults would betray the setting
+
+Tool budget: the researcher has 30 `WebSearch` and 30 `WebFetch` calls per run. Generous for a focused scope; tight if you ask it to research everything. Keep the scope sharp.
+
+```
+- (research topic 1)
+- (research topic 2)
+- (research topic 3)
+```

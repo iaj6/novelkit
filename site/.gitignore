@@ -7,6 +7,11 @@ dist/
 # (they're the deployed source of truth, populated by sync-library.sh
 # from the gitignored library/<slug>/build/ workshop output).
 #
+# INVARIANT: only books with visibility="public" belong here. sync-library.sh
+# is visibility-aware — it skips private books and prunes any stale public/books
+# copy of one. Run `npm run sync` before staging so a book flipped private is
+# removed here too; don't hand-commit a private book's files under public/books.
+#
 # Audio is excluded — MP3s can run hundreds of MB per book and shouldn't
 # bloat the repo. They're regenerable via press/build_audiobook*.sh.
 public/books/*/audiobook/

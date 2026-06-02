@@ -2,6 +2,7 @@ import * as fs from "node:fs/promises";
 import * as path from "node:path";
 
 export type PhaseId =
+  | "researcher"
   | "architect"
   | "plotter"
   | "threads"
@@ -39,6 +40,13 @@ export type Config = {
    */
   visibility: Visibility;
   /**
+   * Whether the researcher phase runs before the architect. When true (or
+   * when brief.md contains a `## Research scope` section), the conductor
+   * invokes the researcher to produce canon/research.md from primary
+   * sources before canon is built. Default false — most briefs don't need it.
+   */
+  research: boolean;
+  /**
    * Drafter calibration loop (runs between threads and drafter). When enabled,
    * the pipeline drafts a short sample of chapter 1's opening, has a grader
    * compare it against the brief's audience/exemplars, and revises
@@ -51,6 +59,7 @@ export type Config = {
 };
 
 const DEFAULT_MAX_TURNS: Record<PhaseId, number> = {
+  researcher: 120,
   architect: 60,
   plotter: 50,
   threads: 40,
@@ -75,6 +84,7 @@ const DEFAULT_CONFIG: Config = {
   title: "Untitled",
   model: "claude-sonnet-4-6",
   visibility: "private",
+  research: false,
   calibration: DEFAULT_CALIBRATION,
   modelByPhase: {},
   maxTurnsPerPhase: DEFAULT_MAX_TURNS,
@@ -86,22 +96,39 @@ function normalizeVisibility(value: unknown): Visibility {
 
 export async function loadConfig(projectRoot: string): Promise<Config> {
   const file = path.join(projectRoot, "cdk.config.json");
+  let text: string;
   try {
-    const text = await fs.readFile(file, "utf-8");
-    const parsed = JSON.parse(text);
-    return {
-      ...DEFAULT_CONFIG,
-      ...parsed,
-      // Anything other than the literal "public" is treated as "private"
-      // — safer default for legacy configs without the field.
-      visibility: normalizeVisibility(parsed.visibility),
-      calibration: { ...DEFAULT_CALIBRATION, ...(parsed.calibration ?? {}) },
-      modelByPhase: { ...(parsed.modelByPhase ?? {}) },
-      maxTurnsPerPhase: { ...DEFAULT_MAX_TURNS, ...(parsed.maxTurnsPerPhase ?? {}) },
-    };
-  } catch {
-    return DEFAULT_CONFIG;
+    text = await fs.readFile(file, "utf-8");
+  } catch (err) {
+    if ((err as NodeJS.ErrnoException).code === "ENOENT") {
+      // No config file — run with defaults. The private/default direction is
+      // fail-safe; the harm to avoid is silently *defaulting* a config the
+      // operator did write (handled in the parse branch below).
+      return structuredClone(DEFAULT_CONFIG);
+    }
+    throw err;
   }
+  let parsed;
+  try {
+    parsed = JSON.parse(text);
+  } catch (err) {
+    const msg = err instanceof Error ? err.message : String(err);
+    throw new Error(
+      `cdk.config.json is not valid JSON (${msg}). Fix it before running; ` +
+        `refusing to silently fall back to defaults (model, turn caps, calibration).`
+    );
+  }
+  return {
+    ...DEFAULT_CONFIG,
+    ...parsed,
+    // Anything other than the literal "public" is treated as "private"
+    // — safer default for legacy configs without the field.
+    visibility: normalizeVisibility(parsed.visibility),
+    research: parsed.research === true,
+    calibration: { ...DEFAULT_CALIBRATION, ...(parsed.calibration ?? {}) },
+    modelByPhase: { ...(parsed.modelByPhase ?? {}) },
+    maxTurnsPerPhase: { ...DEFAULT_MAX_TURNS, ...(parsed.maxTurnsPerPhase ?? {}) },
+  };
 }
 
 /**
@@ -113,13 +140,27 @@ export async function setVisibility(
   visibility: Visibility
 ): Promise<Visibility> {
   const file = path.join(projectRoot, "cdk.config.json");
-  let parsed: Record<string, unknown> = {};
+  let parsed: Record<string, unknown>;
+  let text: string | null = null;
   try {
-    const text = await fs.readFile(file, "utf-8");
-    parsed = JSON.parse(text);
-  } catch {
+    text = await fs.readFile(file, "utf-8");
+  } catch (err) {
+    if ((err as NodeJS.ErrnoException).code !== "ENOENT") throw err;
     // No config file yet — start from defaults.
+  }
+  if (text === null) {
     parsed = { ...DEFAULT_CONFIG };
+  } else {
+    try {
+      parsed = JSON.parse(text);
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : String(err);
+      throw new Error(
+        `cdk.config.json is not valid JSON (${msg}). Fix it before publishing; ` +
+          `refusing to overwrite it with defaults (which would wipe title, model, ` +
+          `and tuning).`
+      );
+    }
   }
   parsed.visibility = visibility;
   await fs.writeFile(file, JSON.stringify(parsed, null, 2) + "\n", "utf-8");

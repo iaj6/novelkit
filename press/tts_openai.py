@@ -27,7 +27,7 @@ def chunk_text(text: str, max_chars: int) -> list[str]:
                 chunks.append(current)
             # Paragraph itself too big: fall back to sentence splitting.
             if len(p) > max_chars:
-                sentences = [s.strip() for s in re.split(r"(?<=[.!?])\\s+", p) if s.strip()]
+                sentences = [s.strip() for s in re.split(r"(?<=[.!?])\s+", p) if s.strip()]
                 cur2 = ""
                 for s in sentences:
                     cand2 = (cur2 + " " + s).strip() if cur2 else s

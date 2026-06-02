@@ -211,7 +211,9 @@ a:hover {
 
 /* Focus rings — restrained but visible */
 :focus-visible {
-  outline: 2px solid var(--lantern);
+  /* --ink (15.3:1 on paper) gives a clearly visible keyboard focus ring;
+     --lantern (2.16:1) failed WCAG 2.2 SC 1.4.11 non-text contrast (needs 3:1). */
+  outline: 2px solid var(--ink);
   outline-offset: 3px;
   border-radius: 1px;
 }

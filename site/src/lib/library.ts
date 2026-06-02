@@ -294,3 +294,76 @@ export function url(path: string): string {
 export function artifactUrl(slug: string, name: string): string {
   return url(`/books/${slug}/${name}`);
 }
+
+export interface AudiobookTrack {
+  /** mp3 filename within the source directory, e.g. "01-chapter.mp3" */
+  file: string;
+  /** display label, e.g. "The Finding" or "Chapter 1 · part 3" */
+  label: string;
+}
+
+export interface Audiobook {
+  /** which synced directory the tracks live in */
+  source: "audiobook" | "audiobook-openai";
+  tracks: AudiobookTrack[];
+}
+
+interface TtsManifest {
+  chapters?: Array<{ number?: number; title?: string; slug?: string }>;
+}
+
+/**
+ * Turn an mp3 filename stem into a human label when no manifest title is
+ * available. Handles the two shapes the press emits:
+ *   "01-chapter"          → "Chapter 1"
+ *   "01-chapter.part03"   → "Chapter 1 · part 3"   (split long chapters)
+ * Anything else falls back to the stem with separators spaced out.
+ */
+export function humanizeTrackLabel(stem: string): string {
+  const m = stem.match(/^(\d+)-(.+)$/);
+  if (!m) return stem.replace(/[-_.]+/g, " ").trim();
+  const n = parseInt(m[1], 10);
+  const rest = m[2];
+  const part = rest.match(/\.part0*(\d+)$/i);
+  if (part) return `Chapter ${n} · part ${parseInt(part[1], 10)}`;
+  const word = rest.replace(/\.[^.]+$/, "").replace(/[-_.]+/g, " ").trim();
+  if (!word || /^chapter$/i.test(word)) return `Chapter ${n}`;
+  return `${n} · ${word}`;
+}
+
+/**
+ * Resolve a book's audiobook track list, or null if it has none synced.
+ *
+ * Prefers the ElevenLabs `audiobook/` directory over OpenAI `audiobook-openai/`
+ * when both exist — matching the book page's choice. Track labels come from the
+ * press's `tts/manifest.json` when it's been synced alongside the mp3s, and
+ * fall back to a humanized filename otherwise.
+ *
+ * Note: audio (and the tts manifest) are gitignored under public/books, so on
+ * the deployed site this returns null unless the mp3s were committed. That's
+ * intentional — the listen page is only generated where the audio exists.
+ */
+export function getAudiobook(slug: string): Audiobook | null {
+  const publicSlugDir = join(PUBLIC_BOOKS_DIR, slug);
+  const source: Audiobook["source"] =
+    listMp3s(join(publicSlugDir, "audiobook")).length > 0
+      ? "audiobook"
+      : "audiobook-openai";
+  const files = listMp3s(join(publicSlugDir, source));
+  if (files.length === 0) return null;
+
+  const manifest = safeReadJson<TtsManifest>(
+    join(publicSlugDir, "tts", "manifest.json")
+  );
+  const titleBySlug = new Map<string, string>();
+  for (const ch of manifest?.chapters ?? []) {
+    if (ch.slug && ch.title) titleBySlug.set(ch.slug, ch.title);
+  }
+
+  const tracks: AudiobookTrack[] = files.map((file) => {
+    const stem = file.replace(/\.mp3$/i, "");
+    return { file, label: titleBySlug.get(stem) ?? humanizeTrackLabel(stem) };
+  });
+
+  return { source, tracks };
+}

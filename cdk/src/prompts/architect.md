@@ -30,15 +30,16 @@ The structure of each guidance file is specified in detail below.
 
 ## How to work
 
-1. Call `read_file` on `brief.md` to start. Look carefully for:
+1. Call `list_files` on `canon` to check what already exists. If `canon/research.md` is present, the researcher phase has produced a grounded fact dossier — call `read_file` on it first, then on `canon/research-bibliography.md` if it exists. Treat the dossier as **ground truth for any factual claims your canon touches**: where the brief and the dossier imply different things, the brief wins on creative choices (premise, characters, structure, voice), the dossier wins on facts (dates, names, places, procedures, period vocabulary). If `canon/research.md` is absent, skip this step — the brief is your only source.
+2. Call `read_file` on `brief.md`. Look carefully for:
    - The "Audience and register" section — target age range, voice pace, reading-grade, POV count intent, chapter-ending convention. These are not optional decoration; they directly shape the guidance files.
    - The "Exemplar passages" section — if present, these are the strongest anchor for the drafter's voice register. Treat them as the single most important input for `agent-guidance/drafter.md`.
    - If audience/register fields are blank or vague, the brief is implicitly asking for "literary adult fiction" (the pipeline's native register). Note this in your audit if relevant.
-2. You may call `project_state` if you want to see what already exists.
-3. Write each canon file (1–7 above) via `write_file`. Do not chain multiple files in one tool call.
-4. Write each guidance file (8–10 above) via `write_file`. Generate these AFTER canon is settled — canon stabilizes the register decisions; the guidance files apply them per-agent.
-5. After all files are written, call `append_continuity` with the 5–10 most load-bearing facts that downstream phases must respect.
-6. Then stop. Do not draft chapters, write outlines, or call any other tools.
+3. You may call `project_state` if you want to see what already exists.
+4. Write each canon file (1–7 above) via `write_file`. Do not chain multiple files in one tool call. When `canon/research.md` exists, your canon files should be consistent with it — pull period vocabulary into `world.md`, real-place details into the same, real-person biography into `characters.md` for any historical figures the brief names, and load-bearing cited facts into `continuity.md`.
+5. Write each guidance file (8–10 above) via `write_file`. Generate these AFTER canon is settled — canon stabilizes the register decisions; the guidance files apply them per-agent.
+6. After all files are written, call `append_continuity` with the 5–10 most load-bearing facts that downstream phases must respect.
+7. Then stop. Do not draft chapters, write outlines, or call any other tools.
 
 ## Quality bar
 

@@ -26,8 +26,7 @@ const hasAudio =
   book.artifacts.audioElevenlabs.length > 0 ||
   book.artifacts.audioOpenai.length > 0;
 
-// Determine which audio source to link (prefer ElevenLabs if both exist).
-const audioSrc = book.artifacts.audioElevenlabs.length > 0 ? "audiobook" : "audiobook-openai";
+// Track count for the audiobook link note (prefer ElevenLabs if both exist).
 const audioFiles = book.artifacts.audioElevenlabs.length > 0
   ? book.artifacts.audioElevenlabs
   : book.artifacts.audioOpenai;
@@ -109,10 +108,10 @@ const audioFiles = book.artifacts.audioElevenlabs.length > 0
               )}
               {hasAudio && (
                 <li>
-                  <a href={url(`/books/${book.slug}/${audioSrc}/`)} class="format-link">
+                  <a href={url(`/book/${book.slug}/listen/`)} class="format-link">
                     <span class="format-name">audiobook</span>
                     <span class="format-note">
-                      {audioFiles.length} {audioFiles.length === 1 ? "chapter" : "chapters"}
+                      listen &middot; {audioFiles.length} {audioFiles.length === 1 ? "track" : "tracks"}
                     </span>
                   </a>
                 </li>
@@ -120,8 +119,8 @@ const audioFiles = book.artifacts.audioElevenlabs.length > 0
             </ul>
           ) : (
             <p class="meta no-downloads">
-              this book has not yet been published. its drafts are kept in
-              the source repository while editing passes are pending.
+              no downloadable editions yet &mdash; the press hasn&rsquo;t built
+              this book&rsquo;s files. its text lives in the source repository.
             </p>
           )}
         </section>

@@ -5,6 +5,8 @@ import {
   deriveOneLine,
   getBooks,
   getBook,
+  getAudiobook,
+  humanizeTrackLabel,
   type Book,
 } from "../src/lib/library.js";
 
@@ -278,5 +280,47 @@ describe("Book type", () => {
     expect(b).toHaveProperty("hasManuscript");
     expect(b).toHaveProperty("status");
     expect(b).toHaveProperty("artifacts");
+  });
+});
+
+// ── humanizeTrackLabel() — pure fallback for audiobook track names ──
+
+describe("humanizeTrackLabel()", () => {
+  it("labels a plain chapter file by its number", () => {
+    expect(humanizeTrackLabel("01-chapter")).toBe("Chapter 1");
+    expect(humanizeTrackLabel("03-chapter")).toBe("Chapter 3");
+  });
+
+  it("labels a split-chapter part file", () => {
+    // The press splits long chapters: "01-chapter.part03".
+    expect(humanizeTrackLabel("01-chapter.part03")).toBe("Chapter 1 · part 3");
+    expect(humanizeTrackLabel("12-chapter.part01")).toBe("Chapter 12 · part 1");
+  });
+
+  it("spaces out a descriptive stem that isn't just 'chapter'", () => {
+    expect(humanizeTrackLabel("05-the-writing")).toBe("5 · the writing");
+  });
+
+  it("falls back to a separator-spaced stem when there's no leading number", () => {
+    expect(humanizeTrackLabel("intro")).toBe("intro");
+    expect(humanizeTrackLabel("author_note")).toBe("author note");
+  });
+});
+
+// ── getAudiobook() — null cases (CI-safe; mp3s are gitignored) ──────
+//
+// Audio files are gitignored under public/books, so in CI no public book
+// has audio and getAudiobook returns null. We only assert the null paths
+// here; the populated path is exercised by the actual site build wherever
+// audio has been synced locally.
+
+describe("getAudiobook()", () => {
+  it("returns null for a book with no synced audio", () => {
+    // coldwater-reach ships covers only — no audiobook directory.
+    expect(getAudiobook("coldwater-reach")).toBeNull();
+  });
+
+  it("returns null for an unknown slug", () => {
+    expect(getAudiobook("does-not-exist")).toBeNull();
   });
 });

@@ -31,6 +31,13 @@ class TestChunkText:
         assert len(chunks) > 1
         for c in chunks:
             assert len(c) <= 100
+        # Regression guard: the sentence-level fallback must cut on sentence
+        # boundaries, not mid-word. With the previously double-escaped split
+        # regex the paragraph never split and fell through to a hard char-split
+        # (audio stopped mid-word at the seam). Every chunk but the last must
+        # therefore end on terminal punctuation.
+        for c in chunks[:-1]:
+            assert c.rstrip()[-1] in ".!?"
 
     def test_super_long_sentence_hard_splits(self):
         text = "a" * 300  # no sentence boundaries

@@ -1,4 +1,9 @@
-import { query } from "@anthropic-ai/claude-agent-sdk";
+import {
+  query,
+  type CanUseTool,
+  type PermissionMode,
+  type PermissionResult,
+} from "@anthropic-ai/claude-agent-sdk";
 import * as fs from "node:fs/promises";
 import * as path from "node:path";
 import { buildToolServer } from "./tools.js";
@@ -6,6 +11,50 @@ import { openRunLog, readCostSummary, type RunLog } from "./runlog.js";
 import { loadConfig, modelForPhase, type PhaseId } from "./config.js";
 import { PROMPTS_DIR } from "./paths.js";
 import * as c from "./ansi.js";
+
+/** Per-run cap on each web tool for the researcher phase. */
+export const WEB_TOOL_CAP_PER_RUN = 30;
+
+/**
+ * Builds the canUseTool handler for the researcher phase. Tracks WebSearch and
+ * WebFetch invocations and denies further calls once each hits WEB_TOOL_CAP_PER_RUN.
+ * All other tools (MCP and SDK built-ins) are allowed unconditionally — the
+ * cap is the only behavioral gate this handler enforces.
+ *
+ * Exported for unit testing; not otherwise wired outside this module.
+ */
+export function createResearcherPermissionHandler(log: RunLog): CanUseTool {
+  let webSearchCalls = 0;
+  let webFetchCalls = 0;
+
+  return async (toolName: string): Promise<PermissionResult> => {
+    if (toolName === "WebSearch") {
+      if (webSearchCalls >= WEB_TOOL_CAP_PER_RUN) {
+        log.event("web_tool_cap_hit", { tool: "WebSearch", cap: WEB_TOOL_CAP_PER_RUN });
+        return {
+          behavior: "deny",
+          message: `WebSearch cap of ${WEB_TOOL_CAP_PER_RUN} reached for this run. Finalize the dossier with what you have; do not attempt more searches. Perform the citation self-audit and stop.`,
+        };
+      }
+      webSearchCalls++;
+      log.event("web_tool_call", { tool: "WebSearch", count: webSearchCalls, cap: WEB_TOOL_CAP_PER_RUN });
+      return { behavior: "allow" };
+    }
+    if (toolName === "WebFetch") {
+      if (webFetchCalls >= WEB_TOOL_CAP_PER_RUN) {
+        log.event("web_tool_cap_hit", { tool: "WebFetch", cap: WEB_TOOL_CAP_PER_RUN });
+        return {
+          behavior: "deny",
+          message: `WebFetch cap of ${WEB_TOOL_CAP_PER_RUN} reached for this run. Finalize the dossier with what you have; do not attempt more fetches. Perform the citation self-audit and stop.`,
+        };
+      }
+      webFetchCalls++;
+      log.event("web_tool_call", { tool: "WebFetch", count: webFetchCalls, cap: WEB_TOOL_CAP_PER_RUN });
+      return { behavior: "allow" };
+    }
+    return { behavior: "allow" };
+  };
+}
 
 export type { PhaseId };
 
@@ -26,7 +75,57 @@ const BASE_BACKOFF_MS = 10_000;
 const RETRYABLE_PATTERN =
   /\b(429|502|503|504|408|529)\b|overloaded|stream idle timeout|request timed out|deadline exceeded|socket (?:connection|closed)|connection (?:closed|reset|refused|aborted|terminated)|econnreset|econnrefused|econnaborted|enetunreach|etimedout|epipe|rate.?limit|temporarily unavailable|service unavailable|fetch failed|network (?:error|unavailable)|bad gateway|gateway timeout/i;
 
-function isRetryable(err: unknown): boolean {
+/**
+ * The Agent SDK does NOT throw on a failed run. It emits a normal `result`
+ * message with `is_error: true` and a `subtype` such as `error_max_turns`,
+ * `error_during_execution`, or `error_max_budget_usd`. If a phase treated that
+ * as success it would `markComplete` a truncated/empty chapter, and a later
+ * resume would skip it forever. `runQueryOnce` throws this instead so the phase
+ * never marks complete and the run aborts cleanly (resume re-attempts the unit).
+ */
+export class AgentResultError extends Error {
+  readonly phase: string;
+  readonly subtype: string;
+  constructor(phase: string, subtype: string, message: string) {
+    super(message);
+    this.name = "AgentResultError";
+    this.phase = phase;
+    this.subtype = subtype;
+  }
+}
+
+/**
+ * True when an SDK `result` message represents a failure rather than success.
+ * Pure; exported for testing.
+ */
+export function isErrorResult(msg: { subtype?: unknown; is_error?: unknown }): boolean {
+  if (msg.is_error === true) return true;
+  return typeof msg.subtype === "string" && msg.subtype.startsWith("error");
+}
+
+function resultErrorMessage(phase: string, subtype: string): string {
+  const base = `agent phase "${phase}" ended with an error result (${subtype}); the phase was NOT marked complete`;
+  if (subtype === "error_max_turns") {
+    return `${base}. Re-run \`cdk run\` to retry this phase, or raise maxTurnsPerPhase.${phase} in cdk.config.json.`;
+  }
+  if (subtype === "error_max_budget_usd") {
+    return `${base}. The run hit its budget cap. Re-run \`cdk run\` to continue.`;
+  }
+  return `${base}. Re-run \`cdk run\` to retry from this phase.`;
+}
+
+/**
+ * Result subtypes a blind retry cannot fix — re-running with the same caps just
+ * hits the same wall, so we surface them immediately instead of burning the
+ * backoff budget. Other failures (e.g. a transient mid-stream execution error)
+ * fall through to the normal retry loop.
+ */
+const NON_RETRYABLE_RESULT_SUBTYPES = new Set(["error_max_turns", "error_max_budget_usd"]);
+
+export function isRetryable(err: unknown): boolean {
+  if (err instanceof AgentResultError) {
+    return !NON_RETRYABLE_RESULT_SUBTYPES.has(err.subtype);
+  }
   const msg = err instanceof Error ? err.message : String(err);
   return RETRYABLE_PATTERN.test(msg);
 }
@@ -109,6 +208,23 @@ export async function runAgent(args: AgentRunArgs): Promise<AgentRunResult> {
 
   const maxTurns = args.maxTurnsOverride ?? config.maxTurnsPerPhase[args.phase];
 
+  // The researcher phase opts into the SDK's built-in WebSearch and WebFetch
+  // tools. Every other phase keeps the existing closed-world tool surface
+  // (MCP tools only, no web). For the researcher we also install a custom
+  // permission handler that caps WebSearch and WebFetch at WEB_TOOL_CAP_PER_RUN
+  // each — which means we must drop bypassPermissions for this phase, since
+  // bypass mode skips the handler.
+  const isResearcher = args.phase === "researcher";
+  const builtInTools: string[] = isResearcher ? ["WebSearch", "WebFetch"] : [];
+  const effectiveAllowedTools = isResearcher
+    ? [...allowedToolIds, "WebSearch", "WebFetch"]
+    : allowedToolIds;
+  const canUseTool: CanUseTool | undefined = isResearcher
+    ? createResearcherPermissionHandler(log)
+    : undefined;
+  const permissionMode: PermissionMode = isResearcher ? "default" : "bypassPermissions";
+  const allowDangerouslySkipPermissions = !isResearcher;
+
   log.event("phase_start", { model, maxTurns });
   console.log(`${c.phase(args.phase)} start ${c.dim(`(model=${model}, maxTurns=${maxTurns})`)}`);
 
@@ -121,7 +237,11 @@ export async function runAgent(args: AgentRunArgs): Promise<AgentRunResult> {
           systemPrompt,
           server,
           serverName,
-          allowedToolIds,
+          allowedToolIds: effectiveAllowedTools,
+          builtInTools,
+          canUseTool,
+          permissionMode,
+          allowDangerouslySkipPermissions,
           maxTurns,
           log,
         });
@@ -157,6 +277,10 @@ type QueryContext = {
   server: ReturnType<typeof buildToolServer>["server"];
   serverName: string;
   allowedToolIds: string[];
+  builtInTools: string[];
+  canUseTool: CanUseTool | undefined;
+  permissionMode: PermissionMode;
+  allowDangerouslySkipPermissions: boolean;
   maxTurns: number;
   log: RunLog;
 };
@@ -169,16 +293,26 @@ async function runQueryOnce(ctx: QueryContext): Promise<AgentRunResult> {
       systemPrompt: ctx.systemPrompt,
       cwd: ctx.args.projectRoot,
       maxTurns: ctx.maxTurns,
-      tools: [],
+      tools: ctx.builtInTools,
       mcpServers: { [ctx.serverName]: ctx.server },
       allowedTools: ctx.allowedToolIds,
-      permissionMode: "bypassPermissions",
-      allowDangerouslySkipPermissions: true,
+      canUseTool: ctx.canUseTool,
+      permissionMode: ctx.permissionMode,
+      allowDangerouslySkipPermissions: ctx.allowDangerouslySkipPermissions,
+      // SDK isolation mode: load NO filesystem settings. Omitting this makes
+      // the SDK load all sources (user ~/.claude, project .claude, local) like
+      // the CLI does — which (a) bleeds the developer's global hooks/MCP/env
+      // into every book run, and (b) would execute hooks from a
+      // .claude/settings.json that an agent could write inside the project
+      // jail, under bypassPermissions. The pipeline supplies its own
+      // systemPrompt + mcpServers and needs none of the filesystem settings.
+      settingSources: [],
     },
   });
 
   let toolCalls = 0;
   let finalText = "";
+  let errorResult: { subtype: string } | null = null;
 
   // Heartbeat: if no event lands for HEARTBEAT_THRESHOLD seconds, emit a
   // "still thinking…" line so the user knows the process isn't hung.
@@ -226,6 +360,7 @@ async function runQueryOnce(ctx: QueryContext): Promise<AgentRunResult> {
       } else if (message.type === "result") {
       const m = message as {
         subtype?: string;
+        is_error?: boolean;
         result?: string;
         total_cost_usd?: number;
         usage?: {
@@ -257,7 +392,11 @@ async function runQueryOnce(ctx: QueryContext): Promise<AgentRunResult> {
       });
       const cacheStr = cacheRead ? ` cache=${cacheRead}` : "";
       const subtype = m.subtype ?? "ok";
-      const subtypeStr = subtype === "success" ? c.green(subtype) : subtype;
+      const subtypeStr = subtype === "success"
+        ? c.green(subtype)
+        : isErrorResult(m)
+          ? c.yellow(subtype)
+          : subtype;
       console.log(
         `${c.phase(ctx.args.phase)} ${c.dim("result:")} ${subtypeStr} | ${c.cost(usd)} | ${c.dim(`in=${inputTokens} out=${outputTokens}${cacheStr}`)} | ${c.dim(`${(durationMs / 1000).toFixed(1)}s`)} | ${c.dim(`${numTurns} turn${numTurns === 1 ? "" : "s"}`)}`
       );
@@ -267,11 +406,25 @@ async function runQueryOnce(ctx: QueryContext): Promise<AgentRunResult> {
       console.log(
         `${c.phase(ctx.args.phase)} ${c.dim("cumulative:")} ${c.bold(c.cost(cumulativeUsd))} ${c.dim(`(${cumulativeCalls} call${cumulativeCalls === 1 ? "" : "s"}, ${formatDuration(cumulativeDurationMs)})`)}`
       );
-        ctx.log.event("result", { subtype: m.subtype });
+        ctx.log.event("result", { subtype: m.subtype, isError: m.is_error === true });
+        if (isErrorResult(m)) {
+          errorResult = { subtype: typeof m.subtype === "string" ? m.subtype : "unknown" };
+        }
       }
     }
   } finally {
     clearInterval(heartbeatTimer);
+  }
+
+  // A failed run is an SDK result message, not a thrown error — turn it into one
+  // here so the calling phase never reaches markComplete on truncated output.
+  if (errorResult) {
+    ctx.log.event("phase_failed", { subtype: errorResult.subtype });
+    throw new AgentResultError(
+      ctx.args.phase,
+      errorResult.subtype,
+      resultErrorMessage(ctx.args.phase, errorResult.subtype)
+    );
   }
 
   console.log(`${c.phase(ctx.args.phase)} ${c.green("done")} ${c.dim(`(${toolCalls} tool calls)`)}`);

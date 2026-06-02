@@ -42,7 +42,10 @@ for ch in chapters:
     slug = ch["slug"]
     txt = repo_root / ch["text_file"]
     out = out_root / f"{slug}.mp3"
-    if out.exists() and out.stat().st_size > 0:
+    playlist = out_root / f"{slug}.m3u"
+    # Chunked chapters write parts + an .m3u and never <slug>.mp3 — check the
+    # playlist too, else multi-part chapters re-synthesize (re-bill) every run.
+    if (out.exists() and out.stat().st_size > 0) or (playlist.exists() and playlist.stat().st_size > 0):
         continue
     cmd = [
         sys.executable,

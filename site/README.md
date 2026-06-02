@@ -19,6 +19,8 @@ The site is configured for GitHub Pages at `username.github.io/novelkit/` — `n
 
 The `predev` and `prebuild` hooks call `scripts/sync-library.sh` to copy each book's `build/` artifacts (cover, EPUB, PDF, HTML) into `public/books/<slug>/` and generate optimized WebP versions. `public/books/` IS tracked in git (the deployed source of truth); audio subdirectories and `cover-prompt.md` files are gitignored.
 
+The sync is **visibility-aware**: it only copies books whose `cdk.config.json` is `visibility: "public"`, and it **prunes** any `public/books/<slug>/` whose book is private or no longer exists. This mirrors `getBooks()` (which filters the *pages* the same way), so the deployed files and the rendered pages always agree — a private book never leaks its downloads, and `cdk unpublish` + sync retracts a book's files, not just its page. Because CI builds only the Astro site (never the press), `public/books/` must be synced and committed for a published book's downloads to appear — see the root README's publishing model.
+
 ## Deploying to GitHub Pages
 
 1. Push the repo to GitHub at `github.com/<your-user>/novelkit`.
@@ -38,13 +40,16 @@ The `url()` helper picks up the new BASE_URL automatically — no other code cha
 
 ## Routes
 
-| Path                | Source                              | Purpose                                              |
-|---------------------|-------------------------------------|------------------------------------------------------|
-| `/`                 | `src/pages/index.astro`             | landing — hero, catalogue grid                       |
-| `/about`            | `src/pages/about.astro`             | how the books are made; honest framing               |
-| `/book/<slug>/`     | `src/pages/book/[slug].astro`       | per-book — cover, blurb, downloads                   |
+| Path                    | Source                               | Purpose                                          |
+|-------------------------|--------------------------------------|--------------------------------------------------|
+| `/`                     | `src/pages/index.astro`              | landing — hero, catalogue grid                   |
+| `/about`                | `src/pages/about.astro`              | how the books are made; honest framing           |
+| `/book/<slug>/`         | `src/pages/book/[slug].astro`        | per-book — cover, blurb, downloads               |
+| `/book/<slug>/listen/`  | `src/pages/book/[slug]/listen.astro` | per-book audiobook — one player per track        |
 
-Each book is generated via `getStaticPaths` from `getBooks()` (see `src/lib/library.ts`).
+Each book page is generated via `getStaticPaths` from `getBooks()`. The `/listen/`
+page is generated **only** for books with a synced audiobook (`getAudiobook()`), so it
+stays in lockstep with the book page's audiobook link. See `src/lib/library.ts`.
 
 ## Layout
 
@@ -52,12 +57,12 @@ Each book is generated via `getStaticPaths` from `getBooks()` (see `src/lib/libr
 site/
 ├── public/
 │   ├── favicon.{svg,ico}
-│   └── books/                       # synced from ../library/<slug>/build/ (gitignored)
-│       └── <slug>/
+│   └── books/                       # tracked; public books only, synced from ../library/<slug>/build/
+│       └── <slug>/                  #   (visibility=public; private books are skipped + pruned)
 │           ├── <slug>.{html,epub,pdf}
-│           ├── cover.png
-│           ├── audiobook/*.mp3
-│           └── audiobook-openai/*.mp3
+│           ├── cover.png             # + cover.webp, cover-thumb.webp (generated)
+│           ├── audiobook/*.mp3        # gitignored (regenerable, large)
+│           └── audiobook-openai/*.mp3 # gitignored
 ├── scripts/
 │   └── sync-library.sh              # copies library/<slug>/build/ → public/books/<slug>/
 └── src/

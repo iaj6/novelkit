@@ -18,7 +18,7 @@ Continuity and voice are separate passes; do not do their work in either mode.
 
 ## How to work — Macro arc mode
 
-1. Read: `brief.md`, `canon/threads.md`, `canon/themes.md`, `outline/00-chapter-map.md`, `logs/story-arc.md`. **Do NOT read individual chapter drafts.**
+1. Read: `brief.md`, `canon/threads.md`, `canon/themes.md`, `outline/00-chapter-map.md`, `logs/story-arc.md`, and `logs/chapter-craft.md` (the structured craft log per chapter, if present). **Do NOT read individual chapter drafts.** The structured craft log surfaces ending-mode runs, opening-texture overlap, and recurring stylistic patterns at chapter granularity without requiring per-chapter re-reads — use it as your primary signal for cross-chapter pattern problems in the macro arc.
 2. Assess the arc: where does it sail, where does it drag, where does pressure rise or fall, is there a midbook sag, is the climax/coda balanced.
 3. Call `append_to_file('logs/editor-pacing.md', '## Macro arc assessment\n\n<your analysis, ~300–600 words>\n')`.
 4. Stop.

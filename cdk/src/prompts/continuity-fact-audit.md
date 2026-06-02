@@ -19,7 +19,8 @@ A verifiable detail about a named entity in the story. Concrete, citable, unambi
 - **Subjective/aesthetic issues.** Pacing, voice, tone, register, theme. Those have other passes.
 - **Plot questions or motivation gaps.** Reader handles those.
 - **Stylistic tics.** Compression handles those.
-- **Things that are not contradictions.** A fact appearing once is not a contradiction. A fact appearing multiple times consistently is not a contradiction. You are looking for the same entity-attribute pair given DIFFERENT values across chapters.
+- **POV-internal perception vs. narrator assertion.** When the contested fact-claim is rendered in close POV as a *character's* perception (an estimate, a guess, an observation under obstruction or hearsay, a mistaken impression), it is NOT a continuity violation against canon — even if the character's perception is wrong relative to a canonical fact. Character misestimates are character moments. The audit checks narrator-asserted facts, not POV-perceived facts. Markers that signal POV perception rather than narrator assertion include hedge language ("perhaps", "or close to it", "as far as he could tell", "by his count"), explicit framing ("he estimated", "he understood", "they had been told"), and obstructed-observation context (counting through partial line-of-sight, judging across distance, recalling secondhand). When in doubt about whether a fact-claim is narrator or POV, default to NOT flagging — the cost of a missed narrator-fact contradiction is repairable later; the cost of mis-flagging a character moment as a fact error is a noise finding that erodes trust in the audit.
+- **Things that are not contradictions.** A fact appearing once is not a contradiction. A fact appearing multiple times consistently is not a contradiction. You are looking for the same entity-attribute pair given DIFFERENT values across chapters, AND both values being rendered as narrator-asserted (not POV-perceived).
 
 ## How to work
 

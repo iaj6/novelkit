@@ -76,11 +76,20 @@ def main() -> int:
         )
 
     client = OpenAI()
-    result = client.images.generate(
-        model=args.model,
-        prompt=prompt_text,
-        size=args.size,
-    )
+    try:
+        result = client.images.generate(
+            model=args.model,
+            prompt=prompt_text,
+            size=args.size,
+            output_format=args.format,
+        )
+    except TypeError:
+        # Older SDKs don't accept output_format; retry without it (PNG bytes).
+        result = client.images.generate(
+            model=args.model,
+            prompt=prompt_text,
+            size=args.size,
+        )
 
     first = result.data[0]
     image_bytes: bytes
@@ -89,7 +98,7 @@ def main() -> int:
     if getattr(first, "b64_json", None):
         image_bytes = base64.b64decode(first.b64_json)
     elif getattr(first, "url", None):
-        with urlopen(first.url) as resp:
+        with urlopen(first.url, timeout=120) as resp:
             image_bytes = resp.read()
     else:
         raise SystemExit("Image response contained neither b64_json nor url.")

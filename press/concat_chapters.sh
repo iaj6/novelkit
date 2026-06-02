@@ -4,6 +4,12 @@ set -euo pipefail
 # Concatenate library/<book>/draft/*.md into library/<book>/manuscript.md.
 # Chapters are emitted in numeric order based on their NN-* filename prefix.
 #
+# If library/<book>/revision-1/<chapter>.md exists for a given chapter,
+# the revision file is used in place of the draft file. This lets the
+# `cdk repair` pipeline land corrections in revision-1/ without mutating
+# the original drafts, while still flowing through to the published
+# manuscript automatically.
+#
 # Usage:
 #   press/concat_chapters.sh <book>      # concat one book
 #   press/concat_chapters.sh             # concat every book under library/
@@ -13,7 +19,9 @@ source "$PRESS_DIR/common.sh"
 
 concat_one() {
   local book="$1"
-  local draft_dir="$(book_dir "$book")/draft"
+  local book_root="$(book_dir "$book")"
+  local draft_dir="$book_root/draft"
+  local revision_dir="$book_root/revision-1"
   local out="$(book_path "$book")"
 
   if [[ ! -d "$draft_dir" ]]; then
@@ -33,18 +41,30 @@ concat_one() {
   title="$(book_title "$book")"
   [[ -n "$title" ]] || title="$book"
 
+  local revisions_used=0
   note "concat: $book ($((${#chapters[@]})) chapters) → $out"
   {
     echo "# $title"
     echo
     for f in "${chapters[@]}"; do
-      echo "<!-- source: $f -->"
+      local basename
+      basename="$(basename "$f")"
+      local source_file="$f"
+      if [[ -f "$revision_dir/$basename" ]]; then
+        source_file="$revision_dir/$basename"
+        revisions_used=$((revisions_used + 1))
+      fi
+      echo "<!-- source: $source_file -->"
       echo
-      cat "$f"
+      cat "$source_file"
       echo
       echo
     done
   } > "$out"
+
+  if [[ $revisions_used -gt 0 ]]; then
+    note "  used revision-1/ for $revisions_used chapter(s)"
+  fi
 }
 
 main() {
@@ -56,7 +76,9 @@ main() {
   shopt -s nullglob
   local dirs=("$(repo_root)"/library/*/)
   shopt -u nullglob
-  for d in "${dirs[@]}"; do
+  # `${arr[@]+...}` guards the empty case: under `set -u` on bash 3.2 (macOS),
+  # a bare "${dirs[@]}" with no matches raises "unbound variable".
+  for d in ${dirs[@]+"${dirs[@]}"}; do
     concat_one "$(basename "$d")"
   done
 }

@@ -10,7 +10,7 @@ For everything else (bugs, design questions, etc.), regular [issues](https://git
 
 ## What this repo handles
 
-- **API keys** (`ANTHROPIC_API_KEY`, `OPENAI_API_KEY`, `ELEVENLABS_API_KEY`, `GOOGLE_GEMINI_API_KEY`) are read from a local `.env` file. The `.env` file is gitignored and `.env.example` is the only env file tracked.
+- **API keys** (`ANTHROPIC_API_KEY`, `OPENAI_API_KEY`, `ELEVENLABS_API_KEY`) are read from a local `.env` file. The `.env` file is gitignored and `.env.example` is the only env file tracked.
 - **Generated content** in `library/<slug>/` is committed as showcase output. No personal data, no PII.
 - **Deployed artifacts** under `site/public/books/` are book covers, EPUBs, PDFs, and HTML — public by design. Audio is excluded by gitignore.
 

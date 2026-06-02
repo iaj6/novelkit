@@ -22,17 +22,20 @@ note "  export PATH=\"$bin_dir:$PATH\""
 # allows dlopen() to resolve names like libgobject-2.0-0.
 if [[ "$(uname -s)" == "Darwin" ]]; then
   mkdir -p "$HOME/lib"
-  declare -A links=(
-    ["libgobject-2.0-0"]="/opt/homebrew/lib/libgobject-2.0.dylib"
-    ["libpango-1.0-0"]="/opt/homebrew/lib/libpango-1.0.dylib"
-    ["libpangoft2-1.0-0"]="/opt/homebrew/lib/libpangoft2-1.0.dylib"
-    ["libharfbuzz-0"]="/opt/homebrew/lib/libharfbuzz.0.dylib"
-    ["libfontconfig-1"]="/opt/homebrew/lib/libfontconfig.1.dylib"
+  # bash 3.2 (the macOS system shell) has no associative arrays — use
+  # "name:target" pairs so this Darwin-only branch runs on stock macOS too.
+  links=(
+    "libgobject-2.0-0:/opt/homebrew/lib/libgobject-2.0.dylib"
+    "libpango-1.0-0:/opt/homebrew/lib/libpango-1.0.dylib"
+    "libpangoft2-1.0-0:/opt/homebrew/lib/libpangoft2-1.0.dylib"
+    "libharfbuzz-0:/opt/homebrew/lib/libharfbuzz.0.dylib"
+    "libfontconfig-1:/opt/homebrew/lib/libfontconfig.1.dylib"
   )
 
   note "creating macOS dylib shims in: $HOME/lib"
-  for name in "${!links[@]}"; do
-    target="${links[$name]}"
+  for entry in "${links[@]}"; do
+    name="${entry%%:*}"
+    target="${entry#*:}"
     if [[ -e "$target" ]]; then
       ln -sf "$target" "$HOME/lib/$name"
     else

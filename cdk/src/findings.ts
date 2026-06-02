@@ -13,6 +13,7 @@ export const FINDING_CATEGORIES = [
   "ending-mode-uniformity",
   "register-bandwidth",
   "thread-drift",
+  "structural-failure",
   "other",
 ] as const;
 export type FindingCategory = (typeof FINDING_CATEGORIES)[number];
@@ -90,8 +91,26 @@ export async function readFindings(projectRoot: string): Promise<FindingsFile | 
   } catch {
     return null;
   }
-  const raw = JSON.parse(text);
-  return FindingsFileSchema.parse(raw);
+  let raw: unknown;
+  try {
+    raw = JSON.parse(text);
+  } catch (err) {
+    const msg = err instanceof Error ? err.message : String(err);
+    throw new Error(
+      `${FINDINGS_PATH} is not valid JSON (${msg}). Fix or delete it and re-run \`cdk review\`.`
+    );
+  }
+  const result = FindingsFileSchema.safeParse(raw);
+  if (!result.success) {
+    const detail = result.error.issues
+      .map((i) => `${i.path.join(".") || "<root>"}: ${i.message}`)
+      .join("; ");
+    throw new Error(
+      `${FINDINGS_PATH} does not match the expected findings schema (${detail}). ` +
+        `It may predate the current schema_version; delete it and re-run \`cdk review\`.`
+    );
+  }
+  return result.data;
 }
 
 export function filterByMinSeverity(
