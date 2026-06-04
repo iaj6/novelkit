@@ -4,6 +4,7 @@ import * as fs from "node:fs/promises";
 import * as path from "node:path";
 import type { RunLog } from "./runlog.js";
 import { FindingSchema, writeFindings as persistFindings, appendFindings as persistAppendFindings } from "./findings.js";
+import { resolveInProject } from "./paths.js";
 
 /**
  * Per-chapter capture facets — the contract between drafter, downstream phases, and the canon.
@@ -44,19 +45,10 @@ export type ToolDeps = {
   log: RunLog;
 };
 
-/**
- * Resolve an agent-supplied path against the project root, refusing anything
- * that escapes it (parent traversal, absolute paths outside the tree). This is
- * the file-path jail every tool callback routes through; exported for tests.
- */
-export function resolveInProject(projectRoot: string, p: string): string {
-  const abs = path.isAbsolute(p) ? path.resolve(p) : path.resolve(projectRoot, p);
-  const rel = path.relative(projectRoot, abs);
-  if (rel.startsWith("..") || path.isAbsolute(rel)) {
-    throw new Error(`Path escapes project root: ${p}`);
-  }
-  return abs;
-}
+// The file-path jail (resolveInProject) now lives in paths.ts so the world store
+// and any other module can share the exact same containment check without pulling
+// in the Agent SDK this module imports. Re-exported here for existing callers/tests.
+export { resolveInProject };
 
 /**
  * Shape for `record_chapter_craft`. Declared at module scope so the schema and
