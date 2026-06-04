@@ -5,6 +5,8 @@ import * as path from "node:path";
 import type { RunLog } from "./runlog.js";
 import { FindingSchema, writeFindings as persistFindings, appendFindings as persistAppendFindings } from "./findings.js";
 import { resolveInProject } from "./paths.js";
+import { WorldSession } from "./world/session.js";
+import { ENTITY_KINDS, STANCES, BASES, TIERS, CONFIDENCES, POLARITIES, type Source } from "./world/schema.js";
 
 /**
  * Per-chapter capture facets — the contract between drafter, downstream phases, and the canon.
@@ -43,6 +45,8 @@ export const SERVER_NAME = "cdk";
 export type ToolDeps = {
   projectRoot: string;
   log: RunLog;
+  /** Provenance source for world-store writes (derived from the phase). Defaults to "drafter". */
+  source?: Source;
 };
 
 // The file-path jail (resolveInProject) now lives in paths.ts so the world store
@@ -180,6 +184,9 @@ export function extractRecentCraftEntries(text: string, n: number): string {
 
 export function buildToolServer(deps: ToolDeps) {
   const { projectRoot, log } = deps;
+  // World-store session (M3 dual-write shadow). The new structured tools below
+  // are thin wrappers over this; the legacy markdown tools remain authoritative.
+  const session = new WorldSession(projectRoot, deps.source ?? "drafter");
 
   const readFile = tool(
     "read_file",
@@ -457,6 +464,159 @@ export function buildToolServer(deps: ToolDeps) {
     }
   );
 
+  // ── World-store tools (M3 dual-write shadow) ──────────────────────
+  // Additive: these populate logs/world/events.jsonl alongside the legacy
+  // markdown logs (which remain authoritative). close_chapter only WARNS.
+
+  const openChapter = tool(
+    "open_chapter",
+    "Open the world-store transaction for the chapter you are about to draft. Call this FIRST. Subsequent assert_fact / upsert_entity / record_relation / record_knowledge calls inherit this chapter as their provenance.",
+    {
+      chapterId: z.string().describe("Chapter id matching the outline/draft slug, e.g. '01-the-opening'."),
+      discourseIndex: z.number().int().optional().describe("Reading-order index; defaults to the NN- prefix of chapterId."),
+      pov: z.array(z.string()).optional().describe("POV character entity ids present in this chapter."),
+      storyTimeLabel: z.string().optional().describe("Optional in-world time label (only for non-linear/braided briefs)."),
+    },
+    async (args) => {
+      const r = await session.openChapter(args);
+      log.event("tool", { name: "open_chapter", chapterId: r.chapterId });
+      return { content: [{ type: "text", text: `opened chapter ${r.chapterId} (discourse #${r.discourseIndex})` }] };
+    }
+  );
+
+  const closeChapter = tool(
+    "close_chapter",
+    "Close the world-store transaction for the chapter. Call this LAST, after all capture calls. Reports whether the chapter captured structured facts; a missing capture is a WARNING only this milestone (never blocks).",
+    { chapterId: z.string().optional().describe("Defaults to the currently open chapter.") },
+    async (args) => {
+      const r = await session.closeChapter(args);
+      log.event("tool", { name: "close_chapter", incomplete: r.incomplete, missing: r.missing });
+      const note = r.incomplete ? ` (warning: ${r.missing.join("; ")})` : "";
+      return { content: [{ type: "text", text: `closed chapter${note}` }] };
+    }
+  );
+
+  const assertFact = tool(
+    "assert_fact",
+    "Capture a durable fact into the world store as entity.attribute = value, IN ADDITION to append_continuity. A numeric value REQUIRES a unit. Reuse the same entity id + attribute key across chapters so the fact collides into one slot; pass `supersedes` (a prior fact id) when deliberately changing an established value.",
+    {
+      entity: z.string().describe("Stable entity id/slug, e.g. 'eira-bowman', 'breakwater'."),
+      attribute: z.string().describe("Dotted attribute key, e.g. 'age', 'hearing.left_ear', 'notebook.count'."),
+      value: z.union([z.string(), z.number(), z.boolean()]),
+      unit: z.string().optional().describe("REQUIRED when value is numeric, e.g. 'years', 'notebooks'."),
+      polarity: z.enum(POLARITIES).optional(),
+      tier: z.enum(TIERS).optional().describe("'canon' for architect-seeded spine facts; defaults to 'drafted'."),
+      confidence: z.enum(CONFIDENCES).optional(),
+      supersedes: z.string().optional().describe("A prior fact id this assertion retires."),
+    },
+    async (args) => {
+      const r = await session.assertFact(args);
+      log.event("tool", { name: "assert_fact", id: r.id });
+      return { content: [{ type: "text", text: `asserted ${r.id}` }] };
+    }
+  );
+
+  const upsertEntity = tool(
+    "upsert_entity",
+    "Register or update a named entity in the world store, IN ADDITION to append_glossary. Use a stable slug id so later chapters reference the same entity.",
+    {
+      id: z.string().describe("Stable slug, e.g. 'eira-bowman'."),
+      kind: z.enum(ENTITY_KINDS),
+      display_name: z.string(),
+      aliases: z.array(z.string()).optional(),
+      short_gloss: z.string().optional(),
+      pov: z.boolean().optional(),
+    },
+    async (args) => {
+      const r = await session.upsertEntity(args);
+      log.event("tool", { name: "upsert_entity", id: r.id });
+      return { content: [{ type: "text", text: `upserted entity ${r.id}` }] };
+    }
+  );
+
+  const recordRelation = tool(
+    "record_relation",
+    "Record a relationship between two entities (e.g. located_in, member_of, possesses, knows_of). Use value:false for a negative relation such as a never-meet constraint (knows_of=false).",
+    {
+      from: z.string(),
+      relType: z.string().describe("e.g. 'located_in', 'member_of', 'possesses', 'knows_of'."),
+      to: z.string(),
+      value: z.boolean().optional().describe("false for a negative relation (e.g. knows_of=false)."),
+      symmetric: z.boolean().optional(),
+      sinceChapter: z.string().optional(),
+    },
+    async (args) => {
+      const r = await session.relate(args);
+      log.event("tool", { name: "record_relation", id: r.id });
+      return { content: [{ type: "text", text: `related ${r.id}` }] };
+    }
+  );
+
+  const recordKnowledge = tool(
+    "record_knowledge",
+    "Record an epistemic state: who knows/believes/suspects what, as of this chapter. The knower is an entity id OR the reserved reader '@reader'. The proposition references either a fact id (factRef) or a free proposition slug (prop). This is what makes dramatic irony and reveal-order queryable.",
+    {
+      knower: z.string().describe("An entity id, or '@reader'."),
+      proposition: z.union([z.object({ factRef: z.string() }), z.object({ prop: z.string() })]),
+      stance: z.enum(STANCES),
+      basis: z.enum(BASES).optional(),
+      basisEntity: z.string().optional().describe("The teller, when basis is 'told_by'."),
+      discourseIndex: z.number().int().optional().describe("Defaults to the open chapter's discourse index."),
+    },
+    async (args) => {
+      const r = await session.learn(args);
+      log.event("tool", { name: "record_knowledge", id: r.id });
+      return { content: [{ type: "text", text: `recorded knowledge ${r.id}` }] };
+    }
+  );
+
+  const queryFacts = tool(
+    "query_facts",
+    "Return the live facts the world store holds for an entity (value+unit, tier, source chapter). Use this before committing a number/date/attribute for an established entity, instead of re-reading the whole continuity ledger.",
+    { entity: z.string() },
+    async (args) => {
+      const facts = await session.queryFacts(args);
+      log.event("tool", { name: "query_facts", entity: args.entity, count: facts.length });
+      const text = facts.length
+        ? facts.map((f) => `- ${f.attribute} = ${String(f.value)}${f.unit ? " " + f.unit : ""} [${f.tier}, ${f.provenance.chapter}]`).join("\n")
+        : `(no facts recorded for ${args.entity})`;
+      return { content: [{ type: "text", text }] };
+    }
+  );
+
+  const resolveEntity = tool(
+    "resolve_entity",
+    "Look up entities by name/alias/id substring. Use to find the stable id for a name before asserting facts about it.",
+    { query: z.string() },
+    async (args) => {
+      const ents = await session.resolveEntity(args);
+      log.event("tool", { name: "resolve_entity", query: args.query, count: ents.length });
+      const text = ents.length
+        ? ents.map((e) => `- ${e.id} (${e.kind}) — ${e.display_name}${e.short_gloss ? ": " + e.short_gloss : ""}`).join("\n")
+        : `(no entity matches "${args.query}")`;
+      return { content: [{ type: "text", text }] };
+    }
+  );
+
+  const whoKnows = tool(
+    "who_knows",
+    "Return what a knower (an entity id, or '@reader') knows/believes/suspects as of a given chapter — the live epistemic stances at or before that chapter's reading-order index. Use to keep a POV chapter honest about what the character (or the reader) knows yet.",
+    { knower: z.string(), asOfChapter: z.string() },
+    async (args) => {
+      const states = await session.whoKnows(args);
+      log.event("tool", { name: "who_knows", knower: args.knower, count: states.length });
+      const text = states.length
+        ? states
+            .map((k) => {
+              const p = "factRef" in k.proposition ? k.proposition.factRef : k.proposition.prop;
+              return `- ${k.stance} ${p}${k.basis ? " (" + k.basis + ")" : ""}`;
+            })
+            .join("\n")
+        : `(${args.knower} has no recorded knowledge as of ${args.asOfChapter})`;
+      return { content: [{ type: "text", text }] };
+    }
+  );
+
   const server = createSdkMcpServer({
     name: SERVER_NAME,
     version: "0.1.0",
@@ -475,6 +635,15 @@ export function buildToolServer(deps: ToolDeps) {
       readRecentCraft,
       writeFindings,
       appendFindings,
+      openChapter,
+      closeChapter,
+      assertFact,
+      upsertEntity,
+      recordRelation,
+      recordKnowledge,
+      queryFacts,
+      resolveEntity,
+      whoKnows,
     ],
   });
 
@@ -493,6 +662,15 @@ export function buildToolServer(deps: ToolDeps) {
     "read_recent_craft",
     "write_findings",
     "append_findings",
+    "open_chapter",
+    "close_chapter",
+    "assert_fact",
+    "upsert_entity",
+    "record_relation",
+    "record_knowledge",
+    "query_facts",
+    "resolve_entity",
+    "who_knows",
   ];
 
   return {
