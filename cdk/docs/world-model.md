@@ -48,17 +48,41 @@ Two mandates, one mechanism:
 | **M1** | Store substrate: `schema.ts` + `store.ts` + `project.ts` + determinism tests. **Zero pipeline change.** | foundation |
 | M2 | Exporters (`renderCanonContinuity` = load-bearing for press) + legacy importer + press-parity test. | foundation |
 | M3 | Dual-write **shadow**: additive structured tools + `open_chapter`/`close_chapter` frame in **warn-mode**; legacy logs authoritative; divergence logged. + chaos/resume kill-test. | A |
-| M3.5 | **Atomization probe** (gating): measure how cleanly the drafter atomizes real compound prose facts; lock canonical-form + attribute-key-stability rules. | de-risk |
+| M3.5 | **Atomization probe — DONE** (run `wf_8aa3a4ee-410`): decision **augment-now-reassess-later**; canonical-form rules locked + resolve-first canonicalization shipped. See [world-model-m3.5-probe.md](world-model-m3.5-probe.md). | de-risk |
 | M4 | Checkpoint integrity: state v2 (eventOffset/artifacts/hashes), `verify_chapter` event-coverage on resume, internal retract self-heal. | A |
-| M5 | Audit **augment** (gated on M3.5): `find_contradictions` alongside the re-read agent; cut the re-read only after proven parity. | A |
-| M5.5 | **Epistemic pilot** on `the-contingency`: `learn()` + `who_knows` + `dramatic_irony`; prove the irony lands. | B |
-| M6 | Store becomes authoritative; drafter checklist collapses; `close_chapter` → refuse-mode (with open-transaction recovery contract). | A |
+| M5 | Audit **augment** (per M3.5 verdict): `find_contradictions` ships as a PARALLEL deterministic pass (precision 1.0 / FP 0); the re-read stays authoritative. Also lands vocab warn-on-off-vocab, comparison-time value normalization, and live-run instrumentation (clean-slot / off-vocab / unresolved-entity counts). | A |
+| M5.5 | **Epistemic pilot** on `the-contingency`: `learn()` + `who_knows` + `dramatic_irony`; prove the irony lands. (Also fix the deferred `who_knows` latest-wins collapse — see the marker in `session.ts`.) | B |
+| M6 | Store becomes authoritative; drafter checklist collapses; `close_chapter` → refuse-mode; vocab/resolve hard-reject. Cutting the re-read audit is **GATED on a re-probe** hitting detection≈1.0 ∧ clean-slot≈1.0 ∧ key-agreement≈1.0 (no 0-atomization members) ∧ relation/epistemic coverage. | A |
 | M7 | Generalize the epistemic layer — only if the pilot proved out. | B |
 | M8 | Cleanup: drop shadow-diffing, document, backfill importer on `cdk run`. | — |
 
 **Cut from v1** (gold-plating): `@narrator` tracking, a separate `foreshadow_ledger` tool, the
 user-facing `cdk rollback` CLI (keep the internal retract mechanism), 4 of 6 exporters, numeric
 `storyTimeOrdinal`, the structured-supersession repair variant.
+
+## Canonical-form rules (locked by M3.5)
+
+The atomization probe (`wf_8aa3a4ee-410`; full report in [world-model-m3.5-probe.md](world-model-m3.5-probe.md))
+found `find_contradictions` is precision-perfect (FP 0) but recall-incomplete (85% clean-slot, 75%
+detection, 83% cross-agent key agreement with a 60% tail and one non-atomizing fact). Hence the M5/M6 gate
+above. To drive recall toward parity, these rules are locked:
+
+1. **Resolve-first entity ids** — `assert_fact`/`record_relation`/`record_knowledge` take a *resolved*
+   entity id; the session canonicalizes a known name/alias to its id. **Shipped (warn-mode) in M3.5**;
+   hard-reject at M6. *(The #1 key-agreement lever — collapses "Eira"/"Eira Bowman"/"eira-bowman".)*
+2. **Per-kind suggested attribute vocabulary** — canonical keys per `EntityKind` (character `age`,
+   `birth_year`, `role`, `origin_place`, `native_language`, `alive`; place `located_in`, `fictional`,
+   `construction`; event `date`, `location`), `other` escape hatch logged. Suggested in the prompt now;
+   **warn-on-off-vocab in M5**, hard-reject at M6.
+3. **One fact per `assert_fact`** — decompose compound prose. Prompt rule now.
+4. **Hedged/disjunctive facts still atomize** with `confidence: provisional|inferred` (not free-text).
+   Prompt rule now; the audit grades provisional-vs-established as "high" not "critical".
+5. **Comparison-time value normalization** (numbers→value+unit, dates→canonical tokens, booleans→polarity)
+   that PRESERVES the discriminating component — lands in M5's `find_contradictions`, NOT as aggressive
+   write-time lowercasing (display fidelity). 
+
+**Re-probe before any M6 cut**: re-run the probe; only detection≈1.0 ∧ clean-slot≈1.0 ∧ key-agreement≈1.0
+(no 0-atomization members) unlocks retiring the re-read audit. The reassess is a re-run, not a vibe.
 
 ## M1 contents (this PR)
 
