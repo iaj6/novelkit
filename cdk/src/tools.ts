@@ -498,7 +498,7 @@ export function buildToolServer(deps: ToolDeps) {
 
   const assertFact = tool(
     "assert_fact",
-    "Capture a durable fact into the world store as entity.attribute = value, IN ADDITION to append_continuity. A numeric value REQUIRES a unit. Reuse the same entity id + attribute key for a given fact so it is queryable across chapters. Re-asserting within the same chapter overwrites the prior assertion; across chapters a new assertion is recorded. When deliberately changing an established value, pass `supersedes` (the prior fact id, from query_facts) to retire the old one.",
+    "Capture a durable fact into the world store as entity.attribute = value, IN ADDITION to append_continuity. A numeric value REQUIRES a unit. Pass a RESOLVED entity id (from resolve_entity/upsert_entity), not a free-typed name, and reuse canonical dotted attribute keys (age, birth_year, role, date, location, ...) — consistent ids + keys are what let cross-chapter contradictions be detected. One fact per call (decompose compound sentences). Re-asserting within the same chapter overwrites the prior assertion; across chapters a new assertion is recorded. When deliberately changing an established value, pass `supersedes` (the prior fact id, from query_facts) to retire the old one.",
     {
       entity: z.string().describe("Stable entity id/slug, e.g. 'eira-bowman', 'breakwater'."),
       attribute: z.string().describe("Dotted attribute key, e.g. 'age', 'hearing.left_ear', 'notebook.count'."),

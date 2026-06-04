@@ -146,3 +146,42 @@ describe("chaos / resume: a kill mid-chapter leaves the store recoverable", () =
     expect(after.chapters.get("03-the-blow")!.closed).toBe(true);
   });
 });
+
+describe("WorldSession resolve-first canonicalization (M3.5)", () => {
+  it("canonicalizes assert_fact entity to a known id via display_name, alias, or the id itself", async () => {
+    const s = new WorldSession(root);
+    await s.openChapter({ chapterId: "01-x" });
+    await s.upsertEntity({ id: "eira-bowman", kind: "character", display_name: "Eira Bowman", aliases: ["the harbormaster"] });
+    await s.assertFact({ entity: "Eira Bowman", attribute: "age", value: 52, unit: "years" }); // by display_name
+    await s.assertFact({ entity: "the harbormaster", attribute: "role", value: "harbormaster" }); // by alias
+    await s.assertFact({ entity: "eira-bowman", attribute: "tenure_since", value: 1936, unit: "year" }); // by id
+    // all three collapse onto the one canonical entity (the M3.5 key-agreement fix)
+    const facts = await s.queryFacts({ entity: "eira-bowman" });
+    expect(facts.map((f) => f.attribute).sort()).toEqual(["age", "role", "tenure_since"]);
+  });
+
+  it("leaves a genuinely new (unresolved) entity unchanged", async () => {
+    const s = new WorldSession(root);
+    await s.openChapter({ chapterId: "01-x" });
+    await s.assertFact({ entity: "brand-new-thing", attribute: "color", value: "green" });
+    expect(await s.queryFacts({ entity: "brand-new-thing" })).toHaveLength(1);
+  });
+
+  it("canonicalizes across sessions (index seeds from the persisted store)", async () => {
+    const s1 = new WorldSession(root);
+    await s1.openChapter({ chapterId: "01-x" });
+    await s1.upsertEntity({ id: "breakwater", kind: "place", display_name: "The Breakwater" });
+    // a later session refers to it by name -> resolves to the canonical id
+    const s2 = new WorldSession(root);
+    await s2.openChapter({ chapterId: "11-y" });
+    await s2.assertFact({ entity: "The Breakwater", attribute: "length", value: 400, unit: "feet" });
+    expect((await s2.queryFacts({ entity: "breakwater" })).map((f) => f.attribute)).toEqual(["length"]);
+  });
+
+  it("does not canonicalize the reserved @reader knower", async () => {
+    const s = new WorldSession(root);
+    await s.openChapter({ chapterId: "13-x" });
+    await s.learn({ knower: "@reader", proposition: { prop: "creature-intelligent" }, stance: "suspects" });
+    expect(await s.whoKnows({ knower: "@reader", asOfChapter: "13-x" })).toHaveLength(1);
+  });
+});

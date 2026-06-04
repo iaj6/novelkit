@@ -47,6 +47,8 @@ export interface CloseResult {
  */
 export class WorldSession {
   private openChapterId: string | null = null;
+  /** Lazily-built lowercase {id, display_name, alias} -> canonical entity id (resolve-first). */
+  private entityIndex: Map<string, string> | null = null;
 
   constructor(private readonly projectRoot: string, private readonly source: Source = "drafter") {}
 
@@ -56,6 +58,37 @@ export class WorldSession {
 
   private chapterOf(explicit?: string): string {
     return explicit ?? this.openChapterId ?? "unknown";
+  }
+
+  private addToIndex(idx: Map<string, string>, id: string, displayName?: string, aliases?: string[]): void {
+    idx.set(id.toLowerCase(), id);
+    if (displayName) idx.set(displayName.trim().toLowerCase(), id);
+    for (const a of aliases ?? []) idx.set(a.trim().toLowerCase(), id);
+  }
+
+  private async ensureEntityIndex(): Promise<Map<string, string>> {
+    if (this.entityIndex) return this.entityIndex;
+    const idx = new Map<string, string>();
+    for (const e of (await this.tables()).entities.values()) {
+      this.addToIndex(idx, e.id, e.display_name, e.aliases);
+    }
+    this.entityIndex = idx;
+    return idx;
+  }
+
+  /**
+   * Resolve-first canonicalization (M3.5 canonical-form rule #1): if `raw` matches a
+   * known entity's id, display_name, or alias, return that entity's canonical id;
+   * otherwise return it unchanged (a genuinely new entity — the drafter is told to
+   * upsert_entity first). Reserved knowers (@reader/@narrator) pass through. This is
+   * the highest-leverage fix for cross-chapter key agreement (the M3.5 probe's
+   * load-bearing weakness): it collapses "Eira", "Eira Bowman", and "eira-bowman"
+   * onto one id so a later contradiction actually collides on a key.
+   */
+  private async canonicalEntity(raw: string): Promise<string> {
+    if (raw.startsWith("@")) return raw;
+    const idx = await this.ensureEntityIndex();
+    return idx.get(raw.trim().toLowerCase()) ?? raw;
   }
 
   /** Open the chapter transaction — subsequent writes inherit this chapter as provenance. */
@@ -114,11 +147,12 @@ export class WorldSession {
     chapter?: string;
   }): Promise<{ id: string }> {
     const chapter = this.chapterOf(args.chapter);
-    const id = `fact:${chapter}:${args.entity}:${args.attribute}`;
+    const entity = await this.canonicalEntity(args.entity);
+    const id = `fact:${chapter}:${entity}:${args.attribute}`;
     await appendEvent(this.projectRoot, {
       type: "fact.assert",
       id,
-      entity: args.entity,
+      entity,
       attribute: args.attribute,
       value: args.value,
       unit: args.unit,
@@ -153,6 +187,7 @@ export class WorldSession {
       props: args.props,
       provenance: { chapter, source: this.source },
     });
+    if (this.entityIndex) this.addToIndex(this.entityIndex, args.id, args.display_name, args.aliases);
     return { id: args.id };
   }
 
@@ -166,13 +201,15 @@ export class WorldSession {
     chapter?: string;
   }): Promise<{ id: string }> {
     const chapter = this.chapterOf(args.chapter);
-    const id = `rel:${chapter}:${args.from}:${args.relType}:${args.to}`;
+    const from = await this.canonicalEntity(args.from);
+    const to = await this.canonicalEntity(args.to);
+    const id = `rel:${chapter}:${from}:${args.relType}:${to}`;
     await appendEvent(this.projectRoot, {
       type: "relation.assert",
       id,
-      from: args.from,
+      from,
       relType: args.relType,
-      to: args.to,
+      to,
       value: args.value,
       symmetric: args.symmetric,
       since_chapter: args.sinceChapter,
@@ -191,13 +228,14 @@ export class WorldSession {
     chapter?: string;
   }): Promise<{ id: string }> {
     const chapter = this.chapterOf(args.chapter);
+    const knower = await this.canonicalEntity(args.knower);
     const discourseIndex = args.discourseIndex ?? deriveDiscourseIndex(chapter);
     const propKey = "factRef" in args.proposition ? `f=${args.proposition.factRef}` : `p=${args.proposition.prop}`;
-    const id = `know:${chapter}:${args.knower}:${propKey}`;
+    const id = `know:${chapter}:${knower}:${propKey}`;
     await appendEvent(this.projectRoot, {
       type: "knowledge.learn",
       id,
-      knower: args.knower,
+      knower,
       proposition: args.proposition,
       stance: args.stance,
       asOf: { discourseIndex },
