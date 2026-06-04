@@ -7,6 +7,7 @@ import {
 import * as fs from "node:fs/promises";
 import * as path from "node:path";
 import { buildToolServer } from "./tools.js";
+import { phaseToSource } from "./world/session.js";
 import { openRunLog, readCostSummary, type RunLog } from "./runlog.js";
 import { loadConfig, modelForPhase, type PhaseId } from "./config.js";
 import { PROMPTS_DIR } from "./paths.js";
@@ -204,6 +205,7 @@ export async function runAgent(args: AgentRunArgs): Promise<AgentRunResult> {
   const { server, serverName, allowedToolIds } = buildToolServer({
     projectRoot: args.projectRoot,
     log,
+    source: phaseToSource(args.phase),
   });
 
   const maxTurns = args.maxTurnsOverride ?? config.maxTurnsPerPhase[args.phase];

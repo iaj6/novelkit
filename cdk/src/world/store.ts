@@ -24,8 +24,42 @@ export async function appendEvent(projectRoot: string, event: unknown): Promise<
   validateWriteInvariants(parsed);
   const file = resolveInProject(projectRoot, WORLD_EVENTS_PATH);
   await fs.mkdir(path.dirname(file), { recursive: true });
+  await healTornTail(file);
   await fs.appendFile(file, JSON.stringify(parsed) + "\n", "utf-8");
   return parsed;
+}
+
+/**
+ * Heal a torn trailing line left by a process killed mid-append: if the log
+ * exists and its final byte is not a newline, the last line is a partial write —
+ * truncate it so the next append lands on a clean line instead of gluing onto the
+ * partial (which would corrupt a mid-file record and make the whole log throw on
+ * read). The log stays append-only otherwise. Cheap common case: stat + 1 byte.
+ */
+async function healTornTail(file: string): Promise<void> {
+  let handle: fs.FileHandle;
+  try {
+    handle = await fs.open(file, "r+");
+  } catch (err) {
+    if ((err as NodeJS.ErrnoException).code === "ENOENT") return; // no log yet
+    throw err;
+  }
+  try {
+    const { size } = await handle.stat();
+    if (size === 0) return;
+    const lastByte = Buffer.alloc(1);
+    await handle.read(lastByte, 0, 1, size - 1);
+    if (lastByte[0] === 0x0a) return; // ends in "\n" — previous write was clean
+    // Operate on raw BYTES: truncate() takes a byte length, and the log routinely
+    // holds multibyte UTF-8 (em-dashes, accents, smart quotes). A decoded-string
+    // (UTF-16) index would diverge from the byte offset and cut a prior committed
+    // line mid-character, corrupting it.
+    const buf = await handle.readFile();
+    const lastNl = buf.lastIndexOf(0x0a); // BYTE index of the last "\n"
+    await handle.truncate(lastNl + 1); // drop the partial line (truncate to 0 if no newline at all)
+  } finally {
+    await handle.close();
+  }
 }
 
 export async function readEvents(projectRoot: string): Promise<ReadResult> {
