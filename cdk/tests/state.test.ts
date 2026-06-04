@@ -15,8 +15,10 @@ import {
   clearState,
   isComplete,
   markComplete,
+  getEntry,
   type State,
 } from "../src/state.js";
+import { appendEvent, WORLD_EVENTS_PATH } from "../src/world/store.js";
 
 let tmpRoot: string;
 
@@ -105,5 +107,55 @@ describe("state", () => {
 
     const loaded = await loadState(tmpRoot);
     expect(loaded.completed).toEqual([]);
+  });
+
+  // ── M4: verification payloads + migration ──────────────────────────
+  it("markComplete records a verification entry payload and reloads it", async () => {
+    const state = await loadState(tmpRoot);
+    await markComplete(state, tmpRoot, "drafter:01-x", {
+      artifacts: ["draft/01-x.md"],
+      hashes: { "draft/01-x.md": "abc" },
+      eventOffset: 3,
+    });
+    expect(getEntry(state, "drafter:01-x")?.hashes).toEqual({ "draft/01-x.md": "abc" });
+
+    const reloaded = await loadState(tmpRoot);
+    expect(reloaded.entries?.["drafter:01-x"]?.hashes).toEqual({ "draft/01-x.md": "abc" });
+    expect(reloaded.entries?.["drafter:01-x"]?.at).toBeTypeOf("string");
+  });
+
+  it("markComplete refreshes an existing entry (re-run after a failed verification)", async () => {
+    const state = await loadState(tmpRoot);
+    await markComplete(state, tmpRoot, "drafter:01-x", { hashes: { "draft/01-x.md": "old" } });
+    await markComplete(state, tmpRoot, "drafter:01-x", { hashes: { "draft/01-x.md": "new" } });
+    expect(getEntry(state, "drafter:01-x")?.hashes).toEqual({ "draft/01-x.md": "new" });
+    expect(state.completed.filter((k) => k === "drafter:01-x")).toHaveLength(1); // no duplicate
+  });
+
+  it("auto-migrates a v1 state file (completed-only) to v2 with empty entries", async () => {
+    const dir = join(tmpRoot, "logs");
+    mkdirSync(dir, { recursive: true });
+    writeFileSync(
+      join(dir, ".cdk-state.json"),
+      JSON.stringify({ version: 1, completed: ["architect", "drafter:01-x"] }),
+      "utf-8"
+    );
+    const loaded = await loadState(tmpRoot);
+    expect(loaded.version).toBe(2);
+    expect(loaded.completed).toEqual(["architect", "drafter:01-x"]);
+    expect(loaded.entries).toEqual({}); // legacy-trusted
+  });
+
+  it("clearState also clears the world event stream (--force is a clean re-run)", async () => {
+    await appendEvent(tmpRoot, {
+      type: "entity.upsert",
+      id: "x",
+      kind: "object",
+      display_name: "X",
+      provenance: { chapter: "canon", source: "architect" },
+    });
+    expect(existsSync(join(tmpRoot, WORLD_EVENTS_PATH))).toBe(true);
+    await clearState(tmpRoot);
+    expect(existsSync(join(tmpRoot, WORLD_EVENTS_PATH))).toBe(false);
   });
 });
