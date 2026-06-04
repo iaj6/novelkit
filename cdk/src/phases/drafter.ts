@@ -1,7 +1,10 @@
 import * as fs from "node:fs/promises";
 import * as path from "node:path";
 import { runAgent, type AgentRunResult } from "../agentRunner.js";
-import { loadState, isComplete, markComplete } from "../state.js";
+import { loadState, isComplete, markComplete, getEntry } from "../state.js";
+import { verifyChapter, rollbackChapter, hashFiles } from "../world/checkpoint.js";
+import { readEvents } from "../world/store.js";
+import { project } from "../world/project.js";
 import * as c from "../ansi.js";
 
 export async function runDrafter(projectRoot: string): Promise<AgentRunResult[]> {
@@ -23,6 +26,11 @@ export async function runDrafter(projectRoot: string): Promise<AgentRunResult[]>
 
   await fs.mkdir(path.join(projectRoot, "draft"), { recursive: true });
   const state = await loadState(projectRoot);
+  // Project the world store once for resume-verification advisories (resume-only;
+  // avoids re-projecting per completed chapter).
+  const worldTables = state.completed.length
+    ? project((await readEvents(projectRoot)).events)
+    : undefined;
 
   const results: AgentRunResult[] = [];
   const total = outlineFiles.length;
@@ -32,9 +40,22 @@ export async function runDrafter(projectRoot: string): Promise<AgentRunResult[]>
     const progress = `(${chapterIndex}/${total})`;
     const chapterId = outlineFile.replace(/\.md$/, "");
     const key = `drafter:${chapterId}`;
+    const draftRel = `draft/${chapterId}.md`;
     if (isComplete(state, key)) {
-      console.log(`${c.phase("drafter")} ${c.dim(progress)} ${chapterId} ${c.dim("already complete — skipping")}`);
-      continue;
+      // M4: don't trust completed=good — verify the chapter's artifact survived.
+      const v = await verifyChapter(projectRoot, chapterId, getEntry(state, key), worldTables);
+      if (v.ok) {
+        console.log(`${c.phase("drafter")} ${c.dim(progress)} ${chapterId} ${c.dim("already complete — skipping")}`);
+        if (v.advisories.length) {
+          console.log(`${c.phase("drafter")} ${c.dim(`(${chapterId} world-store advisory: ${v.advisories.join("; ")})`)}`);
+        }
+        continue;
+      }
+      console.log(
+        `${c.phase("drafter")} ${c.dim(progress)} ${chapterId} ${c.yellow("marked complete but failed verification")} (${v.missing.join("; ")}) ${c.yellow("— re-drafting")}`
+      );
+      await rollbackChapter(projectRoot, chapterId);
+      // fall through to re-draft — never skip a verification failure
     }
     console.log(`${c.phase("drafter")} ${c.dim(progress)} drafting ${chapterId}…`);
     const result = await runAgent({
@@ -58,7 +79,9 @@ export async function runDrafter(projectRoot: string): Promise<AgentRunResult[]>
       ].join(" "),
     });
     results.push(result);
-    await markComplete(state, projectRoot, key);
+    const hashes = await hashFiles(projectRoot, [draftRel]);
+    const eventOffset = (await readEvents(projectRoot)).events.length;
+    await markComplete(state, projectRoot, key, { artifacts: [draftRel], hashes, eventOffset });
   }
 
   return results;
