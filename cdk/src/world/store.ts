@@ -50,8 +50,12 @@ async function healTornTail(file: string): Promise<void> {
     const lastByte = Buffer.alloc(1);
     await handle.read(lastByte, 0, 1, size - 1);
     if (lastByte[0] === 0x0a) return; // ends in "\n" — previous write was clean
-    const all = await handle.readFile("utf-8");
-    const lastNl = all.lastIndexOf("\n");
+    // Operate on raw BYTES: truncate() takes a byte length, and the log routinely
+    // holds multibyte UTF-8 (em-dashes, accents, smart quotes). A decoded-string
+    // (UTF-16) index would diverge from the byte offset and cut a prior committed
+    // line mid-character, corrupting it.
+    const buf = await handle.readFile();
+    const lastNl = buf.lastIndexOf(0x0a); // BYTE index of the last "\n"
     await handle.truncate(lastNl + 1); // drop the partial line (truncate to 0 if no newline at all)
   } finally {
     await handle.close();

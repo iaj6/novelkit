@@ -178,6 +178,25 @@ describe("store (append/read)", () => {
     expect(events).toHaveLength(1);
     expect(skipped).toBe(1);
   });
+
+  it("heals a torn tail at the correct BYTE boundary when committed lines contain multibyte UTF-8", async () => {
+    // line 1 is full of multibyte UTF-8 (em-dash, smart quotes, accents); a UTF-16
+    // string index would diverge from the byte offset truncate() needs and corrupt it.
+    await appendEvent(root, factObj("f1", "captain", "title", 'Éimear — “the captain”, señora', undefined, "01-x"));
+    await appendEvent(root, factObj("f2", "breakwater", "length", 400, "feet", "01-x"));
+    // process killed mid-append of a third event (torn partial, no trailing newline)
+    appendFileSync(join(root, WORLD_EVENTS_PATH), '{"v":1,"type":"fact.assert","id":"fact:01', "utf-8");
+    // resume appends a fresh event -> heals the torn tail first; must cut at a byte boundary
+    await appendEvent(root, factObj("f3", "log", "note", "ok", undefined, "01-x"));
+
+    const { events, skipped } = await readEvents(root);
+    expect(skipped).toBe(0); // torn tail healed cleanly; no dangling partial remains
+    expect(events.map((e) => (e.type === "fact.assert" ? e.id : ""))).toEqual(["f1", "f2", "f3"]);
+    // the multibyte first line survived intact (a codepoint-index truncate would have corrupted it)
+    const f1 = events[0];
+    if (f1.type !== "fact.assert") throw new Error("wrong type");
+    expect(f1.value).toBe('Éimear — “the captain”, señora');
+  });
 });
 
 describe("parseEvents (chaos resilience)", () => {

@@ -498,7 +498,7 @@ export function buildToolServer(deps: ToolDeps) {
 
   const assertFact = tool(
     "assert_fact",
-    "Capture a durable fact into the world store as entity.attribute = value, IN ADDITION to append_continuity. A numeric value REQUIRES a unit. Reuse the same entity id + attribute key across chapters so the fact collides into one slot; pass `supersedes` (a prior fact id) when deliberately changing an established value.",
+    "Capture a durable fact into the world store as entity.attribute = value, IN ADDITION to append_continuity. A numeric value REQUIRES a unit. Reuse the same entity id + attribute key for a given fact so it is queryable across chapters. Re-asserting within the same chapter overwrites the prior assertion; across chapters a new assertion is recorded. When deliberately changing an established value, pass `supersedes` (the prior fact id, from query_facts) to retire the old one.",
     {
       entity: z.string().describe("Stable entity id/slug, e.g. 'eira-bowman', 'breakwater'."),
       attribute: z.string().describe("Dotted attribute key, e.g. 'age', 'hearing.left_ear', 'notebook.count'."),
@@ -578,7 +578,7 @@ export function buildToolServer(deps: ToolDeps) {
       const facts = await session.queryFacts(args);
       log.event("tool", { name: "query_facts", entity: args.entity, count: facts.length });
       const text = facts.length
-        ? facts.map((f) => `- ${f.attribute} = ${String(f.value)}${f.unit ? " " + f.unit : ""} [${f.tier}, ${f.provenance.chapter}]`).join("\n")
+        ? facts.map((f) => `- ${f.attribute} = ${String(f.value)}${f.unit ? " " + f.unit : ""} [${f.tier}, ${f.provenance.chapter}] (id: ${f.id})`).join("\n")
         : `(no facts recorded for ${args.entity})`;
       return { content: [{ type: "text", text }] };
     }
