@@ -22,6 +22,8 @@ export const EvidenceSchema = z.object({
   file: z.string().describe("Path relative to project root."),
   line: z.number().int().optional(),
   text: z.string().optional().describe("Verbatim excerpt of the offending text, if applicable."),
+  fact_id: z.string().optional().describe("World-store record id this evidence cites (deterministic findings)."),
+  chapter: z.string().optional().describe("Chapter id the cited record came from."),
 });
 export type Evidence = z.infer<typeof EvidenceSchema>;
 

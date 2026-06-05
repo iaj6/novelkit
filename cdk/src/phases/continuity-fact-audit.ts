@@ -2,6 +2,10 @@ import * as fs from "node:fs/promises";
 import * as path from "node:path";
 import { runAgent } from "../agentRunner.js";
 import { loadState, isComplete, markComplete } from "../state.js";
+import { readEvents } from "../world/store.js";
+import { project } from "../world/project.js";
+import { findContradictions, worldStoreStats } from "../world/audit.js";
+import { appendFindings } from "../findings.js";
 
 export async function runContinuityFactAudit(projectRoot: string) {
   const draftDir = path.join(projectRoot, "draft");
@@ -40,6 +44,22 @@ export async function runContinuityFactAudit(projectRoot: string) {
       "Stop after the findings are written.",
     ].join(" "),
   });
+
+  // M5 AUGMENT: deterministic find_contradictions over the world store, appended
+  // ALONGSIDE the LLM re-read's findings (which remain authoritative). Pure +
+  // precision-perfect (per the M3.5 probe); adds nothing when the store is empty.
+  const tables = project((await readEvents(projectRoot)).events);
+  const det = findContradictions(tables);
+  if (det.length > 0) {
+    await appendFindings(projectRoot, det);
+    console.log(
+      `[continuity-fact-audit] find_contradictions: ${det.length} deterministic contradiction${det.length === 1 ? "" : "s"} appended`
+    );
+  }
+  const stats = worldStoreStats(tables);
+  console.log(
+    `[continuity-fact-audit] world store: ${stats.liveFacts} facts, clean-slot ${(stats.cleanSlotRate * 100).toFixed(0)}%, ${stats.offVocabAttributes} off-vocab attr, ${stats.unresolvedEntityRefs} unresolved-entity ref(s)`
+  );
 
   await markComplete(state, projectRoot, key);
 }
