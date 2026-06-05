@@ -1,7 +1,7 @@
 # The epistemic world-model
 
-Status: **M1 in progress** (substrate). This doc is the execution checklist for replacing
-the append-only markdown world-state logs with a queryable, epistemic, event-sourced store.
+Status: **M5.5 — epistemic layer live** (M1–M5 merged). This doc is the execution checklist for
+replacing the append-only markdown world-state logs with a queryable, epistemic, event-sourced store.
 
 ## Why
 
@@ -51,7 +51,7 @@ Two mandates, one mechanism:
 | M3.5 | **Atomization probe — DONE** (run `wf_8aa3a4ee-410`): decision **augment-now-reassess-later**; canonical-form rules locked + resolve-first canonicalization shipped. See [world-model-m3.5-probe.md](world-model-m3.5-probe.md). | de-risk |
 | M4 | **Checkpoint integrity — DONE.** state v2 (per-key `entries` with artifacts+hashes+eventOffset; v1 auto-migrates; `completed` stays a string list so `cli` is untouched). The drafter VERIFIES a completed chapter on resume: artifact present + hash matches → skip; missing/truncated/changed → roll back its store events + re-draft (never trust `completed=good`). World-store coverage (and a draft-file hash change, the editor-rewrite case) is advisory only — never re-drafts a present, non-empty chapter. `--force` clears state + the world event stream (the append-only markdown logs are not reset). | A |
 | M5 | **Audit augment — DONE.** `find_contradictions` (pure, `world/audit.ts`) runs in continuity-fact-audit ALONGSIDE the LLM re-read (authoritative), appending deterministic fact-conflict + dangling-supersedes findings; comparison-time value normalization (preserves discriminators); store instrumentation (clean-slot / off-vocab / unresolved-entity, logged). Off-vocab is REPORTED (`CANONICAL_ATTRIBUTES`); write-time vocab warn/reject deferred to M6. | A |
-| M5.5 | **Epistemic pilot** on `the-contingency`: `learn()` + `who_knows` + `dramatic_irony`; prove the irony lands. (Also fix the deferred `who_knows` latest-wins collapse — see the marker in `session.ts`.) | B |
+| M5.5 | **Epistemic layer live — DONE (capability).** `who_knows` now collapses to the LATEST stance per proposition (the deferred latest-wins fix); new pure `dramaticIrony` query (`world/epistemic.ts`) + `dramatic_irony` MCP tool surface the propositions the `@reader` knows/suspects that a character is unaware of (or wrong about), using each knower's latest stance so a character who catches up no longer shows a gap; an opt-in `epistemic` config flag gates the drafter's `record_knowledge` capture (off for linear books). Pilot on `the-contingency` proves the gap lands on real material. | B |
 | M6 | Store becomes authoritative; drafter checklist collapses; `close_chapter` → refuse-mode; vocab/resolve hard-reject. Cutting the re-read audit is **GATED on a re-probe** hitting detection≈1.0 ∧ clean-slot≈1.0 ∧ key-agreement≈1.0 (no 0-atomization members) ∧ relation/epistemic coverage. | A |
 | M7 | Generalize the epistemic layer — only if the pilot proved out. | B |
 | M8 | Cleanup: drop shadow-diffing, document, backfill importer on `cdk run`. | — |

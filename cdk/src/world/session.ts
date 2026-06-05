@@ -8,6 +8,7 @@ import {
   type WorldTables,
 } from "./project.js";
 import type { Source, EntityKind, Stance } from "./schema.js";
+import { latestKnowledge, dramaticIrony, type IronyGap } from "./epistemic.js";
 
 /** Derive the mechanical discourse index from a chapter id's NN- prefix. */
 export function deriveDiscourseIndex(chapterId: string): number {
@@ -261,17 +262,17 @@ export class WorldSession {
     );
   }
 
-  /** What does `knower` know as of `asOfChapter` (live stances at or before its discourse index)? */
+  /** What does `knower` know as of `asOfChapter` — the LATEST live stance per proposition (M5.5). */
   async whoKnows(args: { knower: string; asOfChapter: string }): Promise<ProjectedKnowledge[]> {
     const tables = await this.tables();
     const target = tables.chapters.get(args.asOfChapter)?.discourseIndex ?? deriveDiscourseIndex(args.asOfChapter);
-    // MUST-FIX before M5.5: a knower whose stance on one proposition changes across
-    // chapters has multiple live states here, so this returns the full history, not
-    // the latest stance. The per-proposition latest-wins collapse lands with the
-    // epistemic pilot that actually consumes this query — no phase reads who_knows in
-    // the M3 shadow milestone, so shipping the raw filter is safe for now.
-    return [...tables.knowledge.values()].filter(
-      (k) => k.status === "live" && k.knower === args.knower && k.asOf.discourseIndex <= target
-    );
+    return latestKnowledge(tables, args.knower, target);
+  }
+
+  /** Dramatic-irony gaps as of `asOfChapter`: what the @reader knows/suspects that a character does not. */
+  async dramaticIrony(args: { asOfChapter: string }): Promise<IronyGap[]> {
+    const tables = await this.tables();
+    const target = tables.chapters.get(args.asOfChapter)?.discourseIndex ?? deriveDiscourseIndex(args.asOfChapter);
+    return dramaticIrony(tables, target);
   }
 }
