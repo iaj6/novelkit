@@ -5,6 +5,7 @@ import { loadState, isComplete, markComplete, getEntry } from "../state.js";
 import { verifyChapter, rollbackChapter, hashFiles } from "../world/checkpoint.js";
 import { readEvents } from "../world/store.js";
 import { project } from "../world/project.js";
+import { loadConfig } from "../config.js";
 import * as c from "../ansi.js";
 
 export async function runDrafter(projectRoot: string): Promise<AgentRunResult[]> {
@@ -26,6 +27,7 @@ export async function runDrafter(projectRoot: string): Promise<AgentRunResult[]>
 
   await fs.mkdir(path.join(projectRoot, "draft"), { recursive: true });
   const state = await loadState(projectRoot);
+  const config = await loadConfig(projectRoot);
   // Project the world store once for resume-verification advisories (resume-only;
   // avoids re-projecting per completed chapter).
   const worldTables = state.completed.length
@@ -74,6 +76,11 @@ export async function runDrafter(projectRoot: string): Promise<AgentRunResult[]>
         `Then call record_chapter_craft with chapterId="${chapterId}" and the structured craft fields (ending_mode, opening_texture, heavy_stylistic_moves, recurring_constructions, pov_register, craft_notes). THIS CALL MUST HAPPEN BEFORE append_continuity / append_glossary — agents drop the last item in long checklists, and the craft-log call must not be the dropped one.`,
         "Then call append_continuity for every specific named fact you introduced (physical details, dates, places, characters' attributes, named objects) — over-log; later chapters will only know what is logged. Call append_glossary for every newly named place, person, object, or term.",
         "Then mirror into the world store (ADDITIVE — do not skip the markdown calls above): for each fact you logged, also call assert_fact with a stable entity id, a dotted attribute key, and the value (with a unit if numeric); for each newly named entity, also call upsert_entity with a stable slug id, kind, and display_name.",
+        ...(config.epistemic
+          ? [
+              'EPISTEMIC CAPTURE (this brief opts in): when this chapter reveals something to the reader, or a POV character learns / comes to believe / suspects / misjudges something, record it with record_knowledge — knower "@reader" for a reader reveal or the character\'s entity id; proposition {prop:"<short slug>"} for a free claim or {factRef:"<fact id>"} to tie it to an asserted fact; stance one of knows / believes / suspects / wrong_believes / unaware / concealing; basis one of witnessed / told_by / inferred / document / overheard. This is how the pipeline tracks dramatic irony across the braid; call who_knows or dramatic_irony to check the gap between what the reader knows and what this POV knows before you commit the scene.',
+            ]
+          : []),
         `Finally call close_chapter with chapterId="${chapterId}".`,
         "Then stop.",
       ].join(" "),

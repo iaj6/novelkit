@@ -47,6 +47,13 @@ export type Config = {
    */
   research: boolean;
   /**
+   * Opt-in: the drafter records who-knows-what (record_knowledge) so the
+   * who_knows / dramatic_irony queries work. Default false — most briefs are
+   * linear and don't need the epistemic layer. Turn on for braided-POV /
+   * dramatic-irony / unreliable-narration books (the M5.5 pilot bet).
+   */
+  epistemic: boolean;
+  /**
    * Drafter calibration loop (runs between threads and drafter). When enabled,
    * the pipeline drafts a short sample of chapter 1's opening, has a grader
    * compare it against the brief's audience/exemplars, and revises
@@ -85,6 +92,7 @@ const DEFAULT_CONFIG: Config = {
   model: "claude-sonnet-4-6",
   visibility: "private",
   research: false,
+  epistemic: false,
   calibration: DEFAULT_CALIBRATION,
   modelByPhase: {},
   maxTurnsPerPhase: DEFAULT_MAX_TURNS,
@@ -125,6 +133,7 @@ export async function loadConfig(projectRoot: string): Promise<Config> {
     // — safer default for legacy configs without the field.
     visibility: normalizeVisibility(parsed.visibility),
     research: parsed.research === true,
+    epistemic: parsed.epistemic === true,
     calibration: { ...DEFAULT_CALIBRATION, ...(parsed.calibration ?? {}) },
     modelByPhase: { ...(parsed.modelByPhase ?? {}) },
     maxTurnsPerPhase: { ...DEFAULT_MAX_TURNS, ...(parsed.maxTurnsPerPhase ?? {}) },
