@@ -35,18 +35,25 @@ export function latestKnowledge(
 }
 
 export interface IronyGap {
+  /** Internal dedup/sort key (propKey form: `p=<slug>` or `f=<factId>`). */
   proposition: string;
+  /** Human-readable proposition (the slug or fact id, no `p=`/`f=` prefix) — what the dramatic_irony tool surfaces. */
+  readable: string;
   readerStance: string;
   character: string;
   characterStance: string;
 }
 
-const READER_AHEAD = new Set(["knows", "suspects"]);
+// Stance sets align with the drafter's reveal menu (phases/drafter.ts): a reader who
+// knows / believes / suspects a proposition is "ahead"; a character who is unaware of
+// it or actively wrong about it is "behind". (A character "concealing" it KNOWS it, so
+// is not behind; a reader who only "wonders" holds no position, so is not ahead.)
+const READER_AHEAD = new Set(["knows", "believes", "suspects"]);
 const CHARACTER_BEHIND = new Set(["unaware", "wrong_believes"]);
 
 /**
  * Dramatic-irony gaps as of a discourse index: propositions the @reader
- * knows/suspects that a character is unaware of (or wrong about) — the engine of
+ * knows/believes/suspects that a character is unaware of (or wrong about) — the engine of
  * suspense and irony, made queryable. Uses each knower's LATEST stance, so a
  * character who catches up no longer shows a gap. Pure + deterministic. This is
  * the machine-native capability a prose log cannot represent.
@@ -69,7 +76,8 @@ export function dramaticIrony(tables: WorldTables, asOfDiscourse: number): Irony
       const key = propKey(k.proposition);
       const r = readerAhead.get(key);
       if (r && CHARACTER_BEHIND.has(k.stance)) {
-        gaps.push({ proposition: key, readerStance: r.stance, character: c, characterStance: k.stance });
+        const readable = "factRef" in k.proposition ? k.proposition.factRef : k.proposition.prop;
+        gaps.push({ proposition: key, readable, readerStance: r.stance, character: c, characterStance: k.stance });
       }
     }
   }

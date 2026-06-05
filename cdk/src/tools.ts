@@ -619,14 +619,14 @@ export function buildToolServer(deps: ToolDeps) {
 
   const dramaticIronyTool = tool(
     "dramatic_irony",
-    "Return the live dramatic-irony gaps as of a chapter: propositions the @reader knows or suspects that a character is unaware of (or actively wrong about), using each knower's latest stance. Use to verify the irony you intend actually lands, and to keep a POV chapter honest about the gap between reader and character knowledge.",
+    "Return the live dramatic-irony gaps as of a chapter: propositions the @reader knows, believes, or suspects that a character is unaware of (or actively wrong about), using each knower's latest stance. Use to verify the irony you intend actually lands, and to keep a POV chapter honest about the gap between reader and character knowledge.",
     { asOfChapter: z.string() },
     async (args) => {
       const gaps = await session.dramaticIrony(args);
       log.event("tool", { name: "dramatic_irony", asOfChapter: args.asOfChapter, count: gaps.length });
       const text = gaps.length
         ? gaps
-            .map((g) => `- reader ${g.readerStance} "${g.proposition}" but ${g.character} ${g.characterStance}`)
+            .map((g) => `- reader ${g.readerStance} "${g.readable}" but ${g.character} ${g.characterStance}`)
             .join("\n")
         : `(no dramatic-irony gaps as of ${args.asOfChapter})`;
       return { content: [{ type: "text", text }] };

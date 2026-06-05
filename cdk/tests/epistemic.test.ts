@@ -89,17 +89,47 @@ describe("dramaticIrony", () => {
     expect(gaps[0].characterStance).toBe("wrong_believes");
   });
 
-  it("is deterministic and sorted", () => {
+  it("is deterministic and sorted by proposition then character (independent of ingestion order)", () => {
+    // events deliberately NOT in sorted order
     const events = [
-      learn("k1", "@reader", "p1", "knows", 5),
-      learn("k2", "brandt", "p1", "unaware", 6),
-      learn("k3", "@reader", "p2", "suspects", 5),
       learn("k4", "reyes", "p2", "wrong_believes", 6),
+      learn("k3", "@reader", "p2", "suspects", 5),
+      learn("k2", "brandt", "p1", "unaware", 6),
+      learn("k1", "@reader", "p1", "knows", 5),
     ];
     const a = dramaticIrony(project(events), 10);
     const b = dramaticIrony(project(events), 10);
     expect(a).toEqual(b);
-    expect(a.length).toBe(2);
+    expect(a.map((g) => g.proposition)).toEqual(["p=p1", "p=p2"]); // sorted regardless of ingestion order
+  });
+
+  it("treats reader 'believes' as reader-ahead (aligned with the drafter's reveal menu)", () => {
+    const t = project([
+      learn("k1", "@reader", "the-locket-is-fake", "believes", 5),
+      learn("k2", "nadia", "the-locket-is-fake", "unaware", 6),
+    ]);
+    const gaps = dramaticIrony(t, 9);
+    expect(gaps).toHaveLength(1);
+    expect(gaps[0]).toMatchObject({ readerStance: "believes", character: "nadia", characterStance: "unaware" });
+  });
+
+  it("sorts multiple characters behind on the same proposition by character id", () => {
+    const t = project([
+      learn("k1", "@reader", "p1", "knows", 5),
+      learn("k2", "zara", "p1", "unaware", 6),
+      learn("k3", "amir", "p1", "wrong_believes", 6),
+    ]);
+    expect(dramaticIrony(t, 9).map((g) => g.character)).toEqual(["amir", "zara"]); // tiebreak by character
+  });
+
+  it("exposes a human-readable proposition (no p=/f= key prefix) for the tool", () => {
+    const t = project([
+      learn("k1", "@reader", "the-vault-is-empty", "knows", 5),
+      learn("k2", "mara", "the-vault-is-empty", "unaware", 6),
+    ]);
+    const g = dramaticIrony(t, 9)[0];
+    expect(g.proposition).toBe("p=the-vault-is-empty"); // internal key (sort/dedup)
+    expect(g.readable).toBe("the-vault-is-empty"); // model-facing
   });
 });
 
