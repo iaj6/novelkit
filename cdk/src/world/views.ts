@@ -16,6 +16,10 @@ import type { WorldTables, ProjectedFact } from "./project.js";
 
 const CONTINUITY_PREAMBLE = "Hard facts that must not break in later drafting. These are binding.";
 const GLOSSARY_PREAMBLE = "Alphabetical. Definitions are brief and specific to this story's usage.";
+export const LEDGER_SENTINEL = "Store-derived; do not edit by hand.";
+const LEDGER_PREAMBLE =
+  "The accumulating fact ledger — every durable fact established so far, by chapter. Later drafting must stay consistent with these. " +
+  LEDGER_SENTINEL;
 
 function renderFactLine(f: ProjectedFact): string {
   // Imported / free-text facts are stored whole under the "statement" attribute.
@@ -37,6 +41,31 @@ export function renderCanonContinuity(tables: WorldTables): string {
     ? canon.map((f, i) => `${i + 1}. ${renderFactLine(f)}`).join("\n")
     : "(none yet)";
   return `# Continuity\n\n${CONTINUITY_PREAMBLE}\n\n${body}\n`;
+}
+
+/**
+ * Render the live DRAFTED-tier facts as logs/continuity.md — the accreting ledger
+ * the drafter reads while writing later chapters (the store-derived replacement for
+ * the hand-appended markdown). Grouped by provenance chapter (codepoint order =
+ * reading order via the NN- prefix); within a chapter, event order. Canon-tier,
+ * superseded, and retracted facts are excluded. Pure: same tables -> identical
+ * markdown — no wall-clock, unlike the legacy `## <ISO timestamp>` blocks.
+ */
+export function renderFactLedger(tables: WorldTables): string {
+  const byChapter = new Map<string, ProjectedFact[]>();
+  for (const f of tables.facts.values()) {
+    if (f.status !== "live" || f.tier !== "drafted") continue;
+    const arr = byChapter.get(f.provenance.chapter);
+    if (arr) arr.push(f);
+    else byChapter.set(f.provenance.chapter, [f]);
+  }
+  const chapters = [...byChapter.keys()].sort((a, b) => (a < b ? -1 : a > b ? 1 : 0));
+  const body = chapters.length
+    ? chapters
+        .map((ch) => `## ${ch}\n${byChapter.get(ch)!.map((f) => `- ${renderFactLine(f)}`).join("\n")}`)
+        .join("\n\n")
+    : "(none yet)";
+  return `# Continuity ledger\n\n${LEDGER_PREAMBLE}\n\n${body}\n`;
 }
 
 /**

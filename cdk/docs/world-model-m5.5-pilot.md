@@ -90,3 +90,68 @@ Cutting nothing yet. Before M6 makes the store authoritative, **re-run this popu
 the tightened prompt; the gate is **load-bearing-irony capture ≈ all annotators** (not 1/4) **∧
 clean negative control ∧ no reading-order inversions**. The reassess is a re-run, not a vibe — same
 discipline as the fact-atomization re-probe.
+
+---
+
+## Re-probe on the tightened prompt — the gate is NOT met (and that is the finding)
+
+Re-ran the identical pilot on the tightened prompt (4 annotators, same book, same deterministic
+scoring; the one book-specific example in the prompt was genericized so we measure the *disciplines*,
+not a leaked answer). Runs `wf_7cea7ec1-5a2` (+ resume — 3 of 4 annotators were killed mid-run by
+API throttling on the first pass and recovered on resume).
+
+| metric (real `project` + `dramaticIrony`) | baseline | re-probe |
+|---|---|---|
+| **president's-son gap correct (live@13 ∧ closed@14)** | **1/4** | **0/4** |
+| creature false-irony | 1/4 | 1/4 |
+| belief gap (out of scope by design) | 0/4 | 0/4 |
+| avg events / book | 82 | **58** |
+
+**What improved (the disciplines work where the judgment is easy):**
+- **Population hygiene** — 82 → 58 events/book; discipline #4 ("only gaps that matter") visibly cut
+  the gapless self-knowledge noise.
+- **The off-page-unaware technique fires** — 3/4 pinned the president `unaware` of
+  `creature-is-intelligent` across the window (the creature gap the baseline mostly missed), and
+  A2/A3 modelled Reyes's hearing-loss reveal as a textbook live-gap-then-close.
+- **Negative control still clean** (one stray creature leak per run, baseline and re-probe alike).
+
+**What did not (the headline irony got *worse*):**
+- **0/4 produced the president's-son gap** as a queryable live→close arc. The failure is not
+  mechanical sloppiness — it is a **proposition-identification** error the prompt could not fix and
+  arguably *worsened*: "share one slug" made all four converge on the **public identity**
+  (`farrow-is-presidents-son`, which the president trivially knows — it is his son) instead of the
+  **secret** (the son *enrolled* / is on the list — what the president does not know until he reads
+  it). Two annotators went further and asserted the president **`knows`** at Ch14, reading "the
+  father reads the name *before he understands*" as "he always knew his son," **erasing** the gap
+  rather than under-capturing it.
+
+## Verdict: the division of labour is the real result
+
+The pilot answers the mandate-B question more usefully than a pass would have. **The machine is
+excellent at the bookkeeping and unreliable at the one authorial judgment.** It tracks, pins,
+reading-orders, de-noises, and keeps a perfect negative control — relentless, deterministic,
+cross-chapter work no human holds in their head. What it does *not* do reliably is decide **which
+proposition a load-bearing irony actually turns on** (the enrollment secret, not the public
+identity) — a high-judgment act it got right 1/4 then 0/4.
+
+So the path forward is **not more prompt-nagging** (two rounds of tightening moved hygiene but not
+the headline). It is **seed-then-enforce**:
+
+- **Seed (high judgment, once, up front)** — the *architect/plotter* phase, which already emits the
+  chapter-map's irony beats ("the president reads his son's name before he understands"), also emits
+  a small **irony ledger**: for each load-bearing irony, the canonical proposition slug, who is
+  ahead, who is behind, and the reveal chapter. A handful per book.
+- **Enforce (mechanical, every chapter) — what the agents are good at** — the drafter/audit tracks
+  those seeded propositions across the braid, pins the unaware parties, and `dramaticIrony`/an audit
+  check **verifies** each seeded gap stays live until its reveal and closes at it, flagging any
+  chapter that violates the intended irony.
+
+This plays to the proven strength (queryable, cross-chapter knowledge bookkeeping) and routes around
+the proven weakness (guessing the central irony's proposition). The opt-in `epistemic` capture +
+the tightened disciplines stay (net-positive on hygiene and tractable ironies); they become the
+*enforcement substrate* for seeded ironies rather than an autonomous oracle.
+
+**M6 decision:** epistemic capture does **not** go store-authoritative on autonomous population. The
+next epistemic step is the **irony-ledger seed** (architect-emitted) + an audit that enforces it;
+re-probe *that* — gate: every seeded irony queryable as a live→close arc across all annotators.
+Belief/conviction asymmetry stays explicitly out of scope (who-knows ≠ who-believes-rightly).
