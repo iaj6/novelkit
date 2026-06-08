@@ -1,3 +1,4 @@
+import { createHash } from "node:crypto";
 import { appendEvent, readEvents } from "./store.js";
 import {
   project,
@@ -40,11 +41,12 @@ export interface CloseResult {
  * answers queries off the projected event stream. The MCP tools in tools.ts are
  * thin wrappers over this; it is SDK-free and unit-testable.
  *
- * M3 = DUAL-WRITE SHADOW: these writes fill the store ALONGSIDE the legacy
- * markdown logs, which remain authoritative. close_chapter only WARNS on a
- * missing capture — it never refuses (refuse-mode is M6, after the M4 recovery
- * path exists). Fact/relation/knowledge ids are content-derived (deterministic;
- * a re-draft of the same chapter overwrites rather than duplicating).
+ * M6: the store is the SOURCE OF TRUTH for the factual continuity ledger — the
+ * drafted-fact view logs/continuity.md is regenerated from these writes (see
+ * world/regenerate.ts), not hand-appended. close_chapter still only WARNS on a
+ * missing capture (refuse-mode is a follow-up). Fact/relation/knowledge ids are
+ * content-derived (deterministic; a re-draft of the same chapter overwrites
+ * rather than duplicating).
  */
 export class WorldSession {
   private openChapterId: string | null = null;
@@ -161,6 +163,31 @@ export class WorldSession {
       tier: args.tier,
       confidence: args.confidence,
       supersedes: args.supersedes,
+      provenance: { chapter, source: this.source },
+    });
+    return { id };
+  }
+
+  /**
+   * Capture a free-text fact that does NOT atomize into entity.attribute=value, as a
+   * `statement` fact (the M3.5 escape hatch; what `append_continuity` writes now that
+   * the store is the source of truth). The id is content-derived — chapter + a hash of
+   * the text — so re-drafting a chapter overwrites rather than duplicating, while two
+   * distinct statements in one chapter never collide (the plain `fact:chapter:entity:
+   * attribute` scheme would, since every statement shares entity+attribute).
+   */
+  async assertStatement(args: { value: string; tier?: "canon" | "drafted"; chapter?: string }): Promise<{ id: string }> {
+    const chapter = this.chapterOf(args.chapter);
+    const hash = createHash("sha256").update(args.value).digest("hex").slice(0, 12);
+    const id = `fact:${chapter}:statement:${hash}`;
+    await appendEvent(this.projectRoot, {
+      type: "fact.assert",
+      id,
+      entity: "unattributed",
+      attribute: "statement",
+      value: args.value,
+      tier: args.tier,
+      confidence: "inferred",
       provenance: { chapter, source: this.source },
     });
     return { id };

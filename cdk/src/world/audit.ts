@@ -79,6 +79,10 @@ export function findContradictions(tables: WorldTables): Finding[] {
   const groups = new Map<string, ProjectedFact[]>();
   for (const f of tables.facts.values()) {
     if (f.status !== "live") continue;
+    // Free-text statements all share entity="unattributed", attribute="statement" — they
+    // are NOT comparable value-slots, so skip them here (the LLM re-read covers free text).
+    // Without this, two distinct statements would be flagged as a spurious contradiction.
+    if (f.attribute === "statement") continue;
     // JSON-array key: unambiguous for any entity/attribute content (no magic separator).
     pushTo(groups, JSON.stringify([f.entity, f.attribute]), f);
   }

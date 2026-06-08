@@ -92,6 +92,17 @@ describe("findContradictions", () => {
   });
 });
 
+describe("find_contradictions excludes free-text statements", () => {
+  it("never flags distinct unattributed.statement facts as a contradiction (M6: append_continuity writes these)", () => {
+    const t = project([
+      fact("s1", "unattributed", "statement", "The harbor froze in 1891.", undefined, "01-a"),
+      fact("s2", "unattributed", "statement", "Eira keeps a brass key.", undefined, "02-b"),
+      fact("s3", "unattributed", "statement", "The lighthouse went dark in winter.", undefined, "03-c"),
+    ]);
+    expect(findContradictions(t)).toEqual([]);
+  });
+});
+
 describe("worldStoreStats", () => {
   it("reports clean-slot rate, off-vocab, and unresolved-entity counts", () => {
     const t = project([

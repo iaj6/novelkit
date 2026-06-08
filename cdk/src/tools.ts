@@ -28,8 +28,10 @@ import { ENTITY_KINDS, STANCES, BASES, TIERS, CONFIDENCES, POLARITIES, type Sour
  *
  * Facets that look adjacent but are NOT redundant:
  *   - `record_scene.newFacts` records short-term context for the next drafter's awareness.
- *     `append_continuity` records durable cross-chapter assertions for the fact audit.
- *     Different consumers, different lifecycle — the drafter calls both intentionally.
+ *     `append_continuity` records durable cross-chapter assertions into the WORLD STORE
+ *     (M6: logs/continuity.md is REGENERATED from the store, not hand-appended) for the
+ *     fact audit and later drafters. Different consumers, different lifecycle — the
+ *     drafter calls both intentionally.
  *   - `logs/scene-log.md` is the verbose per-scene record; `logs/story-arc.md` is the
  *     chronological one-liner digest used when reading the full scene log would be wasteful.
  *
@@ -252,19 +254,16 @@ export function buildToolServer(deps: ToolDeps) {
 
   const appendContinuity = tool(
     "append_continuity",
-    "Append durable canon facts to logs/continuity.md. Use for facts later drafting must not break.",
+    "Record durable free-text facts into the world store as `statement` facts — for facts later drafting must not break that don't cleanly atomize into assert_fact's entity.attribute=value form. Writes the same store as assert_fact; logs/continuity.md is regenerated from the store, never hand-edited.",
     {
       facts: z.array(z.string()).min(1).describe("One or more standalone factual statements."),
     },
     async (args) => {
-      const file = resolveInProject(projectRoot, "logs/continuity.md");
-      await fs.mkdir(path.dirname(file), { recursive: true });
-      const now = new Date().toISOString();
-      const lines = args.facts.map((f) => `- ${f}`).join("\n");
-      const block = `\n## ${now}\n${lines}\n`;
-      await fs.appendFile(file, block, "utf-8");
-      log.event("tool", { name: "append_continuity", count: args.facts.length });
-      return { content: [{ type: "text", text: `appended ${args.facts.length} facts` }] };
+      const tier = deps.source === "architect" ? "canon" : "drafted";
+      const chapter = deps.source === "architect" ? "canon" : undefined;
+      for (const f of args.facts) await session.assertStatement({ value: f, tier, chapter });
+      log.event("tool", { name: "append_continuity", count: args.facts.length, tier });
+      return { content: [{ type: "text", text: `recorded ${args.facts.length} fact(s) to the world store` }] };
     }
   );
 
@@ -498,7 +497,7 @@ export function buildToolServer(deps: ToolDeps) {
 
   const assertFact = tool(
     "assert_fact",
-    "Capture a durable fact into the world store as entity.attribute = value, IN ADDITION to append_continuity. A numeric value REQUIRES a unit. Pass a RESOLVED entity id (from resolve_entity/upsert_entity), not a free-typed name, and reuse canonical dotted attribute keys (age, birth_year, role, date, location, ...) — consistent ids + keys are what let cross-chapter contradictions be detected. One fact per call (decompose compound sentences). Re-asserting within the same chapter overwrites the prior assertion; across chapters a new assertion is recorded. When deliberately changing an established value, pass `supersedes` (the prior fact id, from query_facts) to retire the old one.",
+    "Capture a durable fact into the world store as entity.attribute = value (the structured form; for a fact that doesn't atomize cleanly, use append_continuity instead). A numeric value REQUIRES a unit. Pass a RESOLVED entity id (from resolve_entity/upsert_entity), not a free-typed name, and reuse canonical dotted attribute keys (age, birth_year, role, date, location, ...) — consistent ids + keys are what let cross-chapter contradictions be detected. One fact per call (decompose compound sentences). Re-asserting within the same chapter overwrites the prior assertion; across chapters a new assertion is recorded. When deliberately changing an established value, pass `supersedes` (the prior fact id, from query_facts) to retire the old one.",
     {
       entity: z.string().describe("Stable entity id/slug, e.g. 'eira-bowman', 'breakwater'."),
       attribute: z.string().describe("Dotted attribute key, e.g. 'age', 'hearing.left_ear', 'notebook.count'."),
