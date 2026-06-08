@@ -16,8 +16,10 @@ import type { WorldTables, ProjectedFact } from "./project.js";
 
 const CONTINUITY_PREAMBLE = "Hard facts that must not break in later drafting. These are binding.";
 const GLOSSARY_PREAMBLE = "Alphabetical. Definitions are brief and specific to this story's usage.";
+export const LEDGER_SENTINEL = "Store-derived; do not edit by hand.";
 const LEDGER_PREAMBLE =
-  "The accumulating fact ledger — every durable fact established so far, by chapter. Later drafting must stay consistent with these. Store-derived; do not edit by hand.";
+  "The accumulating fact ledger — every durable fact established so far, by chapter. Later drafting must stay consistent with these. " +
+  LEDGER_SENTINEL;
 
 function renderFactLine(f: ProjectedFact): string {
   // Imported / free-text facts are stored whole under the "statement" attribute.

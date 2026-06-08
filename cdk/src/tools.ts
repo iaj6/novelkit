@@ -259,10 +259,13 @@ export function buildToolServer(deps: ToolDeps) {
       facts: z.array(z.string()).min(1).describe("One or more standalone factual statements."),
     },
     async (args) => {
-      const tier = deps.source === "architect" ? "canon" : "drafted";
+      // The architect has no open chapter; bucket its facts under the "canon" chapter so
+      // they still render in the regenerated ledger (drafted tier — the canon tier had no
+      // live consumer and orphaned them from every reader path). The drafter inherits its
+      // open chapter.
       const chapter = deps.source === "architect" ? "canon" : undefined;
-      for (const f of args.facts) await session.assertStatement({ value: f, tier, chapter });
-      log.event("tool", { name: "append_continuity", count: args.facts.length, tier });
+      for (const f of args.facts) await session.assertStatement({ value: f, chapter });
+      log.event("tool", { name: "append_continuity", count: args.facts.length, source: deps.source });
       return { content: [{ type: "text", text: `recorded ${args.facts.length} fact(s) to the world store` }] };
     }
   );

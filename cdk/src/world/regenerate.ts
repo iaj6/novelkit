@@ -3,7 +3,7 @@ import * as path from "node:path";
 import { resolveInProject } from "../paths.js";
 import { readEvents } from "./store.js";
 import { project } from "./project.js";
-import { renderFactLedger } from "./views.js";
+import { renderFactLedger, LEDGER_SENTINEL } from "./views.js";
 
 /**
  * Regenerate the store-derived markdown views (M6 robustness core). Currently the
@@ -15,20 +15,20 @@ import { renderFactLedger } from "./views.js";
  * `canon/continuity.md` stays architect-hand-authored (press-critical) and is NOT
  * regenerated here — only the high-churn drafted ledger flips to store-authoritative.
  *
- * Safety (augment-never-regress): seeds an empty "(none yet)" ledger for a fresh book,
- * but never overwrites a pre-existing (e.g. legacy hand-written) ledger with an empty
- * render. Full legacy-import backfill is deferred (M8 "backfill importer on cdk run").
+ * Safety (augment-never-regress): gates the overwrite on a store-owned SENTINEL in the
+ * existing file, NOT on "the store has any fact". A legacy / hand-written
+ * logs/continuity.md lacks the sentinel, so it is preserved untouched — a sparse store
+ * must never clobber a richer legacy ledger. A fresh book (no file) is seeded; a file we
+ * previously authored (sentinel present) is updated. Full legacy-import backfill — which
+ * would make the store a genuine superset so legacy ledgers could be regenerated safely —
+ * is deferred (M8 "backfill importer on cdk run").
  */
 export async function regenerateLedgerViews(projectRoot: string): Promise<void> {
-  const tables = project((await readEvents(projectRoot)).events);
-  const hasDrafted = [...tables.facts.values()].some((f) => f.status === "live" && f.tier === "drafted");
   const file = resolveInProject(projectRoot, "logs/continuity.md");
-  if (!hasDrafted) {
-    // Fresh book: seed an empty ledger so the drafter's read_file succeeds. Legacy book
-    // (file already present, store empty): never overwrite it with an empty render.
-    const exists = await fs.access(file).then(() => true).catch(() => false);
-    if (exists) return;
-  }
+  const existing = await fs.readFile(file, "utf-8").catch(() => null);
+  // Never clobber a ledger this function did not author (no sentinel => legacy/hand-written).
+  if (existing !== null && !existing.includes(LEDGER_SENTINEL)) return;
+  const tables = project((await readEvents(projectRoot)).events);
   await fs.mkdir(path.dirname(file), { recursive: true });
   await fs.writeFile(file, renderFactLedger(tables), "utf-8");
 }
