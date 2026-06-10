@@ -206,6 +206,7 @@ export async function runAgent(args: AgentRunArgs): Promise<AgentRunResult> {
     projectRoot: args.projectRoot,
     log,
     source: phaseToSource(args.phase),
+    epistemic: config.epistemic,
   });
 
   const maxTurns = args.maxTurnsOverride ?? config.maxTurnsPerPhase[args.phase];

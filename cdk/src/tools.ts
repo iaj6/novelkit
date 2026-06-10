@@ -49,6 +49,8 @@ export type ToolDeps = {
   log: RunLog;
   /** Provenance source for world-store writes (derived from the phase). Defaults to "drafter". */
   source?: Source;
+  /** Opt-in: expose the epistemic capture/query tools (record_knowledge, who_knows, dramatic_irony). Off keeps them out of the tool set entirely. */
+  epistemic?: boolean;
 };
 
 // The file-path jail (resolveInProject) now lives in paths.ts so the world store
@@ -658,11 +660,12 @@ export function buildToolServer(deps: ToolDeps) {
       assertFact,
       upsertEntity,
       recordRelation,
-      recordKnowledge,
       queryFacts,
       resolveEntity,
-      whoKnows,
-      dramaticIronyTool,
+      // FM2: expose the epistemic capture/query tools only when the brief opts in
+      // (config.epistemic) — otherwise the drafter records who-knows-what unprompted on a
+      // linear book, wasting turns and adding store noise (81 stray events on coldwater-reach).
+      ...(deps.epistemic ? [recordKnowledge, whoKnows, dramaticIronyTool] : []),
     ],
   });
 
@@ -686,11 +689,9 @@ export function buildToolServer(deps: ToolDeps) {
     "assert_fact",
     "upsert_entity",
     "record_relation",
-    "record_knowledge",
     "query_facts",
     "resolve_entity",
-    "who_knows",
-    "dramatic_irony",
+    ...(deps.epistemic ? ["record_knowledge", "who_knows", "dramatic_irony"] : []),
   ];
 
   return {

@@ -70,7 +70,7 @@ const DEFAULT_MAX_TURNS: Record<PhaseId, number> = {
   architect: 60,
   plotter: 50,
   threads: 40,
-  drafter: 30,
+  drafter: 50, // FM1: the M6 structured-capture model is ~40+ tool calls/chapter; 30 crashed at ch21 on a real run
   "calibrate-sample": 20,
   "calibrate-grade": 30,
   "editor-continuity": 40,
