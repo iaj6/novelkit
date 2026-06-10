@@ -94,6 +94,25 @@ export class WorldSession {
     return idx.get(raw.trim().toLowerCase()) ?? raw;
   }
 
+  /**
+   * FM4 resolve-first HARD-REJECT: a structured fact must reference a REGISTERED entity so
+   * cross-chapter keys agree (the M3.5 probe's #1 key-agreement lever). Resolves a
+   * name/alias/id to its canonical id; THROWS if the entity was never upsert_entity'd.
+   * Reserved knowers (@...) and the "unattributed" statement sentinel pass through —
+   * statements go via assertStatement, not assertFact, so a real fact never legitimately
+   * carries an unregistered entity. The error is phrased for agent self-recovery.
+   */
+  private async resolveKnownEntity(raw: string): Promise<string> {
+    if (raw.startsWith("@") || raw === "unattributed") return raw;
+    const resolved = (await this.ensureEntityIndex()).get(raw.trim().toLowerCase());
+    if (resolved === undefined) {
+      throw new Error(
+        `Unknown entity "${raw}". Call upsert_entity (a stable slug id, kind, display_name) before asserting facts about it — or resolve_entity to find its existing id — then assert_fact with that id. Consistent entity ids are what let cross-chapter contradictions be detected.`
+      );
+    }
+    return resolved;
+  }
+
   /** Open the chapter transaction — subsequent writes inherit this chapter as provenance. */
   async openChapter(args: {
     chapterId: string;
@@ -150,7 +169,7 @@ export class WorldSession {
     chapter?: string;
   }): Promise<{ id: string }> {
     const chapter = this.chapterOf(args.chapter);
-    const entity = await this.canonicalEntity(args.entity);
+    const entity = await this.resolveKnownEntity(args.entity);
     const id = `fact:${chapter}:${entity}:${args.attribute}`;
     await appendEvent(this.projectRoot, {
       type: "fact.assert",

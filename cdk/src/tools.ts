@@ -514,9 +514,17 @@ export function buildToolServer(deps: ToolDeps) {
       supersedes: z.string().optional().describe("A prior fact id this assertion retires."),
     },
     async (args) => {
-      const r = await session.assertFact(args);
-      log.event("tool", { name: "assert_fact", id: r.id });
-      return { content: [{ type: "text", text: `asserted ${r.id}` }] };
+      try {
+        const r = await session.assertFact(args);
+        log.event("tool", { name: "assert_fact", id: r.id });
+        return { content: [{ type: "text", text: `asserted ${r.id}` }] };
+      } catch (e) {
+        // Surface a rejection (FM4 resolve-first; or the numeric-needs-unit invariant) as a
+        // tool result so the agent reads it and self-corrects, rather than an unhandled throw.
+        const msg = e instanceof Error ? e.message : String(e);
+        log.event("tool", { name: "assert_fact", error: msg });
+        return { content: [{ type: "text", text: `assert_fact rejected: ${msg}` }], isError: true };
+      }
     }
   );
 
