@@ -54,7 +54,7 @@ Two mandates, one mechanism:
 | M5.5 | **Epistemic layer live — DONE (capability).** `who_knows` now collapses to the LATEST stance per proposition (the deferred latest-wins fix); new pure `dramaticIrony` query (`world/epistemic.ts`) + `dramatic_irony` MCP tool surface the propositions the `@reader` knows/suspects that a character is unaware of (or wrong about), using each knower's latest stance so a character who catches up no longer shows a gap; an opt-in `epistemic` config flag gates the drafter's `record_knowledge` capture (off for linear books). **Population pilot** (`wf_c79a60c0-d5e`, 4 annotators over the real drafts + deterministic scoring): the **query is proven** (one annotator reproduces the president's-son gap live through the approach and closing exactly at the Ch14 reveal; clean negative control; 329/329 events schema-valid), but **capture is unreliable** — 1/4 produced the load-bearing irony as a queryable gap (failures: slug-splitting, unaware-party-not-pinned, reading-order). Verdict **augment-now, tighten-the-prompt**; 4 pilot-derived disciplines shipped in the drafter prompt, gated on an M6 re-probe. **Re-probe (`wf_7cea7ec1-5a2`): gate NOT met** — the load-bearing president's-son irony went 1/4 → **0/4** (the disciplines improved hygiene 82→58 events/book and the off-page-unaware technique, but "share one slug" made all four converge on the *public identity* rather than the *enrollment secret*). The finding: the machine nails the **bookkeeping**, not the **authorial judgment of which proposition the irony turns on**. Pivot → **seed-then-enforce** (M5.6). See [world-model-m5.5-pilot.md](world-model-m5.5-pilot.md). | B |
 | **M5.6** | **Irony-ledger seed (the pilot's pivot).** The high-judgment act (naming each load-bearing irony's canonical proposition + who's-ahead / who's-behind / reveal-chapter) moves UP-FRONT to the architect/plotter (which already emits the chapter-map's irony beats) as a small per-book **irony ledger**. The drafter/audit then does the mechanical part it's proven good at: track those seeded propositions across the braid, pin the unaware parties, and enforce via `dramaticIrony` that each seeded gap stays live until its reveal and closes at it — flagging any chapter that violates the intended irony. Opt-in `epistemic` capture + the tightened disciplines remain as the *enforcement substrate*, not an autonomous oracle. | B |
 | M6 | Store becomes authoritative; drafter checklist collapses; `close_chapter` → refuse-mode; vocab/resolve hard-reject. Cutting the re-read audit is **GATED on a re-probe** hitting detection≈1.0 ∧ clean-slot≈1.0 ∧ key-agreement≈1.0 (no 0-atomization members) ∧ relation/epistemic coverage. Epistemic capture does **NOT** go store-authoritative on autonomous population (M5.5 re-probe failed that gate, 0/4). Instead it is gated on the **M5.6 seed-then-enforce re-probe**: every architect-seeded irony queryable as a live→close arc across ~all annotators ∧ clean negative control. Belief/conviction asymmetry stays out of scope (who-knows ≠ who-believes-rightly). **Shipped as ROBUSTNESS CORE** (store-authoritative reads #31, drafter hygiene #32, resolve-first hard-reject #33); **cutting the re-read is deferred indefinitely** — the 3-run review showed the LLM re-read catches the real continuity errors the deterministic fact-audit can't. | A |
-| **M7** | **Canonical-record layer (verbatim consistency) — the 3-run review's redirect.** Capture the EXACT TEXT of load-bearing documents (the harbor-log entry, letters, forms) + the recurring scene's anchor facts; the drafter reads the canonical version BEFORE re-quoting/re-narrating; an EXACT-MATCH audit flags divergence. This is the deterministic audit's *sweet spot* (exact strings — no normalization ceiling, unlike fact-contradiction at 0/4 real on the m6 run). The fact-graph itself is effectively done (derived facts were flawless); the real errors live in this layer. Sketch below; see [three-run review] (`three-run-review-redirection` memory). | A |
+| **M7** | **Canonical-record layer (verbatim consistency) — the 3-run review's redirect.** Capture the EXACT TEXT of load-bearing documents (a log entry, a letter, a form) + the recurring scene's anchor facts; the drafter reads the canonical version BEFORE re-quoting/re-narrating; an EXACT-MATCH audit flags divergence. This is the deterministic audit's *sweet spot* (exact strings — no normalization ceiling, unlike fact-contradiction at 0/4 real on the m6 run). The fact-graph itself is effectively done (derived facts were flawless); the real errors live in this layer. Sketch below; see [three-run review] (`three-run-review-redirection` memory). | A |
 | M8 | Cleanup: drop shadow-diffing, document, backfill importer on `cdk run`. | — |
 
 **Cut from v1** (gold-plating): `@narrator` tracking, a separate `foreshadow_ledger` tool, the
@@ -77,14 +77,20 @@ the M3.5 normalization ceiling (0/4 real on the m6 run — fuzzy values don't co
 exact string match**: no normalization, no FP ceiling, no judgment. Point the deterministic audit at
 verbatim records and it finally does what it's good at.
 
-**The three review-surfaced gaps M7 addresses:**
-1. **Verbatim documents** — the harbor-log entry quoted two ways (every timestamp + the weather differ).
-   The store locked the *facts*, never the *exact text*.
-2. **Capture-completeness on load-bearing anchors** — the dock-sighting DATE flip-flops (Oct 11↔10); the
-   drafter atomized a trivial age and missed the single most-returned-to fact in the book. **Capture is
-   biased toward easy facts, not load-bearing ones.**
-3. **Re-narrated scenes** — every run re-improvises the most-repeated scene (the sighting) instead of
-   re-reading it.
+**The three gaps M7 addresses** (general pattern first; the coldwater-reach m6 run is the evidence, not
+shared context — a future builder needs the pattern, not the book):
+1. **Verbatim documents** — when a fixed document (a log entry, a letter, a form) is quoted in the prose
+   and then re-quoted in a later chapter, the re-quote drifts: different details each time. The store locks
+   the atomized *facts* but never the document's *exact text*. *(m6 evidence: a harbor-log entry was quoted
+   two different ways — every timestamp and the weather differed.)*
+2. **Capture-completeness on load-bearing anchors** — the drafter atomizes the easy/obvious facts but
+   misses the central recurring ones the whole book returns to, so the single most load-bearing fact is the
+   one most likely to drift. **Capture is biased toward easy facts, not load-bearing ones.** *(m6 evidence:
+   a trivial character age was captured; the crime-night date — referenced in five chapters — was not, and
+   it flip-flopped.)*
+3. **Re-narrated scenes** — the most-returned-to scene gets re-improvised from scratch each time instead of
+   re-read, so its details diverge. *(m6 evidence: all three runs broke their single most-repeated scene
+   this way — a pipeline failure mode, not one book's quirk.)*
 
 **Design (sketch):**
 - **Artifact — `record`**: a registered load-bearing verbatim text with a stable id + the EXACT string
