@@ -30,6 +30,7 @@ describe("WorldSession transaction + writes", () => {
     const s = new WorldSession(root, "drafter");
     const { discourseIndex } = await s.openChapter({ chapterId: "07-the-yard", pov: ["reyes"] });
     expect(discourseIndex).toBe(7);
+    await s.upsertEntity({ id: "field-log", kind: "object", display_name: "field log" });
     await s.assertFact({ entity: "field-log", attribute: "notebook.count", value: 6, unit: "notebooks" });
 
     const { events } = await readEvents(root);
@@ -42,6 +43,7 @@ describe("WorldSession transaction + writes", () => {
   it("stamps the session's provenance source", async () => {
     const s = new WorldSession(root, "architect");
     await s.openChapter({ chapterId: "canon" });
+    await s.upsertEntity({ id: "eira", kind: "character", display_name: "Eira" });
     await s.assertFact({ entity: "eira", attribute: "age", value: 52, unit: "years", tier: "canon" });
     const facts = await s.queryFacts({ entity: "eira" });
     expect(facts[0].provenance.source).toBe("architect");
@@ -51,12 +53,14 @@ describe("WorldSession transaction + writes", () => {
   it("rejects a numeric fact with no unit (write-boundary invariant)", async () => {
     const s = new WorldSession(root);
     await s.openChapter({ chapterId: "01-x" });
+    await s.upsertEntity({ id: "eira", kind: "character", display_name: "Eira" });
     await expect(s.assertFact({ entity: "eira", attribute: "age", value: 52 })).rejects.toThrow(/unit/);
   });
 
   it("query_facts returns live facts; a superseding assert retires the old value", async () => {
     const s = new WorldSession(root);
     await s.openChapter({ chapterId: "01-x" });
+    await s.upsertEntity({ id: "field-log", kind: "object", display_name: "field log" });
     const first = await s.assertFact({ entity: "field-log", attribute: "notebook.count", value: 6, unit: "notebooks" });
     // a later chapter changes it, superseding the prior fact id
     await s.openChapter({ chapterId: "11-y" });
@@ -107,6 +111,7 @@ describe("WorldSession close_chapter warn-gate (M3 shadow — warns, never refus
   it("passes the gate when the chapter captured at least one fact", async () => {
     const s = new WorldSession(root);
     await s.openChapter({ chapterId: "01-x" });
+    await s.upsertEntity({ id: "eira", kind: "character", display_name: "Eira" });
     await s.assertFact({ entity: "eira", attribute: "role", value: "harbormaster" });
     const r = await s.closeChapter({});
     expect(r.incomplete).toBe(false);
@@ -119,6 +124,7 @@ describe("chaos / resume: a kill mid-chapter leaves the store recoverable", () =
     // simulate the drafter writing chapter 03: open + one good fact...
     const s = new WorldSession(root, "drafter");
     await s.openChapter({ chapterId: "03-the-blow" });
+    await s.upsertEntity({ id: "breakwater", kind: "place", display_name: "The Breakwater" });
     await s.assertFact({ entity: "breakwater", attribute: "length", value: 400, unit: "feet" });
     // ...then the process is KILLED mid-append of a second fact (a torn JSON line,
     // no newline) and close_chapter never runs.
@@ -160,9 +166,14 @@ describe("WorldSession resolve-first canonicalization (M3.5)", () => {
     expect(facts.map((f) => f.attribute).sort()).toEqual(["age", "role", "tenure_since"]);
   });
 
-  it("leaves a genuinely new (unresolved) entity unchanged", async () => {
+  it("hard-rejects assert_fact for an unregistered entity (resolve-first); accepts it after upsert", async () => {
     const s = new WorldSession(root);
     await s.openChapter({ chapterId: "01-x" });
+    await expect(
+      s.assertFact({ entity: "brand-new-thing", attribute: "color", value: "green" })
+    ).rejects.toThrow(/upsert_entity/);
+    // after registering the entity, the same assertion succeeds
+    await s.upsertEntity({ id: "brand-new-thing", kind: "object", display_name: "Brand New Thing" });
     await s.assertFact({ entity: "brand-new-thing", attribute: "color", value: "green" });
     expect(await s.queryFacts({ entity: "brand-new-thing" })).toHaveLength(1);
   });
