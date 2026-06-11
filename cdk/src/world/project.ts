@@ -79,12 +79,26 @@ export interface ProjectedChapter {
   provenance: Provenance;
 }
 
+export interface ProjectedRecord {
+  id: string;
+  recordId: string;
+  label: string;
+  text: string;
+  kind: string;
+  tier: "canon" | "drafted";
+  supersedes: string | null;
+  status: RecordStatus;
+  supersededBy?: string;
+  provenance: Provenance;
+}
+
 export interface WorldTables {
   entities: Map<string, ProjectedEntity>;
   facts: Map<string, ProjectedFact>;
   relations: Map<string, ProjectedRelation>;
   knowledge: Map<string, ProjectedKnowledge>;
   chapters: Map<string, ProjectedChapter>;
+  records: Map<string, ProjectedRecord>;
 }
 
 /** Retire a record (fact/relation/knowledge) that a newer one supersedes. */
@@ -101,6 +115,7 @@ export function project(events: WorldEvent[]): WorldTables {
   const relations = new Map<string, ProjectedRelation>();
   const knowledge = new Map<string, ProjectedKnowledge>();
   const chapters = new Map<string, ProjectedChapter>();
+  const records = new Map<string, ProjectedRecord>();
 
   for (const ev of events) {
     switch (ev.type) {
@@ -214,6 +229,9 @@ export function project(events: WorldEvent[]): WorldTables {
           for (const k of knowledge.values()) {
             if (k.provenance.chapter === ev.target) k.status = "retracted";
           }
+          for (const rec of records.values()) {
+            if (rec.provenance.chapter === ev.target) rec.status = "retracted";
+          }
           chapters.delete(ev.target);
         } else {
           const f = facts.get(ev.target);
@@ -222,14 +240,31 @@ export function project(events: WorldEvent[]): WorldTables {
           if (r) r.status = "retracted";
           const k = knowledge.get(ev.target);
           if (k) k.status = "retracted";
+          const rec = records.get(ev.target);
+          if (rec) rec.status = "retracted";
           entities.delete(ev.target);
         }
+        break;
+      }
+      case "record.upsert": {
+        if (ev.supersedes) retire(records.get(ev.supersedes), ev.id);
+        records.set(ev.id, {
+          id: ev.id,
+          recordId: ev.recordId,
+          label: ev.label,
+          text: ev.text,
+          kind: ev.kind,
+          tier: ev.tier,
+          supersedes: ev.supersedes ?? null,
+          status: "live",
+          provenance: { ...ev.provenance },
+        });
         break;
       }
     }
   }
 
-  return { entities, facts, relations, knowledge, chapters };
+  return { entities, facts, relations, knowledge, chapters, records };
 }
 
 export function liveFacts(tables: WorldTables): ProjectedFact[] {
@@ -238,6 +273,10 @@ export function liveFacts(tables: WorldTables): ProjectedFact[] {
 
 export function liveFactsForEntity(tables: WorldTables, entity: string): ProjectedFact[] {
   return liveFacts(tables).filter((f) => f.entity === entity);
+}
+
+export function liveRecords(tables: WorldTables): ProjectedRecord[] {
+  return [...tables.records.values()].filter((r) => r.status === "live");
 }
 
 /**
@@ -259,5 +298,6 @@ export function tablesToJSON(tables: WorldTables): Record<string, unknown[]> {
     relations: sortBy([...tables.relations.values()], "id"),
     knowledge: sortBy([...tables.knowledge.values()], "id"),
     chapters: sortBy([...tables.chapters.values()], "chapterId"),
+    records: sortBy([...tables.records.values()], "id"),
   };
 }

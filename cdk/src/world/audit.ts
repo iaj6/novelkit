@@ -22,6 +22,10 @@ export const CANONICAL_ATTRIBUTES: Record<string, ReadonlySet<string>> = {
   character: new Set(["age", "birth_year", "role", "origin_place", "native_language", "alive", "marital_status"]),
   place: new Set(["located_in", "fictional", "construction"]),
   event: new Set(["date", "location"]),
+  document: new Set([
+    "date", "author", "recipient", "subject",
+    "discovery_time", "notified_time", "arrived_time", "removed_time", "wind",
+  ]),
 };
 
 /**
