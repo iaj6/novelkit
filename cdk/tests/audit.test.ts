@@ -103,6 +103,26 @@ describe("find_contradictions excludes free-text statements", () => {
   });
 });
 
+describe("M7 anchor-fact win — verbatim-document drift caught via anchor facts (the m6 evidence)", () => {
+  it("flags the real coldwater-reach m6 harbor-log divergence (ch01 vs ch29) as a contradiction", () => {
+    // The harbor log is re-improvised across chapters; once its load-bearing values are
+    // captured as facts on ONE document entity, the existing findContradictions (Tier 1,
+    // zero new audit code) catches the drift the verbatim-text audit can't (the drafter
+    // never reproduced a canonical string to diff against).
+    const t = project([
+      fact("h1", "harbor-log-oct12", "discovery_time", "0615", undefined, "01-the-breakwater"),
+      fact("h2", "harbor-log-oct12", "wind", "NW 15kts", undefined, "01-the-breakwater"),
+      fact("h3", "harbor-log-oct12", "discovery_time", "0610", undefined, "29-the-harbor-log"),
+      fact("h4", "harbor-log-oct12", "wind", "NW 30", undefined, "29-the-harbor-log"),
+    ]);
+    const found = findContradictions(t);
+    expect(found).toHaveLength(2); // discovery_time (0615≠0610) + wind ("NW 15kts"≠"NW 30")
+    expect(found.some((f) => f.title.includes("discovery_time"))).toBe(true);
+    expect(found.some((f) => f.title.includes("wind"))).toBe(true);
+    expect(found.every((f) => f.severity === "high")).toBe(true);
+  });
+});
+
 describe("worldStoreStats", () => {
   it("reports clean-slot rate, off-vocab, and unresolved-entity counts", () => {
     const t = project([

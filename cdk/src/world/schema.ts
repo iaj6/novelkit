@@ -27,13 +27,16 @@ export const SOURCES = ["architect", "drafter", "audit", "import", "repair"] as 
 export type Source = (typeof SOURCES)[number];
 
 export const ENTITY_KINDS = [
-  "character", "place", "object", "organization", "event", "thread", "concept", "other",
+  "character", "place", "object", "organization", "event", "thread", "concept", "document", "other",
 ] as const;
 export type EntityKind = (typeof ENTITY_KINDS)[number];
 
 export const TIERS = ["canon", "drafted"] as const;
 export const CONFIDENCES = ["established", "provisional", "inferred"] as const;
 export const POLARITIES = ["asserted", "negated"] as const;
+
+/** Kinds of registered canonical record (M7 — verbatim load-bearing documents). */
+export const RECORD_KINDS = ["log", "letter", "form", "document", "other"] as const;
 
 /** Epistemic stances a knower can hold toward a proposition. */
 export const STANCES = [
@@ -163,6 +166,26 @@ const Retract = z.object({
   provenance: ProvenanceSchema,
 });
 
+/**
+ * M7 — a CANONICAL RECORD: the verbatim text of a load-bearing document (a log
+ * entry, a letter, a form) that a later chapter may re-quote. Distinct from a fact
+ * (which is normalized/atomized): a record is byte-exact, so re-quotation drift is an
+ * exact-string mismatch, not a fuzzy comparison. `recordId` is a stable human slug
+ * (e.g. "harbor-log-oct12"); `id` is content-derived (record:<slug>:<text-hash>).
+ */
+const RecordUpsert = z.object({
+  ...baseEvent,
+  type: z.literal("record.upsert"),
+  id: z.string().min(1),
+  recordId: z.string().min(1),
+  label: z.string().min(1),
+  text: z.string().min(1),
+  kind: z.enum(RECORD_KINDS).default("document"),
+  tier: z.enum(TIERS).default("drafted"),
+  supersedes: z.string().nullable().optional(),
+  provenance: ProvenanceSchema,
+});
+
 export const WorldEventSchema = z.discriminatedUnion("type", [
   EntityUpsert,
   FactAssert,
@@ -171,9 +194,11 @@ export const WorldEventSchema = z.discriminatedUnion("type", [
   ChapterOpen,
   ChapterClose,
   Retract,
+  RecordUpsert,
 ]);
 export type WorldEvent = z.infer<typeof WorldEventSchema>;
 export type FactAssertEvent = z.infer<typeof FactAssert>;
+export type RecordUpsertEvent = z.infer<typeof RecordUpsert>;
 
 /**
  * Write-time invariants the bare schema can't express (discriminatedUnion
@@ -193,5 +218,13 @@ export function validateWriteInvariants(event: WorldEvent): void {
         `fact.assert for ${event.entity}.${event.attribute}: a numeric value requires a unit`
       );
     }
+  }
+  // M7: a registered record holds the verbatim text of a load-bearing DOCUMENT (a log
+  // entry, a letter, a form) — not a chapter. Cap the canonical text so an oversized
+  // registration (a capture error) is rejected at the boundary.
+  if (event.type === "record.upsert" && event.text.length > 8192) {
+    throw new Error(
+      `record.upsert ${event.recordId}: canonical text exceeds 8KB (a record is a document, not a chapter)`
+    );
   }
 }
