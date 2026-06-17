@@ -81,6 +81,9 @@ export interface ProjectedChapter {
 
 export interface ProjectedRecord {
   id: string;
+  /** Monotonic append index among record.upsert events — for "latest by event order"
+   * (re-registering an existing content-id keeps its Map slot, so iteration order is unreliable). */
+  seq: number;
   recordId: string;
   label: string;
   text: string;
@@ -116,6 +119,7 @@ export function project(events: WorldEvent[]): WorldTables {
   const knowledge = new Map<string, ProjectedKnowledge>();
   const chapters = new Map<string, ProjectedChapter>();
   const records = new Map<string, ProjectedRecord>();
+  let recordSeq = 0;
 
   for (const ev of events) {
     switch (ev.type) {
@@ -250,6 +254,7 @@ export function project(events: WorldEvent[]): WorldTables {
         if (ev.supersedes) retire(records.get(ev.supersedes), ev.id);
         records.set(ev.id, {
           id: ev.id,
+          seq: recordSeq++,
           recordId: ev.recordId,
           label: ev.label,
           text: ev.text,

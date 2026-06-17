@@ -251,7 +251,9 @@ export class WorldSession {
     const live = [...(await this.tables()).records.values()].filter(
       (r) => r.status === "live" && r.recordId === args.recordId
     );
-    return live.length ? live[live.length - 1] : undefined; // latest-wins (append order)
+    // Latest by append order via `seq`, NOT Map iteration order: re-registering an existing
+    // content-id keeps its original Map slot, so values() order is unreliable for "latest".
+    return live.length ? live.reduce((best, r) => (r.seq > best.seq ? r : best)) : undefined;
   }
 
   async upsertEntity(args: {

@@ -215,4 +215,14 @@ describe("WorldSession canonical records (M7)", () => {
     expect((await s.queryRecord({ recordId: "harbor-log" }))?.text).toBe("final body");
     expect(await s.queryRecord({ recordId: "nope" })).toBeUndefined();
   });
+
+  it("queryRecord picks the most-recently-registered text even when a content-id is re-registered out of order", async () => {
+    const s = new WorldSession(root);
+    await s.openChapter({ chapterId: "01-x" });
+    await s.upsertRecord({ recordId: "log", label: "Log", text: "V1" }); // id A
+    await s.upsertRecord({ recordId: "log", label: "Log", text: "V2" }); // id B (distinct -> both live)
+    await s.upsertRecord({ recordId: "log", label: "Log", text: "V1" }); // id A re-set: the latest EVENT
+    // seq-based "latest" returns V1; Map-iteration order would wrongly return V2
+    expect((await s.queryRecord({ recordId: "log" }))?.text).toBe("V1");
+  });
 });

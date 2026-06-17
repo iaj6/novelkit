@@ -3,7 +3,7 @@ import * as path from "node:path";
 import { runAgent } from "../agentRunner.js";
 import { loadState, isComplete, markComplete } from "../state.js";
 import { readEvents } from "../world/store.js";
-import { project } from "../world/project.js";
+import { project, liveRecords, type ProjectedRecord } from "../world/project.js";
 import { findContradictions, findRecordDivergences, worldStoreStats } from "../world/audit.js";
 import { appendFindings } from "../findings.js";
 
@@ -31,11 +31,28 @@ export async function runContinuityFactAudit(projectRoot: string) {
     `[continuity-fact-audit] auditing ${chapters.length} chapter${chapters.length === 1 ? "" : "s"} for cross-chapter fact contradictions…`
   );
 
+  // M7: hand the LLM re-read a manifest of registered canonical documents so it can verify
+  // each chapter's re-quotation reproduces the verbatim text — the fuzzy locate the
+  // deterministic audit cannot do (a drifted single-line re-quote shares no anchor).
+  const latestRecords = new Map<string, ProjectedRecord>();
+  for (const r of liveRecords(project((await readEvents(projectRoot)).events))) {
+    const cur = latestRecords.get(r.recordId);
+    if (!cur || r.seq > cur.seq) latestRecords.set(r.recordId, r);
+  }
+  const recordManifest = latestRecords.size
+    ? "Registered canonical documents — where a chapter re-quotes one, verify it reproduces this text VERBATIM (a changed time/date/detail is a continuity-fact error):\n" +
+      [...latestRecords.values()]
+        .sort((a, b) => (a.recordId < b.recordId ? -1 : a.recordId > b.recordId ? 1 : 0))
+        .map((r) => `### ${r.recordId} — ${r.label}\n${r.text.length > 1200 ? r.text.slice(0, 1200) + " …[truncated]" : r.text}`)
+        .join("\n\n")
+    : "";
+
   await runAgent({
     phase: "continuity-fact-audit",
     projectRoot,
     userPrompt: [
       `Audit the complete ${chapters.length}-chapter manuscript for cross-chapter contradictions about specific named facts (physical descriptions, dates, ages, places, attributes, possessions, named events).`,
+      ...(recordManifest ? [recordManifest] : []),
       "Start by reading canon/continuity.md, logs/continuity.md, canon/characters.md, canon/world.md, canon/glossary.md, and logs/story-arc.md. Then read chapters selectively — focus on entities mentioned in multiple chapters.",
       `Chapters available in draft/: ${chapters.join(", ")}`,
       "When you find a verifiable contradiction, prepare a finding per your system prompt's structure (category: 'continuity-fact', strict auto_repair_safe criteria, repair_params shape matching repair-fact-normalize).",
