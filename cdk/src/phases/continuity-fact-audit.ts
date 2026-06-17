@@ -4,7 +4,7 @@ import { runAgent } from "../agentRunner.js";
 import { loadState, isComplete, markComplete } from "../state.js";
 import { readEvents } from "../world/store.js";
 import { project } from "../world/project.js";
-import { findContradictions, worldStoreStats } from "../world/audit.js";
+import { findContradictions, findRecordDivergences, worldStoreStats } from "../world/audit.js";
 import { appendFindings } from "../findings.js";
 
 export async function runContinuityFactAudit(projectRoot: string) {
@@ -54,6 +54,15 @@ export async function runContinuityFactAudit(projectRoot: string) {
     await appendFindings(projectRoot, det);
     console.log(
       `[continuity-fact-audit] find_contradictions: ${det.length} deterministic contradiction${det.length === 1 ? "" : "s"} appended`
+    );
+  }
+  // M7 AUGMENT: registration-drift over canonical records (a document registered with
+  // conflicting verbatim text across chapters). Same augment posture; empty store -> no-op.
+  const recDrift = findRecordDivergences(tables);
+  if (recDrift.length > 0) {
+    await appendFindings(projectRoot, recDrift);
+    console.log(
+      `[continuity-fact-audit] find_record_divergences: ${recDrift.length} record-drift finding${recDrift.length === 1 ? "" : "s"} appended`
     );
   }
   const stats = worldStoreStats(tables);

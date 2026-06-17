@@ -6,6 +6,7 @@ import {
   type ProjectedEntity,
   type ProjectedFact,
   type ProjectedKnowledge,
+  type ProjectedRecord,
   type WorldTables,
 } from "./project.js";
 import type { Source, EntityKind, Stance } from "./schema.js";
@@ -210,6 +211,47 @@ export class WorldSession {
       provenance: { chapter, source: this.source },
     });
     return { id };
+  }
+
+  /**
+   * Register the verbatim text of a load-bearing DOCUMENT (M7) — a log entry, letter,
+   * or form a later chapter may re-quote. The id is content-derived (recordId + a hash
+   * of the text), so re-registering identical text overwrites idempotently while a
+   * changed canonical text gets a new id (a drift in the registration itself becomes a
+   * visible second record). `recordId` is a stable human slug, e.g. "harbor-log-oct12".
+   */
+  async upsertRecord(args: {
+    recordId: string;
+    label: string;
+    text: string;
+    kind?: "log" | "letter" | "form" | "document" | "other";
+    tier?: "canon" | "drafted";
+    chapter?: string;
+    supersedes?: string;
+  }): Promise<{ id: string }> {
+    const chapter = this.chapterOf(args.chapter);
+    const hash = createHash("sha256").update(args.text).digest("hex").slice(0, 12);
+    const id = `record:${args.recordId}:${hash}`;
+    await appendEvent(this.projectRoot, {
+      type: "record.upsert",
+      id,
+      recordId: args.recordId,
+      label: args.label,
+      text: args.text,
+      kind: args.kind ?? "document",
+      tier: args.tier ?? "drafted",
+      supersedes: args.supersedes,
+      provenance: { chapter, source: this.source },
+    });
+    return { id };
+  }
+
+  /** The latest live canonical text for a recordId (M7 read-before-re-quote). */
+  async queryRecord(args: { recordId: string }): Promise<ProjectedRecord | undefined> {
+    const live = [...(await this.tables()).records.values()].filter(
+      (r) => r.status === "live" && r.recordId === args.recordId
+    );
+    return live.length ? live[live.length - 1] : undefined; // latest-wins (append order)
   }
 
   async upsertEntity(args: {

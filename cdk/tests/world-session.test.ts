@@ -196,3 +196,23 @@ describe("WorldSession resolve-first canonicalization (M3.5)", () => {
     expect(await s.whoKnows({ knower: "@reader", asOfChapter: "13-x" })).toHaveLength(1);
   });
 });
+
+describe("WorldSession canonical records (M7)", () => {
+  it("upsertRecord uses a content-derived id; identical text re-registers to the same id", async () => {
+    const s = new WorldSession(root);
+    await s.openChapter({ chapterId: "01-x" });
+    const a = await s.upsertRecord({ recordId: "harbor-log", label: "Harbor log", text: "0615 discovery" });
+    const b = await s.upsertRecord({ recordId: "harbor-log", label: "Harbor log", text: "0615 discovery" });
+    expect(a.id).toBe(b.id); // same text -> same content-hash id -> idempotent re-register
+    expect(a.id).toMatch(/^record:harbor-log:[0-9a-f]{12}$/);
+  });
+
+  it("queryRecord returns the latest live canonical text for a recordId", async () => {
+    const s = new WorldSession(root);
+    await s.openChapter({ chapterId: "01-x" });
+    const first = await s.upsertRecord({ recordId: "harbor-log", label: "Harbor log", text: "draft body" });
+    await s.upsertRecord({ recordId: "harbor-log", label: "Harbor log", text: "final body", supersedes: first.id });
+    expect((await s.queryRecord({ recordId: "harbor-log" }))?.text).toBe("final body");
+    expect(await s.queryRecord({ recordId: "nope" })).toBeUndefined();
+  });
+});
