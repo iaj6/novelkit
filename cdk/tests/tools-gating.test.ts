@@ -21,4 +21,12 @@ describe("buildToolServer epistemic tool gating (FM2)", () => {
       expect(allowedToolIds.some((id) => id.endsWith(`__${name}`))).toBe(true);
     }
   });
+
+  it("includes the M7 record tools (register_record/read_record) always — not epistemic-gated", () => {
+    for (const epistemic of [false, true]) {
+      const { allowedToolIds } = buildToolServer({ projectRoot: "/tmp/x", log: stubLog, epistemic });
+      expect(allowedToolIds.some((id) => id.endsWith("__register_record"))).toBe(true);
+      expect(allowedToolIds.some((id) => id.endsWith("__read_record"))).toBe(true);
+    }
+  });
 });

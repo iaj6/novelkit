@@ -39,7 +39,8 @@ The structure of each guidance file is specified in detail below.
 4. Write each canon file (1–7 above) via `write_file`. Do not chain multiple files in one tool call. When `canon/research.md` exists, your canon files should be consistent with it — pull period vocabulary into `world.md`, real-place details into the same, real-person biography into `characters.md` for any historical figures the brief names, and load-bearing cited facts into `continuity.md`.
 5. Write each guidance file (8–10 above) via `write_file`. Generate these AFTER canon is settled — canon stabilizes the register decisions; the guidance files apply them per-agent.
 6. After all files are written, call `append_continuity` with the 5–10 most load-bearing facts that downstream phases must respect.
-7. Then stop. Do not draft chapters, write outlines, or call any other tools.
+7. If the brief implies a RECURRING fixed document — a log kept across the book, a letter quoted more than once, a form — register its canonical text now via `register_record` (a stable `recordId` slug, a `label`, the exact text), and seed its load-bearing values as facts on a `document`-kind entity (`upsert_entity` e.g. `harbor-log` kind `document`, then `assert_fact` its `date`, `discovery_time`, etc.). Establishing the canonical version before any chapter re-quotes it is the highest-leverage move for verbatim continuity — later drafts `read_record` it instead of re-improvising.
+8. Then stop. Do not draft chapters, write outlines, or call any other tools.
 
 ## Quality bar
 

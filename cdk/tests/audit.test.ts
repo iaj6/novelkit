@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { WorldEventSchema } from "../src/world/schema.js";
 import { project } from "../src/world/project.js";
-import { findContradictions, worldStoreStats, CANONICAL_ATTRIBUTES } from "../src/world/audit.js";
+import { findContradictions, findRecordDivergences, worldStoreStats, CANONICAL_ATTRIBUTES } from "../src/world/audit.js";
 
 const ev = (o: unknown) => WorldEventSchema.parse(o);
 
@@ -120,6 +120,39 @@ describe("M7 anchor-fact win — verbatim-document drift caught via anchor facts
     expect(found.some((f) => f.title.includes("discovery_time"))).toBe(true);
     expect(found.some((f) => f.title.includes("wind"))).toBe(true);
     expect(found.every((f) => f.severity === "high")).toBe(true);
+  });
+});
+
+describe("findRecordDivergences (M7 registration-drift)", () => {
+  const rec = (id: string, recordId: string, text: string, chapter = "01-x", extra: Record<string, unknown> = {}) =>
+    ev({ type: "record.upsert", id, recordId, label: recordId, text, provenance: { chapter, source: "drafter" }, ...extra });
+
+  it("flags one recordId registered with conflicting canonical text across chapters", () => {
+    const t = project([
+      rec("r1", "harbor-log", "0615 discovery, NW 15kts", "01-the-breakwater"),
+      rec("r2", "harbor-log", "0610 discovery, NW 30 gusting", "29-the-harbor-log"),
+    ]);
+    const found = findRecordDivergences(t);
+    expect(found).toHaveLength(1);
+    expect(found[0].severity).toBe("high");
+    expect(found[0].title).toContain("harbor-log");
+  });
+
+  it("does NOT flag a single registration, identical re-registration, or distinct documents", () => {
+    const t = project([
+      rec("r1", "harbor-log", "0615 discovery", "01-x"),
+      rec("r1", "harbor-log", "0615 discovery", "29-y"), // same id -> overwrites; one live text
+      rec("r3", "letter", "Dear Albrecht", "05-z"),
+    ]);
+    expect(findRecordDivergences(t)).toEqual([]);
+  });
+
+  it("compares only LIVE texts — a superseded prior body is not a conflict", () => {
+    const t = project([
+      rec("r1", "harbor-log", "draft text", "01-x"),
+      rec("r2", "harbor-log", "final text", "02-y", { supersedes: "r1" }),
+    ]);
+    expect(findRecordDivergences(t)).toEqual([]);
   });
 });
 

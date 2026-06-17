@@ -6,7 +6,7 @@ import type { RunLog } from "./runlog.js";
 import { FindingSchema, writeFindings as persistFindings, appendFindings as persistAppendFindings } from "./findings.js";
 import { resolveInProject } from "./paths.js";
 import { WorldSession } from "./world/session.js";
-import { ENTITY_KINDS, STANCES, BASES, TIERS, CONFIDENCES, POLARITIES, type Source } from "./world/schema.js";
+import { ENTITY_KINDS, STANCES, BASES, TIERS, CONFIDENCES, POLARITIES, RECORD_KINDS, type Source } from "./world/schema.js";
 
 /**
  * Per-chapter capture facets — the contract between drafter, downstream phases, and the canon.
@@ -645,6 +645,46 @@ export function buildToolServer(deps: ToolDeps) {
     }
   );
 
+  const registerRecord = tool(
+    "register_record",
+    "Register the verbatim text of a load-bearing DOCUMENT a later chapter may re-quote (a log entry, a letter, a form). Pass a stable recordId slug (e.g. 'harbor-log-oct12'), a human label, and the EXACT text. A later chapter that re-quotes it must read_record first and reproduce the text verbatim — the audit flags any divergence.",
+    {
+      recordId: z.string().describe("Stable slug, e.g. 'harbor-log-oct12'."),
+      label: z.string().describe("Human label, e.g. 'Harbor log, Oct 12 1943 entry'."),
+      text: z.string().describe("The EXACT canonical text of the document."),
+      kind: z.enum(RECORD_KINDS).optional(),
+    },
+    async (args) => {
+      // Architect-seeded records are canon-tier under the "canon" chapter (no open chapter);
+      // the drafter's inherit its open chapter at drafted tier.
+      const tier = deps.source === "architect" ? "canon" : "drafted";
+      const chapter = deps.source === "architect" ? "canon" : undefined;
+      try {
+        const r = await session.upsertRecord({ ...args, tier, chapter });
+        log.event("tool", { name: "register_record", id: r.id, recordId: args.recordId });
+        return { content: [{ type: "text", text: `registered ${r.id}` }] };
+      } catch (e) {
+        const msg = e instanceof Error ? e.message : String(e);
+        log.event("tool", { name: "register_record", error: msg });
+        return { content: [{ type: "text", text: `register_record rejected: ${msg}` }], isError: true };
+      }
+    }
+  );
+
+  const readRecord = tool(
+    "read_record",
+    "Return the verbatim canonical text of a registered document by recordId. Call this BEFORE re-quoting a document in a later chapter, and reproduce the text EXACTLY inside your quotation — re-improvising it causes a continuity contradiction. Only the surrounding prose frame is yours to vary.",
+    { recordId: z.string() },
+    async (args) => {
+      const rec = await session.queryRecord(args);
+      log.event("tool", { name: "read_record", recordId: args.recordId, found: !!rec });
+      const text = rec
+        ? `${rec.label} — reproduce this text VERBATIM:\n${rec.text}`
+        : `(no registered record "${args.recordId}")`;
+      return { content: [{ type: "text", text }] };
+    }
+  );
+
   const server = createSdkMcpServer({
     name: SERVER_NAME,
     version: "0.1.0",
@@ -670,6 +710,8 @@ export function buildToolServer(deps: ToolDeps) {
       recordRelation,
       queryFacts,
       resolveEntity,
+      registerRecord,
+      readRecord,
       // FM2: expose the epistemic capture/query tools only when the brief opts in
       // (config.epistemic) — otherwise the drafter records who-knows-what unprompted on a
       // linear book, wasting turns and adding store noise (81 stray events on coldwater-reach).
@@ -699,6 +741,8 @@ export function buildToolServer(deps: ToolDeps) {
     "record_relation",
     "query_facts",
     "resolve_entity",
+    "register_record",
+    "read_record",
     ...(deps.epistemic ? ["record_knowledge", "who_knows", "dramatic_irony"] : []),
   ];
 

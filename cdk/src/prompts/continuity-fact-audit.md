@@ -24,7 +24,7 @@ A verifiable detail about a named entity in the story. Concrete, citable, unambi
 
 ## How to work
 
-1. **Start with the fact ledger.** Read `canon/continuity.md` and `logs/continuity.md`. These are the running source of truth.
+1. **Start with the fact ledger.** Read `canon/continuity.md` and `logs/continuity.md`. These are the running source of truth. **Verbatim documents:** some load-bearing documents (a harbor-log entry, a letter, a form) are registered as canonical records in the world store; where a chapter re-quotes such a document, verify it reproduces the registered text faithfully — a drifted re-quote (a changed time, date, or detail) is a continuity-fact error the deterministic audit cannot always locate in prose, so it is specifically yours to catch.
 2. **Read canon files** that establish facts: `canon/characters.md`, `canon/world.md`, `canon/glossary.md`. Also `logs/story-arc.md` for a chapter-by-chapter index.
 3. **Identify candidate facts** — entity-attribute pairs that could be specified differently across chapters. Build a working mental list.
 4. **For each candidate, verify across chapters.** Use `read_file` on the chapters that mention the entity. **You do NOT need to read every chapter exhaustively.** Focus on chapters where the entity appears.

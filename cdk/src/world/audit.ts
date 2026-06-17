@@ -68,6 +68,12 @@ function pushTo<T>(m: Map<string, T[]>, k: string, v: T): void {
   else m.set(k, [v]);
 }
 
+function addToSet(m: Map<string, Set<string>>, k: string, v: string): void {
+  const s = m.get(k);
+  if (s) s.add(v);
+  else m.set(k, new Set([v]));
+}
+
 /**
  * Detects, deterministically:
  *  - fact-conflict: >=2 LIVE facts on the same (entity, attribute) whose
@@ -129,6 +135,42 @@ export function findContradictions(tables: WorldTables): Finding[] {
     }
   }
 
+  return findings.sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
+}
+
+/**
+ * M7 — registration-drift over canonical records (AUGMENT, like findContradictions).
+ * Exact comparison, FP-0: if one recordId carries >=2 distinct live canonical texts, the
+ * document was registered with conflicting bodies across chapters (re-improvised instead of
+ * read_record + reproduce). Re-quote drift in PROSE that is never re-registered is deliberately
+ * NOT chased here — a drifted single-line re-quote shares no anchor to locate deterministically;
+ * that falls to the document's anchor facts (find_contradictions) and the LLM re-read (handed the
+ * records manifest). The win M7 leans on is PREVENTION: read-before-re-quote, not fuzzy detection.
+ */
+export function findRecordDivergences(tables: WorldTables): Finding[] {
+  const texts = new Map<string, Set<string>>();
+  const chapters = new Map<string, Set<string>>();
+  for (const r of tables.records.values()) {
+    if (r.status !== "live") continue;
+    addToSet(texts, r.recordId, r.text);
+    addToSet(chapters, r.recordId, r.provenance.chapter);
+  }
+  const findings: Finding[] = [];
+  for (const [recordId, set] of texts) {
+    if (set.size < 2) continue;
+    const chs = [...(chapters.get(recordId) ?? [])].sort();
+    findings.push({
+      id: `det-record-drift:${encodeURIComponent(recordId)}`,
+      category: "continuity-fact",
+      severity: "high",
+      title: `Conflicting canonical text registered for "${recordId}"`,
+      description: `The document "${recordId}" was registered with ${set.size} different canonical texts (chapters ${chs.join(", ")}). A load-bearing document's text must be registered once and re-quoted verbatim (read_record), not re-improvised.`,
+      evidence: chs.map((ch) => ({ file: `draft/${ch}.md`, chapter: ch, text: recordId })),
+      suggested_action: "Register the document once; in later chapters call read_record and reproduce it verbatim.",
+      auto_repair_safe: false,
+      repair_agent: null,
+    });
+  }
   return findings.sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
 }
 

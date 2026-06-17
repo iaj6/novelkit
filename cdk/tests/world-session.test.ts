@@ -196,3 +196,33 @@ describe("WorldSession resolve-first canonicalization (M3.5)", () => {
     expect(await s.whoKnows({ knower: "@reader", asOfChapter: "13-x" })).toHaveLength(1);
   });
 });
+
+describe("WorldSession canonical records (M7)", () => {
+  it("upsertRecord uses a content-derived id; identical text re-registers to the same id", async () => {
+    const s = new WorldSession(root);
+    await s.openChapter({ chapterId: "01-x" });
+    const a = await s.upsertRecord({ recordId: "harbor-log", label: "Harbor log", text: "0615 discovery" });
+    const b = await s.upsertRecord({ recordId: "harbor-log", label: "Harbor log", text: "0615 discovery" });
+    expect(a.id).toBe(b.id); // same text -> same content-hash id -> idempotent re-register
+    expect(a.id).toMatch(/^record:harbor-log:[0-9a-f]{12}$/);
+  });
+
+  it("queryRecord returns the latest live canonical text for a recordId", async () => {
+    const s = new WorldSession(root);
+    await s.openChapter({ chapterId: "01-x" });
+    const first = await s.upsertRecord({ recordId: "harbor-log", label: "Harbor log", text: "draft body" });
+    await s.upsertRecord({ recordId: "harbor-log", label: "Harbor log", text: "final body", supersedes: first.id });
+    expect((await s.queryRecord({ recordId: "harbor-log" }))?.text).toBe("final body");
+    expect(await s.queryRecord({ recordId: "nope" })).toBeUndefined();
+  });
+
+  it("queryRecord picks the most-recently-registered text even when a content-id is re-registered out of order", async () => {
+    const s = new WorldSession(root);
+    await s.openChapter({ chapterId: "01-x" });
+    await s.upsertRecord({ recordId: "log", label: "Log", text: "V1" }); // id A
+    await s.upsertRecord({ recordId: "log", label: "Log", text: "V2" }); // id B (distinct -> both live)
+    await s.upsertRecord({ recordId: "log", label: "Log", text: "V1" }); // id A re-set: the latest EVENT
+    // seq-based "latest" returns V1; Map-iteration order would wrongly return V2
+    expect((await s.queryRecord({ recordId: "log" }))?.text).toBe("V1");
+  });
+});
