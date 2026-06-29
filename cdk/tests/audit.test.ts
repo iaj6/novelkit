@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { WorldEventSchema } from "../src/world/schema.js";
 import { project } from "../src/world/project.js";
-import { findContradictions, findRecordDivergences, worldStoreStats, CANONICAL_ATTRIBUTES } from "../src/world/audit.js";
+import { findContradictions, findRecordDivergences, findRelationConflicts, worldStoreStats, CANONICAL_ATTRIBUTES } from "../src/world/audit.js";
 
 const ev = (o: unknown) => WorldEventSchema.parse(o);
 
@@ -228,5 +228,98 @@ describe("findContradictions precision (M5 review fixes — FP-0)", () => {
     const found = findContradictions(t);
     expect(found).toHaveLength(2);
     expect(new Set(found.map((f) => f.id)).size).toBe(2); // a colon-join would collapse these to 1
+  });
+});
+
+describe("findRelationConflicts (functional spatial relations)", () => {
+  const rel = (
+    id: string,
+    from: string,
+    relType: string,
+    to: string,
+    chapter = "01-x",
+    extra: Record<string, unknown> = {}
+  ) => ev({ type: "relation.assert", id, from, relType, to, provenance: { chapter, source: "drafter" }, ...extra });
+
+  it("flags an entity with two live located_in targets (contradiction OR relocation), flag-only", () => {
+    const t = project([
+      rel("r1", "mabel", "located_in", "house-north", "07-a"),
+      rel("r2", "mabel", "located_in", "house-south", "13-b"),
+    ]);
+    const found = findRelationConflicts(t);
+    expect(found).toHaveLength(1);
+    expect(found[0].category).toBe("continuity-fact");
+    expect(found[0].severity).toBe("medium");
+    expect(found[0].repair_agent).toBeNull();
+    expect(found[0].auto_repair_safe).toBe(false);
+    expect(found[0].description).toMatch(/relocation/i);
+    expect(found[0].evidence.map((e) => e.fact_id).sort()).toEqual(["r1", "r2"]);
+  });
+
+  it("does NOT flag a single target, or two relations to the SAME place", () => {
+    expect(findRelationConflicts(project([rel("r1", "x", "lives_at", "a", "01")]))).toEqual([]);
+    expect(
+      findRelationConflicts(
+        project([rel("r1", "x", "lives_at", "a", "01"), rel("r2", "x", "lives_at", "a", "05")])
+      )
+    ).toEqual([]);
+  });
+
+  it("does NOT flag many-valued relation types (knows_of, holds_adjacency_to are off the allow-list)", () => {
+    const t = project([
+      rel("r1", "x", "knows_of", "a", "01"),
+      rel("r2", "x", "knows_of", "b", "02"),
+      rel("r3", "x", "holds_adjacency_to", "p", "01"),
+      rel("r4", "x", "holds_adjacency_to", "q", "02"),
+    ]);
+    expect(findRelationConflicts(t)).toEqual([]);
+  });
+
+  it("does NOT flag when one relation supersedes the other (only one live)", () => {
+    const t = project([
+      rel("r1", "x", "located_in", "a", "01"),
+      rel("r2", "x", "located_in", "b", "05", { supersedes: "r1" }),
+    ]);
+    expect(findRelationConflicts(t)).toEqual([]);
+  });
+
+  it("FP-0: a positive + a negative claim to DIFFERENT places (in A, not in B) is consistent — no flag", () => {
+    const t = project([
+      rel("r1", "x", "located_in", "a", "01"), // in A
+      rel("r2", "x", "located_in", "b", "05", { value: false }), // not in B
+    ]);
+    expect(findRelationConflicts(t)).toEqual([]);
+  });
+
+  it("FP-0: two NEGATIVE claims (not A, not B) never flag", () => {
+    const t = project([
+      rel("r1", "x", "located_in", "a", "01", { value: false }),
+      rel("r2", "x", "located_in", "b", "05", { value: false }),
+    ]);
+    expect(findRelationConflicts(t)).toEqual([]);
+  });
+
+  it("flags a place asserted both present and absent (lives_at A AND not lives_at A)", () => {
+    const t = project([
+      rel("r1", "x", "lives_at", "a", "01"), // lives at A
+      rel("r2", "x", "lives_at", "a", "07", { value: false }), // does not live at A
+    ]);
+    const found = findRelationConflicts(t);
+    expect(found).toHaveLength(1);
+    expect(found[0].description).toMatch(/not a/i);
+  });
+
+  it("is deterministic (stable id-sorted output)", () => {
+    const events = [
+      rel("r1", "x", "located_in", "a", "01"),
+      rel("r2", "x", "located_in", "b", "05"),
+      rel("r3", "y", "lives_at", "c", "01"),
+      rel("r4", "y", "lives_at", "d", "05"),
+    ];
+    const a = findRelationConflicts(project(events)).map((f) => f.id);
+    const b = findRelationConflicts(project(events)).map((f) => f.id);
+    expect(a).toEqual(b);
+    expect(a).toEqual([...a].sort());
+    expect(a).toHaveLength(2);
   });
 });

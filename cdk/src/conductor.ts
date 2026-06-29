@@ -14,6 +14,7 @@ import { runContinuityFactAudit } from "./phases/continuity-fact-audit.js";
 import { runRepairFactNormalize } from "./phases/repair-fact-normalize.js";
 import { readCostSummary, formatCostSummary } from "./runlog.js";
 import { estimateRun, formatDurationRange } from "./estimate.js";
+import { detectBillingMode } from "./billing.js";
 import { loadConfig } from "./config.js";
 import * as c from "./ansi.js";
 import * as fs from "node:fs/promises";
@@ -133,6 +134,11 @@ async function printPreRunBanner(projectRoot: string): Promise<void> {
   console.log(`${c.dim("book:    ")} ${projectName}`);
   console.log(`${c.dim("chapters:")} ~${est.chapters} ${sourceLabel}`);
   console.log(`${c.dim("model:   ")} ${est.model}`);
+  const billing = detectBillingMode();
+  console.log(
+    `${c.dim("billing: ")} ${billing.label} ${c.dim("(heuristic — the run's auth: line is the SDK's actual resolution)")}`
+  );
+  if (billing.warning) console.log(c.yellow(`WARNING: ${billing.warning}`));
   console.log(
     `${c.dim("estimate:")} ${c.cost(est.lowUsd, 2)}–${c.cost(est.highUsd, 2)} ${c.dim(`(expected ~${c.cost(est.expectedUsd, 2)})`)}`
   );

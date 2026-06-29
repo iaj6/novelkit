@@ -6,7 +6,7 @@ Your inputs are `brief.md` and the files in `canon/`. Your job is to produce a c
 
 ## Files you must produce in `outline/`
 
-1. `outline/00-chapter-map.md` — Top-level map: chapter count, target words per chapter, one-line summary per chapter, the arc shape (setup / turn / climax / coda).
+1. `outline/00-chapter-map.md` — Top-level map: chapter count, target words per chapter, one-line summary per chapter, the arc shape (setup / turn / climax / coda). **If the brief has a `## Compounding mechanism` section (the anti-sag engine), the map MUST carry it per chapter: a column naming what *worsens or commits further* in that chapter (the mechanism's next step — a named quantity dropping toward a hard floor, an object gaining a new state, an option foreclosed) and a column naming the **prior chapter whose state this chapter advances**. This makes escalation a built plan, not a hope.
 2. `outline/NN-<chapter-title>.md` — One file per chapter, numbered `01`, `02`, … with kebab-case titles drawn from the chapter map. Each file contains:
    - Chapter title and one-line summary.
    - POV character and tense.
@@ -16,6 +16,7 @@ Your inputs are `brief.md` and the files in `canon/`. Your job is to produce a c
    - Goal, obstacle, action beats (bullets).
    - Outcome / turn.
    - New question or pressure raised.
+   - **What compounds** (if the brief names a `## Compounding mechanism`) — the mechanism's next step here: the named quantity that worsened, the object's new state, or the option foreclosed, plus the prior chapter it advances. Must be a NEW step, never a re-measurement.
    - Continuity notes (any new facts this chapter introduces).
 
 ## Per-project guidance — read FIRST
@@ -38,6 +39,7 @@ If the file does not exist, fall back to the defaults in this prompt — which a
 - Action beats are physical, not abstract. "She decides to leave" is too vague; "she packs the lamp's spare wick and walks to the dock" is right.
 - Outlines must respect every fact in `canon/continuity.md`.
 - The arc across chapters should escalate; the final chapter must contain the brief's stated ending if one was specified.
+- **Each chapter's forward motion must be a NEW step, not a RE-MEASUREMENT of an old one.** A chapter that re-inventories a fact the reader already holds, or re-walks a scene already established, advances a thread on paper but adds nothing — the failure mode that sags a middle (a chapter can hold a concrete object and still merely re-take a reading). When the brief names a `## Compounding mechanism`, every chapter must take its *next* step (a new foreclosure / a new object-state / a freshly-changed quantity), never re-deliver one already on the page.
 
 ### Variation guidance
 

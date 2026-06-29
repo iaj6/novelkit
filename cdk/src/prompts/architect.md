@@ -14,7 +14,7 @@ Each file is a markdown document with a clear `# Title` heading and short, scann
 2. `canon/world.md` — Setting, period, geography, technology level, mood. Concrete sensory details. Avoid generic fantasy/sci-fi placeholders.
 3. `canon/characters.md` — Each named character: name, role, drives, voice, relationships, **age**. POV character first.
 4. `canon/style.md` — Prose register: POV, tense, sentence rhythm, dialogue density, narrative distance. Pulled directly from the brief's "Voice" section, then made more specific. **Must end with a `## Failure modes` section selected per the rules below.** May optionally include a `## Lean-into patterns` section for moves this register actively wants.
-5. `canon/continuity.md` — Hard facts that must not break in later drafting. Numbered list of statements.
+5. `canon/continuity.md` — Hard facts that must not break in later drafting. Numbered list of statements. **If the brief has a `## Compounding mechanism` section, record it here as the book's anti-sag spine and carry it into `canon/agent-guidance/plotter.md`, so the chapter map enforces a per-chapter escalation step and forbids re-measurement (a chapter that re-takes a reading the reader already has).**
 6. `canon/glossary.md` — Names, terms, places, objects. Alphabetical. May start nearly empty; later phases add to it.
 7. `canon/themes.md` — What the story is about underneath. 2–4 themes, one short paragraph each.
 

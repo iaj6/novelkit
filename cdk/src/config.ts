@@ -70,7 +70,9 @@ const DEFAULT_MAX_TURNS: Record<PhaseId, number> = {
   architect: 60,
   plotter: 50,
   threads: 40,
-  drafter: 50, // FM1: the M6 structured-capture model is ~40+ tool calls/chapter; 30 crashed at ch21 on a real run
+  drafter: 100, // FM1: M6 structured-capture is ~40+ tool calls/chapter (30 crashed at ch21). Raised 50→100: a brief
+  // with a per-chapter compounding mechanism (#8) front-loads heavy world-store seeding — a real run needed 76 turns
+  // on chapter 1. The cap is a ceiling, not a target, so books that finish sooner are unaffected.
   "calibrate-sample": 20,
   "calibrate-grade": 30,
   "editor-continuity": 40,

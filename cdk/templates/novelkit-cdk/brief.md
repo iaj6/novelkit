@@ -19,6 +19,16 @@ actually want. Vague register defaults to "literary adult fiction"; if you want 
 - Target length: ~10,000 words
 - Number of chapters: 5
 
+## Compounding mechanism (optional — the anti-sag engine)
+
+What makes each chapter STRICTLY worse — or more committed — than the one before it? Naming a *device* ("a ticking clock", "a slow-burn secret") is NOT enough: an experiment on this pipeline found a clock that gates nothing and a secret with no object both produce a saggy middle. Name the per-chapter **compounding operation**:
+
+- a **deadline that gates an irreversible action** (each chapter a named quantity runs down toward a hard floor and forecloses an option that can't be reopened — power, time, a fragile only-copy);
+- an **evolving displacement object** that performs a withholding (a thing handled, hidden, altered — it must *evolve*, gaining a new state each time, not merely recur);
+- two **measurable ladders** under the quiet chapters (a knowledge-gap closing by increments + a resource visibly running down), so even a scene with no action has a number that changed.
+
+And one cross-validated rule: **each chapter's worsening must be a NEW foreclosure, not a RE-MEASUREMENT of an old one.** A chapter that re-takes a reading the reader already has (re-inventories a record, re-walks a scene already established) sags even with a concrete object in hand. Leave this section blank for a deliberately plotless/quiet book; fill it for anything long enough to sag in the middle.
+
 ## Voice
 
 (e.g. "third-person limited past, restrained prose, sparse dialogue" — or "first-person present, lyrical, dialogue-heavy". Don't worry about being exhaustive; the audience fields below sharpen this.)

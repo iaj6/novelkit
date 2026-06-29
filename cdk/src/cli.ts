@@ -204,5 +204,8 @@ async function main() {
 
 main().catch((err) => {
   console.error(err);
+  // Unmistakable, greppable marker so a real failure isn't lost when stdout is piped
+  // through `tee` (which exits 0 and masks cdk's nonzero exit).
+  console.error(c.red("=== CDK RUN FAILED (exit 1) ==="));
   process.exit(1);
 });
