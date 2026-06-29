@@ -1,4 +1,4 @@
-import type { WorldTables, ProjectedFact } from "./project.js";
+import type { WorldTables, ProjectedFact, ProjectedRelation } from "./project.js";
 import type { Finding } from "../findings.js";
 
 /**
@@ -167,6 +167,83 @@ export function findRecordDivergences(tables: WorldTables): Finding[] {
       description: `The document "${recordId}" was registered with ${set.size} different canonical texts (chapters ${chs.join(", ")}). A load-bearing document's text must be registered once and re-quoted verbatim (read_record), not re-improvised.`,
       evidence: chs.map((ch) => ({ file: `draft/${ch}.md`, chapter: ch, text: recordId })),
       suggested_action: "Register the document once; in later chapters call read_record and reproduce it verbatim.",
+      auto_repair_safe: false,
+      repair_agent: null,
+    });
+  }
+  return findings.sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
+}
+
+/**
+ * FUNCTIONAL spatial relation types: an entity holds exactly ONE of these at a time
+ * (you live / are located / board at ONE place). Hardcoded allow-list so high-cardinality
+ * or multi-valued relations never trip the conflict check — FP-0 is the priority. The
+ * proposal's `holds_adjacency_to` is deliberately EXCLUDED: adjacency is many-valued (a
+ * thing is adjacent to several others), so two distinct `to` from one entity is normal,
+ * not a conflict. `knows_of` and other social webs are excluded for the same reason.
+ */
+const FUNCTIONAL_RELATION_TYPES: ReadonlySet<string> = new Set([
+  "lives_at",
+  "located_in",
+  "boards_at",
+]);
+
+/**
+ * Relation augment — flags a FUNCTIONAL spatial slot that resolves to more than one place, which
+ * findContradictions cannot see (it iterates only `tables.facts`, never `tables.relations`). Same
+ * AUGMENT posture as findContradictions: pure, FP-0 by the hardcoded allow-list, appended alongside
+ * the LLM re-read.
+ *
+ * A relation's `value` is its polarity: `value === false` means "X is NOT <relType> <to>" (a negative
+ * claim — `record_relation` documents `value:false`). Only POSITIVE claims place the entity somewhere,
+ * so the slot is contradictory only when (a) the entity is positively in >=2 distinct places, or
+ * (b) one place is asserted both present and absent. A negative-to-a-different-place ("in A, not in B")
+ * is consistent and must NOT flag — the FP-0 guarantee.
+ *
+ * CAVEAT (the M8 time-varying-attribute gap): the store cannot time-index relations and the drafter's
+ * `record_relation` tool cannot supersede or end-bound one, so a character who LEGITIMATELY relocates
+ * registers two live positive `located_in` and trips this. The finding text says so and stays flag-only
+ * (`repair_agent: null`) for a human to resolve against the timeline.
+ */
+export function findRelationConflicts(tables: WorldTables): Finding[] {
+  const groups = new Map<string, ProjectedRelation[]>();
+  for (const r of tables.relations.values()) {
+    if (r.status !== "live") continue;
+    if (!FUNCTIONAL_RELATION_TYPES.has(r.relType)) continue;
+    pushTo(groups, JSON.stringify([r.from, r.relType]), r);
+  }
+  const findings: Finding[] = [];
+  for (const rels of groups.values()) {
+    const present = new Set<string>(); // places asserted positively (value true or undefined)
+    const absent = new Set<string>(); // places asserted negatively (value === false)
+    for (const r of rels) {
+      if (r.value === false) absent.add(r.to);
+      else present.add(r.to);
+    }
+    const multiPlace = present.size >= 2;
+    const inAndNotIn = [...present].some((p) => absent.has(p));
+    if (!multiPlace && !inAndNotIn) continue;
+    const ex = rels[0];
+    const claims = [...new Set(rels.map((r) => (r.value === false ? `not ${r.to}` : r.to)))].sort();
+    const chs = [...new Set(rels.map((r) => r.provenance.chapter))].sort();
+    findings.push({
+      id: `det-relation-conflict:${encodeURIComponent(ex.from)}:${encodeURIComponent(ex.relType)}`,
+      category: "continuity-fact",
+      // medium, not high: this is "possibly a contradiction OR a legitimate relocation" —
+      // the store can't tell, so it under-claims rather than over-alarms on a known FP path.
+      severity: "medium",
+      title: `Conflicting ${ex.relType} for ${ex.from}`,
+      description:
+        `${ex.from} holds conflicting live ${ex.relType} claims: ${claims.join(", ")} (chapters ${chs.join(", ")}). ` +
+        `A functional ${ex.relType} resolves to one place — this is a CONTRADICTION or a LEGITIMATE RELOCATION ` +
+        `(the store cannot time-index relations); verify against the timeline.`,
+      evidence: rels.map((r) => ({
+        file: `draft/${r.provenance.chapter}.md`,
+        text: `${r.from} ${r.value === false ? "NOT " : ""}${r.relType} ${r.to}`,
+        fact_id: r.id,
+        chapter: r.provenance.chapter,
+      })),
+      suggested_action: `Confirm ${ex.from} holds one ${ex.relType}; if it's a real move rather than a contradiction, no fix is needed — the store cannot time-index relations.`,
       auto_repair_safe: false,
       repair_agent: null,
     });

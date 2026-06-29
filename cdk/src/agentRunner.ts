@@ -288,6 +288,9 @@ type QueryContext = {
   log: RunLog;
 };
 
+/** Surface the SDK's resolved credential/billing path once per process (every phase call emits an init message). */
+let authSurfaced = false;
+
 async function runQueryOnce(ctx: QueryContext): Promise<AgentRunResult> {
   const q = query({
     prompt: ctx.args.userPrompt,
@@ -412,6 +415,31 @@ async function runQueryOnce(ctx: QueryContext): Promise<AgentRunResult> {
         ctx.log.event("result", { subtype: m.subtype, isError: m.is_error === true });
         if (isErrorResult(m)) {
           errorResult = { subtype: typeof m.subtype === "string" ? m.subtype : "unknown" };
+        }
+      } else if (message.type === "system") {
+        // SDK init message (first of the stream): apiKeySource is the AUTHORITATIVE billing signal.
+        // 'oauth' = Claude subscription; the real API-key sources are 'user'|'project'|'org'|'temporary'
+        // (pay-as-you-go); anything else ('none', or a cloud-provider route like Bedrock/Vertex) is
+        // neither and must NOT be labeled pay-as-you-go. Surface it once per run so a stray
+        // ANTHROPIC_API_KEY can't silently bill.
+        const sys = message as { subtype?: string; apiKeySource?: string };
+        if (sys.subtype === "init" && !authSurfaced) {
+          authSurfaced = true;
+          const src = typeof sys.apiKeySource === "string" ? sys.apiKeySource : "unknown";
+          const billing =
+            src === "oauth"
+              ? "subscription"
+              : ["user", "project", "org", "temporary"].includes(src)
+                ? "api-key"
+                : "other";
+          const label =
+            billing === "subscription"
+              ? "Claude subscription (apiKeySource=oauth)"
+              : billing === "api-key"
+                ? `API key — pay-as-you-go (apiKeySource=${src})`
+                : `no API key — subscription or cloud provider (apiKeySource=${src})`;
+          console.log(`${c.phase(ctx.args.phase)} ${c.dim("auth:")} ${label}`);
+          ctx.log.event("auth", { apiKeySource: src, billing });
         }
       }
     }

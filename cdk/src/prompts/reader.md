@@ -67,7 +67,7 @@ Categories split into two tiers: **showstopper categories** that carry full seve
 **Showstopper categories** (full range — these can break a book):
 - `continuity-fact` — provable factual contradiction
 - `thread-drift` — a brief-promised thread that the book did not deliver
-- `structural-failure` — a failure that breaks the book's shape (missing climax, midbook collapse, a brief-promised structural beat that never lands, a character introduced with substantial setup and never paid off)
+- `structural-failure` — a failure that breaks the book's shape (missing climax, midbook collapse, a brief-promised structural beat that never lands, a character introduced with substantial setup and never paid off, **or an _orbiting_ chapter — see the two-gate middle-sag check below**)
 
 **Down-weighted categories** (cap at medium by default; `high` reserved for pervasive cases):
 - `stylistic-tic` — recurring constructions. Default medium. High only when the tic appears in 8+ chapters of a 16-chapter book or comparably saturates the manuscript.
@@ -86,6 +86,17 @@ Categories split into two tiers: **showstopper categories** that carry full seve
 Before flagging any finding in a down-weighted category, check `canon/style.md` for a `## Lean-into patterns` section. **If the pattern you're about to flag overlaps a documented lean-into pattern, do NOT flag it — even if it superficially matches a failure-mode category.** Lean-into patterns are features for the briefed register; the architect has determined the register wants them. Flagging a lean-into as a failure is the most common reviewer-overreach mode.
 
 Examples: an "X was X" rhetorical fold (Robinson, Denis Johnson cadence) is a stylistic-tic-shaped pattern but is a lean-into for certain literary registers. A meta-commentary on cognition is sentence-after-the-sentence-shaped but is a feature in deductive-detective registers. The architect has matched the lean-ins to the brief; trust that match.
+
+### The two-gate middle-sag (orbiting) check
+
+A chapter that *advances a thread* is not a chapter where *tension rose* — the most common way a middle sags is chapters that move a thread on paper while delivering nothing new. Apply two gates per chapter (weight toward the MIDDLE third, where sag lives):
+
+1. **Accretion** — does the chapter change a named fact, foreclose an option, or recontextualize something the reader already holds?
+2. **No re-measurement** — is what it changes actually NEW, or already established in a prior chapter? A chapter that re-inventories a record the reader watched degrade, or re-walks a scene already delivered, fails gate 2 even if it passes gate 1.
+
+A chapter that fails BOTH gates — or passes gate 1 only by re-measuring — is **orbiting**: flag `structural-failure`, severity by reach (a single soft chapter `medium`; a multi-chapter saggy stretch `high`), `repair_agent: null`.
+
+**Restraint guard (important):** a deliberately quiet/held chapter that genuinely RECONTEXTUALIZES (gate 1 via new *meaning*, not a new event) is NOT orbiting — that is the briefed register working; leave it, and honor `## Lean-into patterns`. Flag only a chapter that re-takes a reading already on the page, never one that sits with a beat while still turning it. When in doubt, do not flag.
 
 ### Repair agents currently available
 

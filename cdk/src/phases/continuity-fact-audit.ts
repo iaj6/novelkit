@@ -4,7 +4,7 @@ import { runAgent } from "../agentRunner.js";
 import { loadState, isComplete, markComplete } from "../state.js";
 import { readEvents } from "../world/store.js";
 import { project, liveRecords, type ProjectedRecord } from "../world/project.js";
-import { findContradictions, findRecordDivergences, worldStoreStats } from "../world/audit.js";
+import { findContradictions, findRecordDivergences, findRelationConflicts, worldStoreStats } from "../world/audit.js";
 import { appendFindings } from "../findings.js";
 
 export async function runContinuityFactAudit(projectRoot: string) {
@@ -80,6 +80,15 @@ export async function runContinuityFactAudit(projectRoot: string) {
     await appendFindings(projectRoot, recDrift);
     console.log(
       `[continuity-fact-audit] find_record_divergences: ${recDrift.length} record-drift finding${recDrift.length === 1 ? "" : "s"} appended`
+    );
+  }
+  // Relation augment: functional spatial slots (lives_at/located_in/boards_at) held with >=2 live
+  // targets — a contradiction the facts-only audit misses, OR a legitimate relocation (flag-only).
+  const relConflicts = findRelationConflicts(tables);
+  if (relConflicts.length > 0) {
+    await appendFindings(projectRoot, relConflicts);
+    console.log(
+      `[continuity-fact-audit] find_relation_conflicts: ${relConflicts.length} relation-conflict finding${relConflicts.length === 1 ? "" : "s"} appended`
     );
   }
   const stats = worldStoreStats(tables);
