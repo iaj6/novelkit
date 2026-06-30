@@ -21,7 +21,7 @@ import { renderFactLedger, LEDGER_SENTINEL } from "./views.js";
  * must never clobber a richer legacy ledger. A fresh book (no file) is seeded; a file we
  * previously authored (sentinel present) is updated. Full legacy-import backfill — which
  * would make the store a genuine superset so legacy ledgers could be regenerated safely —
- * is deferred (M8 "backfill importer on cdk run").
+ * is deferred (M9 "backfill importer on cdk run"; was M8 before the time-indexed milestone took that slot).
  */
 export async function regenerateLedgerViews(projectRoot: string): Promise<void> {
   const file = resolveInProject(projectRoot, "logs/continuity.md");

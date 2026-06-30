@@ -29,6 +29,31 @@ export const CANONICAL_ATTRIBUTES: Record<string, ReadonlySet<string>> = {
 };
 
 /**
+ * M8 (time-indexed attributes) — attributes that may legitimately hold DIFFERENT values in
+ * different chapters because they change over narrative time. A cross-chapter value change on
+ * one of these is SUCCESSION, not a contradiction (Hannah is 17 then 18; Eira's role re-registers);
+ * findContradictions flags them ONLY on a same-chapter clash. Every other attribute is INVARIANT —
+ * a change is a real continuity bug, kept at full pre-M8 strength (birth_year, origin_place,
+ * native_language, an event/document date, a recorded measurement, …).
+ *
+ * Classified by attribute NAME so the semantics travel with the key (a character's `located_in` as a
+ * RELATION is time-varying too — see findRelationConflicts — but the place-FACT `located_in`, "this
+ * town sits in this county", does not move and stays invariant). Default is INVARIANT so the
+ * relaxation is SURGICAL: only the attributes reasoned about here lose strictness (no silent recall
+ * regression on the off-vocab tail), and the set grows from real demand like the vocab above.
+ *
+ * Posture: SAFE (same-chapter only). The one-way checks a monotonic model would add — age never
+ * decreases, the dead do not revive — are deliberately NOT done, because they assume manuscript
+ * order == chronology and would false-positive on a non-linear (flashback) narrative. FP-0 first.
+ */
+export const TIME_VARYING_ATTRIBUTES: ReadonlySet<string> = new Set([
+  "age", // increases as narrative time passes
+  "role", // a title/occupation can change (and re-registers at different specificity)
+  "marital_status", // can change over the story
+  "alive", // a character can die — true→false is the commonest legitimate transition
+]);
+
+/**
  * Comparison key for a fact's value: same key = consistent, different = conflict.
  * Normalizes case/whitespace and folds polarity, but preserves the discriminating
  * component (the number) — so 52 and "52" agree while 52 vs 54 still clash. A clean
@@ -75,6 +100,25 @@ function addToSet(m: Map<string, Set<string>>, k: string, v: string): void {
 }
 
 /**
+ * M8 helper — for a TIME_VARYING attribute group (all the same entity+attribute), returns the facts
+ * of the first chapter (lexicographically, for stable output) that holds >=2 distinct live values:
+ * a same-narrative-moment contradiction. Returns null when every chapter is internally consistent
+ * (the distinct values are spread across chapters = legitimate succession over narrative time). With
+ * the per-chapter fact id (fact:chapter:entity:attribute) a same-chapter re-assert OVERWRITES, so for
+ * drafter facts this rarely fires — it is the FP-0 floor that stays correct if same-chapter distinct
+ * values ever arrive from another source (e.g. a backfill importer).
+ */
+function sameChapterClash(facts: ProjectedFact[]): ProjectedFact[] | null {
+  const byChapter = new Map<string, ProjectedFact[]>();
+  for (const f of facts) pushTo(byChapter, f.provenance.chapter, f);
+  for (const ch of [...byChapter.keys()].sort()) {
+    const chFacts = byChapter.get(ch)!;
+    if (chFacts.length >= 2 && new Set(chFacts.map(valueKey)).size >= 2) return chFacts;
+  }
+  return null;
+}
+
+/**
  * Detects, deterministically:
  *  - fact-conflict: >=2 LIVE facts on the same (entity, attribute) whose
  *    normalized values disagree (no supersedes link, or they'd not both be live).
@@ -96,9 +140,14 @@ export function findContradictions(tables: WorldTables): Finding[] {
     // JSON-array key: unambiguous for any entity/attribute content (no magic separator).
     pushTo(groups, JSON.stringify([f.entity, f.attribute]), f);
   }
-  for (const facts of groups.values()) {
-    if (facts.length < 2) continue;
-    if (new Set(facts.map(valueKey)).size < 2) continue; // all live values agree -> restatement
+  for (const group of groups.values()) {
+    if (group.length < 2) continue;
+    if (new Set(group.map(valueKey)).size < 2) continue; // all live values agree -> restatement
+    // M8 (time-indexed): a TIME_VARYING attribute may hold different values in different chapters —
+    // succession over narrative time, not a contradiction — so it clashes only when >=2 distinct
+    // values land in ONE chapter. An INVARIANT attribute clashes on any distinct live values (pre-M8).
+    const facts = TIME_VARYING_ATTRIBUTES.has(group[0].attribute) ? sameChapterClash(group) : group;
+    if (!facts) continue;
     const ex = facts[0];
     findings.push({
       id: `det-fact-conflict:${encodeURIComponent(ex.entity)}:${encodeURIComponent(ex.attribute)}`,
@@ -200,10 +249,11 @@ const FUNCTIONAL_RELATION_TYPES: ReadonlySet<string> = new Set([
  * (b) one place is asserted both present and absent. A negative-to-a-different-place ("in A, not in B")
  * is consistent and must NOT flag — the FP-0 guarantee.
  *
- * CAVEAT (the M8 time-varying-attribute gap): the store cannot time-index relations and the drafter's
- * `record_relation` tool cannot supersede or end-bound one, so a character who LEGITIMATELY relocates
- * registers two live positive `located_in` and trips this. The finding text says so and stays flag-only
- * (`repair_agent: null`) for a human to resolve against the timeline.
+ * M8 (time-indexed): every functional spatial slot is TIME-VARYING — a character relocates, so two
+ * positive `located_in` in DIFFERENT chapters is succession, not a contradiction (the M7 false
+ * positive). The conflict is therefore evaluated PER CHAPTER: only a slot resolving to >=2 places (or
+ * both present and absent) WITHIN one chapter is a same-moment clash. A chapter can still span a move,
+ * so it stays `severity: medium` + flag-only (`repair_agent: null`) for a human to check the timeline.
  */
 export function findRelationConflicts(tables: WorldTables): Finding[] {
   const groups = new Map<string, ProjectedRelation[]>();
@@ -214,36 +264,50 @@ export function findRelationConflicts(tables: WorldTables): Finding[] {
   }
   const findings: Finding[] = [];
   for (const rels of groups.values()) {
-    const present = new Set<string>(); // places asserted positively (value true or undefined)
-    const absent = new Set<string>(); // places asserted negatively (value === false)
-    for (const r of rels) {
-      if (r.value === false) absent.add(r.to);
-      else present.add(r.to);
+    // M8: a functional spatial slot is time-varying — evaluate the conflict PER CHAPTER so a
+    // cross-chapter relocation does NOT flag; only a within-chapter multi-place (or present+absent)
+    // slot is a same-moment contradiction. First conflicting chapter (lexicographic) wins, for stable output.
+    // NOTE: `until_chapter` end-bounding is intentionally NOT consulted — it has no producer (record_relation
+    // exposes only `sinceChapter`), so no live relation is end-bounded; a genuine within-chapter relocation
+    // is surfaced by design (medium, flag-only) rather than suppressed.
+    const byChapter = new Map<string, ProjectedRelation[]>();
+    for (const r of rels) pushTo(byChapter, r.provenance.chapter, r);
+    let conflict: ProjectedRelation[] | null = null;
+    for (const ch of [...byChapter.keys()].sort()) {
+      const chRels = byChapter.get(ch)!;
+      const present = new Set<string>(); // places asserted positively (value true or undefined)
+      const absent = new Set<string>(); // places asserted negatively (value === false)
+      for (const r of chRels) {
+        if (r.value === false) absent.add(r.to);
+        else present.add(r.to);
+      }
+      if (present.size >= 2 || [...present].some((p) => absent.has(p))) {
+        conflict = chRels;
+        break;
+      }
     }
-    const multiPlace = present.size >= 2;
-    const inAndNotIn = [...present].some((p) => absent.has(p));
-    if (!multiPlace && !inAndNotIn) continue;
-    const ex = rels[0];
-    const claims = [...new Set(rels.map((r) => (r.value === false ? `not ${r.to}` : r.to)))].sort();
-    const chs = [...new Set(rels.map((r) => r.provenance.chapter))].sort();
+    if (!conflict) continue;
+    const ex = conflict[0];
+    const ch = ex.provenance.chapter;
+    const claims = [...new Set(conflict.map((r) => (r.value === false ? `not ${r.to}` : r.to)))].sort();
     findings.push({
       id: `det-relation-conflict:${encodeURIComponent(ex.from)}:${encodeURIComponent(ex.relType)}`,
       category: "continuity-fact",
-      // medium, not high: this is "possibly a contradiction OR a legitimate relocation" —
-      // the store can't tell, so it under-claims rather than over-alarms on a known FP path.
+      // medium, not high: a chapter can span a move, so a within-chapter multi-place slot is
+      // "likely a contradiction OR an intra-chapter relocation" — under-claim rather than over-alarm.
       severity: "medium",
       title: `Conflicting ${ex.relType} for ${ex.from}`,
       description:
-        `${ex.from} holds conflicting live ${ex.relType} claims: ${claims.join(", ")} (chapters ${chs.join(", ")}). ` +
-        `A functional ${ex.relType} resolves to one place — this is a CONTRADICTION or a LEGITIMATE RELOCATION ` +
-        `(the store cannot time-index relations); verify against the timeline.`,
-      evidence: rels.map((r) => ({
+        `${ex.from} holds conflicting live ${ex.relType} claims within ${ch}: ${claims.join(", ")}. ` +
+        `A functional ${ex.relType} resolves to one place at a single narrative moment — verify against ` +
+        `the timeline (a within-chapter relocation is possible).`,
+      evidence: conflict.map((r) => ({
         file: `draft/${r.provenance.chapter}.md`,
         text: `${r.from} ${r.value === false ? "NOT " : ""}${r.relType} ${r.to}`,
         fact_id: r.id,
         chapter: r.provenance.chapter,
       })),
-      suggested_action: `Confirm ${ex.from} holds one ${ex.relType}; if it's a real move rather than a contradiction, no fix is needed — the store cannot time-index relations.`,
+      suggested_action: `Confirm ${ex.from} holds one ${ex.relType} within ${ch}; if the prose intends a move, stage it so the slot is single-valued per moment.`,
       auto_repair_safe: false,
       repair_agent: null,
     });
