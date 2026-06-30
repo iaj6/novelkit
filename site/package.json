@@ -18,7 +18,7 @@
     "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
-    "astro": "^6.4.8"
+    "astro": "^7.0.4"
   },
   "devDependencies": {
     "@vitest/coverage-v8": "^4.1.9",
