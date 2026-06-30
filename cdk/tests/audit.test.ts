@@ -28,10 +28,13 @@ function fact(
 }
 
 describe("findContradictions", () => {
+  // NOTE: these generic-mechanism tests use INVARIANT attributes (birth_year, native_language) as the
+  // numeric/string stand-ins. `age`/`role`/`alive` are TIME_VARYING under M8 — a cross-chapter change is
+  // succession, not a conflict — so they are exercised in the dedicated M8 block below, not here.
   it("flags two live facts on the same entity.attribute with different values", () => {
     const t = project([
-      fact("f1", "eira", "age", 52, "years", "02-a"),
-      fact("f2", "eira", "age", 54, "years", "11-b"),
+      fact("f1", "eira", "birth_year", 1918, undefined, "02-a"),
+      fact("f2", "eira", "birth_year", 1920, undefined, "11-b"),
     ]);
     const found = findContradictions(t);
     expect(found).toHaveLength(1);
@@ -42,30 +45,30 @@ describe("findContradictions", () => {
 
   it("does NOT flag a restatement (same normalized value)", () => {
     const t = project([
-      fact("f1", "eira", "age", 52, "years", "02-a"),
-      fact("f2", "eira", "age", 52, "years", "11-b"),
+      fact("f1", "eira", "birth_year", 1918, undefined, "02-a"),
+      fact("f2", "eira", "birth_year", 1918, undefined, "11-b"),
     ]);
     expect(findContradictions(t)).toEqual([]);
   });
 
   it("does NOT flag when one fact supersedes the other (only one live)", () => {
     const t = project([
-      fact("f1", "eira", "age", 52, "years", "02-a"),
-      fact("f2", "eira", "age", 54, "years", "11-b", { supersedes: "f1" }),
+      fact("f1", "eira", "birth_year", 1918, undefined, "02-a"),
+      fact("f2", "eira", "birth_year", 1920, undefined, "11-b", { supersedes: "f1" }),
     ]);
     expect(findContradictions(t)).toEqual([]);
   });
 
   it("normalizes string case/whitespace (no false conflict) but still catches real differences", () => {
     const same = project([
-      fact("f1", "eira", "role", "Harbormaster", undefined, "02-a"),
-      fact("f2", "eira", "role", "harbormaster ", undefined, "11-b"),
+      fact("f1", "eira", "native_language", "German", undefined, "02-a"),
+      fact("f2", "eira", "native_language", "german ", undefined, "11-b"),
     ]);
     expect(findContradictions(same)).toEqual([]);
 
     const diff = project([
-      fact("f1", "eira", "role", "harbormaster", undefined, "02-a"),
-      fact("f2", "eira", "role", "lighthouse keeper", undefined, "11-b"),
+      fact("f1", "eira", "native_language", "german", undefined, "02-a"),
+      fact("f2", "eira", "native_language", "english", undefined, "11-b"),
     ]);
     expect(findContradictions(diff)).toHaveLength(1);
   });
@@ -80,15 +83,98 @@ describe("findContradictions", () => {
 
   it("is deterministic (stable id-sorted output)", () => {
     const events = [
-      fact("f1", "eira", "age", 52, "years", "02-a"),
-      fact("f2", "eira", "age", 54, "years", "11-b"),
-      fact("f3", "marcus", "age", 47, "years", "04-c"),
-      fact("f4", "marcus", "age", 50, "years", "09-d"),
+      fact("f1", "eira", "birth_year", 1918, undefined, "02-a"),
+      fact("f2", "eira", "birth_year", 1920, undefined, "11-b"),
+      fact("f3", "marcus", "birth_year", 1947, undefined, "04-c"),
+      fact("f4", "marcus", "birth_year", 1950, undefined, "09-d"),
     ];
     const a = findContradictions(project(events)).map((f) => f.id);
     const b = findContradictions(project(events)).map((f) => f.id);
     expect(a).toEqual(b);
     expect(a).toEqual([...a].sort());
+  });
+});
+
+describe("M8 time-indexed attributes — cross-chapter change is succession, not a contradiction", () => {
+  it("does NOT flag a TIME_VARYING numeric attr changing across chapters (the m7 age 17→18 FP)", () => {
+    // Hannah ages over a story spanning years; two live `age` values in different chapters is correct.
+    const t = project([
+      fact("f1", "hannah", "age", 17, "years", "03-a"),
+      fact("f2", "hannah", "age", 18, "years", "20-b"),
+    ]);
+    expect(findContradictions(t)).toEqual([]);
+  });
+
+  it("does NOT flag a TIME_VARYING string attr (role) re-registering across chapters (the m7 role FP)", () => {
+    const t = project([
+      fact("f1", "eira", "role", "harbormaster", undefined, "02-a"),
+      fact("f2", "eira", "role", "lighthouse keeper", undefined, "18-b"),
+    ]);
+    expect(findContradictions(t)).toEqual([]);
+  });
+
+  it("does NOT flag `alive` going true→false across chapters (a character dies)", () => {
+    const t = project([
+      fact("f1", "marcus", "alive", true, undefined, "02-a"),
+      fact("f2", "marcus", "alive", false, undefined, "26-z"),
+    ]);
+    expect(findContradictions(t)).toEqual([]);
+  });
+
+  it("STILL flags an INVARIANT attr (birth_year) changing across chapters — recall preserved", () => {
+    const t = project([
+      fact("f1", "hannah", "birth_year", 1918, undefined, "03-a"),
+      fact("f2", "hannah", "birth_year", 1920, undefined, "20-b"),
+    ]);
+    expect(findContradictions(t)).toHaveLength(1);
+  });
+
+  it("flags a TIME_VARYING attr only on a SAME-chapter clash (two distinct values in one chapter)", () => {
+    // Forge two live age facts in one chapter with distinct ids (the assert path overwrites per-chapter,
+    // but a future non-overwriting source could produce this — the FP-0 floor must still catch it).
+    const t = project([
+      fact("f1", "hannah", "age", 17, "years", "07-a"),
+      fact("f2", "hannah", "age", 40, "years", "07-a", { id: "fact:07-a:hannah:age:b" }),
+    ]);
+    const found = findContradictions(t);
+    expect(found).toHaveLength(1);
+    expect(found[0].evidence.every((e) => e.chapter === "07-a")).toBe(true);
+  });
+
+  it("scopes the same-chapter-clash evidence to ONLY the clashing chapter, skipping earlier clean succession chapters", () => {
+    // Succession (17→18 across clean chapters 03-a, 05-a) coexists with a real same-chapter clash in the
+    // LATER chapter 07-a. The finding's evidence must include ONLY the two 07-a facts — not the innocent
+    // succession values — AND the loop must continue PAST the clean chapters to reach 07-a. (Guards the
+    // sameChapterClash `return chFacts` (not the whole group) + the lexicographic continue branch.)
+    const t = project([
+      fact("c0", "hannah", "age", 17, "years", "03-a"), // clean chapter (single value)
+      fact("c1", "hannah", "age", 18, "years", "05-a"), // clean chapter (single value)
+      fact("c2", "hannah", "age", 17, "years", "07-a"),
+      fact("c3", "hannah", "age", 40, "years", "07-a"), // distinct id -> same-chapter clash in 07-a
+    ]);
+    const found = findContradictions(t);
+    expect(found).toHaveLength(1);
+    expect(found[0].evidence.map((e) => e.fact_id).sort()).toEqual(["c2", "c3"]);
+    expect(found[0].evidence.every((e) => e.chapter === "07-a")).toBe(true);
+  });
+
+  it("does NOT flag `marital_status` changing across chapters (time-varying succession)", () => {
+    const t = project([
+      fact("f1", "eira", "marital_status", "single", undefined, "02-a"),
+      fact("f2", "eira", "marital_status", "married", undefined, "18-b"),
+    ]);
+    expect(findContradictions(t)).toEqual([]);
+  });
+
+  it("treats a place-FACT `located_in` as INVARIANT — the design distinction from the time-varying RELATION", () => {
+    // `located_in` is NOT in TIME_VARYING_ATTRIBUTES: a town's containing county does not move, so two
+    // distinct fact-values across chapters STILL flag. (Guards the load-bearing fact-vs-relation split:
+    // if someone later adds `located_in` to the time-varying set "to match relations", this fails.)
+    const t = project([
+      fact("f1", "coldwater", "located_in", "Erie County", undefined, "02-a"),
+      fact("f2", "coldwater", "located_in", "Niagara County", undefined, "18-b"),
+    ]);
+    expect(findContradictions(t)).toHaveLength(1);
   });
 });
 
@@ -184,28 +270,28 @@ describe("CANONICAL_ATTRIBUTES", () => {
 describe("findContradictions precision (M5 review fixes — FP-0)", () => {
   it("does NOT false-conflict a number and a numeric string of the same value", () => {
     const same = project([
-      fact("f1", "eira", "age", 52, "years", "02-a"),
-      fact("f2", "eira", "age", "52", undefined, "11-b"),
+      fact("f1", "eira", "birth_year", 1918, undefined, "02-a"),
+      fact("f2", "eira", "birth_year", "1918", undefined, "11-b"),
     ]);
     expect(findContradictions(same)).toEqual([]);
     // a real numeric difference still flags
     const diff = project([
-      fact("f1", "eira", "age", 52, "years", "02-a"),
-      fact("f2", "eira", "age", "54", undefined, "11-b"),
+      fact("f1", "eira", "birth_year", 1918, undefined, "02-a"),
+      fact("f2", "eira", "birth_year", "1920", undefined, "11-b"),
     ]);
     expect(findContradictions(diff)).toHaveLength(1);
   });
 
-  it("resolves boolean polarity: alive=true vs alive=false(negated) is NOT a conflict (both mean alive)", () => {
+  it("resolves boolean polarity on an INVARIANT attr: fictional=true vs fictional=false(negated) is NOT a conflict", () => {
     const same = project([
-      fact("f1", "eira", "alive", true, undefined, "02-a"),
-      fact("f2", "eira", "alive", false, undefined, "20-z", { polarity: "negated" }),
+      fact("f1", "brennan-isle", "fictional", true, undefined, "02-a"),
+      fact("f2", "brennan-isle", "fictional", false, undefined, "20-z", { polarity: "negated" }),
     ]);
     expect(findContradictions(same)).toEqual([]);
-    // a genuine boolean disagreement still flags
+    // a genuine boolean disagreement on an invariant attr still flags
     const conflict = project([
-      fact("f1", "eira", "alive", true, undefined, "02-a"),
-      fact("f2", "eira", "alive", false, undefined, "20-z"),
+      fact("f1", "brennan-isle", "fictional", true, undefined, "02-a"),
+      fact("f2", "brennan-isle", "fictional", false, undefined, "20-z"),
     ]);
     expect(findContradictions(conflict)).toHaveLength(1);
   });
@@ -241,10 +327,10 @@ describe("findRelationConflicts (functional spatial relations)", () => {
     extra: Record<string, unknown> = {}
   ) => ev({ type: "relation.assert", id, from, relType, to, provenance: { chapter, source: "drafter" }, ...extra });
 
-  it("flags an entity with two live located_in targets (contradiction OR relocation), flag-only", () => {
+  it("flags two live located_in targets WITHIN one chapter (same-moment clash), flag-only", () => {
     const t = project([
       rel("r1", "mabel", "located_in", "house-north", "07-a"),
-      rel("r2", "mabel", "located_in", "house-south", "13-b"),
+      rel("r2", "mabel", "located_in", "house-south", "07-a"),
     ]);
     const found = findRelationConflicts(t);
     expect(found).toHaveLength(1);
@@ -254,6 +340,14 @@ describe("findRelationConflicts (functional spatial relations)", () => {
     expect(found[0].auto_repair_safe).toBe(false);
     expect(found[0].description).toMatch(/relocation/i);
     expect(found[0].evidence.map((e) => e.fact_id).sort()).toEqual(["r1", "r2"]);
+  });
+
+  it("M8: does NOT flag two located_in targets in DIFFERENT chapters (a legitimate relocation)", () => {
+    const t = project([
+      rel("r1", "mabel", "located_in", "house-north", "07-a"),
+      rel("r2", "mabel", "located_in", "house-south", "13-b"),
+    ]);
+    expect(findRelationConflicts(t)).toEqual([]);
   });
 
   it("does NOT flag a single target, or two relations to the SAME place", () => {
@@ -299,22 +393,44 @@ describe("findRelationConflicts (functional spatial relations)", () => {
     expect(findRelationConflicts(t)).toEqual([]);
   });
 
-  it("flags a place asserted both present and absent (lives_at A AND not lives_at A)", () => {
+  it("flags a place asserted both present and absent WITHIN one chapter (lives_at A AND not lives_at A)", () => {
     const t = project([
-      rel("r1", "x", "lives_at", "a", "01"), // lives at A
-      rel("r2", "x", "lives_at", "a", "07", { value: false }), // does not live at A
+      rel("r1", "x", "lives_at", "a", "07"), // lives at A
+      rel("r2", "x", "lives_at", "a", "07", { value: false }), // does not live at A (same chapter)
     ]);
     const found = findRelationConflicts(t);
     expect(found).toHaveLength(1);
     expect(found[0].description).toMatch(/not a/i);
   });
 
+  it("M8: present-then-absent across DIFFERENT chapters is a move-out, not a contradiction", () => {
+    const t = project([
+      rel("r1", "x", "lives_at", "a", "01"), // lives at A
+      rel("r2", "x", "lives_at", "a", "07", { value: false }), // no longer at A, later
+    ]);
+    expect(findRelationConflicts(t)).toEqual([]);
+  });
+
+  it("M8: skips a clean earlier chapter and flags a multi-place clash in a LATER chapter, scoped to it", () => {
+    // ch01 is clean (single place); the clash is in the later ch07. The per-chapter loop must CONTINUE
+    // past the clean chapter and emit one finding scoped to ch07 (evidence b,c — not the innocent ch01 a).
+    const t = project([
+      rel("r1", "mabel", "located_in", "house-a", "01"), // clean, earlier
+      rel("r2", "mabel", "located_in", "house-b", "07"),
+      rel("r3", "mabel", "located_in", "house-c", "07"), // multi-place clash in 07
+    ]);
+    const found = findRelationConflicts(t);
+    expect(found).toHaveLength(1);
+    expect(found[0].evidence.map((e) => e.fact_id).sort()).toEqual(["r2", "r3"]);
+    expect(found[0].evidence.every((e) => e.chapter === "07")).toBe(true);
+  });
+
   it("is deterministic (stable id-sorted output)", () => {
     const events = [
       rel("r1", "x", "located_in", "a", "01"),
-      rel("r2", "x", "located_in", "b", "05"),
+      rel("r2", "x", "located_in", "b", "01"),
       rel("r3", "y", "lives_at", "c", "01"),
-      rel("r4", "y", "lives_at", "d", "05"),
+      rel("r4", "y", "lives_at", "d", "01"),
     ];
     const a = findRelationConflicts(project(events)).map((f) => f.id);
     const b = findRelationConflicts(project(events)).map((f) => f.id);
