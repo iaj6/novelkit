@@ -9,14 +9,17 @@ import type { Finding } from "../findings.js";
  * positives) but recall-incomplete, so it can only help: it catches the cheap
  * exact-key contradictions instantly and noise-free; everything it cannot see
  * (free-text facts, key disagreements, relation/epistemic clashes) the re-read
- * still covers. Cutting the re-read is gated on a re-probe (see M6).
+ * still covers. The re-read is retained permanently (the deterministic audit
+ * augments, never replaces it — the M6 gate to cut it was evaluated and declined,
+ * per the M7 redirect: the re-read catches real errors this pass structurally can't).
  */
 
 /**
  * Per-EntityKind canonical attribute vocabulary (M3.5 canonical-form rule #2).
- * Off-vocab use is REPORTED (worldStoreStats), not enforced — suggest now, warn
- * via the audit, hard-reject at M6. Keep an "other"/free escape; a missing key is
- * logged so the vocab grows from real demand.
+ * Off-vocab use is REPORT-only by design (counted in worldStoreStats), never
+ * enforced — write-time vocab rejection was considered and NOT adopted (only the
+ * resolve-first entity hard-reject shipped, M6/#33). Keep an "other"/free escape;
+ * a missing key is logged so the vocab grows from real demand.
  */
 export const CANONICAL_ATTRIBUTES: Record<string, ReadonlySet<string>> = {
   character: new Set(["age", "birth_year", "role", "origin_place", "native_language", "alive", "marital_status"]),
