@@ -135,9 +135,10 @@ export class WorldSession {
   }
 
   /**
-   * Close the chapter transaction. M3 WARN-mode completeness gate: report whether
+   * Close the chapter transaction. WARN-mode completeness gate: report whether
    * the chapter captured any facts; flag the close `incomplete` if not, but never
-   * refuse (the legacy logs remain authoritative this milestone).
+   * refuse — refuse-mode was deferred (see the class docstring), not because the
+   * store isn't authoritative (it is, since M6).
    */
   async closeChapter(args: { chapterId?: string }): Promise<CloseResult> {
     const chapterId = this.chapterOf(args.chapterId);

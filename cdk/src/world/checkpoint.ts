@@ -10,7 +10,7 @@ export interface VerifyResult {
   ok: boolean;
   /** Gating failures (artifact missing/empty/changed). A non-empty list means re-run. */
   missing: string[];
-  /** Non-gating observations (world-store coverage, which is shadow this milestone). */
+  /** Non-gating observations (world-store coverage sanity notes). */
   advisories: string[];
 }
 
@@ -48,9 +48,9 @@ export async function hashFiles(projectRoot: string, relPaths: string[]): Promis
  * missing, truncated, or changed (e.g. the agent errored after markComplete, or a
  * partial write).
  *
- * ADVISORY (non-gating in the M3 shadow): whether the world store holds a closed
- * chapter with >=1 fact. The store is not yet reliably populated, so its absence
- * is reported, never a reason to re-draft a good chapter. This becomes gating at M6.
+ * ADVISORY (intentionally non-gating): whether the world store holds a closed
+ * chapter with >=1 fact. Coverage is reported, never a reason to re-draft a good
+ * chapter — by design, store coverage never gates a present, non-empty chapter.
  */
 export async function verifyChapter(
   projectRoot: string,

@@ -19,9 +19,10 @@ import { renderFactLedger, LEDGER_SENTINEL } from "./views.js";
  * existing file, NOT on "the store has any fact". A legacy / hand-written
  * logs/continuity.md lacks the sentinel, so it is preserved untouched — a sparse store
  * must never clobber a richer legacy ledger. A fresh book (no file) is seeded; a file we
- * previously authored (sentinel present) is updated. Full legacy-import backfill — which
- * would make the store a genuine superset so legacy ledgers could be regenerated safely —
- * is deferred (M9 "backfill importer on cdk run"; was M8 before the time-indexed milestone took that slot).
+ * previously authored (sentinel present) is updated. There is no legacy-import backfill:
+ * the one-time markdown importer was dropped in M9 as an un-run migration (never wired into
+ * `cdk run`, never executed on a real book), so a legacy book's `logs/continuity.md` stays
+ * markdown-only — this clobber-guard is what keeps a sparse store from overwriting it.
  */
 export async function regenerateLedgerViews(projectRoot: string): Promise<void> {
   const file = resolveInProject(projectRoot, "logs/continuity.md");

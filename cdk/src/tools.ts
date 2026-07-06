@@ -188,8 +188,8 @@ export function extractRecentCraftEntries(text: string, n: number): string {
 
 export function buildToolServer(deps: ToolDeps) {
   const { projectRoot, log } = deps;
-  // World-store session (M3 dual-write shadow). The new structured tools below
-  // are thin wrappers over this; the legacy markdown tools remain authoritative.
+  // World-store session — the structured continuity substrate the tools below wrap.
+  // Since M6 the store is the source of truth; logs/continuity.md is regenerated from it.
   const session = new WorldSession(projectRoot, deps.source ?? "drafter");
 
   const readFile = tool(
@@ -468,9 +468,9 @@ export function buildToolServer(deps: ToolDeps) {
     }
   );
 
-  // ── World-store tools (M3 dual-write shadow) ──────────────────────
-  // Additive: these populate logs/world/events.jsonl alongside the legacy
-  // markdown logs (which remain authoritative). close_chapter only WARNS.
+  // ── World-store tools ─────────────────────────────────────────────
+  // These populate logs/world/events.jsonl, the authoritative store (M6);
+  // the markdown ledgers are regenerated views. close_chapter only WARNS.
 
   const openChapter = tool(
     "open_chapter",
