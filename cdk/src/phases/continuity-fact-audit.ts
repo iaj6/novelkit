@@ -4,7 +4,7 @@ import { runAgent } from "../agentRunner.js";
 import { loadState, isComplete, markComplete } from "../state.js";
 import { readEvents } from "../world/store.js";
 import { project, liveRecords, type ProjectedRecord } from "../world/project.js";
-import { findContradictions, findRecordDivergences, findRelationConflicts, worldStoreStats } from "../world/audit.js";
+import { findContradictions, findRecordDivergences, findRelationConflicts, worldStoreStats, computeCompoundingStats } from "../world/audit.js";
 import { appendFindings } from "../findings.js";
 
 export async function runContinuityFactAudit(projectRoot: string) {
@@ -95,6 +95,21 @@ export async function runContinuityFactAudit(projectRoot: string) {
   console.log(
     `[continuity-fact-audit] world store: ${stats.liveFacts} facts, clean-slot ${(stats.cleanSlotRate * 100).toFixed(0)}%, ${stats.offVocabAttributes} off-vocab attr, ${stats.unresolvedEntityRefs} unresolved-entity ref(s)`
   );
+
+  // REPORT-ONLY compounding-presence signal (observability, never a finding — see audit.ts:
+  // computeCompoundingStats). A strong middle carries ~2-3 established quantities forward per
+  // chapter; a flat/orbiting middle ~0.2. Surfaced to the brief-author, not fed to any repair agent.
+  const comp = computeCompoundingStats(tables);
+  if (comp.middleChapters > 0) {
+    const rate = comp.middleCompoundingRate;
+    const lowNote =
+      rate < 0.5
+        ? " — LOW (a strong middle carries ~2–3/ch; a flat one ~0.2). Check the brief's `## Compounding mechanism`."
+        : "";
+    console.log(
+      `[continuity-fact-audit] compounding: middle third carries ${rate.toFixed(1)} established quantities/ch forward across ${comp.middleChapters} mid-chapter${comp.middleChapters === 1 ? "" : "s"}${lowNote}`
+    );
+  }
 
   await markComplete(state, projectRoot, key);
 }

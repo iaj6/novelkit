@@ -70,6 +70,19 @@ that runs ALONGSIDE the LLM re-read, which is **retained permanently** (it catch
 deterministic pass structurally can't — the M6 gate to cut it was evaluated and declined). Store
 writes go through the resolve-first entity **hard-reject** (M6/#33); everything else stayed softer.
 
+**Report-only observability (not findings):** alongside `worldStoreStats` (clean-slot / off-vocab /
+unresolved-entity), `computeCompoundingStats` (`world/audit.ts`) prints a **middle-third compounding
+rate** — how many established quantities each middle chapter carries *forward* (`attributeStem`
+folds the drafter's time-stamped slots so `power_reserve.day3`/`.day7` count as one quantity). A
+strong middle runs ~2–3/ch, a saggy one ~0.2 (validated ~5–10× on the mech-vs-DNF corpus). It is a
+**dashboard number for the brief-author only — never a `findings.json` entry, never a repair input**
+(the signal is clean in aggregate but a per-chapter flag would trip the "true positive of the machine
+= false positive of craft" trap). This REPLACED the proposed `findOrbitingChapters` deterministic
+detector, which was built, validated against the real stores, and **killed**: the drafter time-stamps
+quantities into attribute names, so re-measurement mints fresh slots rather than re-asserting old
+ones — the "zero new fact-nodes" signal it needed does not exist in any store. (Full negative-result
+writeup: `PIPELINE-PROPOSALS.md` §8.)
+
 **Considered and NOT adopted** (so the code comments don't imply pending work): `close_chapter`
 refuse-mode and write-time attribute-vocab hard-reject (both remain WARN / report-only); the legacy
 markdown → store **backfill importer** (dropped in M9, unwired); `@narrator` tracking (cut from v1).

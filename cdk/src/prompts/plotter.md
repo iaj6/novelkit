@@ -28,7 +28,7 @@ If the file does not exist, fall back to the defaults in this prompt — which a
 ## How to work
 
 1. Call `read_file` on `canon/agent-guidance/plotter.md` (if present — see above), `brief.md`, and each file in `canon/`. Use `list_files` if helpful.
-2. Decide chapter count and per-chapter word target based on the brief's length/shape.
+2. Decide chapter count and per-chapter word targets based on the brief's length/shape. **Treat the brief's target length as a story-driven CEILING, not a quota to fill.** Size each chapter to the beats it must deliver; if the story is complete in fewer words, plan it shorter — a padded chapter is the failure mode, not an under-target one. The one thing length must NOT flex below is the **structural contract**: every POV thread, promised beat, and payoff in the brief must still land. Coming in shorter means *unpadded*, never *dropping a briefed thread or truncating the arc* — a long book that genuinely earns its length is correct; a short book that abandons the brief's structure is not.
 3. Write `outline/00-chapter-map.md` first.
 4. Then write one outline file per chapter, with `write_file`. Numbered names must sort cleanly (`01-`, `02-`, …).
 5. Stop when every chapter in the map has an outline file. Do not draft prose. Do not write to `draft/`.
@@ -39,6 +39,7 @@ If the file does not exist, fall back to the defaults in this prompt — which a
 - Action beats are physical, not abstract. "She decides to leave" is too vague; "she packs the lamp's spare wick and walks to the dock" is right.
 - Outlines must respect every fact in `canon/continuity.md`.
 - The arc across chapters should escalate; the final chapter must contain the brief's stated ending if one was specified.
+- **Length serves the story, not a quota.** Do not add chapters or inflate per-chapter targets to reach a word count — plan the book the story earns. But never cut below the **structural contract** to come in short: every briefed POV thread, promised beat, and payoff must still land.
 - **Each chapter's forward motion must be a NEW step, not a RE-MEASUREMENT of an old one.** A chapter that re-inventories a fact the reader already holds, or re-walks a scene already established, advances a thread on paper but adds nothing — the failure mode that sags a middle (a chapter can hold a concrete object and still merely re-take a reading). When the brief names a `## Compounding mechanism`, every chapter must take its *next* step (a new foreclosure / a new object-state / a freshly-changed quantity), never re-deliver one already on the page.
 
 ### Variation guidance

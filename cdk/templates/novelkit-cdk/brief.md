@@ -16,8 +16,10 @@ actually want. Vague register defaults to "literary adult fiction"; if you want 
 
 ## Length and shape
 
-- Target length: ~10,000 words
+- Target length: ~10,000 words  (a story-driven *ceiling*, not a quota)
 - Number of chapters: 5
+
+> Length flexes to the story. The target is the *most* the book should be, not a floor to pad up to — if the story is complete in fewer words, a tight telling beats a padded one. What length must NOT flex below is the **structural contract**: every POV thread, promised beat, and payoff in this brief still has to land. "Shorter" means *unpadded*, never *truncated*.
 
 ## Compounding mechanism (optional — the anti-sag engine)
 

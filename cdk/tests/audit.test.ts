@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { WorldEventSchema } from "../src/world/schema.js";
 import { project } from "../src/world/project.js";
-import { findContradictions, findRecordDivergences, findRelationConflicts, worldStoreStats, CANONICAL_ATTRIBUTES } from "../src/world/audit.js";
+import { findContradictions, findRecordDivergences, findRelationConflicts, worldStoreStats, CANONICAL_ATTRIBUTES, attributeStem, computeCompoundingStats } from "../src/world/audit.js";
 
 const ev = (o: unknown) => WorldEventSchema.parse(o);
 
@@ -437,5 +437,98 @@ describe("findRelationConflicts (functional spatial relations)", () => {
     expect(a).toEqual(b);
     expect(a).toEqual([...a].sort());
     expect(a).toHaveLength(2);
+  });
+});
+
+// A chapter.open, so computeCompoundingStats sees real (discourse-ordered) chapters.
+const chap = (chapterId: string, discourseIndex: number) =>
+  ev({ type: "chapter.open", chapterId, discourseIndex, provenance: { chapter: chapterId, source: "drafter" } });
+
+describe("attributeStem (compounding metric — quantity-stem normalizer)", () => {
+  it("strips trailing time-index qualifiers so the same quantity collapses across chapters", () => {
+    expect(attributeStem("power_reserve.morning_day3")).toBe("power_reserve");
+    expect(attributeStem("power_reserve.end_of_day7_evening")).toBe("power_reserve");
+    expect(attributeStem("matches_remaining_end_ch06")).toBe("matches_remaining");
+    expect(attributeStem("kitchen.temperature_at_910pm")).toBe("kitchen_temperature");
+    expect(attributeStem("dropout_visual_estimate_day6")).toBe("dropout_visual_estimate");
+  });
+
+  it("leaves an unqualified attribute unchanged (lowercased, underscore-joined)", () => {
+    expect(attributeStem("age")).toBe("age");
+    expect(attributeStem("role")).toBe("role");
+    expect(attributeStem("origin_place")).toBe("origin_place");
+  });
+
+  it("never reduces to empty — an all-qualifier attribute keeps its own form", () => {
+    expect(attributeStem("day3")).toBe("day3");
+    expect(attributeStem("evening")).toBe("evening");
+  });
+
+  it("preserves a LEADING concept word that matches a position token", () => {
+    // "first"/"final" only strip when trailing; here they lead a real concept.
+    expect(attributeStem("first_entry_date")).toBe("first_entry_date");
+    expect(attributeStem("final_report.status")).toBe("final_report_status");
+  });
+});
+
+describe("computeCompoundingStats (report-only middle-sag signal)", () => {
+  // A 9-chapter book → middle third is chapters 04,05,06 (0-based indices 3,4,5).
+  const spine = [chap("01", 1), chap("02", 2), chap("03", 3), chap("04", 4), chap("05", 5), chap("06", 6), chap("07", 7), chap("08", 8), chap("09", 9)];
+  const establish = fact("f0", "generator", "power_reserve.day1", 90, "pct", "01");
+
+  it("assigns thirds by discourse order and finds the middle chapters", () => {
+    const s = computeCompoundingStats(project([...spine, establish]));
+    expect(s.realChapters).toBe(9);
+    expect(s.middleChapters).toBe(3);
+    expect(s.perChapter.filter((c) => c.third === "middle").map((c) => c.chapter)).toEqual(["04", "05", "06"]);
+  });
+
+  it("scores a middle that carries an established quantity FORWARD (good) above a flat one", () => {
+    const good = computeCompoundingStats(
+      project([
+        ...spine,
+        establish,
+        fact("f4", "generator", "power_reserve.day4", 60, "pct", "04"),
+        fact("f5", "generator", "power_reserve.day5", 40, "pct", "05"),
+        fact("f6", "generator", "power_reserve.day6", 20, "pct", "06"),
+      ])
+    );
+    expect(good.middleCompoundingRate).toBeCloseTo(1.0); // 3 re-touches / 3 middle chapters
+
+    const flat = computeCompoundingStats(
+      project([
+        ...spine,
+        establish,
+        fact("g4", "raven", "arrival_day4", "dawn", undefined, "04"),
+        fact("g5", "letter", "postmark_day5", "boston", undefined, "05"),
+        fact("g6", "clock", "reading_day6", "ten", undefined, "06"),
+      ])
+    );
+    expect(flat.middleCompoundingRate).toBe(0); // only brand-new stems — compounds nothing
+    expect(good.middleCompoundingRate).toBeGreaterThan(flat.middleCompoundingRate);
+  });
+
+  it("counts a re-touch of a canon/architect-seeded quantity (baseline seeding)", () => {
+    const s = computeCompoundingStats(
+      project([
+        ...spine,
+        fact("c0", "generator", "power_reserve.day0", 100, "pct", "canon"),
+        fact("m4", "generator", "power_reserve.day4", 50, "pct", "04"),
+      ])
+    );
+    // ch04 re-touches a stem first seen in the canon baseline → 1 re-touch across 3 middle chapters.
+    expect(s.middleCompoundingRate).toBeCloseTo(1 / 3);
+  });
+
+  it("does NOT count a brand-new stem as compounding (introducing a noun isn't compounding it)", () => {
+    const s = computeCompoundingStats(project([...spine, fact("n4", "newthing", "power_reserve.day4", 50, "pct", "04")]));
+    expect(s.middleCompoundingRate).toBe(0);
+  });
+
+  it("is empty-safe (no chapters → rate 0, never NaN)", () => {
+    const s = computeCompoundingStats(project([establish]));
+    expect(s.realChapters).toBe(0);
+    expect(s.middleChapters).toBe(0);
+    expect(s.middleCompoundingRate).toBe(0);
   });
 });
