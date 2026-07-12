@@ -23,5 +23,9 @@
   "devDependencies": {
     "@vitest/coverage-v8": "^4.1.9",
     "vitest": "^4.1.6"
+  },
+  "overrides": {
+    "vite": "^7.3.5",
+    "esbuild": "^0.28.1"
   }
 }
