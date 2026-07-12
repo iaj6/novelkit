@@ -353,3 +353,131 @@ export function worldStoreStats(tables: WorldTables): WorldStoreStats {
     unresolvedEntityRefs: unresolved,
   };
 }
+
+/**
+ * COMPOUNDING-PRESENCE METRIC — report-only observability, NOT a finding.
+ *
+ * The proven middle-sag fix is a per-chapter COMPOUNDING MECHANISM: each chapter pushes an
+ * ESTABLISHED quantity forward (matches_remaining, power_reserve, a closing knowledge-gap). A
+ * validated-strong middle re-touches ~2-3 established quantities per chapter; a flat / "orbiting"
+ * middle re-touches ~0 — it introduces a fresh noun each chapter and compounds nothing.
+ *
+ * WHY THIS IS A METRIC, NOT A `findOrbitingChapters` DETECTOR (the negative result that produced it).
+ * The originally-proposed detector — "flag a chapter that RE-ASSERTS existing fact-nodes and ADDS
+ * none" — was validated against the two mechanism-fix stores + the reader-DNF control and FALSIFIED:
+ *   1. The drafter time-stamps quantities INTO the attribute name (`power_reserve.morning_day3`), so
+ *      re-measurement mints FRESH per-chapter slots instead of re-asserting old ones — exact-slot
+ *      re-assertion is ~0 in EVERY store, and `novel-fact == 0` never occurs.
+ *   2. Novel-fact COUNT does not separate a saggy middle from a strong one (the documented
+ *      re-measurement chapters aren't even low-count) — the sag is a reading experience the
+ *      fact-graph structurally can't see ("capture is biased toward easy facts; audit-clean != good").
+ * The ONLY signal that discriminated was INVERTED: re-touch of an attribute STEM (the same quantity,
+ * carried forward) is compounding PRESENCE. It separates ~10x at the MIDDLE-THIRD AGGREGATE
+ * (~0.2 re-touch/ch flat vs ~2-3.4 strong) but is NOISY per-chapter — a legitimately quiet chapter
+ * that advances via new facts looks flat — so surfacing a per-chapter flag is precisely the
+ * "a true positive of the machine is a false positive of craft" trap. It is therefore reported as an
+ * aggregate rate to the brief-author and NEVER written into findings.json / handed to a repair agent.
+ * Heuristic by construction (the stem normalizer is best-effort); a directional signal, not a gate.
+ */
+
+// A trailing attribute token that indexes a narrative MOMENT rather than naming the quantity:
+// day7 / ch06 / 1943 / 910pm / oct1944 / q3. Stripped so the same quantity registered at different
+// moments collapses to one stem (power_reserve.day3 and power_reserve.day7 -> power_reserve).
+const TIME_INDEX_TOKEN =
+  /^(?:\d+|\d{1,4}(?:am|pm)|day\d+|d\d+|wk\d+|week\d+|ch\d+|chapter\d+|q[1-4]|(?:jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)[a-z]*\d*)$/;
+// A trailing positional qualifier that pairs with a time index (…_end_of_day7_evening). Stripped
+// only from the tail, so a LEADING concept word (first_entry, final_report) is preserved.
+const TIME_POSITION_TOKEN =
+  /^(?:morning|afternoon|evening|night|dawn|dusk|noon|midnight|early|earliest|late|later|latest|end|start|beginning|initial|final|before|after|at|of|on|in|the)$/;
+
+/**
+ * Reduce an attribute to its quantity STEM by stripping trailing time/position qualifier tokens
+ * (split on `.` and `_`). Guarded so a stem is never empty: an all-qualifier attribute keeps its
+ * original (lowercased, underscore-joined) form. Best-effort — the goal is that the SAME tracked
+ * quantity collapses to one stem across chapters, not linguistic correctness.
+ */
+export function attributeStem(attribute: string): string {
+  const tokens = attribute.toLowerCase().split(/[._]/).filter(Boolean);
+  let end = tokens.length;
+  while (end > 1 && (TIME_INDEX_TOKEN.test(tokens[end - 1]) || TIME_POSITION_TOKEN.test(tokens[end - 1]))) {
+    end--;
+  }
+  return tokens.slice(0, end).join("_");
+}
+
+export interface CompoundingStats {
+  /** Real drafted chapters (chapter.open with discourseIndex >= 1); excludes canon/architect seeds. */
+  realChapters: number;
+  /** Chapters landing in the middle third by discourse order (where sag lives). */
+  middleChapters: number;
+  /** Mean established-stem re-touches per middle-third chapter. 0 when there is no middle third. */
+  middleCompoundingRate: number;
+  /** Per-chapter detail in discourse order, for a fuller report. */
+  perChapter: {
+    chapter: string;
+    discourseIndex: number;
+    third: "setup" | "middle" | "end";
+    /** Distinct (entity, attribute-stem) quantities this chapter carried forward from a prior chapter. */
+    retouch: number;
+    /** Atomized (non-`statement`) facts asserted in this chapter. */
+    facts: number;
+  }[];
+}
+
+/**
+ * Compute the compounding-presence rate (see the docstring above). Pure. A chapter's `retouch` is the
+ * number of distinct (entity, attribute-stem) quantities it asserts that were ALREADY established in a
+ * prior (or baseline canon/architect) chapter — i.e. quantities carried FORWARD. Facts on brand-new
+ * stems don't count (introducing a noun isn't compounding it). The headline is the mean over the
+ * middle third, where the sag lives.
+ */
+export function computeCompoundingStats(tables: WorldTables): CompoundingStats {
+  // Real chapters, in discourse order. discourseIndex >= 1 excludes the canon (0) / stub (-1) rows.
+  const real = [...tables.chapters.values()]
+    .filter((c) => c.discourseIndex >= 1)
+    .sort((a, b) => a.discourseIndex - b.discourseIndex);
+  const realIds = new Set(real.map((c) => c.chapterId));
+
+  // One atomized fact per (chapter, entity, attribute) already (the fact id folds same-chapter
+  // re-asserts). Group live+superseded facts by the chapter that asserted them; skip free-text.
+  const byChapter = new Map<string, { entity: string; stem: string }[]>();
+  const baselineStems = new Set<string>();
+  for (const f of tables.facts.values()) {
+    if (f.status === "retracted") continue;
+    if (f.attribute === "statement") continue;
+    const stem = `${f.entity} ${attributeStem(f.attribute)}`;
+    if (realIds.has(f.provenance.chapter)) {
+      pushTo(byChapter, f.provenance.chapter, { entity: f.entity, stem });
+    } else {
+      // canon / architect-canon / legacy / any pre-chapter assertion seeds prior knowledge:
+      // re-touching a seeded quantity later still counts as carrying it forward.
+      baselineStems.add(stem);
+    }
+  }
+
+  const N = real.length;
+  const seen = new Set<string>(baselineStems);
+  const perChapter: CompoundingStats["perChapter"] = [];
+  let middleSum = 0;
+  let middleCount = 0;
+  real.forEach((c, i) => {
+    const facts = byChapter.get(c.chapterId) ?? [];
+    const stemsThisChapter = new Set(facts.map((f) => f.stem));
+    let retouch = 0;
+    for (const s of stemsThisChapter) if (seen.has(s)) retouch++;
+    for (const s of stemsThisChapter) seen.add(s);
+    const third: "setup" | "middle" | "end" = i < N / 3 ? "setup" : i >= (2 * N) / 3 ? "end" : "middle";
+    if (third === "middle") {
+      middleSum += retouch;
+      middleCount++;
+    }
+    perChapter.push({ chapter: c.chapterId, discourseIndex: c.discourseIndex, third, retouch, facts: facts.length });
+  });
+
+  return {
+    realChapters: N,
+    middleChapters: middleCount,
+    middleCompoundingRate: middleCount ? middleSum / middleCount : 0,
+    perChapter,
+  };
+}

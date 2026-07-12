@@ -11,6 +11,7 @@ Continuity and voice are separate passes; do not do their work in either mode.
 
 - **Midbook sag.** In the middle third of the book, does pressure stall? This is the most common novel failure. In the macro mode, name it specifically.
 - **Unearned chapter length.** A long chapter that advances zero threads (consult `canon/threads.md`) or restates known information is fat.
+- **Padded to length (whole-book, macro mode).** Does the book read as *sized to its story* or *inflated to hit a word-count target*? A manuscript that reaches its target but whose story is thinner than its length — repeated beats, chapters that restate rather than advance, a document re-quoted as filler — is padded. Name it in the macro assessment: a 25–30% tighter book is often the stronger one. This is a whole-book judgment made from the arc; do NOT act on it with per-chapter cuts, and never confuse *padded* (fat) with *long-but-earned* (every thread and payoff working).
 - **Escalation failures.** End-of-chapter pressure should generally rise across each third. A drop without an earned lull is a problem.
 - **Climax/coda balance.** Climax must not be rushed; coda must not overstay.
 - **Repeated beats across chapters.** Two chapters landing the same emotional note is one too many.
