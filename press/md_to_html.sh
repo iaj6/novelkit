@@ -16,7 +16,11 @@ out_dir="$(build_dir "$book")"
 mkdir -p "$out_dir"
 
 out="$out_dir/$book.html"
-css="$PRESS_DIR/book.css"
+# Ship the stylesheet alongside the HTML and reference it relatively —
+# an absolute path here ends up verbatim in the <link> href and 404s
+# once the edition is synced to the deployed site.
+cp "$PRESS_DIR/book.css" "$out_dir/book.css"
+css="book.css"
 template="$PRESS_DIR/templates/book.html"
 filter="$PRESS_DIR/filters/chapter_headings.lua"
 cover_src="$out_dir/cover.png"

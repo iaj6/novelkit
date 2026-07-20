@@ -1,0 +1,275 @@
+/* Minimal, book-ish defaults for HTML + EPUB outputs */
+
+:root {
+  --text: #111;
+  --muted: #555;
+  --rule: #ddd;
+  --paper: #fff;
+}
+
+html, body {
+  background: var(--paper);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, "Iowan Old Style", "Palatino Linotype", Palatino, serif;
+  line-height: 1.55;
+  font-size: 18px;
+  hyphens: auto;
+}
+
+.book {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 3rem 1.25rem 5rem;
+}
+
+h1, h2, h3 {
+  font-family: "Iowan Old Style", Georgia, serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* Title page (in template) */
+.title-page {
+  padding: 6rem 0 3rem;
+  text-align: center;
+}
+
+.book-title {
+  margin: 0 0 1rem;
+  font-size: 2.25rem;
+  letter-spacing: 0.4px;
+}
+
+.book-author {
+  color: var(--muted);
+  font-size: 1.1rem;
+}
+
+.cover-figure {
+  margin: 0 auto 2rem;
+  max-width: 18rem;
+}
+
+.cover-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--rule);
+}
+
+/* Optional front matter */
+.dedication {
+  padding: 4rem 0 2rem;
+  text-align: center;
+}
+
+.dedication-text {
+  margin: 0;
+  text-indent: 0;
+}
+
+.epigraph {
+  padding: 2rem 0 3rem;
+}
+
+.epigraph-quote {
+  border-left: none;
+  padding-left: 0;
+  margin: 0;
+  color: var(--muted);
+  text-align: center;
+}
+
+.epigraph-quote p {
+  text-indent: 0;
+}
+
+.epigraph-attrib {
+  margin-top: 0.75rem;
+  font-size: 0.95em;
+}
+
+/* Manuscripts use H1 for chapters; keep them strong but not gigantic. */
+h1 {
+  margin: 3.25rem 0 1.25rem;
+  font-size: 1.8rem;
+  letter-spacing: 0.2px;
+}
+
+/* Structured chapter heading (from Lua filter) */
+h1.chapter {
+  text-align: center;
+}
+
+.chapter-label {
+  font-size: 0.95rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.chapter-name {
+  font-size: 1.9rem;
+  letter-spacing: 0.2px;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--rule);
+  margin: 2rem 0;
+}
+
+p {
+  margin: 0.85rem 0;
+  text-align: left;
+}
+
+blockquote {
+  margin: 1.25rem 0;
+  padding: 0.25rem 1rem;
+  border-left: 3px solid var(--rule);
+  color: var(--muted);
+}
+
+code, pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: 0.95em;
+}
+
+/* Links: keep book-ish (no loud blue) */
+a, a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Table of contents (pandoc) */
+#TOC, nav#TOC {
+  border: 1px solid var(--rule);
+  padding: 1rem 1rem 0.75rem;
+  margin: 0 0 2rem;
+}
+
+#TOC .toc-title {
+  margin: 0 0 0.75rem;
+  font-size: 1.2rem;
+}
+
+#TOC > ul, nav#TOC > ul {
+  margin: 0.5rem 0 0;
+  padding-left: 1.25rem;
+}
+
+#TOC li {
+  margin: 0.15rem 0;
+}
+
+/* Better chapter flow */
+h1 {
+  break-before: page;
+}
+
+h1:first-of-type {
+  break-before: auto;
+}
+
+/* First paragraph after a chapter heading: no indent */
+h1 + p {
+  text-indent: 0;
+}
+
+/* Normal paragraphs: slight indent (more book-like) */
+p {
+  text-indent: 1.25em;
+}
+
+/* But don’t indent short utility blocks (TOC, blockquote, etc.) */
+#TOC p,
+nav#TOC p,
+blockquote p {
+  text-indent: 0;
+}
+
+/* Print / PDF via HTML engines (if used) */
+@media print {
+  .book {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* WeasyPrint paged media */
+  @page {
+    size: 6in 9in;
+    margin: 0.85in 0.8in 0.9in;
+    @bottom-center {
+      content: counter(page);
+      font-size: 10pt;
+      color: var(--muted);
+    }
+  }
+
+  /* Title page: no running head, no page number */
+  .title-page { page: title; }
+  @page title {
+    @top-center { content: ""; }
+    @bottom-center { content: ""; }
+  }
+
+  .cover-figure {
+    max-width: 3.9in;
+    margin: 0 auto 0.5in;
+  }
+
+  /* Dedication and epigraph: no running head, no page number */
+  .dedication { page: dedication; }
+  @page dedication {
+    @top-center { content: ""; }
+    @bottom-center { content: ""; }
+  }
+  .epigraph { page: epigraph; }
+  @page epigraph {
+    @top-center { content: ""; }
+    @bottom-center { content: ""; }
+  }
+
+  /* Keep chapter title for running heads (WeasyPrint supports string-set). */
+  h1 { string-set: chapter content(); }
+
+  @page {
+    @top-center {
+      content: string(chapter);
+      font-size: 9pt;
+      color: var(--muted);
+    }
+  }
+
+  /* First page: suppress running head */
+  @page :first {
+    @top-center { content: ""; }
+  }
+
+  /* Avoid awkward breaks */
+  p {
+    orphans: 2;
+    widows: 2;
+    text-align: justify;
+  }
+
+  h1, h2, h3 {
+    break-after: avoid;
+  }
+
+  /* TOC leaders + page numbers (WeasyPrint supports target-counter) */
+  #TOC a {
+    text-decoration: none;
+  }
+  #TOC a::after {
+    content: leader('.') target-counter(attr(href), page);
+    padding-left: 0.25rem;
+  }
+}

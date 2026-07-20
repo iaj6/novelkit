@@ -21,20 +21,23 @@ interface Props {
 
 const { size = "md", muted = false, link = true } = Astro.props;
 
-const inner = `
-  <span class="mark mark-${size}${muted ? " muted" : ""}" aria-label="lantern & page">
-    <span class="word">lantern</span><span class="amp">&nbsp;&amp;&nbsp;</span><span class="word">page</span>
-  </span>
-`;
+// Real template markup, NOT set:html — injected HTML skips Astro's style
+// scoping (no data-astro-cid attribute), which left the mark unstyled in
+// every header and footer.
+const markClass = `mark mark-${size}${muted ? " muted" : ""}`;
 ---
 
 {
   link ? (
     <a href={url("/")} class="wordmark-link" aria-label="lantern & page — home">
-      <Fragment set:html={inner} />
+      <span class={markClass}>
+        <span class="word">lantern</span><span class="amp">&nbsp;&amp;&nbsp;</span><span class="word">page</span>
+      </span>
     </a>
   ) : (
-    <Fragment set:html={inner} />
+    <span class={markClass}>
+      <span class="word">lantern</span><span class="amp">&nbsp;&amp;&nbsp;</span><span class="word">page</span>
+    </span>
   )
 }
 

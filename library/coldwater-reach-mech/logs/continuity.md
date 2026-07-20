@@ -1,0 +1,546 @@
+# Continuity ledger
+
+The accumulating fact ledger — every durable fact established so far, by chapter. Later drafting must stay consistent with these. Store-derived; do not edit by hand.
+
+## 01-the-breakwater
+- eira-bowman — age: 52 years
+- eira-bowman — role: harbormaster of Coldwater Reach
+- eira-bowman — located_in: Coldwater Reach
+- eira-bowman — marital_status: widowed
+- owen-bowman — alive: false
+- owen-bowman — death.cause: drowned in the November storm of 1935
+- owen-bowman — role: previous harbormaster of Coldwater Reach
+- aldous-tibbetts — role: town constable of Coldwater Reach
+- aldous-tibbetts — located_in: Coldwater Reach
+- breakwater-body — discovery.date: October 3, 1943
+- breakwater-body — discovery.time: 0615 hours
+- breakwater-body — discovery.location: seaward face of Coldwater Reach breakwater, approximately 210 feet from pier head
+- breakwater-body — discovery.distance_from_pier_head: 210 feet
+- breakwater-body — sex: male
+- breakwater-body — age.estimated: 50–60 years
+- breakwater-body — papers: none found
+- breakwater-body — clothing.coat: heavy dark wool overcoat; not an oilskin
+- breakwater-body — clothing.trousers: wool trousers
+- breakwater-body — clothing.shoes: leather-soled shoes; smooth, no grip
+- breakwater-body — death.cause.presumed: drowning
+- breakwater-body — exposure.duration.estimated: several days
+- breakwater-body — facial.origin.assessed: not local; Eira's assessment: possibly non-American European features; she cannot say more
+- breakwater-body — identified: false
+- harbor-log — blank.date: October 2, 1943
+- harbor-log — blank.time: 2300 hours
+- harbor-log — blank.notation_written: Weather: NE gale, 35 knots decreasing at first light. Channel: temporarily impaired.
+- harbor-log — oct3.body_entry.written: true
+- owens-coat — material: wool
+- owens-coat — stored_at: back of the cottage door
+- owens-coat — fit_on_eira: large — wide at shoulder, cuffs past wrists; Eira buttons from the bottom up
+- owens-coat — moved_since_1935: twice only — once for mildew in door frame, once to clean blood from left cuff (Eira's own cut)
+- coldwater-reach-breakwater — length: 300 feet
+- coldwater-reach-breakwater — construction: granite-cut; joints packed with kelp and mussel shell after storms
+- harbormaster-shack — radio.location: shelf to the left of the desk
+- harbormaster-shack — telephone.location: outer wall of the shack
+- harbormaster-shack — lamp.type: oil lamp
+- harbormaster-shack — windows: one window, facing the harbor
+- agnes-louise — status.oct3_1943: aground on shingle at the channel's edge after losing mooring in the gale
+- agnes-louise — owner.likely: Bellamy family
+- The harbor log blank at October 2, 2300 hours is the novel's first displacement object. Eira writes only a weather notation there: 'Weather: NE gale, 35 knots decreasing at first light. Channel: temporarily impaired.' This is not an accident; it is a deliberate act of will. Do not retcon this as an oversight.
+- Owen's coat is described in ch01 as heavy wool, large on Eira (wide at shoulder, cuffs past her wrists); she buttons it from the bottom up. It hangs on the back of the cottage door. She has moved it only twice since Owen's death in 1935: once for mildew in the door frame, once to clean her own blood from the left cuff.
+- The breakwater body's clothing: heavy dark wool overcoat (city coat, not oilskin), wool trousers, leather-soled shoes with no grip. This clothing is logged verbatim in the harbor log and must be reproduced consistently if referenced in later chapters.
+- Aldous Tibbetts is the town constable. He arrived 40 minutes after Eira's call (not 20, as he said). First words on seeing the body: 'Jesus.' He is thorough but limited. He does not touch the body.
+- The county examiner's office at the county seat handles body removal. They came at 1:30 p.m. on October 3 with a truck, two assistants, and a canvas stretcher. The examiner filed a probable-drowning report and kept the signed copy; Eira received the other.
+- The harbormaster's shack has: one oil lamp on the desk; the harbor log on a stand on the desk; the tide chart tacked to the wall above the desk; radio on the shelf to the left of the desk; telephone on the outer wall; one window facing the harbor.
+- The Agnes Louise came off her mooring in the October 1943 gale and went aground on the shingle at the channel's edge. Eira noted this and intended to contact the Bellamy family (provisional attribution). She made notes in the tide chart margin.
+- Eira reports unusual findings to the District Commander's office in Rockland by radio, reading from the log entry. This is established procedure. The Rockland office contacts the county examiner; local constable contact is Eira's affair.
+- The harbor log's October 3, 1943 body entry is verbatim as registered in record 'harbor-log-oct3-1943-body'. The October 2, 2300 notation is registered in 'harbor-log-oct2-1943-2300'. Both must be quoted from those records, not reimagined, if reproduced in later chapters.
+
+## 02-the-fragment
+- marcus-klein — age: 47 years
+- marcus-klein — role: German and Latin teacher at Coldwater Reach High School
+- marcus-klein — origin_place: Vienna, Austria
+- marcus-klein — located_in: Coldwater Reach, Maine
+- marcus-klein — arrival_coldwater_reach: September 1942
+- marcus-klein — internment.location: Sherbrooke camp, Quebec, Canada
+- marcus-klein — internment.duration: 14 months
+- marcus-klein — internment.release_date: late summer 1942
+- marcus-klein — placement.organization: Quaker relief organization (name not disclosed)
+- marcus-klein — room.floor: second story, front room
+- marcus-klein — room.window_direction: east, toward Coldwater Reach High School
+- marcus-klein — room.books: three Latin grammars, one German dictionary, one paperback Rilke Duino Elegies
+- marcus-klein — desk.bottom_drawer_contents: the water-damaged fragment (face-down under a manila folder)
+- marcus-klein — knew_josef_lutz: true
+- marcus-klein — disclosed_recognition_of_fragment: false
+- josef-lutz — origin_place: Vienna, Austria
+- josef-lutz — religion: Jewish
+- josef-lutz — age: 39–41 (approximately, slightly younger than Marcus)
+- josef-lutz — internment.location: Sherbrooke camp, Quebec, Canada
+- josef-lutz — papers.canadian: none valid after release
+- josef-lutz — papers.us_visa: none
+- josef-lutz — destination_intended: New York City, to a distant cousin who emigrated in the 1920s
+- josef-lutz — languages_spoken: four fluently; a fifth poorly (fifth language not identified by Marcus)
+- josef-lutz — character.notable_habit: watches doors; economy of speech; withholds locating details (age, specifics)
+- josef-lutz — identified: false
+- fragment-document — dimensions: approximately 3 inches by 2 inches
+- fragment-document — edges: torn (dissolved), not cut; fiber fails outward from an original tear
+- fragment-document — ink_condition: mostly run to brown shadow; legible only where ink was pressed harder into fiber
+- fragment-document — legible_text: partial salutation arc; 'kalt' (cold); 'ankommen' (to arrive); heading/address block: '...Lutz, J...'
+- fragment-document — recovered_from: clothing of the breakwater body
+- fragment-document — current_location: bottom drawer of Marcus Klein's desk, Crow house, Prospect Street — face-down under manila folder
+- fragment-document — returned_to_graves: false
+- fragment-document — language: German
+- lt-graves — role: naval lieutenant, Rockland district office
+- lt-graves — age.estimated: 25–26
+- sherbrooke-camp — located_in: Quebec, Canada
+- sherbrooke-camp — authority: Canadian War Measures Act
+- henry-crow — role: custodian at Coldwater Reach High School
+- henry-crow — located_in: Crow house, Prospect Street, Coldwater Reach
+- lillian-crow — located_in: Crow house, Prospect Street, Coldwater Reach
+- crow-house — located_in: Prospect Street, Coldwater Reach, Maine
+- crow-house — construction: two-story frame house
+- crow-house — stairs.creaking_steps: third and seventh steps creak
+- The water-damaged fragment is the first physical form of Marcus's displacement object. It is approximately 3x2 inches, torn (not cut) at the edges, with ink dissolved to brown shadow except where pressed harder into the fiber: a partial salutation arc, 'kalt' (cold), 'ankommen' (to arrive/to reach), and in the heading or address block — written in a more upright, deliberate hand — '...Lutz, J...' The rest is unrecoverable. It was recovered by the county examiner's office from the breakwater body's clothing and brought to Marcus by Lt. Graves in late October 1943.
+- Marcus recognized 'Lutz, J.' as likely referring to Josef Lutz — a Viennese German-Jewish refugee he knew at the Sherbrooke internment camp in Quebec. He gave Graves only the surface translation (cold, arrival, the surname Lutz) and said nothing of the recognition. He accepted the fragment for further examination and did not return it. It now sits face-down in the bottom drawer of his desk, under a manila folder. This is the chapter's displacement object (Thread 3 entered).
+- Josef Lutz: Viennese, approximately 39–41 years old (slightly younger than Marcus at 47), interned at Sherbrooke under Canada's War Measures Act. Quiet, economical of speech — not timidity, economy. Gift for languages (four fluent; a fifth, unidentified, said to be poor). Habit of watching doors: which way they open, who uses them, how loud they close — a practiced survival skill, not a nervous tic. He did not announce his age or locating details.
+- Josef Lutz had no valid Canadian papers after his release from Sherbrooke (late 1942 or early 1943 — Marcus is uncertain of the date). He had no US visa. He had a distant cousin in New York who had emigrated in the 1920s; he was trying to reach that cousin. Marcus was released from Sherbrooke in late summer 1942, arrived Coldwater Reach September 1942, and did not learn Josef's fate after that. He had told himself for two years that Josef had made it to New York, because the alternative was not something he had room for.
+- The object rhyme established in chapters 01 and 02: Eira's unreported harbor-log blank (ch01) and Marcus's unreturned fragment (ch02) are both records that should move upward to authority and do not. The reader encounters both in sequence. Neither chapter names the rhyme; the reader assembles it.
+- Marcus Klein's room at the Crow house: front room, second story, window facing east toward the school. Desk with a lamp. Bottom desk drawer. Shelf of books: three Latin grammars, one German dictionary, one paperback copy of Rilke's Duino Elegies (not opened in nearly two years as of late October 1943). The stairs creak on the third and seventh steps.
+- Marcus was placed at Coldwater Reach High School by a Quaker relief organization whose specific name he declines to use. His faculty credentials were real; his references were two dead men and a dissolved institution. He does not discuss the Quebec internment.
+- The Crow house on Prospect Street: two-story frame house near the high school. Henry Crow (school custodian, Black, approximately 60, Maine-born) and Lillian Crow (his wife, runs the house) are Marcus's landlords. They treat him as a paying guest who happens to be a refugee. The house is the only place in Coldwater Reach where Marcus is not a specimen. Henry fixed a loose furnace register in the school's second-floor corridor in late October 1943 (a screw problem, ten minutes).
+
+## 03-allgau
+- hannah-pfeiffer — age: 17 years
+- hannah-pfeiffer — located_in: Pfeiffer dairy farm, Maine
+- hannah-pfeiffer — languages: American English and Allgäu German in roughly equal measure; German is the language of private things
+- hannah-pfeiffer — displacement_object: Karl's note — received mid-November 1943; kept in apron pocket, then dress pocket, then read alone under lamp that evening
+- karl-reinmar — age: 19 years
+- karl-reinmar — origin.region: Allgäu, Bavaria, Germany
+- karl-reinmar — origin.nearest_town: near Marktoberdorf
+- karl-reinmar — origin.distance_from_pfeiffer_village: approximately 50 kilometers
+- karl-reinmar — conscription.age: 18 years
+- karl-reinmar — intended_occupation: carpenter (Schreiner)
+- karl-reinmar — pow_assignment: Pfeiffer farm, Coldwater Reach area, Maine
+- karl-reinmar — witness.road_sighting.location: coastal road, on transport from Bangor; nighttime, rain
+- karls-note — physical.size: small — barely larger than a matchbook when folded
+- karls-note — physical.folds: 4 folds
+- karls-note — physical.writing_instrument: pencil
+- karls-note — physical.paper: small ruled workbook paper — the kind available in a POW camp
+- karls-note — language: German (Allgäu dialect)
+- karls-note — written_by: Karl Reinmar
+- karls-note — held_by: Hannah Pfeiffer
+- karls-note — date_pressed: mid-November 1943 (a Thursday)
+- karls-note — content.closing_sentences: Den Mann auf dem Weg habe ich noch in Erinnerung. Er schien einen langen Weg vor sich zu haben.
+- karls-note — location.end_of_chapter: Hannah's room, Pfeiffer farmhouse — held in both hands in her lap, under the lamp
+- carvell-oakes — age: 61 years
+- carvell-oakes — role: Coastal Patrol guard assigned to Pfeiffer farm POW work crew
+- carvell-oakes — patrol.circuit_interval: approximately every 20–25 minutes; same route; pace adjusted by knee pain
+- carvell-oakes — physical.condition: arthritic knees worsening in cold weather; moves carefully; rifle strap gone slack on one side
+- brauer — role: German POW, Pfeiffer farm work crew
+- brauer — physical.build: older, wide across the back
+- brauer — character.notable_habit: rarely speaks to anyone; present during Karl and Hannah's first exchange but looks at the wall and does not intervene
+- werner-pfeiffer — origin_place: near Kempten, Allgäu, Bavaria
+- werner-pfeiffer — immigration.year: 1922 year
+- werner-pfeiffer — behavior.nov1943: new habit: goes to upper field before POW truck arrives; stays until truck leaves; does not explain this to Hannah
+- marta-pfeiffer — habit.morning: listens to morning weather radio news with careful attention
+- pfeiffer-farm — distance_from_town: 3 miles
+- pfeiffer-farm — access: gravel road, inland
+- pfeiffer-farm — pow_crew.size: 4 men
+- Karl Reinmar pressed a small folded note (four folds, pencil on ruled workbook paper) into Hannah's palm in the Pfeiffer barn corridor in mid-November 1943, when Carvell Oakes had his back turned. He said 'Don't read it here' in English. Hannah kept it in her apron pocket all afternoon and read it alone that evening under the lamp in her room. This is Hannah's primary displacement object (Thread 2 entered).
+- The note's exact text (German, canonical — registered as record karls-note-text): 'Karl Reinmar. Marktoberdorf, Allgäu. / Man hat mich eingezogen, als ich achtzehn war — ich wollte Schreiner werden, das war mein Plan. Dann kam ein Brief. Nun bin ich hier. / Die Rinder erinnern mich an daheim. Das ist keine Klage. / Den Mann auf dem Weg habe ich noch in Erinnerung. Er schien einen langen Weg vor sich zu haben.' Any later chapter that re-quotes this note must use read_record on 'karls-note-text' and reproduce the text verbatim.
+- Karl Reinmar is from near Marktoberdorf in the Allgäu region of Bavaria — approximately 50 kilometers from the Pfeiffer family's home region near Kempten. This geographic proximity is the foundation of the dialect-recognition that opens Thread 5 (Hannah and Karl).
+- Karl Reinmar was conscripted at age 18; his intended trade was Schreiner (carpenter). He was on a transport from Bangor in mid-October 1943 and saw, through a rain-fogged truck window, an older man walking along the coastal road verge at night — light on his feet, carrying something, moving in the direction of the water. This is Karl's only witness account of what is likely Josef Lutz's last known sighting. The detail is in the note's final two sentences.
+- Hannah's first exchange with Karl was in the Allgäu dialect, prompted by Hannah hearing Karl speak to Brauer and saying *Gell?* before she thought. The exchange established: her family's origin near Kempten; her father Werner is 'still from there' (*immer noch von dort*); Karl is from near Marktoberdorf. Thread 5 (Hannah and Karl) entered through dialect recognition before any other fact about Karl.
+- Carvell Oakes (Coastal Patrol guard, Pfeiffer farm) makes his patrol circuit approximately every 20–25 minutes; Hannah has learned this pattern. He is arthritic (cold worsening his knees); his rifle strap is slack. He is not alert. Hannah uses his circuit timing to judge safe windows.
+- Brauer: German POW on the Pfeiffer farm crew — older, wide-shouldered, almost never speaks. Present in the barn corridor during Karl and Hannah's first exchange; he looked at the wall and did not intervene.
+- Werner Pfeiffer has developed a new habit in November 1943: he goes to the upper field before the POW truck arrives each morning and stays there until it leaves. Hannah has noticed this but has not asked about it. This behavior foreshadows his connection to the dock incident (Thread 4).
+- The object rhyme across three chapters: Eira's harbor-log blank (ch01), Marcus's unreturned fragment (ch02), Hannah's received-and-kept note (ch03) — all three are records that carry knowledge and do not go where they are supposed to go. The pattern is established for the reader across the braid's first three chapters.
+
+## 04-the-commander
+- commander-willard — role: Commander, Naval District, Rockland, Maine
+- commander-willard — age.estimated: approximately 60
+- commander-willard — located_in: Rockland, Maine
+- commander-willard — visit.coldwater_reach.date: mid-November 1943, a Tuesday
+- commander-willard — character.notebook: small stiff-covered notebook; he writes during interviews
+- breakwater-body — official_disposition: interment as Unknown Man, October 1943, in Coldwater Reach town cemetery; case closed by Naval District Rockland
+- breakwater-body — registry_searches_run: merchant marine rosters (Allied and German), naval registries (American and German), civilian missing-persons reports (Maine and eastern Canada, four months prior); no match found
+- breakwater-body — cemetery_stone.text: Unknown Man, October 1943
+- breakwater-body — interment.location: Coldwater Reach town cemetery
+- body-photograph — taken_by: county photographer
+- body-photograph — taken_date: October 3, 1943
+- body-photograph — subject: the unidentified body on the seaward face of the Coldwater Reach breakwater; face partially visible — left cheek, jaw, brow
+- body-photograph — eira_recognition: Eira looked carefully and said she did not recognize the man; technically true — she saw a living man at distance and at night; the photograph shows the dead
+- harbor-log — oct2_blank.official_review: Commander Willard read the October 2 entries including the 2300 weather notation; he did not pause at the gap between 1630 and 2300; the blank survived official review
+- harbor-log — legal_status.nov1943: officially reviewed and found satisfactory by Commander Willard; now the record on which the closed case rests
+- eira-bowman — instruction_from_rockland: contact Rockland immediately if any information surfaces about the unidentified man — a letter, a missing report, or anything
+- coldwater-reach-cemetery — located_in: Coldwater Reach, Maine
+- Commander Horace Willard (Naval District, Rockland, approximately sixty) visited the harbormaster's shack on a Tuesday in mid-November 1943 to take Eira's formal report on the October 3 body finding. He used a small stiff-covered notebook. He is respectful, efficient, and not an antagonist — he is the procedure.
+- During Willard's visit, Eira opened the log. He read October 2 (including the 2300 weather notation 'Weather: NE gale, 35 knots decreasing at first light. Channel: temporarily impaired.') and then October 3 (the full body entry). He did not pause at the gap between 1630 and 2300. He had no reason to look for a blank because the log gave him none. The blank at October 2, 2300 survived official review.
+- Willard produced the county photographer's photograph of the dead man on the breakwater (left cheek, jaw, brow visible; body features altered by several days in the water). Eira looked at it carefully and said she did not recognize him. This is technically true: she saw a living man at distance and at night; the photograph shows the dead. She cannot say they are the same person, though she suspects they are. Her answer is technically honest.
+- Willard's close question: 'Any vessel traffic the night before? Night of the second?' Eira answered: 'Gale conditions all through the second. Channel was flagged. No vessel traffic.' This is technically accurate — she logged no vessel traffic. She saw a man on the dock. She did not log him as vessel traffic; she did not log him at all. The Commander accepted this and moved on.
+- Official disposition established in ch04: the searches (merchant marine rosters Allied and German, naval registries American and German, civilian missing-persons reports Maine and eastern Canada four months prior) yielded no match. The body will be interred in the Coldwater Reach town cemetery as 'Unknown Man, October 1943.' The case is closed from Rockland's perspective unless new information comes in. Eira is asked to contact Rockland immediately if anything surfaces.
+- The blank at October 2, 2300 has now survived the one official review that might have caught it. It lives inside a formally completed investigation. This means it is now harder, not easier, to fill in — the blank has acquired legal weight as part of the satisfactory record.
+- After Willard left, Eira opened the log, put her thumb on the 2300 weather notation line, held it there, and closed the log. This is the chapter's closing gesture and must not be retconned as something else.
+- The cemetery stone will read 'Unknown Man, October 1943.' This is the text established in ch04 (confirmed per threads.md) and must be reproduced exactly in the novel's ending (ch18-the-reach).
+
+## 05-the-name
+- simon-ehrlich — religion: Jewish
+- simon-ehrlich — origin_place: Germany (specific city not identified)
+- simon-ehrlich — internment.location: Sherbrooke camp, Quebec, Canada
+- simon-ehrlich — internment.duration: 8 months
+- simon-ehrlich — internment.release_reason: administrative sorting error (released early; Ehrlich had the sense not to contest it)
+- simon-ehrlich — located_in: Montreal, Quebec, Canada
+- simon-ehrlich — occupation: refugee-aid clearinghouse operator, under cover of book distribution concern
+- simon-ehrlich — neighborhood: Côte-des-Neiges, Montreal
+- marcus-magnifying-glass — construction: German-made; brass casing worn smooth along top and left side
+- marcus-magnifying-glass — carried_since: Vienna (before Marcus's departure from Austria)
+- marcus-magnifying-glass — storage_location: Marcus's left coat pocket
+- unsent-letter-to-ehrlich — draft_number: second (first draft burned in Crow house kitchen stove)
+- unsent-letter-to-ehrlich — disguise_form: academic inquiry about German-language classroom texts, with personal aside asking after Josef Lutz
+- unsent-letter-to-ehrlich — sent: false
+- unsent-letter-to-ehrlich — current_location: bottom drawer of Marcus Klein's desk, Crow house — folded once, beside the fragment
+- unsent-letter-to-ehrlich — addressed: false (envelope not addressed)
+- josef-lutz — occupation_training: trained as an archivist; knew the Josefsgasse building in Vienna, its card catalog organized by provenance, the basement stacks
+- josef-lutz — sherbrooke.bunk_row_distance_from_marcus: two rows (B-block; 40 men between them in one direction, 12 in the other)
+- josef-lutz — identified.by_marcus: true (Marcus's private certainty as of ch05; not externally confirmed)
+- fragment-document — legible_text.date_fragment: Okto— (October; year illegible)
+- fragment-document — legible_text.city_fragment: Qu— (two letters, proper noun; read by Marcus as probable Quebec)
+- fragment-document — legible_text.phrase_bottom: ...nicht mehr warten... (can wait no longer; ink smeared, dragged before drying)
+- fragment-document — examined_method: magnifying glass under oblique lamp angle, first full scholarly examination (ch05, Saturday morning, late November 1943)
+- Marcus's magnifying glass is a small German-made lens, brass casing worn smooth along the top and left side where his thumb rests. He has carried it in his left coat pocket since Vienna, through every subsequent address (Paris, London, Quebec, Coldwater Reach). It is a scholar's instrument, not a personal keepsake — but it has survived everything. When he uses it in ch05 he sets it beside the lamp on the desk; when he is done he returns it to his coat pocket.
+- Simon Ehrlich: a German-Jewish refugee Marcus knew at the Sherbrooke internment camp in Quebec. Ehrlich was at Sherbrooke for approximately eight months, released early through an administrative sorting he had the sense not to contest. He is now in Montreal, in the Côte-des-Neiges neighborhood, running a refugee-aid clearinghouse that operates under cover of a book distribution concern. Marcus has his address memorized and not written down anywhere. They have not been in contact in fourteen months as of ch05. Ehrlich knew Josef Lutz — they were all at Sherbrooke together.
+- In ch05, Marcus burns the first draft of a letter to Ehrlich in the Crow house kitchen stove. The burning is a practical act, not a dramatic one — he has done this before, in other cities. He closes the gate and goes back upstairs. This should not be retconned as a moment of anguish.
+- The unsent second-draft letter to Ehrlich (ch05) is folded once and placed in the bottom drawer of Marcus's desk, beside the fragment, under the manila folder. It is addressed to Simon Ehrlich but the envelope is not prepared and Marcus does not go to the post office. In ch08-montreal, when Marcus finally sends it, the drafter should treat the act of addressing the envelope and walking to the post office as a consequential choice — the moment the kept thing becomes sent.
+- Josef Lutz was in the bunk two rows from Marcus's in the B-block at Sherbrooke. Marcus knows the exact count of men between them (40 in one direction, 12 in the other) because he counted them — the same practice Josef used, and Marcus recognized the practice without naming it. Josef's door-watching habit and Marcus's body-counting are two forms of the same practiced survival attention. This is a specific, established characterization detail for Josef; subsequent Marcus chapters that reference Sherbrooke must not contradict it.
+- Josef Lutz was trained as an archivist in Vienna. He knew the Josefsgasse building (the archive's location), the card catalog organized by provenance rather than subject, and the smell of the leather-bound books in the basement stacks. He described these things to Marcus at Sherbrooke with the specific attention of a man describing something he can see clearly because it is not in front of him. This is new information introduced in ch05 and must be consistent in all subsequent Marcus chapters.
+- The fragment's oblique-angle examination (ch05) reveals three new elements not established in ch02: (a) a partial date, *Okto—* (October; year consumed by water damage; range 1940-1945); (b) a proper-noun fragment, *Qu—* (Marcus reads this as probable Quebec, without treating it as certain); (c) a smeared phrase near the bottom: *...nicht mehr warten...* (can wait no longer — ink dragged before drying). These three elements, combined with the established *Lutz, J.*, *kalt*, and *ankommen*, constitute the full legible text of the fragment as established. Nothing further can be recovered.
+- The object rhyme across ch05 (Marcus) and the upcoming ch06 (Hannah): Marcus puts the unsent letter in the drawer with the fragment — both held, neither sent. In ch06, Hannah moves Karl's note from her pocket into the lining of her school bag — kept, but now actively concealed. Both characters are in the same motion: from passive holding to deliberate keeping. The drafter of ch06 should be aware of this rhyme without naming it in the prose.
+
+## 06-the-lining
+- karls-note — concealment.method: sewn into inside bottom seam of Hannah's school bag — three inches of seam opened with a blunt darning needle, note worked flat against inner canvas, stitched back with black thread (seven stitches, two knots)
+- hannah-school-bag — material: canvas, tan
+- hannah-school-bag — strap.condition: worn to softness at the buckle from use
+- hannah-school-bag — seam.original_thread_color: burnt orange (factory thread — never matched the bag's color)
+- hannah-school-bag — seam.repair_thread_color: black (wrong color; from Marta's sewing box)
+- hannah-school-bag — stored_prior_location: back of Hannah's closet, behind winter coat and outgrown rubber boots
+- wilders-landing — located_on: coastal road between Bangor and Coldwater Reach, Maine
+- wilders-landing — fictional: true
+- wilders-landing — role_in_narrative: named point on the POW transport route from Bangor; helps Hannah trace Karl's road-sighting geographically toward the breakwater body
+- marta-pfeiffer-placemats — design: American flag with small gold eagle in the corner
+- marta-pfeiffer-placemats — acquired_from: Atwood's general store, Coldwater Reach
+- marta-pfeiffer-placemats — acquired_date: spring 1943
+- hannah-pfeiffer — school.attendance_status: irregular since spring 1943; farm labor demands have largely displaced school attendance
+- hannah-pfeiffer — displacement_object.location.ch06: lining of old school bag — sewn in; school bag on hook by stairs in Pfeiffer farmhouse
+- werner-pfeiffer — behavior.dec1943: watches Karl Reinmar in the yard with visible recognition and its cost; sits at the evening radio without attending to it — eyes on floor, hands on knees
+- breakwater-body — clothing.shoes.town_knowledge: smooth-soled, no grip — Constable Tibbetts's view (relayed via Jess Atwood) was the man came from inland because of the shoes
+- breakwater-body — papers.town_knowledge: town rumor (November 1943): no papers, or papers got damaged — not confirmed
+- karl-reinmar — transport.route.nov1943_crew_final_day: last full workday before winter reduction was in early December 1943; crew reduced to once-per-week schedule thereafter
+- karl-reinmar — transport.route.bangor_to_coldwater: coastal road from Bangor, passing Wilder's Landing, south into Coldwater Reach — route of Karl's October 1943 transport on which he saw the man on the road
+- carvell-oakes — behavior.ch06: went to the wagon shed during the morning work and did not come back — effectively absent from supervision
+- Karl's note (Hannah's displacement object) has been moved from her coat pocket to the lining of her old school bag as of ch06-the-lining. The school bag is canvas, tan, with a strap worn soft at the buckle; it hangs on the hook by the Pfeiffer farmhouse stairs. The seam was opened with a blunt darning needle and stitched back with black thread (seven stitches, two knots) from Marta's sewing box. Nothing is visible from the outside. The note's status is now actively concealed, not passively kept.
+- Wilder's Landing is a named point on the coastal road between Bangor and Coldwater Reach, Maine (fictional). The POW transport from Bangor passes it going south into town. Hannah identifies this as the route on which Karl saw the man moving toward the water.
+- Hannah has heard two things about the breakwater body at Atwood's and school (ch06): (1) Constable Tibbetts believed the man came from inland based on his smooth-soled shoes (relayed by Jess Atwood at the counter); (2) a school rumor that the man had no papers, or papers got damaged. Neither is confirmed. These fragments are beginning to connect in Hannah's mind to Karl's note — the geography (coastal road, Wilder's Landing, direction of the water) is forming but has not resolved into a named conclusion.
+- Werner Pfeiffer's watching of Karl in the yard (ch06) is rendered through posture and back-reading, not through his face or named emotion: 'not anger... something that cost more than either of those things — a quality of recognition and what the recognition required of him.' Hannah reads this from behind him; she cannot see his face. Werner says nothing to Hannah about it. This is the chapter's foreshadowing of Thread 4 (Werner on the Dock) without naming it.
+- The object rhyme established across ch05 and ch06: Marcus moved his displacement objects (fragment + unsent letter) to deliberate keeping in the drawer (ch05); Hannah moved her displacement object (note) to deliberate concealment in the bag lining (ch06). Both characters made the same transition — from passive retention to active concealment — in consecutive chapters across the braid. The pattern should be held without naming it in subsequent chapters.
+- Marta Pfeiffer sets American flag placemats with a small gold eagle in the corner at each table place every evening; ordered from Atwood's spring 1943. Hannah notices this practice without commenting on it — the prose does not name it as performance, though it is.
+
+## 07-owens-pages
+- jared-cates — role: lobsterman, Coldwater Reach
+- jared-cates — vessel.size_approx: 34 feet
+- jared-cates — offense.date: November 19, 1933
+- jared-cates — offense.description: unlicensed vessel running without lights outside licensed grounds, making for the cove at 0100 during a nor'easter
+- jared-cates — penalty: one week's hauling rights; accepted formal warning without appeal
+- jared-cates — logged_by: Owen Bowman; reported to Rockland 11/21/33
+- owen-bowman — log.handwriting.pressure: heavier-pressed than Eira's; pen held at steeper angle; downstrokes thicker than upstrokes
+- owen-bowman — log.standard: no gaps found in any year; every observed event logged without correction; entries written complete in first draft
+- owen-bowman — log.1933_storm_entry.date: November 19, 1933
+- owen-bowman — log.1933_storm_entry.incident: unlicensed vessel J. Cates observed at 0100, heading 280, approximately 30 feet; reported to Rockland 11/21/33
+- harbor-log-old-volume — start_date: February 1941
+- harbor-log-old-volume — close_date: early November 1943
+- harbor-log-old-volume — storage_location: shelf below the log stand in the harbormaster's shack
+- harbor-log-old-volume — spine.condition: broken slightly at November 1933 section from repeated openings
+- harbor-log-old-volume — crossedout_entry.date: October 2, 1943 (written in January 1944 and immediately crossed out)
+- harbor-log-old-volume — crossedout_entry.text: October 2, 1943. 2300 hours. Weather—
+- harbor-log-old-volume — crossedout_entry.initials: E.B.
+- harbor-log-old-volume — crossedout_entry.correction_notice: [Entry error — see correction below.] Ice report, 0015 hours: Number-two marker holding. Ice: flanks, three-quarters inch. Channel: open.
+- harbor-log-old-volume — legal_status.jan1944: contains crossed-out entry attempt at October 2 2300 — single line through original text, initialed E.B., correction notice below; correct legal form; visible to any close reader of October 2
+- agnes-louise — mooring.status.nov1933: on mooring during November 19, 1933 nor'easter — listed by name in Owen Bowman's 0300 mooring check
+- eira-bowman — blank.understanding.jan1944: understands as of January 1944 that the blank is permanent — not 'not yet' but 'never'; committed by accumulation over three months, not by a single decision
+- harbormaster-shack — log.shelf_location: shelf below the log stand on the desk; old volumes stored there
+- In January 1944, Eira attempted to write a corrective entry in the old harbor log volume at October 2, 2300 hours: she wrote 'October 2, 1943. 2300 hours. Weather—' and stopped. What would have followed: 'Dock. Male observed, east dock, approximately 2310. Alive. Approximately fifty-five years. European features. Not alone. Second figure present; not clearly seen. Second figure: person I believe I recognized, though I spoke to neither.' She drew a single line through the attempted entry, initialed it E.B., and wrote a correction notice and an ice report below. The entry is correct in legal form. It is now visible to any close reader of October 2 in the old volume.
+- Owen Bowman's log standard: every observed event was logged without exception. No gaps were found in any year of his record. His entries were written complete in the first draft, no corrections. His handwriting is heavier-pressed than Eira's — the pen held at a steeper angle so the downstrokes are thicker and the upstrokes finer. Any later chapter that describes Owen's handwriting must be consistent with this physical description.
+- Owen's November 19, 1933 storm entry logged an unlicensed vessel (J. Cates, lobsterman, Coldwater Reach; approximately 30 feet; running without lights making for the cove at 0100) and reported it to Rockland on 11/21/33. The entry cost Cates a week's hauling rights. This entry is registered as record 'harbor-log-owen-nov1933-unlicensed' and must be quoted verbatim in any later chapter that re-reads it.
+- The crossed-out entry attempt at October 2, 2300 in the old harbor log volume is registered as record 'harbor-log-oct2-1943-crossedout' and must be quoted verbatim in any later chapter that depicts a character reading the old volume closely. The full legal form: single line through 'October 2, 1943. 2300 hours. Weather—', initialed E.B., correction notice '[Entry error — see correction below.]', ice report at 0015 hours below.
+- The Agnes Louise was on her mooring during the November 19, 1933 nor'easter — listed by name in Owen Bowman's 0300 mooring check. This means the vessel has been in the harbor since at least 1933, consistent with Bellamy family long-term ownership.
+- The object rhyme across chapters 05-06-07: Marcus moved fragment and unsent letter to deliberate keeping (ch05); Hannah moved Karl's note from pocket to hidden bag lining (ch06); Eira crossed out the attempted entry and understood the blank is permanent (ch07). All three threads have now completed the same motion — from passive holding to irreversible concealment. The pattern is available to the reader across the braid but is never named in the prose.
+
+## 08-montreal
+- ehrlich-letter-feb1944 — postmark: Montreal, P.Q.
+- ehrlich-letter-feb1944 — postmark_date: February 26, 1944
+- ehrlich-letter-feb1944 — return_address: unrecognized suite number, Montreal (not Ehrlich's Côte-des-Neiges address — sent for caution)
+- ehrlich-letter-feb1944 — language: English
+- ehrlich-letter-feb1944 — current_location: bottom drawer of Marcus Klein's desk, Crow house, Prospect Street — under manila folder on top of the fragment
+- ehrlich-letter-feb1944 — key_facts.josef_release: November 1942 (Ehrlich's recollection)
+- ehrlich-letter-feb1944 — key_facts.josef_departure_montreal: first days of September 1943
+- ehrlich-letter-feb1944 — key_facts.expected_word_by: November 1943
+- josef-lutz — internment.release_date: November 1942
+- josef-lutz — departure_montreal.date: first days of September 1943
+- josef-lutz — departure_montreal.assisted_by: Simon Ehrlich (practical details — documents, route, possibly funds)
+- josef-lutz — last_known_contact.date: early September 1943 (departure from Montreal)
+- josef-lutz — identified.confirmed_external: true — confirmed by Ehrlich's letter (February 1944) as the Josef Lutz Marcus knew at Sherbrooke
+- josef-lutz — sherbrooke.reading_habit: borrowed every German-language text in the B-block lending arrangement; handled books with archivist care (spine, page-turning from corner); read as if uncertain of the next book
+- josef-lutz — sherbrooke.notable_quote: Said in the third winter (German): "The problem with travel is that it is incompatible with libraries."
+- josef-lutz — travel_possessions.inferred: would have carried one or two books along with papers — archivist's habit; Marcus's inference
+- marcus-klein — desk.bottom_drawer_contents: the water-damaged fragment (face-down under manila folder) and Ehrlich's February 1944 letter — both under the manila folder
+- marcus-klein — ehrlich_letter_sent.date: second week of February 1944
+- marcus-klein — ehrlich_contact.last_written: second week of February 1944 (sent; reply received late February / early March 1944)
+- The Ehrlich letter (February 1944) is the chapter's primary displacement object advance. Marcus now holds two documents in the bottom drawer of his desk: the fragment recovered from the breakwater body's clothing, and Ehrlich's reply confirming Josef Lutz's departure from Montreal in early September 1943. Both are under the manila folder. Neither has been filed, returned, or disclosed. This is the displacement object's third stage (fragment retained ch02; letter drafted and kept ch05; confirmed reply received and held ch08).
+- Josef Lutz departed Montreal in the first days of September 1943. Simon Ehrlich assisted with the practical details of departure (documents, route, possibly funds). Ehrlich's Montreal network of contacts expected to hear from Josef by November 1943 at the latest. They received no word. As of March 1944, Ehrlich does not know Josef is dead.
+- The route from Montreal south to New York for a man without papers runs east into New England first, then south through Maine along the coast. Marcus calculates: September plus six to eight weeks puts Josef in Maine mid-October to November 1. The body came in on October 3, 1943. Marcus treats this as confirmed by four independent sources: departure date (Ehrlich), route (geography), destination/timing (fragment text — ankommen, nicht mehr warten), date (newspaper account from late October 1943).
+- Josef Lutz at the Sherbrooke camp B-block: borrowed every German-language text from the block's lending arrangement every two weeks, regardless of the text's quality. Handled borrowed books with an archivist's care — careful with the spine, turned pages from the corner. Said in the third winter (in German): 'The problem with travel is that it is incompatible with libraries.' Marcus infers he would have carried one or two books and his papers when he traveled south in September 1943.
+- Object rhyme (ch08 ↔ ch07): Marcus's two held documents (fragment + Montreal letter) rhyme with Eira's two-layer log entry (written entry + crossed-out attempted entry, ch07). Both characters now carry doubled records: something found and something confirmed, something written and something withheld. The pattern of layered documentation runs across threads without being named in the prose.
+- Any later chapter that re-quotes Ehrlich's February 1944 letter must call read_record on 'ehrlich-letter-feb1944' and reproduce the text verbatim. The letter is coded English: academic cover text (Diesterweg graded readers, Langenscheidt series) followed by the Josef paragraph (November 1942 release; first days of September 1943 departure; practical details of departure unspecified; November 1943 expected word; closing: 'I had hoped he had simply lost touch. If you have heard anything of him, I would be grateful to know it.').
+- The unsent letter to Ehrlich (ch05, second draft, folded in drawer) has been sent as of the second week of February 1944 — Marcus addressed it and walked to the Prospect Street post-box on a Saturday morning before Henry came downstairs. It is no longer in the drawer. The drawer now contains only the fragment and Ehrlich's reply.
+
+## 09-the-road
+- karl-reinmar — witness.road_sighting.date: early October 1943 — Thursday or Friday night (Karl's uncertain recollection); approximately October 1–2, before the body was found October 3
+- karl-reinmar — witness.road_sighting.time_approx: approximately 2200–2300 hours
+- karl-reinmar — witness.road_sighting.description: older than Karl (perhaps fifty, perhaps a little more), slight build (not a farmer), long city coat (not an oilskin), carrying a bundle or bag held close to the body, moving toward the water; turned and looked directly at the truck through the rain, then kept walking
+- karl-reinmar — witness.road_sighting.visibility_duration: approximately ten seconds — truck slowed for a fallen branch at Wilder's Landing, then moved on immediately
+- karl-reinmar — witness.road_sighting.told_to: Hannah Pfeiffer — oral account, barn corridor, Pfeiffer farm, late March/early April 1944
+- karl-reinmar — witness.road_sighting.body_knowledge: Karl does not know Josef is dead — he infers the death from Hannah's reaction; he does not press; this is his state as of April 1944
+- karls-note — status: two-sided document — Karl's writing on one side (November 1943), Hannah's written account on the other (April 1944); currently in Hannah's coat pocket
+- karls-note — location.end_of_chapter: Hannah's coat pocket — removed from bag lining the night before the barn scene; to be re-sewn into the bag the next day
+- karls-note — reverse_side.written_by: Hannah Pfeiffer — April 1944, kitchen table, Pfeiffer farmhouse
+- karls-note — reverse_side.language: German — small, careful, light-pressed pencil hand
+- karls-note — reverse_side.content_summary: Hannah's transcription of Karl's oral account: Wilder's Landing, Küstenstraße; Oktober 1943, Donnerstag oder Freitag, nachts, gegen zehn oder elf; einen Mann zu Fuß auf der linken Straßenseite; älter, schmächtig, einen langen Mantel (Stadtmantel); trug etwas (Bündel oder Tasche), nah am Körper; Bewegte sich Richtung Wasser; Sah sich um — schaute den Truck direkt an, durch den Regen; Lief weiter.
+- breakwater-body — last_known_sighting.location: Wilder's Landing, coastal road (Küstenstraße), between Bangor and Coldwater Reach, Maine — left side of road heading south
+- breakwater-body — last_known_sighting.time: approximately 2200–2300 hours, early October 1943 (Thursday or Friday night before the body was found October 3)
+- breakwater-body — arrival_manner: walked to the dock under own power — he was alive and ambulatory at Wilder's Landing moving toward the harbor; the dock was a destination, not a dump site
+- breakwater-body — last_known_sighting.witness: Karl Reinmar — sole known witness; saw the man from a POW transport truck at Wilder's Landing for approximately ten seconds
+- hannah-pfeiffer — knowledge.breakwater_body.last_sighting: knows Josef walked to the dock under his own power — but does not know what happened at the dock; holds the only written account of Karl's testimony
+- MIDPOINT RECONTEXTUALIZATION (ch09): Josef Lutz (the breakwater body) walked to the Coldwater Reach harbor under his own power on the night of early October 1943. He was alive and moving purposefully at Wilder's Landing on the coastal road — approximately 2200–2300 hours, Thursday or Friday night — heading toward the water. He was not carried or disposed of at the dock. The dock was a destination, a meeting place. What happened between his arriving there and the body found on the breakwater seaward face at 0615 on October 3 remains unknown. The theory that the dock was a dump site is now impossible. Karl Reinmar is the only known witness to this sighting.
+- The midpoint's displacement object: Karl's note is now a two-sided document. Karl's writing on one side (pressed hard into the paper with a pencil, Allgäu German, November 1943). Hannah's transcription of his oral account on the other side (light pencil, careful German, April 1944). Both their hands in the same paper. The note is the only written record of the last known sighting of Josef Lutz. Hannah holds it. She has not shown it to anyone else and has no plan to.
+- Object rhyme at the midpoint: Hannah's two-sided note (Karl's testimony + Hannah's transcription, two moments in one paper) rhymes exactly with Eira's two-layer harbor log entry (the original blank + the crossed-out attempted entry, two intentions in one book — ch07). Both documents now carry more than their original writing; both record something in two hands, two moments, two intentions. The braid's three primary displacement objects have all been doubled or layered by the midpoint.
+- Karl Reinmar's road sighting date corrected in ch09: the ch03 logging of 'mid-October 1943' was an imprecise approximation. The ch09 midpoint recontextualization establishes the correct date as early October 1943 — Thursday or Friday night (Karl's uncertain recollection), approximately October 1–2, consistent with the body being found on October 3 at 0615. All subsequent chapters must use the corrected date.
+- Karl Reinmar does not know Josef Lutz is dead. He infers the death from Hannah's reaction in the barn corridor (April 1944). He does not press her. This is his state of knowledge as of ch09. He saw a man walking on a road in the rain; he did not know the man died. This should not be retconned.
+- The barn corridor exchange (April 1944): Hannah showed Karl his own note (his side facing him), asked in German — Das hier. Der Mann auf dem Weg. Erzähl mir davon. Karl told her his account. Exchange ended with: Karl — War es der Mann? Hannah — Ich glaube schon. Karl — Was denkst du, was passiert ist? Hannah — Ich weiß es nicht. Oakes returned from the wagon shed; they were working when he rounded the corner. No further exchange.
+- Hannah opened the school bag seam the night before the barn scene — cut the seven stitches with the tip of her sewing scissors, one at a time. She carried the note in her coat pocket to the barn. She intends to re-sew the bag the next day. As of ch09's end, the note is in her coat pocket, not the bag lining.
+
+## 10-no-new-information
+- rockland-inquiry-form — case_number: CLD-43-081
+- rockland-inquiry-form — due_date: April 15, 1944
+- rockland-inquiry-form — received_date: April 6, 1944 (approximately — "a week before April 13")
+- rockland-inquiry-form — mailed_date: April 13, 1944
+- rockland-inquiry-form — answer.new_information: None
+- rockland-inquiry-form — legal_status: signed by Eira Bowman, mailed April 13, 1944 — second official document affirming no new information; constitutes an active lie-on-paper as opposed to the log blank's passive omission
+- mrs-welliver — role: postmistress of Coldwater Reach post office
+- mrs-welliver — located_in: Coldwater Reach
+- eira-bowman — dock_observation.apr1944_inventory: October 2 approximately 2310: east dock, man alive standing upright not in distress, long dark wool coat not oilskin, European appearance not local; second figure to his left 10-12 feet away, height and shoulder posture she thought she recognized as local, could not name at that distance in the dark; she did not speak to either; she went back to the shack; by 0615 he was against the seaward face
+- eira-bowman — breakwater_end.last_visit: October 1943 — then not again until April 13, 1944; went to mid-point twice in winter but turned back both times
+- eira-bowman — official_omissions.count: 2 documents
+- Eira mailed the Rockland follow-up inquiry form (Case No. CLD-43-081) on April 13, 1944 — two days before its April 15 deadline. She answered 'None' to new witnesses, evidence, or information. The form constitutes the second official document in which she has affirmed no new information about the October 1943 case. The log blank was passive (an entry not made); the inquiry form is active (a signed 'None' mailed to Rockland).
+- Eira's internal inventory of October 2, 1943 — the clearest account rendered in the novel to this point: east dock, approximately 2310 hours; a man alive and upright, not in distress; long dark wool coat, not an oilskin, not a fisherman's coat; European appearance, not local; not alone — a second figure to his left, ten to twelve feet away, whose height and shoulder arrangement she thought she recognized as someone from the town; she did not speak to either; she went back to the shack; by 0615 he was against the seaward face. This inventory exists only in Eira's memory and in the form she has mailed with 'None' written over it.
+- Eira walked to the breakwater's end for the first time since October 1943 on April 13, 1944. She had gone to the mid-point twice during winter (once for the navigation light check, once without a stated errand) but turned back both times. The seaward face of the stone — the concavity where the body was found — is observed: barnacles heavy from winter, kelp starting in the lower angle, a fouled line on the upper ring bolt (to be cleared by Noss).
+- A stone in the fourth course near the breakwater pier head has lifted slightly from the winter freeze-thaw. Reported to Rockland in February; not yet resolved. Not dangerous but noted in the maintenance log.
+- Mrs. Welliver is the postmistress of the Coldwater Reach post office (brick building on the main street, two doors past the Congregational church). The morning mail pick-up is gone by mid-morning; outgoing mail goes at two-thirty in the afternoon.
+
+## 11-the-crow-table
+- henry-crow — knows_marcus_holds_dead_man_knowledge: true
+- henry-crow — knows_dead_man_identity: false
+- marcus-klein — disclosed_to_henry: partial — said he thinks he may have known who the man on the breakwater was, from before, from another time; did not name Josef Lutz, did not name Sherbrooke, did not name Ehrlich, did not show documents
+- marcus-klein — sole_keeper_of_dead_man_identity: false
+- crow-house — located_in: Prospect Street, Coldwater Reach
+- crow-house — dining_room.window_direction: west
+- marcus-klein — school_schedule.last_class: fourth period; grades in faculty room before walking home; arrives Crow house approximately 4:30 PM
+- henry-crow — school_schedule.departure: leaves school when the final bell rings; home by approximately 3:00 PM
+- ch11 (Marcus POV, May 1944): At dinner, Marcus tells Henry Crow that he thinks he may have known who the man on the breakwater was — 'from before, from another time.' He does not name Josef Lutz, does not name Sherbrooke, does not produce or describe the documents in the bottom drawer. Henry nods once, slowly, and says: 'That happens in a war. A man gets far from home and farther still, and then he runs out of road.' He then picks up his fork. Lillian refills the water glasses and puts more chicken on Marcus's plate without asking. The subject does not return. After clearing the table, Marcus goes upstairs, sits at the desk, does not open the bottom drawer, and goes to bed.
+- ch11: The Crow house dinner routine (May 1944): the household eats at half past five. Table conversation includes Henry's furnace-memo grievance (the school principal's determination that the furnace is adequate, from the second story of a building with a working radiator) and Lillian's mention of the Ladies' Auxiliary spring wool drive (third collection since November; socks). Marcus participates in the way that has become natural over twenty months.
+- ch11: Object rhyme — Marcus's oral partial disclosure at the Crow table (person-to-person, no paper, no official channel) rhymes with Karl and Hannah's oral exchange in the barn (ch09): both are instances of knowledge moving between two people without documentation. The pattern of unrecorded transmission as an alternative to official reporting accumulates across the braid.
+- ch11: Marcus's interior at the desk (upstairs, after dinner): he catalogues what he did not say (Josef Lutz's name, Sherbrooke, Ehrlich, the documents) and names the structural consequence — the disclosure was partial, offered without terms, received without terms, in the form the table could hold. He names this as 'no longer alone with it.' He does not open the drawer. He goes to bed.
+
+## 12-not-yet
+- werner-pfeiffer — behavior.jun1944: going to bed early for several weeks since before the POW crew returned in March 1944 — does not explain this
+- werner-pfeiffer — speech.private_name_for_hannah: Hanna — the German form, without the English H at the end; used without thinking in the house
+- werner-pfeiffer — habit.tobacco: smokes a pipe; keeps tobacco in various coat pockets to avoid Marta's disapproval; rationing has made tobacco scarce
+- werner-pfeiffer — behavior.jun1944.near_discovery: searched barn coat in Hannah's closet for tobacco; did not find it; his boot settled on the closet floor beside the school bag; he did not lift or open the bag
+- karls-note — physical.discoloration: yellow-brown strip at bottom left corner (Karl's corner), width of Hannah's thumbnail — from being held near the oil lamp flame; paper intact, not burned
+- karls-note — status.ch12: explicitly kept — Hannah held it to the lamp flame and pulled it back; the keeping is now an active named choice, not a default
+- hannah-school-bag — location.ch12: low hook inside Hannah's bedroom closet door — moved from the hook by the stairs in May 1944
+- hannah-pfeiffer — displacement_object.status.ch12: note held to lamp flame and pulled back — the keeping is now an explicit, irreversible decision; note has a yellowed corner as physical mark of the choice
+- marta-pfeiffer — activity.jun1944: putting up rhubarb preserves on the June afternoon; brought preserved rhubarb to supper table; mends in the sitting room in the evenings
+- elsa-heger — located_in: Vermont
+- elsa-heger — relation_to_hannah: Hannah's cousin — the Heger side of the family; they correspond by letter; Elsa writes back in careful English
+- Werner Pfeiffer searched his barn coat (hung in Hannah's bedroom closet) for tobacco on a hot June afternoon 1944. His boot settled on the closet floor beside the school bag, but he did not lift or open the bag. He left saying 'Danke, Hanna' — the German private name — without noticing the note.
+- Hannah Pfeiffer moved the school bag from the hook by the stairs (where it had hung since December 1943) to a low hook inside her bedroom closet door in May 1944, judging her own room safer.
+- On a June evening 1944, Hannah held Karl's two-sided note near the oil lamp flame — close enough to yellow the bottom left corner of the paper (Karl's corner, the width of her thumbnail). She pulled it back before it burned. The paper is intact; the discoloration is permanent. She re-sewed the lining and returned the bag to the closet hook.
+- Karl's note now carries a visible physical mark: a yellow-brown strip at the bottom left corner from the lamp heat. Any later chapter that handles the note should acknowledge this discoloration.
+- Hannah's keeping of the note changed status in ch12: from passive (she had not destroyed it) to active (she held it to the flame and chose not to). This distinction is the chapter's central fact.
+- Werner Pfeiffer has been going to bed early for several weeks since before March 1944 — he does not explain this. His exhaustion is the exhaustion of someone carrying something (relevant to ch13's identification of the second figure on the dock).
+- Marta Pfeiffer disapproves of Werner's pipe-smoking; Werner keeps tobacco in various coat pockets to avoid the conversation. Rationing has made his tobacco scarce.
+- Hannah has a cousin named Elsa on the Heger side of the family, who lives in Vermont and writes back in careful English. Hannah writes her occasional ordinary letters — a way of performing normal life. A letter to Elsa was left unfinished on the desk after Werner's near-discovery.
+- The Pfeiffer farmhouse has an oil lamp in Hannah's upstairs room — used for evening light.
+
+## 13-the-man-at-atwoods
+- werner-pfeiffer — dock_presence.oct2_1943: identified by Eira as the second figure on the east dock at approximately 2310 on October 2, 1943 — certainty is working certainty (posture, load, weight distribution) not forensic certainty; Werner has not been informed of Eira's identification
+- werner-pfeiffer — physical.shoulder_asymmetry: right shoulder approximately one inch lower than the left
+- werner-pfeiffer — physical.foot_stance: feet angled slightly outward (2-3 degrees past straight) in work boots; weight carried on the left leg
+- werner-pfeiffer — eira_recognition.location: Atwood's general store, Coldwater Reach — Eira recognized him from behind in the queue
+- werner-pfeiffer — eira_recognition.date: August 12, 1944
+- atwoods-store — located_in: Coldwater Reach, Maine
+- atwoods-store — current_manager: Atwood's son — managing since March 1944 when senior Atwood's hip gave out
+- atwoods-son — role: runs the counter at Atwood's general store
+- atwoods-son — role.start_date: March 1944 (when senior Atwood's hip gave out)
+- atwoods-son — age.estimated: 23–24 years
+- vessel-helen-j — owner: Noss
+- vessel-helen-j — type: trap boat (lobster)
+- vessel-helen-j — home_port: Coldwater Reach
+- vessel-reenie-d — owner: Farrar
+- vessel-reenie-d — type: trap boat (lobster)
+- vessel-reenie-d — home_port: Coldwater Reach
+- noss — occupation: lobsterman, Coldwater Reach
+- farrar — occupation: lobsterman, Coldwater Reach
+- harbor-log — aug12_1944.entry_written: true — complete entry: wind WSW 10-12 kts, tides, two vessels (HELEN J. and REENIE D.), fouled buoy report. Werner Pfeiffer's name absent.
+- harbor-log — aug12_1944.high_water: +10.4 ft chart datum at 1109 hrs
+- harbor-log — aug12_1944.low_water: +0.4 ft chart datum at 1726 hrs
+- harbor-log — aug12_1944.werner_name_recorded: false
+- Ch13 (Aug 12, 1944): Eira identifies Werner Pfeiffer as the second figure she saw on the east dock on the night of October 2, 1943. The identification is made from behind in Atwood's queue — she recognizes his right shoulder lower than the left, feet angled outward, weight carried on the left leg. She describes this as 'working certainty' — the kind she uses to identify vessels at half-distance in poor visibility — not forensic certainty. She does not speak to Werner. They exchange one nod each. He does not know he has been identified.
+- Ch13: Werner Pfeiffer's physical description (first explicit establishment): right shoulder approximately one inch lower than the left (long-standing asymmetry from habitual work); feet angled slightly outward in work boots; weight carried on the left leg, right hip slightly higher. These details are specific enough to recur in later chapters as identifying marks.
+- Ch13: Eira considers going to Constable Tibbetts to report the identification. She runs through the procedural checklist and concludes she has nothing actionable: no face seen on the dock, no contemporaneous note in the log, no evidence of wrongdoing. She does not go to Tibbetts.
+- Ch13: The August 12, 1944 harbor log entry is complete and exact — tide heights, wind, two vessels (HELEN J. and REENIE D.), fouled buoy on eastern ledge reported to Rockland. Werner Pfeiffer's name is absent. This is the displacement object for this chapter: the entry that doesn't contain the name the day has given her.
+- Ch13: Object rhyme established — Eira's August 12 log entry (which does not name Werner) rhymes with Karl's note in Hannah's school bag lining (which also does not name Werner). Neither document contains the name of the man both characters are, without knowing each other, declining to record.
+- Ch13: Atwood's store is managed by Atwood's son (approximately 23-24, lean, capable) since March 1944, when the senior Atwood's hip gave out.
+- Ch13: Two trap boats regularly operating out of Coldwater Reach harbor established by name — HELEN J. (owner Noss) and REENIE D. (owner Farrar). Both logged on August 12, 1944. Farrar had earlier reported fouled ground gear on the eastern ledge (~46 deg 22'N).
+- Ch13: The Pfeiffer farm labor requisition (Form DD-4, four POW prisoners, one Coastal Patrol guard) was logged by Eira in January 1944. She has seen the Army transport truck on the coast road twice since May 1944.
+- Ch13: Eira notes that the word went around early in the war about several families with German ancestry in Coldwater Reach — she heard it about the Pfeiffers in the same week she heard it about two other families and set it aside. She does not single out Werner Pfeiffer on this basis.
+
+## 14-one-year
+- letter-to-lutz-sister — sent.date: October 3, 1944
+- letter-to-lutz-sister — sent.from: Prospect Street mailbox, corner near the school, Coldwater Reach
+- letter-to-lutz-sister — addressed.to: Josef Lutz's sister, last-known address in Zürich
+- letter-to-lutz-sister — signature: Ein Freund aus Sherbrooke
+- letter-to-lutz-sister — draft.number: 4 drafts
+- letter-to-lutz-sister — status: sent and irretrievable as of October 3, 1944
+- lutz-sister — last_known.location: Zürich
+- lutz-sister — address.source: Ehrlich's second letter to Marcus; refugee community records of family members' last-known locations
+- lutz-sister — name.known_to_marcus: true — heard Josef speak her name twice at Sherbrooke: once during a fever, once while waiting for a form to be processed
+- josef-lutz — sister.exists: true
+- phyllis-bowen — role: senior student in Marcus Klein's Latin class at Coldwater Reach High School
+- phyllis-bowen — sex: female
+- senior-latin-class — enrollment: 5 students
+- senior-latin-class — text.current: Vergil's Georgics, Book II (the farming poems, praise of Italy), as of October 1944
+- senior-latin-class — period: fourth period
+- marcus-klein — disclosure.outward.first: letter to Josef Lutz's sister, sent October 3, 1944 — first transmission of knowledge beyond the Crow house
+- Ch14 (October 3, 1944): Marcus sends the letter to Josef Lutz's sister in Zürich from the Prospect Street mailbox. The letter is the fourth draft; it is signed 'Ein Freund aus Sherbrooke.' This is the first outward movement of Marcus's knowledge — previously it had been shared only orally with Henry Crow (ch11, May 1944). The letter is now in the mail and cannot be retrieved.
+- Josef Lutz's sister: unnamed; last-known address in Zürich, obtained through Ehrlich's second letter to Marcus. Marcus learned her name from Josef at the Sherbrooke internment camp on two occasions: once when Josef was feverish, and once while both were waiting for a form to be processed. Whether she is still in Zürich in 1944, and whether the letter will reach her, is unknown and will not be established.
+- Marcus's bottom drawer as of ch14 holds two documents: the fragment in the oilskin piece, and the Montreal letter (Ehrlich's handwriting, dates pencil-underlined). The letter to the Lutz sister is gone — sent. Later chapters that reference the drawer's contents should show only these two items until ch17 when Marcus writes a private notebook entry.
+- The letter's verbatim text is registered under record ID 'letter-to-lutz-sister'. Any later chapter that re-quotes it must read that record and reproduce the text verbatim.
+- Phyllis Bowen: female senior in Marcus's Latin class (fourth period, five students). Working through Vergil's Georgics in October 1944. She struggled with the dative of purpose construction in Book II — Marcus corrected her parsing of 'aratro' (ablative of means, not to be confused with the verb for breath).
+- Object rhyme confirmed: Marcus's sent letter to the Lutz sister (ch14) rhymes structurally with Eira's mailed follow-up inquiry form (ch10) — both are minimal truths dispatched irreversibly, both say just enough, both are beyond the sender's reach and control once sent.
+
+## 15-the-crew-moves
+- steuben-cannery — located_in: Steuben, Maine
+- steuben-cannery — operation_type: seasonal cannery — fall and winter run
+- karl-reinmar — pow_assignment.ch15_status: reassigned to Steuben cannery — last day at Pfeiffer farm was late October 1944 Friday
+- karl-reinmar — departure.last_words: Good luck to you — said in English, without looking at Hannah, with Oakes watching
+- karl-reinmar — departure.looked_back: false
+- karls-note — physical.fold_lines: four creases, deep enough that paper opens by itself when unfolding begins; paper soft from repeated handling
+- karls-note — physical.damage: yellow-brown scorch mark on bottom left corner, width of a thumbnail — from ch12 lamp-flame scene; paper whole, not burned through
+- karls-note — side_a.author: Karl Reinmar
+- karls-note — side_a.language: Allgäu dialect German, written carefully for comprehension
+- karls-note — side_a.last_line: Er schien einen langen Weg vor sich zu haben.
+- karls-note — side_b.author: Hannah Pfeiffer
+- karls-note — side_b.language: Hannah's German — smaller script, pressed harder; formal transcription hand
+- karls-note — side_b.content_summary: Date/location (coastal road near Wilder's Landing, early October 1943, approximately 2200 hours), description of man (approximately 50 years, slight build, long city coat, bundle held close), motion (Bewegte sich Richtung Wasser. Sah sich um. Lief weiter.), Karl's name as witness
+- karls-note — status.ch15: re-sewn with seven stitches and returned to school bag lining after final reading; school bag on low hook inside Hannah's closet door; Hannah's thread ends here — note's fate unresolved
+- hannah-pfeiffer — pov.final_chapter: 15-the-crew-moves — Hannah does not appear in chapters 16–18; her thread ends suspended and unresolved
+- hannah-pfeiffer — displacement_object.location.ch15: note re-sewn into school bag lining (seven stitches); school bag on low hook inside closet door, Hannah's bedroom
+- The POW work crew assigned to the Pfeiffer farm is redistributed in late October 1944 to a seasonal cannery in Steuben, Maine — a fall/winter labor rotation under the federal POW program. Their last day at the Pfeiffer farm is a Friday. A replacement crew in spring is mentioned as possible but not guaranteed; the war's end may make it moot.
+- Karl Reinmar's final exchange with Hannah Pfeiffer (in English, in front of Oakes): 'The cattle here are good.' / 'They are.' / 'The Braunvieh at home are a little smaller. A little more delicate.' / 'I know.' / 'Good luck to you.' / 'You too.' This is the entirety of what was said.
+- Karl does not look back from the truck as it pulls down the farm road. He climbed in third. The truck departs at three o'clock (an hour early, schedule moved by the dispatcher).
+- Hannah's two-sided note: Karl's side (Allgäu dialect German, written carefully) contains his name, his town near Marktoberdorf in the Allgäu, the distance in kilometers to the Pfeiffer family village, four lines about the Pfeiffer cattle, and the road-sighting passage ending 'Er schien einen langen Weg vor sich zu haben.' Hannah's side (her own German, smaller and pressed harder) contains: date and location (coastal road near Wilder's Landing, early October 1943, approximately 2200 hours), description of the man (approximately 50 years, slight build, long city coat, bundle held close to body), motion (Bewegte sich Richtung Wasser. Sah sich um. Lief weiter.), and Karl's name as witness.
+- After Karl's departure, Hannah finishes the hay work in the barn alone. Werner Pfeiffer comes in at four and they work in silence at either end. After supper Werner listens to the Western Front radio news (the Allied advance into Germany, the Belgian border cities) in his usual chair, arms on knees, leaned toward the set.
+- Hannah's final act in this chapter: she opens the note's lining, reads both sides fully (Karl's side first, then hers), re-sews the seam with seven stitches, returns the school bag to its low hook inside the closet door. She stands at the window. The farm road is dark. The chapter ends on the note's last line repeated: 'Er schien einen langen Weg vor sich zu haben.' — and then: 'He had not gotten there.'
+- Hannah Pfeiffer's POV thread ends at chapter 15. She does not appear in chapters 16–18. Her absence is the novel's required unresolved withholding. The note is in the lining of the school bag. Karl's fate is not established.
+
+## 16-the-old-volume
+- harbor-log — oct2_correction.written: true
+- harbor-log — oct2_correction.date_written: January 14, 1945
+- harbor-log — oct2_correction.text: October 2, 1943. 2300 hours. [Correction to above entry.] Weather: NE gale, 35 knots, continuing.
+- harbor-log — jan14_1945.new_volume_first_entry: Wind NNW 18 knots, barometric 30.04 steady, clear; HELEN J. departed 0810; no other vessel traffic
+- harbor-log — volume_retired_jan1945.coverage: November 1942 through December 1944
+- eira-bowman — harbormaster.years_served: 9 years
+- owen-bowman — log.volume_1934_35.condition: pages cockled from a spring leak that ran two weeks before being repaired; heavier than the 1933 volume
+- owen-bowman — log.last_entry.status: ends mid-column in September 1935 — vessel departed, wind recorded, tide height entered; Eira completed the year in her own hand
+- harbormaster-shack-shelf — built_by: Owen Bowman
+- harbormaster-shack-shelf — built_year: 1933 year
+- harbormaster-shack-shelf — material: cedar planks on iron brackets
+- harbormaster-shack-shelf — log_series.oldest_on_shelf: Owen Bowman 1933 volume
+- harbormaster-shack-shelf — log_series.record_runs_back_to: 1893 year
+- eastern-ledge-marker — list.onset: November 1944 — slight list to the northwest; mooring cable working in the current
+- eastern-ledge-marker — list.status.jan1945: no worse as of January 14, 1945; appearing correct from the breakwater end; direct cable check planned
+- Chapter 16 (Jan 14, 1945): Eira writes a correction entry in the old log volume for October 2, 1943 at 2300 hours — 'October 2, 1943. 2300 hours. [Correction to above entry.] Weather: NE gale, 35 knots, continuing.' — below the January 1944 crossed-out attempt, the correction notice, and the ice report. She stops there. The dock observation, the vessel, and the figures are not written.
+- The old log volume (Nov 1942–Dec 1944) is filed on the shelf on January 14, 1945, next to Owen's volumes. The new volume begins that same evening with the Jan 14, 1945 entry.
+- The October 2 page now contains four textual layers: (1) original 2300 blank, (2) January 1944 crossed-out attempt ('October 2, 1943. 2300 hours. Weather—'), (3) January 1944 correction notice and ice report, (4) January 1945 weather correction. This is in the permanent legal record.
+- The harbor log record runs back to 1893. Eira has kept the record for nine years (from January 1936 through January 1945). Owen built the shelf in 1933, his first year as harbormaster. Before Owen: Beal; before Beal: Crowther.
+- Owen's 1934–35 log volume: pages cockled from a two-week spring leak; ends mid-column in September 1935; Eira completed the remaining September entries in her own hand. She did not try to match his handwriting.
+- There is a four-month gap (October–November 1935, and the months between Owen's death and Eira's appointment) in the older volumes stored in the attic of the cottage. Eira has never filled those pages.
+
+## 17-what-henry-knows
+- marcus-notebook — kind: narrow exercise book, gray cardboard cover, narrow ruled lines
+- marcus-notebook — language: German
+- marcus-notebook — hand: small compressed hand developed in the internment camp to conserve paper
+- marcus-notebook — begun: February 1944, the week after Ehrlich's reply arrived
+- marcus-notebook — storage: bottom drawer of Marcus's desk, Crow house, behind the fragment and Ehrlich's letter
+- marcus-notebook — pages_written: 25 pages
+- marcus-notebook — final_entry.date: March 24, 1945
+- marcus-notebook — disclosed_to: no one; never shown to any other person
+- deacon-pratt — affiliation: Congregational Church, Coldwater Reach
+- deacon-pratt — information_network: part of Henry Crow's informal African American and working-class community network; passed information from Edna Wills to Henry Crow
+- edna-wills — occupation: laundress for farm families out past Route 1
+- edna-wills — information_received: account of Josef Lutz's night at Pfeiffer farm, received December or January 1944/45 from woman at Pfeiffer farm (identity unconfirmed — possibly Marta Pfeiffer, possibly a hired girl)
+- werner-pfeiffer — sheltered_josef.confirmed: true — sheltered Josef Lutz one night before the October 1943 storm; fed him, gave him a dry place to sleep, drove him toward the coastal road and harbor the following morning
+- werner-pfeiffer — sheltered_josef.source: second-hand information via Pfeiffer farm woman → Edna Wills → Deacon Pratt → Henry Crow → Marcus Klein; Marcus records as 'probably true'
+- werner-pfeiffer — named_in_private_record: Marcus's private notebook entry, March 24, 1945 — in no official document
+- henry-crow — information.received_werner_account: December or January 1944/45, from Deacon Pratt at Congregational Church men's meeting; passed to Marcus March 24, 1945
+- marcus-klein — reconstruction.status: complete as of March 24, 1945 — Josef's journey assembled from Quebec to Coldwater Reach dock; gap between coastal road and breakwater not established and acknowledged as such
+- marcus-klein — drawer.contents.as_of_ch17: fragment in oilskin piece; Ehrlich's Montreal letter; private reconstruction notebook — all returned to drawer after the March 24 session
+- marcus-notebook — final_entry.german_text: 24. März 1945. Werner Pfeiffer, Landwirt, Coldwater Reach, Maine, hat Josef Lutz eine Nacht beherbergt, vor dem Oktobersturm 1943. Hat ihn am folgenden Morgen zur Küstenstraße gefahren — in Richtung Hafen. Dies aus zweiter Hand, dreifach gehört; nicht bewiesen; wahrscheinlich wahr.
+- marcus-klein — chapter17.date: March 24, 1945 (Saturday)
+- crow-house — porch.use_pattern: Henry Crow occupies the porch in summer evenings; in late March he stays inside by four o'clock — his presence on the porch March 24, 1945 is a notable deviation from pattern
+- Chapter 17 is set March 24, 1945 (a Saturday). The Allied advance east of the Rhine is the radio news that evening — the European war is weeks from its end.
+- The information chain for Werner Pfeiffer's sheltering of Josef Lutz: woman at the Pfeiffer farm (possibly Marta, possibly a hired girl) told Edna Wills (laundress) in December or January 1944/45; Wills told Deacon Pratt at a Congregational Church men's meeting in February 1945; Pratt told Henry Crow while stacking chairs; Henry told Marcus on the Crow house porch March 24, 1945.
+- Marcus's private reconstruction notebook: a narrow exercise book, gray cardboard cover, narrow ruled lines, entries in German in a small compressed hand begun in February 1944 after Ehrlich's reply. Contains 25 handwritten pages. Stored at the back of the bottom drawer of Marcus's desk in his second-floor room at the Crow house, behind the fragment in oilskin and Ehrlich's letter. Never shown to anyone.
+- Final notebook entry (verbatim, in German): '24. März 1945. Werner Pfeiffer, Landwirt, Coldwater Reach, Maine, hat Josef Lutz eine Nacht beherbergt, vor dem Oktobersturm 1943. Hat ihn am folgenden Morgen zur Küstenstraße gefahren — in Richtung Hafen. Dies aus zweiter Hand, dreifach gehört; nicht bewiesen; wahrscheinlich wahr.' Registered as verbatim record: marcus-notebook-final-entry.
+- Marcus's reconstruction of Josef Lutz's journey as complete as it will be: Quebec internment → released November 1942 → Montreal (Ehrlich's network) → departed early September 1943 → sheltered one night at Pfeiffer farm by Werner Pfeiffer → driven to the coastal road the following morning → walked to the Coldwater Reach dock → found dead on the breakwater October 3, 1943. The gap between the coastal road and the breakwater seaward face is not established and acknowledged by Marcus as his limit.
+- Werner Pfeiffer's name is now in Marcus's private notebook and in Eira's body knowledge — it is in no official document as of the end of ch17.
+- Marcus owns an atlas, kept on the bookshelf in his second-floor room at the Crow house. He opens it to the European page at the chapter's close to locate the Rhine.
+- Henry Crow held the Werner Pfeiffer information from December 1944 / January 1945 until March 24, 1945 before telling Marcus — he chose the timing and asked nothing in return, which Marcus understands as a form of balanced exchange rather than simultaneous reciprocity.
+
+## 18-the-reach
+- annalisa-k — type: lobster vessel
+- annalisa-k — home_port: Coldwater Reach
+- annalisa-k — operator: McCready family
+- annalisa-k — departure_ch18: departed Coldwater Reach harbor 0430, late April/early May 1945, for the lobster grounds
+- harbor-log — oct2_dock_entry.text: Dock: one vessel observed docking at approximately 2300. One person at the pier.
+- harbor-log — oct2_dock_entry.date_written: late April or early May 1945
+- harbor-log — oct2_blank.state: filled minimally — dock entry written: one vessel, one person; vessel name absent; no person named; Werner Pfeiffer's name absent; final state
+- harbor-log — werner_name_final: absent from all entries; absent from the final dock entry; Werner Pfeiffer's name is in no official harbor record
+- eira-bowman — breakwater_end.visits: three: October 3 1943 (ch1), April 1944 (ch10), and late April/early May 1945 (ch18)
+- eira-bowman — log.arc_resolution: minimum dock entry written late April 1945; old volume shelved; Thread 1 closed minimally
+- CHAPTER 18 — THE REACH (late April/early May 1945): Eira Bowman writes the final entry into the October 2, 1943 page of the old harbor log volume. Written below the January 1945 weather correction, in the continuation format: 'Dock: one vessel observed docking at approximately 2300. One person at the pier.' Werner Pfeiffer's name is absent. The vessel's name is absent. The entry is accurate as far as it goes and permanently incomplete. She shelves the old volume (Nov 1942–Dec 1944) alongside Owen's volumes and her own on the back-wall shelf.
+- The harbor log's October 2, 1943 page in its final state has five textual layers: (1) original 2300 weather notation (written October 2, 1943); (2) January 1944 crossing-out and correction notice; (3) ice report used as the correcting entry; (4) January 1945 weather correction: 'October 2, 1943. 2300 hours. [Correction to above entry.] Weather: NE gale, 35 knots, continuing.'; (5) final dock entry: 'Dock: one vessel observed docking at approximately 2300. One person at the pier.' The old volume is now on the shelf permanently.
+- The Annalisa K.: lobster vessel, McCready family, home port Coldwater Reach. Operating from at least winter 1942. In ch18 she departs at 0430 for the grounds — the morning's first and only vessel departure.
+- The constable (Tibbetts) has kept his radio running all night since January 1945, waiting for the Germany news. In the morning of ch18, Eira hears 'unconditional,' 'surrender,' and 'Germany' through his screen door gap. She does not go to his porch.
+- Eira's third and final visit to the seaward face of the breakwater: late April/early May 1945. She stands at the angle below the pier head — the same angle where the body came in October 1943 — and then turns and walks back. She does not go to the cemetery on the hill. Josef Lutz remains 'Unknown Man, October 1943' on his stone.
+- The novel's final prose is a harbor log entry in the new volume: 'Mooring lines checked and found sound.' The mooring lines are the last thing Eira checks; they are correct. The chapter ends in procedure, not reflection.
+- The shelf sequence at the novel's close (left to right): Owen Bowman's 1933 log volume; Owen Bowman's 1934–35 log volume (pages cockled from a spring leak, spine straight); Eira Bowman's volumes 1936 through the retired Nov 1942–Dec 1944 volume; the new volume (January 1945–). The sequence represents two people's work across twelve years, with a four-month gap (Oct–Dec 1935) in the attic volumes that Eira has never tried to fill.
+
+## canon
+- The unidentified man's body washes up against the seaward face of the Coldwater Reach breakwater after a three-day blow in October 1943; he carries no papers and cannot be identified from the body alone. This is the spine question all three threads orbit.
+- Eira Bowman (age 52, harbormaster since 1935) saw something on the dock the night before the body came in. This is the load-bearing secret of her thread; what she saw must not be fully disclosed until the braid's assembly demands it.
+- OPERATIVE CONSTRAINT — Displacement object: every withholding chapter must anchor the withheld thing in a concrete physical object the POV character handles, keeps, hides, returns to, or destroys. Abstract withholding ('a thing she could not name,' 'a weight she could not put down') without a physical object is categorically forbidden.
+- OPERATIVE CONSTRAINT — Accretion: every chapter must do at least one of: (a) change a named fact about the breakwater body, (b) recontextualize a fact the reader already holds, or (c) advance a displacement object's meaning. A chapter that only re-establishes atmosphere the reader already has is an 'orbiting' chapter — the named failure mode this variant exists to prevent.
+- The three POV characters — Eira Bowman, Hannah Pfeiffer, Dr. Marcus Klein — never meet as a group. Pairwise intersection is permitted; a scene with all three present simultaneously is a hard constraint violation.
+- At least one of the three threads ends in deliberate, unresolved withholding. Not every question raised in the braid is answered.
+- The three primary displacement objects are: Eira's = the harbor log (specifically an entry written, left blank, or falsified); Hannah's = an object received from Karl Reinmar (its nature is a slow reveal; once established, it must remain consistent); Marcus's = a document, letter, or photograph he cannot file, report, or destroy.
+- The objects across the three threads are staggered and rhymed: all three are 'things known and not sent.' When one thread's object advances a stage in its arc, it should land in the reader's sequence near the next beat in a different thread's object arc, so the pattern accretes across the braid.
+- Karl Reinmar (German POW, age 19) is from a town approximately 50 km from the Pfeiffer family's Bavarian home village. This geographic proximity is meaningful to both Hannah and her father Werner.
+- Dr. Marcus Klein spent fourteen months in a Quebec internment camp under Canada's War Measures Act before arriving in Coldwater Reach in September 1942. He does not discuss the internment. It is the hidden pressure behind his practiced invisibility.
+- The story runs autumn 1943 to spring 1945, ending just before VE Day (May 8, 1945). The war ends but the characters' resolutions precede it and are not caused by it — they are smaller and older than the war's end.

@@ -1,0 +1,17 @@
+{
+  "title": "Coldwater Reach (mechanism test)",
+  "model": "claude-sonnet-4-6",
+  "visibility": "private",
+  "research": false,
+  "epistemic": false,
+  "calibration": {
+    "enabled": true,
+    "max_iterations": 2
+  },
+  "maxTurnsPerPhase": {
+    "architect": 60,
+    "plotter": 50,
+    "threads": 40,
+    "drafter": 100
+  }
+}

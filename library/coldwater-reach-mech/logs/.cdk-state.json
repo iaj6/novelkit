@@ -1,0 +1,211 @@
+{
+  "version": 2,
+  "completed": [
+    "architect",
+    "plotter",
+    "threads",
+    "calibrate-drafter:iter-1-sample",
+    "calibrate-drafter:iter-1-grade",
+    "calibrate-drafter:complete",
+    "drafter:01-the-breakwater",
+    "drafter:02-the-fragment",
+    "drafter:03-allgau",
+    "drafter:04-the-commander",
+    "drafter:05-the-name",
+    "drafter:06-the-lining",
+    "drafter:07-owens-pages",
+    "drafter:08-montreal",
+    "drafter:09-the-road",
+    "drafter:10-no-new-information",
+    "drafter:11-the-crow-table",
+    "drafter:12-not-yet",
+    "drafter:13-the-man-at-atwoods",
+    "drafter:14-one-year",
+    "drafter:15-the-crew-moves",
+    "drafter:16-the-old-volume",
+    "drafter:17-what-henry-knows",
+    "drafter:18-the-reach"
+  ],
+  "entries": {
+    "drafter:01-the-breakwater": {
+      "at": "2026-06-25T04:31:40.509Z",
+      "artifacts": [
+        "draft/01-the-breakwater.md"
+      ],
+      "hashes": {
+        "draft/01-the-breakwater.md": "32c4bf657687aad59261679025cb07576187cb359d7e384b24087e28167aa2a4"
+      },
+      "eventOffset": 78
+    },
+    "drafter:02-the-fragment": {
+      "at": "2026-06-25T04:44:57.212Z",
+      "artifacts": [
+        "draft/02-the-fragment.md"
+      ],
+      "hashes": {
+        "draft/02-the-fragment.md": "262c2c9e12bf3baee331cc588be4faab5b82d504d2d42b4b99d507c973a3993b"
+      },
+      "eventOffset": 144
+    },
+    "drafter:03-allgau": {
+      "at": "2026-06-25T04:56:58.923Z",
+      "artifacts": [
+        "draft/03-allgau.md"
+      ],
+      "hashes": {
+        "draft/03-allgau.md": "9c3f6fbb7abb9dfd8c542c65dfd17222ac46bce3b537f3afe3c542f7ff25fe7f"
+      },
+      "eventOffset": 204
+    },
+    "drafter:04-the-commander": {
+      "at": "2026-06-25T05:03:40.810Z",
+      "artifacts": [
+        "draft/04-the-commander.md"
+      ],
+      "hashes": {
+        "draft/04-the-commander.md": "cb3faff8f2f9dc2bb3f952cee61fa6dbe4bf4c87c72e119387d555f400bc8cd7"
+      },
+      "eventOffset": 236
+    },
+    "drafter:05-the-name": {
+      "at": "2026-06-25T05:16:16.006Z",
+      "artifacts": [
+        "draft/05-the-name.md"
+      ],
+      "hashes": {
+        "draft/05-the-name.md": "22ddc5101523f98e85cd10b45028b4e74d531f33db7c7583226e24429ff2cfc6"
+      },
+      "eventOffset": 278
+    },
+    "drafter:06-the-lining": {
+      "at": "2026-06-25T05:26:22.413Z",
+      "artifacts": [
+        "draft/06-the-lining.md"
+      ],
+      "hashes": {
+        "draft/06-the-lining.md": "9c49453950859a72ebc4dca073f2e707d81679632905c4845e4b7c049d412bb6"
+      },
+      "eventOffset": 314
+    },
+    "drafter:07-owens-pages": {
+      "at": "2026-06-25T05:52:05.403Z",
+      "artifacts": [
+        "draft/07-owens-pages.md"
+      ],
+      "hashes": {
+        "draft/07-owens-pages.md": "cfd19cd43da3b37a1ed2510d4c6e7acb812839ad8a018a122d7c1763495250bc"
+      },
+      "eventOffset": 350
+    },
+    "drafter:08-montreal": {
+      "at": "2026-06-25T06:07:49.992Z",
+      "artifacts": [
+        "draft/08-montreal.md"
+      ],
+      "hashes": {
+        "draft/08-montreal.md": "e41426994d77a9cfe51433a1fe71120145e92cd3e060cd1d58a67ccab2d1a596"
+      },
+      "eventOffset": 382
+    },
+    "drafter:09-the-road": {
+      "at": "2026-06-25T06:17:55.464Z",
+      "artifacts": [
+        "draft/09-the-road.md"
+      ],
+      "hashes": {
+        "draft/09-the-road.md": "2af2937a4885b85bcec50bebd23a805ed2d2107bf6f220e34a99f75f8e195746"
+      },
+      "eventOffset": 409
+    },
+    "drafter:10-no-new-information": {
+      "at": "2026-06-25T06:30:11.417Z",
+      "artifacts": [
+        "draft/10-no-new-information.md"
+      ],
+      "hashes": {
+        "draft/10-no-new-information.md": "1387aaeb02525d6d510565d8cebef0d8c4228fb84c8ac1943c21364d116244d2"
+      },
+      "eventOffset": 430
+    },
+    "drafter:11-the-crow-table": {
+      "at": "2026-06-25T06:40:20.157Z",
+      "artifacts": [
+        "draft/11-the-crow-table.md"
+      ],
+      "hashes": {
+        "draft/11-the-crow-table.md": "cdf5878baec856c9fa1920af4b89a26cd1fa4c3a794dfafb0b7b233078e55535"
+      },
+      "eventOffset": 450
+    },
+    "drafter:12-not-yet": {
+      "at": "2026-06-25T06:49:37.401Z",
+      "artifacts": [
+        "draft/12-not-yet.md"
+      ],
+      "hashes": {
+        "draft/12-not-yet.md": "1f56566df125e578d77d00a28997f90d8dea89010e88273ca6d0ef81264ef8b3"
+      },
+      "eventOffset": 477
+    },
+    "drafter:13-the-man-at-atwoods": {
+      "at": "2026-06-25T07:03:15.834Z",
+      "artifacts": [
+        "draft/13-the-man-at-atwoods.md"
+      ],
+      "hashes": {
+        "draft/13-the-man-at-atwoods.md": "f250d02bd1245bebce7a6964a859069f1c4ee6a13aa51587c878d5c1e7db960b"
+      },
+      "eventOffset": 517
+    },
+    "drafter:14-one-year": {
+      "at": "2026-06-25T07:12:58.089Z",
+      "artifacts": [
+        "draft/14-one-year.md"
+      ],
+      "hashes": {
+        "draft/14-one-year.md": "c43ba61430d82732ce5884b24509699b226fb81f55efb8712dca719c912b8751"
+      },
+      "eventOffset": 549
+    },
+    "drafter:15-the-crew-moves": {
+      "at": "2026-06-25T07:23:20.272Z",
+      "artifacts": [
+        "draft/15-the-crew-moves.md"
+      ],
+      "hashes": {
+        "draft/15-the-crew-moves.md": "c6945d5098482bbc6f01a54126fda8e80f23fc08ea669386240d561d35d00e5e"
+      },
+      "eventOffset": 578
+    },
+    "drafter:16-the-old-volume": {
+      "at": "2026-06-25T07:32:05.186Z",
+      "artifacts": [
+        "draft/16-the-old-volume.md"
+      ],
+      "hashes": {
+        "draft/16-the-old-volume.md": "26321e4b3ac705cec1253b27225d6d089fc2736cc16a3404566a4cca13052219"
+      },
+      "eventOffset": 605
+    },
+    "drafter:17-what-henry-knows": {
+      "at": "2026-06-25T07:43:27.785Z",
+      "artifacts": [
+        "draft/17-what-henry-knows.md"
+      ],
+      "hashes": {
+        "draft/17-what-henry-knows.md": "32c5a4930a2fd6bc43244fd8aa107c5130a6bb0837478fb3a0387747b0f3c8e8"
+      },
+      "eventOffset": 642
+    },
+    "drafter:18-the-reach": {
+      "at": "2026-06-25T07:56:42.700Z",
+      "artifacts": [
+        "draft/18-the-reach.md"
+      ],
+      "hashes": {
+        "draft/18-the-reach.md": "8632376988bdd5f4e7a50fbae8d7acd1711f9ef3d72d6a73f8794ddeee3bd9b1"
+      },
+      "eventOffset": 665
+    }
+  }
+}

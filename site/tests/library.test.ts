@@ -6,7 +6,11 @@ import {
   getBooks,
   getBook,
   getAudiobook,
+  getExcerpt,
+  getColophon,
   humanizeTrackLabel,
+  readingLabel,
+  shelfSortKey,
   type Book,
 } from "../src/lib/library.js";
 
@@ -131,10 +135,13 @@ describe("getBooks() (against real library/)", () => {
     expect(books.length).toBeGreaterThan(0);
   });
 
-  it("books are sorted alphabetically by title", () => {
-    const titles = books.map((b) => b.title);
-    const sorted = [...titles].sort((a, b) => a.localeCompare(b));
-    expect(titles).toEqual(sorted);
+  it("shelves finished books first, then title order ignoring leading articles", () => {
+    const doneFlags = books.map((b) => (b.status === "complete" ? 0 : 1));
+    expect(doneFlags).toEqual([...doneFlags].sort((a, b) => a - b));
+
+    const complete = books.filter((b) => b.status === "complete");
+    const keys = complete.map((b) => shelfSortKey(b.title));
+    expect(keys).toEqual([...keys].sort((a, b) => a.localeCompare(b)));
   });
 
   it("each book has a non-empty slug and title", () => {
@@ -219,9 +226,13 @@ describe("visibility filtering", () => {
   it("excludes books with visibility !== 'public'", () => {
     const slugs = new Set(getBooks().map((b) => b.slug));
     // These are the books currently flagged private; they must NOT appear.
+    // (The coldwater-reach-* research variants must never leak — they share
+    // the flagship's title.)
     expect(slugs.has("coldwater-reach-v031")).toBe(false);
-    expect(slugs.has("the-hollowback")).toBe(false);
+    expect(slugs.has("coldwater-reach-m6")).toBe(false);
+    expect(slugs.has("coldwater-reach-m7")).toBe(false);
     expect(slugs.has("tiny-toy")).toBe(false);
+    expect(slugs.has("ya-smoke-test")).toBe(false);
   });
 
   it("includes books with visibility === 'public'", () => {
@@ -231,6 +242,14 @@ describe("visibility filtering", () => {
     expect(slugs.has("the-cold-signal")).toBe(true);
     expect(slugs.has("vilcabamba-expedition")).toBe(true);
     expect(slugs.has("tiny-toy-output")).toBe(true);
+    // The 2026-07 shelf expansion.
+    expect(slugs.has("the-long-tenant")).toBe(true);
+    expect(slugs.has("the-contingency")).toBe(true);
+    expect(slugs.has("the-courier-job")).toBe(true);
+    expect(slugs.has("the-hollowback")).toBe(true);
+    expect(slugs.has("plattsburgh-twosides")).toBe(true);
+    expect(slugs.has("plattsburgh-american")).toBe(true);
+    expect(slugs.has("everyone-still-alive")).toBe(true);
   });
 
   it("does not show duplicate titles on the landing", () => {
@@ -280,6 +299,81 @@ describe("Book type", () => {
     expect(b).toHaveProperty("hasManuscript");
     expect(b).toHaveProperty("status");
     expect(b).toHaveProperty("artifacts");
+  });
+});
+
+// ── readingLabel() / shelfSortKey() — shelf metadata helpers ────────
+
+describe("readingLabel()", () => {
+  it("returns empty for zero words", () => {
+    expect(readingLabel(0)).toBe("");
+  });
+
+  it("labels short works in minutes", () => {
+    expect(readingLabel(3200)).toBe("13 min read");
+  });
+
+  it("labels novels in hours with half-hour granularity", () => {
+    expect(readingLabel(65000)).toBe("~4½ hr read");
+    expect(readingLabel(58000)).toBe("~4 hr read");
+  });
+});
+
+describe("shelfSortKey()", () => {
+  it("strips a leading article", () => {
+    expect(shelfSortKey("The Long Tenant")).toBe("long tenant");
+    expect(shelfSortKey("A Line of Smoke")).toBe("line of smoke");
+  });
+
+  it("leaves other titles alone", () => {
+    expect(shelfSortKey("Two Shores")).toBe("two shores");
+    // "The" must be a whole word — "Theodore" keeps its T.
+    expect(shelfSortKey("Theodore's Boat")).toBe("theodore's boat");
+  });
+});
+
+// ── truncation cleanup — no dangling ':' or ',' before the ellipsis ─
+
+describe("truncation cleanup", () => {
+  it("does not end a capped one-line on dangling punctuation", () => {
+    const longWithColon =
+      "Each of them carries, separately and without any coordination between the three of them, one single load-bearing unresolved event:" +
+      " the details follow at considerable length afterwards in this text.";
+    const out = deriveOneLine(longWithColon);
+    expect(out.endsWith("…")).toBe(true);
+    expect(out).not.toMatch(/[:;,\-–—]…$/);
+  });
+});
+
+// ── getExcerpt() / getColophon() — the book page's prose exhibits ───
+
+describe("getExcerpt() (against real library/)", () => {
+  it("returns opening paragraphs for a published book", () => {
+    const paras = getExcerpt("coldwater-reach");
+    expect(paras.length).toBeGreaterThan(0);
+    // No headings, no markdown emphasis markers in display text.
+    for (const p of paras) {
+      expect(p.startsWith("#")).toBe(false);
+      expect(p).not.toContain("**");
+    }
+  });
+
+  it("returns empty for an unknown slug", () => {
+    expect(getExcerpt("does-not-exist")).toEqual([]);
+  });
+});
+
+describe("getColophon() (against real library/)", () => {
+  it("returns paragraphs when a colophon exists", () => {
+    const paras = getColophon("coldwater-reach");
+    expect(paras.length).toBeGreaterThan(0);
+    for (const p of paras) {
+      expect(p.startsWith("#")).toBe(false);
+    }
+  });
+
+  it("returns empty when there is none", () => {
+    expect(getColophon("does-not-exist")).toEqual([]);
   });
 });
 

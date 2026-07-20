@@ -1,0 +1,16 @@
+{
+  "title": "Everyone Still Alive",
+  "model": "claude-sonnet-4-6",
+  "visibility": "public",
+  "modelByPhase": {},
+  "maxTurnsPerPhase": {
+    "architect": 70,
+    "plotter": 60,
+    "threads": 50,
+    "drafter": 30,
+    "editor-continuity": 40,
+    "editor-pacing": 40,
+    "editor-voice": 40,
+    "reader": 50
+  }
+}

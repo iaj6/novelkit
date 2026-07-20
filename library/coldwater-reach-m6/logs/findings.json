@@ -1,0 +1,290 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-09T23:46:50.298Z",
+  "summary": {
+    "critical": 2,
+    "high": 6,
+    "medium": 1,
+    "low": 1
+  },
+  "findings": [
+    {
+      "id": "over-articulation-001",
+      "category": "over-articulation",
+      "severity": "medium",
+      "title": "Marcus names his own arc explicitly in chapters 19 and 30",
+      "description": "In chapter 19 (Another Year), Marcus spends approximately 400 words analyzing the grammatical aspect of his own choice: distinguishing 'I am staying' (decision being renewed) from 'I have stopped leaving' (decision already made), and reasoning that a pattern of not-leaving accumulated over three iterations might constitute staying. This is the 'thesis restatement' and 'emotional structural analysis' failure modes named in canon/style.md: the character is saying aloud what the novel is demonstrating through his accumulated small acts. The thread is architecturally titled 'The Grammar of Staying'; Marcus should not be speaking that title into his own narration. In chapter 30 (May), a similar but milder instance occurs: the Werner Grau retrospective passage, culminating in 'Werner Grau had existed; he had been, in specific and considerable detail, a person; his story was not entirely lost,' re-summarizes for the reader an account they have already assembled by chapter 28. Chapter 27 contains a borderline instance in the sentence 'He is not going anywhere,' which is flat assertion rather than shown behavior, though the surrounding three pages of irrevocable acts make it nearly defensible. The pattern is confined to Marcus's chapters and to the arc-resolution sequence (chapters 19, 27, 30); it does not appear in Eira's or Hannah's chapters.",
+      "evidence": [
+        {
+          "file": "draft/19-another-year.md",
+          "text": "The grammatical-aspect meditation: 'I am staying' / 'I have stopped leaving' / 'whether a pattern of not-leaving, accumulated over three iterations, constituted a form of staying' — approximately 400-word passage preceding and following the bell buoy anchor"
+        },
+        {
+          "file": "draft/30-may.md",
+          "text": "Werner retrospective passage ending 'Werner Grau had existed; he had been, in specific and considerable detail, a person; his story was not entirely lost' — approximately 200 words of re-summary placed after the reader has already assembled this account"
+        },
+        {
+          "file": "draft/27-permanent-resident.md",
+          "text": "'He is not going anywhere.' — flat declarative thesis statement at chapter's close, borderline given the surrounding shown behavior"
+        }
+      ],
+      "suggested_action": "Trim chapter 19's grammatical-aspect meditation to its action (letter written, sealed, addressed, mailed) and sensory anchor (bell buoy); remove the explicit I-am-staying / I-have-stopped-leaving analysis (~400 words). Tighten chapter 30's Werner retrospective by approximately 200 words, allowing the route-to-school and lilac textures to carry the chapter's final weight. Consider whether chapter 27's 'He is not going anywhere' earns its place given the three pages of shown behavior that precede it.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "other-001",
+      "category": "other",
+      "severity": "low",
+      "title": "Act 2 chapters 13–16 form a dense, atmosphere-unrelieved cluster",
+      "description": "Chapters 13, 15, and 16 are all deliberate, interior, somewhat static chapters — Marcus receiving and integrating new information about Werner (twice), Eira in administrative mode — with only chapter 14 (The Photograph) providing tonal relief. Each chapter is doing necessary thread work, and no thread is stalled. But the four-chapter sequence reads as the manuscript's one stretch where the forward motion is real and the atmosphere is unrelieved for readers tracking pacing rather than register. This is a soft pacing issue, not a structural failure. Chapter 15 (Grandy Soule) has the ingredients of a livelier scene and could carry more energy without distorting Eira's register.",
+      "evidence": [
+        {
+          "file": "draft/13-displaced-scholars.md",
+          "text": "Marcus receiving Werner's illegal status confirmation and integrating the Sherbrooke parallel — deliberate, interior chapter",
+          "chapter": "13"
+        },
+        {
+          "file": "draft/15-what-grandy-soule-saw.md",
+          "text": "Soule's testimony corroborating the dock sighting — important advance but handled in a quiet register when the ingredients support more scene energy",
+          "chapter": "15"
+        },
+        {
+          "file": "draft/16-werner-grau.md",
+          "text": "Marcus assembling the full plausible account and locking it in the drawer — second consecutive Marcus integration chapter, similar atmospheric register to chapter 13",
+          "chapter": "16"
+        }
+      ],
+      "suggested_action": "Consider giving chapter 15 (Grandy Soule) more scene energy — the casual mention of the unregistered dinghy is a significant mystery advance and Eira's response is interesting; the exchange could carry more forward momentum without breaking her register. No structural changes required.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "continuity-fact-audit-001",
+      "category": "continuity-fact",
+      "severity": "critical",
+      "title": "German POW surnames contradict between Ch 12 / canon glossary and Ch 24",
+      "description": "Canon glossary and Ch 12 (Ansbach) name the three non-Reinmar POWs as Fischer, Bauer, and Hentschel. In Ch 24 (Transfer), the MP reads the transfer roll as 'Reinmar. Steinbach. Huber. Bauer.' — Bauer is consistent, but Steinbach and Huber replace Fischer and Hentschel from the canonical roster. Both assertions are narrator-stated (Karl's direct perception in Ch 12; the MP reading aloud from a military document in Ch 24).",
+      "evidence": [
+        {
+          "file": "draft/12-ansbach.md",
+          "text": "Fischer and Bauer and Hentschel were present — men in the same difficulty, which was a kind of presence — and Reed the guard was present as a watcher",
+          "chapter": "12"
+        },
+        {
+          "file": "canon/glossary.md",
+          "text": "Fischer — One of the three older German POWs at the Pfeiffer farm satellite work camp. Former Feldwebel (sergeant). ... Bauer — One of the three older German POWs ... Hentschel — One of the three older German POWs"
+        },
+        {
+          "file": "draft/24-transfer.md",
+          "text": "read four names from the list in the carrying voice of a man who has done this enough times that he no longer hears the names as names: Reinmar. Steinbach. Huber. Bauer.",
+          "chapter": "24"
+        }
+      ],
+      "suggested_action": "In Ch 24 the names Steinbach and Huber should be Fischer and Hentschel (in some order matching the canonical roster). Bauer requires no change. Because the correct mapping of Steinbach → Fischer vs. Hentschel and Huber → the other is not determinable from context, a human author must confirm the order before applying the fix.",
+      "auto_repair_safe": false,
+      "repair_agent": null,
+      "repair_params": null
+    },
+    {
+      "id": "continuity-fact-audit-002",
+      "category": "continuity-fact",
+      "severity": "critical",
+      "title": "Body discovery date in CG form (Ch 25) contradicts canon and four other chapters",
+      "description": "Canon glossary, Ch 01, Ch 04, Ch 15, and Ch 29 all consistently establish the body was found on October 12, 1943. Ch 25 (The Proceeding) describes the CG form as specifying the body was 'received at Coldwater Reach on October 13, 1943.' Ch 25 is the sole outlier; the four-source consensus and the canon gloss make the correct date unambiguous.",
+      "evidence": [
+        {
+          "file": "draft/01-the-breakwater.md",
+          "text": "October 12, 1943. Sunrise 0611. ... 0615: Unidentified male, deceased, recovered at breakwater elbow. ... CG Sprucehead notified 0622. CG responded, Lt. A. Mercer and two enlisted, 0711. Body removed to CG custody 0723.",
+          "chapter": "01"
+        },
+        {
+          "file": "draft/04-what-the-log-shows.md",
+          "text": "Body discovered at 0615, breakwater elbow, S. face. Male, apparent age 50+. Navy wool coat, wool trousers, no footwear. No identification of any kind. CG Sprucehead notified 0622. Lt. A. Mercer and two enlisted arrived 0711. Body removed to CG custody 0723.",
+          "chapter": "04"
+        },
+        {
+          "file": "draft/15-what-grandy-soule-saw.md",
+          "text": "Male, fifty or older, no identifying papers, recovered at the breakwater elbow, morning of October 12, 1943.",
+          "chapter": "15"
+        },
+        {
+          "file": "canon/glossary.md",
+          "text": "Man on the Breakwater — Unidentified male, 50 or older, found dead at the breakwater elbow on October 12, 1943."
+        },
+        {
+          "file": "draft/25-the-proceeding.md",
+          "text": "the blank space for identifying information on the body received at Coldwater Reach on October 13, 1943, still empty as it had been since she drew the form from the cabinet in October of last year.",
+          "chapter": "25"
+        }
+      ],
+      "suggested_action": "In Ch 25 change 'October 13, 1943' to 'October 12, 1943'.",
+      "auto_repair_safe": true,
+      "repair_agent": "repair-fact-normalize",
+      "repair_params": {
+        "canon_source": "canon/glossary.md",
+        "edits": [
+          {
+            "file": "draft/25-the-proceeding.md",
+            "wrong_text": "the body received at Coldwater Reach on October 13, 1943",
+            "correct_text": "the body received at Coldwater Reach on October 12, 1943"
+          }
+        ]
+      }
+    },
+    {
+      "id": "continuity-fact-audit-003",
+      "category": "continuity-fact",
+      "severity": "high",
+      "title": "Harbor log times for the body incident differ between Ch 01/Ch 04 (original entry) and Ch 29 (reading the same entry)",
+      "description": "Ch 01 and Ch 04 both present the October 12 harbor log entry with times 0615 (discovery), 0622 (CG notified), 0711 (CG arrived), 0723 (body removed). Ch 29 (The Harbor Log) presents Eira reading that same entry — a narrator-quoted document — with markedly different times: 0610, 0620, 0740, 0820. The discrepancies in CG arrival (0711 vs. 0740, a 29-minute difference) and body transport (0723 vs. 0820, a 57-minute difference) are the most significant.",
+      "evidence": [
+        {
+          "file": "draft/01-the-breakwater.md",
+          "text": "0615: Unidentified male, deceased, recovered at breakwater elbow. No papers, no identification of any kind, no associated vessel. CG Sprucehead notified 0622. CG responded, Lt. A. Mercer and two enlisted, 0711. Body removed to CG custody 0723. CG assuming jurisdiction.",
+          "chapter": "01"
+        },
+        {
+          "file": "draft/04-what-the-log-shows.md",
+          "text": "Body discovered at 0615, breakwater elbow, S. face. Male, apparent age 50+. Navy wool coat, wool trousers, no footwear. No identification of any kind. CG Sprucehead notified 0622. Lt. A. Mercer and two enlisted arrived 0711. Body removed to CG custody 0723.",
+          "chapter": "04"
+        },
+        {
+          "file": "draft/29-the-harbor-log.md",
+          "text": "Body discovered outer breakwater face, 0610 hours. Adult male, no identification found on person or clothing. Coast Guard notified 0620 hours. CG arrived 0740 hours, Lieutenant and two enlisted. Body transported 0820 hours.",
+          "chapter": "29"
+        }
+      ],
+      "suggested_action": "In Ch 29, update the quoted log entry times to match Ch 01 and Ch 04: 0610 → 0615, 0620 → 0622, 0740 → 0711, 0820 → 0723.",
+      "auto_repair_safe": true,
+      "repair_agent": "repair-fact-normalize",
+      "repair_params": {
+        "canon_source": "draft/01-the-breakwater.md",
+        "edits": [
+          {
+            "file": "draft/29-the-harbor-log.md",
+            "wrong_text": "Body discovered outer breakwater face, 0610 hours. Adult male, no identification found on person or clothing. Coast Guard notified 0620 hours. CG arrived 0740 hours, Lieutenant and two enlisted. Body transported 0820 hours.",
+            "correct_text": "Body discovered outer breakwater face, 0615 hours. Adult male, no identification found on person or clothing. Coast Guard notified 0622 hours. CG arrived 0711 hours, Lieutenant and two enlisted. Body transported 0723 hours."
+          }
+        ]
+      }
+    },
+    {
+      "id": "continuity-fact-audit-004",
+      "category": "continuity-fact",
+      "severity": "high",
+      "title": "Tidal range contradicted between canon/continuity.md (10–12 ft at neap) and canon/world.md (30 ft at neap)",
+      "description": "canon/continuity.md — designated the source of truth for structural facts — gives the harbor tidal range as 'approx. 10–12 feet at neap, more at spring tides', which is accurate for Maine mid-coast. canon/world.md states 'The harbor is tidal, with a thirty-foot range at neaps.' A 30-foot neap range is geographically impossible for mid-coast Maine (Bay of Fundy order of magnitude) and contradicts the continuity document. No draft chapter yet asserts a numeric tidal range, but the canon files must agree before any chapter does.",
+      "evidence": [
+        {
+          "file": "canon/continuity.md",
+          "text": "The harbor has a tidal range characteristic of Maine mid-coast (approx. 10–12 feet at neap, more at spring tides)."
+        },
+        {
+          "file": "canon/world.md",
+          "text": "The harbor is tidal, with a thirty-foot range at neaps."
+        }
+      ],
+      "suggested_action": "Correct canon/world.md to align with canon/continuity.md: replace 'a thirty-foot range at neaps' with 'a tidal range of approximately 10–12 feet at neap tides, larger at spring tides, characteristic of the Maine mid-coast'. No draft chapter currently asserts either figure.",
+      "auto_repair_safe": false,
+      "repair_agent": null,
+      "repair_params": null
+    },
+    {
+      "id": "det-fact-conflict:hannah-pfeiffer:age",
+      "category": "continuity-fact",
+      "severity": "high",
+      "title": "Contradictory age for hannah-pfeiffer",
+      "description": "The world store holds conflicting live values for hannah-pfeiffer.age: 17 years (02-icehouse) vs 18 years (17-sixth-of-june).",
+      "evidence": [
+        {
+          "file": "draft/02-icehouse.md",
+          "text": "age = 17 years (02-icehouse)",
+          "fact_id": "fact:02-icehouse:hannah-pfeiffer:age",
+          "chapter": "02-icehouse"
+        },
+        {
+          "file": "draft/17-sixth-of-june.md",
+          "text": "age = 18 years (17-sixth-of-june)",
+          "fact_id": "fact:17-sixth-of-june:hannah-pfeiffer:age",
+          "chapter": "17-sixth-of-june"
+        }
+      ],
+      "suggested_action": "Reconcile the values; supersede the incorrect assertion (or fix the prose so they agree).",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "det-fact-conflict:karl-reinmar:located_in",
+      "category": "continuity-fact",
+      "severity": "high",
+      "title": "Contradictory located_in for karl-reinmar",
+      "description": "The world store holds conflicting live values for karl-reinmar.located_in: Pfeiffer farm icehouse bunkhouse (02-icehouse) vs transferred out of Pfeiffer farm, November 1944 — destination not specified (24-transfer).",
+      "evidence": [
+        {
+          "file": "draft/02-icehouse.md",
+          "text": "located_in = Pfeiffer farm icehouse bunkhouse (02-icehouse)",
+          "fact_id": "fact:02-icehouse:karl-reinmar:located_in",
+          "chapter": "02-icehouse"
+        },
+        {
+          "file": "draft/24-transfer.md",
+          "text": "located_in = transferred out of Pfeiffer farm, November 1944 — destination not specified (24-transfer)",
+          "fact_id": "fact:24-transfer:karl-reinmar:located_in",
+          "chapter": "24-transfer"
+        }
+      ],
+      "suggested_action": "Reconcile the values; supersede the incorrect assertion (or fix the prose so they agree).",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "det-fact-conflict:lonzo-reed:role",
+      "category": "continuity-fact",
+      "severity": "high",
+      "title": "Contradictory role for lonzo-reed",
+      "description": "The world store holds conflicting live values for lonzo-reed.role: Coastal Patrol private, escort/guard for POWs at Pfeiffer farm (02-icehouse) vs Coastal Patrol private, POW escort, Pfeiffer farm (21-lonzo-reed).",
+      "evidence": [
+        {
+          "file": "draft/02-icehouse.md",
+          "text": "role = Coastal Patrol private, escort/guard for POWs at Pfeiffer farm (02-icehouse)",
+          "fact_id": "fact:02-icehouse:lonzo-reed:role",
+          "chapter": "02-icehouse"
+        },
+        {
+          "file": "draft/21-lonzo-reed.md",
+          "text": "role = Coastal Patrol private, POW escort, Pfeiffer farm (21-lonzo-reed)",
+          "fact_id": "fact:21-lonzo-reed:lonzo-reed:role",
+          "chapter": "21-lonzo-reed"
+        }
+      ],
+      "suggested_action": "Reconcile the values; supersede the incorrect assertion (or fix the prose so they agree).",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "det-fact-conflict:werner-grau-letter:current_location",
+      "category": "continuity-fact",
+      "severity": "high",
+      "title": "Contradictory current_location for werner-grau-letter",
+      "description": "The world store holds conflicting live values for werner-grau-letter.current_location: Marcus Klein's classroom desk — center drawer, under the Latin dictionary (06-misdelivered) vs Albrecht Pfeiffer's possession — delivered January 1944 (09-the-visit).",
+      "evidence": [
+        {
+          "file": "draft/06-misdelivered.md",
+          "text": "current_location = Marcus Klein's classroom desk — center drawer, under the Latin dictionary (06-misdelivered)",
+          "fact_id": "fact:06-misdelivered:werner-grau-letter:current_location",
+          "chapter": "06-misdelivered"
+        },
+        {
+          "file": "draft/09-the-visit.md",
+          "text": "current_location = Albrecht Pfeiffer's possession — delivered January 1944 (09-the-visit)",
+          "fact_id": "fact:09-the-visit:werner-grau-letter:current_location",
+          "chapter": "09-the-visit"
+        }
+      ],
+      "suggested_action": "Reconcile the values; supersede the incorrect assertion (or fix the prose so they agree).",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    }
+  ]
+}

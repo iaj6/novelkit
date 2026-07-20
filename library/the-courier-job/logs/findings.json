@@ -1,0 +1,200 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-05-21T10:12:08.178Z",
+  "summary": {
+    "critical": 2,
+    "high": 4,
+    "medium": 1,
+    "low": 0
+  },
+  "findings": [
+    {
+      "id": "ending-mode-uniformity-001",
+      "category": "ending-mode-uniformity",
+      "severity": "high",
+      "title": "Three chapter endings violate the brief's mandatory cliffhanger/mid-action cut requirement",
+      "description": "Chapters 02, 04, and 07 all end on literary fades — post-resolution interiority, a scene settling after its peak tension has dissipated, and a quietly humorous retrospective beat, respectively. The brief prohibits this ending mode in every chapter without exception. Chapter 05's ending is borderline (ominous mood summary rather than a cut at peak tension). The three confirmed violations are structural failures that will cost forward momentum at exactly the junctions where the book most needs to pull the 13–15-year-old target reader to the next chapter.",
+      "evidence": [
+        {
+          "file": "draft/02-the-wagon-road.md",
+          "text": "her right hand had found the bag's strap and closed there, tight and specific, and she hadn't told it to"
+        },
+        {
+          "file": "draft/04-the-guild-token.md",
+          "text": "Nobody asked what places. [chapter ends on a settled fire scene after Iri's peak tension beat has already deflated into quiet]"
+        },
+        {
+          "file": "draft/07-the-pavers-country.md",
+          "text": "She was later fairly sure Iri had finished the sentence anyway. She would never know for certain."
+        },
+        {
+          "file": "draft/05-the-innkeeper-at-long-crossing.md",
+          "text": "East was where they were going. East was where the word was going now, and faster."
+        }
+      ],
+      "suggested_action": "Ch 02: cut at the moment Brann raises his hand at the watcher, before the watcher walks away and before Tess's hand closes on the strap. Ch 04: cut at the chapter's sharpest tension beat — 'I was wrong to be surprised they sent this many' or the moment Brann shuts the conversation down — before the scene settles. Ch 07: cut mid-sentence before Tess falls asleep, on the unfinished Iri implication about what the bag builds, preserving the irony of interrupted information rather than resolving it into a retrospective smile.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "character-voice-drift-001",
+      "category": "character-voice-drift",
+      "severity": "high",
+      "title": "POV violations: other characters' interiority stated as omniscient fact rather than Tess's inference",
+      "description": "Two instances where the narration slips from Tess's limited third-person perspective into omniscient reporting of another character's inner state. Chapter 06 presents Vel's motivation and cognition as fact across an entire paragraph. Chapter 08's final line presents Pip's perception of Tess as omniscient fact. The brief is explicit: all insight about another character must be framed as Tess's observation and inference, never as the narrator's direct report. Chapter 03 contains a borderline passage where an attacker's evaluating gaze is rendered via colon-construction that may reflect the attacker's assessment rather than Tess's observation.",
+      "evidence": [
+        {
+          "file": "draft/06-the-rival-party.md",
+          "text": "She meant it. She had done the arithmetic on this situation and arrived at an offer she considered fair. She wasn't performing. If Tess had handed over the bag, Vel would have given the money, correct weight, and walked away without a backward look and thought she'd done right by them. She was making the offer she would have wanted to receive."
+        },
+        {
+          "file": "draft/08-two-days-out.md",
+          "text": "He could tell. [final line, presenting Pip's read of Tess as omniscient fact rather than Tess's inference]"
+        },
+        {
+          "file": "draft/03-the-ambush.md",
+          "text": "He looked at Iri: upright, shaking, hands in Pip's coat, the expression of someone who has done something expensive and is prepared to do it again. [rendered through the attacker's gaze rather than clearly framed as Tess's observation — borderline]"
+        }
+      ],
+      "suggested_action": "Ch 06: reframe the Vel interiority paragraph through Tess's external observation — what does Tess read in Vel's face, posture, and manner that leads her to infer Vel means it? Replace omniscient assertion with evidence-from-Tess's-perspective. Ch 08 final line: change 'He could tell' to 'She could tell he could tell' or equivalent inference framing. Ch 03: reframe the colon-construction as Tess watching the attacker look, then describing what she herself sees.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "over-articulation-001",
+      "category": "over-articulation",
+      "severity": "high",
+      "title": "Extended interiority blocks in chapters 07, 11, and 12 exceed the style guide's permitted length and displace external action",
+      "description": "Three separate passages sustain Tess's unbroken interiority at lengths (approximately 700–800 words, 600 words, and 250+ words respectively) that significantly exceed the style guide's 4–6 sentence ceiling for uninterrupted interior observation. In all three cases the content is correct and necessary; the form is not. Chapter 07's wardworking sequence contains minimal dialogue and multiple paragraphs of technical magical reasoning. Chapter 11's retroactive re-casting enumeration runs through all prior enforcement network encounters without any external action interruption. Chapter 12's decision-mulling section and the lyrical letter-writing section that follows together constitute the book's largest sustained departure from the 60/40 external-to-internal balance the style guide specifies.",
+      "evidence": [
+        {
+          "file": "draft/07-the-pavers-country.md",
+          "text": "[wardworking sequence from 'She started' through the Iri anchor-point correction — approximately 700–800 words, near-continuous prose, minimal dialogue, detailed technical interiority about chalk adhesion and anchor-point seating failure]"
+        },
+        {
+          "file": "draft/11-the-advocates-court.md",
+          "text": "Day six. River bend on the Wagon Road East... [retroactive re-casting enumeration, approximately 600 words of continuous Tess interiority, no external action beats or dialogue breaks]"
+        },
+        {
+          "file": "draft/12-the-decision.md",
+          "text": "[post-Pip-departure decision-mulling section, approximately 250 words without external event; followed by the letter-writing fragment-list section — together the longest uninterrupted interior sequence in the manuscript]"
+        }
+      ],
+      "suggested_action": "Ch 07: compress the wardworking sequence by approximately 30% and insert one dialogue beat from any party member in the middle third to break the continuous thought-block. Ch 11: insert two or three brief external action beats (Sable writing, Brann shifting near the door) inside the re-casting enumeration to give Tess's inference a rhythm break without changing what she thinks through. Ch 12: condense the decision-mulling and letter-writing sections each by roughly one-third and re-ground each with at least one physical action beat before the unsent-letter moment.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "register-bandwidth-001",
+      "category": "register-bandwidth",
+      "severity": "high",
+      "title": "Prose drifts into adult literary fantasy register in three sustained passages across chapters 07, 10, and 12",
+      "description": "In chapters 07, 10, and 12 the prose shifts from the Bardugo-register (declarative, compressed, image-first, fast) into the meditative, layered, image-inventory mode of adult literary fantasy. This drift appears specifically in moments where the narrative slows: extended magical-technical description in ch 07, a multi-layered sensory inventory at Asterhall's approach in ch 10, and a fragment-list letter-writing passage in ch 12. The project guidance explicitly names this as the drift pattern to flag: craft excellence in the wrong register is not success for this book, and the last place to lose a 13-year-old reader is the final chapter.",
+      "evidence": [
+        {
+          "file": "draft/07-the-pavers-country.md",
+          "text": "[wardworking sequence: multi-paragraph technical breakdown of anchor-point resistance, chalk adhesion failure, and magical geometry — long sentences, detailed mechanical reasoning, meditative pacing characteristic of adult secondary-world fantasy]"
+        },
+        {
+          "file": "draft/10-the-walls.md",
+          "text": "Tanneries, first — cutting, chemical... Under that: coal-smoke... Under both of those, running under all of it: people. [layered smell inventory at Asterhall's gate — atmospheric and accurate but the most prose-dense sustained passage in Act 3]"
+        },
+        {
+          "file": "draft/12-the-decision.md",
+          "text": "West end of Drey, the well, the lamp in the window. The herbs drying on the kitchen side of the worktable — three bundles in late summer, two in spring, always the same ones, always hung the same way."
+        }
+      ],
+      "suggested_action": "Ch 07: reduce the wardworking sequence to the near-failure moment and the Iri correction; cut the detailed accounting of chalk resistance — show that this is hard work, not why it is hard. Ch 10: deliver city-sensory information faster, through Tess's compressed reaction rather than a layered inventory. Ch 12: reduce the letter-writing fragment-list by one-third and reintroduce a physical action beat to break the meditative rhythm.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "stylistic-tic-001",
+      "category": "stylistic-tic",
+      "severity": "medium",
+      "title": "Sentence-after-the-sentence: landed beats and established subtext are glossed or named after the fact",
+      "description": "Three instances where a line or scene has already done its work and the next sentence explains, glosses, or names what just happened — the pattern the style guide calls 'sentence-after-the-sentence' and 'post-scene subtext naming.' Ch 04: Brann's compressed 'Thank you' is followed by an interpretive gloss that explains the joke after it has landed. Ch 07: Tess's ward-laying action is annotated by a parenthetical that names her motivating insecurity. Ch 12: the Tess/Brann trust established through twelve chapters of action is named directly in a 'comfortable silence' paragraph. All three instances undercut compression the manuscript earns through more precise means elsewhere.",
+      "evidence": [
+        {
+          "file": "draft/04-the-guild-token.md",
+          "text": "That was it. Possibly the entirety of Brann's vocabulary for someone did a useful thing and I am glad of it. [follows Brann's 'Thank you' — glosses a beat that has already landed without annotation]"
+        },
+        {
+          "file": "draft/07-the-pavers-country.md",
+          "text": "(It was at least partly about proving something. She was not going to examine that right now.) [parenthetical annotating the motivation behind the ward-laying — the action already demonstrates this]"
+        },
+        {
+          "file": "draft/12-the-decision.md",
+          "text": "The silence was the comfortable kind. Tess had not expected, three weeks ago at a pre-dawn departure from a village square, that a seventeen-year-old blacksmith's son from Drey would be someone she could be quiet with."
+        }
+      ],
+      "suggested_action": "Ch 04: cut the gloss sentence entirely; Brann's 'Thank you' stands without annotation. Ch 07: cut the parenthetical; the twelve-chapter arc of Tess wanting to be taken seriously as a practitioner already carries the motivation. Ch 12: cut the 'comfortable silence' paragraph; the Brann/Tess thread has been showing this for twelve chapters and does not need to be named in its own final chapter.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "continuity-fact-audit-001",
+      "category": "continuity-fact",
+      "severity": "critical",
+      "title": "Guild rider's cloak color: Ch01 and later Ch02 say gray; an earlier Ch02 sentence implies enforcement blue",
+      "description": "In Ch01 the guild rider is unambiguously described as wearing a 'Gray traveling cloak.' Later in Ch02 the same rider is again called 'a gray cloak.' However, an earlier sentence in Ch02 has Tess identify the checkpoint officer's blue-gray road livery as 'Not full enforcement blue — she knew that color from the rider's cloak two mornings ago.' This implies the rider's cloak was enforcement blue — directly contradicting both the Ch01 description and the later Ch02 description, and the canonical fact ('gray traveling cloak, hood back') in logs/continuity.md.",
+      "evidence": [
+        {
+          "file": "draft/01-departure.md",
+          "text": "Gray traveling cloak, hood back, road-worn look that belonged to anyone who'd been moving for a few days."
+        },
+        {
+          "file": "draft/02-the-wagon-road.md",
+          "text": "Not full enforcement blue — she knew that color from the rider's cloak two mornings ago — but guild-marked."
+        },
+        {
+          "file": "draft/02-the-wagon-road.md",
+          "text": "The rider three mornings ago had been in a gray cloak on a gray horse moving west."
+        }
+      ],
+      "suggested_action": "Change the early Ch02 sentence to remove the inaccurate rider's-cloak reference. Replace 'Not full enforcement blue — she knew that color from the rider's cloak two mornings ago — but guild-marked.' with 'Not full enforcement blue — road guild, not enforcement wing — but guild-marked.' This preserves the blue-gray / enforcement-blue distinction that is the narrative point of the passage without claiming Tess learned enforcement blue from a cloak that was gray.",
+      "auto_repair_safe": true,
+      "repair_agent": "repair-fact-normalize",
+      "repair_params": {
+        "canon_source": "draft/01-departure.md",
+        "edits": [
+          {
+            "file": "draft/02-the-wagon-road.md",
+            "wrong_text": "Not full enforcement blue — she knew that color from the rider's cloak two mornings ago — but guild-marked.",
+            "correct_text": "Not full enforcement blue — road guild, not enforcement wing — but guild-marked."
+          }
+        ]
+      }
+    },
+    {
+      "id": "continuity-fact-audit-002",
+      "category": "continuity-fact",
+      "severity": "critical",
+      "title": "Days-to-Long-Crossing estimate in Ch04 contradicts the confirmed Day-9 arrival established in Ch05 and canon",
+      "description": "At the end of Ch04 (explicitly set on the evening of day 7), the party estimates that Long Crossing is 'four more days, three if they pushed' away — implying arrival on day 10 or day 11. Ch05 opens by confirming Long Crossing was reached after exactly nine days on the road, and canon (logs/continuity.md) records 'Day 9 of the journey: party arrives at Long Crossing.' The correct figure from day 7 is two more days of travel.",
+      "evidence": [
+        {
+          "file": "draft/04-the-guild-token.md",
+          "text": "Long Crossing in four more days, three if they pushed, with the weather holding west at least two more days by the look of it."
+        },
+        {
+          "file": "draft/05-the-innkeeper-at-long-crossing.md",
+          "text": "Tess had been watching him for nine days on a dirt road, and at Long Crossing's edge where the town street began and the paving began with it, something behind his eyes went from road-alert to something else."
+        }
+      ],
+      "suggested_action": "Change 'Long Crossing in four more days, three if they pushed' in Ch04 to 'Long Crossing in two more days, maybe one if they pushed' to align with the Day-9 arrival confirmed in Ch05 and logs/continuity.md.",
+      "auto_repair_safe": true,
+      "repair_agent": "repair-fact-normalize",
+      "repair_params": {
+        "canon_source": "logs/continuity.md",
+        "edits": [
+          {
+            "file": "draft/04-the-guild-token.md",
+            "wrong_text": "Long Crossing in four more days, three if they pushed, with the weather holding west at least two more days by the look of it.",
+            "correct_text": "Long Crossing in two more days, maybe one if they pushed, with the weather holding west at least two more days by the look of it."
+          }
+        ]
+      }
+    }
+  ]
+}

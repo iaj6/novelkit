@@ -1,0 +1,152 @@
+---
+import { marked } from "marked";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import Ornament from "../../../components/Ornament.astro";
+import { getBooks, getReaderLetter, url, type Book } from "../../../lib/library";
+
+/**
+ * The pipeline's own developmental letter on the finished manuscript,
+ * published as-is. This is the press's evidence layer: an agent read the
+ * book and reported what held and what didn't, and no one edited either
+ * the book or the letter in response.
+ */
+export async function getStaticPaths() {
+  return getBooks()
+    .filter((book) => book.hasReaderLetter)
+    .map((book) => ({ params: { slug: book.slug }, props: { book } }));
+}
+
+interface Props {
+  book: Book;
+}
+
+const { book } = Astro.props;
+const letterHtml = marked.parse(getReaderLetter(book.slug), { async: false });
+---
+
+<BaseLayout
+  title={`the reader's letter — ${book.title}`}
+  description={`the pipeline reader's developmental letter on ${book.title}, published unedited.`}
+  compactHeader={true}
+>
+  <article class="letter reading">
+    <header class="letter-head">
+      <p class="small-caps reveal reveal-1">from the press&rsquo;s reader</p>
+      <h1 class="letter-title reveal reveal-2">
+        a letter on <em>{book.title}</em>
+      </h1>
+      <p class="letter-lede reveal reveal-3">
+        when a draft is finished, a reader agent reads the whole book and
+        writes the press a letter — what held, what didn&rsquo;t, what it
+        would fix. this is that letter, unedited. the book was published
+        as it stood.
+      </p>
+      <p class="spoiler-note reveal reveal-3">
+        it discusses the entire book, ending included.
+        <a href={url(`/book/${book.slug}/`)}>go back and read the book first</a>
+        if you mind spoilers.
+      </p>
+    </header>
+
+    <Ornament variant="single" />
+
+    <div class="letter-body reveal reveal-4" set:html={letterHtml} />
+
+    <Ornament variant="single" />
+
+    <p class="backlink meta">
+      <a href={url(`/book/${book.slug}/`)}>&larr; back to {book.title}</a>
+    </p>
+  </article>
+</BaseLayout>
+
+<style>
+  .letter {
+    padding-block: var(--space-5);
+  }
+
+  .letter-head {
+    margin-bottom: var(--space-4);
+  }
+
+  .letter-title {
+    font-family: var(--font-display);
+    font-variation-settings: "opsz" 84, "SOFT" 65;
+    font-weight: 400;
+    font-size: clamp(2.2rem, 5vw, 3.2rem);
+    line-height: 1.05;
+    letter-spacing: -0.015em;
+    margin-block: var(--space-2) var(--space-3);
+  }
+
+  .letter-title em {
+    font-style: italic;
+  }
+
+  .letter-lede {
+    color: var(--ink-soft);
+    max-width: 34rem;
+  }
+
+  .spoiler-note {
+    font-style: italic;
+    color: var(--ink-soft);
+    padding: var(--space-1) var(--space-2);
+    background: rgba(201, 154, 74, 0.08);
+    border-left: 2px solid var(--lantern);
+    max-width: 34rem;
+  }
+
+  .letter-body {
+    margin-block: var(--space-4);
+  }
+
+  .letter-body :global(h1) {
+    font-size: var(--size-h2);
+    margin-block: var(--space-4) var(--space-2);
+  }
+
+  .letter-body :global(h2) {
+    font-size: var(--size-h3);
+    margin-block: var(--space-4) var(--space-2);
+  }
+
+  .letter-body :global(h3),
+  .letter-body :global(h4) {
+    font-size: 1.15rem;
+    margin-block: var(--space-3) var(--space-2);
+  }
+
+  .letter-body :global(p),
+  .letter-body :global(li) {
+    color: var(--ink-soft);
+    line-height: 1.6;
+  }
+
+  .letter-body :global(ul),
+  .letter-body :global(ol) {
+    padding-left: 1.4rem;
+  }
+
+  .letter-body :global(strong) {
+    color: var(--ink);
+    font-weight: var(--weight-medium);
+  }
+
+  .letter-body :global(blockquote) {
+    border-left: 2px solid var(--rule);
+    padding-left: var(--space-2);
+    font-style: italic;
+    margin-block: var(--space-2);
+  }
+
+  .letter-body :global(hr) {
+    border: 0;
+    border-top: 1px solid var(--rule);
+    margin-block: var(--space-3);
+  }
+
+  .backlink {
+    margin-top: var(--space-3);
+  }
+</style>

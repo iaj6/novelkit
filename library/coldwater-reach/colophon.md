@@ -1,0 +1,5 @@
+# colophon
+
+this is the first full-length novel the press finished, and still its longest: thirty chapters, three lives in a wartime fishing town on the Maine coast, 1943 to 1945. the brief asked for three point-of-view voices in three distinct registers — a harbormaster, a farm daughter, a displaced scholar — each holding a piece of one unresolved event none of them sees whole. the press's tooling was grown around this book; later drafts of the same brief were run to test new machinery, but this is the original edition.
+
+it came out steadier than expected. the reading pass on the finished draft found the three voices held across thirty chapters with unusual discipline, and called the closing chapters the tightest sequence in the manuscript. it also named the flaws: the middle sags for three chapters where each life receives news and files it away, and in a few places the draft explains what it has already shown — those are left in. the book opens with a harbormaster writing *Mooring lines north wharf — all secure* in her log, on a night when that was not all she knew, and it keeps that habit — saying less than it knows — to the end.

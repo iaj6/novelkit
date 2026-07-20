@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-05-30T13:42:49.125Z",
+  "summary": {
+    "critical": 1,
+    "high": 1,
+    "medium": 1,
+    "low": 1
+  },
+  "findings": [
+    {
+      "id": "continuity-fact-001",
+      "category": "continuity-fact",
+      "severity": "critical",
+      "title": "V2 checkpoint 'no names' policy directly contradicted within the same vignette",
+      "description": "In Chapter 5, Selle states explicitly and in response to a specific traveler's anxiety: 'We don't take names.' This is presented as checkpoint policy, not improvisation. Two chapters later in Chapter 7 (temporally adjacent, same officers, same checkpoint), Selle opens his intake with 'Your name, please' and records the woman as 'Marta Solak' in the crossing log entry. No change of procedure is narrated; no context explains the departure. Because 'Marta Solak' is the only named traveler in the vignette, the inconsistency is conspicuous to any attentive reader. Both versions serve the vignette's argument — the nameless impersonality of procedure (Ch5 version) or the cruelty of recording a name before turning someone away (Ch7 version) — but they cannot coexist without contradiction. A human decision is required about which version is canonical; the other chapter must be adjusted to match.",
+      "evidence": [
+        {
+          "file": "draft/05-the-notebook.md",
+          "text": "We don't take names. (stated by Selle as checkpoint policy, direct response to traveler anxiety)"
+        },
+        {
+          "file": "draft/07-the-fever.md",
+          "text": "Your name, please — Selle opens intake; woman recorded as 'Marta Solak' in crossing log entry"
+        }
+      ],
+      "suggested_action": "Decide which version is canonical: (A) the no-names impersonality of procedure established in Ch5 — adjust Ch7 to remove the name-taking intake; or (B) the name-recording intake as the correct procedure — adjust Ch5 to remove or reframe the 'We don't take names' line. Do not introduce a narrated explanation for the discrepancy; whichever version is kept should simply be consistent.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "over-articulation-001",
+      "category": "over-articulation",
+      "severity": "medium",
+      "title": "Explicit interior reasoning in V3 close (Ch11) and glossing sentence in V5 opening (Ch15) both exceed their vignette's register tolerance for articulated thought",
+      "description": "Two instances of the style guide's 'sentence-after-the-sentence' failure mode, in different vignettes but sharing the same root cause: the narration steps outside the register's emotional method to articulate what the scene has already enacted. In Ch11 ('Crossing'), the man reasons through Theo's gift across four paragraphs of explicit inner argument — the thought shaped like a comfort, setting it down, the wrongness of the thought, the conclusion about what the road can and cannot reach — rather than distributing that realization across physical action and silence as the McCarthy register requires. The conclusion earns its weight; the four-paragraph reasoning-through does not. In Ch15 ('The Log'), the line 'She was a person who wrote down what she saw' glosses the behavior the preceding logbook entries have already enacted. The logbook entries speak for themselves; the gloss undoes their work.",
+      "evidence": [
+        {
+          "file": "draft/11-crossing.md",
+          "text": "Four-paragraph interior reasoning sequence: 'The thought had the shape of a comfort... He set it down now... It was wrong... the road could not reach what the boy did with his hands at a crossing. Not had not yet. Could not.' — articulated argument where the McCarthy register keeps feeling in action and silence."
+        },
+        {
+          "file": "draft/15-the-log.md",
+          "text": "'She was a person who wrote down what she saw' — names the behavior the surrounding logbook entries are already demonstrating."
+        }
+      ],
+      "suggested_action": "In Ch11: keep the conclusion ('the road could not reach what the boy did with his hands at a crossing') but redistribute the four-paragraph reasoning-through into physical displacement — how the man walks, what he does with his hands, what he looks at on the road south instead of thinking. In Ch15: cut or restructure the gloss sentence; the logbook entries enact the behavior it names and do not need annotation.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "character-voice-drift-001",
+      "category": "character-voice-drift",
+      "severity": "low",
+      "title": "Single clause-rich analytical sentence in Jesse's body-first declarative register (Ch02)",
+      "description": "One sentence in Chapter 2 ('Amara's Door') performs explicit psychological analysis in a register otherwise committed to body-knowledge arriving before cognition: 'He also knew — the same way his body had turned in the second-floor hallway before his brain caught the shape in the corridor — that saying 'don't' was the only thing he could do, and that it wasn't going to stop her, and that they both understood this.' The sentence is long, subordinate-clause-rich, and makes Jesse articulate a mutual understanding through analytical proposition rather than physical signal. The content is load-bearing (the mutual understanding between Jesse and Amara is structurally important and this is the only place it appears). This is a single-passage occurrence, not a sustained drift — flagged at low severity, documented so it does not pass unexamined.",
+      "evidence": [
+        {
+          "file": "draft/02-amaras-door.md",
+          "text": "'He also knew — the same way his body had turned in the second-floor hallway before his brain caught the shape in the corridor — that saying 'don't' was the only thing he could do, and that it wasn't going to stop her, and that they both understood this.' — subordinate-rich analytical sentence in a register specified as short declaratives and body-first interiority."
+        }
+      ],
+      "suggested_action": "Revise to render the mutual understanding between Jesse and Amara through physical or sensory means consistent with the chapter's declared register — what his body does, what passes between them in a look or a beat of silence — rather than through subordinate-clause propositions. The understanding itself must survive; only the sentence form needs adjustment.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "continuity-fact-audit-001",
+      "category": "continuity-fact",
+      "severity": "high",
+      "title": "Carved wooden fish position on mast: 'top of mast' (Ch16, Ch17) contradicts 'eye level / arm's reach at base' (Ch15, Ch21, Ch22)",
+      "description": "Three chapters place the carved wooden fish near the base of the mast at standing arm's reach: Ch15 says it is 'nailed to the mast at roughly eye level,' Ch21 says it is 'above the mast's base on its nail,' and Ch22 has Nadia physically touch it while standing ('She put her hand on the fish. Small under her palm.'), establishing it is within reach of a standing adult. Canon (world.md) places it 'above the logbook case' where the logbook case is 'bolted to the base of the mast.' However, Ch16 explicitly describes the mast as 'the telephone pole standing above the low profile of the deck and the canvas shade structures' and then—from a quarter mile away on the water—places the fish 'at the top of the mast.' Ch17 similarly describes Nadia seeing 'the top of the mast. The fish on it' through the upper edge of a shelter window while lying on her mat. The positions are mutually exclusive: a telephone pole mast extends 30–40 feet above the deck; the fish cannot be both within standing arm's reach at the base and visible at the physical apex from a quarter mile.",
+      "evidence": [
+        {
+          "file": "draft/15-the-log.md",
+          "text": "Above the case, nailed to the mast at roughly eye level, the carved wooden fish sat slightly crooked as it always did."
+        },
+        {
+          "file": "draft/16-shore.md",
+          "text": "The mast was visible first, from half a mile: the telephone pole standing above the low profile of the deck and the canvas shade structures. [...] And at the top of the mast, from a quarter mile out: the fish."
+        },
+        {
+          "file": "draft/17-the-last-entry.md",
+          "text": "through the frame's upper edge — just visible, just enough — the top of the mast. The fish on it, a small dark shape against the lighter sky."
+        },
+        {
+          "file": "draft/21-the-canoe.md",
+          "text": "the fish was above the mast's base on its nail — slightly crooked, tilted east, as it had been as long as she could remember."
+        },
+        {
+          "file": "draft/22-what-we-keep.md",
+          "text": "nailed to the mast just above the logbook bracket, slightly crooked [...] She put her hand on the fish. Small under her palm."
+        }
+      ],
+      "suggested_action": "Revise Ch16 and Ch17 to place the fish at the base/eye-level portion of the mast, consistent with Ch15, Ch21, Ch22, and canon. In Ch16, 'And at the top of the mast, from a quarter mile out: the fish.' should be reworked — note that if the fish is at eye level (~5–6 ft on a telephone pole), it may not be clearly distinguishable from a boat at a quarter mile, so the image may need additional reconception. In Ch17, the phrase 'the top of the mast. The fish on it' seen through the 'frame's upper edge' should be revised so it is consistent with the fish being low on the mast at arm's reach. The authoritative constraint is Ch22: Nadia touches the fish at standing arm's reach, which is impossible if it is at the top of a telephone pole.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    }
+  ]
+}

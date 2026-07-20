@@ -1,0 +1,34 @@
+# Story Arc
+
+One tight line per drafted chapter, in chronological order.
+
+- **01-the-breakwater** — Eira finds an unidentified man's body on the breakwater, hands it to the Coast Guard, writes a precise log entry — then stands at the window holding an image she has not written down.
+- **02-icehouse** — Hannah moves through a mid-October day on the farm — observing the POWs, her parents' silences, a body she didn't see — and watches Karl say a word she can't translate in the dark.
+- **03-continental-educator** — Marcus walks his Coldwater routine — Latin class, staffroom gossip about the body, the folder on the desk — and returns to the Crow house, where warmth and James's photograph are the texture of belonging he is still practicing.
+- **04-what-the-log-shows** — Mercer closes the breakwater case; Eira gives technically-true answers and turns the log page without adding the dock figures to the record.
+- **05-advanced-german** — Hannah watches Marcus teach Rilke's grammar, carries her father's stopped hands through the lunch table body-gossip, and writes *Seidenschwanz* in her translation margin after hearing Karl say it again in the November dark.
+- **06-misdelivered** — Marcus opens a misdelivered German letter to Albrecht Pfeiffer, reads Werner Grau's plan to visit Coldwater in October, makes the plausible connection to the body, and locks the letter in his desk drawer.
+- **07-winter-registry** — Eira does the December mooring registry, hears from Wendell Foss that the county board is looking at her tenure, files the annual report with a careful eye, and walks the breakwater — holding the dock image at the elbow, writing nothing down.
+- **08-cedar-waxwing** — Hannah and Karl exchange the two names for a cedar waxwing; Albrecht hears his homeland in Karl's German; Magda's settled silence is learned to sit inside; a grammar exercise reveals two people not saying what they mean.
+- **09-the-visit** — Marcus delivers Werner Grau's letter to Albrecht in person; Albrecht's face shows recognition not surprise, confirming he already knew Werner had come to Coldwater in October.
+- **10-what-she-didnt-ask** — Hannah watches Marcus's visit from the kitchen window, reads her father's face across the farmyard, and holds every question she could ask — including about the body — while Albrecht answers one about cows in English for the first time in months.
+- **11-load-calculations** — County inspector Tarbell finds no administrative deficiency in Eira's harbor records, but she realizes the challenge to her post is political, not numerical — and the numbers cannot settle it.
+- **12-ansbach** — Karl's exceptional chapter: February 1944, in the barn — Ansbach in memory, Hannah across the yard, his private bird taxonomy, and the shape of Werner Grau's absence inferred from the October storm.
+- **13-displaced-scholars** — Marcus confirms Werner Grau was illegal after 1940 via a Columbia contact, sits with the parallel to his own Sherbrooke internment, and puts the reply in the drawer without reporting it.
+- **14-the-photograph** — Hannah finds a photograph labeled "W. Grau, A. Pfeiffer, Bamberg, 1921" in her parents' tin box; at dinner she says the name aloud and her father's hands stop, and Magda — for once — looks up.
+- **15-what-grandy-soule-saw** — Grandy Soule's casual mention of an unregistered dinghy at the south pier corroborates Eira's dock sighting; she picks up her pen toward the CG form for the first time in six months.
+- **16-werner-grau** — Marcus assembles his complete plausible account of Werner Grau's death, names the parallel to his own Sherbrooke internment, locks everything in the drawer, and goes for a walk he does not extend to the harbor.
+- **17-sixth-of-june** — D-Day reaches the Pfeiffer kitchen before dawn; Albrecht breaks months of silence with one English sentence, Magda moves to the table, and Hannah carries the words to Karl at the icehouse step.
+- **18-harbor-traffic** — Late June 1944: Eira manages a busy summer pier with practiced ease; Marcus pauses on his daily walk to ask about the Pfeiffer family, and she files the question in her unlabeled column alongside the October dock figures.
+- **19-another-year** — Marcus declines the Boston transfer and mails the letter; the bell buoy at the channel entrance marks the hour; he has not decided to stay — he has simply stopped leaving.
+- **20-field-birds** — August haywork: Karl names Werner Grau to Hannah in the barn, uses the past tense, and Hannah connects the name to the photograph — she now knows Karl knew Werner.
+- **21-lonzo-reed** — Lonzo's exceptional chapter: a year of watching the farm, Desmond's shorter letters, and the man on the road in October he is still deciding whether to report.
+- **22-the-cove** — Eira's autumn harbor survey finds the stove-in dinghy in the south cove; a Portland registration inquiry returns a name: W. Grau, 114 Franklin Street — added to the drawer alongside the still-unanswered CG form.
+- **23-one-year** — On the one-year anniversary of the body, Marcus walks the breakwater for the first time, thinks about Werner as a person rather than a puzzle, picks up a granite stone, and carries it home to the windowsill.
+- **24-transfer** — Karl's Army transfer closes thirteen months at the Pfeiffer farm; Hannah gives him the bird notebook, receives his note naming Werner Grau dead; that evening she tells Albrecht "Werner Grau ist tot" and hears "Ich weiß" in return.
+- **25-the-proceeding** — Eira spends an evening at the shed reviewing eight years of harbor records the night the county's formal proceeding notice arrives; the Portland letter and the CG form sit in the middle drawer alongside the unfinished work.
+- **26-henry-crow** — Henry's exceptional chapter: the boiler room, James's shortened letter, and the assembly of three things — a pre-dawn figure, the breakwater body, Marcus's careful question — into a piece he holds without telling.
+- **27-permanent-resident** — Marcus files first citizenship papers, places James Crow's name on the school placard, delivers Lillian's relief letter to the county clerk, and comes home to coffee with Henry and Lillian — settled, irrevocably, in this place.
+- **28-what-she-told-him** — Hannah tells Marcus what she has been carrying since November — the photograph, Karl's note, Albrecht's "Ich weiß" — and walks out lighter without knowing she has given him the last piece.
+- **29-the-harbor-log** — The county authority votes two to one to confirm Eira's appointment; that evening she adds the dock observation to the 1943 harbor log — seventeen months late, for no one but the record.
+- **30-may** — Late April 1945: Marcus walks to school, holds Werner Grau's assembled account permanently in his drawer, opens the classroom window to the spring air, and begins to mark Hannah's papers — the stone on the sill.

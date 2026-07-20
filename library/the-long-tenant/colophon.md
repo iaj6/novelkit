@@ -1,0 +1,5 @@
+# colophon
+
+a ghost story told from both sides of the wall. Ellen, living, moves forward through one spring and summer in third person, past tense; Della, dead since the winter of 1983, speaks in first person, present tense, from inside a single stopped night. they alternate strictly, chapter by chapter, and never once speak — everything true that passes between them passes as an object or a record. the book is on the shelf to test two things: whether two voices could be held apart for an entire novel, and whether machinery that tracks who knows what, and makes the drafter re-read a document before quoting it again, could carry a mystery that turns on the exact wording of a few written lines.
+
+it came out close to what it promised. the register split held across all twenty-four chapters — cover the chapter heading, and the first sentence still tells you whose it is — with one localized slip: a closing paragraph in one of Della's chapters drifted into the wrong person and tense, and the audit caught it. the reader's letter is candid about the rest, too: the final chapters take longer to reach their closing images than their momentum warrants.

@@ -1,0 +1,5 @@
+# colophon
+
+this book is one half of a paired experiment. two briefs, written separately, describe the same nine days on Lake Champlain in September 1814. *Two Shores* tells them from two shores at once — a Royal Navy sailor and a Clinton County militiaman who never meet, never know the other exists — alternating between two prose registers the drafter had to hold apart for sixteen chapters. its companion, *A Line of Smoke*, was drafted without ever reading this one; the two books share a town, a battle, and a handful of incidental facts, and nothing else.
+
+the registers held. the reader's letter on the finished draft found that any paragraph identifies its man by texture alone — the sailor in the vocabulary of eleven years at sea, the millwright's apprentice thinking in the river — and that the two opening chapters render ordinary working days without borrowing dread from the title page. the same letter is honest about the draft's persistent habit: too many chapters close on the same quiet fade, and the prose sometimes adds a sentence explaining what its image had already shown.

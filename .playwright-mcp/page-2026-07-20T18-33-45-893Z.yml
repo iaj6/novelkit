@@ -1,0 +1,183 @@
+- generic [active] [ref=f4e1]:
+  - link "skip to content" [ref=f4e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f4e3]:
+    - generic [ref=f4e4]:
+      - generic [ref=f4e6]:
+        - generic [ref=f4e7]: lantern
+        - generic [ref=f4e8]: "&"
+        - generic [ref=f4e9]: page
+      - navigation "primary" [ref=f4e10]:
+        - list [ref=f4e11]:
+          - listitem [ref=f4e12]:
+            - link "library" [ref=f4e13] [cursor=pointer]:
+              - /url: /novelkit/
+          - listitem [ref=f4e14]:
+            - link "about" [ref=f4e15] [cursor=pointer]:
+              - /url: /novelkit/about/
+  - main [ref=f4e16]:
+    - generic [ref=f4e18]:
+      - generic [ref=f4e19]:
+        - paragraph [ref=f4e20]: vol. ii · the second shelf
+        - heading "lantern & page" [level=1] [ref=f4e21]:
+          - emphasis [ref=f4e23]: lantern
+          - generic [ref=f4e24]: "&"
+          - emphasis [ref=f4e26]: page
+        - paragraph [ref=f4e27]: a small press of novels drafted, autonomously, by AI agents. one human writes a brief. everything else — the canon, the outline, the chapters, the cover, the audiobook — is produced by the agents from there.
+        - paragraph [ref=f4e28]: this is a reading room, not a bookstore. nothing is for sale. read what you like; download what you want.
+      - figure [ref=f4e29]:
+        - img [ref=f4e30]
+    - figure "the reading room" [ref=f4e31]:
+      - img "a small bookstore interior at dusk — wooden shelves, a brass lantern, an open book on a table near a window" [ref=f4e33]
+      - generic [ref=f4e34]:
+        - emphasis [ref=f4e35]: the reading room.
+        - text: lantern lit at the end of the afternoon.
+    - img [ref=f4e38]
+    - generic [ref=f4e48]:
+      - generic [ref=f4e49]:
+        - paragraph [ref=f4e50]: the shelf
+        - heading "on hand, in print, in audio" [level=2] [ref=f4e51]
+        - paragraph [ref=f4e52]: 11 titles in the library. each began as a single page.
+      - list [ref=f4e53]:
+        - listitem [ref=f4e54]:
+          - article [ref=f4e55]:
+            - link "open The Bottle" [ref=f4e56] [cursor=pointer]:
+              - /url: /novelkit/book/tiny-toy-output/
+              - img "cover of The Bottle" [ref=f4e58]
+              - generic [ref=f4e59]:
+                - heading "The Bottle" [level=2] [ref=f4e60]
+                - paragraph [ref=f4e61]: Maren Voss has kept the lamp at Harrow Point Lighthouse for eleven years — alone, by routine, without incident.
+                - paragraph [ref=f4e62]: 13 min read
+                - generic [ref=f4e63]: read →
+        - listitem [ref=f4e64]:
+          - article [ref=f4e65]:
+            - link "open The Cold Signal" [ref=f4e66] [cursor=pointer]:
+              - /url: /novelkit/book/the-cold-signal/
+              - img "cover of The Cold Signal" [ref=f4e68]
+              - generic [ref=f4e69]:
+                - heading "The Cold Signal" [level=2] [ref=f4e70]
+                - paragraph [ref=f4e71]: Dr. Elena Hartmann, sixty-four, is a career astrobiologist who has spent thirty years at radio observatories and remote field stations cataloguing what she calls "the corrections"…
+                - paragraph [ref=f4e72]: ~3 hr read
+                - generic [ref=f4e73]: read →
+        - listitem [ref=f4e74]:
+          - article [ref=f4e75]:
+            - link "open Coldwater Reach" [ref=f4e76] [cursor=pointer]:
+              - /url: /novelkit/book/coldwater-reach/
+              - img "cover of Coldwater Reach" [ref=f4e78]
+              - generic [ref=f4e79]:
+                - heading "Coldwater Reach" [level=2] [ref=f4e80]
+                - paragraph [ref=f4e81]: The Breakwater Season is a literary novel set in the fictional coastal town of Coldwater Reach, Maine, from autumn 1943 through spring 1945.
+                - paragraph [ref=f4e82]: ~4½ hr read
+                - generic [ref=f4e83]: read →
+        - listitem [ref=f4e84]:
+          - article [ref=f4e85]:
+            - link "open The Contingency" [ref=f4e86] [cursor=pointer]:
+              - /url: /novelkit/book/the-contingency/
+              - img "cover of The Contingency" [ref=f4e88]
+              - generic [ref=f4e89]:
+                - heading "The Contingency" [level=2] [ref=f4e90]
+                - paragraph [ref=f4e91]: A few generations into a future that has run out of room, the United States still has a president, a flag, a working teleport — and almost nothing else.
+                - paragraph [ref=f4e92]: ~2½ hr read
+                - generic [ref=f4e93]: read →
+        - listitem [ref=f4e94]:
+          - article [ref=f4e95]:
+            - link "open The Courier Job" [ref=f4e96] [cursor=pointer]:
+              - /url: /novelkit/book/the-courier-job/
+              - img "cover of The Courier Job" [ref=f4e98]
+              - generic [ref=f4e99]:
+                - heading "The Courier Job" [level=2] [ref=f4e100]
+                - paragraph [ref=f4e101]: Fifteen-year-old hedge-witch apprentice Tess has never left the village of Drey.
+                - paragraph [ref=f4e102]: ~2 hr read
+                - generic [ref=f4e103]: read →
+        - listitem [ref=f4e104]:
+          - article [ref=f4e105]:
+            - link "open Everyone Still Alive" [ref=f4e106] [cursor=pointer]:
+              - /url: /novelkit/book/everyone-still-alive/
+              - img "cover of Everyone Still Alive" [ref=f4e108]
+              - generic [ref=f4e109]:
+                - heading "Everyone Still Alive" [level=2] [ref=f4e110]
+                - paragraph [ref=f4e111]: Everyone Still Alive is a mosaic novel set across two years of an uneven apocalypse in the cold lake country of the upper Midwest.
+                - paragraph [ref=f4e112]: ~3 hr read
+                - generic [ref=f4e113]: read →
+        - listitem [ref=f4e114]:
+          - article [ref=f4e115]:
+            - link "open The Hollowback" [ref=f4e116] [cursor=pointer]:
+              - /url: /novelkit/book/the-hollowback/
+              - img "cover of The Hollowback" [ref=f4e118]
+              - generic [ref=f4e119]:
+                - heading "The Hollowback" [level=2] [ref=f4e120]
+                - paragraph [ref=f4e121]: Four young adults — a wizard's apprentice still learning what magic takes out of her, a soldier with an army discharge nobody will explain, a half-elf rogue who jokes his way past…
+                - paragraph [ref=f4e122]: ~3 hr read
+                - generic [ref=f4e123]: read →
+        - listitem [ref=f4e124]:
+          - article [ref=f4e125]:
+            - link "open A Line of Smoke" [ref=f4e126] [cursor=pointer]:
+              - /url: /novelkit/book/plattsburgh-american/
+              - img "cover of A Line of Smoke" [ref=f4e128]
+              - generic [ref=f4e129]:
+                - heading "A Line of Smoke" [level=2] [ref=f4e130]
+                - paragraph [ref=f4e131]: Lake Champlain, the first week of September 1814.
+                - paragraph [ref=f4e132]: ~2½ hr read
+                - generic [ref=f4e133]: read →
+        - listitem [ref=f4e134]:
+          - article [ref=f4e135]:
+            - link "open The Long Tenant" [ref=f4e136] [cursor=pointer]:
+              - /url: /novelkit/book/the-long-tenant/
+              - img "cover of The Long Tenant" [ref=f4e138]
+              - generic [ref=f4e139]:
+                - heading "The Long Tenant" [level=2] [ref=f4e140]
+                - paragraph [ref=f4e141]: Forty years ago, Della Markey froze to death in a narrow house on Verrill Street in Renick, West Virginia, during the February 1983 blizzard.
+                - paragraph [ref=f4e142]: ~3½ hr read
+                - generic [ref=f4e143]: read →
+        - listitem [ref=f4e144]:
+          - article [ref=f4e145]:
+            - link "open Two Shores" [ref=f4e146] [cursor=pointer]:
+              - /url: /novelkit/book/plattsburgh-twosides/
+              - img "cover of Two Shores" [ref=f4e148]
+              - generic [ref=f4e149]:
+                - heading "Two Shores" [level=2] [ref=f4e150]
+                - paragraph [ref=f4e151]: Lake Champlain, the first week of September 1814.
+                - paragraph [ref=f4e152]: ~3 hr read
+                - generic [ref=f4e153]: read →
+        - listitem [ref=f4e154]:
+          - article [ref=f4e155]:
+            - link "open The Vilcabamba Expedition" [ref=f4e156] [cursor=pointer]:
+              - /url: /novelkit/book/vilcabamba-expedition/
+              - img "cover of The Vilcabamba Expedition" [ref=f4e158]
+              - generic [ref=f4e159]:
+                - heading "The Vilcabamba Expedition" [level=2] [ref=f4e160]
+                - paragraph [ref=f4e161]: In 1938, James Holroyd — a cashiered British army surveyor with a blacklisted name and no good reason to be careful with his life — is hired off the bottom of a short list by the…
+                - paragraph [ref=f4e162]: ~1½ hr read
+                - generic [ref=f4e163]: read →
+  - contentinfo [ref=f4e164]:
+    - generic [ref=f4e165]:
+      - generic [ref=f4e166]:
+        - link "lantern & page — home" [ref=f4e167] [cursor=pointer]:
+          - /url: /novelkit/
+          - generic [ref=f4e168]:
+            - generic [ref=f4e169]: lantern
+            - generic [ref=f4e170]: "&"
+            - generic [ref=f4e171]: page
+        - paragraph [ref=f4e172]: a small press of agent-drafted novels.
+      - paragraph [ref=f4e173]: every book here was drafted autonomously by an AI agent from a single brief. no human editing was performed on the prose. the brief is the only human input.
+      - generic [ref=f4e174]:
+        - paragraph [ref=f4e175]:
+          - link "about the process" [ref=f4e176] [cursor=pointer]:
+            - /url: /novelkit/about/
+          - text: ·
+          - link "source" [ref=f4e177] [cursor=pointer]:
+            - /url: https://github.com/iaj6/novelkit
+        - paragraph [ref=f4e178]: © 2026
+  - generic [ref=f4e181]:
+    - button "Menu" [ref=f4e182]:
+      - img [ref=f4e184]
+      - generic: Menu
+    - button "Inspect" [ref=f4e188]:
+      - img [ref=f4e190]
+      - generic: Inspect
+    - button "Audit" [ref=f4e192]:
+      - img [ref=f4e194]
+      - generic: Audit
+    - button "Settings" [ref=f4e197]:
+      - img [ref=f4e199]
+      - generic: Settings

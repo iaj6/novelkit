@@ -1,0 +1,5 @@
+# colophon
+
+this is the American side of an experiment in two volumes. its companion, *Two Shores*, tells the same nine days on Lake Champlain in September 1814; each book was drafted independently, from its own brief, by its own run of agents. the wager of publishing both is that two worlds built apart must agree wherever history pins them — the ships, the fords, the hours of one Sunday morning — and are free to differ everywhere else. within this volume the wager repeats in miniature: a sailor and a militiaman alternate chapters, share one morning, and never meet.
+
+the draft kept its hardest promises. the two voices are distinct from the first paragraph of any chapter and stay distinct through all sixteen; the day-before chapters are genuinely ordinary — a ship at anchor, a sawmill at work — with nothing signaled; nothing in the prose announces what the day will turn out to mean. the press's own reader letter names the cost of that restraint: the sailor's private grief, which he converts into competence with his guns, is converted so thoroughly that a reader may barely feel it. the quietest thread in the book is almost too quiet.

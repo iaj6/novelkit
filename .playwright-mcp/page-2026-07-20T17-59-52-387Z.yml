@@ -1,0 +1,95 @@
+- generic [active] [ref=f2e1]:
+  - link "skip to content" [ref=f2e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f2e3]:
+    - generic [ref=f2e4]:
+      - link "lantern & page — home" [ref=f2e6] [cursor=pointer]:
+        - /url: /novelkit/
+        - generic "lantern & page" [ref=f2e7]
+      - navigation "primary" [ref=f2e8]:
+        - list [ref=f2e9]:
+          - listitem [ref=f2e10]:
+            - link "library" [ref=f2e11] [cursor=pointer]:
+              - /url: /novelkit/
+          - listitem [ref=f2e12]:
+            - link "about" [ref=f2e13] [cursor=pointer]:
+              - /url: /novelkit/about/
+  - main [ref=f2e14]:
+    - article [ref=f2e15]:
+      - generic [ref=f2e16]:
+        - paragraph [ref=f2e17]: a note on how this works
+        - heading "about lantern & page" [level=1] [ref=f2e18]:
+          - text: about
+          - emphasis [ref=f2e19]: lantern & page
+        - paragraph [ref=f2e20]: lantern & page is a small press of novels drafted, autonomously, by AI agents. one human writes a single brief. every other word in every book on this shelf was produced by an agent from that brief.
+      - img [ref=f2e22]
+      - generic [ref=f2e30]:
+        - heading "the process, in six steps" [level=2] [ref=f2e31]
+        - list [ref=f2e32]:
+          - listitem [ref=f2e33]:
+            - strong [ref=f2e34]: brief.
+            - text: a single markdown file. one to two pages. premise, characters, tone, hard constraints. this is the only human input.
+          - listitem [ref=f2e35]:
+            - strong [ref=f2e36]: canon.
+            - text: the
+            - emphasis [ref=f2e37]: architect
+            - text: agent reads the brief and writes the book’s internal scaffolding — pitch, world, characters, themes, continuity, style. these become the contract every later phase must honor.
+          - listitem [ref=f2e38]:
+            - strong [ref=f2e39]: outline.
+            - text: the
+            - emphasis [ref=f2e40]: plotter
+            - text: agent reads the canon and produces a per-chapter outline, plus a threads document that braids the book’s questions and tracks where each must resolve.
+          - listitem [ref=f2e41]:
+            - strong [ref=f2e42]: draft.
+            - text: the
+            - emphasis [ref=f2e43]: drafter
+            - text: agent writes each chapter, in order, reading the previous chapter, the canon, the outline, and the continuity log. it updates a continuity log and a scene log as it goes.
+          - listitem [ref=f2e44]:
+            - strong [ref=f2e45]: edit.
+            - text: focused editor passes — continuity, pacing, voice. these read the manuscript and revise where the agent itself catches drift. then a reader pass produces a letter on the finished book.
+          - listitem [ref=f2e46]:
+            - strong [ref=f2e47]: publish.
+            - text: "the press subsystem concatenates the drafts and builds the editions — HTML, EPUB, PDF — synthesizes a cover brief from the canon via Claude and paints the cover from it, and narrates the chapters as an audiobook. once a book is marked public it takes its place on the shelf here: cover, blurb, downloads, and a player to hear it read aloud."
+      - generic [ref=f2e48]:
+        - heading "what isn’t done" [level=2] [ref=f2e49]
+        - paragraph [ref=f2e50]: no human edits the prose. no human picks the cover image. the brief is the only thing a human writes. typos and infelicities are left in. an author’s name does not appear on the books because there is no author in the sense the word usually carries.
+        - paragraph [ref=f2e51]: this is the point of the exercise. these books are not pretending to be written by anyone. they are demonstrations of what a particular kind of agent infrastructure can produce when set loose on a brief and allowed to finish.
+      - img [ref=f2e53]
+      - generic [ref=f2e61]:
+        - heading "what the brief looks like" [level=2] [ref=f2e62]
+        - paragraph [ref=f2e63]: a brief is one to two pages of markdown. it names a premise, sketches the main characters, sets the period and place, fixes a target length, and lists a few hard constraints — what the book is not allowed to do, what it must honor, what the prose register must feel like. the more specific the brief, the more specific the result.
+        - paragraph [ref=f2e64]: if you would like to see one, every book on the shelf has its brief visible in the source repository, alongside the canon documents the agents wrote in response.
+        - paragraph [ref=f2e65]:
+          - text: the source code, the briefs, and every artifact is on
+          - link "github" [ref=f2e66] [cursor=pointer]:
+            - /url: https://github.com/
+          - text: .
+  - contentinfo [ref=f2e67]:
+    - generic [ref=f2e68]:
+      - generic [ref=f2e69]:
+        - link "lantern & page — home" [ref=f2e70] [cursor=pointer]:
+          - /url: /novelkit/
+          - generic "lantern & page" [ref=f2e71]
+        - paragraph [ref=f2e72]: a small press of agent-drafted novels.
+      - paragraph [ref=f2e73]: every book here was drafted autonomously by an AI agent from a single brief. no human editing was performed on the prose. the brief is the only human input.
+      - generic [ref=f2e74]:
+        - paragraph [ref=f2e75]:
+          - link "about the process" [ref=f2e76] [cursor=pointer]:
+            - /url: /novelkit/about/
+          - text: ·
+          - link "source" [ref=f2e77] [cursor=pointer]:
+            - /url: https://github.com/
+        - paragraph [ref=f2e78]: © 2026
+  - generic [ref=f2e81]:
+    - button "Menu" [ref=f2e82]:
+      - img [ref=f2e84]
+      - generic: Menu
+    - button "Inspect" [ref=f2e88]:
+      - img [ref=f2e90]
+      - generic: Inspect
+    - button "Audit" [ref=f2e92]:
+      - img [ref=f2e94]
+      - generic: Audit
+    - button "Settings" [ref=f2e97]:
+      - img [ref=f2e99]
+      - generic: Settings

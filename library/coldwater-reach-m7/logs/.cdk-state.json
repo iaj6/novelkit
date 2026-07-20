@@ -1,0 +1,469 @@
+{
+  "version": 2,
+  "completed": [
+    "architect",
+    "plotter",
+    "threads",
+    "calibrate-drafter:iter-1-sample",
+    "calibrate-drafter:iter-1-grade",
+    "calibrate-drafter:complete",
+    "drafter:01-the-breakwater",
+    "drafter:02-the-icehouse-in-october",
+    "drafter:03-the-crow-house",
+    "drafter:04-statement",
+    "drafter:05-tuesday-german",
+    "drafter:06-at-the-harbormasters",
+    "drafter:07-november-log",
+    "drafter:08-school-hours",
+    "drafter:09-across-the-fence",
+    "drafter:10-a-letter-from-new-york",
+    "drafter:11-january-harbor",
+    "drafter:12-found",
+    "drafter:13-what-the-letter-said",
+    "drafter:14-a-report-from-portland",
+    "drafter:15-sprechen",
+    "drafter:16-the-notebook",
+    "drafter:17-ice-out",
+    "drafter:18-june-radio",
+    "drafter:19-the-zenith",
+    "drafter:20-the-mail-boat",
+    "drafter:21-the-second-october",
+    "drafter:22-at-the-school",
+    "drafter:23-december",
+    "drafter:24-the-fragment",
+    "drafter:25-zuhause",
+    "drafter:26-the-addendum",
+    "drafter:27-march",
+    "drafter:28-april",
+    "drafter:29-spring-log",
+    "drafter:30-komm-rein",
+    "editor-continuity:01-the-breakwater",
+    "editor-continuity:02-the-icehouse-in-october",
+    "editor-continuity:03-the-crow-house",
+    "editor-continuity:04-statement",
+    "editor-continuity:05-tuesday-german",
+    "editor-continuity:06-at-the-harbormasters",
+    "editor-continuity:07-november-log",
+    "editor-continuity:08-school-hours",
+    "editor-continuity:09-across-the-fence",
+    "editor-continuity:10-a-letter-from-new-york",
+    "editor-continuity:11-january-harbor",
+    "editor-continuity:12-found",
+    "editor-continuity:13-what-the-letter-said",
+    "editor-continuity:14-a-report-from-portland",
+    "editor-continuity:15-sprechen",
+    "editor-continuity:16-the-notebook",
+    "editor-continuity:17-ice-out",
+    "editor-continuity:18-june-radio",
+    "editor-continuity:19-the-zenith",
+    "editor-continuity:20-the-mail-boat",
+    "editor-continuity:21-the-second-october",
+    "editor-continuity:22-at-the-school",
+    "editor-continuity:23-december",
+    "editor-continuity:24-the-fragment",
+    "editor-continuity:25-zuhause",
+    "editor-continuity:26-the-addendum",
+    "editor-continuity:27-march",
+    "editor-continuity:28-april",
+    "editor-continuity:29-spring-log",
+    "editor-continuity:30-komm-rein",
+    "editor-compression:01-the-breakwater",
+    "editor-compression:02-the-icehouse-in-october",
+    "editor-compression:03-the-crow-house",
+    "editor-compression:04-statement",
+    "editor-compression:05-tuesday-german",
+    "editor-compression:06-at-the-harbormasters",
+    "editor-compression:07-november-log",
+    "editor-compression:08-school-hours",
+    "editor-compression:09-across-the-fence",
+    "editor-compression:10-a-letter-from-new-york",
+    "editor-compression:11-january-harbor",
+    "editor-compression:12-found",
+    "editor-compression:13-what-the-letter-said",
+    "editor-compression:14-a-report-from-portland",
+    "editor-compression:15-sprechen",
+    "editor-compression:16-the-notebook",
+    "editor-compression:17-ice-out",
+    "editor-compression:18-june-radio",
+    "editor-compression:19-the-zenith",
+    "editor-compression:20-the-mail-boat",
+    "editor-compression:21-the-second-october",
+    "editor-compression:22-at-the-school",
+    "editor-compression:23-december",
+    "editor-compression:24-the-fragment",
+    "editor-compression:25-zuhause",
+    "editor-compression:26-the-addendum",
+    "editor-compression:27-march",
+    "editor-compression:28-april",
+    "editor-compression:29-spring-log",
+    "editor-compression:30-komm-rein",
+    "editor-pacing:macro",
+    "editor-pacing:01-the-breakwater",
+    "editor-pacing:02-the-icehouse-in-october",
+    "editor-pacing:03-the-crow-house",
+    "editor-pacing:04-statement",
+    "editor-pacing:05-tuesday-german",
+    "editor-pacing:06-at-the-harbormasters",
+    "editor-pacing:07-november-log",
+    "editor-pacing:08-school-hours",
+    "editor-pacing:09-across-the-fence",
+    "editor-pacing:10-a-letter-from-new-york",
+    "editor-pacing:11-january-harbor",
+    "editor-pacing:12-found",
+    "editor-pacing:13-what-the-letter-said",
+    "editor-pacing:14-a-report-from-portland",
+    "editor-pacing:15-sprechen",
+    "editor-pacing:16-the-notebook",
+    "editor-pacing:17-ice-out",
+    "editor-pacing:18-june-radio",
+    "editor-pacing:19-the-zenith",
+    "editor-pacing:20-the-mail-boat",
+    "editor-pacing:21-the-second-october",
+    "editor-pacing:22-at-the-school",
+    "editor-pacing:23-december",
+    "editor-pacing:24-the-fragment",
+    "editor-pacing:25-zuhause",
+    "editor-pacing:26-the-addendum",
+    "editor-pacing:27-march",
+    "editor-pacing:28-april",
+    "editor-pacing:29-spring-log",
+    "editor-pacing:30-komm-rein",
+    "editor-voice:01-the-breakwater",
+    "editor-voice:02-the-icehouse-in-october",
+    "editor-voice:03-the-crow-house",
+    "editor-voice:04-statement",
+    "editor-voice:05-tuesday-german",
+    "editor-voice:06-at-the-harbormasters",
+    "editor-voice:07-november-log",
+    "editor-voice:08-school-hours",
+    "editor-voice:09-across-the-fence",
+    "editor-voice:10-a-letter-from-new-york",
+    "editor-voice:11-january-harbor",
+    "editor-voice:12-found",
+    "editor-voice:13-what-the-letter-said",
+    "editor-voice:14-a-report-from-portland",
+    "editor-voice:15-sprechen",
+    "editor-voice:16-the-notebook",
+    "editor-voice:17-ice-out",
+    "editor-voice:18-june-radio",
+    "editor-voice:19-the-zenith",
+    "editor-voice:20-the-mail-boat",
+    "editor-voice:21-the-second-october",
+    "editor-voice:22-at-the-school",
+    "editor-voice:23-december",
+    "editor-voice:24-the-fragment",
+    "editor-voice:25-zuhause",
+    "editor-voice:26-the-addendum",
+    "editor-voice:27-march",
+    "editor-voice:28-april",
+    "editor-voice:29-spring-log",
+    "editor-voice:30-komm-rein",
+    "reader:act-1",
+    "reader:act-2",
+    "reader:act-3",
+    "reader:synthesis",
+    "continuity-fact-audit"
+  ],
+  "entries": {
+    "drafter:01-the-breakwater": {
+      "at": "2026-06-17T13:03:31.688Z",
+      "artifacts": [
+        "draft/01-the-breakwater.md"
+      ],
+      "hashes": {
+        "draft/01-the-breakwater.md": "e4bcc57ef37d1fc0e4c205bd398b7b3bc387273264b886f7a26addcf23a28258"
+      },
+      "eventOffset": 116
+    },
+    "drafter:02-the-icehouse-in-october": {
+      "at": "2026-06-17T13:15:56.595Z",
+      "artifacts": [
+        "draft/02-the-icehouse-in-october.md"
+      ],
+      "hashes": {
+        "draft/02-the-icehouse-in-october.md": "85ed59de28f56e621075de857d92d3031f03dc4a5395115dccb703bf191ffe1d"
+      },
+      "eventOffset": 181
+    },
+    "drafter:03-the-crow-house": {
+      "at": "2026-06-17T13:28:13.734Z",
+      "artifacts": [
+        "draft/03-the-crow-house.md"
+      ],
+      "hashes": {
+        "draft/03-the-crow-house.md": "019f44fc3f4d93655cf385473626425f7f64403424b05abb438f3be623aa8780"
+      },
+      "eventOffset": 245
+    },
+    "drafter:04-statement": {
+      "at": "2026-06-17T13:43:08.244Z",
+      "artifacts": [
+        "draft/04-statement.md"
+      ],
+      "hashes": {
+        "draft/04-statement.md": "6f2426e111375b2a3c5196a2a72582df75bceb6652dc8f5ef3fa8a2e66183136"
+      },
+      "eventOffset": 284
+    },
+    "drafter:05-tuesday-german": {
+      "at": "2026-06-17T14:49:30.105Z",
+      "artifacts": [
+        "draft/05-tuesday-german.md"
+      ],
+      "hashes": {
+        "draft/05-tuesday-german.md": "1a7ca628df2597b88d5356c46aec274b51613adf539d1b8293d05d7d5033c27b"
+      },
+      "eventOffset": 308
+    },
+    "drafter:06-at-the-harbormasters": {
+      "at": "2026-06-17T15:01:59.071Z",
+      "artifacts": [
+        "draft/06-at-the-harbormasters.md"
+      ],
+      "hashes": {
+        "draft/06-at-the-harbormasters.md": "239672a44501b31aaf2c3e2e293dcb7fa199fe305dda3cd8df3882a2171dc0ac"
+      },
+      "eventOffset": 338
+    },
+    "drafter:07-november-log": {
+      "at": "2026-06-17T15:16:14.587Z",
+      "artifacts": [
+        "draft/07-november-log.md"
+      ],
+      "hashes": {
+        "draft/07-november-log.md": "06ea583a6c69d657979281becbdb3cff02253156c9fbb7ea6a7a8039d3dd937e"
+      },
+      "eventOffset": 376
+    },
+    "drafter:08-school-hours": {
+      "at": "2026-06-17T16:18:10.126Z",
+      "artifacts": [
+        "draft/08-school-hours.md"
+      ],
+      "hashes": {
+        "draft/08-school-hours.md": "4a6175df803727d6a8fe11fe19f14eac8a3d9b1f5958ce0488cd14111a26e28d"
+      },
+      "eventOffset": 421
+    },
+    "drafter:09-across-the-fence": {
+      "at": "2026-06-17T16:34:39.683Z",
+      "artifacts": [
+        "draft/09-across-the-fence.md"
+      ],
+      "hashes": {
+        "draft/09-across-the-fence.md": "26ba1c0f4631cc0fc20158c1bced5556d0fc5661356f5bec6c047b6ea324e35b"
+      },
+      "eventOffset": 443
+    },
+    "drafter:10-a-letter-from-new-york": {
+      "at": "2026-06-17T16:44:17.293Z",
+      "artifacts": [
+        "draft/10-a-letter-from-new-york.md"
+      ],
+      "hashes": {
+        "draft/10-a-letter-from-new-york.md": "e077f8c205d1003a44b49cdfe92f1eb9f2efd3a6a18c0e38d0bedfb21ab80ba1"
+      },
+      "eventOffset": 480
+    },
+    "drafter:11-january-harbor": {
+      "at": "2026-06-17T16:54:03.290Z",
+      "artifacts": [
+        "draft/11-january-harbor.md"
+      ],
+      "hashes": {
+        "draft/11-january-harbor.md": "d70ea0beb452e0b9bd3f589f7e546ddd7d04334bc91e0a470231016f42b9ebca"
+      },
+      "eventOffset": 510
+    },
+    "drafter:12-found": {
+      "at": "2026-06-17T17:02:18.588Z",
+      "artifacts": [
+        "draft/12-found.md"
+      ],
+      "hashes": {
+        "draft/12-found.md": "f33333ccea215e2bfec40b224afcbb84ae797e113f74cb1156ea900acc0ebecf"
+      },
+      "eventOffset": 540
+    },
+    "drafter:13-what-the-letter-said": {
+      "at": "2026-06-17T17:16:15.976Z",
+      "artifacts": [
+        "draft/13-what-the-letter-said.md"
+      ],
+      "hashes": {
+        "draft/13-what-the-letter-said.md": "4131ddce14fb042f628f2c23009c9d6fcb1dfb67e2bf2e1b77a024b0de9c19a7"
+      },
+      "eventOffset": 567
+    },
+    "drafter:14-a-report-from-portland": {
+      "at": "2026-06-17T17:35:51.066Z",
+      "artifacts": [
+        "draft/14-a-report-from-portland.md"
+      ],
+      "hashes": {
+        "draft/14-a-report-from-portland.md": "8c31d484cce0ca1d552f1cad9cd3740d4505e629f99539d28d1b51670aaac50c"
+      },
+      "eventOffset": 598
+    },
+    "drafter:15-sprechen": {
+      "at": "2026-06-17T17:48:27.220Z",
+      "artifacts": [
+        "draft/15-sprechen.md"
+      ],
+      "hashes": {
+        "draft/15-sprechen.md": "c4091cc16df0c82e7cfdbfceb4d75c78646868adeb421420d61329cc8c45d6f9"
+      },
+      "eventOffset": 619
+    },
+    "drafter:16-the-notebook": {
+      "at": "2026-06-17T18:00:01.777Z",
+      "artifacts": [
+        "draft/16-the-notebook.md"
+      ],
+      "hashes": {
+        "draft/16-the-notebook.md": "1c6543e88a3c6cd35893cafd7ed6090047833edf4d9a92a49f2cbf1a39a98ec5"
+      },
+      "eventOffset": 637
+    },
+    "drafter:17-ice-out": {
+      "at": "2026-06-17T18:11:59.256Z",
+      "artifacts": [
+        "draft/17-ice-out.md"
+      ],
+      "hashes": {
+        "draft/17-ice-out.md": "8515a6da258d89a799fe30f36df15cadaa18f57a1640417ec93f603c71ebd96f"
+      },
+      "eventOffset": 669
+    },
+    "drafter:18-june-radio": {
+      "at": "2026-06-17T18:21:35.680Z",
+      "artifacts": [
+        "draft/18-june-radio.md"
+      ],
+      "hashes": {
+        "draft/18-june-radio.md": "9b37f46fe76125914288ace7566dfc59aecbe7f440a08e273ff7fec2ba00c846"
+      },
+      "eventOffset": 701
+    },
+    "drafter:19-the-zenith": {
+      "at": "2026-06-17T18:30:06.343Z",
+      "artifacts": [
+        "draft/19-the-zenith.md"
+      ],
+      "hashes": {
+        "draft/19-the-zenith.md": "aa9c3b346987ffc9bcadbda6dacd567c6cc8c39228e6a77cb10a922df5b8aa3a"
+      },
+      "eventOffset": 733
+    },
+    "drafter:20-the-mail-boat": {
+      "at": "2026-06-17T18:48:20.350Z",
+      "artifacts": [
+        "draft/20-the-mail-boat.md"
+      ],
+      "hashes": {
+        "draft/20-the-mail-boat.md": "62c25df7c25add7fed23388c2364043e4afeec21d8f848ed25f82da4f5ca1858"
+      },
+      "eventOffset": 758
+    },
+    "drafter:21-the-second-october": {
+      "at": "2026-06-17T18:57:43.238Z",
+      "artifacts": [
+        "draft/21-the-second-october.md"
+      ],
+      "hashes": {
+        "draft/21-the-second-october.md": "1d5511e8e496c45a4447c81c188c3c59cbf7bf6032ee0400e7a950120b99acd5"
+      },
+      "eventOffset": 781
+    },
+    "drafter:22-at-the-school": {
+      "at": "2026-06-17T19:06:00.051Z",
+      "artifacts": [
+        "draft/22-at-the-school.md"
+      ],
+      "hashes": {
+        "draft/22-at-the-school.md": "d25fbfa1b30074712851122c45ad125626e976ccbc397540e25c8dd2ca553848"
+      },
+      "eventOffset": 806
+    },
+    "drafter:23-december": {
+      "at": "2026-06-17T19:13:24.530Z",
+      "artifacts": [
+        "draft/23-december.md"
+      ],
+      "hashes": {
+        "draft/23-december.md": "d95887f7e803474aa60eaed387e86fb4d0ad8527b02d39e2f929ff0fd669da64"
+      },
+      "eventOffset": 830
+    },
+    "drafter:24-the-fragment": {
+      "at": "2026-06-17T19:19:49.435Z",
+      "artifacts": [
+        "draft/24-the-fragment.md"
+      ],
+      "hashes": {
+        "draft/24-the-fragment.md": "e0c949781c3a17933a4734106332e4e938ba5907033b645b39b25d5190c7a80a"
+      },
+      "eventOffset": 849
+    },
+    "drafter:25-zuhause": {
+      "at": "2026-06-17T19:28:20.926Z",
+      "artifacts": [
+        "draft/25-zuhause.md"
+      ],
+      "hashes": {
+        "draft/25-zuhause.md": "112fcc6730fef27cfad296143ae4937c565592792d2c63796defb3bab0e9b2ac"
+      },
+      "eventOffset": 872
+    },
+    "drafter:26-the-addendum": {
+      "at": "2026-06-17T19:38:38.900Z",
+      "artifacts": [
+        "draft/26-the-addendum.md"
+      ],
+      "hashes": {
+        "draft/26-the-addendum.md": "6e62c0ca14c04051d5d1a39b9c3d35e177ff0f4cc2f0bd1cd6cf5195c3d06f3e"
+      },
+      "eventOffset": 900
+    },
+    "drafter:27-march": {
+      "at": "2026-06-17T19:49:38.206Z",
+      "artifacts": [
+        "draft/27-march.md"
+      ],
+      "hashes": {
+        "draft/27-march.md": "9e4f5936944459ff5f804c0e188d723c58c29b11a0c4cdd3025001d142099254"
+      },
+      "eventOffset": 920
+    },
+    "drafter:28-april": {
+      "at": "2026-06-17T20:00:25.820Z",
+      "artifacts": [
+        "draft/28-april.md"
+      ],
+      "hashes": {
+        "draft/28-april.md": "c1af92ad54a9fe5ab854ad63108f1479f798bfa75938543a763429dba91b578c"
+      },
+      "eventOffset": 953
+    },
+    "drafter:29-spring-log": {
+      "at": "2026-06-17T20:15:13.318Z",
+      "artifacts": [
+        "draft/29-spring-log.md"
+      ],
+      "hashes": {
+        "draft/29-spring-log.md": "f07534f36482b07137526cabf7cac337b4512e7042f56829c1eb4ca179fe502b"
+      },
+      "eventOffset": 980
+    },
+    "drafter:30-komm-rein": {
+      "at": "2026-06-17T20:53:57.241Z",
+      "artifacts": [
+        "draft/30-komm-rein.md"
+      ],
+      "hashes": {
+        "draft/30-komm-rein.md": "4cd979d20158911c9e3954b6cc4bc0f8ea8b29afd9553dbc3399a69f24e6c19e"
+      },
+      "eventOffset": 1002
+    }
+  }
+}

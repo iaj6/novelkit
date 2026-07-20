@@ -1,0 +1,469 @@
+{
+  "version": 2,
+  "completed": [
+    "architect",
+    "plotter",
+    "threads",
+    "calibrate-drafter:iter-1-sample",
+    "calibrate-drafter:iter-1-grade",
+    "calibrate-drafter:complete",
+    "drafter:01-the-breakwater",
+    "drafter:02-icehouse",
+    "drafter:03-continental-educator",
+    "drafter:04-what-the-log-shows",
+    "drafter:05-advanced-german",
+    "drafter:06-misdelivered",
+    "drafter:07-winter-registry",
+    "drafter:08-cedar-waxwing",
+    "drafter:09-the-visit",
+    "drafter:10-what-she-didnt-ask",
+    "drafter:11-load-calculations",
+    "drafter:12-ansbach",
+    "drafter:13-displaced-scholars",
+    "drafter:14-the-photograph",
+    "drafter:15-what-grandy-soule-saw",
+    "drafter:16-werner-grau",
+    "drafter:17-sixth-of-june",
+    "drafter:18-harbor-traffic",
+    "drafter:19-another-year",
+    "drafter:20-field-birds",
+    "drafter:21-lonzo-reed",
+    "drafter:22-the-cove",
+    "drafter:23-one-year",
+    "drafter:24-transfer",
+    "drafter:25-the-proceeding",
+    "drafter:26-henry-crow",
+    "drafter:27-permanent-resident",
+    "drafter:28-what-she-told-him",
+    "drafter:29-the-harbor-log",
+    "drafter:30-may",
+    "editor-continuity:01-the-breakwater",
+    "editor-continuity:02-icehouse",
+    "editor-continuity:03-continental-educator",
+    "editor-continuity:04-what-the-log-shows",
+    "editor-continuity:05-advanced-german",
+    "editor-continuity:06-misdelivered",
+    "editor-continuity:07-winter-registry",
+    "editor-continuity:08-cedar-waxwing",
+    "editor-continuity:09-the-visit",
+    "editor-continuity:10-what-she-didnt-ask",
+    "editor-continuity:11-load-calculations",
+    "editor-continuity:12-ansbach",
+    "editor-continuity:13-displaced-scholars",
+    "editor-continuity:14-the-photograph",
+    "editor-continuity:15-what-grandy-soule-saw",
+    "editor-continuity:16-werner-grau",
+    "editor-continuity:17-sixth-of-june",
+    "editor-continuity:18-harbor-traffic",
+    "editor-continuity:19-another-year",
+    "editor-continuity:20-field-birds",
+    "editor-continuity:21-lonzo-reed",
+    "editor-continuity:22-the-cove",
+    "editor-continuity:23-one-year",
+    "editor-continuity:24-transfer",
+    "editor-continuity:25-the-proceeding",
+    "editor-continuity:26-henry-crow",
+    "editor-continuity:27-permanent-resident",
+    "editor-continuity:28-what-she-told-him",
+    "editor-continuity:29-the-harbor-log",
+    "editor-continuity:30-may",
+    "editor-compression:01-the-breakwater",
+    "editor-compression:02-icehouse",
+    "editor-compression:03-continental-educator",
+    "editor-compression:04-what-the-log-shows",
+    "editor-compression:05-advanced-german",
+    "editor-compression:06-misdelivered",
+    "editor-compression:07-winter-registry",
+    "editor-compression:08-cedar-waxwing",
+    "editor-compression:09-the-visit",
+    "editor-compression:10-what-she-didnt-ask",
+    "editor-compression:11-load-calculations",
+    "editor-compression:12-ansbach",
+    "editor-compression:13-displaced-scholars",
+    "editor-compression:14-the-photograph",
+    "editor-compression:15-what-grandy-soule-saw",
+    "editor-compression:16-werner-grau",
+    "editor-compression:17-sixth-of-june",
+    "editor-compression:18-harbor-traffic",
+    "editor-compression:19-another-year",
+    "editor-compression:20-field-birds",
+    "editor-compression:21-lonzo-reed",
+    "editor-compression:22-the-cove",
+    "editor-compression:23-one-year",
+    "editor-compression:24-transfer",
+    "editor-compression:25-the-proceeding",
+    "editor-compression:26-henry-crow",
+    "editor-compression:27-permanent-resident",
+    "editor-compression:28-what-she-told-him",
+    "editor-compression:29-the-harbor-log",
+    "editor-compression:30-may",
+    "editor-pacing:macro",
+    "editor-pacing:01-the-breakwater",
+    "editor-pacing:02-icehouse",
+    "editor-pacing:03-continental-educator",
+    "editor-pacing:04-what-the-log-shows",
+    "editor-pacing:05-advanced-german",
+    "editor-pacing:06-misdelivered",
+    "editor-pacing:07-winter-registry",
+    "editor-pacing:08-cedar-waxwing",
+    "editor-pacing:09-the-visit",
+    "editor-pacing:10-what-she-didnt-ask",
+    "editor-pacing:11-load-calculations",
+    "editor-pacing:12-ansbach",
+    "editor-pacing:13-displaced-scholars",
+    "editor-pacing:14-the-photograph",
+    "editor-pacing:15-what-grandy-soule-saw",
+    "editor-pacing:16-werner-grau",
+    "editor-pacing:17-sixth-of-june",
+    "editor-pacing:18-harbor-traffic",
+    "editor-pacing:19-another-year",
+    "editor-pacing:20-field-birds",
+    "editor-pacing:21-lonzo-reed",
+    "editor-pacing:22-the-cove",
+    "editor-pacing:23-one-year",
+    "editor-pacing:24-transfer",
+    "editor-pacing:25-the-proceeding",
+    "editor-pacing:26-henry-crow",
+    "editor-pacing:27-permanent-resident",
+    "editor-pacing:28-what-she-told-him",
+    "editor-pacing:29-the-harbor-log",
+    "editor-pacing:30-may",
+    "editor-voice:01-the-breakwater",
+    "editor-voice:02-icehouse",
+    "editor-voice:03-continental-educator",
+    "editor-voice:04-what-the-log-shows",
+    "editor-voice:05-advanced-german",
+    "editor-voice:06-misdelivered",
+    "editor-voice:07-winter-registry",
+    "editor-voice:08-cedar-waxwing",
+    "editor-voice:09-the-visit",
+    "editor-voice:10-what-she-didnt-ask",
+    "editor-voice:11-load-calculations",
+    "editor-voice:12-ansbach",
+    "editor-voice:13-displaced-scholars",
+    "editor-voice:14-the-photograph",
+    "editor-voice:15-what-grandy-soule-saw",
+    "editor-voice:16-werner-grau",
+    "editor-voice:17-sixth-of-june",
+    "editor-voice:18-harbor-traffic",
+    "editor-voice:19-another-year",
+    "editor-voice:20-field-birds",
+    "editor-voice:21-lonzo-reed",
+    "editor-voice:22-the-cove",
+    "editor-voice:23-one-year",
+    "editor-voice:24-transfer",
+    "editor-voice:25-the-proceeding",
+    "editor-voice:26-henry-crow",
+    "editor-voice:27-permanent-resident",
+    "editor-voice:28-what-she-told-him",
+    "editor-voice:29-the-harbor-log",
+    "editor-voice:30-may",
+    "reader:act-1",
+    "reader:act-2",
+    "reader:act-3",
+    "reader:synthesis",
+    "continuity-fact-audit"
+  ],
+  "entries": {
+    "drafter:01-the-breakwater": {
+      "at": "2026-06-08T21:28:18.714Z",
+      "artifacts": [
+        "draft/01-the-breakwater.md"
+      ],
+      "hashes": {
+        "draft/01-the-breakwater.md": "67a23a3e744bf4a26cb7bbd37b456cbc8206736e6a1b5e0759f892c75a0a8a5f"
+      },
+      "eventOffset": 65
+    },
+    "drafter:02-icehouse": {
+      "at": "2026-06-08T21:43:23.036Z",
+      "artifacts": [
+        "draft/02-icehouse.md"
+      ],
+      "hashes": {
+        "draft/02-icehouse.md": "3d53109f5dd9892e32d3b09b5405fe8deaabeb4c055c96c2258853ff66924705"
+      },
+      "eventOffset": 126
+    },
+    "drafter:03-continental-educator": {
+      "at": "2026-06-08T21:54:38.131Z",
+      "artifacts": [
+        "draft/03-continental-educator.md"
+      ],
+      "hashes": {
+        "draft/03-continental-educator.md": "ef9e553221fc47e37ce38d783e2d52e32a7f8adf54c865d0c4dfd842b8d6dc2f"
+      },
+      "eventOffset": 195
+    },
+    "drafter:04-what-the-log-shows": {
+      "at": "2026-06-08T22:08:15.427Z",
+      "artifacts": [
+        "draft/04-what-the-log-shows.md"
+      ],
+      "hashes": {
+        "draft/04-what-the-log-shows.md": "483459c43dd4e94ebf8ff5fd714e827cc63117d8ccbaa5eb91fab571dfbffb93"
+      },
+      "eventOffset": 221
+    },
+    "drafter:05-advanced-german": {
+      "at": "2026-06-08T22:24:18.511Z",
+      "artifacts": [
+        "draft/05-advanced-german.md"
+      ],
+      "hashes": {
+        "draft/05-advanced-german.md": "dcc83ef45a8c589776733862b8bff1fa67a02a7b23245bf12219273c051d8664"
+      },
+      "eventOffset": 256
+    },
+    "drafter:06-misdelivered": {
+      "at": "2026-06-08T22:34:58.200Z",
+      "artifacts": [
+        "draft/06-misdelivered.md"
+      ],
+      "hashes": {
+        "draft/06-misdelivered.md": "42c6a29c50e1379cdce3f20b1d0d055900a3df23ed9e34a8077118e2d86e4c4b"
+      },
+      "eventOffset": 297
+    },
+    "drafter:07-winter-registry": {
+      "at": "2026-06-08T22:51:34.881Z",
+      "artifacts": [
+        "draft/07-winter-registry.md"
+      ],
+      "hashes": {
+        "draft/07-winter-registry.md": "db13af2173a2ef3739a5988d2bb761e7b9985bfd75db52f3088c1f8f6e473edd"
+      },
+      "eventOffset": 329
+    },
+    "drafter:08-cedar-waxwing": {
+      "at": "2026-06-08T23:59:51.820Z",
+      "artifacts": [
+        "draft/08-cedar-waxwing.md"
+      ],
+      "hashes": {
+        "draft/08-cedar-waxwing.md": "584a108710dd1f155303a3ec0c086ffc5fd5301e84c3fedda32f412ab4a545e2"
+      },
+      "eventOffset": 357
+    },
+    "drafter:09-the-visit": {
+      "at": "2026-06-09T00:19:07.517Z",
+      "artifacts": [
+        "draft/09-the-visit.md"
+      ],
+      "hashes": {
+        "draft/09-the-visit.md": "d6692161739cc1b4f2fb0a2f73708ff4c9efb35847418d01b330b18256d60438"
+      },
+      "eventOffset": 388
+    },
+    "drafter:10-what-she-didnt-ask": {
+      "at": "2026-06-09T00:36:48.674Z",
+      "artifacts": [
+        "draft/10-what-she-didnt-ask.md"
+      ],
+      "hashes": {
+        "draft/10-what-she-didnt-ask.md": "6128d25e5a343650659c5293995e6a70b8487540ac9be0910b822aa40cbd7662"
+      },
+      "eventOffset": 403
+    },
+    "drafter:11-load-calculations": {
+      "at": "2026-06-09T00:49:53.984Z",
+      "artifacts": [
+        "draft/11-load-calculations.md"
+      ],
+      "hashes": {
+        "draft/11-load-calculations.md": "a84f19addb069fdf62a8a84eeba17854ee37195a61473d265f576f2a896469ae"
+      },
+      "eventOffset": 456
+    },
+    "drafter:12-ansbach": {
+      "at": "2026-06-09T03:47:55.992Z",
+      "artifacts": [
+        "draft/12-ansbach.md"
+      ],
+      "hashes": {
+        "draft/12-ansbach.md": "bf051af01a7c7e5ea30a2b0a238661339fd0d8ef86da31daab262bc00e8dfef9"
+      },
+      "eventOffset": 488
+    },
+    "drafter:13-displaced-scholars": {
+      "at": "2026-06-09T03:59:37.147Z",
+      "artifacts": [
+        "draft/13-displaced-scholars.md"
+      ],
+      "hashes": {
+        "draft/13-displaced-scholars.md": "280720bbfbcd054e144dc6adc481f1cd49d681aa40df2f1639701522043c53bb"
+      },
+      "eventOffset": 523
+    },
+    "drafter:14-the-photograph": {
+      "at": "2026-06-09T04:13:26.258Z",
+      "artifacts": [
+        "draft/14-the-photograph.md"
+      ],
+      "hashes": {
+        "draft/14-the-photograph.md": "4211e106e117cc2649a8002b406f34f0ed3064d1c89412237465a36c7cc4ff3d"
+      },
+      "eventOffset": 551
+    },
+    "drafter:15-what-grandy-soule-saw": {
+      "at": "2026-06-09T04:31:44.653Z",
+      "artifacts": [
+        "draft/15-what-grandy-soule-saw.md"
+      ],
+      "hashes": {
+        "draft/15-what-grandy-soule-saw.md": "4e6afba44b655e25ed80ebd2d6a513abb6c7a8001e51f80c164366de0e04ec21"
+      },
+      "eventOffset": 584
+    },
+    "drafter:16-werner-grau": {
+      "at": "2026-06-09T04:42:24.011Z",
+      "artifacts": [
+        "draft/16-werner-grau.md"
+      ],
+      "hashes": {
+        "draft/16-werner-grau.md": "ec8bbc54c1d810cae60f403f407914422e30d458980cdddfb257d3f34fc1eb75"
+      },
+      "eventOffset": 610
+    },
+    "drafter:17-sixth-of-june": {
+      "at": "2026-06-09T04:56:13.525Z",
+      "artifacts": [
+        "draft/17-sixth-of-june.md"
+      ],
+      "hashes": {
+        "draft/17-sixth-of-june.md": "0f4d12cf386e21a41f5c8b0a6d7f8a32381b44d052da50747b18790a6b7644da"
+      },
+      "eventOffset": 632
+    },
+    "drafter:18-harbor-traffic": {
+      "at": "2026-06-09T05:04:44.080Z",
+      "artifacts": [
+        "draft/18-harbor-traffic.md"
+      ],
+      "hashes": {
+        "draft/18-harbor-traffic.md": "8b5186cd79c724acdc2e9324fe385e69f26120042fbe731cfd4e0e640240ab13"
+      },
+      "eventOffset": 654
+    },
+    "drafter:19-another-year": {
+      "at": "2026-06-09T05:12:44.229Z",
+      "artifacts": [
+        "draft/19-another-year.md"
+      ],
+      "hashes": {
+        "draft/19-another-year.md": "1d7dd97c0c851277eebebae10b03836374a7164bb004bb714a9865818a6831dd"
+      },
+      "eventOffset": 682
+    },
+    "drafter:20-field-birds": {
+      "at": "2026-06-09T05:24:52.565Z",
+      "artifacts": [
+        "draft/20-field-birds.md"
+      ],
+      "hashes": {
+        "draft/20-field-birds.md": "f52004dcb1a7a8f7f5cd3eae757f1be656b79be316ea11b8629631a1776bee9b"
+      },
+      "eventOffset": 706
+    },
+    "drafter:21-lonzo-reed": {
+      "at": "2026-06-09T12:23:56.057Z",
+      "artifacts": [
+        "draft/21-lonzo-reed.md"
+      ],
+      "hashes": {
+        "draft/21-lonzo-reed.md": "fdf6fe6ed7096ee444fb2b6886b73a0cc867f10a1ff1727e8eb376f16c9d1bf3"
+      },
+      "eventOffset": 731
+    },
+    "drafter:22-the-cove": {
+      "at": "2026-06-09T12:31:32.082Z",
+      "artifacts": [
+        "draft/22-the-cove.md"
+      ],
+      "hashes": {
+        "draft/22-the-cove.md": "5c4605bf100a0d51403c12e9df3fa8d1e0906fdfdf12fbb134d7ab0c4dcb7331"
+      },
+      "eventOffset": 765
+    },
+    "drafter:23-one-year": {
+      "at": "2026-06-09T12:44:38.971Z",
+      "artifacts": [
+        "draft/23-one-year.md"
+      ],
+      "hashes": {
+        "draft/23-one-year.md": "e10e16a11143a19e7abe4fa9066f4d12a4a5122f2ced4f9eaa7f6b8d15bee97f"
+      },
+      "eventOffset": 790
+    },
+    "drafter:24-transfer": {
+      "at": "2026-06-09T12:55:29.955Z",
+      "artifacts": [
+        "draft/24-transfer.md"
+      ],
+      "hashes": {
+        "draft/24-transfer.md": "a360aaf2e00019fe71ae28107a994fab86a65e6480d6cf0b880cdadcd45e62be"
+      },
+      "eventOffset": 831
+    },
+    "drafter:25-the-proceeding": {
+      "at": "2026-06-09T13:06:06.934Z",
+      "artifacts": [
+        "draft/25-the-proceeding.md"
+      ],
+      "hashes": {
+        "draft/25-the-proceeding.md": "35a811a1b4c0868a98fd3f679fcc3a6efe3852d11e3c02f83761ada9294b86ae"
+      },
+      "eventOffset": 857
+    },
+    "drafter:26-henry-crow": {
+      "at": "2026-06-09T13:11:27.281Z",
+      "artifacts": [
+        "draft/26-henry-crow.md"
+      ],
+      "hashes": {
+        "draft/26-henry-crow.md": "1375beaf4177332b386ed52e453dd6035c31f58801752d6ef1cb4be12dad93cb"
+      },
+      "eventOffset": 877
+    },
+    "drafter:27-permanent-resident": {
+      "at": "2026-06-09T13:32:48.839Z",
+      "artifacts": [
+        "draft/27-permanent-resident.md"
+      ],
+      "hashes": {
+        "draft/27-permanent-resident.md": "27156eacce07fbdd671b6f5288ad82d5827ce4b6a6f44619977575058e121c2a"
+      },
+      "eventOffset": 909
+    },
+    "drafter:28-what-she-told-him": {
+      "at": "2026-06-09T13:42:26.472Z",
+      "artifacts": [
+        "draft/28-what-she-told-him.md"
+      ],
+      "hashes": {
+        "draft/28-what-she-told-him.md": "80a46e421733ba24cadab9c3b28332518243585f72d084a519a633b96c01573d"
+      },
+      "eventOffset": 926
+    },
+    "drafter:29-the-harbor-log": {
+      "at": "2026-06-09T13:55:02.305Z",
+      "artifacts": [
+        "draft/29-the-harbor-log.md"
+      ],
+      "hashes": {
+        "draft/29-the-harbor-log.md": "8c5c41707867220d2ec79a1f5e775be41df4a54f6ea8fdbd4ec92da99360b7d9"
+      },
+      "eventOffset": 957
+    },
+    "drafter:30-may": {
+      "at": "2026-06-09T14:05:52.864Z",
+      "artifacts": [
+        "draft/30-may.md"
+      ],
+      "hashes": {
+        "draft/30-may.md": "f9be10b8807bf991c5e4ac96e0afbf6729a54aed0ccbddff383a53104e075ec7"
+      },
+      "eventOffset": 977
+    }
+  }
+}

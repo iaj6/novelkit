@@ -1,0 +1,388 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-22T13:31:38.813Z",
+  "summary": {
+    "critical": 1,
+    "high": 9,
+    "medium": 3,
+    "low": 1
+  },
+  "findings": [
+    {
+      "id": "character-voice-drift-001",
+      "category": "character-voice-drift",
+      "severity": "high",
+      "title": "Register bleed in Ch12: third-person past in Della's first-person present chapter",
+      "description": "Chapter 12 ('What She Kept') is Della's chapter and maintains first-person present tense throughout its body — until the final paragraph, which shifts without signal to third-person past: 'Outside, the storm continued. The cold was already in the walls, coming in from every direction at its own rate. The lamp burned. The ledger was on the table, closed.' These are Ellen's person and tense in Della's chapter. The surrounding sentence ('The cold was the cold') is a documented lean-into pattern and is correct in Della's voice; the four sentences before it are not. The reader guidance specifies that any register bleed is a high-severity finding. The brief calls this the book's 'central failure mode.' A reader trained chapter by chapter to feel person and tense as identity will register the wrongness even without naming it.",
+      "evidence": [
+        {
+          "file": "draft/12-what-she-kept.md",
+          "text": "Outside, the storm continued. The cold was already in the walls, coming in from every direction at its own rate. The lamp burned. The ledger was on the table, closed. The cold was the cold.",
+          "chapter": "12"
+        }
+      ],
+      "suggested_action": "Rewrite the four sentences 'Outside, the storm continued... The ledger was on the table, closed.' in first-person present tense, consistent with Della's established register throughout the chapter. The sentence 'The cold was the cold.' is correct and should be retained as-is.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "over-articulation-001",
+      "category": "over-articulation",
+      "severity": "medium",
+      "title": "Post-scene subtext naming in Ch15 and Ch21",
+      "description": "In Chapter 15, after Ellen identifies the daylight/dark gap in her false account, the chapter continues across two paragraphs tracing the error step by step — naming the inference, the window, and the distinction between the record and what she made of it. This is the style guide's 'post-scene subtext naming' failure: the prose explaining what the documentary reading already showed. Compare Chapter 11, which let the wrong inference land without Ellen narrating how it happened. Chapter 15 does not trust the reader the same way. In Chapter 21, a single sentence — 'She had been reading the sentence without the paragraph since March' — arrives immediately after a paragraph that has already shown Ellen reading the excerpt in isolation across five months, naming what the preceding paragraph demonstrated.",
+      "evidence": [
+        {
+          "file": "draft/15-the-probate-record.md",
+          "text": "She had taken a statement about daylight and extended it to cover the dark...",
+          "chapter": "15"
+        },
+        {
+          "file": "draft/15-the-probate-record.md",
+          "text": "What she had made of it — the inference she had drawn from one woman's daylight observation, the gap she had treated as filled — was hers and not the record's.",
+          "chapter": "15"
+        },
+        {
+          "file": "draft/21-the-final-entry.md",
+          "text": "She had been reading the sentence without the paragraph since March.",
+          "chapter": "21"
+        }
+      ],
+      "suggested_action": "In Ch15, cut or compress the two explanatory paragraphs beginning 'She had taken a statement about daylight...' and 'What she had made of it...' — the realization is visible in the documentary scene preceding them and does not need prose interpretation. In Ch21, cut the sentence 'She had been reading the sentence without the paragraph since March'; it names what the preceding paragraph already showed.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "stylistic-tic-001",
+      "category": "stylistic-tic",
+      "severity": "medium",
+      "title": "Father-instruction device appears in all four Act 1 Della chapters",
+      "description": "The device of Della recalling specific instructions from her father (a millwright) appears in each of the four Della chapters in Act 1: Ch02 (the chimney explanation in the bad winter when she was eleven), Ch04 (the three-times latch-testing), Ch06 (the exterior-chimney liability, overlapping content with Ch02), and Ch08 (the wick-trimming at the angle he showed her). The device does genuine work in each appearance — establishing the pedagogical relationship, the millwright's world, the specific method of knowing-through-instruction — and it recedes correctly in Act 2. But four consecutive appearances across four chapters creates a formulaic feel, and the chimney explanation in Ch02 and Ch06 overlaps in content (both mention 1961 and the exterior-chimney problem). This is a structural tic, not a register failure, and it is mild enough to note rather than require extensive repair.",
+      "evidence": [
+        {
+          "file": "draft/02-the-stove.md",
+          "text": "My father explained this to me in 1961...",
+          "chapter": "02"
+        },
+        {
+          "file": "draft/04-the-latch.md",
+          "text": "not because he distrusted a latch he had tested once, but because you do not trust a thing you have tested once",
+          "chapter": "04"
+        },
+        {
+          "file": "draft/06-the-flue.md",
+          "text": "My father explained this to me in 1961, the same winter he installed the stove",
+          "chapter": "06"
+        },
+        {
+          "file": "draft/08-the-oil-lamp.md",
+          "text": "the angle he showed her when she was nineteen",
+          "chapter": "08"
+        }
+      ],
+      "suggested_action": "Consider cutting or significantly condensing the chimney-explanation passage in Ch06, which overlaps content with Ch02. The instruction device in Ch04 and Ch08 is distinct in content and should remain. The Ch02 instance is the first and does the most foundational work. The goal is variation in how Della's knowledge is sourced, not elimination of the father as a knowledge-source.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "stylistic-tic-002",
+      "category": "stylistic-tic",
+      "severity": "medium",
+      "title": "Travel-clock closing anchor in all three Act 2 Della chapters",
+      "description": "All three Della chapters in Act 2 close on an image of the travel clock: Ch10 ('The travel clock on the mantle: nine twenty-four.'), Ch14 ('The clock says 9:38. The second hand moves.'), Ch16 ('The clock said 9:36 when I last looked at it.'). The clock as a closing anchor is correct for Della's chapters — it is the cold object, it is the measure of 'before' — and Ch14's version is the book's finest single chapter closing. But three consecutive Della-chapter closings on the same physical anchor (across a span of six alternating chapters) creates a formulaic texture that begins to feel like a template rather than an emergent accretion. Note: the ending modes vary across these three chapters, so this is not an ending-mode-uniformity finding; it is the same physical anchor across three closings.",
+      "evidence": [
+        {
+          "file": "draft/10-footfall.md",
+          "text": "The travel clock on the mantle: nine twenty-four.",
+          "chapter": "10"
+        },
+        {
+          "file": "draft/14-near-quarter-to-ten.md",
+          "text": "The clock says 9:38. The second hand moves.",
+          "chapter": "14"
+        },
+        {
+          "file": "draft/16-his-name.md",
+          "text": "The clock said 9:36 when I last looked at it.",
+          "chapter": "16"
+        }
+      ],
+      "suggested_action": "Vary the closing anchor of one of the three chapters — preferably Ch10 (the earliest instance, where the clock is least load-bearing) or Ch16 (where the thumb-on-the-page passage is the chapter's richest material and could carry the close). Ch14's clock close is the strongest and most integral to that chapter's argument; leave it. The goal is two clock closings, not three.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "other-001",
+      "category": "other",
+      "severity": "low",
+      "title": "Resolution chapters (23 and 24) individually over-long after primary action is complete",
+      "description": "Chapter 23's central action — the formal A/B side-by-side, the written account, the proceeding formally closed — is complete by the time Ellen writes 'The paragraph governs the sentence.' The chapter then continues through an extended imagined reconstruction of Cale's experience on the night of February 11 that drifts slightly from Ellen's disciplined register (she reconstructs from documents, not from sympathy) before arriving at the correct closing beat on the maker's mark and July light. Chapter 24 similarly earns its final image ('The house was quiet. / The door was open.') but carries a room-by-room inventory in its middle section that is more extended than a coda requires. The emotional climax peaks at Chapter 22; by the time the book's final image arrives, the reader has traveled through more word-count than the momentum warrants. Neither chapter is broken — the form and resolution are correct — but both would be stronger trimmed.",
+      "evidence": [
+        {
+          "file": "draft/23-the-two-records.md",
+          "text": "He had knocked for twelve minutes... He had not known she was inside.",
+          "chapter": "23"
+        },
+        {
+          "file": "draft/24-the-door-open.md",
+          "text": "[room-by-room inventory in the middle section, from kitchen through pantry to front room to staircase]",
+          "chapter": "24"
+        }
+      ],
+      "suggested_action": "In Ch23, compress the Cale-reconstruction passage toward the documentary record (what Ellen can attest from the ledger and the twelve-minute interval) rather than imaginative sympathy; remove 200-300 words in the passage after 'the paragraph governs the sentence.' In Ch24, condense the room-by-room inventory in the chapter's middle to its essential beats; remove 200-300 words before the travel clock move and the final image.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "continuity-fact-audit-001",
+      "category": "continuity-fact",
+      "severity": "critical",
+      "title": "House address rendered as \"14 Verrill Street\" in ch23 — should be \"412 Verrill Street\" throughout",
+      "description": "Chapter 23 (the-two-records.md) uses \"14 Verrill Street\" in two separate places: once when Ellen paraphrases the coroner's report and once in Ellen's written three-paragraph account (the registered document ellens-written-account-ch23). Every other chapter that cites the address uses \"412 Verrill Street\" — confirmed in the death certificate (ch07), the inquest verdict (ch09), the deed index (ch05), and the curb address where Ellen parks (ch11). Canon/glossary.md establishes \"412 Verrill Street\" as the canonical street address. The registered document ellens-written-account-ch23 also carries this error in its registered text.",
+      "evidence": [
+        {
+          "file": "draft/23-the-two-records.md",
+          "text": "Body discovered at the residence 14 Verrill Street, Renick, West Virginia, on the morning of February 12, 1983, by the neighbor Mabel Evelyn Duff.",
+          "chapter": "23-the-two-records"
+        },
+        {
+          "file": "draft/23-the-two-records.md",
+          "text": "Near quarter to ten, Cale Markey — Della's older brother, estranged since the autumn of 1979, last known address 441 Bridge Street, Chillicothe, Ohio — knocked at the front door of 14 Verrill Street.",
+          "chapter": "23-the-two-records"
+        },
+        {
+          "file": "draft/07-manner-of-death.md",
+          "text": "Name of decedent: Della Ruth Markey. Address: 412 Verrill Street, Renick, West Virginia.",
+          "chapter": "07-manner-of-death"
+        },
+        {
+          "file": "draft/09-before-the-scanner.md",
+          "text": "The jury finds that the death of Della Ruth Markey, age 37, of 412 Verrill Street, Renick, West Virginia, resulted from exposure to cold following the failure of her heating source during the storm of February 9–12, 1983.",
+          "chapter": "09-before-the-scanner"
+        },
+        {
+          "file": "draft/05-chain-of-title.md",
+          "text": "Ellen said: I'd like to pull the deed record for a property. 412 Verrill Street, Renick.",
+          "chapter": "05-chain-of-title"
+        },
+        {
+          "file": "canon/glossary.md",
+          "text": "412 Verrill Street — The street address of the house Della Markey grew up in and died in (February 11–12, 1983), and which Ellen Vance now occupies."
+        }
+      ],
+      "suggested_action": "Change both instances of \"14 Verrill Street\" in draft/23-the-two-records.md to \"412 Verrill Street\". Note that the registered document ellens-written-account-ch23 was registered with the erroneous text and will also need its registration updated to reflect the corrected address.",
+      "auto_repair_safe": true,
+      "repair_agent": "repair-fact-normalize",
+      "repair_params": {
+        "canon_source": "canon/glossary.md",
+        "edits": [
+          {
+            "file": "draft/23-the-two-records.md",
+            "wrong_text": "Body discovered at the residence 14 Verrill Street, Renick, West Virginia",
+            "correct_text": "Body discovered at the residence 412 Verrill Street, Renick, West Virginia"
+          },
+          {
+            "file": "draft/23-the-two-records.md",
+            "wrong_text": "knocked at the front door of 14 Verrill Street",
+            "correct_text": "knocked at the front door of 412 Verrill Street"
+          }
+        ]
+      }
+    },
+    {
+      "id": "continuity-fact-audit-002",
+      "category": "continuity-fact",
+      "severity": "high",
+      "title": "Mabel Duff statement re-quoted in ch21 with \"morning of February 10th\" — registered document says \"evening of February tenth\"",
+      "description": "When Ellen re-reads the Mabel Duff photocopy in chapter 21 (the-final-entry.md), the passage presented in italics as the content of the statement reads \"I saw Della at her mailbox on the morning of February 10th.\" The registered canonical document (mabel-duff-statement) opens \"I last saw Miss Markey on the evening of February tenth,\" which is reproduced verbatim in ch11's direct quote. The ch21 re-quotation changes \"evening\" to \"morning,\" a specific time-of-day reversal. Complicating factor: Della's February 10 ledger entry (read in ch21 and ch22) says \"Mabel at the mailbox in the morning,\" so the ch21 rendering may have been inadvertently harmonized with the ledger rather than the registered statement. Whether the two in-world documents are meant to agree or to disagree is a human authorial decision; the ch21 re-quotation as written does not match the registered document.",
+      "evidence": [
+        {
+          "file": "draft/21-the-final-entry.md",
+          "text": "Ellen found the passage she needed and read through it. I saw Della at her mailbox on the morning of February 10th and she told me she planned to stay in for the storm. I saw no visitors on the evening of February 10th or during the daylight hours of February 11th. I was inside after the storm worsened — the snow was very heavy by midday and I did not go out after that.",
+          "chapter": "21-the-final-entry"
+        },
+        {
+          "file": "draft/11-no-visitors.md",
+          "text": "I last saw Miss Markey on the evening of February tenth. I was going to the mailbox for my own mail when Miss Markey came out for hers. She said the weather was coming in and she was getting in her wood. I said that sounded wise, or some such thing. She went back inside. That was the last time we spoke.",
+          "chapter": "11-no-visitors"
+        },
+        {
+          "file": "draft/22-what-she-wrote.md",
+          "text": "February 10. Heavy snow since three in the morning. Roads closed at eight. Stove draft clean and fire strong. Mabel at the mailbox in the morning.",
+          "chapter": "22-what-she-wrote"
+        }
+      ],
+      "suggested_action": "Determine authorial intent: (A) if the two in-world documents are meant to disagree on this detail (a deliberate unreliability-of-records motif), correct ch21's re-quotation to match the registered document (\"on the evening of February tenth\") and leave Della's ledger entry saying \"in the morning\"; (B) if both documents are meant to agree that the encounter was in the morning, the registered mabel-duff-statement must be updated and ch11's verbatim quote corrected. Option A is more likely given the book's thematic emphasis on the partiality of any single record.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "det-fact-conflict:back-room:heat_register",
+      "category": "continuity-fact",
+      "severity": "high",
+      "title": "Contradictory heat_register for back-room",
+      "description": "The world store holds conflicting live values for back-room.heat_register: not none found (01-verrill-street) vs none (03-the-third-step).",
+      "evidence": [
+        {
+          "file": "draft/01-verrill-street.md",
+          "text": "heat_register = not none found (01-verrill-street)",
+          "fact_id": "fact:01-verrill-street:back-room:heat_register",
+          "chapter": "01-verrill-street"
+        },
+        {
+          "file": "draft/03-the-third-step.md",
+          "text": "heat_register = none (03-the-third-step)",
+          "fact_id": "fact:03-the-third-step:back-room:heat_register",
+          "chapter": "03-the-third-step"
+        }
+      ],
+      "suggested_action": "Reconcile the values; supersede the incorrect assertion (or fix the prose so they agree).",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "det-fact-conflict:back-room:radiator",
+      "category": "continuity-fact",
+      "severity": "high",
+      "title": "Contradictory radiator for back-room",
+      "description": "The world store holds conflicting live values for back-room.radiator: not none (01-verrill-street) vs none (03-the-third-step).",
+      "evidence": [
+        {
+          "file": "draft/01-verrill-street.md",
+          "text": "radiator = not none (01-verrill-street)",
+          "fact_id": "fact:01-verrill-street:back-room:radiator",
+          "chapter": "01-verrill-street"
+        },
+        {
+          "file": "draft/03-the-third-step.md",
+          "text": "radiator = none (03-the-third-step)",
+          "fact_id": "fact:03-the-third-step:back-room:radiator",
+          "chapter": "03-the-third-step"
+        }
+      ],
+      "suggested_action": "Reconcile the values; supersede the incorrect assertion (or fix the prose so they agree).",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "det-fact-conflict:cale-markey:relation_to_della",
+      "category": "continuity-fact",
+      "severity": "high",
+      "title": "Contradictory relation_to_della for cale-markey",
+      "description": "The world store holds conflicting live values for cale-markey.relation_to_della: Della's older brother; estranged approximately 3 years before her death (00-architect-canon) vs older brother; estranged for approximately 3 years before her death (01-verrill-street).",
+      "evidence": [
+        {
+          "file": "draft/00-architect-canon.md",
+          "text": "relation_to_della = Della's older brother; estranged approximately 3 years before her death (00-architect-canon)",
+          "fact_id": "fact:00-architect-canon:cale-markey:relation_to_della",
+          "chapter": "00-architect-canon"
+        },
+        {
+          "file": "draft/01-verrill-street.md",
+          "text": "relation_to_della = older brother; estranged for approximately 3 years before her death (01-verrill-street)",
+          "fact_id": "fact:01-verrill-street:cale-markey:relation_to_della",
+          "chapter": "01-verrill-street"
+        }
+      ],
+      "suggested_action": "Reconcile the values; supersede the incorrect assertion (or fix the prose so they agree).",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "det-fact-conflict:della-markey:date_of_death",
+      "category": "continuity-fact",
+      "severity": "high",
+      "title": "Contradictory date_of_death for della-markey",
+      "description": "The world store holds conflicting live values for della-markey.date_of_death: February 11–12, 1983 (00-architect-canon) vs February 11-12, 1983 (01-verrill-street).",
+      "evidence": [
+        {
+          "file": "draft/00-architect-canon.md",
+          "text": "date_of_death = February 11–12, 1983 (00-architect-canon)",
+          "fact_id": "fact:00-architect-canon:della-markey:date_of_death",
+          "chapter": "00-architect-canon"
+        },
+        {
+          "file": "draft/01-verrill-street.md",
+          "text": "date_of_death = February 11-12, 1983 (01-verrill-street)",
+          "fact_id": "fact:01-verrill-street:della-markey:date_of_death",
+          "chapter": "01-verrill-street"
+        }
+      ],
+      "suggested_action": "Reconcile the values; supersede the incorrect assertion (or fix the prose so they agree).",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "det-fact-conflict:markey-household-ledger:first_keeper",
+      "category": "continuity-fact",
+      "severity": "high",
+      "title": "Contradictory first_keeper for markey-household-ledger",
+      "description": "The world store holds conflicting live values for markey-household-ledger.first_keeper: Harold Markey; entries in his hand from April 1971 through October 1975 (19-the-back-room) vs Harold Markey (20-the-account-book).",
+      "evidence": [
+        {
+          "file": "draft/19-the-back-room.md",
+          "text": "first_keeper = Harold Markey; entries in his hand from April 1971 through October 1975 (19-the-back-room)",
+          "fact_id": "fact:19-the-back-room:markey-household-ledger:first_keeper",
+          "chapter": "19-the-back-room"
+        },
+        {
+          "file": "draft/20-the-account-book.md",
+          "text": "first_keeper = Harold Markey (20-the-account-book)",
+          "fact_id": "fact:20-the-account-book:markey-household-ledger:first_keeper",
+          "chapter": "20-the-account-book"
+        }
+      ],
+      "suggested_action": "Reconcile the values; supersede the incorrect assertion (or fix the prose so they agree).",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "det-fact-conflict:markey-household-ledger:hand_change_date",
+      "category": "continuity-fact",
+      "severity": "high",
+      "title": "Contradictory hand_change_date for markey-household-ledger",
+      "description": "The world store holds conflicting live values for markey-household-ledger.hand_change_date: October 1975; Della Markey takes over from Harold; same letter forms, different pen pressure (19-the-back-room) vs October 1975, midmonth — Della takes over from Harold (20-the-account-book).",
+      "evidence": [
+        {
+          "file": "draft/19-the-back-room.md",
+          "text": "hand_change_date = October 1975; Della Markey takes over from Harold; same letter forms, different pen pressure (19-the-back-room)",
+          "fact_id": "fact:19-the-back-room:markey-household-ledger:hand_change_date",
+          "chapter": "19-the-back-room"
+        },
+        {
+          "file": "draft/20-the-account-book.md",
+          "text": "hand_change_date = October 1975, midmonth — Della takes over from Harold (20-the-account-book)",
+          "fact_id": "fact:20-the-account-book:markey-household-ledger:hand_change_date",
+          "chapter": "20-the-account-book"
+        }
+      ],
+      "suggested_action": "Reconcile the values; supersede the incorrect assertion (or fix the prose so they agree).",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "det-fact-conflict:markey-household-ledger:start_date",
+      "category": "continuity-fact",
+      "severity": "high",
+      "title": "Contradictory start_date for markey-household-ledger",
+      "description": "The world store holds conflicting live values for markey-household-ledger.start_date: January 1979 (16-his-name) vs April 1971 (19-the-back-room).",
+      "evidence": [
+        {
+          "file": "draft/16-his-name.md",
+          "text": "start_date = January 1979 (16-his-name)",
+          "fact_id": "fact:16-his-name:markey-household-ledger:start_date",
+          "chapter": "16-his-name"
+        },
+        {
+          "file": "draft/19-the-back-room.md",
+          "text": "start_date = April 1971 (19-the-back-room)",
+          "fact_id": "fact:19-the-back-room:markey-household-ledger:start_date",
+          "chapter": "19-the-back-room"
+        }
+      ],
+      "suggested_action": "Reconcile the values; supersede the incorrect assertion (or fix the prose so they agree).",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    }
+  ]
+}

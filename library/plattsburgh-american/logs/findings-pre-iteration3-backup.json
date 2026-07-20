@@ -1,0 +1,246 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-05-28T08:02:29.369Z",
+  "summary": {
+    "critical": 1,
+    "high": 2,
+    "medium": 5,
+    "low": 2
+  },
+  "findings": [
+    {
+      "id": "over-articulation-001",
+      "category": "over-articulation",
+      "severity": "high",
+      "title": "Prose names/explains what action has already demonstrated — three instances",
+      "description": "The style guide explicitly prohibits sentences that confirm or describe the architecture of what the prose has already enacted ('Show the practice; do not explain it'). Three passages cross this line: (1) Ch. 06 names Thread 4's animating idea in a single thesis sentence immediately before a simile that performs the same work correctly; (2) Ch. 09 describes the shape of Silas's grief-conversion system — 'He knew that place' and the sentence following — rather than staying in the physical frame; (3) Ch. 11 follows a precisely rendered cutoff count with an assurance that Silas did not need to calculate, which confirms what the prose has already conveyed and reads as the narrator assuring the reader it isn't being clever.",
+      "evidence": [
+        {
+          "file": "draft/06-beekmantown-road.md",
+          "text": "The sequence was all there was: move, fire, reload, fall back"
+        },
+        {
+          "file": "draft/09-the-kedge.md",
+          "text": "He stored it where confirmed facts went. He knew that place. There were things he had stored there — in the winter before last — that did not belong to any chain that resolved into action"
+        },
+        {
+          "file": "draft/11-cumberland-head.md",
+          "text": "He knew this without having to calculate it"
+        }
+      ],
+      "suggested_action": "Compression pass: (1) Cut 'The sequence was all there was: move, fire, reload, fall back' in Ch. 06 — the ragwheel simile that follows does the work. (2) Cut 'He knew that place' in Ch. 09 and recast the following sentence to remain in the physical frame rather than describing the emotional archive's shape. (3) Cut 'He knew this without having to calculate it' in Ch. 11 — the cutoff count has already made the point.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "stylistic-tic-001",
+      "category": "stylistic-tic",
+      "severity": "medium",
+      "title": "'Filed/noted' inventory construction overused in Act 3",
+      "description": "The construction — 'He filed this, the way you filed a thing when you didn't know yet what to make of it' / 'He filed it the way he filed a change in the water level' / 'He noted all of this. He did not know what use he would have for it' — is thematically justified (both men treat experience as inventory) and individually correct in any single instance. In Act 3 it concentrates across four chapters to the point where it registers as a verbal tic rather than a technique. When a method is visible as method, it has been deployed past its budget. The Fry notation in Ch. 13 and the ford-view moment in Ch. 16 are the instances that carry the most structural weight and should be retained; others should be cut or varied.",
+      "evidence": [
+        {
+          "file": "draft/13-port-battery.md",
+          "text": "Fry. He notes the fact. He moves to gun #2."
+        },
+        {
+          "file": "draft/14-the-ford.md",
+          "text": "He filed this, the way you filed a thing when you didn't know yet what to make of it"
+        },
+        {
+          "file": "draft/14-the-ford.md",
+          "text": "He filed it the way he filed a change in the water level"
+        },
+        {
+          "file": "draft/16-the-retreat.md",
+          "text": "He noted all of this. He did not know what use he would have for it"
+        }
+      ],
+      "suggested_action": "Cull 'filed/noted' constructions in Chs. 13–16 to two or three instances maximum. Retain the Fry notation (Ch. 13) and the ford-observation moment (Ch. 16) as the structurally load-bearing uses; vary or cut the remaining instances in Chs. 14 and 16.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "ending-mode-uniformity-001",
+      "category": "ending-mode-uniformity",
+      "severity": "medium",
+      "title": "Four of six Act 1 chapters end in literary fade, including two consecutive fade pairs",
+      "description": "The brief calls for mixed chapter-ending modes; the reader guidance flags runs of more than two same-mode endings as a pattern problem. In Act 1, Chapters 1, 2, 4, and 5 all end in literary fade (sleep, the river thinning, the river again, the water against the hull), including two consecutive fade pairs (Chs. 1–2 and Chs. 4–5). Each fade is individually well-executed, but as a group they establish a single tonal temperature before the action chapters begin, risking reader habituation to that temperature. Chapters 3 and 6 (each ending on a single word of dialogue) are the act's correct exceptions and demonstrate the available alternative.",
+      "evidence": [
+        {
+          "file": "draft/01-the-garland.md",
+          "text": "He was asleep"
+        },
+        {
+          "file": "draft/02-the-head-race.md",
+          "text": "the sound of the river thinned and went"
+        },
+        {
+          "file": "draft/04-the-levy.md",
+          "text": "The river was the last thing he heard"
+        },
+        {
+          "file": "draft/05-spring-lines.md",
+          "text": "He lay still and listened to the water against the hull"
+        }
+      ],
+      "suggested_action": "Revise at least one of the Act 1 fade-endings (Ch. 4 or Ch. 5 are the most accessible candidates) to a different mode — a resolved beat, a single strong observation, or a mid-action stop — to break the consecutive fade pairing and establish that the ending mode is variable.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "continuity-fact-001",
+      "category": "continuity-fact",
+      "severity": "medium",
+      "title": "HMS Confiance described as 'sixth-rate' for a vessel of 37 guns — possible naval classification error",
+      "description": "In Chapter 11, Silas's intelligence describes the Confiance as 'thirty-seven guns, a sixth-rate frigate.' In the Royal Navy rating system, sixth-rate covered vessels of approximately 20–28 guns; a 37-gun vessel would conventionally fall in the fifth-rate range (32–44 guns). The Confiance was purpose-built for Lake Champlain and was not formally rated in the standard system, but applying 'sixth-rate' to a 37-gun ship is at minimum technically misleading to an informed reader and may constitute an outright factual error against canon/research.md. Severity may escalate to critical upon research cross-check.",
+      "evidence": [
+        {
+          "file": "draft/11-cumberland-head.md",
+          "text": "thirty-seven guns, a sixth-rate frigate"
+        }
+      ],
+      "suggested_action": "Cross-reference against canon/research.md for the correct naval classification or lack thereof for HMS Confiance. If 'sixth-rate' is an error, correct to the appropriate rating or (more accurately) describe her as 'thirty-seven guns, a heavy frigate' without applying the formal rating system to a vessel not formally rated within it.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "character-voice-drift-001",
+      "category": "character-voice-drift",
+      "severity": "medium",
+      "title": "Chapter 16 father-service comparison violates explicit threads-document instruction",
+      "description": "The threads document specifies that in Chapter 16, Asa thinks of his father 'briefly, obliquely, without comparing the two men's service.' The draft constructs an explicit parallel: 'He had stood at this ford. His father had stood at Sackett's Harbor, or wherever exactly it was his father had stood, and come home with a fever.' The syntax draws the structural correspondence directly — two men, two fords, two wars — approaching the style guide's 'emotional structural analysis' failure mode applied to theme rather than to interiority. The content of the thought is not wrong; the syntax is doing the thematic comparison that the prose should leave for the reader.",
+      "evidence": [
+        {
+          "file": "draft/16-the-retreat.md",
+          "text": "He had stood at this ford. His father had stood at Sackett's Harbor, or wherever exactly it was his father had stood, and come home with a fever"
+        }
+      ],
+      "suggested_action": "Compress to one sentence, oblique, that allows Asa's thought of his father to arrive as weight rather than structural comparison. The parallel syntax must be dissolved; the moment may remain brief and unannounced.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "other-001",
+      "category": "other",
+      "severity": "medium",
+      "title": "Chapters 8 and 10 share drill-scene texture at their openings, blurring scene distinction and stalling midbook pacing",
+      "description": "Both chapters open on the drill improving; both include Cole correcting an individual soldier by physical demonstration (Webb fires too soon in Ch. 8; Veeder's thumb in Ch. 10); both invoke or echo the ragwheel analogy. The threads plan correctly designates Ch. 8 as 'bad at first' and Ch. 10 as 'sharpening,' but the execution does not create enough daylight on the page to register as differentiated scenes. A reader moving from Ch. 8 into Ch. 10 will briefly feel they have returned to the same chapter. This is the manuscript's main midbook pacing sag, running from the ford survey through the British patrol before Ch. 11 revives the pace dramatically.",
+      "evidence": [
+        {
+          "file": "draft/08-pikes-ford.md",
+          "text": "Webb fumbles the sequence and nearly fires into the first rank"
+        },
+        {
+          "file": "draft/10-two-ranks.md",
+          "text": "Cole corrects Veeder's grip without comment"
+        }
+      ],
+      "suggested_action": "Differentiate Ch. 10's opening by grounding the reader in the chapter's distinct temporal and physical position before turning to the drill: the night-watch context, the post-patrol moment, the feel of the ford on the third day — something that establishes a different starting place. The drill-advance content is correct; the entry needs to arrive in a distinct location.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "thread-drift-001",
+      "category": "thread-drift",
+      "severity": "low",
+      "title": "Thread 3's father's instruction repeated three times in Chapter 4, including a closing recall",
+      "description": "The father's words 'Tell them you know the river' are delivered at the bedside, echoed by the uncle at the mill door the next morning, and recalled by Asa in the chapter's final beat. The uncle's echo is the design's intention — 'both men sending Asa the same message from two directions' — but the closing recall makes the chapter's final image a quotation of a quotation. The instruction has been received; restating it a third time in the chapter's closing position over-emphasizes it. The closing image should be the river sound, not the repeated line.",
+      "evidence": [
+        {
+          "file": "draft/04-the-levy.md",
+          "text": "Tell them you know the river [father, bedside]"
+        },
+        {
+          "file": "draft/04-the-levy.md",
+          "text": "Tell them you know the river [uncle, mill door]"
+        },
+        {
+          "file": "draft/04-the-levy.md",
+          "text": "[closing recall of the same instruction as the chapter's final beat]"
+        }
+      ],
+      "suggested_action": "Cut the closing recall of the instruction from Ch. 4's final beat. End the chapter on the river sound or another sensory detail from the departure, not on a third repetition of the line the reader already holds.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "stylistic-tic-002",
+      "category": "stylistic-tic",
+      "severity": "low",
+      "title": "Negation-constructions that name absent reactions, and one authorial editorial intruding on Silas's register",
+      "description": "Two related local problems. (1) Ch. 1's fo'c'sle scene contains 'more conviction than result' — a sardonic authorial judgment on Pinney's jaw-harp playing that does not belong to Silas's register. Silas notes facts without editorializing; the commentary is the author's, not the character's. (2) Ch. 10 contains 'He did not find it strange at midnight' — a negation-construction that names the reaction not occurring ('did not find it strange'), which is the same move as writing 'he felt unafraid.' Both constructions introduce the excluded reaction into the reader's attention by announcing its exclusion. The style guide flags this move as a failure mode; the correct approach is to describe the experience (the midnight watch sounds as familiar, the jaw harp going out over the water) and trust the reader.",
+      "evidence": [
+        {
+          "file": "draft/01-the-garland.md",
+          "text": "Pinney had a jaw harp and was playing it with more conviction than result"
+        },
+        {
+          "file": "draft/10-two-ranks.md",
+          "text": "He did not find it strange at midnight"
+        }
+      ],
+      "suggested_action": "Ch. 1: Cut 'with more conviction than result' — leave 'Pinney had a jaw harp and was playing it; the sound went out over the water.' Ch. 10: Replace the negation-construction with a bare description of the midnight watch's sounds as simply present and familiar.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "continuity-fact-audit-001",
+      "category": "continuity-fact",
+      "severity": "critical",
+      "title": "Asa's age at Sackett's Harbor return contradicts canonical age and narrative date — Chapter 16",
+      "description": "Chapter 16 states that Asa 'had been fifteen' when his father returned from Sackett's Harbor in June 1813, and that 'those two things had not stopped being true in the four years since.' Both assertions are mutually inconsistent with the established narrative date of September 1814 and Asa's canonical age of 19. If Asa was 15 in June 1813, only ~15 months have elapsed to September 1814, making him ~16 at the time of the narrative — not 19. Conversely, 'four years since June 1813' places the narrative in June 1817. The canon establishes Asa became the wage earner at age 15 (~1810, four years before the September 1814 narrative), but Sackett's Harbor was June 1813, when Asa would have been ~18.",
+      "evidence": [
+        {
+          "file": "draft/16-the-retreat.md",
+          "text": "Nathan Beckwith had served at Sackett's Harbor in the spring of 1813. He had come home in June with a fever that had not left him. Asa had been fifteen. From that June forward he had been the wage earner and the man of the house, and those two things had not stopped being true in the four years since."
+        },
+        {
+          "file": "canon/characters.md",
+          "text": "Age: 19"
+        },
+        {
+          "file": "canon/continuity.md",
+          "text": "Asa Beckwith is fictional, 19 years old, Clinton County militiaman, assigned to Pike's Ford on the Saranac River; millwright's apprentice at his uncle's sash sawmill, three miles upstream of Plattsburgh village."
+        },
+        {
+          "file": "canon/continuity.md",
+          "text": "Asa has been the wage earner since age fifteen."
+        }
+      ],
+      "suggested_action": "Restructure the Ch 16 passage to decouple the two facts: Asa began as wage earner at age 15 (~1810, four years before the narrative); his father's Sackett's Harbor service was June 1813, when Asa was ~18. One repair: change 'Asa had been fifteen. From that June forward he had been the wage earner' to 'Asa had been eighteen. He had been at the mill since he was fifteen — four years of it now.' Another option is to remove 'in the four years since' and keep 'fifteen' as the age when he started at the mill, referencing that starting date rather than the June 1813 Sackett's Harbor return. A human must decide which referent to anchor the 'four years' to.",
+      "auto_repair_safe": false,
+      "repair_agent": null,
+      "repair_params": null
+    },
+    {
+      "id": "continuity-fact-audit-002",
+      "category": "continuity-fact",
+      "severity": "high",
+      "title": "Mill's distance from Pike's Ford — Chapter 12 contradicts Chapter 6 and canon",
+      "description": "Chapter 12 states that from Pike's Ford the mill is 'three miles upstream,' placing the mill approximately six miles from Plattsburgh. Chapter 6 establishes the ford is 'three miles above the lower bridge and the village' and that this 'put it at the same reach of river as his uncle's mill' — placing both mill and ford at the same ~three-mile mark from Plattsburgh. Canon/continuity.md also places the mill at 'three miles upstream of Plattsburgh village,' consistent with Ch 6. Chapter 12 is the sole outlier, adding a further three miles of separation between the ford and the mill that contradicts the established geography.",
+      "evidence": [
+        {
+          "file": "draft/12-before-light.md",
+          "text": "He thought briefly of the bend in the river three miles upstream, where the Saranac widened into the slow stretch above the mill."
+        },
+        {
+          "file": "draft/06-beekmantown-road.md",
+          "text": "Three miles upstream from the village. West of the road. [...] Which put it three miles above the lower bridge and the village. Which put it at the same reach of river as his uncle's mill."
+        },
+        {
+          "file": "canon/continuity.md",
+          "text": "Asa Beckwith is fictional, 19 years old, Clinton County militiaman, assigned to Pike's Ford on the Saranac River; millwright's apprentice at his uncle's sash sawmill, three miles upstream of Plattsburgh village."
+        },
+        {
+          "file": "draft/08-pikes-ford.md",
+          "text": "The road from Plattsburgh to the ford followed the south bank of the Saranac for most of its three miles"
+        }
+      ],
+      "suggested_action": "In Ch 12, change 'the bend in the river three miles upstream, where the Saranac widened into the slow stretch above the mill' to remove the explicit 'three miles' figure, since mill and ford are established as occupying the same ~three-mile reach of river. A revision such as 'the slow stretch above the mill, upstream where the valley opened' preserves the sensory reference without contradicting the established geography. Canon source: canon/continuity.md (mill = three miles upstream of Plattsburgh) and Ch 6 (ford at same reach as mill).",
+      "auto_repair_safe": false,
+      "repair_agent": null,
+      "repair_params": null
+    }
+  ]
+}

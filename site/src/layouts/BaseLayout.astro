@@ -8,15 +8,22 @@ interface Props {
   title: string;
   description?: string;
   compactHeader?: boolean;
+  /** Path (already base-prefixed) to a share image; falls back to the hero. */
+  ogImage?: string | null;
+  ogType?: string;
 }
 
 const {
   title,
   description = "a small press of agent-drafted novels.",
   compactHeader = false,
+  ogImage = null,
+  ogType = "website",
 } = Astro.props;
 
 const fullTitle = title === "lantern & page" ? title : `${title} — lantern & page`;
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
+const shareImage = new URL(ogImage ?? url("/generated/hero.webp"), Astro.site);
 ---
 
 <!doctype html>
@@ -28,13 +35,21 @@ const fullTitle = title === "lantern & page" ? title : `${title} — lantern & p
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
 
+    <link rel="icon" type="image/svg+xml" href={url("/favicon.svg")} />
     <link rel="icon" type="image/png" sizes="32x32" href={url("/favicon-32.png")} />
     <link rel="apple-touch-icon" sizes="192x192" href={url("/apple-touch-icon.png")} />
     <link rel="icon" href={url("/favicon.ico")} />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="canonical" href={canonicalUrl} />
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={shareImage} />
+    <meta name="twitter:card" content="summary_large_image" />
   </head>
   <body>
     <a href="#main" class="skip-link">skip to content</a>

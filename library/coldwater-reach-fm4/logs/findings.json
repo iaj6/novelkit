@@ -1,0 +1,407 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-12T20:23:15.191Z",
+  "summary": {
+    "critical": 3,
+    "high": 6,
+    "medium": 2,
+    "low": 2
+  },
+  "findings": [
+    {
+      "id": "over-articulation-001",
+      "category": "over-articulation",
+      "severity": "medium",
+      "title": "Prose names what the image already showed — scattered across three chapters",
+      "description": "In three instances across the manuscript the narrative steps past what the scene has already enacted and names the insight, feeling, or arc the reader should assemble independently. These violate the book's core contract (the story trusts the reader to feel what is not said). The instances are: (1) An Eira interior sentence in Ch07 that frames her relationship to the body as abstract mental taxonomy rather than physical fact or professional observation — her register should arrive at interior states through notation and action, not self-analysis. (2) A general-calculus sentence in Ch20 that reaches toward thematic statement (the cost-benefit framing of a working life on the water), more analytical than Eira's usual perceptual mode. (3) The closing clause of Ch25's final paragraph, where Marcus's ablative-absolute observation about simultaneity extends into an explicit naming of his own arc ('he had made a decision about that too, some time ago, though he had not yet named what the decision had been'), which pre-announces what Ch28 should deliver. None of these instances constitutes a saturation-level failure; they are scattered and correctable. But in a book whose entire contract with the reader rests on the principle they violate, they are worth fixing.",
+      "evidence": [
+        {
+          "file": "draft/07-portland.md",
+          "text": "She had been holding the man on the breakwater as an isolated fact."
+        },
+        {
+          "file": "draft/20-d-day.md",
+          "text": "Not safe. Reasonable. The calculation that a working life on the water was worth the terms it came on."
+        },
+        {
+          "file": "draft/25-what-is-and-isnt-dangerous.md",
+          "text": "...and he had made a decision about that too, some time ago, though he had not yet named what the decision had been."
+        }
+      ],
+      "suggested_action": "In Ch07, replace the abstract self-analysis sentence with a specific physical notation or professional observation that enacts the same realization without naming it. In Ch20, cut or compress the 'calculation' sentence to something more specifically Eira-perceptual. In Ch25, cut the final arc-naming clause; end the paragraph on the ablative-absolute observation itself, or on a specific physical action (closing the gradebook, returning to the exercises), and let Ch28 do the rest.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "over-articulation-002",
+      "category": "over-articulation",
+      "severity": "low",
+      "title": "Chapter 19 recapitulates the Horak-network assembly covered in Chapter 15",
+      "description": "Chapter 15 (Franconian) is the right place for Marcus to assemble the full Horak-Pfeiffer-network picture, working from Hannah's phrase to the probable conclusion. Chapter 19 (After Eira) opens its interior sequence by revisiting the same logical chain — the Pfeiffer farm, Karl's dialect, the Halifax network, the probable shape — before arriving at the ethical reasoning about not acting, which is Ch19's genuine and new contribution. The ethical conclusion ('The chain had held. He was here... Horak's had not') is earned. The recapitulation that precedes it is long for its informational yield and delays the chapter's actual work.",
+      "evidence": [
+        {
+          "file": "draft/15-franconian.md",
+          "text": "Marcus assembles the Horak-Pfeiffer-network picture from Karl's dialect and the geographic inference."
+        },
+        {
+          "file": "draft/19-after-eira.md",
+          "text": "Interior assembly sequence revisiting Pfeiffer farm, Karl's dialect, Halifax network, and probable picture before reaching the ethical decision."
+        }
+      ],
+      "suggested_action": "In Ch19, trim or compress the recapitulation of the Horak-network logical chain. The reader has already worked this chain in Ch15. Arrive at the ethical stakes — what Marcus decides to do with what he holds — sooner. The chapter's first half can be shortened substantially without losing anything the book needs.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "stylistic-tic-001",
+      "category": "stylistic-tic",
+      "severity": "low",
+      "title": "Chapter 14: 'Jan Václav Horak' repeated three times at chapter close",
+      "description": "The chapter closes by delivering the body's name for the first time — a structurally significant beat. 'She had his name now. / Jan Václav Horak.' is the right landing. A third isolated invocation of the name — a single-line close following the previous close — pushes past the book's declarative restraint into emphasis-by-repetition. The name resonates; the third serving doesn't add resonance, it announces that the reader should notice the resonance.",
+      "evidence": [
+        {
+          "file": "draft/14-the-unregistered-boat.md",
+          "text": "The chapter's closing lines repeat 'Jan Václav Horak' as a third isolated beat after the name has already done its work."
+        }
+      ],
+      "suggested_action": "Cut the third, isolated single-line invocation of the name at chapter's end. Let 'She had his name now. / Jan Václav Horak.' be the close.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "other-001",
+      "category": "other",
+      "severity": "medium",
+      "title": "Chapter 27 (November Weather) lacks a structural center — disperses where it should accumulate",
+      "description": "Chapter 27 has the right instinct — winter closure, Karl's lamp in the icehouse, Magda's cycle, Albrecht held in two geographies by the Ardennes news. But its four sections don't build toward a landing: they accumulate separately without a through-line. The icehouse lamp appears in the second section and again at the chapter's close, used twice at essentially the same emotional register — neither use develops the other. The newspaper on the outside sill (Karl's crossword, his comics page) is the chapter's most interesting detail but arrives last, after three sections have already distributed the chapter's attention, without enough momentum to land. The chapter functions as intermission rather than station. It is the one chapter in the book that doesn't earn its length.",
+      "evidence": [
+        {
+          "file": "draft/27-november-weather.md",
+          "text": "Four sections without a through-line; icehouse lamp used twice without structural differentiation; newspaper on the outside sill — the chapter's richest detail — arrives too late to land with full weight."
+        }
+      ],
+      "suggested_action": "Restructure Ch27 around a single central image — the newspaper on the outside sill (Karl's crossword, his comics page) is the best candidate. Let the other sections (Magda's cycle, the Ardennes radio, the barn door) arrive in relation to that center rather than as parallel accumulations. Alternatively, compress the four sections to two or three that build a clear through-line toward the closing image. As written, the chapter needs a spine.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "continuity-fact-audit-001",
+      "category": "continuity-fact",
+      "severity": "critical",
+      "title": "Hector Brann's vessel name contradicts between Ch26 and Ch01/Ch11/glossary",
+      "description": "The annual log review in Ch26 identifies Hector Brann as 'crew of the Alicia B.' when he found the body. Ch01 establishes his vessel as 'The Irene M., green hull, third slip,' Ch11 confirms 'Brann's Irene M.,' and the glossary entries for both Hector Brann and the Irene M. explicitly name the Irene M. as his boat. 'Alicia B.' is not named anywhere else in the manuscript.",
+      "evidence": [
+        {
+          "file": "draft/26-the-harbor-log.md",
+          "text": "October 14th, 1943: body found on the seaward face of the breakwater by Hector Brann, crew of the Alicia B., at approximately 0700.",
+          "chapter": "26-the-harbor-log"
+        },
+        {
+          "file": "draft/01-the-dock-and-after.md",
+          "text": "Hector Brann. He lobsters out of here. The Irene M., green hull, third slip.",
+          "chapter": "01-the-dock-and-after"
+        },
+        {
+          "file": "draft/11-owens-ledger.md",
+          "text": "Five lobster boats at the inside moorings — Brann's Irene M., Hollis's boat, three others she recognized by the silhouettes of their cabins in the flat southern light.",
+          "chapter": "11-owens-ledger"
+        },
+        {
+          "file": "canon/glossary.md",
+          "text": "Hector Brann — Lobsterman in Coldwater Reach. Fishes the Irene M. (green hull, third slip on the commercial dock). The man who found the body on the breakwater in October 1943."
+        }
+      ],
+      "suggested_action": "Change 'crew of the Alicia B.' to 'crew of the Irene M.' in the October 1943 log review section of Ch26.",
+      "auto_repair_safe": true,
+      "repair_agent": "repair-fact-normalize",
+      "repair_params": {
+        "canon_source": "canon/glossary.md",
+        "edits": [
+          {
+            "file": "draft/26-the-harbor-log.md",
+            "wrong_text": "crew of the Alicia B.",
+            "correct_text": "crew of the Irene M."
+          }
+        ]
+      }
+    },
+    {
+      "id": "continuity-fact-audit-002",
+      "category": "continuity-fact",
+      "severity": "critical",
+      "title": "Ch26 log dates for dock observation and body discovery are two weeks early relative to four other chapters",
+      "description": "Ch26's annual log review places the dock observation on 'October 13th, 1943' and the body discovery on 'October 14th, 1943.' Ch11 reproduces the log entry as 'Tuesday, October 26, 1943'; Ch04 and Ch23 both state the body was found 'on the morning of the twenty-eighth'; and Ch30 confirms Eira 'saw him on the commercial dock on the night of October 26th, 1943.' All five chapters outside Ch26 agree the dock observation was October 26 and the discovery was October 28. Ch26's dates (13th/14th) are a systematic 13-day error throughout its October 1943 log section. Note: the storm advisory entry ('October 11th, 1943') and 'afternoon of the 12th' in the same section will also need parallel correction (approximately October 23rd–24th), but the exact dates for those are not established by canon and require human judgment.",
+      "evidence": [
+        {
+          "file": "draft/26-the-harbor-log.md",
+          "text": "October 14th, 1943: body found on the seaward face of the breakwater by Hector Brann, crew of the Alicia B., at approximately 0700.",
+          "chapter": "26-the-harbor-log"
+        },
+        {
+          "file": "draft/26-the-harbor-log.md",
+          "text": "She turned back one day. October 13th, 1943. Her entry for the thirteenth: Mooring check completed, commercial dock, 2300. Fleet secure. No incidents. Tide reading 11.2 ft.",
+          "chapter": "26-the-harbor-log"
+        },
+        {
+          "file": "draft/26-the-harbor-log.md",
+          "text": "At 2300 hours on October 13th, 1943, she had completed the mooring check and was walking back along the commercial dock toward the office.",
+          "chapter": "26-the-harbor-log"
+        },
+        {
+          "file": "draft/26-the-harbor-log.md",
+          "text": "Late entry, dated October 1944: 2300 hours, 13 October 1943: completed mooring check, commercial dock. One unidentified individual present at the far bollard, civilian appearance, not a known registered vessel operator. Observed in the company of a second party who departed walking inland before I could make identification. No approach made. Not entered at original time. Entering now in accordance with complete record.",
+          "chapter": "26-the-harbor-log"
+        },
+        {
+          "file": "draft/11-owens-ledger.md",
+          "text": "Tuesday, October 26, 1943. Wind SSW at 14, backing. Barometric pressure 29.61, falling.",
+          "chapter": "11-owens-ledger"
+        },
+        {
+          "file": "draft/04-official-report.md",
+          "text": "We'll go through the morning of the twenty-eighth",
+          "chapter": "04-official-report"
+        },
+        {
+          "file": "draft/23-august.md",
+          "text": "The body that came in on the ocean face of this breakwater last October — she was standing at the approximate end where Hector Brann had found him in the lower course on the morning of the twenty-eighth",
+          "chapter": "23-august"
+        },
+        {
+          "file": "draft/30-the-spring-opening.md",
+          "text": "She had seen him on the commercial dock on the night of October 26th, 1943, moving south from the herring shed toward the lobster landing.",
+          "chapter": "30-the-spring-opening"
+        }
+      ],
+      "suggested_action": "In Ch26 replace all four 'October 13th' / '13 October' instances with 'October 26th' / '26 October', replace 'Her entry for the thirteenth:' with 'Her entry for the twenty-sixth:', and replace 'October 14th, 1943: body found' with 'October 28th, 1943: body found'. The storm advisory entry ('October 11th, 1943') and the reference to 'the afternoon of the 12th' in the same section are part of the same systematic error but require human judgment on exact replacement dates.",
+      "auto_repair_safe": true,
+      "repair_agent": "repair-fact-normalize",
+      "repair_params": {
+        "canon_source": "draft/11-owens-ledger.md",
+        "edits": [
+          {
+            "file": "draft/26-the-harbor-log.md",
+            "wrong_text": "October 14th, 1943: body found on the seaward face of the breakwater by Hector Brann, crew of the Alicia B., at approximately 0700.",
+            "correct_text": "October 28th, 1943: body found on the seaward face of the breakwater by Hector Brann, crew of the Irene M., at approximately 0700."
+          },
+          {
+            "file": "draft/26-the-harbor-log.md",
+            "wrong_text": "She turned back one day. October 13th, 1943.",
+            "correct_text": "She turned back one day. October 26th, 1943."
+          },
+          {
+            "file": "draft/26-the-harbor-log.md",
+            "wrong_text": "Her entry for the thirteenth:",
+            "correct_text": "Her entry for the twenty-sixth:"
+          },
+          {
+            "file": "draft/26-the-harbor-log.md",
+            "wrong_text": "At 2300 hours on October 13th, 1943, she had completed the mooring check",
+            "correct_text": "At 2300 hours on October 26th, 1943, she had completed the mooring check"
+          },
+          {
+            "file": "draft/26-the-harbor-log.md",
+            "wrong_text": "Late entry, dated October 1944: 2300 hours, 13 October 1943:",
+            "correct_text": "Late entry, dated October 1944: 2300 hours, 26 October 1943:"
+          }
+        ]
+      }
+    },
+    {
+      "id": "continuity-fact-audit-003",
+      "category": "continuity-fact",
+      "severity": "high",
+      "title": "Marcus's unfinished letter in Ch22 gives October 27 for the body discovery where Ch04 and Ch23 establish October 28",
+      "description": "In Ch22, Marcus writes 'Found on the breakwater of Coldwater Reach, Maine, October 27, 1943.' Ch04 specifies the body arrived and was found 'on the morning of the twenty-eighth,' and Ch23 confirms this with 'on the morning of the twenty-eighth.' This is a one-day discrepancy. (The dock observation on the night of October 26 and the body found the morning of October 28 are a coherent sequence; Marcus's letter conflates or mis-dates the discovery.)",
+      "evidence": [
+        {
+          "file": "draft/22-the-unfinished-letter.md",
+          "text": "Jan Václav Horak, Czechoslovak national, displaced person, last known location Halifax, Nova Scotia, October 1942. Found on the breakwater of Coldwater Reach, Maine, October 27, 1943.",
+          "chapter": "22-the-unfinished-letter"
+        },
+        {
+          "file": "draft/04-official-report.md",
+          "text": "We'll go through the morning of the twenty-eighth",
+          "chapter": "04-official-report"
+        },
+        {
+          "file": "draft/23-august.md",
+          "text": "she was standing at the approximate end where Hector Brann had found him in the lower course on the morning of the twenty-eighth",
+          "chapter": "23-august"
+        }
+      ],
+      "suggested_action": "Change 'October 27, 1943' to 'October 28, 1943' in the unfinished letter text in Ch22.",
+      "auto_repair_safe": true,
+      "repair_agent": "repair-fact-normalize",
+      "repair_params": {
+        "canon_source": "draft/04-official-report.md",
+        "edits": [
+          {
+            "file": "draft/22-the-unfinished-letter.md",
+            "wrong_text": "Found on the breakwater of Coldwater Reach, Maine, October 27, 1943.",
+            "correct_text": "Found on the breakwater of Coldwater Reach, Maine, October 28, 1943."
+          }
+        ]
+      }
+    },
+    {
+      "id": "continuity-fact-audit-004",
+      "category": "continuity-fact",
+      "severity": "high",
+      "title": "Time of body-discovery notification contradicts between Ch01 and Ch04/Ch26",
+      "description": "Ch01 narrates Hector Brann arriving at Eira's office door 'at half past ten' (10:30 AM) to report the body, after she has processed the fuel-allocation chart and completed two telephone calls. Ch04's official-interview record states 'Time of notification: seven-fourteen, Hector Brann at the harbor road telephone,' and Ch26's log entry records the discovery 'at approximately 0700.' The 10:30 AM time in Ch01 is irreconcilable with the 7:00–7:14 AM times in Ch04 and Ch26. Note: both the 7:14 AM statement (Ch04) and the 0700 log entry (Ch26) may reflect Eira's official record rather than the actual event depicted in Ch01; it is unclear which version is canonical and human judgment is required.",
+      "evidence": [
+        {
+          "file": "draft/01-the-dock-and-after.md",
+          "text": "she was writing up the notation for that call when Hector Brann came to the door at half past ten.",
+          "chapter": "01-the-dock-and-after"
+        },
+        {
+          "file": "draft/04-official-report.md",
+          "text": "Time of notification: seven-fourteen, Hector Brann at the harbor road telephone. Response time: she had been in the office when the call came in and reached the breakwater by seven thirty-five.",
+          "chapter": "04-official-report"
+        },
+        {
+          "file": "draft/26-the-harbor-log.md",
+          "text": "October 14th, 1943: body found on the seaward face of the breakwater by Hector Brann, crew of the Alicia B., at approximately 0700.",
+          "chapter": "26-the-harbor-log"
+        }
+      ],
+      "suggested_action": "Determine which notification time is canonical and revise the outlier. If 7:14 AM is the intended official record (consistent with Ch04 and Ch26), revise Ch01's 'half past ten' to match. If 10:30 AM is the actual event time and the 7:14 AM reflects Eira's cover story, the discrepancy may be intentional but should be made unmistakably deliberate in Ch04 to avoid reader confusion.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "continuity-fact-audit-005",
+      "category": "continuity-fact",
+      "severity": "critical",
+      "title": "Carved bird receipt date in Ch25 contradicts Ch13 and the glossary",
+      "description": "In Ch25, Hannah tells Marcus that Karl 'left it at the south fence post. In July.' Ch13 narrates Hannah finding the carved bird in March, on her eighteenth birthday, and the chapter is explicitly set in March ('The cold in her room was the March kind... Eighteen.'). The glossary states the bird was 'Left by Karl at the south fence corner post of the Pfeiffer farm on or before March 15, 1944.' July and March are mutually exclusive.",
+      "evidence": [
+        {
+          "file": "draft/25-what-is-and-isnt-dangerous.md",
+          "text": "He said: 'When.' She said: 'He left it at the south fence post. In July.'",
+          "chapter": "25-what-is-and-isnt-dangerous"
+        },
+        {
+          "file": "draft/13-the-gift.md",
+          "text": "The cold in her room was the March kind — not the dead weight of winter that had been sitting in the walls since December, but something different now, thinner at the edges... Eighteen. The word arrived, turned itself over once, and went quiet.",
+          "chapter": "13-the-gift"
+        },
+        {
+          "file": "canon/glossary.md",
+          "text": "The Carved Bird — A small carved wooden bird made by Karl Reinmar from birch, approximately three inches long; wings folded, head angled down, tail notched, with a corrected faint ridge on the breast. Left by Karl at the south fence corner post of the Pfeiffer farm on or before March 15, 1944. Found and kept by Hannah Pfeiffer."
+        }
+      ],
+      "suggested_action": "Change 'In July.' to 'In March.' in Hannah's dialogue in Ch25. Note: Ch24 (Harvest) mentions Hannah noticing in July that she habitually carries the bird — this may be the source of the slip, but the bird's placement/discovery is established as March by Ch13 and the glossary.",
+      "auto_repair_safe": true,
+      "repair_agent": "repair-fact-normalize",
+      "repair_params": {
+        "canon_source": "canon/glossary.md",
+        "edits": [
+          {
+            "file": "draft/25-what-is-and-isnt-dangerous.md",
+            "wrong_text": "He left it at the south fence post. In July.",
+            "correct_text": "He left it at the south fence post. In March."
+          }
+        ]
+      }
+    },
+    {
+      "id": "det-fact-conflict:brunner:role",
+      "category": "continuity-fact",
+      "severity": "high",
+      "title": "Contradictory role for brunner",
+      "description": "The world store holds conflicting live values for brunner.role: German POW; one of the three older prisoners at the Pfeiffer farm (21-karl-speaks) vs German POW; one of four assigned to Pfeiffer farm (29-what-he-left).",
+      "evidence": [
+        {
+          "file": "draft/21-karl-speaks.md",
+          "text": "role = German POW; one of the three older prisoners at the Pfeiffer farm (21-karl-speaks)",
+          "fact_id": "fact:21-karl-speaks:brunner:role",
+          "chapter": "21-karl-speaks"
+        },
+        {
+          "file": "draft/29-what-he-left.md",
+          "text": "role = German POW; one of four assigned to Pfeiffer farm (29-what-he-left)",
+          "fact_id": "fact:29-what-he-left:brunner:role",
+          "chapter": "29-what-he-left"
+        }
+      ],
+      "suggested_action": "Reconcile the values; supersede the incorrect assertion (or fix the prose so they agree).",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "det-fact-conflict:fischer:role",
+      "category": "continuity-fact",
+      "severity": "high",
+      "title": "Contradictory role for fischer",
+      "description": "The world store holds conflicting live values for fischer.role: German POW; one of the three older prisoners at the Pfeiffer farm (21-karl-speaks) vs German POW; one of four assigned to Pfeiffer farm (29-what-he-left).",
+      "evidence": [
+        {
+          "file": "draft/21-karl-speaks.md",
+          "text": "role = German POW; one of the three older prisoners at the Pfeiffer farm (21-karl-speaks)",
+          "fact_id": "fact:21-karl-speaks:fischer:role",
+          "chapter": "21-karl-speaks"
+        },
+        {
+          "file": "draft/29-what-he-left.md",
+          "text": "role = German POW; one of four assigned to Pfeiffer farm (29-what-he-left)",
+          "fact_id": "fact:29-what-he-left:fischer:role",
+          "chapter": "29-what-he-left"
+        }
+      ],
+      "suggested_action": "Reconcile the values; supersede the incorrect assertion (or fix the prose so they agree).",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "det-fact-conflict:krebs:role",
+      "category": "continuity-fact",
+      "severity": "high",
+      "title": "Contradictory role for krebs",
+      "description": "The world store holds conflicting live values for krebs.role: German POW; one of the three older prisoners at the Pfeiffer farm; the quietest of the four (21-karl-speaks) vs German POW; one of four assigned to Pfeiffer farm (29-what-he-left).",
+      "evidence": [
+        {
+          "file": "draft/21-karl-speaks.md",
+          "text": "role = German POW; one of the three older prisoners at the Pfeiffer farm; the quietest of the four (21-karl-speaks)",
+          "fact_id": "fact:21-karl-speaks:krebs:role",
+          "chapter": "21-karl-speaks"
+        },
+        {
+          "file": "draft/29-what-he-left.md",
+          "text": "role = German POW; one of four assigned to Pfeiffer farm (29-what-he-left)",
+          "fact_id": "fact:29-what-he-left:krebs:role",
+          "chapter": "29-what-he-left"
+        }
+      ],
+      "suggested_action": "Reconcile the values; supersede the incorrect assertion (or fix the prose so they agree).",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "det-fact-conflict:ruth-fuller:role",
+      "category": "continuity-fact",
+      "severity": "high",
+      "title": "Contradictory role for ruth-fuller",
+      "description": "The world store holds conflicting live values for ruth-fuller.role: operator of Fuller dragger; running it herself since spring 1943 when Galen enlisted (23-august) vs registered operator of former Fuller dragger, reregistered in her own name February 1945 (30-the-spring-opening).",
+      "evidence": [
+        {
+          "file": "draft/23-august.md",
+          "text": "role = operator of Fuller dragger; running it herself since spring 1943 when Galen enlisted (23-august)",
+          "fact_id": "fact:23-august:ruth-fuller:role",
+          "chapter": "23-august"
+        },
+        {
+          "file": "draft/30-the-spring-opening.md",
+          "text": "role = registered operator of former Fuller dragger, reregistered in her own name February 1945 (30-the-spring-opening)",
+          "fact_id": "fact:30-the-spring-opening:ruth-fuller:role",
+          "chapter": "30-the-spring-opening"
+        }
+      ],
+      "suggested_action": "Reconcile the values; supersede the incorrect assertion (or fix the prose so they agree).",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    }
+  ]
+}

@@ -1,0 +1,775 @@
+# Continuity ledger
+
+The accumulating fact ledger — every durable fact established so far, by chapter. Later drafting must stay consistent with these. Store-derived; do not edit by hand.
+
+## 01-the-dock-and-after
+- eira-bowman — role: harbormaster of Coldwater Reach
+- eira-bowman — post.held_since_year: 1935 year
+- eira-bowman — only_woman_harbormaster_maine_coast: true
+- eira-bowman — status.widowed: true
+- eira-bowman — dock.knowledge: saw unidentified man and a second figure on the commercial dock the night before the body was found; did not log the observation
+- owen-bowman — role: previous harbormaster of Coldwater Reach
+- owen-bowman — alive: false
+- owen-bowman — death.cause: drowned in the November storm of 1935 while securing a vessel
+- owen-bowman — requisition_book.pages: 37 pages
+- harbormaster-office — location: foot of the commercial wharf, Coldwater Reach
+- harbormaster-office — construction.material: cedar-shingled
+- harbormaster-office — contents: chart table, tide log, requisition book, field telephone, kerosene stove
+- harbormaster-office — door.latch: stiff in cold weather; must lift handle while turning to open
+- coldwater-breakwater — length: 200 feet
+- coldwater-breakwater — construction.material: granite blocks
+- coldwater-breakwater — construction.year: 1890s
+- coldwater-breakwater — location: north shore of Coldwater Reach, running to the harbor mouth
+- body-on-breakwater — sex: male
+- body-on-breakwater — age.estimated: 35-50 years
+- body-on-breakwater — clothing.coat: European-cut traveling coat, not oilskin or harbor work wear; wet through at shoulders
+- body-on-breakwater — hands.calluses: in the centers of the palms, not at base of fingers — not consistent with fisherman, farmer, or cannery worker
+- body-on-breakwater — beard: several days growth
+- body-on-breakwater — found_by: Hector Brann, lobsterman; location was granite seam on ocean side of Coldwater Reach breakwater
+- body-on-breakwater — dock.seen_night_before: Eira saw a man matching the body at the far bollard of the commercial dock, ~11 p.m. Tuesday, the night before the body was found
+- hector-brann — role: lobsterman, Coldwater Reach
+- hector-brann — vessel: Irene M.
+- irene-m — hull.color: green
+- irene-m — slip: third slip, commercial dock, Coldwater Reach
+- lt-arthur-parsons — role: Coast Guard lieutenant
+- lt-arthur-parsons — age.estimated: 40 years
+- Eira's tide log for Tuesday night (the night before the body was found) contains no entry about the man on the far dock, the second figure, or her decision not to challenge them. The gap in the log is her load-bearing silence and the opening of Thread 1.
+- The second figure on the dock: back turned to Eira, standing close to the man at the bollard, walked inland quickly and without noise before Eira reached them. Eira could not see their face. They are not identified in Chapter 1 and must not be identified in any chapter — their identity is deliberately withheld for the full novel.
+- Owen Bowman's handwriting occupies the first 37 pages of the harbormaster's requisition book; Eira's handwriting begins on page 38 and continues to the present. Owen's chart table remains in the harbormaster's office; Eira uses it.
+- The harbormaster's office door latch is stiff in cold weather — you must lift the handle as you turn it. Eira learned this from Owen. She has not had the carpenter fix it.
+- The body was found face-up in the seam (joint between two granite blocks) on the ocean side of the Coldwater Reach breakwater, October 1943. Lt. Arthur Parsons of the Coast Guard took the official report. He told Eira 'we'll be in touch.' Parsons is a recurring official contact for Eira.
+- The body on the breakwater has calluses in the centers of the palms — a specific detail Eira noted. This is inconsistent with fisherman's calluses (base of fingers, inner edge of palm) and with farmer's or cannery worker's calluses. The work that produced them is not identified.
+
+## 02-the-icehouse
+- hannah-pfeiffer — school: Coldwater High School
+- hannah-pfeiffer — role: dairy farm daughter and student
+- hannah-pfeiffer — morning.wake_time: 5 a.m. for morning milking
+- hannah-pfeiffer — language.home: German (Albrecht's rule; Hannah responds in German; fluent)
+- albrecht-pfeiffer — age: 56 years
+- albrecht-pfeiffer — role: dairy farmer
+- albrecht-pfeiffer — emigration_year: 1922 year
+- albrecht-pfeiffer — citizenship: naturalized U.S. citizen
+- albrecht-pfeiffer — rule.language_home: German only; does not speak English at home since the war started
+- albrecht-pfeiffer — reading_habit: reads German-language Bangor Daily (received by post on Thursdays) in evenings
+- magda-pfeiffer — age: 53 years
+- magda-pfeiffer — origin_place: Bavaria
+- magda-pfeiffer — citizenship: naturalized U.S. citizen
+- magda-pfeiffer — status.speech: largely silent; rarely speaks in any language since the war started
+- magda-pfeiffer — emigration_year: 1922 year
+- karl-reinmar — age: 19 years
+- karl-reinmar — role: German POW; youngest of four assigned to Pfeiffer farm
+- karl-reinmar — origin_place: Franconia, approximately 50 km from Albrecht Pfeiffer's birthplace near Nuremberg
+- karl-reinmar — capture.location: Tunisia, North Africa, spring 1943
+- karl-reinmar — appearance.face: wind-chapped skin, gray-blue eyes, short badly-cut hair; settled tiredness in expression
+- karl-reinmar — physical.stature: shorter than the other three prisoners
+- lonzo-reed — age: 63 years
+- lonzo-reed — role: Coastal Patrol private; armed escort for German POWs at Pfeiffer farm
+- lonzo-reed — weapon: Springfield rifle
+- lonzo-reed — escort_arrival_time: 7 a.m. daily at Pfeiffer farm
+- lonzo-reed — reading_habit: reads Bangor Daily News from stool at barn door during escort duty
+- lonzo-reed — family.son.status: son in the Pacific; doesn't write often enough
+- pfeiffer-farm — location: Route 9, three miles inland from Coldwater Reach
+- pfeiffer-farm — dairy_herd.count: 22 Holsteins
+- pfeiffer-farm — established_year: 1903 year
+- pfeiffer-icehouse — current_use: POW sleeping quarters (four German prisoners)
+- pfeiffer-icehouse — interior.conversion: whitewashed inside; partitioned; two cots and two pallets installed by Camp Houlton personnel
+- pfeiffer-icehouse — location: beside the barn on Pfeiffer farm property, visible from barn window above third stall
+- Magda Pfeiffer spoke one full sentence aloud in late October 1943 — 'Wir hätten früher gehen sollen' (We should have left sooner) — to no one, facing the stove, in the kitchen. Albrecht looked up. They held each other's gaze for four or five seconds across the kitchen, then each returned to what they were doing. Hannah heard it, wrote it in her homework margin, and crossed it out until nothing showed through. This is the first sentence Magda has spoken in weeks, and it is not explained.
+- Three of the four German prisoners on the Pfeiffer farm are identified by Hannah only through visual habit, not by name in the prose: the heavyset one with a rolling walk; the thin one who leans slightly to the left; the older one with a bald patch. Their actual names (Brunner, Krebs, Fischer) are not introduced to the reader until later chapters.
+- Karl Reinmar passed the fence at the east side of the Pfeiffer barn in late October 1943 and dropped a short-handled cultivating tool into the gap between the fence post and the barn wall. Hannah picked it up and passed it through the fence gap. Karl said 'Danke.' Lonzo Reed was reading his newspaper and did not observe or respond to the exchange. Nothing was reported. This is the first time Hannah has been within speaking distance of any of the four prisoners.
+- The German-language Bangor Daily edition that Albrecht Pfeiffer receives by post on Thursdays is the paper he reads in the evenings. He reads it for the war news in the inside pages.
+- Hannah Pfeiffer heard Lonzo Reed call 'Reinmar' at the east fence on the prisoners' third day on the farm; this is how she learned Karl's name before having spoken to him.
+- The POW prisoners were transferred to the Pfeiffer farm approximately three weeks before this chapter (late October 1943), from Camp Houlton. The handover was made by Houlton personnel on the gravel of the farm driveway. Albrecht Pfeiffer watched without speaking; Magda Pfeiffer stood in the farmhouse doorway.
+
+## 03-the-second-bedroom
+- marcus-klein — age: 47 years
+- marcus-klein — role: Latin and German instructor, Coldwater High School
+- marcus-klein — arrival.coldwater: March 1942
+- marcus-klein — origin_place: Vienna, Austria
+- marcus-klein — departure.vienna_year: 1936 year
+- marcus-klein — residence.paris_years: 1936–1938
+- marcus-klein — walk.route: three blocks from school to Elm Street; passes harbor road without turning; walked daily since March 1942
+- marcus-klein — tea.source: brings his own tea in a paper bag in his coat pocket; Beal's supply irregular since early 1942
+- marcus-grammar-book — title: Einführung in die deutsche Grammatik
+- marcus-grammar-book — publication.city: Leipzig
+- marcus-grammar-book — publication.year: 1929 year
+- marcus-grammar-book — cover.damage: water-damaged at lower left corner; from a crossing Marcus does not discuss
+- marcus-grammar-book — spine.repair: repaired with tape, now yellowed and dried
+- marcus-grammar-book — notes.year_written: 1937 year
+- marcus-grammar-book — notes.location_written: Paris, Rue des Ecoles
+- marcus-grammar-book — notes.content: analytical observations on genitive of possession and adjectival constructions; marginal dialogue with text
+- crow-house — location: Elm Street, Coldwater Reach
+- crow-house — construction.material: white clapboard
+- crow-house — distance.harbor: 3 blocks
+- crow-house — distance.school: 3 blocks
+- crow-house — second_bedroom.window_faces: Elm Street
+- crow-house — second_bedroom.location: end of hall, second floor
+- crow-house — second_bedroom.contents: desk, single bookshelf, narrow bed; window facing street
+- crow-house — tenant: Marcus Klein (second bedroom)
+- henry-crow — age: 51 years
+- henry-crow — role: chief custodian, Coldwater High School
+- henry-crow — family.origin: Norfolk, Virginia; family came north 1924
+- lillian-crow — age: 48 years
+- lillian-crow — origin_place: Waterville, Maine
+- lillian-crow — habit.vienna_questions: asks Marcus about Vienna most evenings; genuine curiosity, not courtesy; he answers a different piece each time
+- clara-walsh — role: student, Coldwater High School; strongest student in Marcus Klein's Latin class
+- raymond-foss — role: student, Coldwater High School; in Marcus Klein's Latin class
+- raymond-foss — father.workplace: the cannery, Coldwater Reach
+- pfeiffer-farm — milk.delivery_days: Tuesdays; twice weekly in a good week
+- coldwater-high-school — construction.material: WPA-era brick
+- coldwater-high-school — enrollment: approximately 130 students
+- coldwater-high-school — grades: 1 through 12
+- prater-vienna — location: Vienna, Austria
+- prater-vienna — features: main chestnut avenue; leaves drop by mid-October; roasted chestnut cart near eastern entrance
+- prater-vienna — marcus_habit: Marcus walked there Sunday mornings for several years before leaving Vienna in 1936
+- Marcus Klein arrived in Coldwater Reach in March 1942. He has walked the same three-block route from Coldwater High School to Elm Street every school day since. The route passes the harbor road without turning onto it; he notes the soft boards on Maple Street, the root-ridge at the elm corner of Birch, and the broken Garson gutter.
+- Marcus's German grammar text (Einführung in die deutsche Grammatik, Leipzig, 1929) has a water-damaged cover at the lower left corner from a crossing he does not discuss. The spine has been repaired with tape now yellowed and dried. He keeps it on the second-bedroom shelf and does not use it for teaching. He opens it to the middle where it falls open from habit. The marginal notes are in his own handwriting from 1937, written in Paris at a room on the Rue des Ecoles.
+- Marcus has heard the body-on-the-breakwater detail about the calluses secondhand (passed through town, softened by transit). He does not share his own interpretation — displacement, not espionage — with anyone, because doing so would require naming what he knows about informal wartime transit networks.
+- Lillian Crow asks Marcus about Vienna at intervals close enough to constitute a habit. He answers a different piece each time. In ch03 he tells her about the Prater in October — the chestnut avenue, the Sunday-morning walks, the roasted-chestnut cart at the eastern entrance — and stops before 1938.
+- Henry Crow reported to Marcus in ch03 that someone in town had asked about 'the German teacher.' Henry told them Marcus teaches Latin too. Marcus said: 'That is accurate.' This exchange is Thread 6's first note — the parallel between Henry's position in Coldwater Reach and Marcus's, neither man naming it.
+- Clara Walsh is the strongest student in Marcus's Latin class in October 1943. She understood the ablative absolute on the second explanation, identifying it as 'like circumstances.' Raymond Foss, in the back left seat, committed the same third-declension dative plural error three times in the same session.
+- The Pfeiffer farm delivers milk to Coldwater Reach on Tuesdays, twice a week in good weeks. Lillian Crow used Pfeiffer milk for fish chowder in ch03. Marcus knows the Pfeiffer farm as Hannah Pfeiffer's family farm — she is in his Latin class.
+- Henry Crow came home late in ch03 because the east furnace flue at Coldwater High School needed clearing. He arrived smelling of coal.
+- The Crow house second bedroom, where Marcus lives: end of the hall, second floor, window facing Elm Street. Desk, single bookshelf, narrow bed. Tidy by long-maintained habit. The kitchen warmth does not reach it fully — the room is colder than the ground floor.
+
+## 04-official-report
+- body-on-breakwater — official.cause_of_death: hypothermia and drowning consistent with storm exposure; no injury prior to exposure
+- body-on-breakwater — clothing.manufacture: continental European civilian; not British, not American; wartime manufacture; probable 1941-42
+- body-on-breakwater — military_markings: not none — no insignia, no service items of any kind
+- body-on-breakwater — papers: none — pockets confirmed empty; no wallet, no letters, no documents
+- body-on-breakwater — deposition.time_window: midnight to 2 a.m., October 28, 1943 (Eira's estimate based on tidal data and seam deposit pattern)
+- body-on-breakwater — exposure_window: twelve to thirty-six hours in the water before discovery (Coast Guard estimate)
+- lt-arthur-parsons — affiliation: Coast Guard, District office Portland, Maine
+- lt-arthur-parsons — investigation.uboat_theory: explicitly dismissed — acute U-boat period was 1942; tactical situation changed by November 1943; enemy activity line not pursued
+- coldwater-breakwater — prior_bodies.count_20yr: 2 bodies
+- harbormaster-office — cabinet.owens_logs: Owen Bowman's tide logs occupy the lower shelves; his 1934 volume is on the third shelf from the bottom; cabinet is on the far wall
+- dorothy-mead — owner: Alderman (surname only; fisherman, Coldwater Reach)
+- dorothy-mead — status.nov1943: on mooring with unresolved engine trouble as of early November 1943
+- The exact wording of Eira Bowman's Tuesday night tide log entry (the night before the body was found) is: '2300: mooring check completed, fleet secure.' This is the gap — the entry is accurate in everything it contains, and permanent in what it omits. As of chapter 04, Eira has read this entry three times and closed the log. The official record is complete and will not be corrected.
+- Lt. Arthur Parsons conducted the formal inquiry at the harbormaster's office in early November 1943. His exact statement on the U-boat theory: 'The acute period on this coast was last year — the tactical situation has changed considerably. A man in civilian clothes, European manufacture, no papers — there are other explanations for how a man ends up in the water.' This closes the enemy-activity line officially and permanently for the public record.
+- The official ruling on the body found on the Coldwater breakwater in October 1943 is: accidental drowning, unidentified. This is the public record, on file at the Coast Guard District office in Portland, Maine. The ruling will not change.
+- Eira Bowman has confirmed to herself that both what the Tuesday night log entry contains and what it does not contain are now permanent facts, as durable as the paper and ink. She has made her choice, though no word for this choice appears in the chapter.
+- Owen Bowman's 1934 tide log volume is in the harbormaster's office cabinet (far wall, third shelf from the bottom). Eira acknowledged its presence in chapter 04 and did not open it. She opens it in chapter 11.
+- Two prior bodies were found on the Coldwater breakwater in the twenty years preceding October 1943, according to Eira's statement to Parsons. Neither was found in the same granite seam as the 1943 body.
+
+## 05-fifty-kilometers
+- albrecht-pfeiffer — origin_place: Feuchtwangen, Bavaria (Franconian region, approximately 40 km south of Ansbach)
+- albrecht-pfeiffer — birthplace.town: Feuchtwangen
+- albrecht-pfeiffer — birthplace.distance_to_ansbach: 40 kilometers
+- albrecht-pfeiffer — birthplace.direction_from_ansbach: south
+- karl-reinmar — dialect: Franconian — vowels shaped distinctly from standard German or Munich/Berlin speech; recognizable as regional by a Franconian-born listener
+- karl-reinmar — distance_to_albrecht_birthplace: approximately 50 kilometers
+- karl-reinmar — daily.return_time: approximately 4:30 p.m.
+- lonzo-reed — nod.to_karl: established daily acknowledgment — Karl nods when passing Lonzo's post at day's end; Lonzo nods back; neither speaks; not reported
+- pfeiffer-farm — south_fence.condition_nov1943: posts heaved over the summer; straightened by Hannah and Albrecht in November 1943 before ground froze
+- pfeiffer-farm — radio.volume_habit_nov1943: turned low in the evenings; Albrecht stopped turning it up in the weeks before this chapter
+- pfeiffer-farm — supper.monday_staple: white bean soup made by Magda on Mondays and eaten through the week
+- pfeiffer-farm — milking.schedule: evening milking runs until approximately 6 p.m.; Hannah does far half of stalls, Albrecht near half
+- Albrecht Pfeiffer's exact birthplace is Feuchtwangen, Bavaria — a Franconian town approximately 40 km south of Ansbach. He has never told Hannah this before chapter 05; she did not ask until now. He does not ask why she wants to know.
+- Karl Reinmar's spoken German is Franconian in dialect — the vowels lower and rounder than standard German, shaped in a way that Albrecht Pfeiffer (a native Feuchtwangen speaker) recognizes immediately. When Karl mutters an oath or complaint while lifting a heavy stone in the near field, Albrecht stops mid-swing for two full seconds. He does not speak, does not look toward the field, then swings and moves to the next post. Karl does not notice. Hannah counts the pause.
+- Hannah Pfeiffer, after learning Feuchtwangen, goes to the geography classroom at Coldwater High School during free period and uses the large European war map to locate Ansbach and then estimate the zone of Feuchtwangen approximately 40 km south of it. Feuchtwangen is not labeled on the map. She uses her eye against the map scale to approximate the zone. She is not trying to locate Karl's town specifically — she doesn't know it — but she is measuring the region to understand that the geographic distance between her father and Karl is small in Franconian terms.
+- The nod between Karl Reinmar and Lonzo Reed at the end of each workday — Karl nods when passing Lonzo's post; Lonzo nods back; neither speaks — is an established pattern by November 1943. It is not reported. Hannah observes it and files it.
+- Albrecht Pfeiffer says grace in German at every supper — the same words every evening, his voice quiet and without performance. This is a household constant. By November 1943 Hannah has heard these words so many times they have become texture rather than language she follows.
+- The Pfeiffer kitchen radio is kept at low volume in the evenings by November 1943. Albrecht has stopped turning it up — a change that occurred gradually in the weeks before chapter 05. The six o'clock news arrives as murmur, not language.
+
+## 06-the-half-question
+- michael-bates — role: student, third-year Latin class, Coldwater High School
+- michael-bates — seating.position: third row from the left, Marcus's Latin classroom
+- donna-packard — role: student, Latin class, Coldwater High School
+- ralph-garland — role: teacher, Coldwater High School
+- ralph-garland — reading_habit: reads Bangor Daily sports section in the teachers' room during free periods
+- marcus-klein — body_inference.acknowledged: true
+- marcus-klein — displacement_network.knowledge_source: his own transit (London to Sherbrooke involved unofficial arrangements — a contact, a boat not advertising its route, a farm room not registered)
+- marcus-klein — afternoon_lesson.nov1943: gerundive of obligation (legendum est — passive periphrastic construction)
+- coldwater-high-school — teachers_room.contents: gas ring, coffee pot (in use from 7 a.m.), small sink, shelving for personal cups
+- In ch06, Hannah Pfeiffer asked Marcus Klein after Latin class what the word 'Landsmann' (Landsmann) means. Marcus gave her the precise definition: a term of regional affiliation implying shared Gegend (home district), distinct from simple nationality — not 'I am German and you are German' but 'we come from the same particular piece of ground.' A man from Munich would not naturally call a man from Hamburg his Landsmann with any real content to it. Hannah said the word came from one of the men at their farm; Marcus asked which farm; she said Pfeiffer. He said 'It is an interesting word to use in that context' and did not elaborate. She then offered: 'He's from Franconia.' Marcus said 'I see.' and she left. This is the first explicitly rendered classroom exchange between Marcus and Hannah in the novel.
+- In ch06, Marcus Klein consciously acknowledged the inference he had been suppressing since October 1943. His assembled probable shape: the body on the Coldwater breakwater was European civilian in origin with palm-center calluses and no papers — not military, but a person in transit by unofficial means. A Franconian German POW on a farm owned by a Bavarian family from Feuchtwangen (the same regional ground) using the word Landsmann, plus a Czech body on the breakwater, plus a farm at the right geographic/ethnic distance from the unofficial transit networks = the probable logic of a refugee contact chain, not a spy operation. Marcus holds this as a probable shape, not a conclusion, based on inadequate evidence. He has not shared it with anyone and has not acted on it. He turned away from the window.
+- Marcus Klein's passage from London to Sherbrooke in summer 1939 involved unofficial arrangements: a contact in a city he does not name, a boat that did not advertise its route, a farm where he spent two nights in a room he was not registered as occupying. This is established in ch06 as the source of his knowledge about wartime displacement networks. He does not discuss these arrangements. The people who helped him did so to get him somewhere, not to become part of a story he tells at dinner tables. This background is established without elaboration and must remain without elaboration in subsequent chapters.
+- The probable shape Marcus assembles in ch06: a Czech national in transit (inferred from clothing manufacture, route, and type of person still in irregular motion across the Atlantic in autumn 1943) who knew someone in Halifax who knew of a farm on the Maine coast where a Bavarian family from the right general region of Europe might represent a contact node in an informal refugee assistance chain. This is Marcus's private inference only — not confirmed by any other character, not shared, not acted upon as of ch06. The full assembly will not surface explicitly until ch15 (Franconian).
+
+## 07-portland
+- philip-varnum — role: harbormaster of Pemaquid, Maine
+- philip-varnum — tenure.start: mid-1930s or earlier
+- fitch — role: fuel allocation officer, Portland District office
+- hartley — role: Coast Guard liaison, District office Portland
+- portland-coordination-office — location: third floor, brick building one block from the Portland waterfront
+- portland-coordination-office — meeting.attendees_typical: twelve Maine coastal harbormasters, one Coast Guard liaison, two fuel allocation officers
+- eira-bowman — quarterly_meetings_attended: 4 meetings
+- eira-bowman — portland.fuel_allocation.dec1943: approved as submitted — twelve percent increase over prior year winter figure
+- refugee-crossings — named_by: Philip Varnum, harbormaster of Pemaquid, at the December 1943 quarterly coordination meeting
+- refugee-crossings — description: unofficial wartime transit of people along the Maine coast by means that do not generate documentation — passengers off vessels that did not file manifests; more common than the official record reflects
+- body-on-breakwater — eira.frame.dec1943: refugee crossings — probable transit by unofficial means; not an isolated incident but a category of recurring event on the Maine coast
+- alderman — role: fisherman, Coldwater Reach; covers harbormaster night log when Eira is absent
+- alderman — vessel: Dorothy Mead
+- Philip Varnum (harbormaster, Pemaquid) named the phrase 'the refugee crossings' at the December 1943 quarterly coordination meeting in Portland, in the context of unidentified bodies washing up along the Maine coast. He described it as a known recurring feature of the coast — passengers off vessels that did not file manifests, traveling by unofficial means. He noted: 'There's more of that than people think.' This is the first time anyone near Eira has offered a non-spy, non-military explanation for the body on the Coldwater breakwater. She says 'yes' and does not elaborate. The meeting continues.
+- The December 1943 quarterly harbormasters' coordination meeting in Portland: twelve coastal Maine harbormasters, Coast Guard liaison Hartley (not Parsons), and fuel allocation officers including Fitch. The Coldwater Reach breakwater body appears in the quarterly incident summary as 'Unidentified remains, Coldwater Reach breakwater, late October. Classified accidental drowning, case closed.' — one item among three, read without emphasis.
+- Eira Bowman's winter fuel allocation request — a twelve percent increase over the prior year's winter figure, based on October and November catch records — was approved as submitted at the December 1943 quarterly meeting. This is a professional win handled without fanfare in the ledger margin.
+- The bus from Coldwater Reach to Portland runs twice weekly in December 1943, fuel-rationed schedule. The trip is four hours each way. The bus is cold at the back; heating runs off the engine and reaches only the forward rows well. Eira takes the window seat both ways and works from her ledger on the southbound leg.
+- Alderman (surname only, Coldwater fisherman, owner of the Dorothy Mead) covers the harbormaster night log at the office when Eira is absent. His December 1943 entry during her Portland trip: 'fleet secure — nothing to report,' at 8:30 p.m.
+- Philip Varnum's 1942 Pemaquid incident: a body came in after the February blow, initially taken for a downed pilot because of the clothing and the prevailing submarine anxiety of that year. Turned out to be a New Brunswick fisherman missing three weeks, his family came for him. Varnum uses this as the frame for his comment on the Coldwater case — noting that Eira's man was different (European cut, not military) and more consistent with the refugee crossing pattern.
+
+## 08-mutter
+- inge-pfeiffer — relation_to: mother of Magda Pfeiffer; maternal grandmother of Hannah Pfeiffer
+- inge-pfeiffer — alive: false
+- inge-pfeiffer — origin_place: Bavaria, Germany
+- inge-pfeiffer — death_year: 1937 year
+- magda-pfeiffer — silence.prewar: true
+- magda-pfeiffer — spells.doctor_episodes: 2 episodes
+- magda-pfeiffer — spells.doctor_first_year: Hannah age 12 (approx 1938)
+- magda-pfeiffer — spells.doctor_second_year: Hannah age 14 (approx 1940)
+- albrecht-pfeiffer — rockland_trip.frequency: twice yearly (December and June) for feed cooperative
+- lonzo-reed — december_hours: departs early when winter work hours shorten; returns 7 a.m.
+- phrase-wenn-das-wasser — first_surfaced: Hannah's interior, December 1943, kitchen at the stove
+- phrase-wenn-das-wasser — source_known: false
+- phrase-wenn-das-wasser — probable_source: Inge (maternal grandmother) or Magda before the silences; genuinely unlocatable
+- phrase-wenn-das-wasser — recurs: true
+- hannah-pfeiffer — german.register: patchwork — accumulated from home and church and listening; has gaps and seams; not father's formal German; not standard church German
+- Magda Pfeiffer's spells predate the family's emigration from Bavaria in 1922. Albrecht Pfeiffer confirms this in ch08 with one sentence: 'Sie hatte diese Zustände schon, bevor wir hierher kamen' — spoken to Hannah after checking on Magda on his return from Rockland, December 1943. He says nothing more on the subject.
+- Hannah Pfeiffer has learned to distinguish three kinds of Magda's silence: (1) the distress kind that required the doctor — happened twice, when Hannah was approximately 12 and 14; (2) an unnamed middle kind; (3) the third kind, which is the worst and requires nothing but time and company at the edges. The December 1943 spell in ch08 is the worst yet in the narrative.
+- The German phrase 'Wenn das Wasser steigt, verlässt man das Dorf' surfaces in Hannah's interior in December 1943 while she is cooking. Its source is unlocatable to her — possibly her grandmother Inge (Magda's mother, died 1937, Hannah met her once at age 5-6) or Magda before the silences started. The phrase recurs later in the narrative; its source is never confirmed.
+- Inge: Magda Pfeiffer's mother, Hannah's maternal grandmother. Small, upright, from Bavaria. Died 1937. Hannah met her once at around age five or six and retained only the impression of a table edge at eye height and the smell of something baking. There is one photograph of Inge in the Pfeiffer farmhouse hallway.
+- Albrecht Pfeiffer makes twice-yearly supply trips to the Rockland feed cooperative — once in December, once in June — staying overnight each time. He leaves before dawn.
+- Hannah's German is a patchwork of home, church, and years of listening — not her father's formal German, not standard church German. It has visible seams: she makes substitutions, leaves some English untranslated, counts compound numbers slowly. She used it in December 1943 to read her history textbook aloud to Magda — translating the Constitutional Convention imperfectly, in real time.
+- Lonzo Reed departs early on short-day December afternoons when farm work hours are cut by the season; he returns at 7 a.m. the following day to unlock the icehouse.
+- The Pfeiffer farmhouse hallway contains at least one photograph: Inge (Magda's mother), grey braid pinned, looking at the camera in the formal manner of the period.
+
+## 09-the-breakwater
+- whitmore — role: Emergency Committee in Aid of Displaced Foreign Scholars, Cambridge; manages displaced scholars correspondence file
+- whitmore — response_habit: lets correspondence accumulate before responding; methodical rather than prompt
+- mrs-aldrich — role: post office counter clerk, Coldwater Reach
+- coldwater-post-office — location: Main Street, Coldwater Reach
+- cambridge-letter-nov43 — date.sent: approximately November 22, 1943
+- cambridge-letter-nov43 — status.dec1943: not received; no reply from Whitmore as of late December 1943
+- cambridge-letter-nov43 — subject: fellowship matter raised in September 1943; inquiry to Whitmore at Emergency Committee Cambridge address
+- marcus-klein — harbor_road.visits_since_march1942: approximately 4 visits
+- marcus-klein — eira_bowman.first_exchange: December 1943, foot of commercial wharf; first spoken introduction between Marcus and Eira
+- marcus-klein — body_inference.eira_recognition: recognized Eira Bowman's compressed response as indicating decided knowledge she has chosen not to surface; no certainty about content, only structural recognition
+- Marcus Klein and Eira Bowman spoke for the first time in December 1943, at the foot of the commercial wharf, when their paths intersected as Eira was checking a mooring gauge on the dock. Marcus introduced himself formally ('Marcus Klein, I teach at the school') because this is the correct form, and Eira gave her name and title. They have seen each other around Coldwater Reach for over a year but had not previously spoken.
+- Marcus asked Eira, standing approximately fifty feet from the breakwater: 'I heard about the remains found here last fall. I wondered whether any identification had been made.' Eira's response: 'The Coast Guard handled it. Accidental drowning.' This is the first time Marcus has spoken directly to Eira about the body. His tone was careful — a statement of general knowledge, not a solicitation.
+- Eira asked Marcus whether he received much mail from overseas. He said 'Some. Rarely now.' and mentioned he was expecting something from Cambridge. She said the overseas mail was slow in December. They parted without further exchange on the breakwater subject.
+- Marcus's letter to Whitmore at the Emergency Committee (Cambridge) was sent approximately November 22, 1943, and had not been received by late December 1943 — approximately 21-25 days without reply. The letter concerned a fellowship matter Marcus had raised in September 1943.
+- On the walk home from the post office, Marcus analyzed Eira's compressed response as the same grammatical form he has used himself — the statement that answers the question asked without extending to the question behind it. He named it internally as 'the grammar of handled.' He used this form in Paris (1937-38) about Vienna; in London about the crossing; in Sherbrooke when officials asked about the arrangements. He recognizes it as the form of a decided frame, not the form of limited knowledge.
+- Marcus has been to the harbor road approximately four times since his arrival in March 1942: twice for orientation in his first week, and twice since. His normal route from school to Elm Street passes the harbor road intersection without turning.
+- Mrs. Aldrich is the counter clerk at the Coldwater Reach post office on Main Street. She manages the named-letter sorting (K-L section, etc.).
+- Marcus Klein's compression habit — delivering accurate statements within a decided frame — was specifically employed at Sherbrooke when officials asked how he had come to be on the vessel he traveled on and who had made the arrangements. He stated: 'The arrangements were made through informal channels. I cannot identify the individuals.' This is established as an example of the instrument he recognizes in Eira's voice.
+- Hector Brann (the lobsterman who found the breakwater body) was present at the Coldwater Reach post office during Marcus's December 1943 visit. They did not speak and have not met.
+
+## 10-private-reed
+- james-reed — relation.father: Lonzo Reed
+- james-reed — nickname: Jimmy
+- james-reed — military.assignment: Buckley-class destroyer escort, Pacific theater
+- james-reed — military.assignment_date: February 1943
+- james-reed — letter.writing_frequency: approximately every six weeks when things are going well
+- james-reed — letter.last_sent_weeks_before_ch10: 7 weeks
+- lonzo-reed — family.son.name: James Reed (Jimmy)
+- lonzo-reed — hand.left.injury: lost sensation in first two joints after winch accident, 1931; worsens in cold
+- lonzo-reed — newspaper.reading_habit.order: Pacific section first, then front page; habit since February 1943
+- lonzo-reed — chapter10.date: December 9, 1943
+- lonzo-reed — report.dec9.prisoner_count: 4 prisoners
+- lonzo-reed — hand.left.injury_year: 1931 year
+- lonzo-reed — report.dec9.hours_worked: 7 hours
+- lonzo-reed — report.dec9.incidents: None
+- lonzo-reed — report.dec9.editorial_omission: observed Albrecht Pfeiffer's recognition of Karl Reinmar's Franconian dialect at south fence; observed Hannah Pfeiffer's fence exchange with Reinmar; both assessed as 'not an incident' and not recorded
+- fischer-pow — physical.build: heavyset; deliberate walk; sets pace for other prisoners
+- fischer-pow — habit.icehouse_exit: always first out of the icehouse in the morning
+- brunner-pow — physical.posture: leans to the left; habitual; uncorrected after twelve weeks of Lonzo's observation
+- krebs-pow — physical.ear: missing upper third of right ear; smooth scar; predates Tunisia
+- krebs-pow — physical.head: bald on the crown
+- krebs-pow — work.partner: Brunner; they work heavy tasks together
+- karl-reinmar — work.habit: works the far end of the field alone; finds waiting work and goes at it; Lonzo reads it as character or nineteen, cannot decide
+- coastal-patrol-report — fields: date, prisoner count, hours worked, incidents, violations
+- Lonzo Reed's son is James Reed, known as Jimmy. He was assigned to a Buckley-class destroyer escort in the Pacific theater in February 1943. By December 9, 1943 his last letter was written approximately seven weeks prior and has been in Lonzo's jacket pocket for two weeks, unanswered. The letter says the ship is a good one, the food adequate, and 'don't worry, Dad' in the second paragraph. Lonzo carries it with him and reads the Pacific section of the Bangor Daily News first every morning, a habit that organized itself around Jimmy's orders in February.
+- Lonzo Reed suffered a winch accident in 1931 that left him with reduced sensation in the first two joints of his left hand; this affects his handwriting in cold weather.
+- The Coastal Patrol daily report form has blanks for: date, prisoner count, hours worked, incidents, violations. Lonzo's December 9, 1943 report reads: four prisoners, seven hours, no incidents, no violations. It is accurate as written and complete within its decided frame. He did not report: (1) Albrecht Pfeiffer's two-to-three-second pause at the south fence when Karl Reinmar spoke in Franconian dialect — assessed as 'not an incident'; (2) Hannah Pfeiffer's two-to-three-minute fence exchange with Reinmar at approximately 3:20 p.m. — assessed as 'not dangerous, not reportable.' Both editorial decisions are made without Lonzo framing them as editorial decisions.
+- The four German prisoners at the Pfeiffer farm, named in full for the first time from Lonzo's POV: Fischer (heavyset, deliberate walker, always first out of the icehouse, sets the pace for the others); Brunner (thin, habitual left-side lean, works heavy tasks with Krebs); Krebs (oldest, bald on the crown, missing upper third of right ear from a pre-Tunisia injury, works heavy tasks with Brunner); Reinmar (youngest, works far end of field alone, drives ahead of the work — Lonzo reads it as character or nineteen, cannot decide).
+- December 9, 1943 is the specific date of chapter 10. The December field work at the Pfeiffer farm in this period is maintenance: hauling equipment to the barn, winterizing, attending to what the season broke. Pale low light from the south; full dark by ten past four.
+
+## 11-owens-ledger
+- elias-foss — role: fisherman
+- elias-foss — origin_place: Vinalhaven, Maine
+- elias-foss — missing_since: September 29, 1934
+- elias-foss — found_date: October 14, 1934
+- elias-foss — found_location: end of the commercial dock, Coldwater Reach
+- elias-foss — found_by: night crew of Elias Hollis
+- elias-foss — official.cause_of_death: drowning; circumstances consistent with extended exposure
+- elias-foss — estimated_time_of_death: October 6 or 7, 1934
+- harbormaster-ames — role: harbormaster, Coldwater Reach; predecessor to Owen Bowman
+- harbormaster-ames — death_year: 1929 year
+- harbormaster-ames — records.quality: approximate; Eira has verified several entries against District office copies
+- j-h-pell — role: medical examiner, Coldwater Reach area (1934)
+- elias-hollis — role: lobsterman, Coldwater Reach
+- north-mooring-blocks — last_replaced: August 18, 1932
+- north-mooring-blocks — replacement_crew: Alderman and crew
+- north-mooring-blocks — last_inspected: June 1934, condition satisfactory
+- north-mooring-blocks — condition.jan1944: serviceable; wear on anchor pins within operational tolerance
+- north-mooring-blocks — recommended_replacement_by: within two to three years from January 1944
+- owens-1934-log — location: harbormaster's office cabinet, between 1933 and 1935 volumes
+- owens-1934-log — binding.opens_at: October section; worn open from prior use
+- owens-1935-log — condition: thin; half the width of other annual volumes; runs January through October only
+- owens-1935-log — last_entry.content: weather note and routine mooring check noting the approach of the November storm
+- jt-1934 — identified: false
+- jt-1934 — dock_arrival_date: October 12, 1934
+- jt-1934 — condition_on_arrival: in a bad way; needed time before being in a state for the official record
+- jt-1934 — owen_response: met J.T. at the dock; held statement out of official record; entered the note later as complete account
+- harbormaster-office — cabinet.ames_logs: annual logs from Harbormaster Ames's tenure; before Owen's; approximate record-keeping; cross-checked by Eira against District office copies
+- eira-bowman — inventory_date.jan1944: January 7, 1944
+- Owen Bowman's 1934 harbormaster log contains two parts to the October 14 entry: (1) the official documentation of Elias Foss's recovery — fisherman from Vinalhaven, missing since September 29, recovered at the end of the commercial dock at 0600 by E. Hollis's night crew; medical examiner J.H. Pell examined at 0900; death ruled drowning from extended exposure, estimated 10/6 or 10/7; Coast Guard District Portland notified; body released to family October 16. (2) Below, in a slightly smaller hand and set off by a line break: 'J.T. came in on the 12th. I met him at the dock. He was in a bad way and needed some time before he was in any state for the official record. This not entered at time; entering here as complete account.' Owen made a deliberate judgment: he deferred the recording of J.T.'s presence until J.T. was ready, then entered the full account late with a notation naming the delay. The 1934 record is complete. J.T. is not further identified in the log or in the novel.
+- Owen's 1935 harbormaster log volume is notably thinner than other annual volumes — Owen died in November 1935 and the volume ends in October. His last entry is a weather note and a routine mooring check noting the approach of the November storm, with a recommendation that the lines on a vessel called the Hannah F. be inspected before storm season. The thin 1935 volume sits in the cabinet between the 1934 and 1936 (Eira's first) volumes. Eira does not open it in chapter 11.
+- In chapter 11, Eira holds Owen's 1934 log and her own 1943 log open together on the chart table at their October sections. Owen's entry has an annotated gap — the late note naming the delay and completing the record. Eira's entry ('2300: mooring check completed, fleet secure') contains no annotation, no late entry, no notation of the man on the dock. The comparison is staged physically and not named in Eira's interior. The distinction between Owen's judgment (deferral + eventual completion) and Eira's (omission without annotation) is the chapter's load-bearing unspoken fact. Eira's resolution of this distinction is deferred to chapter 26.
+- Harbormaster Ames preceded Owen Bowman as harbormaster of Coldwater Reach. He died in 1929. His logs are in the cabinet behind Owen's, going back thirty years from 1944; his record-keeping was approximate and Eira has cross-checked several of his entries against the District office copies. His handwriting was large and unpracticed.
+
+## 12-the-school-board
+- dwight-hatch — role: selectman and school board member, Coldwater Reach
+- dwight-hatch — age.estimated: 50s
+- agnes-vane — role: school board member, Coldwater Reach; school parent
+- gordon-sears — role: school board member, Coldwater Reach; hardware man
+- harrington — role: Emergency Committee in Aid of Displaced Foreign Scholars; predecessor to Whitmore
+- harrington — signed.marcus_letter: Marcus Klein's Emergency Committee enrollment letter, November 1940
+- marcus-klein — school_board_review.date: February 1944
+- marcus-klein — school_board_review.outcome: appointment continued; vote 3-0 unanimous
+- marcus-klein — emergency_committee_letter.signed_by: Harrington (Whitmore's predecessor)
+- marcus-klein — vienna_credentials.date: 1934 year
+- marcus-klein — maine_teaching_certificate.year: 1942 year
+- marcus-klein — document_file.contents: Emergency Committee letter (Nov 1940); Vienna university credentials (1934 letterhead); Cambridge appointment letter; Maine teaching certificate (1942)
+- legion-hall — location: Coldwater Reach, Maine
+- legion-hall — primary_use: rationing board offices, weekdays 9 a.m. to 4 p.m.
+- legion-hall — secondary_use: school board meeting space
+- legion-hall — interior.banner: American Legion banner, full width of back wall, gold fringe losing color at the folds
+- Marcus Klein's document file (carried since Cambridge, begun in London): contains Emergency Committee in Aid of Displaced Foreign Scholars letter (November 1940, signed by Harrington — Whitmore's predecessor); Vienna university credentials dated 1934 (pre-annexation letterhead, which Marcus includes knowing it cuts two ways: documents his legitimate academic standing while marking the institution as belonging to the pre-1938 Austria); Cambridge appointment letter; Maine teaching certificate (spring 1942). These are the documents he has used in every institutional review of his position and are arranged in order of probable utility.
+- The February 1944 Coldwater Reach school board review of Marcus Klein's appointment: held at the Legion hall; three board members present (Dwight Hatch, Agnes Vane, Gordon Sears); lasted thirty-eight minutes; vote 3-0 to continue appointment; recorded in board minutes as formal review with confirmed appointment. Henry Crow attended as an observer, seated along the wall (not at the table — his own choice, both men know the grammar of this positioning and neither names it).
+- After the school board meeting, walking home on the harbor road: Henry says 'You were very calm.' Marcus says 'I have had some practice.' Henry: 'I know.' Half-block later: 'I have too.' Neither man adds anything further. This is Thread 6's most explicit moment — the closest the parallel between Henry's position and Marcus's comes to being stated aloud. The chapter ends on the Crow house kitchen, Lillian having left the stove on, Marcus sitting at the pine table with his hands flat.
+- Marcus Klein has attended institutional reviews of his right to occupy a room in the following contexts before the February 1944 Coldwater Reach meeting: in Vienna before the faculty review (before he left in 1936); in Paris at two consular appointments (1936-1938); in London at the Home Office (1938-1939); in Sherbrooke in waiting rooms (1939-1941); in Cambridge twice (1941-1942); and at Coldwater High School in March 1942. 'I have had some practice' names all of these without naming any of them.
+- The Legion hall in Coldwater Reach: serves as rationing board offices weekdays 9 a.m. to 4 p.m.; doubles as school board meeting space. Interior: two parallel rows of folding tables (left as rationing board arrangement), American Legion banner full width of the back wall with gold fringe losing color at the folds, two ceiling-fixture electric bulbs, three north-facing windows showing the empty February street.
+
+## 13-the-gift
+- hannah-pfeiffer — age: 18 years
+- hannah-pfeiffer — birthday: March 15, 1944
+- carved-bird — material: birch wood
+- carved-bird — length: approximately 3 inches
+- carved-bird — shape: small bird; head angled slightly down, wings folded against body, tail cut to a clean notch; faint corrected ridge on breast where blade slipped
+- carved-bird — maker: Karl Reinmar
+- carved-bird — placement.location: gap between south fence corner post and stone wall, east face, in shadow — not visible from house or Lonzo's gate position
+- carved-bird — placement.date: on or before March 15, 1944
+- carved-bird — possession: Hannah Pfeiffer; kept in coat pocket; not shown to anyone
+- carved-bird — workmanship: not fine but careful; wood grain shows; corrected error on breast; appears to have been worked over multiple sittings
+- magda-pfeiffer — recovery.pancakes_date: March 15, 1944 — first time making pancakes without being asked since November 1943; braided hair; did not speak; did not look at Hannah when setting the extra portion
+- hannah-pfeiffer — secret.karl_bird: keeping the carved bird; first deliberate concealment about Karl Reinmar; told no one
+- Hannah Pfeiffer turns 18 on March 15, 1944. Her birthday falls during mud season: frost still at night, ground giving up its winter, Holsteins beginning to go out briefly in the daytime.
+- On Hannah's birthday, Magda Pfeiffer makes pancakes without being asked for the first time since November 1943. She has braided her hair. She brings two extra pancakes to Hannah's plate without speaking and does not look at Hannah when she sets the plate down. This is Magda's partial recovery — she is present and occupied but does not speak.
+- Albrecht says 'Herzlichen Glückwunsch' to Hannah on her birthday and sets one hand briefly on her shoulder. This is the full extent of the birthday acknowledgment.
+- Karl Reinmar carved a small bird from birch wood (approximately 3 inches, finger-length) and placed it in the gap between the south fence corner post and the stone wall on the east face of the Pfeiffer farm. The gap was not visible from the farmhouse or from Lonzo Reed's position at the gate. The bird has wings folded against the body, head angled slightly down, tail cut to a clean notch, and a faint corrected ridge on the breast where the blade went slightly wrong. The work shows multiple sessions — it continued past what the shape strictly required.
+- Hannah found the bird while resetting the south fence corner post (heaving from frost-thaw cycles since February) on March 15, 1944. She put it in her coat pocket. She did not tell anyone — not Ruth, not Marcus. This is her first deliberate secret about Karl Reinmar, actively chosen rather than accidental.
+- The icehouse window light is visible from the Pfeiffer barn door in the evening. The prisoners are locked in by approximately 5 p.m. when Lonzo brings them in and files his report.
+- The carved bird is a recurring object in this novel: it appears in chapters 13, 24, and 29. Its physical description (birch, finger-length approximately 3 inches, folded wings, notched tail, corrected breast ridge) must remain consistent across all three chapters.
+
+## 14-the-unregistered-boat
+- jan-vaclav-horak — nationality: Czechoslovak
+- jan-vaclav-horak — status: displaced person
+- jan-vaclav-horak — last.known.location: Halifax, Nova Scotia
+- jan-vaclav-horak — last.known.location.date: October 1942
+- jan-vaclav-horak — next_of_kin: none available in Allied civilian records
+- jan-vaclav-horak — alive: false
+- jan-vaclav-horak — identification.source: Allied civilian records, via Coast Guard regional office Portland, April 12, 1944
+- body-on-breakwater — official.ruling: accidental drowning consistent with storm exposure, identified as Jan Václav Horak — amended official record, Coast Guard District Portland, April 12, 1944
+- body-on-breakwater — official.identity: Jan Václav Horak
+- unregistered-vessel-dock7 — first_observed: morning of April 14, 1944
+- unregistered-vessel-dock7 — departed: approximately April 15 or 16, 1944, unseen
+- unregistered-vessel-dock7 — registration.status: not found in Maine registry (main volume or 1944 supplement) or Owls Head harbor contact list
+- unregistered-vessel-dock7 — hull.description: small lobster boat, approximately 26-27 feet, older hull, topsides faded to pink from original red, standard Maine lobster-boat design
+- unregistered-vessel-dock7 — dock.post: 7 dock post number
+- robert-cates — berth: 14 berth number
+- robert-cates — berth.held_since: summer 1938
+- robert-cates — status: shipped as merchant vessel mate, September 1943; berth released by wife February 1944
+- harold-vose — berth: 9 berth number
+- harold-vose — next_of_kin: mother, in Searsport (named next of kin on registration)
+- harold-vose — registration.certificate.returned: December 1943, sent to mother in Searsport
+- archie-lunt — origin_place: Tenants Harbor
+- archie-lunt — berth: 14 berth number
+- eddie-lunt — origin_place: Tenants Harbor
+- roy-tremblay — origin_place: Spruce Head
+- roy-tremblay — berth: 9 berth number
+- idabelle — owner: Robert Cates
+- price-fish-house — located_in: Tenants Harbor, Maine
+- price-fish-house — closed: February 1944
+- eira-bowman — harbor.contact_offices: Knox County, Owls Head, Rockland, Vinalhaven — four coastal offices; practice inherited from Owen Bowman
+- Jan Václav Horak was identified as a Czechoslovak national, status displaced person, last known location Halifax, Nova Scotia, October 1942 — one year before his death on the Coldwater Reach breakwater in October 1943. The identification came through liaison with Allied civilian records, communicated by the Coast Guard regional office Portland in a letter dated April 12, 1944. No next of kin information was available. The classification of cause of death was unchanged: accidental drowning consistent with storm exposure. The official record was amended to reflect his identity.
+- An unregistered lobster boat (small, approximately 26-27 feet, topsides faded to pink from original red, standard Maine lobster-boat design) was moored at dock post 7, Coldwater Reach harbor, from approximately April 14, 1944. Its registration number was not found in the Maine registry (main volume or 1944 supplement) or the Owls Head harbor contact list. Hector Brann suggested it was from Owls Head; this could not be confirmed. Eira sent a District office inquiry April 14. The boat departed unseen approximately April 15-16. The inquiry was pending as of chapter end. The chapter does not connect this boat to Horak; the connection is left for the reader.
+- Spring 1944 harbor changes: Robert Cates (berth 14, boat Idabelle) released berth after shipping as merchant vessel mate September 1943 — his wife wrote in February 1944 to release the berth; berth 14 reassigned to Archie Lunt of Tenants Harbor. Harold Vose (berth 9) — registration certificate returned to his mother in Searsport (named next of kin) December 1943; berth held through winter, provisionally reassigned to Roy Tremblay of Spruce Head spring 1944. Three new harbor registrations: Archie Lunt and his brother Eddie Lunt (from Tenants Harbor, relocated after Price fish house folded February 1944) and Roy Tremblay (Spruce Head, vouched by Elias Hollis).
+- Eira maintains harbor contact lists for four coastal offices: Knox County, Owls Head harbor, Rockland, Vinalhaven. This practice was Owen Bowman's; she has maintained and updated it since taking the post.
+- Depth sounding corrections from the 1944 winter survey (District office, January 1944): shoal building at south entrance up two feet since 1942 survey; silt deposit reducing clearance off the breakwater by 18 inches; north channel improved by winter storm scouring. All noted in tide log with District reference numbers.
+
+## 15-franconian
+- karl-reinmar — dialect.region: eastern Franconian, valley between Feuchtwangen and Dinkelsbühl or east of Dinkelsbühl toward the Bohemian hills — closer to the Czech border than Ansbach
+- karl-reinmar — dialect.identified_by: Marcus Klein, from a harvest idiom Hannah Pfeiffer reproduced phonetically, April 1944
+- marcus-klein — knowledge.horak_name_known: true
+- marcus-klein — knowledge.horak_name_source: circulated through town from official mail, via post office and Beal's store, late April 1944
+- marcus-klein — knowledge.harbormaster_dock_certainty: certain that Eira Bowman was at the dock the night of October 26, 1943, and decided what to enter in the log
+- Chapter 15 (April 1944): Hannah brings Marcus a harvest idiom she heard Karl say through the icehouse window. Marcus identifies it as an Upper Franconian form — specifically from the valley between Feuchtwangen and Dinkelsbühl, or the villages east of Dinkelsbühl toward the Bohemian hills — not Ansbach (Middle Franconia), as Hannah had believed. The phrase's translation (as Marcus gives it): 'The field takes what it is owed, and the man who worked it walks home lighter.'
+- Chapter 15: Marcus's assembly of the probable picture — privately held, not communicated to anyone: Jan Václav Horak (Czech displaced person, Halifax 1942) would use émigré networks running through Franconian-Czech borderland communities. The Pfeiffer farm (Feuchtwangen origin, Albrecht Pfeiffer) is the most probable contact node in Coldwater Reach for such a network. Karl Reinmar's precise Franconian-Czech borderland dialect origin tightens the geographic coincidence from approximate (~50km) to exact (same valley). Marcus does not conclude Albrecht Pfeiffer knew Horak; he holds the shape as a probable reconstruction, not evidence.
+- Chapter 15: Marcus is certain (from the ch09 breakwater exchange) that Eira Bowman was at the dock on the night of October 26, 1943, and made decisions about what to enter in the log. He thinks about her having received the same identification letter and doing her own arithmetic about it.
+- Chapter 15: The German grammar Marcus lent Hannah Pfeiffer has been borrowed and returned in alternation since January 1944; Hannah leaves it on the classroom desk at the end of this visit as a placeholder indicating she will return. This is her established pattern.
+- franconian-czech-borderland — fictional: false
+- franconian-czech-borderland — narrative_significance: probable origin of émigré network connecting Albrecht Pfeiffer and Jan Václav Horak; dialect of this region links Albrecht's birthplace (Feuchtwangen) to Karl Reinmar's origin and to Horak's Czech nationality
+
+## 16-albrecht-and-karl
+- pfeiffer-farm — north_field.soil: clay subsoil holding spring snowmelt; thin topsoil over clay; drainage problem in the low center; darkest where water sits longest
+- pfeiffer-farm — north_field.planting_method: raised-ridge planted rows built up by hand above the clay waterline; technique Albrecht has used since establishing the farm; same technique Karl Reinmar demonstrates as known from Franconian farming
+- albrecht-pfeiffer — fence_conversation.may1944.dialect: spoke in Franconian dialect with Karl Reinmar at the north field fence, May 1944; the dialect match was exact — same vowel rounding, same consonant handling — not merely regional
+- albrecht-pfeiffer — fence_conversation.may1944.reaction: a town name Karl named (unrecognized by Hannah; two syllables) produced a slow stillness — hands released the fence rail, went into coat pockets; said something low that Hannah could not hear; Karl nodded once; ten seconds of stillness before both returned to work
+- magda-pfeiffer — witness.may1944.window: observed at kitchen window looking toward the far end of the north field (where Albrecht was working) when Hannah returned with milk pails, May 1944 morning; holding dishcloth, not looking at Hannah; whether she saw the fence conversation is not established; she turned and went inside without speaking
+- karl-reinmar — fence_conversation.may1944: discussed north-field drainage and raised-ridge planting technique with Albrecht Pfeiffer at the field fence in Franconian dialect, May 1944; named a town from Franconia that stopped Albrecht; the town name is not identified to Hannah or the reader
+- May 1944, Pfeiffer farm: Hannah witnesses Albrecht Pfeiffer and Karl Reinmar speaking in the same Franconian dialect at the north field fence before full morning light, observed through a gap between two barn wall boards. Their conversation is about soil drainage — the clay subsoil of the north field, the raised-ridge planting technique Karl demonstrates. The language between them is exact, not merely regional: the same vowel rounding, the same consonant handling, the same grammar.
+- A town name Karl mentions (two syllables, unrecognized by Hannah) produces a qualitatively different stillness in Albrecht from the sharp mid-swing pause of October 1943 (ch05): slower, the hands releasing the fence rail, going into coat pockets. He says something low and quiet that Hannah cannot hear. Karl nods once. They stand for ten seconds, then both return to their work without ceremony or further exchange.
+- Hannah's interior reading: Albrecht's stillness at the town name is the stillness of pieces completing a shape already carried — not new information arriving, but confirmation of what he had been holding since October or longer. He knows exactly where Karl is from, not in general but specifically.
+- *Die Erde hier ist schwer* (The earth here is heavy) recurs as an ambient phrase in Hannah's interior in ch16; she can no longer locate its first occurrence or whether it originated as her father's thought, a phrase from the Bavarian grammar, or something she has accumulated from the farm. It has become weather.
+- Magda Pfeiffer is observed at the kitchen window looking toward the far north field (where Albrecht was working the second plow pass) when Hannah returns with the milk, ch16. She holds a dishcloth without using it. Whether she saw the fence conversation between Albrecht and Karl is not established; the novel does not confirm or deny. She turns and goes inside without speaking to Hannah.
+- The town Karl names that stops Albrecht is withheld from the reader: Hannah hears two syllables, does not recognize it, cannot reproduce it. This gap is deliberate and must not be closed until the outline calls for it (Thread 5 remains unresolved through ch29).
+
+## 17-mr-kleins-room
+- henry-crow — years_in_coldwater: 20 years
+- henry-crow — tenure_at_school: 16 years
+- henry-crow — departure_time_school: 6:45 a.m.
+- henry-crow — school_opening_time: 7:00 a.m.
+- henry-crow — walk_route: Elm Street north, three blocks to Coldwater High School
+- henry-crow — thermos.location: furnace room shelf above valve controls at Coldwater High School
+- henry-crow — key_ring.count: 12 keys
+- henry-crow — school_key.shaft: bent at top from 1937 gutter coupling incident; never straightened
+- marcus-classroom — desk_count: 20 desks
+- marcus-classroom — desks.carved_names: 11 desks
+- marcus-classroom — layout: four rows of desks; shelf behind front desk with Latin dictionary, mark book, spare chalk box; blackboard with next day's date in upper right corner
+- marcus-classroom — german_grammar.location: on the working desk, in use — moved from shelf by May 1944
+- marcus-classroom — window.latch.status: freed by May warmth after sticking since March 1944; window opened for first time since October
+- school-furnace-east-wing — baffle_plate.status: shimmed December 1943; managed all winter by Henry with daily damper adjustment; banked down May 1944
+- school-south-radiator — repair.status: air in feed-line fitting; bled May 1944 (8 seconds air before clear); tightened; tagged red for summer work order
+- school-south-radiator — maintenance_log.entry: South corridor main feed, air in fitting. Bled and tagged, summer priority.
+- Henry Crow has exchanged a morning nod with the woman at number 14 (Elm Street area, unnamed) since the spring of 1936 — eight years by May 1944. She is always at her window when he passes. Neither has spoken; the nod is not unfriendly.
+- Henry's maintenance notation system: a red tape tag on a fitting or fixture marks it for the summer work order priority list.
+- Henry's interior reading of Marcus's change since the December 1943 school board meeting: Marcus has stopped holding himself 'quite so far from the door' — the grammar moved from shelf to desk, the window opened mornings when weather allowed, the chalk in longer strokes on the blackboard. Henry reads this as a man ceasing to hold himself provisional.
+- Henry holds internally the distinction between his twenty years in Coldwater and Marcus's three: they rhyme, but a rhyme is not equivalence. The specific history, cost, and origin of what each man has put down in Coldwater are not the same. Henry intends to remain careful about this.
+- Henry at the December 1943 school board meeting (Legion hall): he sat along the left wall in the extra chairs while three men decided about Marcus; he knows the difference between sitting in the chair before the table and sitting at the wall — these are not the same cost. He said 'I have too' walking out because it was true and he has learned to be careful about leaving true things unsaid.
+- Henry's characterization of his own practice: his observations become invisible to the people who benefit from them; holding observations without speaking them is a skill, not suppression.
+- The west wing boiler at Coldwater High School was installed in 1938 and runs cleaner than the east wing furnace; it was easier to manage all winter 1943-44.
+
+## 18-what-language
+- school-rowing-dock — location: east slope of Coldwater High School, foot of the slope facing the Reach, downstream of the commercial wharf
+- school-rowing-dock — construction.length: 20 feet
+- school-rowing-dock — construction.type: timber platform, mortised stringers, pre-1937 construction
+- school-rowing-dock — anchor.registration.year: 1941 year
+- school-rowing-dock — compliance.height_deficit: 4 inches
+- school-rowing-dock — vessels.count: 2 rowing shells
+- school-rowing-dock — vessels.description: fiberglass matched pair, school name in black stencil on each bow
+- folger — role: athletics director, Coldwater High School
+- folger — responsibility.dock: responsible for school rowing dock registration and compliance
+- jan-vaclav-horak — language.spoken_on_dock: Czech (identified by Marcus Klein from phonetic fragment; consonant cluster and first-syllable stress pattern)
+- eira-bowman — dock.knowledge.disclosed_to: Marcus Klein, May 1944 — stated she was at the commercial dock the night of October 26, 1943; did not disclose that she chose not to log the observation
+- eira-bowman — school.visits_total: 4 visits
+- marcus-klein — knowledge.horak_language_identified: identified the dock fragment as Czech (possibly Slovak) from Eira's phonetic approximation, May 1944
+- marcus-klein — knowledge.eira_dock_confirmed: Eira confirmed to Marcus directly, May 1944, that she was at the commercial dock the night of October 26, 1943
+- marcus-klein — eira_bowman.second_exchange: May 1944, school rowing dock — Eira gives Marcus the language fragment; Marcus identifies Czech; they exchange partial pictures
+- Ch18 (May 1944): Eira tells Marcus she was at the commercial dock the night before the body came in — the first time she has said this to anyone. She states it as a fact needed to get to the language question. She does not tell him she chose not to log the observation.
+- Ch18: Eira's phonetic memory of the sounds she heard on the dock: 'Prish-teh' or close to that — first syllable hard and fixed, a zh consonant cluster with something harder behind it, approximately two or three words.
+- Ch18: Marcus identifies the language fragment as Czech (consonant cluster consistent with Czech; invariable first-syllable stress consistent with Czech; possibly Slovak but Czech more likely). He cannot be certain from the fragment alone.
+- Ch18: Marcus tells Eira that Horak (Czech national) is consistent with 'a certain kind of person, moving through unofficial arrangements in wartime' — informal person-to-person networks for displaced persons with no official channel. He claims only the general shape, not specifics.
+- Ch18: Eira says 'So did I, after a fashion' in response to Marcus saying he knew the kind of person Horak might have been. She does not explain. Neither of them asks the other to elaborate. Both are telling the truth in precise terms.
+- Ch18: The school rowing dock mooring permit fee is two dollars. The compliance standard for platform height was updated in 1937 (Reach tidal study); the rowing dock is four inches below the new standard — a documentation matter, not urgent.
+- Ch18: Eira has visited the school four times total in eight years as harbormaster: twice for the spring fair (when Owen was alive), once for a fuel allocation correction in 1943, and now (May 1944) for the rowing dock.
+
+## 19-after-eira
+- marcus-klein — knowledge.network_assembly_status: assembled and explicitly decided not to act: Horak (Czech displaced person, Halifax 1942) + Pfeiffer farm (Feuchtwangen/eastern Franconian origin) + Karl (eastern Franconian, Czech border area) = probable network node; held privately; decision not to circulate made deliberately in late May 1944 walk home — carried as respect for those already holding too much
+- marcus-klein — knowledge.self_identification_with_horak: recognizes his own past displacement (Paris to London 1938; London by unofficial boat route 1939) as structurally identical to Horak's probable network movement; his chain held; Horak's did not; held in internal drawer, not examined at length
+- marcus-klein — displacement_route.paris_to_london: 1938, via unofficial contact/channel arrangement
+- marcus-klein — displacement_route.london_to_canada: 1939, via a boat not advertising its route; unofficial arrangement
+- coldwater-rowing-team — active: false
+- coldwater-rowing-team — last_active_year: 1942 year
+- coldwater-rowing-team — members_enlisted: three members enlisted circa 1942: Hennessey's boy (unnamed) and the two Vance brothers (unnamed individually)
+- ellis-supply-boat — role: supply boat contact; occasional source of rationed goods for the Crow household
+- Marcus Klein walks home from Coldwater High School slowly in late May 1944, assembling his full probable picture of Jan Václav Horak: Czech displaced person from Halifax 1942, probably moved south through person-to-person unofficial networks; the Pfeiffer farm (Feuchtwangen, eastern Franconia, near the Czech border) was the most probable contact node in coastal Maine; Karl Reinmar's eastern Franconian border-region dialect confirms the geography. Marcus decides not to act on this picture — no letter, no Coast Guard approach, no contact with Albrecht Pfeiffer — understanding this as respect for people already carrying too much. This decision is explicitly made in ch19 and will be revisited in ch22 when he drafts an unsent letter.
+- Marcus privately recognizes that the picture he has assembled of Horak's movement is a picture he has been inside: he moved through the same kind of unofficial channels in 1938 (Paris to London) and 1939 (London to Canada by unofficial boat route). His chain held; Horak's did not. He holds this recognition briefly and puts it away — 'the internal drawer' — without extended examination.
+- Lillian Crow obtained two bags of real coffee from Ellis (supply boat contact) in late May 1944; the coffee is the occasion for the kitchen coda of ch19.
+- Henry Crow identifies three Coldwater High School rowing team members who enlisted around 1942: Hennessey's boy (first name not given) and the two Vance brothers (not individually named). These are the reason the two matched fiberglass rowing shells have been unused at the school's east-slope dock since 1942.
+- In Marcus Klein's afternoon Latin class, late May 1944, an unnamed student correctly used 'desiderium' (Latin: the longing specific to absence, the ache of missing a particular person) in a translation exercise about soldiers far from home — rather than the more generic 'tristitia' (sadness) or 'dolor' (pain/grief). Marcus found this genuinely pleasing and described it to Lillian and Henry at the kitchen table that evening. Lillian said: 'That's the best part of teaching, I think. When they find the right one.' Marcus agreed.
+
+## 20-d-day
+- lawrence-cary — role: harbormaster, Rockland
+- galen-fuller — age: 22 years
+- galen-fuller — role: Army infantry, in Normandy landing June 6 1944
+- galen-fuller — origin_place: Coldwater Reach, Maine
+- galen-fuller — enlistment.date: spring 1943
+- galen-fuller — death.date: June 17, 1944
+- robert-cates — age: 24 years
+- robert-cates — role: Army infantry, in Normandy landing June 6 1944
+- robert-cates — origin_place: Coldwater Reach, Maine
+- robert-cates — alive: true
+- robert-cates — dock.generations: third generation Coldwater dock family
+- calvin-fuller — role: fisherman, Coldwater Reach; father of Galen Fuller
+- vessel-helena — owner: Calvin Fuller
+- vessel-helena — berth.status: occupied by Penelope Ann (Winslow) on monthly arrangement since autumn 1942
+- vessel-bethia — owner: Robert Cates's father
+- vessel-bethia — berth: dock 7, Coldwater Reach
+- vessel-margaret-jean — owner: Hollis Vane
+- bertrand-hatch — role: Western Union clerk, Coldwater Reach
+- bertrand-hatch — telegrams.delivered_since_dec1941: 43 telegrams
+- coldwater-harbor — fleet.working_count.june1944: 14 boats
+- Chapter 20 (D-Day, June 6, 1944): Eira's harbor log notation reads: 'At 03:02, L. Cary, Rockland, relays: landing at Normandy underway, troops reported ashore.' She reads it back and closes the book.
+- Galen Fuller crewed the Helena for a season and a half before the Army took him in spring 1943; his father Calvin Fuller now works the Helena alone; his back gave out before Galen enlisted.
+- Robert Cates is third-generation dock family at Coldwater Reach; his father holds the Bethia at dock 7.
+- The dock-3 cleat (iron, surface-rusted, near bolt working loose since ice-out) was tightened by Eira on June 6, 1944 — she had been carrying the wrench for six weeks without stopping.
+- The Helena's berth has been occupied by Winslow's Penelope Ann on a monthly arrangement since autumn 1942 (Helena not in active use).
+- A forty-footer from up the coast (Castine/Sedgwick area) struck an unmarked ledge past the Thornton island marker on June 6, 1944; shaft bent 30-35 degrees off true; Eira filed a shoal notification and arranged a Thursday repair slot at the Searsport yard.
+- Hollis Vane owns the Margaret Jean; as of June 6, 1944 the boat had a suspected loose cooling-system fitting causing a vibration at idle.
+- Agnes Vane said 'God willing they'll come home by Christmas' at Beal's General Store on D-Day; no one answered her.
+- Bertrand Hatch, Western Union clerk, was present at Beal's at noon on D-Day, coat on, looking grey — he had delivered 43 casualty telegrams since December 1941.
+
+## 21-karl-speaks
+- brunner — role: German POW; one of the three older prisoners at the Pfeiffer farm
+- fischer — role: German POW; one of the three older prisoners at the Pfeiffer farm
+- krebs — role: German POW; one of the three older prisoners at the Pfeiffer farm; the quietest of the four
+- brunner — dday.reaction: made a low sound — not words — when Lonzo read the D-Day headline; returned to work
+- fischer — dday.reaction: looked at the field in silence when Lonzo read the D-Day headline; returned to work without comment
+- krebs — dday.reaction: said nothing when Lonzo read the D-Day headline; continued working
+- karl-reinmar — english.first_sentence_to_hannah: I did not think I would live to see it — spoken June 7, 1944, in response to Hannah asking if he heard the D-Day news
+- karl-reinmar — english.second_sentence_to_hannah: I think I am tired — spoken June 7, 1944, in response to Hannah asking if he is glad about the landing
+- karl-reinmar — english.acquisition_method: learned from Lonzo Reed's newspapers left in the icehouse; reads by lamplight; functional but formal, not fluent
+- karl-reinmar — dday.reaction: did not look up when Lonzo read the D-Day headline; continued setting stakes at the north fence
+- albrecht-pfeiffer — dday.knowledge: heard D-Day news on WLBZ the night of June 6, 1944; said nothing about it at home in any language the following morning; held it privately through June 7
+- albrecht-pfeiffer — evening.radio_habit: turns on WLBZ for the 9pm evening broadcast; followed by final barn check
+- hannah-pfeiffer — karl.relationship_status.june1944: understands as relational — 'a person on the other side of that fence, not just a presence'; first language exchange June 7, 1944
+- June 7, 1944 (the morning after D-Day): Lonzo Reed reads the Bangor Daily News headline 'ALLIED ARMIES LAND IN FRANCE' aloud to the four prisoners in the Pfeiffer farm yard, matter-of-factly, before the workday begins.
+- Karl Reinmar's first full English sentence to Hannah Pfeiffer: 'I did not think I would live to see it.' His second sentence in the same exchange: 'I think I am tired.' Hannah's reply: 'Yes.' These three sentences are the chapter's pivot and must not be re-examined, glossed, or exceeded in subsequent chapters.
+- The three older prisoners' names at the Pfeiffer farm: Brunner, Fischer, Krebs. Karl Reinmar is the fourth and youngest.
+- Albrecht Pfeiffer heard D-Day on WLBZ the night of June 6, 1944, said nothing about it at breakfast June 7 in any language — not even his usual German — and spent the day somewhere more interior than usual; he held the news privately.
+- Karl's English was built from Lonzo's newspapers left in the icehouse over winter; he read by lamplight with his lips moving slightly; by June 1944 his English is careful and formal, not fluent, each word deliberate.
+- The chapter's resolved-beat: Hannah understands she now has 'a person on the other side of that fence' — the connection has shifted from proximity to language as of June 7, 1944.
+
+## 22-the-unfinished-letter
+- prof-emil-stern — role: professor; Emergency Committee routing committee member
+- prof-emil-stern — location: Cambridge, Massachusetts
+- prof-emil-stern — connection.marcus_placement: placed Marcus Klein's name with Coldwater High School hiring notice, spring 1942
+- prof-emil-stern — last_letter_to_marcus.date: November 1943
+- prof-emil-stern — last_letter_to_marcus.content: displaced scholars network still processing applications; two men from Prague placed at Ohio colleges; Halifax backlog substantial
+- the-unfinished-letter — date_written: July 10, 1944
+- the-unfinished-letter — intended_recipient: Professor Emil Stern, Cambridge, Massachusetts
+- the-unfinished-letter — status: never sent; placed in right-hand drawer of Marcus's desk at the Crow house, July 10, 1944; remains there through the rest of the novel
+- the-unfinished-letter — physical_description: one and a half pages of composition paper; Marcus's handwriting smaller than usual; four paragraphs plus a crossed-out fifth paragraph
+- the-unfinished-letter — location: right-hand drawer of Marcus's desk, second bedroom, Crow house, Elm Street
+- the-unfinished-letter — paragraph_1.content: official record: Horak's name, Czechoslovak national displaced person, last known Halifax October 1942, found Coldwater Reach breakwater October 28 1943, official ruling amended April 1944
+- the-unfinished-letter — paragraph_2.content: Marcus's understanding of the probable displacement route; written with precision that reveals him as a participant in such networks (not merely an observer); gestured toward Vienna/Paris/London/unofficial crossings without naming specific people or places
+- the-unfinished-letter — paragraph_3.content: the question — was Horak known to the Halifax-to-New England networks in 1942-43? Did anyone expect him? Is there a family unnotified? This paragraph, if sent, would direct inquiry toward the Pfeiffer farm as the probable coastal contact node
+- the-unfinished-letter — paragraph_4.content: Marcus's private capacity; acknowledgment of sensitivity; asks only for what can responsibly be shared; gives Elm Street address through September and school address from September forward
+- marcus-klein — summer_reading.1944: Aeneid Book Four; working through at no particular pace since June 1944
+- marcus-klein — letter_decision.july1944: decided not to send the letter to Stern because: (1) paragraph 3 would direct inquiry toward Pfeiffer farm and Albrecht's social position; (2) Eira's dock knowledge might be implicated; (3) removing the precision that causes these risks removes the letter's usefulness
+- lillian-crow — garden.tomatoes.1944_harvest: ahead of schedule in summer 1944 due to warm June; being cut by second week of July (usually not until second week of August)
+- abel-holt — role: Coldwater fisherman
+- Marcus's letter to Professor Stern (July 10, 1944): the reason the letter cannot be sent is structural — paragraph 2's precision (which reveals Marcus as a network participant) is inseparable from paragraph 3's question (which would direct any Cambridge inquiry toward the Pfeiffer farm as the probable contact node). A redraft (fifth paragraph, crossed out) proves that removing the precision removes the usefulness. The letter that could be sent safely would not be worth sending.
+- The letter stays in the right-hand drawer of Marcus's desk at the Crow house through the rest of the novel. It is never sent and never destroyed. This is established in chapter 22 and must not be overridden in later chapters.
+- Marcus's walk July 10, 1944: walked the harbor road, saw the breakwater from the near end of the commercial wharf, did not walk out to the seaward end of the breakwater, did not stop. Continued along the wharf road and turned back. This is the chapter's physical enactment of the letter's decision: the thing you do not do is the answer.
+- Professor Emil Stern's November 1943 letter to Marcus reported: displaced scholars network processing applications; two Czechoslovak men placed at small Ohio colleges; Halifax processing backlog remained substantial. No mention of Horak by name.
+- Lillian Crow's cold summer supper at the Crow house (July 1944): garden tomatoes sliced with salt, bread, cheese, water. Henry returns at six-thirty with the Bangor Daily News, reads front page standing before folding it. The household supper routine is established as warm and quiet.
+
+## 23-august
+- henry-cates — role: Coldwater lobsterman; captain of the Bethia, dock 7
+- henry-cates — vessel: Bethia
+- henry-cates — vessel.years_operated: over 20 years
+- henry-cates — relation.son: Robert Cates
+- ruth-fuller — relation.husband: Galen Fuller
+- ruth-fuller — status: widowed August 1944; telegram delivered mid-August 1944
+- ruth-fuller — role: operator of Fuller dragger; running it herself since spring 1943 when Galen enlisted
+- ruth-fuller — sister.location: Tenant's Harbor, Maine
+- galen-fuller — death.telegram_arrival: mid-August 1944; approximately 43 days after death
+- galen-fuller — death.confirmed_chapter: 23-august
+- nancy-marie — type: sardine seiner
+- nancy-marie — home_port: Spruce Head, Maine
+- ida-may — type: double-ended lobster boat
+- ida-may — owner: Kell (from Penobscot Bay area)
+- sardine-processing-shed — location: southern end of Coldwater commercial wharf
+- sardine-processing-shed — production.august1944: 300 cases per day
+- sardine-processing-shed — production.peacetime_average: 200 cases per day
+- beals-harbor-counter — location: commercial wharf end, Coldwater Reach; separate from the full Beal's general store on Main Street
+- beals-harbor-counter — stock: flour, salt, kerosene wicks, tobacco, canned goods
+- Eira's sentence to Ruth Fuller at Beal's harbor counter (ch23): 'He was a good man with a boat.' Ruth's reply: 'He was.' This is identified in threads.md as Thread 2's beat for ch23 — the professional vocabulary serving as the human vocabulary, the true sentence that asks nothing of Ruth that she is not already holding.
+- Ruth Fuller's sister lives in Tenant's Harbor, Maine, and came to Bay Street the week before the Galen Fuller telegram arrived; she was still present when Henry Cates visited the office.
+- The mooring rotation for August 1944: the Halcyon and the Eda L. displaced from their spring positions to accommodate the Nancy Marie (sardine seiner, Spruce Head) and the Ida May (double-ended lobster boat, owner Kell, Penobscot Bay). Both seasonal boats working the sardine run.
+- The Coldwater harbor fuel allocation (secured December 1943 in Portland) held through summer 1944 with a 300-gallon margin above forecast as of mid-August.
+- The breakwater inspection in August reveals summer tide exposes lower granite courses not visible in winter; Eira's weekly inspection checks for cracking and mortar fracture in those courses. Two blocks on the north-facing run marked in May as stable — unchanged through August 1944.
+
+## 24-harvest
+- karls-carved-bird — location.current: Hannah Pfeiffer's coat pocket; carried daily in autumn 1944; handled habitually without deciding to
+- karls-carved-bird — physical.condition: small, smooth, worn at edges from frequent handling
+- hannah-pfeiffer — fence.meetings.start: approximately June 1944; south fence section; unplanned, became a pattern
+- hannah-pfeiffer — fence.meetings.frequency: 2-3 times per week when work brings them to the same south fence section
+- hannah-pfeiffer — fence.meetings.topic: agricultural: south-field drainage, squash technique, cover crops (both favor winter rye), continental vs. Pfeiffer farm practice; sometimes German dialect conversation
+- hannah-pfeiffer — albrecht.warning.received: early October 1944; kitchen; German; told to be careful at the fence; father confirmed he has not spoken to Lonzo and does not intend to
+- karl-reinmar — english.level_sept_oct_1944: two-clause sentences; grammar-before-fluency; verb placement and position-of-not errors consistent; working from rules not ear; functional for short conversation
+- karl-reinmar — harvest.work_pace: works fastest of the four prisoners during harvest; not rushing but not conserving; pace of a man with no other outlet for the work
+- albrecht-pfeiffer — warning.to_hannah.date: early October 1944
+- albrecht-pfeiffer — warning.to_hannah.phrase: Du solltest vorsichtig sein / Am Zaun / Ich bin nicht wütend. Ich sage dir, vorsichtig zu sein. / Lonzo ist nicht der Einzige, der an diesem Hof vorbeiläuft. — all in German, unprompted, at kitchen table
+- albrecht-pfeiffer — warning.to_hannah.character: vorsichtig (be careful), not stop; not angry; confirmed has not told Lonzo and will not; warns that Lonzo is not the only person with visibility of the farm
+- lonzo-reed — fence.decision.hannah_awareness: Hannah understands by October 1944 that Lonzo has made some decision about the south fence meetings; terms of the decision unknown to her; she cannot read whether she is in his report
+- pfeiffer-farm — harvest_1944.corn_rows: 22 rows
+- pfeiffer-farm — harvest_1944.duration_corn: 2.5 days
+- pfeiffer-farm — cover_crop.preference: winter rye after corn stubble; both Albrecht and Karl Reinmar favor this independently
+- Hannah and Karl's fence meetings (south fence section, since approximately June 1944): they talk about the soil, drainage, squash technique, cover crops. Karl speaks two-clause sentences in English by September-October 1944; in German (Franconian dialect) he is fully himself and the conversations have an ease her English exchanges with him don't fully have. She carries the carved bird in her coat pocket daily by habit, has acknowledged to herself that 'opportunity to return it hasn't arisen' is not the whole truth.
+- Albrecht's kitchen warning to Hannah, early October 1944 (in German at the table): 'Du solltest vorsichtig sein' (you should be careful) / 'Am Zaun' (at the fence) / 'Ich bin nicht wütend. Ich sage dir, vorsichtig zu sein.' (I'm not angry. I'm telling you to be careful.) / 'Aber Lonzo ist nicht der Einzige, der an diesem Hof vorbeiläuft.' (But Lonzo is not the only one who walks past this farm.) He goes to his chair and his German paper without further discussion; Hannah goes upstairs without answering. The distinction between 'be careful' and 'stop' is established on-page.
+- The morning after Albrecht's warning, Lonzo looks up from his paper and catches Hannah watching him; they nod at each other; he returns to his paper. Hannah's assessment: Lonzo has made some decision about the south fence; she is inside that decision; she cannot tell from fourteen months of observation whether she is in his report. Albrecht's qualifier — 'Lonzo is not the only person who walks past this farm' — raises the question of who else has visibility of the fence meetings.
+- Chapter closes in early October 1944: Hannah is at the south fence spreading compost; Karl arrives at the corresponding section from his row; they are both present on either side of the fence without speaking. Hannah's stated position: she does not know what she is going to do. Forward pressure unresolved — the question of whether she continues the fence meetings is open as of chapter end.
+
+## 25-what-is-and-isnt-dangerous
+- carved-bird — status.contraband: false
+- marcus-klein — knowledge.pow_regulations: detailed knowledge of Geneva Convention POW terms and Emergency Farm Labor program regulations, read from professional necessity and informed by his own internment at Sherbrooke under related provisions
+- lonzo-reed — action.fence_reporting: confirmed non-reporter of Hannah-Karl fence conversations; Marcus's in-chapter assessment is that Reed's judgment not to report is correct
+- marcus-klein — knowledge.assembled_picture_disclosed: false
+- Chapter 25 (Marcus POV, October 1944): Hannah Pfeiffer comes to Marcus's classroom after school to ask about the legality of her fence conversations with Karl Reinmar. She sits at the desk adjacent to his rather than her usual seat — a different kind of being in the room.
+- Marcus gives Hannah the four prohibited categories of civilian conduct under the Geneva Convention / Emergency Farm Labor program regulations: (1) assisting escape, (2) passing military intelligence, (3) providing weapons/tools/materials with military application, (4) romantic or sexual relations between civilian women and prisoners. #4 is treated with particular domestic severity. Unauthorized conversation is a technical violation of escort arrangement terms but not a statutory violation.
+- Hannah places the carved bird on Marcus's desk during the conversation. He examines it, confirms it is not contraband, and returns it. The bird remains Hannah's, in her coat pocket.
+- Marcus's key sentence to Hannah: 'You did something human. Those are sometimes the same thing. In this case I do not think they are.' He advises her to stop — not because it was wrong, but because neither she nor Karl benefits from increased visibility before repatriation.
+- Marcus's sentence about Albrecht Pfeiffer: 'I think your father is a man who has made some decisions about what he knows and what he does not need to say. Like most people.' — said in response to Hannah's statement that she thinks her father knows more than he's told her. Marcus means this simultaneously about Albrecht and about himself; 'like most people' is a deliberate deflation.
+- Marcus does not tell Hannah about Jan Václav Horak, the Halifax-to-Maine displacement network, or his inference that the Pfeiffer farm was the probable contact node Horak was seeking. He gives Hannah only what she came to ask.
+- Marcus grades exercises on the ablative absolute (dum haec geruntur, Cicero ad senatum scripsit) after Hannah leaves; the construction for two simultaneous non-subordinate actions becomes the chapter's closing register.
+- Marcus's final interior reflection: the Crows' house is 'not the same as home and also not nothing'; he has made a decision about this, though he has not yet named the decision. Thread 3 arc movement confirmed.
+
+## 26-the-harbor-log
+- eira-bowman — age: 53 years
+- eira-bowman — post.years_held: 9 years
+- eira-bowman — dock.knowledge.late_entry_written: true
+- eira-bowman — annual_log_review.practice: every first full working week of October; covers prior twelve months of entries
+- harbor-log-late-entry-oct13 — date_written: October 1944
+- harbor-log-late-entry-oct13 — entry_refers_to_date: 2300 hours, 13 October 1943
+- harbor-log-late-entry-oct13 — signed_by: E. Bowman, Harbormaster
+- harbor-log-late-entry-oct13 — names_horak: false
+- harbor-log-late-entry-oct13 — second_party_identified: false
+- nancy-marie — departure_date: last week of September 1944
+- ida-may — departure_date: October 3, 1944
+- ruth-fuller — dragger.dock_assignment: dock six, Coldwater Reach harbor
+- ruth-fuller — dragger.sole_operator_since: spring 1943
+- coldwater-breakwater — maintenance.north_face_seam: taking water at joint between first and second course since spring 1944; checked October 1944, dry
+- coldwater-breakwater — maintenance.third_section_iron_pin: holding as of October 1944; under watch since August 1944
+- The verbatim text of Eira's late entry in the harbor log (written October 1944, referring to 2300 hours October 13, 1943): 'Late entry, dated October 1944: 2300 hours, 13 October 1943: completed mooring check, commercial dock. One unidentified individual present at the far bollard, civilian appearance, not a known registered vessel operator. Observed in the company of a second party who departed walking inland before I could make identification. No approach made. Not entered at original time. Entering now in accordance with complete record. — E. Bowman, Harbormaster, October 1944.'
+- The original October 13, 1943 harbor log entry (as Eira wrote it on the night) read: 'Mooring check completed, commercial dock, 2300. Fleet secure. No incidents. Tide reading 11.2 ft.' — accurate but omitting the observation of the individual at the far bollard and the second party.
+- Eira's annual harbor log review practice: every first full working week of October, working January forward through the current year, confirming mooring registrations, incident notations, and fuel allocation against Portland figures. Established practice inherited from Owen Bowman's format.
+- The late notation format in the harbor log has been used by Eira three times in nine years: twice for routine administrative corrections (dates unknown), and once in October 1944 for the Oct 13, 1943 dock observation. No special annotation required beyond the standard format.
+- By October 1944, the harbor is at winter numbers: twelve working moorings, lobster fleet at center, summer berths empty. The Nancy Marie (Spruce Head) departed late September 1944; the Ida May (Kell, Penobscot Bay) departed October 3, 1944.
+- D-Day harbor log notation (June 6, 1944): 'Allied landings, Normandy coast; per radio, WLBZ 0300. Harbor routine.' — one line. Fleet went out on schedule at 0530.
+- Eira's late-entry practice follows the same format Owen Bowman used for his 1934 J.T. entry: original dated entry on the page, late addition written below in the same hand with 'Late entry' header and the original date referenced. Eira found Owen's precedent in January 1944 during the equipment inventory.
+
+## 27-november-weather
+- ardennes-offensive — date.start: December 16, 1944
+- ardennes-offensive — press.label_in_novel: German counterattack (Bangor Daily; WLBZ radio); 'Battle of the Bulge' not yet used in the novel's present
+- hannah-pfeiffer — fence.meetings.status_nov1944: stopped; maintaining distance from Karl since early October 1944 per Marcus Klein's advice; daily choice, not a single event
+- hannah-pfeiffer — milking.schedule_winter1944: 5 a.m. (morning), 6 p.m. (evening), 9 p.m. (late check) — triple schedule taken on October 1944 and continued through winter
+- hannah-pfeiffer — magda.understanding_nov1944: has stopped expecting spells to be the last time; has stopped believing returns are fragile; understands Magda's condition as older than the war and not curable by its end
+- hannah-pfeiffer — albrecht.understanding_dec1944: understands for the first time that Albrecht has always been in two geographies at once; the understanding reached in December 1944 during the Ardennes radio broadcasts
+- magda-pfeiffer — spell.nov1944.duration: 4 days days
+- magda-pfeiffer — spell.nov1944.return_sentence: Es ist heute kalt — spoken in German on the fifth morning, at the stove making coffee; Hannah answered: Ja, Mutter
+- karl-reinmar — english.method.crossword: works through crossword puzzles in pencil in addition to comics page; German-shaped handwriting visible on English crossword answers
+- karl-reinmar — icehouse.lamp_habit: lamp on most evenings in icehouse; visible from barn doorway as low amber square; reading by lamplight at small table by window into winter 1944
+- karl-reinmar — newspaper.artifact.dec1944: Bangor Daily from two Tuesdays prior found on outside window sill of icehouse, early December 1944; comics page open; crossword on reverse worked in pencil; carried inside by Hannah and left on kitchen table; Albrecht moved it to his papers without comment
+- albrecht-pfeiffer — radio.ardennes_habit: turned radio volume up during Ardennes coverage (December 1944), reversing his two-year habit of turning it down; sits very still through Belgian town names in six o'clock broadcast
+- albrecht-pfeiffer — newspaper.karl_artifact.response: moved Karl's Bangor Daily (comics/crossword artifact) from kitchen table to his papers side without comment, early December 1944
+- pfeiffer-farm — winter1944.animals_inside_date: first week of November 1944, one week earlier than usual; triggered by October 31 temperature drop
+- pfeiffer-farm — winter1944.prisoner_work: barn wall patching (oakum and pitch, north-facing boards) in mornings; firewood splitting in afternoons; hours cut to 3 p.m. departure by second week of November
+- pfeiffer-farm — icehouse.window_visibility: visible from the barn doorway at night; Karl's lamp light confirmed observable from that position
+- Chapter 27 (Hannah POV, November–December 1944): Hannah has stopped the fence meetings since early October 1944 per Marcus Klein's advice; the absence is felt as a daily choice each time work takes her near the south fence.
+- Chapter 27: Hannah's winter milking schedule: 5 a.m., 6 p.m., and late check at 9 p.m. — the 9 p.m. check taken on in October 1944 and continued through winter.
+- Chapter 27: From the barn doorway at night Hannah can see the icehouse window; Karl's lamp is on most evenings; she watches from a distance, not approaching.
+- Chapter 27: Karl's English-learning method by December 1944 includes the crossword in addition to the comics page; a Bangor Daily found on the outside icehouse window sill (two weeks old, early December 1944) had the crossword worked through in pencil in German-shaped handwriting. Hannah carried it inside and left it on the kitchen table; Albrecht moved it to his papers without comment.
+- Chapter 27: The Ardennes offensive begins December 16, 1944. The American radio and Bangor Daily are calling it the 'German counterattack.' Albrecht turns the radio volume up during this coverage — reversing his two-year habit of turning it down — and sits very still through the Belgian town names in the six o'clock broadcast. Hannah understands for the first time that he has always been in two geographies at once.
+- Chapter 27: Magda's November 1944 spell lasted four days. On the fifth morning she came to the kitchen, made coffee, and said: 'Es ist heute kalt.' Hannah answered: 'Ja, Mutter.' Hannah has by this point stopped expecting each return to be the last, and no longer believes the returns are fragile.
+- Chapter 27: Hannah's understanding of Magda reached in late 1944: whatever Magda moves between is older than the war and will not end with it. Hannah's role is to be in the kitchen when her mother returns to it.
+- Chapter 27: All 22 Holsteins brought inside the first week of November 1944 (one week earlier than usual) after the October 31 temperature drop damaged the fourth cow.
+
+## 28-the-names-on-the-board
+- calvin-wilkes — role: student, Coldwater High School Latin class (first year), 1942–43
+- calvin-wilkes — enlistment_age: 17 years
+- calvin-wilkes — alive: false
+- calvin-wilkes — death.location: eastern Belgium, Ardennes (Battle of the Bulge)
+- calvin-wilkes — death.date: December 1944–January 1945
+- calvin-wilkes — enlistment_year: 1943 year
+- calvin-wilkes — latin.ablative_skill: uncertain; never fully settled; required repeated correction throughout 1942–43
+- calvin-wilkes — latin.recitation_quality: exceptional facility for rhythm and feeling; held Conticuere omnes (Aeneid Book II) from a February 1943 syntax example
+- calvin-wilkes — classroom.seat: second row, right side (third seat from window) in Marcus's fundamentals room
+- servicemen-board — location: hallway, right of main entrance, Coldwater High School
+- servicemen-board — established_year: 1942 year
+- servicemen-board — border_practice: Bertrand Hatch places black border on a card when the casualty telegram arrives
+- kessler — role: classicist, Sorbonne, Paris (since 1933)
+- kessler — alive: unknown
+- kessler — arrest.date: August 1942
+- kessler — arrest.location: Paris
+- marcus-brother — location: Vienna (remained when Marcus left in 1936)
+- marcus-brother — last_contact_year: 1940 year
+- marcus-brother — alive: unknown
+- ned-harker — location: Mast Street, Coldwater Reach
+- ned-harker — son.alive: false
+- ned-harker — son.death.location: Ardennes, Belgium (Battle of the Bulge)
+- marcus-klein — arc.displacement_settling: cannot yet name the Crow kitchen as home; is sitting in it; the arithmetic of displacement has stopped adding up to transit — confirmed by Calvin Wilkes chapter
+- marcus-klein — losses.held: brother (Vienna, no word since 1940); Kessler (Paris, arrested August 1942, status unknown); Sherbrooke men (released, scattered); Horak; Calvin Wilkes (Ardennes, January 1945)
+- Calvin Wilkes: first-year Latin student under Marcus Klein, fall 1942–spring 1943; weak ablatives throughout, exceptional facility for recitation; held Conticuere omnes (Aeneid II) from a February 1943 syntax example. Sat second row right side, third seat from window. Enlisted spring 1943, aged 17. Confirmed killed in the Ardennes (Battle of the Bulge), December 1944–January 1945. His name appears on the school's servicemen's board with a black border placed by Bertrand Hatch.
+- The servicemen's board at Coldwater High School: framed corkboard, hallway right of main entrance; white cards in rows since spring 1942; Bertrand Hatch places a thin black border on a card when the casualty telegram arrives.
+- Two Coldwater men killed in the Ardennes: Calvin Wilkes and Ned Harker's son (unnamed; was on Galen Fuller's dragger crew before enlisting; mother on Mast Street; Ned Harker is his father).
+- Marcus Klein's brother (unnamed): stayed in Vienna when Marcus left in 1936; Marcus has had no word from him since autumn 1940 (first explicit mention in prose, ch28). Status unknown.
+- Kessler: classicist at the Sorbonne, Paris, since 1933; Marcus knew him for three years (c.1935–1938). Arrested Paris, August 1942 (Emergency Committee second-hand source, September 1942). Status unknown as of January 1945 (first explicit mention in prose, ch28).
+- Marcus Klein's arc marker (ch28): 'He could not yet say what this was. He was sitting in it.' — the Crow kitchen lamp is something he has been looking for when he turns the corner from Elm Street, noticed since some point in fall 1944. The arithmetic of his displacements (Vienna, Paris, London, Sherbrooke, Cambridge, Coldwater Reach nearly three years) has stopped adding up to transit in the way it once did.
+- Thread 6 closest approach (ch28): Henry does the dishes; Marcus watches. Both men holding their separate losses in the same room. 'They were not the same kind of loss. Both of them knew this well enough not to say so.' The parallel is never named.
+
+## 29-what-he-left
+- brunner — role: German POW; one of four assigned to Pfeiffer farm
+- krebs — role: German POW; one of four assigned to Pfeiffer farm
+- fischer — role: German POW; one of four assigned to Pfeiffer farm
+- pfeiffer-icehouse — status.spring1945: padlocked and dark; prisoners departed; padlock fitted by Albrecht Pfeiffer personally
+- karl-reinmar — location: en route to Camp Houlton, Maine; departed Pfeiffer farm spring 1945
+- karl-reinmar — departure.date_approx: Thursday, late March or early April 1945
+- karl-reinmar — departure.last_look: looked at the barn, not the house, before climbing into the truck
+- karl-reinmar — english.last_words_to_hannah: No. / Back is not a place. Not anymore. / I don't know. Start. The same thing as everyone. / Keep it.
+- carved-bird — arc.final_status: Hannah offered it back over the south fence; Karl refused; she keeps it in her coat pocket — permanent possession
+- lonzo-reed — assignment.end_date: Thursday, late March or early April 1945; same day prisoners departed Pfeiffer farm
+- lonzo-reed — assignment.duration: seventeen months at Pfeiffer farm months
+- lonzo-reed — farewell.albrecht: exchanged a nod with Albrecht Pfeiffer on the day of departure; no words; sole ceremony after seventeen months
+- hannah-pfeiffer — carved_bird.final_possession: keeps it permanently; offered back over the south fence in spring 1945; Karl refused; bird remains in coat pocket
+- hannah-pfeiffer — karl.last_exchange_date: the morning two days before the prisoners departed; south fence; spring 1945
+- albrecht-pfeiffer — icehouse.padlock_action: padlocked the icehouse door himself after the prisoners departed; stood with his hand on the lock a moment before returning to the barn
+- albrecht-pfeiffer — karlhannah.witnessing: stood at the barn door watching Hannah's final fence exchange with Karl; held a pitchfork; said nothing before or after
+- pfeiffer-farm — spring1945.prisoners_gone: all four prisoners departed late March or early April 1945; farm returns to pre-prisoner state; icehouse padlocked
+- pfeiffer-farm — route9.willow: willow tree at the bend in Route 9 where the road turns toward Houlton; branches yellow-tipped in early spring
+- The four German POWs at the Pfeiffer farm — Karl Reinmar, Brunner, Krebs, and Fischer — are recalled to Camp Houlton on a Thursday in late March or early April 1945. The departure is at 8 a.m. Karl is last out of the icehouse, last to board. He does not look at the house; he looks once at the barn before climbing in. Lonzo stows his Springfield in the truck cab, nods to Albrecht, and departs. The truck goes down Route 9 past the willow at the bend.
+- Two days before the departure, Hannah approaches the south fence (ostensibly to repair the frost-heaved corner post) and meets Karl face-to-face for the first time since October 1944. She offers the carved bird back over the fence. He refuses it: 'No.' He says 'Back is not a place. Not anymore.' When she asks what he will do: 'I don't know. Start. The same thing as everyone.' When she says she doesn't know what to do with the bird: 'Keep it' — stated as a fact, not a gift. Albrecht watches from the barn door throughout, says nothing. Hannah says 'Good luck'; Karl nods and returns to work.
+- After the prisoners leave, Albrecht padlocks the icehouse door himself. The icehouse remains dark and locked at the chapter's end. The carved bird stays in Hannah's coat pocket — her permanent possession.
+- Thread 4 (Hannah Across the Fence) is resolved in ch29: the farewell is made honestly, the bird is kept, the connection ends without having been formally begun. 'Something had happened on this farm over fourteen months. She did not know what to call it or whether it needed a name.'
+- The midday meal that closes ch29 is Magda's white bean soup. Albrecht reaches for his bread. Magda sits. The farm goes on — the chapter's final line.
+
+## 30-the-spring-opening
+- robert-cates — return.date: February 1945
+- robert-cates — return.weight_loss: 30 pounds
+- robert-cates — mooring.renewal.spring1945: berth 14, confirmed and paid April 18 1945
+- ruth-fuller — role: registered operator of former Fuller dragger, reregistered in her own name February 1945
+- ruth-fuller — dragger.reregistration.date: February 1945
+- danny-jessup — age: 19 years
+- danny-jessup — vessel.type: trap boat, 22 feet
+- danny-jessup — berth: 7 berth number
+- haskell — vessel.sold: November 1944, to a Rockland man; removed from Coldwater registry
+- eira-bowman — harbor.fleet.spring1945: 13 vessels
+- eira-bowman — harbor.fleet.spring1940: 23 vessels
+- Chapter 30 is set on Wednesday, May 2, 1945. Hitler's death was confirmed by Allied command on April 30, 1945 (German state radio first, then Allied confirmation); Eira hears this at Beal's on the radio (WLBZ) at noon.
+- Coldwater fleet size at spring 1945 opening: 13 registered vessels (down from 23 at the spring 1940 opening — the difference from war enlistments, boat sales, and fuel rationing).
+- Ruth Fuller came to the harbormaster's office in February 1945, renamed Galen's dragger, and reregistered it in her own name. She mentioned wanting to run the lobster route herself come May if she could find a mate who knew the ground.
+- Haskell's sloop was sold in November 1944 to a Rockland man; Knox County release notice sent; transfer complete in the record.
+- Danny Jessup (age 19) registered his first boat — a twenty-two-foot trap boat — at the spring 1945 opening; assigned berth 7, main float. He had worked two seasons to buy it.
+- A man named Severance brought a lobster dragger down from Owls Head (the Owls Head operation having folded) and registered it in the Coldwater fleet spring 1945; assigned the outside berth on the east pier.
+- Robert Cates's father told Eira of Robert's return while she was outside the post office in March 1945 — the old man red-eyed, saying Robert was standing, that he was home.
+- The east pier second slip had slight fraying at the nip of the mooring line as of May 2, 1945 — noted for monitoring; no action yet.
+- Eira's spring harbor opening sequence (settled in her second year): depth soundings first, mooring check second, fleet registration review third.
+- Owen's ledger remains in the cabinet, not opened since October's log review; it is there but Eira does not open it in the final chapter.
+- The chapter closes with Eira writing the May 1945 heading at the top of the log's next page, entry unfinished, the season in progress. This is the novel's final image.
+- The second person on the dock the night of October 26, 1943 — the figure who walked away before Eira reached them — is never identified. The breakwater question's factual answer stays in shadow as promised. Thread 1 resolves at the character level (the record is complete) but not at the mystery level (the second person's identity is deliberately unresolved).
+- Eira's spring inventory procedure notation for May 1945: channel edge shallow readings at north pier flagged for summer dredge schedule; depth still within clearance for second-float boats but narrow.
+- The Hanson brothers are expected Thursday (May 3, 1945) to open their season; three main float slips reserved for them (same positions annually).
+
+## canon
+- Eira Bowman, 52 in October 1943, is harbormaster of Coldwater Reach — the only woman holding a harbormaster post on the Maine coast. She was widowed when her husband Owen drowned in November 1935 and has held the post for eight years.
+- An unidentified man's body (no papers, not from Coldwater) washes up on the Coldwater breakwater in October 1943 after a three-day blow. Eira saw something on the dock the night before the body came in. The Coast Guard takes the body and the official silence.
+- Hannah Pfeiffer is 17 in October 1943 (turns 18 in March 1944). Her family's dairy farm three miles inland on Route 9 houses four German POWs in the renovated icehouse under the Emergency Farm Labor program. Karl Reinmar, 19, is the youngest; he is from Franconia, approximately fifty km from where Hannah's father Albrecht was born.
+- Marcus Klein, 47, is a Viennese Jewish displaced scholar who arrived in Coldwater Reach in March 1942 to teach German and Latin. His path: Vienna → Paris → London → Sherbrooke internment camp (Quebec) → Cambridge → Coldwater. He does not discuss Sherbrooke. He boards with Black custodian Henry Crow (51) and his wife Lillian (48) at Elm Street.
+- The three POV characters (Eira, Hannah, Marcus) never appear in a scene together as a group of three. The narrative rotates asymmetrically across approximately 10 chapters each, for 30 total chapters, targeting ~80,000 words.
+- The story runs October 1943 to spring 1945, ending before VE Day (May 8, 1945). D-Day (June 6, 1944) and the Battle of the Bulge (December 1944) fall within the narrative period and arrive as background weather, not as chapter-center events.
+- The mystery of the body on the breakwater is not fully resolved before the novel ends. None of the three POV characters ever possesses the complete picture. The three characters' relationships to the mystery resolve; the underlying facts may remain in shadow.
+- There are no spy-thriller mechanics in this novel: no coded messages, no submarine landings, no Nazi agents in Maine. The war is present through loss (casualty telegrams), constraint (rationing), and displacement (Marcus, the prisoners) — not through plot machinery.
+- The Pfeiffer family (Albrecht and Magda) are naturalized U.S. citizens who came from Bavaria in 1922. Albrecht has stopped speaking English at home; Magda has effectively stopped speaking. German-born noncitizens were classified as enemy aliens; the Pfeiffers' citizenship protects them legally but not socially.
+- Race is rendered as specific fact through behavior and silence — not through authorial lecture. Henry and Lillian Crow are specific people living a specific life in 1943 coastal Maine. The prose does not explain their situation to the reader; it shows it.

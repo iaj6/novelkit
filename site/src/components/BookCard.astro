@@ -18,7 +18,9 @@ const coverFile =
   null;
 const coverUrl = coverFile ? artifactUrl(book.slug, coverFile) : null;
 const isComplete = book.status === "complete";
-const revealClass = `reveal reveal-${Math.min((index % 5) + 1, 5)}`;
+// Stagger only the first row — beyond it the modulo cycle makes cards pop
+// in out of reading order, and late delays leave below-fold cards blank.
+const revealClass = index < 3 ? `reveal reveal-${index + 1}` : "reveal reveal-1";
 ---
 
 <article class={`book-card ${revealClass}`}>
@@ -41,7 +43,8 @@ const revealClass = `reveal reveal-${Math.min((index % 5) + 1, 5)}`;
     <div class="meta-block">
       <h2 class="title">{book.title}</h2>
       {book.oneLine && <p class="one-line">{book.oneLine}</p>}
-      <span class="open-link">read &rarr;</span>
+      {book.readingLabel && <p class="read-time meta">{book.readingLabel}</p>}
+      <span class="open-link">read <span class="arrow">&rarr;</span></span>
     </div>
   </a>
 </article>
@@ -159,21 +162,46 @@ const revealClass = `reveal reveal-${Math.min((index % 5) + 1, 5)}`;
     font-size: 0.98rem;
     line-height: 1.55;
     max-width: 36ch;
+    /* Uniform card heights — the auto-derived one-liners vary wildly. */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .read-time {
+    font-style: italic;
   }
 
   .open-link {
     font-family: var(--font-body);
     font-style: italic;
     font-size: 0.92rem;
-    color: var(--lantern);
+    /* --lantern on cream is 2.2:1 — fails contrast as text. Ink for the
+       word; the gold lives in the arrow, which reads as decoration. */
+    color: var(--ink-soft);
     border-bottom: 1px solid transparent;
     width: fit-content;
     padding-bottom: 1px;
     transition: border-color 200ms ease, color 200ms ease;
   }
 
+  .open-link .arrow {
+    color: var(--lantern-deep);
+  }
+
   .card-link:hover .open-link {
     color: var(--lantern-deep);
     border-bottom-color: var(--lantern-deep);
+  }
+
+  /* Two-up phone grid: scale the type with the smaller cover. */
+  @media (max-width: 600px) {
+    .title {
+      font-size: 1.25rem;
+    }
+    .one-line {
+      font-size: 0.88rem;
+    }
   }
 </style>

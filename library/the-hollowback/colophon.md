@@ -1,0 +1,5 @@
+# colophon
+
+a young-adult ensemble fantasy: four young adults take the worst-paying job on the board — find a merchant's missing brother — into a half-civilized forest with an imperial ruin at its heart. the experiment here was point of view. the narration rotates across the whole party, and each chapter is meant to belong to the character it is about, assigned by the story's logic rather than by turn-taking. whether the drafter could hold four distinct internal voices and hand the camera to the right one, sixteen chapters running, was the question.
+
+it held. the reader's letter found the rotation motivated throughout — not one chapter it would reassign — and the party's arc from strangers to people who would die for each other earned rather than declared. the letter's candid complaint is over-articulation: the draft sometimes annotates a scene that has already done its work, glossing dialogue and naming subtext, and it asked for a compression pass. the quiet two-person scenes, it noted, are the book's most consistently strong writing.
