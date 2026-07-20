@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-07-12T02:50:05.917Z",
+  "summary": {
+    "critical": 0,
+    "high": 2,
+    "medium": 0,
+    "low": 0
+  },
+  "findings": [
+    {
+      "id": "continuity-fact-audit-001",
+      "category": "continuity-fact",
+      "severity": "high",
+      "title": "Ch11 progression list attributes Run 4's twelve-second figure to the opening-dropout series, but Run 4 confirmed eight seconds for the opening dropout",
+      "description": "In ch11-the-physical-record.md, Elena's dropout progression list reads: 'five seconds confirmed on Run 3, Day 4. Eight seconds estimated by visual inspection on Days 6 and 7. Twelve seconds confirmed on Run 4, Day 8.' The series is framed as tracking the opening (reel-edge) dropout in the first parametric segment — the same measurement that produced the 5s and 8s entries. But ch09-core-dropout.md explicitly counts the Run 4 opening dropout to eight seconds before the first-parametric data resumes; the twelve-second figure from Run 4 is the blank-oxide gap at the second parametric segment position (the transition gap / core dropout), a physically distinct location on the tape. Ch11 conflates the two measurement series, implying Run 4 confirmed twelve seconds for the opening dropout. The canon glossary independently confirms the correct values: 8s opening dropout and 12s second-parametric blank for Run 4.",
+      "evidence": [
+        {
+          "file": "draft/09-core-dropout.md",
+          "text": "Four. Five. Six. Seven. Eight. The frequency distribution resolved out of the baseline and the parametric profile began to read.",
+          "chapter": "09-core-dropout"
+        },
+        {
+          "file": "draft/09-core-dropout.md",
+          "text": "Twelve seconds of blank oxide where the second parametric segment should have been.",
+          "chapter": "09-core-dropout"
+        },
+        {
+          "file": "canon/glossary.md",
+          "text": "Protocol Run 4 — Fourth full verification protocol run, conducted on Day 8. Confirmed 8-second opening dropout in first parametric segment (consistent with prior estimates) and a 12-second blank oxide dropout at the second parametric segment position"
+        },
+        {
+          "file": "draft/11-the-physical-record.md",
+          "text": "The progression she had been logging: five seconds confirmed on Run 3, Day 4. Eight seconds estimated by visual inspection on Days 6 and 7. Twelve seconds confirmed on Run 4, Day 8. Eighteen seconds now, estimated by the same visual method.",
+          "chapter": "11-the-physical-record"
+        }
+      ],
+      "suggested_action": "In draft/11-the-physical-record.md, restructure the progression list to correctly separate the two dropout measurements. The opening-dropout series should read: 5s (Run 3), 8s (visual Days 6–7), 8s confirmed (Run 4) — and then note that the Day 10 visual estimate of 18s refers to the transition gap (second parametric blank), not the opening dropout. The 18s is the correct Day 10 figure for the transition-gap series (12s confirmed Run 4 → 18s Day 10 visual → 20s confirmed Run 5), but the passage as written creates a false progression 5s→8s→12s→18s that implies a single measurement series growing from the opening to 18s — inconsistent with Run 5's confirmed opening interval of approximately 9s.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "det-fact-conflict:signal-tape:dropout_growth_rate",
+      "category": "continuity-fact",
+      "severity": "high",
+      "title": "Contradictory dropout_growth_rate for signal-tape",
+      "description": "The world store holds conflicting live values for signal-tape.dropout_growth_rate: approximately 5 seconds per 2 days (single data point; upper bound 10 seconds per 2 days) (04-the-inventory) vs approximately 2.7 seconds per day (12-one-remaining).",
+      "evidence": [
+        {
+          "file": "draft/04-the-inventory.md",
+          "text": "dropout_growth_rate = approximately 5 seconds per 2 days (single data point; upper bound 10 seconds per 2 days) (04-the-inventory)",
+          "fact_id": "fact:04-the-inventory:signal-tape:dropout_growth_rate",
+          "chapter": "04-the-inventory"
+        },
+        {
+          "file": "draft/12-one-remaining.md",
+          "text": "dropout_growth_rate = approximately 2.7 seconds per day (12-one-remaining)",
+          "fact_id": "fact:12-one-remaining:signal-tape:dropout_growth_rate",
+          "chapter": "12-one-remaining"
+        }
+      ],
+      "suggested_action": "Reconcile the values; supersede the incorrect assertion (or fix the prose so they agree).",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    }
+  ]
+}

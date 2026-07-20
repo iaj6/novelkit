@@ -1,0 +1,21 @@
+{
+  "title": "The Long Tenant",
+  "model": "claude-sonnet-4-6",
+  "visibility": "public",
+  "research": true,
+  "epistemic": true,
+  "calibration": {
+    "enabled": true,
+    "max_iterations": 2
+  },
+  "maxTurnsPerPhase": {
+    "architect": 60,
+    "plotter": 50,
+    "threads": 40,
+    "drafter": 50,
+    "editor-continuity": 40,
+    "editor-pacing": 40,
+    "editor-voice": 40,
+    "reader": 50
+  }
+}

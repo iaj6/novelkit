@@ -1,0 +1,77 @@
+- generic [active] [ref=f1e1]:
+  - link "skip to content" [ref=f1e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f1e3]:
+    - generic [ref=f1e4]:
+      - link "lantern & page — home" [ref=f1e6] [cursor=pointer]:
+        - /url: /novelkit/
+        - generic "lantern & page" [ref=f1e7]
+      - navigation "primary" [ref=f1e8]:
+        - list [ref=f1e9]:
+          - listitem [ref=f1e10]:
+            - link "library" [ref=f1e11] [cursor=pointer]:
+              - /url: /novelkit/
+          - listitem [ref=f1e12]:
+            - link "about" [ref=f1e13] [cursor=pointer]:
+              - /url: /novelkit/about/
+  - main [ref=f1e14]:
+    - article [ref=f1e15]:
+      - generic [ref=f1e16]:
+        - complementary [ref=f1e17]:
+          - img "cover of Coldwater Reach" [ref=f1e19]
+          - paragraph [ref=f1e20]: 30chapters
+        - generic [ref=f1e21]:
+          - generic [ref=f1e22]:
+            - paragraph [ref=f1e23]: a novel · lantern & page
+            - heading "Coldwater Reach" [level=1] [ref=f1e24]
+          - paragraph [ref=f1e26]: The Breakwater Season is a literary novel set in the fictional coastal town of Coldwater Reach, Maine, from autumn 1943 through spring 1945. Three people — Eira Bowman, a fifty-two-year-old woman who holds the harbormaster post no man wanted after Pearl Harbor; Hannah Pfeiffer, a seventeen-year-old daughter of Bavarian immigrants whose dairy farm now houses four German POW laborers; and Dr. Marcus Klein, a Viennese Jewish scholar teaching high-school German in the town that hired him because it had no other choice — each carry, separately and without coordination, a single unresolved event:…
+          - img [ref=f1e28]
+          - generic [ref=f1e36]:
+            - paragraph [ref=f1e37]: take it with you
+            - list [ref=f1e38]:
+              - listitem [ref=f1e39]:
+                - link "epub for any e-reader" [ref=f1e40] [cursor=pointer]:
+                  - /url: /novelkit/books/coldwater-reach/coldwater-reach.epub
+                  - generic [ref=f1e41]: epub
+                  - generic [ref=f1e42]: for any e-reader
+              - listitem [ref=f1e43]:
+                - link "pdf for screen or print" [ref=f1e44] [cursor=pointer]:
+                  - /url: /novelkit/books/coldwater-reach/coldwater-reach.pdf
+                  - generic [ref=f1e45]: pdf
+                  - generic [ref=f1e46]: for screen or print
+              - listitem [ref=f1e47]:
+                - link "html read in the browser" [ref=f1e48] [cursor=pointer]:
+                  - /url: /novelkit/books/coldwater-reach/coldwater-reach.html
+                  - generic [ref=f1e49]: html
+                  - generic [ref=f1e50]: read in the browser
+          - img [ref=f1e52]
+          - paragraph [ref=f1e61]: drafted autonomously by an AI agent from a one-page brief. no human editing was performed. — 30 chapters, written in sequence, each reading the canon, the outline, and what came before.
+  - contentinfo [ref=f1e62]:
+    - generic [ref=f1e63]:
+      - generic [ref=f1e64]:
+        - link "lantern & page — home" [ref=f1e65] [cursor=pointer]:
+          - /url: /novelkit/
+          - generic "lantern & page" [ref=f1e66]
+        - paragraph [ref=f1e67]: a small press of agent-drafted novels.
+      - paragraph [ref=f1e68]: every book here was drafted autonomously by an AI agent from a single brief. no human editing was performed on the prose. the brief is the only human input.
+      - generic [ref=f1e69]:
+        - paragraph [ref=f1e70]:
+          - link "about the process" [ref=f1e71] [cursor=pointer]:
+            - /url: /novelkit/about/
+          - text: ·
+          - link "source" [ref=f1e72] [cursor=pointer]:
+            - /url: https://github.com/
+        - paragraph [ref=f1e73]: © 2026
+  - generic [ref=f1e76]:
+    - button "Menu" [ref=f1e77]:
+      - img [ref=f1e79]
+      - generic: Menu
+    - button "Inspect" [ref=f1e83]:
+      - img [ref=f1e85]
+      - generic: Inspect
+    - button "Audit" [ref=f1e87]:
+      - img [ref=f1e89]
+      - generic: Audit
+    - button "Settings" [ref=f1e92]:
+      - img [ref=f1e94]
+      - generic: Settings

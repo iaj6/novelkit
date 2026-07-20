@@ -1,0 +1,443 @@
+# Continuity ledger
+
+The accumulating fact ledger — every durable fact established so far, by chapter. Later drafting must stay consistent with these. Store-derived; do not edit by hand.
+
+## 01-forty-seven-seconds
+- elena-hartmann — role: Astrobiologist; winterover science lead, Winslow Station
+- elena-hartmann — institution: University of Wisconsin–Madison, contracted through USAP
+- elena-hartmann — location: Winslow Station, Antarctica
+- the-signal — time_received: 22:21:52
+- the-signal — band: upper UHF monitoring channel (non-standard allocated frequency)
+- protocol-run-1 — start_time: 22:49
+- protocol-run-1 — end_time: 23:11
+- protocol-run-1 — brownout_window: 11:00–11:03 (calibration segment; core data unaffected)
+- protocol-run-1 — validity_judgment: valid
+- winslow-generator — power_reserve.start_of_night_day1: 92 percent of baseline
+- winslow-generator — power_reserve.after_run1: 78 percent of baseline
+- verification-protocol — first_written_year: 1983 year
+- verification-protocol — revision_years: 1986, 1989, 1990, March 1991
+- verification-protocol — instrument_run_margin.initial_estimate: 8 runs
+- verification-protocol — instrument_run_margin.after_run1: 7 runs
+- receiver-hut — walkway_length: 31 paces
+- winslow-station — relay_window_day: Day 7 (approximately 6 days from Day 1 night)
+- winslow-station — relay_window_duration: 48 minutes
+- piotr-walczak — role: Winslow Station instrument engineer
+- lars-engstrom — role: Winterover researcher, Mather Station; ice-core atmospheric chemist
+- lars-engstrom — location: Mather Station
+- mather-station — distance_from_winslow: 60 kilometers
+- mather-station — direction_from_winslow: east
+- The signal was received at 22:21:52 on Day 1 (night three of polar darkness) in the upper UHF monitoring band — a non-standard allocated frequency chosen specifically by Elena's protocol design to avoid false negatives from standard-allocation interference. The signal ended at 22:22:39 (confirmed by tape reel counter). Duration: 47 seconds.
+- Protocol Run 1 ran from 22:49 to 23:11. A 3-second generator brownout occurred at the 11-minute mark, landing in the calibration segment (pre-signal warm-up data). Elena judged the run valid: the brownout window did not overlap the signal's core parametric data. The judgment is recorded in the logbook.
+- After Protocol Run 1, the generator power gauge read 78% of baseline, down from 92% at the start of the night. Elena consumed approximately 14% of power reserve in a single shift including one instrument run and a post-brownout warm-up cycle.
+- Elena's instrument run margin estimate was revised downward from 8 to 7 full protocol runs immediately after Run 1, due to the brownout warm-up cost. This is an estimate, not a hard fact; it will be revised further when fuel arithmetic is recalculated in Ch05.
+- The signal tape's housing temperature dipped 2 degrees below spec during the Run 1 brownout and recovered. Elena logged this as one temperature-dip event on Day 1. The cumulative count of such events is a tracked quantity.
+- The covered walkway between the receiver hut and the main hab is 31 paces. Elena counted this on her first night at Winslow Station. The walkway smells of diesel exhaust and cold engine oil from the umbilical conduit running along the ceiling.
+- The main hab galley contains a green-enameled steel mug of unknown prior ownership. The corridor hatch seal is cracked (Elena filed a maintenance note about this in April); the crack lets in additional cold when exterior temperature is below minus 20 Celsius. On Day 1 night the exterior temperature was minus 37 Celsius.
+- After running Protocol Run 1 and reading the printout three times, Elena went to the main hab, stood at the SSB radio console (red standby light on), and did not call Walczak. She returned to the receiver hut and sat in the work chair with the printout in her lap.
+- The signal analyzer display was still showing the amber numerals from Run 1 when Elena returned to the receiver hut and sat down. The heater was off; hut temperature was approximately minus 11 to minus 12 Celsius.
+- The tension mechanism on the tape transport reel had shown slight resistance four days before Day 1; Elena logged this prior to Run 1 and noted the resistance again during setup.
+
+## 02-the-second-run
+- protocol-run-2 — start_time: 09:47
+- protocol-run-2 — end_time: 10:04
+- protocol-run-2 — brownout: false
+- protocol-run-2 — validity_judgment: valid
+- protocol-run-2 — signal_confirmed: true
+- winslow-generator — power_reserve.after_run2: 71 percent of baseline
+- winslow-generator — clean_run_cost: 7 percent of baseline per run
+- verification-protocol — instrument_run_margin.after_run2: 6 runs
+- signal-tape — housing_temp_dip_events: 2 events
+- signal-tape — binder_stress_observed: true
+- signal-tape — binder_stress_location: outer edge of monitoring-record section (outermost reel layer, pre-signal)
+- receiver-hut — temperature_day2_morning: -17 degrees Celsius
+- receiver-hut — temperature_day2_post_warmup: -14 degrees Celsius
+- heating-protocol-day2 — heater_capacity_continuous: 70 percent of rated capacity
+- heating-protocol-day2 — full_instrument_draw: during protocol runs only
+- heating-protocol-day2 — established_day: Day 2 morning
+- gray-thermal-blanket — location_origin: equipment building supply shelf, second shelf
+- gray-thermal-blanket — current_location: main hab equipment cabinet
+- gray-thermal-blanket — contents: Run 1 and Run 2 signal printouts, face-up inside fold
+- hab-equipment-cabinet — heat_source: hab base heating circuit (interior wall)
+- hab-equipment-cabinet — warmest_space: true
+- signal-tape — housing_element_circuit: shares minimum-draw circuit with space heater; tracks hut temperature at generator minimum setting
+- Protocol Run 2 ran from 09:47 to 10:04 on Day 2 morning. No brownout occurred. The generator held at full draw without a regulator trip. The signal confirmed intact: timing parameters, frequency stability, and internal structure metrics all matched Run 1. Power reserve fell from 78% to 71% (seven-point clean-run cost, established as the per-run cost without brownout complications).
+- First binder stress observed on Day 2 morning: outer layer of the monitoring-record section (pre-signal tape, outermost reel circumference), approximately 1 inch extent along the tape edge, confined to outer 2–3mm width. Does not reach the primary recording track. Does not affect playback at the current state. Observed under a ten-power loupe (instrument repair kit). Progression rate unknown; cannot be measured without additional protocol runs.
+- Elena discovered on Day 2 that the tape housing's heating element shares the minimum-draw circuit with the space heater. At generator minimum setting, the housing temperature tracks the hut temperature rather than maintaining an independent set point. The housing reached minus seventeen Celsius at approximately 0347 on Day 2 (matching the hut), logged as the second housing-temperature-dip event.
+- Heating protocol locked in on Day 2 morning: space heater set to 70% of rated capacity running continuously; full instrument draw permitted only during protocol runs. Combined load stays within generator fault threshold. Hut holds approximately minus 14 Celsius under this protocol. This tradeoff is the permanent operating condition from Day 2 forward and cannot be easily revised.
+- Both signal printouts (Run 1 and Run 2) are stored in the main hab's equipment cabinet, wrapped face-up in a gray thermal blanket taken from the equipment building supply shelf (second shelf). The equipment cabinet draws from the hab's base heating circuit and is the warmest consistently temperate enclosed space at Winslow Station.
+- The ten-power loupe in Elena's instrument repair kit has a handle worn smooth on one side from thirty years of use; bought in Madison in 1961 for a field geology course. It is the instrument she uses for tape binder inspection.
+
+## 03-anomalous
+- winslow-generator — power_reserve.morning_day3: 67 percent of baseline
+- winslow-generator — passive_overnight_draw_rate: 4 percent per 16 hours baseline
+- winslow-station — hours_to_relay_gate.end_of_day3: 96 hours
+- verification-protocol — instrument_run_day3: false
+- lars-engstrom — winterover_weeks_at_day3: 7 weeks
+- lars-engstrom — ssb_contact_day3_start: 1400 local time
+- lars-engstrom — ssb_contact_day3_end: 1429 local time
+- lars-anomalous-reading — duration_approximate: about a minute, perhaps slightly less
+- lars-anomalous-reading — detection_method: shift-review software flag (exceeded threshold; not an instrument alarm)
+- lars-anomalous-reading — location: Mather Station
+- mather-station — wind_event.day1_minus2: gusts to 40 knots sustained 5 hours; no structural damage; antenna mast guy-wires reinforced by Lars
+- mather-station — barometer_day3: 29.75 inches Hg, rising
+- elena-fieldwork-notebook — format: spiral-bound; cover worn at upper left corner from 30 years of breast-pocket insertion
+- elena-fieldwork-notebook — handwriting_character: cramped leftward lean in early pages (1960s-1970s); enlarged deliberate script in later pages
+- receiver-hut — temperature_day3_morning: -14 degrees Celsius
+- Day 3 morning: power reserve reads 67% (four-point overnight drop from 71% after Run 2; no instrument run on Day 3; passive draw from 70%-heater, hab base heating, and instrument standby modes). Confirmed passive overnight draw rate: approximately 4 percentage points per 16-hour overnight baseline. No instrument run on Day 3; power reserve does not drop further through end of chapter.
+- Hours to relay gate at end of Day 3: approximately 96 hours (four days to Day 7 window). Elena does the subtraction (four days times twenty-four hours) in her head at the generator panel; she does not write it down.
+- Day 3 SSB contact with Lars Engström: 1400–1429 local (29 minutes on frequency). Standard traffic protocol: call signs, five-by-four signal quality report, turn-based speaking, formal traffic close.
+- Lars Engström is seven weeks into his winterover season at Mather Station by Day 3. His atmospheric chemistry results have been thoroughly routine: ice-core gas concentrations within baseline predictions, no anomalous spikes in any monitored compounds, equipment within calibration.
+- Mather Station wind event: approximately two days before Day 3 (Day 1 by story reckoning), gusts to approximately 40 knots, sustained five hours. No structural damage. Lars reinforced the antenna mast guy-wires as a precaution after the event.
+- Lars Engström's anomalous reading at Mather Station: a short-duration transient in a UHF secondary band he was not targeting, detected by his shift-review software during a passive background logger scan. Lars ran full diagnostics — no instrument fault. He attributed it to RFI from Mather's own equipment during a maintenance cycle that week. Filed as instrument artifact. Duration: 'about a minute, perhaps slightly less.' The event's precise date, time, frequency sub-band, and event parameters were not given to Elena during the Day 3 contact.
+- Lars's secondary background logger is a passive reference-channel system — not a primary program instrument. It runs continuously and logs data to tape. The shift-review software flags events above a threshold for shift-end review; the Mather transient exceeded this threshold, which is how Lars detected it.
+- Elena's two oblique probes during the SSB contact: 'What kind of anomaly?' and 'Roughly how long did it last?' — both asked without emphasis, maintaining the contact's normal register. Lars answered without apparent suspicion. Elena told him: 'I have been seeing some side-band anomalies as well. Probably the ionosphere.' This is the first misdirection Elena deploys, though not yet the lie she tells Lars in Ch10.
+- After the Day 3 SSB contact ends, Elena's post-contact arithmetic: she knows Lars's secondary background logger is passive; the shift-review software flagged the event; the duration is consistent with 47 seconds ('about a minute, perhaps slightly less'); the timing window ('last week') is consistent with Day 1; Mather is 60 km east. She cannot run the propagation geometry comparison without the precise event time, frequency sub-band, and source bearing. She cannot ask for these parameters without explaining why she is asking, which requires disclosing what she has.
+- Elena's personal fieldwork notebook: spiral-bound, cover worn at upper left corner, breast-pocket-carried through thirty years of field work. Handwriting changes from cramped leftward lean in early pages (1960s era) to enlarged deliberate script in later pages. Separate from the station log; used for non-administrative personal field notes. Elena writes in it for four minutes during the Day 3 receiver hut visit; the entry's content is not transcribed in the chapter.
+- Receiver hut housing temperature sensor overnight log on Day 3 morning: low of minus fourteen point one Celsius at 0224; consistent with the 70% heating protocol holding the hut at minus fourteen. The housing temperature tracks the hut temperature (shared min-draw circuit, established Day 2).
+
+## 04-the-inventory
+- protocol-run-3 — validity_judgment: conditional (dropout event recorded)
+- protocol-run-3 — brownout: false
+- protocol-run-3 — day: 4 story-day
+- protocol-run-3 — dropout_confirmed: true
+- protocol-run-3 — dropout_segment: parametric segment 1, seconds 0–5 from segment start
+- protocol-run-3 — dropout_duration: 5 seconds
+- protocol-run-3 — dropout_onset_character: sharp (clean cutoff; blank oxide; not distortion or noise)
+- protocol-run-3 — core_signature_intact: true
+- winslow-generator — power_reserve.after_run3: 60 percent of baseline
+- winslow-generator — fuel_reading_day4: 73.5 liters
+- winslow-generator — voltage_events_overnight_day4: 2 sub-alarm dips (206V and 209V, recovery to 218V, 0300–0350 window; no brownout; no warm-up cost)
+- signal-tape — binder_stress_extent: extended approximately 3cm further along reel edge since Day 2; total zone longer than Day 2's ~1 inch; width unchanged (outer 2–3mm); active gradient (~2mm) at leading edge indicating active progression
+- signal-tape — binder_stress_affects_playback: true
+- signal-tape — binder_stress_rate: approximately 1.5 centimeters per day along reel edge (derived from Day 2 and Day 4 measurements)
+- signal-tape — binder_stress_leading_edge_to_signal_boundary: approximately 4 centimeters from monitoring-record / signal-segment transition as of Day 4 physical inspection
+- signal-tape — dropout_day4_confirmed: true
+- signal-tape — dropout_growth_rate: approximately 5 seconds per 2 days (single data point; upper bound 10 seconds per 2 days)
+- signal-tape — dropout_position_on_reel: approximately at monitoring-record / signal-segment boundary (first 5 seconds of first parametric segment)
+- signal-tape — housing_temp_overnight_low_day4: -14.2 degrees Celsius
+- receiver-hut — frost_line_position_day4: east wall upper panel, approximately one-third up from panel base (migrated upward since Day 2 as convection improved under 70% heating protocol)
+- winslow-station — hours_to_relay_gate.end_of_day4: approximately 72 hours
+- elena-fieldwork-notebook — current_location: top of main hab equipment cabinet (end of Day 4)
+- Day 4 inventory: Elena conducts a systematic, documented accounting of all depleting resources across all three station structures (receiver hut, main hab, equipment building). This is the first time she has accounted for the full resource state rather than managing day-by-day. The results are consolidated in one inventory summary in her fieldwork notebook.
+- Tape housing overnight minimum Day 4: minus fourteen point two Celsius — the first reading to fall below the minus-fourteen protocol threshold. Within measurement error for a non-laboratory field thermometer (+/- 0.2°C). Elena brackets this with her 1974 field notation for values consistent in terms but diverging in direction.
+- Day 4 physical tape inspection under the ten-power loupe: binder stress zone has extended approximately three centimeters further along the reel edge since Day 2 measurement, producing an active gradient (approximately 2mm transition zone) at the leading edge — indicating active degradation rather than a stable condition. The leading edge of the visible stress zone is approximately four centimeters short of the monitoring-record/signal-segment transition boundary. The width of the stress zone (outer 2–3mm) is unchanged; primary recording track not yet affected visually.
+- Protocol Run 3 dropout: five seconds of blank oxide (zero output, sharp onset, sharp recovery) at seconds 0–5 of the first parametric segment of the signal. The dropout boundary on the tape map corresponds to approximately the monitoring-record/signal-segment transition — consistent with the binder stress leading edge measured in the Day 4 physical inspection. This is the first dropout event; it was not present in Run 2. The rest of the first parametric segment, the second parametric segment, and the core signature all read clean.
+- Tape degradation rate calculation from Run 3: approximately 5 seconds of dropout growth per 2 days (single data point from Run 2 and Run 3 comparison). Upper bound estimate: 10 seconds per 2 days. At the minimum rate, core signature (located approximately 40 seconds into the first parametric segment) is at risk in approximately 16 days from Day 4. At the upper bound rate, in 8 days. Team arrives on Day 12 (8 days from Day 4). Elena calculates the minimum scenario puts the core signature at risk at or before team arrival.
+- Elena's Day 4 power reserve arithmetic: fuel remaining 73.5 liters; daily passive burn rate ~4.5 liters/day; 8 days to team arrival = 36 liters passive draw; discretionary fuel = ~37.5 liters; per-run fuel cost ~3.5 liters; fuel-based run estimate = approximately 8 runs (rounded down from 10.7 with a discount for generator inconsistency). This estimate is annotated 'unverified; assumes standard burn rate' and is discrepant with Elena's tracking count of 5. The discrepancy will be resolved in Ch05 when the actual burn rate is discovered to be 15% above baseline.
+- Elena decides on Day 4 to make no further protocol runs before the relay gate (approximately 72 hours away). Rationale: running before the gate uses a run without changing the gate decision she has not yet made. The 5 tracking-count runs are reserved for the post-gate phase. This decision is written in the fieldwork notebook.
+- The receiver hut's east wall frost line has been migrating upward since Elena established the 70% heating protocol; by Day 4 the frost boundary is approximately one-third up the upper wall panel from its base — evidence that the convective heating is improving inside the hut. Elena notes this position for future comparison.
+- Tape housing inspection card: a strip of card stock from the instrument repair kit, clipped to the back of the tape housing, used by Elena as a dimensional log for binder stress measurements. Measurements: Day 2 (approximately 1 inch extent along reel edge); Day 4 (extended approximately 3cm further; active gradient at leading edge). The card is binder-clipped to the back cover of Elena's fieldwork notebook at end of Day 4.
+- Tape map: a sketch maintained in Elena's fieldwork notebook from Day 2 forward, showing reel layout with positions of monitoring-record boundary, signal segment start, parametric segment divisions, and key dimensional annotations. Elena uses the map to cross-reference dropout positions against the binder stress measurements from physical inspections.
+
+## 05-worse-than-calculated
+- corrections-pen — kind: red fine-point mechanical pencil
+- corrections-pen — location: back-cover pocket of Elena's fieldwork notebook
+- walczak-regulator-part — location: McMurdo Station maintenance stores
+- walczak-regulator-part — arrival_day: Day 12
+- winslow-generator — fuel_reading_day5_morning: 64.4 liters
+- winslow-generator — fuel_burn_rate_revised: 5.2 liters per day
+- winslow-generator — fuel_burn_rate_deviation: 15 percent above baseline
+- winslow-generator — fuel_burn_rate_deviation_cause: diesel viscosity increase at exterior-facing fuel tank wall; tank holding at minus 28 Celsius overnight (4 degrees below baseline assumption)
+- winslow-generator — power_reserve.end_of_day5: 51 percent of baseline
+- winslow-generator — voltage_output.morning_day5: 216 volts
+- winslow-generator — voltage_events_overnight_day5: 2 sub-alarm dips (0307 and 0410); 206–209V; recovery to 216V; fault interval 63 minutes; no brownout
+- winslow-generator — fault_interval.first_logged: 63 minutes (between 0307 and 0410 overnight Day 4-5)
+- verification-protocol — instrument_run_margin.after_run3: 3 runs (revised from 5; total budget corrected to 6 at 15%-above-baseline fuel burn rate)
+- verification-protocol — total_run_budget.revised: 6 total runs (down from 8-run estimate; 3 used; 3 remaining)
+- verification-protocol — instrument_run_day5: false
+- winslow-station — hours_to_relay_gate.end_of_day5: 48 hours
+- piotr-walczak — checkin_day5_time: approximately 1100 local
+- piotr-walczak — has_replacement_regulator_part: true
+- Day 5 morning fuel gauge reading: 64.4 liters. Expected (from Day 4 reading of 73.5 liters minus Run 3 cost and one overnight passive draw at baseline): 65.5 liters. Discrepancy: 1.1 liters above expected consumption — consistent with a burn rate 15% above baseline.
+- Fuel burn rate revised Day 5: 5.2 liters per day (not 4.5 as assumed). Cause identified: diesel viscosity increase in the exterior-facing fuel tank wall. The equipment building's exterior-facing wall has been holding at minus 28 Celsius overnight — four degrees below Elena's baseline assumption. The technical reference covering this cold-weather effect was in the Winslow instrument manual (updated 1989 maintenance cycle); Elena had read and filed it and did not apply the correction to her burn-rate calculation.
+- Total instrument run budget revised Day 5: 6 total runs (down from the 8-run estimate; original 8-run estimate divided by 1.15 = 6.96, rounded down to 6). Runs used: 3 (Runs 1, 2, 3). Runs remaining: 3 (not 5 as Elena had been holding). The tracking count of 5 was built on the wrong total budget. FROM THIS POINT FORWARD the correct remaining run count is 3.
+- Elena wrote the revised run budget in the red mechanical pencil (her corrections pen, kept in the fieldwork notebook's back-cover pocket) below the blue-ink Day 4 arithmetic. The '3' is underlined twice.
+- Power reserve end of Day 5: approximately 51% (down 9 percentage points from 60% after Run 3, with no protocol run on Day 5; the 9-point single-day drop without a run reflects the 15%-above-baseline fuel burn rate).
+- Hours to relay gate at end of Day 5: approximately 48 hours (gate falls Day 7 morning).
+- Voltage regulator output morning Day 5: 216 volts (down 2V from prior Day 4 reading of 218V; still within rated band). Voltage events overnight Day 4-5: 2 sub-alarm dips (0307 and 0410), 206–209V, recovery to 216V, no brownout, fault interval 63 minutes (first interval measurement logged).
+- Walczak SSB check-in, Day 5, approximately 1100 local. He asked about the voltage regulator fault log and the fuel. Elena told him about the 15% above-baseline burn rate and attributed it to the exterior-wall fuel tank / viscosity issue. She told him she had adjusted the discretionary allocation. She did not tell him what the run margin governed or why it mattered. He asked what her revised run margin was; she said 'reduced; still manageable.' He accepted this without pressing for a specific number.
+- Walczak found a compatible voltage regulator replacement component in McMurdo maintenance stores. He confirmed the part number against the Winslow instrument manual before calling. He will bring it on Day 12. The part cannot help Elena now.
+- Walczak told Elena she sounded tired. She said: I am. Day 12 flight confirmed as of the previous day's McMurdo operations briefing.
+- Elena's maintenance log entry after the Walczak call: 'Walczak check-in: routine. Nothing transmitted.' This entry is in the instrument maintenance record (not the station log and not the fieldwork notebook). After writing it, Elena calculated what Walczak will see when he opens the instrument log on Day 12: six protocol runs, verification sequence, 12 consecutive days. She had no answer for this calculation.
+- Equipment building exterior-facing wall temperature overnight Day 5: minus 28 Celsius. This temperature has been at or below this level since the start of winter (the temperature log runs back to April). It will not improve.
+
+## 06-before-the-window
+- signal-tape — dropout_visual_estimate_day6: approximately 8 seconds
+- signal-tape — binder_stress_crossed_signal_boundary: true
+- winslow-generator — power_reserve.morning_day6: 49 percent of baseline
+- verification-protocol — instrument_run_day6: false
+- winslow-station — hours_to_relay_gate.morning_day6: under 36 hours
+- winslow-station — hours_to_relay_gate.end_of_day6: under 12 hours
+- receiver-hut — temperature_day6_morning: -14.3 degrees Celsius
+- data-packet — status: formatted and queued in fax terminal send queue; initiation command not entered as of end of Day 6
+- data-packet — addressed_to: USAP relay buffer
+- data-packet — sections: header metadata (frequency band, timestamp, duration), primary data record (amplitude profile, parametric segments 1 and 2, verification protocol summary Runs 1–3), cover statement
+- data-packet — cover_statement_revision_count: 2 revisions
+- data-packet — built_on_day: 6 story-day
+- fax-terminal — location: equipment building, alcove beside HF radio console
+- fax-terminal — relay_carrier_indicator_day6: gray (window not open)
+- fax-terminal — prior_uses_count: 4 prior transmissions since October
+- Day 6 tape inspection (visual, no run burned): Elena compared the binder stress zone's position against pencil timing marks on the housing interior (placed Day 2). The zone has crossed the monitoring record / signal boundary timing mark — the leading edge is now inside the signal segment. This is the first physical inspection to show the stress zone in the signal segment proper.
+- Tape dropout visual estimate Day 6: approximately eight seconds. Derived by proportional reasoning from the Run 3 instrument-confirmed five-second dropout (at the prior leading-edge position) scaled to the additional extent visible today. Stated as provisional: '~8s dropout, visual est.' Written in hut log, not in the analysis notebook.
+- Elena built the USAP data transmission protocol packet at the fax terminal on Day 6. Three-section format (header, data record, cover statement). Header: frequency band (upper UHF, non-standard allocation), timestamp (22:21:52, 1 June 1991, Winslow Station local), duration (47 seconds). Data record: amplitude profile header (five-significant-figure values from analysis notebook), first parametric segment (dropout noted explicitly: five-second instrument-confirmed at Run 3, approximately eight-second visual estimate at Day 6; intact values from post-dropout position), second parametric segment (clean through Run 3, values entered without amendment), verification protocol summary for Runs 1–3 (copied directly from analysis notebook in Elena's own language).
+- Cover statement for the data packet: Elena wrote two versions. The first had a sentence characterizing the signal's significance (wrong register for a data transmittal cover; deleted). The second had two phrase changes: one hedging phrase corrected to match the data's precision, one sentence rephrased to avoid a premature follow-up question before the receiving agency saw the instrument documentation. Elena read the final version three times. She did not read it a fourth time.
+- The data packet as of end of Day 6 is formatted, addressed to the USAP relay buffer, and sitting in the fax terminal's send queue with the cursor at the initiation command. Elena has neither initiated nor deleted it. The relay carrier signal indicator was gray (window not active) the entire time she was at the terminal.
+- Elena read through her analysis notebook (Runs 1–3) while sitting at the work table in the receiver hut on Day 6, after leaving the terminal. She made no new notations. The notebook's per-run judgments and methodology descriptions were the basis for the verification protocol summary in the data packet.
+- Day 6 interiority: Elena considered what transmitting would mean (relay buffer routes to McMurdo Ops then agency data management in Washington; they request the tape in person; cover statement becomes the first frame anyone outside Winslow reads; descriptions she has not written supersede it within two weeks) and what not transmitting would mean (close the window, keep three runs, hand the notebook to Walczak on Day 12 with no preparation, no framing, no institutional channel). She thought about Lars Engström (his reading filed as artifact, sixty kilometers east) and did not reach for the radio.
+- Day 6 closing state: Elena sitting on her bunk with boots on, sleeping bag pulled over her lap but not lying down. The data packet is queued unsent at the terminal. The relay window will open before morning. Elena did not look at the posted relay schedule for the precise time.
+
+## 07-the-window
+- signal-tape — dropout_confirmed_day7_morning: 8 seconds (upper limit 8.5); two-angle flashlight check against timing marks; binder stress 3–4mm inside signal segment past boundary mark; logged 05:41
+- winslow-generator — power_reserve.after_day7_window: 41 percent of baseline
+- winslow-station — relay_channel_foreclosed: true — permanently foreclosed at 0848 Day 7; no equivalent uplink opportunity before Day 12 LC-130 arrival
+- winslow-station — days_to_foreclosure.end_of_day7: 5 days
+- data-packet — status.end_of_day7: unsent; 1 item pending in fax terminal send queue; carrier window closed at 0848 without transmission; institutional relay channel now permanently foreclosed
+- data-packet — cover_statement.third_para_revision_day7: 'standard verification protocol' changed to 'three sequential instrument runs under the same verification protocol' — revision made at approximately 0630 Day 7
+- data-packet — cover_statement.first_version_note: first version contained the word 'please' written next to the tape handling note in the footer; removed before final version as not the correct register for a formal transmittal cover
+- verification-protocol — runs_remaining.end_of_day7: 3 runs
+- Day 7 (Ch07): The relay window opened at 0800 and closed at 0848 (48 minutes). Elena did not transmit. The fax terminal send queue shows 1 item pending (the data packet) at chapter end. The institutional relay transmission channel is PERMANENTLY FORECLOSED — no equivalent uplink opportunity exists before Day 12. This must not be violated in any subsequent chapter: no alternative relay mechanism, no additional satellite windows, no SSB data uplink pathway.
+- Day 7 (Ch07): Tape dropout confirmed at 8 seconds (upper limit 8.5) by two-angle flashlight inspection against timing marks at 05:41. Binder stress leading edge is now 3–4mm inside the signal segment past the monitoring-record/signal-segment boundary mark. No protocol run done on Day 7.
+- Day 7 (Ch07): Power reserve approximately 41% after the chapter (terminal draw during 48-minute window plus building warm-up). Days to foreclosure: 5 (operative quantity replacing hours-to-gate from this chapter forward). Instrument run margin: 3 remaining.
+- Day 7 (Ch07): The cover statement's third paragraph was revised at approximately 0630: 'established under standard verification protocol' became 'established through three sequential instrument runs under the same verification protocol.' This revision is now in the queued packet.
+- Day 7 (Ch07): Elena visited the receiver hut twice during the 48-minute window (approximately 0822–0838 on the second visit). She put her hand on the tape housing and weighed both paths (transmit vs. hold) and thought about Lars's 47-second reading filed as artifact at Mather Station. She did not reach for the SSB radio.
+- Elena knows the name of the McMurdo Operations liaison who processes non-routine instrument returns, and the names of the two program officers above him in the chain — from program reviews she attended in 1987 and 1989. This institutional knowledge is part of her reasoning about what transmission would mean.
+
+## 08-after
+- winslow-generator — power_reserve.end_of_day7_evening: 38 percent of baseline
+- winslow-generator — fault_events_count_total: 3 events
+- generator-fault-day7 — output_at_fault: 89 percent
+- generator-fault-day7 — fault_light_color: amber (monitored deviation, not emergency)
+- generator-fault-day7 — stabilization_method: shed receiver hut heater (highest-draw circuit) for 43 minutes
+- generator-fault-day7 — output_post_restoration: 90 percent
+- generator-fault-day7 — log_entry: Day 7 afternoon. Generator fault: voltage regulator active fault. Output: 89%, fluctuating. Stabilization procedure: shed receiver hut heater for 43 min. Post-shed output: stabilized at 93%. On restoration: dipped to 90%, stabilized. Fault light extinguished. No instruments lost.
+- generator-fault-day7 — prior_fault_events: April and second week of May; both resolved without intervention
+- signal-tape — dropout_visual_check_day7_evening: 8 seconds; binder stress zone 3-4mm inside signal-boundary mark; unchanged from morning reading at 05:41
+- signal-tape — housing_temp_during_fault_day7: -13.8 degrees Celsius
+- winslow-station — days_to_foreclosure.day7_evening: 5 days
+- verification-protocol — instrument_run_margin.end_of_day7: 3 runs
+- cold-weather-kit — location: rack beside equipment building exterior door
+- cold-weather-kit — components: insulated overtrousers, parka, balaclava, goggles, gauntlets
+- cold-weather-kit — dressing_time: 7 minutes
+- cold-weather-kit — dressing_sequence: overtrousers (both legs seated before waist secured), parka (zip checked twice), balaclava (before parka collar sealed), goggles (gasket against face-surround checked), gauntlets last
+- winslow-station — exterior_temperature_day7_evening: -42 degrees Celsius
+- winslow-station — exterior_wind_day7_evening: none (calm at time of Elena's exterior check)
+- data-packet — status.end_of_day7_evening: unsent; 1 item pending in fax terminal send queue; Elena did not open the terminal on Day 7 evening
+- Day 7 afternoon (Ch08): Generator fault — voltage regulator active fault light (amber), output 89% fluctuating. Elena ran the stabilization procedure: shed receiver hut heater (highest-draw circuit) for 43 minutes; post-shed output stabilized at 93%; on heater restoration output dipped to 90% and stabilized, fault light extinguished. This is the third fault event of the winter (prior events: April, second week of May — both resolved without intervention). Post-restoration output baseline is now 90%, down from the pre-fault winter baseline of 97%. Log entry written and underlined 'No instruments lost.'
+- Power reserve end of Day 7 (Ch08): 38% (down from 41% after the window; the 3-point drop is from the fault-response draw, building warm-up, and afternoon terminal draw; no protocol run was conducted).
+- Tape visual check Day 7 evening (Ch08): Conducted in receiver hut during Elena's post-fault evening rounds. Housing temperature gauge: -13.8°C (recovering from 43-minute heater shed; 8-tenths below 70% protocol norm). Binder stress zone leading edge: still 3–4mm inside signal-boundary mark. Dropout: 8 seconds — unchanged from the 05:41 morning reading. No protocol run burned.
+- Generator exhaust pipe check Day 7 evening (Ch08): Elena went outside in full cold-weather kit to check the south-wall exhaust pipe after the generator fault. No frost accumulation, no ice blockage. Pipe warm enough at terminus to have prevented icing during fault and recovery.
+- Elena's cold-weather exterior kit (Ch08): stored on rack beside the equipment building exterior door. Components: insulated overtrousers, parka, balaclava, goggles, gauntlets. Fixed dressing sequence (overtrousers first, both legs seated before waist secured; parka, zip checked twice; balaclava before parka collar sealed; goggles with gasket checked; gauntlets last). Dressing takes 7 minutes. Elena does not rush the sequence.
+- Exterior conditions Day 7 evening (Ch08): minus forty-two Celsius; no wind at time of check. Sky described as a surface of stars dense enough to appear as gradated texture rather than discrete points — galactic plane structure visible. This is the only time in the novel Elena is fully outside in the Antarctic winter exterior.
+- Post-gate decision space named by Elena during exterior stand (Ch08): (1) hand data and analysis notebook to Walczak on Day 12 in whatever state the tape is in; (2) destroy the data; (3) pursue publication from Winslow (requires resources and a submission window the station cannot produce in 5 days — nearly foreclosed). The relay option is permanently removed from the space. No decision made.
+- Lars thought (Ch08, exterior stand): Elena's thought of Lars Engström arrives briefly and precisely — noting 60 km distance, the radio protocol that does not permit the required conversation — and she does not follow it. This seeds Ch10's contact without telegraphing it.
+- Elena's dropout-rate arithmetic (Ch08): working estimate ~1 second/day; projected Day 12 dropout ~13 seconds; core signature risk is the unresolved question. Possible run schedule (Day 8, Day 10, Day 12) would add 3 data points; at 7 points/run cost, would bring power from 38% to ~17% floor (clean-run rate). Each run also carries brownout risk given the fault event.
+- Data packet status end of Day 7 evening (Ch08): 1 item pending in fax terminal send queue; Elena does not open the terminal. Fieldwork notebook on galley table corner, closed; Elena does not open it. Red standby light steady on SSB console.
+
+## 09-core-dropout
+- protocol-run-4 — day: 8 story-day
+- protocol-run-4 — brownout: false
+- protocol-run-4 — validity_judgment: conditional (core dropout recorded; second parametric segment unreadable)
+- protocol-run-4 — core_dropout_confirmed: true
+- protocol-run-4 — core_dropout_segment: second parametric segment
+- protocol-run-4 — core_dropout_duration: 12 seconds
+- protocol-run-4 — first_segment_dropout_duration: 8 seconds
+- protocol-run-4 — first_segment_clean_data_duration: 22 seconds
+- protocol-run-4 — core_signature_intact: true
+- protocol-run-4 — calibration_tail_intact: true
+- winslow-generator — power_reserve.after_run4: 30 percent of baseline
+- winslow-generator — voltage_variance.day8: plus or minus 7 percent
+- verification-protocol — instrument_run_margin.after_run4: 2 runs
+- verification-protocol — full_parametric_verification.foreclosed: true
+- verification-protocol — second_segment_requirement_added: 1990 revision
+- verification-protocol — instrument_run_day8: true
+- signal-tape — second_parametric_segment.status: unreadable; 12-second blank oxide at segment position; confirmed on three playbacks from segment marker; permanent
+- signal-tape — dropout_day8_confirmed: true
+- signal-tape — core_dropout_position: second parametric segment (core of record, not at reel edge)
+- signal-tape — first_segment_dropout_run4: 8 seconds
+- signal-tape — housing_temp_day8_morning: -14.2 degrees Celsius
+- signal-tape — binder_stress_day8_state: visibly larger than Day 4; active gradient steeper (approximately 3mm vs 2mm); still at reel edge; leading edge not yet at primary recording track
+- analysis-notebook — run4_entry_day: 8 story-day
+- analysis-notebook — run4_claim_supportable: provisional claim on primary anomalous parameters of first segment only
+- analysis-notebook — run4_claim_not_supportable: complete parametric characterization; full exclusion of three alternative classifications; confirmed (vs provisional) finding
+- winslow-station — days_to_foreclosure.end_of_day8: 4 days
+- Protocol Run 4 (Day 8, Ch09): Run conducted after a fifteen-minute stabilization procedure at reduced instrument load, required by the widened voltage variance (+/-7%) following the Day 7 generator fault. Warm-up cycle clean. No brownout during the run.
+- Run 4 confirmed an 8-second opening dropout in the first parametric segment (offset 0–8 seconds), consistent with Run 3's confirmed 5-second figure extended to the Day 6–7 visual estimate of 8 seconds. The remaining 22 seconds of the first segment read cleanly, with all parametric values (frequency stability, spectral density, timing parameters, phase relationship) consistent with Runs 1–3.
+- Run 4 confirmed a 12-second blank oxide dropout at the second parametric segment position — not at the reel edge, but in the core of the tape record. Confirmed on three separate playbacks from the segment marker. The second parametric segment is permanently unrecoverable from this tape by any means available at Winslow Station. All subsequent chapters must treat the second parametric segment as gone.
+- The calibration tail (third segment) remains intact through Run 4. Signal duration confirmed at forty-seven seconds on Run 4.
+- Full parametric verification is permanently foreclosed from Run 4 forward. The complete parameter set Elena's protocol was designed to establish requires both parametric segments. The 1990 revision to the protocol made the second segment's requirement explicit; it provides the data needed to exclude three alternative classifications. Without it, the maximum achievable finding rating is provisional.
+- Elena writes the Run 4 honest accounting in the analysis notebook (Day 8): what the remaining evidence supports (provisional claim on primary anomalous parameters — signal received, 47 seconds, primary anomalous parameters of first segment, non-terrestrial and non-natural characterization confirmed across four runs) and what it does not support (complete parametric characterization; exclusion of all three alternative classifications; confirmed rather than provisional finding). This is the first entry in the analysis notebook distinguishing provisional from confirmed.
+- Power reserve end of Day 8: 30% (down from 38% at start of Day 8; 8-point cost for Run 4 at the stabilization-inflated rate). Instrument run margin: 2 remaining.
+- Days to foreclosure end of Day 8: 4 (LC-130 arrives Day 12).
+- The tape's core dropout in the second parametric segment arrived from outside Elena's tracking model — she had been measuring and projecting the binder stress zone's advance along the reel edge for eight days. The second parametric segment is not at the reel edge. The edge degradation and the core dropout are separate failure pathways in the tape.
+
+## 10-sixty-kilometers-east
+- winslow-generator — voltage_variance.day9: plus or minus 8 percent
+- winslow-generator — power_reserve.morning_day9: 26 percent of baseline
+- winslow-generator — power_reserve.end_of_day9: 24 percent of baseline
+- winslow-station — days_to_foreclosure.end_of_day9: 3 days days
+- verification-protocol — instrument_run_day9: false
+- verification-protocol — instrument_run_margin.end_of_day9: 2 runs
+- verification-protocol — per_run_cost_with_stabilization.at_8pct_variance: approximately 11 to 12 percent of power reserve
+- lars-anomalous-reading — duration_precise: 47 seconds (center value of 46-48 second range; limited by 2-second logging resolution)
+- lars-anomalous-reading — frequency: 432.275 MHz (UHF secondary background logger channel)
+- lars-anomalous-reading — timestamp_local_june1: approximately 2208 local (two-minute window centered on 2208)
+- lars-anomalous-reading — timing_offset_winslow: approximately 14 minutes before Winslow detection (22:21:52); precise: 13 minutes 52 seconds
+- lars-anomalous-reading — formal_log_status_day9: unresolved instrument artifact; attribution: possible RFI from Mather maintenance cycle; no equipment fault on diagnostics
+- lars-anomalous-reading — geometry_bearing_consistency: consistent — Mather 60 km east on bearing consistent with Elena's monitored sky region on June 1; 14-minute offset consistent with directed signal from common source; not independently verified
+- lars-anomalous-reading — accessibility_after_day9_lie: inaccessible without disclosure — Elena told Lars it was probably RFI on Day 9 SSB contact
+- lars-engstrom — ssb_contact_day9_start: 1354 local time
+- lars-engstrom — ssb_contact_day9_end: 1421 local time
+- lars-engstrom — told_rfi_by_elena_day9: true — Elena said 'I had something similar here. I think you're right about RFI.' at end of Day 9 SSB contact; this is the only direct lie Elena tells in the novel
+- analysis-notebook — mather_corroboration_entry_day: 9 story-day
+- analysis-notebook — mather_entry_final_notation: Status: inaccessible without disclosure
+- elena-hartmann — first_lie_told: Day 9 SSB contact with Lars Engström; told him her anomalous reading was 'probably RFI'; first and only direct lie in the novel
+- Day 9 (Ch10): Generator voltage variance has widened to +/-8% (from +/-7% after the Day 7 fault). Each remaining protocol run now requires a 15-minute stabilization procedure costing approximately 3-4% power reserve above the baseline 8-point run cost — approximately 11-12% total per run. Power reserve: 26% at Day 9 morning (30% after Run 4 minus overnight passive draw); approximately 24% by end of Day 9 (no protocol run). Days to foreclosure: 3. Instrument run margin: 2 (unchanged).
+- Lars Engström's anomalous reading — precise parameters established Day 9 SSB contact (1354-1421 local): duration 47 seconds (center of 46-48 second range; 2-second logging resolution is the limiting factor), frequency 432.275 MHz (UHF secondary background logger, passive reference channel running continuously), timestamp approximately 2208 local June 1 (two-minute window centered on 2208). These parameters are CANONICAL and must not vary in any later chapter.
+- The timing offset between Mather's detection (approximately 2208) and Winslow's detection (22:21:52) is approximately 13 minutes 52 seconds — referred to throughout the novel as approximately 14 minutes. Mather is 60 km east of Winslow on a bearing consistent with Elena's monitored sky region on June 1. The geometry is consistent with a directed signal from a common source received first at the more easterly station, but NOT independently verified (Elena has not seen Lars's raw log trace or antenna geometry data).
+- Elena's lie (first and only direct lie in the novel): on Day 9 at approximately 1415 local during the SSB contact with Lars Engström, after he gave her the precise Mather Station parameters, Elena said: 'I had something similar here. I think you're right about RFI.' Lars responded: 'Good to know it's not just us. Strange month.' He accepted the statement without question. The lie renders the Mather corroboration inaccessible — calling back to request the raw log trace would require explaining the discrepancy, which would require disclosing nine days of withholding.
+- Elena's analysis notebook now contains a new entry (Day 9, the page after the Run 4 entry) recording Lars's parameters: Mather Station (L. Engström), 47s event, 432.275 MHz, UHF secondary passive background logger, timestamp approx. 2208 local June 1, T-14 min relative to Winslow detection. The entry includes geometry notes and ends with the notation 'Status: inaccessible without disclosure.' The contact log page from the Day 9 Lars contact is folded and stored in the back cover of Elena's fieldwork notebook behind the housing inspection card.
+- Day 9: Elena checked the field reference binder's March setup notes and confirmed the bearing from Winslow to the monitored sky region on June 1 is consistent with the direction of Mather Station (60 km east). She cannot complete the full geometry calculation without Lars's raw log trace and antenna geometry data.
+- Day 9: Maintenance log voltage variance column has approximately 3-4 lines remaining before it runs out; Elena will continue in the margin. The column has nine entries (one per day since Day 1), showing pre-fault values of 2-3%, a step change at Day 7 fault, and a slow upward drift since.
+
+## 11-the-physical-record
+- station-camera — type: 35mm SLR
+- station-camera — location: field documentation kit, second shelf of equipment building
+- station-camera — lens: 50mm
+- station-camera — cold_condition: aperture ring stiffened; winding lever increased resistance from thickened lubricant; mechanism functional at reduced tolerance
+- roll-f — exposures_before_session: 18 frames
+- roll-f — frames_used_day10: 12 frames
+- roll-f — exposures_remaining_after_day10: 6 frames
+- roll-f — developing_location: McMurdo; no darkroom at Winslow; film will go to McMurdo for development when team arrives Day 12
+- signal-printout — column_count: 14 columns
+- signal-printout — row_count: 23 rows
+- signal-printout — col3_timestamp.status: partially illegible from Day 10 forward; row 4 partially degraded (char 6 absent); row 7 approximately 50% legible (not recoverable); row 12 blank (ink absent)
+- signal-printout — col7_calref.status: partially degraded from Day 10 forward; row 2 partially degraded (noise floor and 2 additional params interrupted); row 9 extensively degraded (values not recoverable)
+- signal-printout — signal_params.status: intact; columns 1, 2, 4-6, 8-14 all fully legible in all 23 rows as of Day 10
+- signal-printout — chain_of_custody_timestamp.status: partially illegible from Day 10; printout cannot independently verify time-of-reception without antenna log and station timekeeping records
+- signal-tape — dropout.visual_estimate_day10: 18 seconds
+- signal-tape — dropout.progression: 5s confirmed Day 4; 8s visual Days 6-7; 12s confirmed Day 8 (Run 4); 18s visual Day 10; rate accelerating (3s, 4s, 6s per successive 2-day interval)
+- signal-tape — dropout.working_rate_day10: 3 seconds per day
+- signal-tape — days_to_core_signature_threat: 2 to 3 days (at working rate of 3 seconds per day, from Day 10 estimate)
+- winslow-generator — power_reserve.day10_morning: 22 percent
+- winslow-generator — power_reserve.day10_close: 20 percent
+- verification-protocol — instrument_run_margin.after_day10: 2 runs
+- verification-protocol — days_to_foreclosure.day10: 2 days
+- Printout (signal-printout) damage as of Day 10: Column 3 (timestamp column) — row 4 partially degraded (first 2 chars intact, chars 3-5 fractured/inferrable, char 6 absent); row 7 approximately 50% legible (remaining characters not recoverable); row 12 completely blank (ink absent). Column 7 (calibration reference) — row 2 partially degraded (reference oscillator and one additional param legible; noise floor and two additional params interrupted); row 9 extensively degraded (multi-directional fracturing, values not recoverable). Columns 1, 2, 4-6, 8-14 fully intact in all 23 rows.
+- From Day 10 forward, the printout cannot independently verify the signal's time-of-reception (timestamp column) without corroboration from the antenna log and station timekeeping records in the equipment building. The printout's chain-of-custody documentation is compromised; the signal's measured parameters (frequency, amplitude, phase, polarization, signal-to-noise, seven derived parameter columns) remain intact.
+- Station camera (station-camera): 35mm SLR, 50mm lens, located in field documentation kit on the second shelf of the equipment building. Introduced Day 10. Prior uses: March setup week (antenna alignment, receiver rack), April (exterior flashing corrosion). Cold condition: aperture ring stiffened, winding lever has increased resistance from thickened lubricant.
+- Roll F (roll-f): 35mm film roll. Before Day 10 session: 18 exposures remaining. Elena used 12 frames on Day 10 to photograph the printout (full-width overlapping pass of all 14 columns, plus 2 close-up frames each for column 3 and column 7 damaged areas). 6 exposures remaining after Day 10 session. The roll cannot be developed at Winslow (no darkroom); it will go to McMurdo for development when the team arrives on Day 12.
+- Tape (signal-tape) visual dropout estimate Day 10: 18 seconds (measured twice by housing timing marks at two standard flashlight angles; both within half a mark). This is up from 12 seconds confirmed on Run 4 (Day 8). The dropout progression: 5s confirmed Day 4, 8s estimated Days 6-7, 12s confirmed Day 8, 18s estimated Day 10. Rate appears to be accelerating (gaps of 3s, 4s, 6s per successive 2-day interval). Elena uses 3 seconds/day as working rate (most conservative justifiable assumption from most recent interval). At this rate the failure zone reaches the core signature region boundary in approximately 2-3 days. Run 5 (Day 11) will confirm the instrument figure; the outline specifies Run 5 will confirm 20 seconds (2s discrepancy from visual estimate is realistic and not an error).
+- Power reserve end of Day 10: approximately 20% (down from ~22% at Day 10 morning, from ~24% end of Day 9 — passive draw rate continuing). Two instrument runs remain, scheduled for Days 11 and 12. Days to foreclosure as of end of Day 10: 2.
+
+## 12-one-remaining
+- protocol-run-5 — day: 11 story day
+- protocol-run-5 — reel_edge_interval: approximately 9 seconds
+- protocol-run-5 — transition_gap_dropout: 20 seconds
+- protocol-run-5 — core_signature_status: intact — first parametric segment primary anomalous parameters confirmed across 5 runs
+- protocol-run-5 — signal_duration_confirmed: 47 seconds
+- protocol-run-5 — power_reserve_post_run: approximately 13 percent
+- winslow-generator — power_reserve.after_run5: approximately 13 percent
+- winslow-generator — voltage_variance.day11: plus or minus 8 percent
+- winslow-generator — overnight_excursions.day10_to_11: 5 minor voltage excursions; longest at 03:17 (84 seconds before regulator corrected)
+- verification-protocol — instrument_run_margin.after_run5: 1 run
+- signal-tape — transition_gap_dropout.run5: 20 seconds
+- signal-tape — dropout_growth_rate: approximately 2.7 seconds per day
+- signal-tape — core_signature.status_day11: intact — confirmed on Run 5; projected to survive through Day 12 morning at current growth rate
+- signal-tape — days_until_core_signature_loss.from_day11: approximately 4 to 5 days (at 2.7 seconds per day growth rate)
+- evidence-summary-day11 — written_by: Elena Hartmann
+- evidence-summary-day11 — location: analysis notebook, page following Day 10 examination record
+- evidence-summary-day11 — mather_corroboration_status_recorded: Not independently verified; requires follow-up
+- evidence-summary-day11 — claim_character: provisional — second parametric segment unrecoverable; three of five alternative classifications formally open
+- analysis-notebook — contents_day11: initial detection entry, run logs 1–5, housing inspection cards, Run 4 honest accounting, Mather corroboration entry, Day 10 examination record, Day 11 evidence summary
+- analysis-notebook — storage_location_day11: equipment cabinet in corridor between galley and equipment building entrance, alongside wrapped printout roll and protocol folder
+- Chapter 12 (Day 11): Protocol Run 5 measures the transition gap dropout at 20 seconds precisely — up from 12 seconds on Run 4 (Day 8), a growth of 8 seconds in 3 days. Growth rate established at approximately 2.7 seconds per day from these two instrument data points (Days 8 and 11).
+- The reel-edge opening interval on Run 5 is approximately 9 seconds (slightly worse than the 8-second estimates from Days 6 and 7). The first parametric segment plays clean on Run 5; all primary anomalous parameters confirmed consistent with Runs 1–4.
+- At the 2.7 seconds/day growth rate, the failure zone is projected to reach the core signature region boundary in approximately 4–5 days from Day 11. The core signature will survive through Day 12 morning (Run 6).
+- Power reserve after Run 5: approximately 13 percent. Instrument run margin after Run 5: 1 remaining.
+- Elena writes the complete evidence summary in her analysis notebook on Day 11 morning, following Run 5. The summary is written in the register of a paper claim, not in log notation. It is the most formal document produced during the investigation and becomes the master statement of what the eleven-day investigation established.
+- The evidence summary formally records the Mather Station corroboration entry with the notation 'Not independently verified; requires follow-up' — the first time Elena has written Lars Engström's data into the formal chain of evidence rather than into a separate notebook entry. The document Walczak will read will contain this notation.
+- The canonical text of the Day 11 evidence summary is registered as record 'evidence-summary-day11'. Any later chapter that re-quotes this document must read_record first and reproduce the text verbatim.
+- The analysis notebook's contents as of Day 11 close: initial detection entry, run logs 1–5, housing inspection cards, Run 4 honest accounting entry, Mather corroboration entry (ending 'Status: inaccessible without disclosure'), Day 10 printout examination record, Day 11 evidence summary. Storage: equipment cabinet in corridor between galley and equipment building entrance.
+- The main voltage variance column in the fault log is full; Elena has been writing excursion entries in the margin column since Day 9. Five excursions logged overnight Day 10–11; the longest was at 03:17 and held for 84 seconds before the regulator corrected.
+
+## 13-fourteen-hours
+- lc-130 — departure_time_day12: 0700 local McMurdo
+- lc-130 — arrival_time_winslow_day12: approximately 1300 local
+- lc-130 — passenger_count: 6 passengers
+- winslow-generator — power_reserve.day11_evening: 11 percent
+- winslow-generator — voltage_variance.day11_afternoon: 7.9 percent
+- signal-tape — storage_location.day11_night: main hab equipment cabinet top shelf (transferred from receiver hut rack)
+- signal-tape — first_removal_from_receiver_hut: Day 11 evening — first time tape left the receiver hut rack since Run 1 on Day 1
+- verification-protocol — run6_scheduled_time: Day 12, 0600
+- face-down-page — location.day11_night: galley table corner, face-down
+- face-down-page — content_visible_to_reader: false
+- face-down-page — approximate_lines_written: 6 lines
+- auxiliary-space-heater — location.day11_night: floor below main hab equipment cabinet, element aimed at lower vent gap, minimum setting
+- Chapter 13 (Day 11, evening): McMurdo confirmed LC-130 departure 0700 Day 12, estimated arrival Winslow approximately 1300. This is the canonical arrival time for all subsequent chapters — do not alter.
+- Chapter 13: Fault log afternoon variance readings on Day 11: 7.3% at 1200, 7.6% at 1400, 7.9% at 1600 and 1730 — morning stabilization gain (to 5%) had eroded back to 7.9% by evening.
+- Chapter 13: Power gauge in equipment building at approximately 1930 Day 11 = 11%. Overnight passive draw (plus auxiliary heater) will bring it to approximately 8-10% by 0600 Day 12.
+- Chapter 13: Elena carried the tape housing from the receiver hut rack through the covered walkway (31 paces) to the main hab equipment cabinet top shelf — the first time in 11 days the tape had left the receiver hut. The auxiliary space heater (from supply crate) was positioned below the cabinet at minimum setting.
+- Chapter 13: Elena wrote a single addition to the analysis notebook: tape transfer and Run 6 scheduled at 0600 Day 12. The evidence summary itself was unchanged.
+- Chapter 13: Elena wrote approximately six lines on a sheet of plain blank stock paper (not the notebook, not the log pad), stopped mid-sentence, and set the page face-down on the corner of the galley table. The content is not visible to the reader and is deliberately ambiguous. The page remains on the galley table at chapter end — not destroyed, not filed.
+- Chapter 13: Run 6 deferral entry written in operations log in proper protocol position: Run 6 deferred from Day 11 to Day 12 0600 because power reserve insufficient for two runs within 14-hour window while maintaining 2% life-support threshold before team arrival.
+- Chapter 13: At Day 11 close — receiver hut wall thermometer: minus 12.5 Celsius. Equipment cabinet (main hab) now holds: signal tape housing (top shelf, auxiliary heater below), printout roll, protocol folder, analysis notebook (lower shelf).
+
+## 14-the-last-run
+- protocol-run-6 — day: 12 story day
+- protocol-run-6 — time: 0640
+- protocol-run-6 — transition_gap_dropout: 23 seconds
+- protocol-run-6 — reel_edge_interval: approximately 9–10 seconds
+- protocol-run-6 — core_signature_status: intact — first parametric segment all primary anomalous parameters confirmed; second parametric segment absent as of Run 4
+- protocol-run-6 — calibration_tail_status: intact
+- protocol-run-6 — signal_duration_confirmed: 47 seconds
+- protocol-run-6 — power_reserve_post_run: approximately 3 percent
+- verification-protocol — instrument_run_margin.after_run6: 0 runs
+- verification-protocol — run6_completion_time: Day 12, 0640
+- verification-protocol — all_runs_complete: true
+- winslow-generator — voltage_variance.day12_coldstart: plus or minus 9 percent
+- winslow-generator — overnight_excursions.day11_to_12: 6 excursions; two outliers at 0415–0426 (61s) and 0440–0449 (49s) — longest since first week
+- winslow-generator — voltage_variance.day12_post_stabilization: plus or minus 5.5 percent
+- winslow-generator — stabilization_time.day12: 22 minutes
+- winslow-generator — power_reserve.day12_post_stabilization: approximately 7 percent
+- winslow-generator — power_reserve.after_run6: approximately 3 percent
+- receiver-hut — thermometer.day12_morning: minus 13.1 degrees Celsius
+- face-down-page — status.day12: folded once along horizontal center; inserted in analysis notebook between last written entry and back cover; not destroyed
+- face-down-page — content: not disclosed to reader; six lines stopping mid-sentence; register between instrument log and evidence summary
+- analysis-notebook — contents.day12: Run logs 1–6, housing inspection cards, Run 4 honest accounting, Mather corroboration entry, Day 10 examination record, Day 11 evidence summary, Run 6 notebook entry (final), face-down page inserted between last entry and back cover
+- analysis-notebook — location.day12: main hab equipment cabinet top shelf, with evidence package
+- Protocol Run 6 completed Day 12 at 0640: 23-second transition gap dropout (up from 20 seconds in Run 5; rate ~2.7s/day confirmed); reel-edge opening interval approximately 9–10 seconds; first parametric segment confirmed intact with all primary anomalous parameters; second parametric segment absent as of Run 4; calibration tail intact; 47 seconds total. Instrument margin after Run 6: 0 — no further runs possible. This is the final measurement; all subsequent chapter references to the tape or instrument verification state must use these figures.
+- Power reserve after Run 6: approximately 3 percent — at life-support threshold. Generator overnight fault log Day 11–12: 6 excursions (outliers at 0415–0426, 61 seconds; 0440–0449, 49 seconds — worst since first week). Cold-start variance Day 12: plus or minus 9 percent (worst of twelve mornings). Post-stabilization variance: plus or minus 5.5 percent (stabilization took 22 minutes vs. the usual 15). Power gauge post-stabilization: approximately 7 percent.
+- The face-down page (written Day 11 evening — six lines stopping mid-sentence, in a register between log and evidence summary) was read, folded once along its horizontal center, and inserted into the analysis notebook between the final Run 6 entry and the back cover on Day 12 morning. It was not destroyed. Its content is not disclosed to the reader and must remain undisclosed.
+- Evidence package as of Day 12 morning, assembled on main hab equipment cabinet top shelf: tape housing (housing indicator in range), wrapped printout roll, protocol folder (Runs 1–6 complete), analysis notebook (containing face-down page). Supporting documentation: 12 frames of exposed 35mm film on Roll F in documentation kit (lower shelf); antenna log and station timekeeping records in equipment building on their standard shelf.
+- Elena picks up the SSB radio handset at approximately 0700 Day 12 and presses the warm-up control; the red indicator shifts from standby to active and the carrier rises in the channel. The chapter ends before she transmits. Who she is calling and what she says is unknown to the reader at the end of Ch14.
+
+## 15-the-plane
+- piotr-walczak — location: Winslow Station (arrived Day 12, approximately 1300)
+- piotr-walczak — hat.physical_description: cold-weather issue hat with fraying left brim (not replaced since second winterover)
+- winslow-generator — power_reserve.day12_team_arrival: approximately 3 percent — just above minimum safe line
+- evidence-package — contents: tape housing, wrapped printout roll, protocol folder (Runs 1–6 complete), analysis notebook (containing folded page between last entry and back cover)
+- evidence-package — transfer_location: equipment building work table, Winslow Station
+- evidence-package — transfer_recipient: Piotr Walczak
+- evidence-package — transfer_day: Day 12, approximately 1315
+- evidence-package — notebook_opened_to: first entry — Protocol Run 1, Day 1, 22:49
+- elena-hartmann — alone_at_station: false
+- winslow-station — current_occupancy.day12: 6 people
+- Ch15 (Day 12, ~1315): Elena brings Walczak to the equipment building in the first private moment after the team's arrival. The evidence package (tape housing, wrapped printout roll, protocol folder Runs 1–6, analysis notebook with folded page sealed inside) is already laid out on the work table. She opens the notebook to the first entry (Protocol Run 1, Day 1, 22:49) and says 'I need you to read this.' Walczak sits and begins to read. The chapter ends before he looks up.
+- Ch15: The transfer of the evidence package to Walczak is the novel's culminating act. The notebook contains: the detection entry, Runs 1–6 logs, the housing inspection cards, the Run 4 honest accounting, the Mather corroboration entry (Lars Engström, 47-second event, T-14 min, UHF secondary band, filed as unresolved artifact — 'not independently verified; requires follow-up'), the evidence summary (what can be claimed; what cannot), and the folded face-down page between the last written entry and the back cover.
+- Ch15: Walczak's return-to-station practice: he reads the station from the outside before he looks at any person (antenna array → equipment building → receiver hut → hab, left to right). He does this on every arrival; Elena has seen it twice before. His first words to Elena on the strip are always about the machine: 'How's the generator?' This is the professional vocabulary of someone who knows her and knows that asking about the machine is how he asks if everything is okay.
+- Ch15: The Mather corroboration (Thread 2) is deliberately unresolved: Lars Engström's reading (47 seconds, UHF secondary band, received 14 minutes before Winslow) is documented in the evidence notebook's corroboration section, but whether Walczak ever contacts Lars, whether the Mather instrument logs are ever formally examined, or what the independent detection ultimately means for the claim's credibility — all of this is past the novel's close.
+- Ch15: At least one thread remains deliberately unresolved per continuity.md §11: the signal's fate in the world after the transfer to Walczak — peer review outcome, institutional handling, Mather corroboration examination, second parametric segment reconstruction — is past the chapter's close and past the novel's reach. The book ends at the moment of transfer, not at the moment of reception.
+- Ch15: Final sensory note — as Walczak reads, the generator runs its note through the wall of the equipment building, the same note it held for twelve days under every protocol run, every fault log entry, every calculation. The generator is the novel's last image.
+
+## canon
+- The signal at Winslow Station lasted exactly forty-seven seconds and was received on night three of polar darkness (Chapter 1 / Day 1). It will not repeat. There is no second transmission.
+- Dr. Elena Hartmann is sixty-four years old in June 1991, with thirty years of astrobiological career. Her professional reputation — 'if Hartmann calls it, it's real' — is the precise formulation used by colleagues to name her standard of verification rigor.
+- The sole copies of the signal data are a magnetic tape and a paper printout. No digital duplicate exists. No backup instrument can replicate the verification protocol. The signal analyzer is proprietary and the only device at Winslow capable of running the protocol.
+- The station generator has a faulty voltage regulator causing intermittent brownouts. It is the limiting resource governing power reserve, instrument runs, tape stability, and heating. The fuel supply is sufficient to Day 12 but the electrical margin is shrinking.
+- The Day 6–7 mid-winter communications gate (SSB net to Mather Station + relay uplink window) is the book's structural hinge. After it passes, no equivalent transmission channel exists before the LC-130 arrives on Day 12. Sending the data up this channel forecloses keeping it private; not sending forecloses sending before the team lands.
+- Every chapter must worsen at least one named measurable quantity: power reserve, tape integrity, instrument run margin, hours-to-gate, or days-to-foreclosure. A chapter that does not advance the depletion is a structural failure.
+- The signal's content is never described to the reader — not the message, not what it encodes. Shape, duration, and the parameters making it unambiguous may be referenced. This constraint is absolute and non-negotiable.
+- The decision must remain live — not retro-dated, not pre-settled, not implied to have been made on night one — until Elena acts. Any passage implying the deliberation was never real is a critical brief violation.
+- Extra time (weather delays, equipment interruptions, schedule changes) must tighten the screw on Elena's situation — more cold exposure for the tape, more generator cycles burned, more risk a third party detects something — never relieve pressure.
+- The final chapter ends with the LC-130's arrival and Elena's first contact with her returning team on Day 12. There is no coda beyond that day. At least one thread must remain deliberately unresolved on the final page.
+- Elena is physically alone at Winslow Station for the entire story except the final chapter (Day 12). All other human contact is via HF single-sideband radio only — no internet, no email, no real-time digital uplink.

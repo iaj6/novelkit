@@ -1,0 +1,380 @@
+{
+  "version": 2,
+  "completed": [
+    "researcher",
+    "architect",
+    "plotter",
+    "threads",
+    "calibrate-drafter:iter-1-sample",
+    "calibrate-drafter:iter-1-grade",
+    "calibrate-drafter:complete",
+    "drafter:01-verrill-street",
+    "drafter:02-the-stove",
+    "drafter:03-the-third-step",
+    "drafter:04-the-latch",
+    "drafter:05-chain-of-title",
+    "drafter:06-the-flue",
+    "drafter:07-manner-of-death",
+    "drafter:08-the-oil-lamp",
+    "drafter:09-before-the-scanner",
+    "drafter:10-footfall",
+    "drafter:11-no-visitors",
+    "drafter:12-what-she-kept",
+    "drafter:13-the-account-as-it-stood",
+    "drafter:14-near-quarter-to-ten",
+    "drafter:15-the-probate-record",
+    "drafter:16-his-name",
+    "drafter:17-a-deposition-in-elkins",
+    "drafter:18-the-sound-of-the-knocking",
+    "drafter:19-the-back-room",
+    "drafter:20-the-account-book",
+    "drafter:21-the-final-entry",
+    "drafter:22-what-she-wrote",
+    "drafter:23-the-two-records",
+    "drafter:24-the-door-open",
+    "editor-continuity:01-verrill-street",
+    "editor-continuity:02-the-stove",
+    "editor-continuity:03-the-third-step",
+    "editor-continuity:04-the-latch",
+    "editor-continuity:05-chain-of-title",
+    "editor-continuity:06-the-flue",
+    "editor-continuity:07-manner-of-death",
+    "editor-continuity:08-the-oil-lamp",
+    "editor-continuity:09-before-the-scanner",
+    "editor-continuity:10-footfall",
+    "editor-continuity:11-no-visitors",
+    "editor-continuity:12-what-she-kept",
+    "editor-continuity:13-the-account-as-it-stood",
+    "editor-continuity:14-near-quarter-to-ten",
+    "editor-continuity:15-the-probate-record",
+    "editor-continuity:16-his-name",
+    "editor-continuity:17-a-deposition-in-elkins",
+    "editor-continuity:18-the-sound-of-the-knocking",
+    "editor-continuity:19-the-back-room",
+    "editor-continuity:20-the-account-book",
+    "editor-continuity:21-the-final-entry",
+    "editor-continuity:22-what-she-wrote",
+    "editor-continuity:23-the-two-records",
+    "editor-continuity:24-the-door-open",
+    "editor-compression:01-verrill-street",
+    "editor-compression:02-the-stove",
+    "editor-compression:03-the-third-step",
+    "editor-compression:04-the-latch",
+    "editor-compression:05-chain-of-title",
+    "editor-compression:06-the-flue",
+    "editor-compression:07-manner-of-death",
+    "editor-compression:08-the-oil-lamp",
+    "editor-compression:09-before-the-scanner",
+    "editor-compression:10-footfall",
+    "editor-compression:11-no-visitors",
+    "editor-compression:12-what-she-kept",
+    "editor-compression:13-the-account-as-it-stood",
+    "editor-compression:14-near-quarter-to-ten",
+    "editor-compression:15-the-probate-record",
+    "editor-compression:16-his-name",
+    "editor-compression:17-a-deposition-in-elkins",
+    "editor-compression:18-the-sound-of-the-knocking",
+    "editor-compression:19-the-back-room",
+    "editor-compression:20-the-account-book",
+    "editor-compression:21-the-final-entry",
+    "editor-compression:22-what-she-wrote",
+    "editor-compression:23-the-two-records",
+    "editor-compression:24-the-door-open",
+    "editor-pacing:macro",
+    "editor-pacing:01-verrill-street",
+    "editor-pacing:02-the-stove",
+    "editor-pacing:03-the-third-step",
+    "editor-pacing:04-the-latch",
+    "editor-pacing:05-chain-of-title",
+    "editor-pacing:06-the-flue",
+    "editor-pacing:07-manner-of-death",
+    "editor-pacing:08-the-oil-lamp",
+    "editor-pacing:09-before-the-scanner",
+    "editor-pacing:10-footfall",
+    "editor-pacing:11-no-visitors",
+    "editor-pacing:12-what-she-kept",
+    "editor-pacing:13-the-account-as-it-stood",
+    "editor-pacing:14-near-quarter-to-ten",
+    "editor-pacing:15-the-probate-record",
+    "editor-pacing:16-his-name",
+    "editor-pacing:17-a-deposition-in-elkins",
+    "editor-pacing:18-the-sound-of-the-knocking",
+    "editor-pacing:19-the-back-room",
+    "editor-pacing:20-the-account-book",
+    "editor-pacing:21-the-final-entry",
+    "editor-pacing:22-what-she-wrote",
+    "editor-pacing:23-the-two-records",
+    "editor-pacing:24-the-door-open",
+    "editor-voice:01-verrill-street",
+    "editor-voice:02-the-stove",
+    "editor-voice:03-the-third-step",
+    "editor-voice:04-the-latch",
+    "editor-voice:05-chain-of-title",
+    "editor-voice:06-the-flue",
+    "editor-voice:07-manner-of-death",
+    "editor-voice:08-the-oil-lamp",
+    "editor-voice:09-before-the-scanner",
+    "editor-voice:10-footfall",
+    "editor-voice:11-no-visitors",
+    "editor-voice:13-the-account-as-it-stood",
+    "editor-voice:14-near-quarter-to-ten",
+    "editor-voice:15-the-probate-record",
+    "editor-voice:16-his-name",
+    "editor-voice:17-a-deposition-in-elkins",
+    "editor-voice:18-the-sound-of-the-knocking",
+    "editor-voice:19-the-back-room",
+    "editor-voice:20-the-account-book",
+    "editor-voice:21-the-final-entry",
+    "editor-voice:22-what-she-wrote",
+    "editor-voice:23-the-two-records",
+    "editor-voice:24-the-door-open",
+    "reader:act-1",
+    "reader:act-2",
+    "reader:act-3",
+    "reader:synthesis",
+    "continuity-fact-audit",
+    "editor-voice:12-what-she-kept"
+  ],
+  "entries": {
+    "drafter:01-verrill-street": {
+      "at": "2026-06-19T22:08:29.956Z",
+      "artifacts": [
+        "draft/01-verrill-street.md"
+      ],
+      "hashes": {
+        "draft/01-verrill-street.md": "2111613972151f5403c9a9d99532b6e140529d73d3728c92f865cc7bee11fe49"
+      },
+      "eventOffset": 124
+    },
+    "drafter:02-the-stove": {
+      "at": "2026-06-19T22:26:15.674Z",
+      "artifacts": [
+        "draft/02-the-stove.md"
+      ],
+      "hashes": {
+        "draft/02-the-stove.md": "2cb5e8e2b0267307079b82a5336c1c5d6c7f4fc5349e6c0fc4b4b3c16f01488f"
+      },
+      "eventOffset": 169
+    },
+    "drafter:03-the-third-step": {
+      "at": "2026-06-19T22:37:44.441Z",
+      "artifacts": [
+        "draft/03-the-third-step.md"
+      ],
+      "hashes": {
+        "draft/03-the-third-step.md": "8373f722d6761d4e4da8e8abe75503a0f8d7424e14e5bcacc7a10f2634035bbd"
+      },
+      "eventOffset": 209
+    },
+    "drafter:04-the-latch": {
+      "at": "2026-06-19T22:47:42.719Z",
+      "artifacts": [
+        "draft/04-the-latch.md"
+      ],
+      "hashes": {
+        "draft/04-the-latch.md": "4a5dbec6ee416a2288f79d834e9ac7ed1f426d83805d825837dd0a082a844baa"
+      },
+      "eventOffset": 231
+    },
+    "drafter:05-chain-of-title": {
+      "at": "2026-06-19T22:59:09.290Z",
+      "artifacts": [
+        "draft/05-chain-of-title.md"
+      ],
+      "hashes": {
+        "draft/05-chain-of-title.md": "f70c0ff0d02d3ecff75287fda2a2a4d15cf8dace728366b82d0cd8a026fa6da7"
+      },
+      "eventOffset": 281
+    },
+    "drafter:06-the-flue": {
+      "at": "2026-06-19T23:11:53.739Z",
+      "artifacts": [
+        "draft/06-the-flue.md"
+      ],
+      "hashes": {
+        "draft/06-the-flue.md": "83820bcd6df228931028d782b915c8cb9ab82df714aee5520aa52dbf9137c4b9"
+      },
+      "eventOffset": 295
+    },
+    "drafter:07-manner-of-death": {
+      "at": "2026-06-19T23:25:47.501Z",
+      "artifacts": [
+        "draft/07-manner-of-death.md"
+      ],
+      "hashes": {
+        "draft/07-manner-of-death.md": "86486e4082d66580aa16484e948101d1ee64fe1637ae4b7c6049260cd9e910de"
+      },
+      "eventOffset": 343
+    },
+    "drafter:08-the-oil-lamp": {
+      "at": "2026-06-19T23:38:43.587Z",
+      "artifacts": [
+        "draft/08-the-oil-lamp.md"
+      ],
+      "hashes": {
+        "draft/08-the-oil-lamp.md": "4f4af8980c537960f7ab1590633e30f7af9a9e18604b9d01fc178ffdc6364597"
+      },
+      "eventOffset": 372
+    },
+    "drafter:09-before-the-scanner": {
+      "at": "2026-06-19T23:49:04.411Z",
+      "artifacts": [
+        "draft/09-before-the-scanner.md"
+      ],
+      "hashes": {
+        "draft/09-before-the-scanner.md": "7e2992b4cf159bb21ff3f9d81d0fc971a0f366987d3fc000e783e7530da61a9c"
+      },
+      "eventOffset": 412
+    },
+    "drafter:10-footfall": {
+      "at": "2026-06-20T00:07:12.361Z",
+      "artifacts": [
+        "draft/10-footfall.md"
+      ],
+      "hashes": {
+        "draft/10-footfall.md": "0acacec9ce2fab0a9a06b7d4cb436caa3053c87d5a8f9a5e6aa02262fafd0ca9"
+      },
+      "eventOffset": 452
+    },
+    "drafter:11-no-visitors": {
+      "at": "2026-06-20T00:21:21.620Z",
+      "artifacts": [
+        "draft/11-no-visitors.md"
+      ],
+      "hashes": {
+        "draft/11-no-visitors.md": "2bce2834ecbc301bb4bb817a5da57b63891f16e1fac063769cbec0aaff3838ca"
+      },
+      "eventOffset": 486
+    },
+    "drafter:12-what-she-kept": {
+      "at": "2026-06-20T00:33:46.192Z",
+      "artifacts": [
+        "draft/12-what-she-kept.md"
+      ],
+      "hashes": {
+        "draft/12-what-she-kept.md": "4fd76efe11cab8f90beaeb4905a0c4b80e5d491a8fc753507df8b8f7035726b2"
+      },
+      "eventOffset": 510
+    },
+    "drafter:13-the-account-as-it-stood": {
+      "at": "2026-06-20T00:41:46.369Z",
+      "artifacts": [
+        "draft/13-the-account-as-it-stood.md"
+      ],
+      "hashes": {
+        "draft/13-the-account-as-it-stood.md": "ca29c0926922d66d02120c5bff024b9dfc3b2980285339a7d125347e49f58092"
+      },
+      "eventOffset": 531
+    },
+    "drafter:14-near-quarter-to-ten": {
+      "at": "2026-06-20T00:56:17.330Z",
+      "artifacts": [
+        "draft/14-near-quarter-to-ten.md"
+      ],
+      "hashes": {
+        "draft/14-near-quarter-to-ten.md": "efe7b1d5ddfdd068269b92d1b971456d8fb0e0d67c7296b54020035b1ac56f32"
+      },
+      "eventOffset": 556
+    },
+    "drafter:15-the-probate-record": {
+      "at": "2026-06-20T01:09:37.770Z",
+      "artifacts": [
+        "draft/15-the-probate-record.md"
+      ],
+      "hashes": {
+        "draft/15-the-probate-record.md": "9afeb46ea1bf7fa2173f94caebcd283e458afe33601d03610df2c1be49ceb2d6"
+      },
+      "eventOffset": 593
+    },
+    "drafter:16-his-name": {
+      "at": "2026-06-20T01:20:01.145Z",
+      "artifacts": [
+        "draft/16-his-name.md"
+      ],
+      "hashes": {
+        "draft/16-his-name.md": "4ad5d09b10bda5b2754e625a06386bde25b309e0cf2b51b2b4ad0c578041610e"
+      },
+      "eventOffset": 614
+    },
+    "drafter:17-a-deposition-in-elkins": {
+      "at": "2026-06-20T01:29:25.542Z",
+      "artifacts": [
+        "draft/17-a-deposition-in-elkins.md"
+      ],
+      "hashes": {
+        "draft/17-a-deposition-in-elkins.md": "60ad04e201b69e4e98ef4c45cf8198d1456aab05b161d33a3d60bc5de91a472d"
+      },
+      "eventOffset": 641
+    },
+    "drafter:18-the-sound-of-the-knocking": {
+      "at": "2026-06-20T01:52:08.908Z",
+      "artifacts": [
+        "draft/18-the-sound-of-the-knocking.md"
+      ],
+      "hashes": {
+        "draft/18-the-sound-of-the-knocking.md": "40545d42f6ab2b640835a940fcaab7e4e0833bfd2eb609808de72ccdfd214c66"
+      },
+      "eventOffset": 674
+    },
+    "drafter:19-the-back-room": {
+      "at": "2026-06-20T02:10:14.101Z",
+      "artifacts": [
+        "draft/19-the-back-room.md"
+      ],
+      "hashes": {
+        "draft/19-the-back-room.md": "d0160e2963dee765f7cfd5fb26ee6474347071ac69212c31bddfcec197bdf750"
+      },
+      "eventOffset": 711
+    },
+    "drafter:20-the-account-book": {
+      "at": "2026-06-20T02:22:14.344Z",
+      "artifacts": [
+        "draft/20-the-account-book.md"
+      ],
+      "hashes": {
+        "draft/20-the-account-book.md": "84ccb2f283e5ef6aa1a4c869d6008e5b8898fdcebcd891cb5b22013d76f18037"
+      },
+      "eventOffset": 738
+    },
+    "drafter:21-the-final-entry": {
+      "at": "2026-06-20T02:39:53.580Z",
+      "artifacts": [
+        "draft/21-the-final-entry.md"
+      ],
+      "hashes": {
+        "draft/21-the-final-entry.md": "372db2b29d28c435377cbaf81ad1b33540412b237545ac7944e15c37c5509201"
+      },
+      "eventOffset": 762
+    },
+    "drafter:22-what-she-wrote": {
+      "at": "2026-06-20T02:59:53.517Z",
+      "artifacts": [
+        "draft/22-what-she-wrote.md"
+      ],
+      "hashes": {
+        "draft/22-what-she-wrote.md": "bbb3ae68c3b409be290fecccaf98db44ddfc9656cec8cc20393be80d9f6fbbcd"
+      },
+      "eventOffset": 785
+    },
+    "drafter:23-the-two-records": {
+      "at": "2026-06-20T03:09:29.241Z",
+      "artifacts": [
+        "draft/23-the-two-records.md"
+      ],
+      "hashes": {
+        "draft/23-the-two-records.md": "3c5019c9eef9951a90681fe8b93e11ae55081c3d5d894b8d01e91ce6c20eb610"
+      },
+      "eventOffset": 817
+    },
+    "drafter:24-the-door-open": {
+      "at": "2026-06-20T03:18:58.069Z",
+      "artifacts": [
+        "draft/24-the-door-open.md"
+      ],
+      "hashes": {
+        "draft/24-the-door-open.md": "ab0f29ad7c0adbf8460b781263506a7482abe22d6d247eb5f036777ce7bb58e8"
+      },
+      "eventOffset": 840
+    }
+  }
+}

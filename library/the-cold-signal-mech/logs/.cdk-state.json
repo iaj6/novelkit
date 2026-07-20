@@ -1,0 +1,179 @@
+{
+  "version": 2,
+  "completed": [
+    "architect",
+    "plotter",
+    "threads",
+    "calibrate-drafter:iter-1-sample",
+    "calibrate-drafter:iter-1-grade",
+    "calibrate-drafter:complete",
+    "drafter:01-forty-seven-seconds",
+    "drafter:02-the-second-run",
+    "drafter:03-anomalous",
+    "drafter:04-the-inventory",
+    "drafter:05-worse-than-calculated",
+    "drafter:06-before-the-window",
+    "drafter:07-the-window",
+    "drafter:08-after",
+    "drafter:09-core-dropout",
+    "drafter:10-sixty-kilometers-east",
+    "drafter:11-the-physical-record",
+    "drafter:12-one-remaining",
+    "drafter:13-fourteen-hours",
+    "drafter:14-the-last-run",
+    "drafter:15-the-plane",
+    "continuity-fact-audit"
+  ],
+  "entries": {
+    "drafter:01-forty-seven-seconds": {
+      "at": "2026-06-25T00:06:10.988Z",
+      "artifacts": [
+        "draft/01-forty-seven-seconds.md"
+      ],
+      "hashes": {
+        "draft/01-forty-seven-seconds.md": "8133e483e958c91fd7e916de5dad10d3bfc7140857dae4f660b9df3034a0cf09"
+      },
+      "eventOffset": 132
+    },
+    "drafter:02-the-second-run": {
+      "at": "2026-06-25T00:20:54.340Z",
+      "artifacts": [
+        "draft/02-the-second-run.md"
+      ],
+      "hashes": {
+        "draft/02-the-second-run.md": "a602abb0fcc3e745a4f7c203f1268370adcdc6e0dbd84fc97b0f8677586aef11"
+      },
+      "eventOffset": 168
+    },
+    "drafter:03-anomalous": {
+      "at": "2026-06-25T00:34:44.326Z",
+      "artifacts": [
+        "draft/03-anomalous.md"
+      ],
+      "hashes": {
+        "draft/03-anomalous.md": "4e3d7330aad8692843e7e26b6d05427428d90199d0ae46f669bbfd053c9ab3c2"
+      },
+      "eventOffset": 205
+    },
+    "drafter:04-the-inventory": {
+      "at": "2026-06-25T00:53:50.768Z",
+      "artifacts": [
+        "draft/04-the-inventory.md"
+      ],
+      "hashes": {
+        "draft/04-the-inventory.md": "cc5ed0e95c58562eb8c4deb8b9860709af4c985830d23a2d24361544e6ac869d"
+      },
+      "eventOffset": 242
+    },
+    "drafter:05-worse-than-calculated": {
+      "at": "2026-06-25T01:04:26.716Z",
+      "artifacts": [
+        "draft/05-worse-than-calculated.md"
+      ],
+      "hashes": {
+        "draft/05-worse-than-calculated.md": "df9376e9197231a5016466c1b6fbb568d27484366dc35fdd4428f4d7436ca1fe"
+      },
+      "eventOffset": 277
+    },
+    "drafter:06-before-the-window": {
+      "at": "2026-06-25T01:14:23.982Z",
+      "artifacts": [
+        "draft/06-before-the-window.md"
+      ],
+      "hashes": {
+        "draft/06-before-the-window.md": "69807389686f51c9691f572962aaefeeb182bd0a4f5515a3387ed86cb9ee0e94"
+      },
+      "eventOffset": 305
+    },
+    "drafter:07-the-window": {
+      "at": "2026-06-25T01:44:40.008Z",
+      "artifacts": [
+        "draft/07-the-window.md"
+      ],
+      "hashes": {
+        "draft/07-the-window.md": "5e8cf30e343307046ac0b7e82015f8f5935116f9f7af7332af901c63001df3a3"
+      },
+      "eventOffset": 321
+    },
+    "drafter:08-after": {
+      "at": "2026-06-25T01:53:16.064Z",
+      "artifacts": [
+        "draft/08-after.md"
+      ],
+      "hashes": {
+        "draft/08-after.md": "f19324856e7736d03ea727a4fb7d0c374960f59a0553d5a77938026a4e3c7898"
+      },
+      "eventOffset": 355
+    },
+    "drafter:09-core-dropout": {
+      "at": "2026-06-25T02:03:47.438Z",
+      "artifacts": [
+        "draft/09-core-dropout.md"
+      ],
+      "hashes": {
+        "draft/09-core-dropout.md": "4b1d4f65b15542cba5e5e638a887199b87f9381e57f803994980033f1a2dc25f"
+      },
+      "eventOffset": 394
+    },
+    "drafter:10-sixty-kilometers-east": {
+      "at": "2026-06-25T02:21:33.771Z",
+      "artifacts": [
+        "draft/10-sixty-kilometers-east.md"
+      ],
+      "hashes": {
+        "draft/10-sixty-kilometers-east.md": "5f6c77b3f79430f21bf04e3fd069b0f1237695fdc6e343b2ca0b40112b7aad1a"
+      },
+      "eventOffset": 426
+    },
+    "drafter:11-the-physical-record": {
+      "at": "2026-06-25T02:38:00.068Z",
+      "artifacts": [
+        "draft/11-the-physical-record.md"
+      ],
+      "hashes": {
+        "draft/11-the-physical-record.md": "cc775b4c26310b6905e49f0dd22fe20f5e5e329e3d4852886d87379e1817a1dd"
+      },
+      "eventOffset": 462
+    },
+    "drafter:12-one-remaining": {
+      "at": "2026-06-25T02:57:48.034Z",
+      "artifacts": [
+        "draft/12-one-remaining.md"
+      ],
+      "hashes": {
+        "draft/12-one-remaining.md": "a9f66f8a25489bde01dcae0f3cf17ae69cdfb607cbb6723dbe2016db6a14d909"
+      },
+      "eventOffset": 499
+    },
+    "drafter:13-fourteen-hours": {
+      "at": "2026-06-25T03:08:46.847Z",
+      "artifacts": [
+        "draft/13-fourteen-hours.md"
+      ],
+      "hashes": {
+        "draft/13-fourteen-hours.md": "7f748206d7fd348da6169b2dbd39e2d59df5ad99e10db83173c8100c981656e6"
+      },
+      "eventOffset": 524
+    },
+    "drafter:14-the-last-run": {
+      "at": "2026-06-25T03:23:38.371Z",
+      "artifacts": [
+        "draft/14-the-last-run.md"
+      ],
+      "hashes": {
+        "draft/14-the-last-run.md": "ada2bca83594efcbd8709514f94470bfc5a0ed7a1c15c3fceddefbc0f8636f10"
+      },
+      "eventOffset": 556
+    },
+    "drafter:15-the-plane": {
+      "at": "2026-06-25T03:33:55.616Z",
+      "artifacts": [
+        "draft/15-the-plane.md"
+      ],
+      "hashes": {
+        "draft/15-the-plane.md": "9c680c85fe7fc65eb43bd62362f0aad4a225f5361d00b34e2eda474b356d920e"
+      },
+      "eventOffset": 576
+    }
+  }
+}

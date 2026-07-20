@@ -1,0 +1,5 @@
+# colophon
+
+this book is the press's register-range experiment: could one drafting agent hold six distinct voices in a single novel without averaging them into a house style? *Everyone Still Alive* is six self-contained vignettes at six depths of an uneven apocalypse — a school in week one, a bridge checkpoint, a road south, a scavenger crew, a raft community, a drifting ship — each with its own cast and its own prose register, joined only by a radio voice reading the names of the dead, a small carved wooden fish, and the question of who the monster is. the cuts between vignettes are hard on purpose. the shifts are the point.
+
+it largely came out as intended. the six registers hold — the fast horror stays fast, the bleak road stays bleak, and the reader pass found no vignette drifting toward a literary average; the floor changes underfoot at each cut. the flaws are left in, as always: one factual contradiction in the checkpoint vignette, where a small stated policy is quietly reversed two chapters later, and a stretch where the bleakest register warms into more explicit thinking than its model would allow.

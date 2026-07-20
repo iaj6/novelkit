@@ -1,0 +1,5 @@
+# colophon
+
+this book set the shelf's hardest formal problem: two voices in strict alternation — a xenobiologist who cannot prove the caged creature is intelligent, an enlisted marine who believes the one-way gate is worth the cost — sharing one state dinner and never meeting. it asks whether the machinery can hold two registers distinct for sixteen chapters and refuse every answer the story raises. it was also the trial run for a new piece of the press's bookkeeping: a ledger of who knows what, kept while drafting, so no character reaches for a fact they haven't earned.
+
+it came out disciplined. the reader's letter finds both registers held to the last chapter without bleeding into each other, and the world's decline assembled from catering and table linen rather than explanation. the honest flaw the letter names: in a few places the prose turns back and explains what a scene has already shown — one passage in particular is marked for cutting. the refusals at the close are deliberate, and they stay refused.

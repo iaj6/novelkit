@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-05-30T14:42:56.125Z",
+  "summary": {
+    "critical": 1,
+    "high": 1,
+    "medium": 1,
+    "low": 3
+  },
+  "findings": [
+    {
+      "id": "over-articulation-001",
+      "category": "over-articulation",
+      "severity": "medium",
+      "title": "Ch05 names the epistemological gap the action has already rendered",
+      "description": "After Reyes completes the formal report and withholds her certainty from it, the chapter turns and explicitly names the distinction between provable evidence and unverifiable certainty — a gap the action has just shown through what she chose not to write. Two closing sentences gloss what the scene has already performed, fitting the 'sentence-after-the-sentence' failure mode identified in canon/style.md.",
+      "evidence": [
+        {
+          "file": "draft/05-the-report.md",
+          "text": "If it could not survive review, it was not evidence. She had reviewed the distinction enough times in eleven months that she no longer expected reviewing it to change anything."
+        }
+      ],
+      "suggested_action": "Cut the two named sentences. The preceding two sentences ('The report required what the methodology had produced. What she was certain of was not what the methodology had produced, and a formal assessment sent to the president's office was not the place for certainty that could not survive review') are sufficient and do not over-explain.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "over-articulation-002",
+      "category": "over-articulation",
+      "severity": "low",
+      "title": "Accumulation of alternatives tips from uncertainty into enumeration in Ch11 and Ch16",
+      "description": "Two separate passages deploy the same pattern: multiple consecutive syntactically parallel units (alternative explanations in Ch11; alternative choices in Ch16) that extend past the point of epistemic effect into visible scaffolding. In Ch11, five alternatives for the low-frequency signal accumulate past uncertainty into a sourced catalogue. In Ch16, three syntactically parallel paragraphs presenting the hypothesis-document / personal-addendum / silence options briefly reveal the chapter's architecture in a way the rest of the chapter does not. Both passages are structurally correct; both run slightly longer than the surrounding texture requires.",
+      "evidence": [
+        {
+          "file": "draft/11-the-hall.md",
+          "text": "Five consecutive alternative explanations for the low-frequency signal (HVAC, kitchen equipment, vibration, phantom signal from the damaged ear, the string quartet), each in 'consistent with' mode — accumulation tips from 'I cannot determine the source' to 'I have enumerated all sources.'"
+        },
+        {
+          "file": "draft/16-the-next-list.md",
+          "text": "Three consecutive syntactically parallel paragraphs laying out the hypothesis document option, the personal addendum option, and the silence option — structurally correct but schematic in a chapter that otherwise keeps its interiority embedded in physical position."
+        }
+      ],
+      "suggested_action": "In Ch11, reduce alternative explanations from five to two or three; the epistemic weight is identical. In Ch16, consider folding two of the three options into a less syntactically parallel form so the chapter's architecture stays hidden.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "stylistic-tic-001",
+      "category": "stylistic-tic",
+      "severity": "low",
+      "title": "Brandt closing construction repeats across all three Act 1 chapters, then self-resolves",
+      "description": "The first three Brandt chapters (Ch02, Ch04, Ch06) each close on a variant of the same construction: an observation of another marine's sleep state or bed-drop followed by a brief, clipped self-assessment ('He was where he had put himself. That was fine with him' / 'Same as always' / 'Costello was asleep before 2210'). The drafter was clearly aware of the pattern — the Ch06 version strips it to its most minimal form — and Acts 2 and 3 break it entirely. This is a residual Act 1 tic, not a manuscript-wide pattern, and it is self-correcting by Ch08. Noted here for record; does not require revision in isolation.",
+      "evidence": [
+        {
+          "file": "draft/02-first-light.md",
+          "text": "Chapter closes on a bed-drop observation followed by 'He was where he had put himself. That was fine with him.'"
+        },
+        {
+          "file": "draft/04-voluntary.md",
+          "text": "Chapter closes on a variant of the same sleep-state / self-assessment construction ('Same as always')."
+        },
+        {
+          "file": "draft/06-dry-runs.md",
+          "text": "Chapter closes on 'Costello was asleep before 2210.' — the most stripped version, indicating drafter awareness of the pattern."
+        }
+      ],
+      "suggested_action": "No revision required unless a future Brandt chapter resurrects the construction. If it reappears in a later chapter, vary it. The self-resolution across Acts 2 and 3 is sufficient.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "over-articulation-003",
+      "category": "over-articulation",
+      "severity": "low",
+      "title": "Ch14 conviction paragraph opens with a triple negative that analyzes Brandt's state rather than inhabiting it",
+      "description": "The longest interior passage in any Brandt chapter — the conviction paragraph just before the slab — opens with 'not because of bravado, not because he'd suppressed it or pushed it down, but because...' This is more analytical about Brandt's own emotional state than any prior passage in his chapters. The placement is the book's strongest defense: this is the only moment where full articulation is earned. The exit line ('He'd checked the donation box and left the statement blank') rescues the passage. But the triple negative construction tips briefly toward a character explaining himself to himself rather than acting. A targeted revision to the opening of the paragraph could remove the analytical framing while preserving the substance of the belief.",
+      "evidence": [
+        {
+          "file": "draft/14-the-platform.md",
+          "text": "The conviction paragraph opening with triple negative construction ('not because of bravado, not because he'd suppressed it or pushed it down, but because...') before the slab — the only passage in Brandt's chapters that analyzes his interior state rather than rendering it through action or compressed interiority."
+        }
+      ],
+      "suggested_action": "If this chapter is revised, recast the opening of the conviction paragraph to enter the belief from the positive (what it is) rather than the negative (what it is not). The interiority itself should remain; only the analytical framing needs adjustment. Do not remove the paragraph.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "continuity-fact-audit-001",
+      "category": "continuity-fact",
+      "severity": "critical",
+      "title": "Containment veil color: 'navy blue' in Ch09 contradicts 'gray' in Ch07 and Ch13",
+      "description": "The canvas veil on the inner barrier of the containment yard is explicitly described as 'gray' in Ch07 (which also provides the causal history: it was once unbleached cotton and 'grayed over the months to a shade now indistinguishable from the poured concrete') and 'institutional gray' in Ch13. Ch01 further implies gray by stating 'the chain-link and the concrete and the veil all the same shade.' Ch09 contradicts all three, describing the veil as 'heavy canvas, navy blue' — a mutually exclusive value. Ch09's phrasing is a current-state narrator assertion, not a historical or character-perceived claim.",
+      "evidence": [
+        {
+          "file": "draft/07-eleven-months.md",
+          "text": "The veil hung in its usual state: gray canvas from the top rail to the concrete floor, the five tie points along each vertical seam... The canvas had been the color of unbleached cotton when the first team put it up; it had grayed over the months to a shade that was now indistinguishable from the poured concrete on three of the enclosure's four sides."
+        },
+        {
+          "file": "draft/09-the-outer-barrier.md",
+          "text": "The veil was in place: heavy canvas, navy blue, from the top rail to the poured concrete floor, tied at its five intervals along each vertical seam."
+        },
+        {
+          "file": "draft/13-the-yard.md",
+          "text": "The institutional gray of the canvas, weathered across eleven months of sessions in every temperature the compound had produced since the study began."
+        },
+        {
+          "file": "draft/01-the-specimen.md",
+          "text": "the chain-link and the concrete and the veil all the same shade"
+        }
+      ],
+      "suggested_action": "Change 'navy blue' to 'gray' in draft/09-the-outer-barrier.md so the veil color is consistent with Ch07's explicit gray description and Ch13's 'institutional gray' — both of which are supported by Ch07's causal account (the canvas grayed from unbleached cotton over eleven months). Specifically, change 'heavy canvas, navy blue, from the top rail' to 'heavy canvas, gray, from the top rail'.",
+      "auto_repair_safe": true,
+      "repair_agent": "repair-fact-normalize",
+      "repair_params": {
+        "canon_source": "draft/07-eleven-months.md",
+        "edits": [
+          {
+            "file": "draft/09-the-outer-barrier.md",
+            "wrong_text": "heavy canvas, navy blue, from the top rail to the poured concrete floor, tied at its five intervals along each vertical seam",
+            "correct_text": "heavy canvas, gray, from the top rail to the poured concrete floor, tied at its five intervals along each vertical seam"
+          }
+        ]
+      }
+    },
+    {
+      "id": "continuity-fact-audit-002",
+      "category": "continuity-fact",
+      "severity": "high",
+      "title": "Thermal probe duration: 'nine months' in Ch07 versus 'ten months' in Ch09 and Ch16, between chapters set days apart",
+      "description": "The portable thermal probe left inside the inner barrier's near corner during the month-2 second entry is described as having been there for 'nine months' in Ch07, but 'ten months' in both Ch09 and Ch16. Ch07 is set when the send-off dinner is 'days away now, not weeks'; Ch09 is set 'the day before the dinner'; Ch16 is the morning after. These three chapters are all within approximately one week of each other, so a one-month discrepancy in the probe's stated duration cannot be reconciled by elapsed story time. The study timeline supports 'nine months' (probe left in study month 2; study total is eleven months; months 3–11 = nine months), but Ch09 and Ch16 are the two-chapter majority saying 'ten months'.",
+      "evidence": [
+        {
+          "file": "draft/07-eleven-months.md",
+          "text": "She had thought about it at intervals in the nine months since and had not been able to determine what information the thought was carrying."
+        },
+        {
+          "file": "draft/09-the-outer-barrier.md",
+          "text": "Behind the canvas: the portable thermal probe in the near corner, ten months on the concrete."
+        },
+        {
+          "file": "draft/16-the-next-list.md",
+          "text": "the portable thermal probe still on the floor where she had left it ten months ago, its indicator LEDs dark, its cable coiled against the corner wall, undisturbed."
+        }
+      ],
+      "suggested_action": "Decide which value is canonical. The study-timeline calculation (eleven-month study, probe left in month 2 → nine months elapsed) favors 'nine months' and matches Ch07. If 'nine months' is correct, update the two instances of 'ten months' in Ch09 ('ten months on the concrete' → 'nine months on the concrete') and Ch16 ('ten months ago' → 'nine months ago'). If 'ten months' is correct (implying the probe was left early in month 2 and the study runs slightly over eleven months), update Ch07 ('nine months since' → 'ten months since'). A human should resolve which figure is intended before auto-repair.",
+      "auto_repair_safe": false,
+      "repair_agent": null,
+      "repair_params": null
+    }
+  ]
+}

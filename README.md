@@ -139,13 +139,30 @@ Why: CDK runs produce a lot of in-flight drafts. A draft you're iterating on sho
 coldwater-reach        published   30-chapter literary novel — 1943–45 coastal Maine
 the-cold-signal        published   Antarctic isolation thriller — twelve days at Halvorsen Station
 vilcabamba-expedition  published   1930s expedition into the eastern Cordillera Vilcabamba
-tiny-toy-output        published   minimal 3-chapter demo — fastest end-to-end read
-coldwater-reach-v031   private     in-progress sibling run
-the-hollowback         private     in-progress YA fantasy
+tiny-toy-output        published   "The Bottle" — minimal 3-chapter demo, fastest end-to-end read
+the-long-tenant        published   two-sided ghost story — two registers, an epistemic ledger,
+                                   verbatim records (the world-model showcase run)
+the-contingency        published   quiet far-future novel — two registers, one state dinner;
+                                   pilot book for the who-knows-what epistemic layer
+the-courier-job        published   YA road fantasy — the compounding-mechanism middle experiment
+the-hollowback         published   YA ensemble fantasy — motivated POV rotation across four leads
+plattsburgh-twosides   published   "Two Shores" — Plattsburgh Bay, Sept 1814, both shores
+plattsburgh-american   published   "A Line of Smoke" — the same nine days, drafted independently
+                                   of Two Shores from its own brief (companion-volume experiment)
+everyone-still-alive   published   mosaic apocalypse novel — six vignettes, six registers
+coldwater-reach-*      private     research re-runs of the coldwater brief (world-model
+                                   validation evidence: m6, m7, fm4, mech, v031)
+the-cold-signal-mech   private     research re-run — the compounding-mechanism control test
 tiny-toy               private     brief only — superseded by tiny-toy-output
+ya-smoke-test          private     3-chapter smoke test
 ```
 
-**Read order suggestion**: tiny-toy-output (5 minutes) → the-cold-signal (~40 minutes) → coldwater-reach (~3 hours, the headline output).
+Every published book carries a `colophon.md` — the press's note on why the book
+exists and how it came out — which the site renders on the book's page along
+with its opening page and (where one exists) the pipeline reader's letter on
+the finished manuscript.
+
+**Read order suggestion**: tiny-toy-output (13 minutes) → the-cold-signal (~1½ hours) → the-long-tenant or coldwater-reach (~3–4½ hours, the headline outputs).
 
 ## Costs
 
@@ -175,15 +192,15 @@ See [site/README.md](site/README.md) for the custom-domain swap (drop the base p
 
 ```bash
 # cdk
-cd cdk && npm test                     # vitest — 106 tests, ~300ms
-cd cdk && npm run test:coverage        # >80% on ansi, runlog, estimate, state
+cd cdk && npm test                     # vitest — 257 tests, ~500ms
+cd cdk && npm run test:coverage        # >80% on ansi, runlog, estimate, state, world/
 
 # press
 cd press && python3 -m pytest          # pytest — 78 tests, ~80ms
 cd press && python3 -m pytest --cov    # 86% across modules
 
 # site
-cd site && npm test                    # vitest — 44 tests, ~150ms
+cd site && npm test                    # vitest — 54 tests, ~200ms
 cd site && npm run test:coverage       # ~93% on library.ts
 ```
 

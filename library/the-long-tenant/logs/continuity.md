@@ -1,0 +1,601 @@
+# Continuity ledger
+
+The accumulating fact ledger — every durable fact established so far, by chapter. Later drafting must stay consistent with these. Store-derived; do not edit by hand.
+
+## 01-verrill-street
+- ellen-vance — age: 44 years
+- ellen-vance — role: freelance court reporter
+- ellen-vance — certification: RPR (Registered Professional Reporter)
+- ellen-vance — experience: 20 years
+- ellen-vance — arrival_month: April
+- ellen-vance — prior_base_city: Martinsburg, West Virginia
+- ellen-vance — deposition.next_confirmed: arbitration in Elkins, Thursday, one hour's drive
+- ellen-vance — located_in: verrill-street-house
+- verrill-street-house — located_in: renick
+- verrill-street-house — stories: 2.5 stories
+- verrill-street-house — construction.material: clapboard siding, wood-framed windows
+- verrill-street-house — shape: narrow; crowded toward the street; tall relative to its width
+- verrill-street-house — porch.south_boards_condition: soft; need checking
+- verrill-street-house — stair.third_tread_condition: loose at center; step left to avoid flex
+- verrill-street-house — kitchen.hot_water_delay: 170 seconds
+- verrill-street-house — kitchen.stove.rear_left_burner: non-functional at Ellen's arrival
+- verrill-street-house — kitchen.floor: linoleum, worn through at stove and sink
+- verrill-street-house — heating_system: single-pipe steam radiators throughout; furnace running at Ellen's arrival
+- back-room — floor: upper floor of verrill-street-house
+- back-room — dimensions_approx: approximately 10 by 12 feet
+- back-room — window.facing: back yard
+- back-room — radiator: not none
+- back-room — heat_register: not none found
+- back-room — cold.quality: specific, anomalous, not draft or damp; no identifiable source; Ellen notes it twice (initial walk-through and return from diner)
+- back-room — door.latch_type: standard half-inch compression bolt; housing worn; spring intact
+- back-room — door.anomaly: found ajar (three-inch gap) when Ellen returns from diner; latch tested and found engaging; anomaly unresolved
+- the-desk — location: front room, verrill-street-house
+- the-desk — style: roll-top
+- the-desk — material: hardwood
+- the-desk — makers_mark: RENICK FURNITURE WORKS / Made in Renick, W.Va. — burned into inner edge of upper right drawer
+- the-desk — pigeonholes: 9 compartments
+- the-desk — included_with_sale: true
+- sandy-river — distance_from_verrill_street: 3 blocks south
+- meade-street-diner — located_in: renick
+- meade-street-diner — distance_from_verrill_street: 3 blocks
+- renick-furniture-works — building.condition: still standing on far Meade Street block; brick; company name weathered off facade; ghost of letters visible in differential weathering
+- della-markey — age_at_death: 37 years
+- della-markey — date_of_death: February 11-12, 1983
+- della-markey — birth_year_approx: 1946 year
+- della-markey — origin_place: Renick, West Virginia
+- della-markey — role: millwright's daughter; former plant office worker; house's prior owner
+- della-markey — alive: not false
+- della-markey — knows_she_is_dead: true
+- cale-markey — relation_to_della: older brother; estranged for approximately 3 years before her death
+- cale-markey — knocking.start_time: approximately 9:40 PM, February 11, 1983
+- cale-markey — knocking.end_time: 9:52 PM, February 11, 1983
+- Ellen Vance arrives at the Verrill Street house in April, present day. She has come from Martinsburg, WV, where the rest of her possessions remain in storage. She is alone and has brought: the stenotype machine case, the transcript computer, two bags of clothes, a box of books, and a box of kitchen equipment.
+- The front room of the Verrill Street house contains the roll-top desk (9 pigeonholes, three front drawers, heavy hardwood) that came with the sale. The maker's mark is burned into the inner edge of the upper right drawer: 'RENICK FURNITURE WORKS / Made in Renick, W.Va.' Ellen sets up her work chair behind it.
+- The upper-floor landing of the Verrill Street house has an anomalous cold with no identifiable source — not draft, not damp, not vacancy. The back room (approximately 10 by 12 feet, window facing back yard, no radiator, no register, flat-panel closet door) is the room with the most specific cold. The back-room door is found ajar (three-inch gap) on Ellen's first walk-through and again when she returns from the diner. She resets the latch both times; it tests as engaging. She does not return to check it a third time. She tags it: 'monitor.'
+- The third stair from the bottom of the staircase has a loose tread that flexes toward the center under normal step. Stepping on the far left edge of the tread avoids the flex. Ellen discovers this on the way to bed on her first night.
+- The Meade Street Diner is three blocks from Verrill Street, open for breakfast and dinner. The plant building (Renick Furniture Works) is visible from the diner window — top floors on the far Meade Street block, brick, company name weathered off, ghost of the letters still visible in the differential weathering of the brick.
+- Ellen's work calendar at the start of the novel: one confirmed deposition (arbitration in Elkins, Thursday, one hour's drive); nothing after that until end of month. The trade's thinning is not named but present in the thin calendar.
+
+## 02-the-stove
+- the-riverside-stove — make: Riverside
+- the-riverside-stove — installed_year: 1961 year
+- the-riverside-stove — installed_source: purchased from a man in Ronceverte; brought to Verrill Street by Della's father and two mill workers
+- the-riverside-stove — chimney_type: exterior-wall chimney on north wall
+- the-riverside-stove — failure_mechanism: draft reversal: exterior-wall flue chilled in sustained extreme cold; cold air fed back down into firebox; could not be relit
+- the-riverside-stove — failure_time: approximately eight PM, February 11 1983
+- verrill-street-house-1983 — power.outage_start: six PM, February 11 1983
+- verrill-street-house-1983 — kitchen.temperature_at_842pm: 51 degrees Fahrenheit
+- verrill-street-house-1983 — kitchen.oil_lamp_location: kitchen table
+- verrill-street-house-1983 — kitchen.clock_status: electric; stopped at 6:03 PM when power went out
+- verrill-street-house-1983 — travel_clock.location: mantle in front room; visible from kitchen table through doorway
+- verrill-street-house-1983 — kitchen.thermometer_location: wall beside north window
+- verrill-street-house-1983 — back_porch.door_status: latched before dark, February 11 1983
+- verrill-street-house-1983 — wall.insulation: blown cellulose added by Della's father; rented equipment from Lewisburg
+- verrill-street-house-1983 — north_window.frost: frost on inside of glass at 8:42 PM, February 11 1983
+- della-markey — cord_wood_remaining_feb11: 1 pieces (split oak)
+- della-markey — kindling_status_feb11: empty; used in attempt to warm flue
+- della-markey — oil_lamp_oil_status_feb11: sufficient for several hours; more than the night needed
+- della-markey — wool_blanket.location_feb11: brought down from bedroom before dark; on kitchen chair; around shoulders at chapter close
+- della-markey — winter_1979_furnace_event: furnace out January 1979; kept house on wood heat alone for three weeks while part came from Charleston
+- della-markey — age_when_riverside_installed: 15 years
+- dellas-account-book — location: kitchen table
+- dellas-account-book — column_method: date, description, figure if applicable; same method as Della's father's books
+- dellas-account-book — prior_books_held: Della has her father's last three books in the front room drawer
+- dellas-sheaffer-pen — nib: steel; worn to Della's hand
+- dellas-sheaffer-pen — ink_color: black
+- dellas-sheaffer-pen — given_by: Della's father, when she started keeping the account book
+- The Riverside stove in the Verrill Street kitchen (Della's 1983 timeline) has an exterior-wall chimney running up the north wall. The failure mechanism on February 11, 1983: sustained extreme cold from the Megalopolitan Blizzard chilled the flue; draft reversed; cold air came back down into the firebox around 8 PM. Della tried to relight using newspaper pieces to warm the flue, burning the last of the kindling in the attempt. The fire went out. The stove and chimney had no mechanical defect.
+- Della's father taught her the end-of-shift inventory discipline (go through what holds, what does not) that she applies to the house on the night of February 11, 1983. He also taught her the exterior-wall chimney's failure mode, wick-trimming, and the general discipline of knowing a system's limits before they become emergencies. He appears only in Della's chapters as transferred competence and remembered instruction, never as a named character.
+- The house on Verrill Street has a 1979 furnace event on record: the furnace went out in January 1979 and Della kept the house on wood heat alone for three weeks while a part came in from Charleston. This establishes that Della had prior experience managing the house in cold without central heat, and that the 1983 situation (stove out, power out, no backup) was categorically different from the 1979 situation (stove still running).
+- Della's account-book entry for the night of February 11, 1983, begins at 8:42 PM. Its initial lines (Power out since six. Stove losing draft after eight, cannot bring it back. 8:42 pm. Temperature fifty-one degrees. Lamp oil sufficient. One piece cord wood, hold. No kindling.) are the opening of the ledger entry that will become Record B (markey-ledger-1983). The knocking section of Record B ('Knocking at the front door near quarter to ten...') is not yet written at this point in the night and does not appear in Chapter 2. The kept sentence ('Nobody came to that door.') appears at the bottom of Della's entry in Chapter 2 at 8:42 PM, before the knocking occurs — the 'always already there' quality of her circling.
+- Epistemic state as of Chapter 2: Della wrong_believes not-P (she has written the kept sentence as a fact of the night; her belief that nobody came is established as the operating premise of her chapters). @reader suspects cale-came-to-door (the kept sentence appears in a stove-failure ledger entry without explanation; the reader notices it does not quite fit but cannot yet account for it). Ellen Vance is unaware of cale-came-to-door (she is in the present day and has not yet found any documentary record of Della's last night).
+
+## 03-the-third-step
+- renick-furniture-works — founding_year: 1908 year
+- renick-furniture-works — closure_year: 1991 year
+- renick-furniture-works — peak_employment: 200 workers
+- renick-furniture-works — peak_employment_period: 1940s and 1950s
+- renick-furniture-works — wikipedia_page.status: exists; two paragraphs; includes photo of building and catalog page
+- renick-furniture-works — product_lines: hardwood household furniture — desks, chairs, case goods — regional and mail-order markets
+- meade-street-hardware — located_in: renick
+- meade-street-hardware — street: Meade Street
+- meade-street-resale — located_in: renick
+- meade-street-resale — street: Meade Street
+- meade-street-resale — stock.includes_renick_furniture: true
+- the-twelve-dollar-chair — maker: Renick Furniture Works
+- the-twelve-dollar-chair — makers_mark: Renick Furniture Works, Est. 1908. Made in Renick, W.Va.
+- the-twelve-dollar-chair — purchase_price: 12 dollars
+- the-twelve-dollar-chair — style: straight-backed, ladder-rung, hardwood
+- the-twelve-dollar-chair — location: front room, Verrill Street house, across from the desk
+- hardware-store-man — age_approx: 70s
+- hardware-store-man — location: Meade Street hardware store, Renick
+- hardware-store-man — knowledge.verrill_street_house: knows it has been sitting empty for a while
+- ellen-vance — action.deed_search_planned: true; county courthouse, deed index on Verrill Street property; decided end of Chapter 3
+- back-room — closet.contents: three nails at irregular heights, bare shelf along top — nothing else
+- back-room — window.seal_status: repointed; continuous gray compound; no gaps; no lateral draft
+- back-room — plaster_condition: sound; no cracks or soft places; brown stripe at shoulder height
+- back-room — radiator: none
+- back-room — heat_register: none
+- renick-furniture-works — building.south_face.letters_status: letters gone from rendering loss; ghost visible in differential brick weathering — darker where rendering protected surface, lighter where exposed
+- Renick Furniture Works was incorporated in 1908, manufactured hardwood household furniture (desks, chairs, case goods) for regional and mail-order markets, employed approximately 200 workers at peak in the 1940s–1950s, and closed in 1991. Ellen reads this on its Wikipedia page (two paragraphs, a photograph of the building with the name still legible, and a furniture catalog page showing a bedroom suite).
+- The plant building's south-face company name has gone to weather — the letters themselves are gone from rendering loss — but the ghost of them is still legible in the differential weathering of the brick: darker where the old rendering protected the surface, lighter where the exposed brick weathered. Ellen reads the name from the ghost record the brick kept.
+- The hardware store on Meade Street is run by a man in his 70s who tells Ellen 'that house has been sitting empty for a while' when she identifies herself as the buyer of the Verrill Street house. He says nothing more specific. Ellen does not ask.
+- The Meade Street resale shop (plate-glass front) carries multiple pieces of furniture with Renick Furniture Works, Est. 1908 maker's marks. Ellen buys a straight-backed ladder-rung hardwood chair for twelve dollars; the mark on the bottom reads: 'Renick Furniture Works, Est. 1908. Made in Renick, W.Va.' She places it across from the desk in the front room.
+- The back room examined in daylight: plaster walls intact and sound, brown paint stripe at shoulder height, ceiling uncracked. Closet (flat-panel door, painted over many times): three nails at irregular heights, bare shelf along the top, nothing else. Window: original or near-original glazing, repointed seal, sash moves cleanly, no draft or gap. No radiator, no heat register in the room. The specific cold has no mechanical source Ellen can identify.
+- At the close of Chapter 3, Ellen has decided to do a deed search at the county courthouse (four blocks from Verrill Street) to find who owned the Verrill Street house and what happened to them. The decision is professional and procedural — she knows the shape of the search from property depositions; she has not done it herself before.
+
+## 04-the-latch
+- verrill-street-house-1983 — kitchen.temperature_at_910pm: 44 degrees Fahrenheit
+- verrill-street-house-1983 — front_door.latch_type: thumb-bar on inside; tested three times by Della; confirmed solid and engaging
+- verrill-street-house-1983 — della_bedroom_window.upper_right_gap: sash sits out of plumb at upper right corner; persistent small gap; never fixed by Della or her father
+- verrill-street-house-1983 — back_room.ledger_shelf_location: shelf above the window; Della's normal ledger storage; empty on the night of February 11 (ledger moved to kitchen table before power outage)
+- the-desk — original_owner: Della Markey's father; a millwright at Renick Furniture Works
+- the-desk — purchase_year: 1964 year
+- the-desk — purchase_context: purchased from Renick Furniture Works floor-model sale when a product line changed; workers offered floor models at a discount; Della was seventeen (1963-64)
+- della-markey — ledger.normal_storage_location: back-room shelf above the window; moved to kitchen table on afternoon of February 11 before power outage
+- della-markey — father.discipline.three_test_rule: test a fitting or latch three times before trusting it; said about flanges, meant about everything; transferred to Della as working method
+- della-markey — pantry_stock_feb11: four tins evaporated milk, rolled oats, peanut butter (partial jar), one pound rice, dried beans, loaf of bread (from Kroger Lewisburg, bought before storm), crackers, coffee; sufficient for several days
+- Della's father's three-test method (test a latch or fitting three times before trusting it) is the organizing discipline of her house circuit in Chapter 4. The front-door latch is a thumb-bar type on the inside; Della tests it three times, confirms it holds, notes the undisturbed snow through the transom glass.
+- The Verrill Street house kitchen thermometer reads 44°F at approximately 9:10 PM on February 11, 1983 — seven degrees lower than the 51°F reading at 8:42 PM in Chapter 2. The drop is confirmed in Della's room-by-room circuit as she passes the kitchen wall thermometer.
+- The roll-top desk in the front room (Renick Furniture Works, purchased 1964) was Della's father's desk. He bought it from the furniture works when a product line changed and the works offered floor models to workers at a discount. Two plant men helped carry it up the porch steps. Della was seventeen. The desk passed to Della on her father's death and remained in the front room when Ellen bought the house.
+- Della normally keeps her household ledger (account book) on the shelf above the window in the back room. On the afternoon of February 11, 1983, before the power went out, she carried it to the kitchen table — she felt the barometric pressure change and 'something in her said bring the book.' The shelf in the back room is empty on the night of this chapter.
+- Della's bedroom window (in the room she identifies as 'my room' on the upper floor) has a persistent gap at the upper right corner where the sash sits out of plumb. Neither Della nor her father ever fixed it. On February 11, 1983, she pushes the frame firmly to reduce the draft; it helps some but not completely.
+- The back-room door cold: Della describes the cold from under the back-room door as 'still' and without direction — different from the storm's cold, which has direction and movement. She investigated the room thoroughly in years past (window seal, the capped chimney breast, the floor at the baseboard) and found no mechanical source. She has stopped looking.
+- Pantry stock, February 11, 1983 (confirmed by Della's inventory circuit): four tins evaporated milk, rolled oats, peanut butter (partial jar), one pound rice, dried beans, loaf of bread from the Kroger in Lewisburg (bought before the storm), crackers, coffee. Sufficient for several days. Starvation is not the danger.
+
+## 05-chain-of-title
+- harold-markey — role: millwright at Renick Furniture Works; Della Markey's father
+- harold-markey — death_month_year: October 1978
+- harold-markey — house_deed_acquired: 1951 year
+- harold-markey — estate_filed: December 1978
+- harold-markey — heir: Della Markey (sole heir); Cale Markey listed but not served
+- harold-markey — deed_transfer_to_della: quit-claim, recorded September 14 1978
+- della-markey — full_name: Della Ruth Markey
+- della-markey — death_cause_official: Hypothermia
+- della-markey — death_manner_official: Accidental
+- della-markey — death_certifier: Greenbrier County coroner
+- della-markey — estate_status: intestate; open 1983–1991; closed administratively; county acquired property 1991
+- della-markey — father_name: Harold Markey
+- cale-markey — estate_notice_result: three addresses over four years; no response to any notice; returned to sender; estate closed without him
+- cale-markey — status_in_harold_estate: listed as potential heir (son); address unknown; not served; excluded from proceeding
+- verrill-street-house — deed_chain.harold_markey_acquired: 1951 year
+- verrill-street-house — deed_chain.della_markey_acquired: September 1978, by quit-claim from Harold Markey
+- verrill-street-house — deed_chain.county_acquired: 1991, administrative transfer after intestate estate closed
+- verrill-street-house — deed_chain.llc_acquired: 1993, from Greenbrier County; LLC based in Roanoke, Virginia
+- verrill-street-house — vacancy_period: 1983 to 1993 (ten years: eight in estate limbo, two held by county before sale)
+- greenbrier-county-courthouse — located_in: Lewisburg, West Virginia
+- greenbrier-county-courthouse — stories: 3 floors
+- greenbrier-county-courthouse — deed_records.digitized_through: 1920 (grantor-grantee back to 1920 searchable by address); completed 2019
+- greenbrier-county-courthouse — coroner_records.status: paper files; not yet digitized; digitization project expected to finish by end of present year; originals accessible on request from third floor
+- the-desk — in_harold_markey_estate_inventory: true; listed as roll-top desk (hardwood) in household contents, 1978 estate
+- ellen-vance — arrival_month: April
+- ellen-vance — deed_search_completed: May, present day; Greenbrier County courthouse
+- Harold Markey acquired the Verrill Street house in 1951 and owned it until his death in October 1978. His estate was filed in December 1978. A single-page will named Della Markey as sole heir. Cale Markey (son) was listed in both Harold's and Della's estate files as a potential heir; in Harold's file he was noted as address unknown, not served; in Della's file he was sent notice at three addresses over four years with no response. Harold's household effects included the roll-top desk (Renick Furniture Works), confirming the desk was in the Verrill Street house from at least 1951 through Della's death in 1983 and through the house's subsequent vacancy until Ellen's purchase.
+- Della Markey's full name as listed on her death certificate: Della Ruth Markey. The death certificate, certified by the Greenbrier County coroner, lists: Immediate cause: Hypothermia. Manner of death: Accidental. Date of death: February 12, 1983. Place of death: 412 Verrill Street, Renick, West Virginia. Date of birth: 1946.
+- Della Markey's estate was intestate (no will found or filed). The estate administration ran from 1983 to 1991 — eight years. Cale Markey was identified as next of kin and sent notice at three successive addresses; each attempt resulted in no response or returned mail. In 1991 the court closed the proceeding administratively and transferred the deed to Greenbrier County. The county held the property until 1993, then sold it to a residential holding company (LLC) based in Roanoke, Virginia. The house was vacant from 1983 to 1993 — ten years total between Della's death and the first subsequent occupant.
+- The Greenbrier County coroner's inquest files from the early 1980s are paper files, boxed on the third floor of the courthouse, not yet digitized. The county's digitization project is expected to finish by the end of the present year. Until it does, the originals are accessible by request from the coroner's office. Ellen has been told by the clerk to go soon before scanning removes physical access to the originals.
+- The drive from Renick to Lewisburg via Route 219 is approximately twenty minutes south. The Greenbrier County courthouse is a three-story stone building on the main square in Lewisburg. The county clerk's office is on the first floor; the coroner's office is on the third floor. Deed records are digitized back to 1920; probate index binders are physical.
+
+## 06-the-flue
+- della-markey — matches_remaining_end_ch06: 2 matches
+- verrill-street-house-1983 — kitchen.temperature_at_915pm: 42 degrees Fahrenheit
+- della-markey — cord_wood.location_end_ch06: inside firebox; unburnt; placed during brief success of torch-paper attempt; held in reserve
+- della-markey — location_at_920pm_feb11: kitchen floor, back against south wall, blanket around shoulders
+- the-riverside-stove — priming_method: torch-paper method: roll newspaper into a cone (tight base, loose top), light from lamp, hold up into firebox throat until draft shifts on forearm; Della's father taught this when stove was installed 1961; applied in ch06 at approximately 9:00-9:10 PM but failed due to flue temperature being too low
+- della-markey — newspaper_status_end_ch06: fully used; burned in first attempt and torch-paper attempt; none remaining
+- Chapter 06 (The Flue, Della, ~9:00-9:20 PM February 11 1983): Della makes two attempts to restore the stove. First attempt: bark scraps from the empty kindling box and crumpled newspaper, lit with one match; flame holds 20-30 seconds; reversed draft kills it. Second attempt: torch-paper priming method (her father's teaching) — newspaper rolled into a cone, lit from the lamp, held up into the firebox throat until the draft briefly shifts; bark and chips catch; she places the one piece of split oak into the firebox. The fire burns approximately three minutes. Then the exterior-wall flue reasserts the cold column from above, the pull stops, the cord wood fails to catch properly, the fire is out.
+- At the close of ch06: Della has 2 matches remaining (down from 12 at ch02 start); the newspaper is fully consumed; the kindling is gone; the cord wood (1 piece split oak) is inside the firebox, unburnt. She cannot make another torch-paper attempt without newspaper. She decides not to try again — the arithmetic is wrong. She sits on the kitchen floor, back to the south wall, blanket around her shoulders. Kitchen temperature at approximately 9:15 PM: 42°F (continued drop from 44°F at 9:10 PM in ch04).
+- The father's teaching about exterior-wall chimney priming is now fully rendered: the flue needs sustained high-temperature priming for 10-15 minutes to warm a flue chilled this far down; the newspaper torch is insufficient under these conditions. The chapter deepens the reader's understanding of the mechanism of Della's death without naming it.
+- The chapter closes on the cold in the walls: Della distinguishes the storm's cold (directional, weather, from outside) from the house's own cold (non-directional, builds from inside when heat source dies). Her father's vocabulary: 'a building gone cold all the way through is a different situation from a building you have just opened the door on.' The cord wood remains in the firebox as a held reserve — the discipline of not spending what remains on a repeated failure.
+
+## 07-manner-of-death
+- della-markey — occupation_at_death: Office Worker (as listed on death certificate)
+- della-markey — death_certificate.date_filed: February 17, 1983
+- della-markey — found.location: kitchen floor, east side, near the stove; lying on her side, wrapped in wool blanket, facing the firebox door
+- della-markey — wool_coat.location_at_discovery: back of the kitchen chair nearest the stove; not on her body at time of discovery
+- verrill-street-house-1983 — discovery.deputies_arrival_time: 8:15 AM, February 12, 1983
+- verrill-street-house-1983 — discovery.neighbor_call_time: 7:42 AM, February 12, 1983
+- verrill-street-house-1983 — discovery.ambient_temp_at_entry: 36 degrees Fahrenheit (approximate)
+- verrill-street-house-1983 — discovery.entry_method: kitchen window east side; defective latch allowed sash to be raised without lock engaging; front door was deadbolt-locked from inside
+- verrill-street-house-1983 — discovery.kitchen_lamp_status: burned dry by time of deputies' entry on February 12, 1983
+- verrill-street-house-1983 — discovery.kitchen_scene.matches: spent matches on stove surface and kitchen floor near firebox; newspaper fragments (ash and partially burned) in and around firebox area
+- verrill-street-house-1983 — discovery.woodbox_status: worked down to bark scraps and splinters by time of discovery
+- verrill-street-house-1983 — kitchen.window_east.latch_defect: defective; sash could be raised from outside without lock engaging; noted in 1983 investigation report
+- the-riverside-stove — investigation_finding.mechanical_defect: none; investigation report (1983) found no mechanical defect in stove or stovepipe
+- the-riverside-stove — investigation_finding.chimney: exterior-wall construction consistent with draft reversal in sustained extreme cold; coroner's 1983 finding
+- greenbrier-inquest-markey-1983 — location: third floor, Greenbrier County courthouse, Lewisburg, West Virginia; paper file; folder tab: MARKEY / 1983
+- greenbrier-inquest-markey-1983 — contents: death certificate; coroner's investigation report (3 pages); pathologist's opinion (2 pages); inquest proceedings; three witness statements (onionskin, longhand summary)
+- greenbrier-inquest-markey-1983 — inquest.jury_size: 6 jurors
+- greenbrier-inquest-markey-1983 — inquest.date_convened: February 22, 1983
+- greenbrier-inquest-markey-1983 — inquest.verdict: Accidental Death
+- greenbrier-inquest-markey-1983 — inquest.verdict_language: exposure to cold following the failure of her heating source during the storm of February 9–12, 1983
+- greenbrier-inquest-markey-1983 — pathologist.finding: no alcohol, no controlled substances, no underlying conditions; in otherwise normal health; cause: hypothermia from prolonged cold exposure
+- greenbrier-inquest-markey-1983 — witness_statements.count: 3 statements
+- greenbrier-inquest-markey-1983 — witness_statements.read_by_ellen: false — photographed but not read on first visit; Mabel Duff statement opened, one line read before clerk interrupted
+- mabel-duff — relation_to_della: neighbor, Verrill Street, three houses north; knew Della Markey; called in the discovery or gave inquest statement
+- mabel-duff — statement.date: February 20, 1983
+- mabel-duff — statement.opening_line: I last saw Miss Markey on the evening of February tenth
+- mabel-duff — statement.window_covered: evening of February 10 and daylight February 11, 1983 — the wrong window; knocking came at 9:40 PM February 11, in full dark during the storm; Mabel was not watching then
+- mabel-duff — located_in: Verrill Street, Renick — three houses north of 412 Verrill Street
+- Della Markey's death certificate lists her occupation as 'Office Worker' — the only occupational record found; she likely worked in the plant office at Renick Furniture Works; this detail appears in the death certificate but not in the deed or probate records.
+- The coroner's investigation report (1983) documents the scene: deputies arrived 8:15 AM February 12, 1983, after neighbor's call at 7:42 AM; entered through east kitchen window (defective latch, sash could be raised from outside); found Della on kitchen floor east side near the stove, lying on her side wrapped in a wool blanket, facing the firebox door; house at approximately 36°F; front door deadbolt locked from inside; back door latched from inside.
+- Della's wool coat was on the back of the kitchen chair nearest the stove at time of discovery — not on her body, which was wrapped in the wool blanket. The kerosene lamp on the kitchen table had burned dry. Spent matches were on the stove surface and kitchen floor near the firebox. Newspaper fragments (ash and partially burned) were in and around the firebox area. The woodbox had been worked down to bark scraps and splinters.
+- The 1983 coroner's investigation report found: no mechanical defect in the Riverside stove or its stovepipe. The chimney's exterior-wall construction was noted as consistent with draft reversal in sustained extreme cold. The inquest verdict used the phrase 'failure of her heating source' — a paraphrase Ellen notes is accurate in conclusion but inexact in mechanism compared to the investigation report's more precise 'no mechanical defect / consistent with draft reversal.'
+- The pathologist's 1983 report found: cause of death hypothermia, consistent with prolonged exposure to cold in an inadequately heated environment; no alcohol; no controlled substances; no underlying medical condition; the decedent was in otherwise normal health at the time of death.
+- The inquest jury of six was convened February 22, 1983 — ten days after the body was found. Verdict: Accidental Death. Verdict language: exposure to cold following the failure of her heating source during the storm of February 9–12, 1983. No evidence of foul play; no evidence of trauma.
+- The coroner's inquest file contains three witness statements written in official longhand summary (not verbatim transcripts). The first is from Mabel W. Duff, Verrill Street, three houses north of 412 Verrill — who had known Della Markey since the Markeys were in the house. Her statement dated February 20, 1983, opens: 'I last saw Miss Markey on the evening of February tenth.' Ellen photographed all three statements but read only the first line before being cut off by the clerk. She has the photographs and will read them at the desk.
+- Mabel Duff's statement covers the evening of February 10 and daylight February 11, 1983 — the wrong window. The knocking at the front door came at approximately 9:40 PM on February 11, in full dark during the storm. Mabel was not watching at that hour. Her testimony is not false; her inference — that no one came — is wrong because she was looking at the wrong time. This is the setup for the false crossing (Ch11): when Ellen reads the full statement, she will initially take it as confirmation that nobody came, before the ledger disproves the inference.
+- Ellen's professional notation from this chapter, written in her deposition notebook: 'no mechanical defect / failure of heating source' with a line drawn between the two phrases. She marks the paraphrase problem the way she would mark an exhibit that reaches a different conclusion than the proceeding it was entered into. She does not yet have a name for what the gap in the official account means.
+- Ellen Vance accessed the Greenbrier County coroner's inquest file for Della Ruth Markey in May, present day. She photographed all documents in the file. She has not yet read the witness statements. The file is stored in a manila folder on the third floor of the Greenbrier County courthouse, Lewisburg, West Virginia.
+
+## 08-the-oil-lamp
+- della-oil-lamp — light_color: amber; not white, not the cold gray of daylight
+- della-oil-lamp — oil_reservoir_level_at_ch08: three-quarters full at approximately 9:05–9:25 PM
+- della-wick-scissors — location: shelf above the stove, Verrill Street kitchen; left near drawer; drawer sticks at the third inch; lift handle to pull
+- della-wick-scissors — trim_method: at an angle, one edge higher than the other; not straight across; so flame spreads even; peaked flame gutters and smokes
+- della-markey — lamp_wick_trimming.taught_by: her father; shown at this lamp, at the kitchen table, when Della was nineteen; trim at an angle, not straight across
+- della-markey — tenants_category.name: the tenants — her category for perceiving the living; the house has had occupants since her death who she cannot see or hear in the ordinary way
+- della-markey — tenants_category.perception_mode: warmth at the wrong angle, pressure in a room, a light falling wrong for her season, a door not where she left it; not speech, not sight, not identity
+- della-markey — tenants_category.prior_experiences: many times in the years since the night stopped; not new in Ch08; she has a settled category for it and is not alarmed
+- della-markey — ch08.warmth_perception.location: outside/near the back-room door; upstairs hallway; Ch08 approximately 9:05-9:25 PM
+- della-markey — ch08.warmth_perception.filed_as: the tenants — not alarming; not crossing; Della does not go into the back room
+- verrill-street-house-1983 — travel_clock.reading_at_ch08: a few minutes past nine PM (approximately 9:05 PM when Della passes the front room on the lamp circuit)
+- verrill-street-house-1983 — kitchen.wick_scissors_drawer.condition: sticks at the third inch; lift handle to pull; left near drawer on the shelf above the stove
+- Della trims the oil lamp wick using scissors kept on the shelf above the stove, in the left near drawer (drawer sticks at the third inch; lift the handle to pull). The trimming method her father showed her: at an angle, not straight across, so one edge is higher and the flame spreads even; a peaked flame gutters and smokes and wastes oil. He showed her on this lamp, at this table, when she was nineteen and newly managing the house.
+- The oil lamp burns amber light — not white, not the cold gray of daylight. At approximately 9:05–9:25 PM on February 11, 1983, the reservoir is three-quarters full.
+- Della has a settled category for perceiving the living: 'the tenants.' In the years since the night stopped, the house has had other occupants, and she perceives them as warmth at the wrong angle, a pressure in a room, a light falling wrong for her season, a door not where she left it. She cannot see them or hear their words; she feels the mark they leave. This category is not new in Chapter 8 — she has had it many times before.
+- In Chapter 8 (approximately 9:05–9:25 PM, February 11, 1983), Della perceives warmth at the wrong angle outside and near the back-room door while making her lamp circuit. She identifies it as a tenant (a living person in some other hour of the house), holds her palm toward the door, thinks 'I could go in,' and does not go in. She returns to the kitchen without entering the back room. This is the first membrane moment from Della's side in the narrative — the two clocks now perceptibly occupy the same physical space.
+- Della's lamp circuit in Chapter 8 confirms: the travel clock on the front-room mantle reads a few minutes past nine; the small room at the end of the upstairs hall is empty and cold; the bedroom window gap at upper right is still present; the stove is silent; the back-room cold is its own kind, with the warmth at the wrong angle distinct from and additional to it.
+- Record A recurs in Chapter 8: Della reads the ledger entry to the bottom and finds 'Nobody came to that door.' She closes the ledger without disturbance. The kept sentence is maintained.
+
+## 09-before-the-scanner
+- della-markey — death.time_of_death_earliest: 10:00 PM February 11, 1983
+- della-markey — death.time_of_death_latest: 4:00 AM February 12, 1983
+- della-markey — death.body_temp_on_discovery: 79 degrees Fahrenheit (axillary)
+- della-markey — death.mild_hypothermia_duration: several hours before entering the severe stage; cognitive and motor function substantially intact during this period
+- dr-pauline-raker — role: Greenbrier County Medical Examiner; author of 1983 pathologist's opinion on Della Markey's death
+- lester-caulfield — role: utility worker, Renick Service Center
+- lester-caulfield — statement.date: February 20, 1983
+- lester-caulfield — action.on_feb12: dispatched to 412 Verrill Street for power restoration assessment; saw body through east kitchen window; called county sheriff by truck radio; waited outside until deputy arrived; did not enter premises
+- deputy-harman — role: Greenbrier County Sheriff's Office deputy; secured scene at 412 Verrill Street on February 12, 1983
+- deputy-harman — statement.date: February 21, 1983
+- deputy-harman — statement.ledger_note: named the household ledger open on kitchen table in scene description; noted it was inventoried and left on premises when estate closed
+- mabel-duff — statement.address: 434 Verrill Street, Renick, West Virginia
+- mabel-duff — statement.line2: I saw no visitors to the Markey house on the evening of the tenth or during the daylight hours of the eleventh.
+- mabel-duff — statement.line3_partial: I knew Miss Markey to be a private person and I was not in the habit of — [statement continues; Ellen cut off before completing this line and the remainder of the 2-page statement]
+- mabel-duff — statement.read_by_ellen_ch09: three lines of page one only; remainder photographed; full statement not yet read
+- greenbrier-county-courthouse — coroner_records.digitization_weeks_remaining: 8–10 weeks from late May/early June present day
+- dellas-account-book — location_at_discovery: kitchen table, open to February 11, 1983 entry; confirmed by Deputy Harman's witness statement
+- dellas-account-book — estate_disposition: logged in household inventory February 13, 1983; left on premises when estate closed administratively in 1991; remained in house through Ellen's purchase
+- Dr. Pauline Raker, Greenbrier County Office of the Medical Examiner, wrote the 1983 pathologist's opinion on Della Markey's death. Her opinion states: cause of death, hypothermia; manner, accidental; no alcohol, no controlled substances, no underlying medical condition. Time of death estimated between 10:00 PM February 11 and 4:00 AM February 12, 1983. Body temperature on discovery (axillary) approximately 79 degrees Fahrenheit. The metabolic indicators showed the decedent was in the mild stage of hypothermia (core temp approximately 90–95°F, cognitive and motor function substantially intact) for several hours before entering the severe stage.
+- Lester K. Caulfield, utility worker at the Renick Service Center, is the person who saw Della's body through the east kitchen window on the morning of February 12, 1983, while assessing power restoration. He called the county sheriff by truck radio and waited outside the premises until Deputy Harman arrived. His witness statement is dated February 20, 1983.
+- Deputy Glenn R. Harman, Greenbrier County Sheriff's Office, gave a three-page witness statement dated February 21, 1983. His statement is more detailed than the investigation report in its kitchen inventory. It explicitly names a household ledger open on the kitchen table, open to an entry dated February 11, 1983, in the decedent's consistent hand. The ledger was logged in the household inventory on February 13, 1983, and left on the premises when the estate closed administratively in 1991.
+- Mabel W. Duff lives at 434 Verrill Street — three houses north of 412 Verrill. Her witness statement (February 20, 1983, two pages) opens: 'I last saw Miss Markey on the evening of February tenth.' Line 2: 'I saw no visitors to the Markey house on the evening of the tenth or during the daylight hours of the eleventh.' Line 3 (partial, as read by Ellen in ch09 before being cut off): 'I knew Miss Markey to be a private person and I was not in the habit of —'. Ellen photographed the remainder of the statement; she has not read it yet.
+- Della Markey's household account book (ledger/Record B's container) was open on the kitchen table when deputies arrived on February 12, 1983, and was logged in the household inventory dated February 13, 1983. It was left on the premises when the estate closed in 1991 and remained in the house through all subsequent transfers, including Ellen's purchase. As of chapter 9, Ellen knows the ledger exists and was left in the house but has not found it in six weeks of occupancy.
+- The digitization schedule for the Greenbrier County coroner's 1980s records: confirmed by the records clerk in late May/early June (present day) as approximately 8–10 weeks out. Ellen's window for reading the original paper files is narrowing.
+
+## 10-footfall
+- len-duvall — role: plant worker at Renick Furniture Works
+- len-duvall — action.1964: helped Harold Markey carry the roll-top desk from the Furniture Works to 412 Verrill Street
+- harold-markey-plant-photograph — subject: full Renick Furniture Works crew on the works steps, 1920s
+- harold-markey-plant-photograph — hung_location: staircase wall, approximately shoulder height on the way up
+- harold-markey-plant-photograph — removed_year: 1977 year
+- harold-markey-plant-photograph — rehung: false
+- verrill-street-house-1983 — stair.wall_nail_hole.location: approximately shoulder height on the staircase wall; left by Harold Markey's plant photograph, removed 1977, never rehung
+- verrill-street-house-1983 — landing.coat_hook: hook on landing wall where Harold Markey's good coat hung; coat brought to church by Della in 1979; hook empty on February 11 1983
+- verrill-street-house-1983 — travel_clock.reading_9_22pm: nine twenty-two PM
+- verrill-street-house-1983 — travel_clock.reading_9_24pm: nine twenty-four PM
+- verrill-street-house-1983 — travel_clock.purchase_location: Lewisburg, West Virginia; purchased by Harold Markey
+- verrill-street-house-1983 — travel_clock.box_color: olive-colored lid
+- verrill-street-house-1983 — travel_clock.wind_duration: 6 days per winding
+- verrill-street-house-1983 — travel_clock.wound_feb11_morning: true
+- verrill-street-house-1983 — back_room.wrong_light.perceived_by_della: true; line of light under back-room door observed by Della at approximately 9:15-9:20 PM; continuous, steady, not amber, not oil-flame; gone before chapter end
+- verrill-street-house-1983 — hall_cold.type: inside kind; non-directional; builds when heat source gone; distinct from storm's directional cold
+- harold-markey — good_coat.disposition: brought to church by Della in 1979 after his death
+- della-markey — ch10.back_room_approach: stood at door, looked at wrong light, did not enter; almost-thought about the ledger on the shelf, turned away mid-thought; wrong_believes not-P maintained
+- della-markey — ledger.mental_location_in_ch10: Della's mental image defaults to back-room shelf (normal storage) even though she moved it to kitchen table afternoon of February 11; back-room shelf is empty in 1983 on the night of ch10
+- della-markey — banister.sanded_years: 1963 and 1978 years
+- della-markey — elm_tree.planted_year: 1970 year
+- harold-markey — front_walk.poured_year: 1955 year
+- Chapter 10 (Footfall, Della, approximately 9:15–9:24 PM February 11 1983): Della perceives Ellen's presence in the present day as deliberate footfall on the floor above her — step, pause, step — and goes upstairs with the lamp. On the landing she finds a continuous line of wrong light under the back-room door: not her lamp's amber light, not moonlight (storm full and from the north, no moon), not a draft-illuminated edge. She identifies it as a tenant (her settled category for the living in their own hour of the house). She stands at the door, does not enter, and almost-begins the thought about the ledger on its shelf before turning away mid-sentence. She descends, steps to the left on the third stair from the bottom (forty years of habit from her father's instruction), goes into the front room. The tenant's light is gone before the chapter ends.
+- The staircase wall of the Verrill Street house (1983 timeline) has a nail hole at approximately Della's shoulder height where Harold Markey hung a photograph of the full Renick Furniture Works crew on the works steps (1920s) for twenty years. Della took the photograph down in 1977 to rehang it upstairs; she never did. The nail hole remains. The lamplight finds it every time Della climbs the staircase.
+- Harold Markey's good coat hung on a hook on the upper-floor landing until Della brought it to the church in 1979, after his death. The hook is empty on February 11, 1983.
+- The Verrill Street house front walk was poured in concrete by Harold Markey in 1955. The elm tree in the front yard was planted by Della in 1970.
+- Travel clock, Verrill Street front-room mantle (1983 timeline): purchased by Harold Markey in Lewisburg; original box had an olive-colored lid; Harold said it would run six days on a single wind; Della wound it the morning of February 11, 1983 before the barometer dropped. Reads nine twenty-two at approximately 9:22 PM and nine twenty-four at the chapter's close (approximately 9:24 PM).
+- Della's distinction between two colds, from her father's teaching: the storm's cold has direction — you can feel it coming from somewhere, moving toward something, against your face; the inside cold simply is, all at once, everywhere, building from inside when the heat source dies. This taxonomy is established as Della's working vocabulary across her chapters.
+- Len Duvall: plant worker at Renick Furniture Works; one of the two men who helped Harold Markey carry the roll-top desk up the porch steps and through the front door of 412 Verrill Street in 1964 when the works offered floor models to workers.
+- Dramatic irony confirmed from Della's side: the wrong light under the back-room door is Ellen's light in the present day bleeding through the stopped night. Della does not know the tenant is Ellen specifically or that Ellen is looking for the ledger. Della's incomplete thought places the ledger on the back-room shelf (its normal storage) even though she moved it to the kitchen table on the afternoon of February 11 — the back-room shelf is empty on the night of Chapter 10 in the 1983 timeline.
+
+## 11-no-visitors
+- mabel-duff-statement — date: February 20, 1983
+- mabel-duff-statement — author: Mabel W. Duff
+- mabel-duff-statement — format: two-page typed witness statement on county letterhead; notation at top taken at residence 9:30 AM; Mabel Duff's signature in controlled cursive
+- mabel-duff-statement — window_covered: evening of February 10th and daylight hours of February 11th, 1983 — does NOT cover night of February 11th; knocking at 9:40 PM falls outside this window
+- mabel-duff-statement — last_contact_with_della: evening of February 10th, 1983 — at the mailbox; Della said weather was coming in and she was getting in her wood
+- mabel-duff-statement — discovery_actions: morning of February 12th — noticed car still in drive, no light seen night before; knocked, no answer; tried unlocked door, saw something was wrong from threshold; went to phone and called sheriff's office
+- mabel-duff-statement — record_id: mabel-duff-statement
+- records-room-clerk — gender: female
+- records-room-clerk — visits_count: 3 visits by Ellen
+- ellen-vance — digitization.schedule_weeks_out: 6 weeks
+- ellen-vance — mabel_duff_statement.read_status: fully read from original in ch11; photographed again from original for sourcing; false crossing complete
+- della-markey — middle_name: Ruth
+- verrill-street-house — street_number: 412 Verrill Street, Renick, West Virginia
+- mabel-duff — middle_initial: W
+- Ch11: Mabel Duff's full inquest statement registered as record 'mabel-duff-statement' — covers the evening of February 10th and daylight hours of February 11th only; does NOT cover the night of February 11th (9:40 PM onward); statement is truthful but covers the wrong window for the knocking.
+- Ch11: Ellen wrong-believes ¬P (nobody came to Della's door) after reading Mabel Duff's full statement and assembling the complete documentary account; her professional reasoning is sound given what she knows; the false crossing has fully landed.
+- Ch11: The digitization schedule has moved to approximately 6 weeks from early June, per the records room clerk. Equipment arrived ahead of projection.
+- Ch11: Ellen has now read every document in the Greenbrier County inquest file on Della Ruth Markey's death: death certificate, coroner's investigation report, pathologist's report (Dr. Pauline Raker), Caulfield's statement, Harman's statement, and Mabel Duff's statement.
+- Ch11: Ellen has been carrying a phrase since the first week in the house — something close to 'nobody came to that door' — and the file has now confirmed the same account from the other direction. The prose does not name the connection to Record A.
+- Ch11: The back-room door is found ajar again when Ellen returns from the full-day records-room visit. She closes it. The house's behavior continues independent of Ellen's beliefs about it.
+- Ch11: Della's full name established in the inquest verdict (as quoted in Ch09): Della Ruth Markey. Middle name Ruth.
+- Ch11: The verrill-street-house street address is 412 Verrill Street, Renick, West Virginia (established in the inquest verdict quoted in Ch09's prose; confirmed in Ch11).
+
+## 12-what-she-kept
+- harold-kitchen-chair — material: oak, straight-backed
+- harold-kitchen-chair — defect.slat_crack: crack in second slat since 1968; stable, not worsening
+- harold-kitchen-chair — user_feb11_1983: Della Markey; same chair Harold used at this table for evening accounts
+- kitchen-thermometer-verrill — location: by the kitchen door
+- kitchen-thermometer-verrill — reading.7pm_feb11_1983: 41 degrees Fahrenheit
+- kitchen-thermometer-verrill — reading.830pm_feb11_1983: 40 degrees Fahrenheit
+- kitchen-thermometer-verrill — reading.920to935pm_feb11_1983: 39 degrees Fahrenheit
+- della-markey — ch12.ledger.kept_sentence_written_twice: true; written once as the regular entry closing, then written again underneath as deliberate act of reinforcement; the second writing required effort adjacent to will — first time the kept sentence required more than routine inscription
+- della-markey — ch12.location: kitchen table, Harold's chair, blanket around shoulders; did not go to front windows
+- della-markey — ch12.tenant_perception: tenant more present than any prior night; wrong light under back-room door described as steadier and brighter than before; filed under tenants category without alarm; Della comes to kitchen and does not return upstairs
+- della-markey — back_room_shelf.state_feb11_evening: empty; ledger moved to kitchen table that afternoon; shelf holds nothing on the night of February 11
+- della-markey — father.habit.evening: Harold Markey sat at the kitchen table every evening — after supper, with the accounts, or reading the paper; used the same oak chair Della now uses
+- Ch12 (What She Kept): Della writes the kept sentence ('Nobody came to that door.') twice in the February 11, 1983 ledger entry during the period approximately 9:20–9:35 PM: once as her habitual entry-closing line at the bottom of the column of figures, then again immediately underneath as a deliberate second inscription. She notes — without writing it in the ledger — that the second writing required something adjacent to effort, unlike most nights when the sentence asserts itself without attention. This is the first chapter in which maintaining the kept sentence visibly requires will rather than habit.
+- Ch12: The back-room shelf above the window is empty on the night of February 11, 1983. Della moved the ledger from that shelf to the kitchen table that afternoon before the power outage. The tenant (Ellen) is perceived as searching the back room this night; the irony is that the ledger is not in its usual location.
+- Ch12 continuity note for later drafters: Record B (markey-ledger-1983) excerpts the post-knocking section of the February 11 entry. The double occurrence of 'Nobody came to that door' from ch12's action (written pre-knocking, approximately 9:20–9:35 PM) is part of the same entry page but precedes the excerpted section. The final occurrence in Record B is written after the knocking stops at 9:52 PM and is the load-bearing one for the mystery's resolution. The two pre-knocking occurrences do not appear in Record B and do not conflict with it.
+- Ch12: Harold Markey sat at the kitchen table every evening — with the accounts, reading the newspaper, or simply in the habit of sitting. He used the same oak chair (second slat cracked since 1968) that Della uses at the table on the night of February 11. The chair's sound when pulled from the table is how Della identifies it.
+
+## 13-the-account-as-it-stood
+- ellen-rough-draft — status: completed and filed in Ellen's notebook as of early June, present day
+- ellen-rough-draft — content.verdict: Accidental death; nobody came to the door; county ruling confirmed as internally consistent with documentary record
+- ellen-notebook — right_column.contents: Back-room cold (source unidentified); door found ajar three times since April (bolt and housing intact); quality of attention in certain rooms (noted; not classified)
+- ellen-notebook — left_column.ledger_note: Ledger inventoried Feb 1983; not removed with estate; back room not thoroughly examined — boxed as unresolved item
+- back-room — ledger.deduced_location: Ellen deduces ledger is likely on back-room shelf above window, based on Harman's inquest inventory notation and her not finding it elsewhere in the house
+- back-room — door.ellen_approach: Ellen put her hand on the handle in ch13 and did not open the door; first physical approach to the door handle by Ellen
+- Chapter 13 (Ellen, early June): Ellen produces a written rough draft summary of the false account at the desk in the front room. Format: two-column notebook — left column (the documentary record), right column (unexplained items bracketed as [inaudible] in the professional notation). The rough draft holds the complete county record: the storm, the power outage, Mabel Duff's observation window (no visitors evening of Feb 10 or daylight of Feb 11), the stove mechanism (exterior chimney draft reversal in extreme cold, no mechanical defect), death window (10 PM Feb 11–4 AM Feb 12, Raker), inquest verdict (accidental death). Ellen reads it back; it is internally consistent; she certifies the county was correct.
+- The right-hand column of Ellen's notebook (the unexplained items, filed as [inaudible]): (1) back-room cold — source not identified; (2) door found ajar three times since April — bolt and housing intact; (3) quality of attention in certain rooms — noted, not classified. These items are bracketed, not interpreted. They do not enter the left column.
+- Ellen identifies the ledger from Harman's inquest inventory: one household account ledger, open, kitchen table, inventoried with the estate, left in the house when the estate closed. She has not found a ledger in the house. She boxes a note: ledger not located; back room not thoroughly examined. She deduces the ledger is likely on the shelf above the window in the back room, based on Harman's scene description of a shelf in the upper back room.
+- Ellen goes upstairs to the back-room door, puts her hand on the handle, and does not open the door. First physical approach to the door handle by Ellen. She removes her hand and returns downstairs. She tells herself the account is complete without the ledger.
+- The false account is now on paper in Ellen's notebook. Ellen's wrong_believes-not-P is formalized: the professional act of writing the rough draft is the act that makes an account official in her professional practice. Both Ellen and Della now hold the same wrong belief — one in a household ledger, one in a professional notebook.
+
+## 14-near-quarter-to-ten
+- markey-travel-clock — location_in_della_chapters: on the mantle in the front room, Verrill Street house (1983)
+- markey-travel-clock — wound_date: February 10, 1983 — afternoon, before power outage; wound per Harold Markey's storm-start rule
+- markey-travel-clock — family_provenance: brought from Kanawha County by Della's grandmother's family when they relocated to the Greenbrier valley; grandmother's before Harold's, Harold's before Della's
+- markey-travel-clock — winding_habit: set by radio time-signal on Sunday mornings; rule passed from grandmother to Harold to Della; also wound at start of any multi-day storm
+- markey-travel-clock — face_description: cream-colored face, black numbers, dark wood case
+- della-markey — ch14.clock_readings: 9:32, 9:36, 9:37, 9:38 — chapter cuts at 9:38, two minutes before the knocking
+- della-markey — temperature_at_938pm_feb11: 37 degrees Fahrenheit
+- della-markey — ch14.back_room_approach: stood at foot of stairs; did not go up; aware that going up leads to back room; last time in back room was afternoon of February 11 (to retrieve the ledger)
+- della-markey — ch14.kept_sentence_mode: held (not written) — first chapter in which the kept sentence is carried mentally as a grip rather than inscribed in the ledger; described as holding a stiff latch-pin under extra pressure
+- harold-markey — plant_years: 31 years
+- harold-markey — mill_wisdom.machine_tells_you: a machine tells you before it tells you — tolerance-change felt in the plant floor before it becomes a noise; learned by standing in the plant long enough for the floor to carry it through the soles of your shoes; Della internalized this as her own working method
+- harold-markey — storm_rule: wind the clock at the start of any storm that will last more than a day — rule Della maintains
+- della-markey — work_history.plant_floor: worked on the plant floor when young, before going to office work, before the plant started contracting; learned her father's floor-sense from direct experience
+- Ch14 (Near Quarter to Ten) — Della is at the mantle watching the travel clock; the chapter is structured around four clock-face readings (9:32, 9:36, 9:37, 9:38) each anchoring a section; the chapter cuts at 9:38, two minutes before the knocking that begins at near quarter to ten (9:40).
+- The Markey travel clock stands on the mantle in the front room of the Verrill Street house in Della's 1983 chapters; it has been in the family since Della's grandmother's generation (Kanawha County origin); wound by radio time-signal on Sundays and at the start of any multi-day storm — Harold Markey's rule, kept by Della.
+- Harold Markey's mill-floor principle: 'a machine tells you before it tells you' — the tolerance-change felt in the plant floor before it becomes a noise; thirty-one years in the Renick Furniture Works plant; Della worked on the plant floor when young, before office work, before the plant contracted, and internalized this principle as her own working method.
+- Ch14 establishes the temperature at approximately 9:36–9:38 PM February 11, 1983 as thirty-seven degrees Fahrenheit — continuing the drop from thirty-nine at 9:20–9:35 (ch12) and forty at 8:30 PM and forty-one at 7 PM.
+- Ch14: Della holds the kept sentence mentally rather than writing it — first chapter in which the mercy is carried as active grip (described as holding a stiff latch-pin under cold-weather pressure) rather than as a ledger inscription; the chapter ends before the knocking begins.
+
+## 15-the-probate-record
+- della-markey-estate — petition.opened: March 22, 1983
+- della-markey-estate — closed: February 1991; circuit court petition granted; county acquires real property
+- della-markey-estate — house.appraised_value: 19500 USD (1983)
+- della-markey-estate — household_contents.appraised_value: 640 USD (1983)
+- della-markey-estate — car.make_model_year: 1977 Chevrolet Nova
+- della-markey-estate — car.appraised_value: 900 USD (1983)
+- della-markey-estate — savings_account.bank: Greenbrier Valley Bank
+- della-markey-estate — savings_account.balance_at_death: 2312 USD (1983)
+- della-markey-estate — ledger.inventory_notation: Household account ledger (hardbound, approx. 200 pp.); found open, kitchen table, February 12 1983; inventoried with estate; remains in situ
+- della-markey-estate — heir_search.result: three certified letters to three addresses (1983, 1984, 1986), all returned; next of kin Cale H. Markey unable to be located
+- cale-markey — last_known_address: 441 Bridge Street, Chillicothe, Ohio (as of 1983 probate file)
+- cale-markey — departure_year_approx: 1979 or 1980 (Roy's account); after argument over Harold Markey's estate
+- cale-markey — destination_after_renick: Ohio; looking for work (Roy's account); first address Chillicothe
+- cale-markey — departure_cause: argument about Harold Markey's estate; estrangement from Della
+- roy-courthouse-clerk — role: courthouse records clerk, probate section, Greenbrier County
+- roy-courthouse-clerk — tenure: approximately 30 years years
+- roy-courthouse-clerk — markey_knowledge: confirms Harold Markey was plant millwright, died circa 1978; Della stayed in house; Cale left circa 1979-80 after argument over estate; no knowledge of Cale returning to Renick
+- ellen-vance — mabel_duff_statement.reanalysis: identified in ch15 that observation window covered daylight of Feb 10-11 only; power out by afternoon Feb 11; gap in coverage from early dark to Harman's arrival Feb 12; inference "no visitors" extended beyond what source stated
+- Ch15 (Ellen): Ellen visits the probate section of the Greenbrier County courthouse (second floor, distinct from the records room on the third floor) to read the full estate file for Della Ruth Markey.
+- Ch15: Della Markey died intestate. Estate petition opened March 22, 1983; estate closed February 1991 when circuit court granted county's petition to acquire real property after no heirs came forward.
+- Ch15: Estate inventory: house at Verrill Street appraised $19,500 (1983); 1977 Chevrolet Nova $900 (body good, engine needs assessment); household contents collectively $640; savings account at Greenbrier Valley Bank, balance $2,312 at death.
+- Ch15: Probate inventory confirms household ledger listed as 'found open, kitchen table, at time of discovery, February 12, 1983; inventoried with estate; remains in situ' — this is the estate document confirming what Harman's inquest inventory also showed.
+- Ch15: Cale H. Markey named as next of kin in Della's probate file. Last known address: 441 Bridge Street, Chillicothe, Ohio. Three certified letters sent to three different addresses (1983, 1984, 1986) — all returned undelivered, addressee not found. Estate held eight years before county acquisition.
+- Ch15: Roy (long-tenured courthouse records clerk, ~30 years tenure) confirms Markey family history: Harold Markey was a millwright at the Renick plant, died 'seventy-eight, thereabouts'; Della stayed in the house after his death; Cale left approximately 1979-80 after an argument about Harold's estate; Roy has no knowledge of Cale ever returning to Renick.
+- Ch15: Ellen identifies the false inference in her rough draft: Mabel Duff's inquest statement covered daylight hours only (evening of February 10 and daylight of February 11); the storm knocked out power in Greenbrier County on the afternoon of February 11; Mabel would not have been watching from her window in the dark and the cold; the gap from early dark on February 11 to Harman's arrival on February 12 was not covered by any observation.
+- Ch15: Ellen writes below the rough draft in the bracket (inaudible) format: 'Question: Cale Markey. Did he come back?' — this is the epistemic turning point; she moves from wrong_believes (false account felt complete) to suspects P (account has a named gap; she does not know how to fill it from available records).
+- Ch15: The back-room door remains closed. Ellen does not go upstairs after returning from the courthouse. The ledger in the back room (present-day location) remains unread.
+
+## 16-his-name
+- markey-household-ledger — start_date: January 1979
+- markey-household-ledger — page_count_approx: 200 pages
+- markey-household-ledger — cale_name_last_entry_date: October 1979
+- markey-household-ledger — kept_sentence_written_count: 3 times
+- verrill-street-transom — pane_count: 4 panes
+- verrill-street-transom — location: above front door frame, Verrill Street house
+- verrill-street-house-1983 — interior_temperature_930pm_feb11_1983: 37 degrees Fahrenheit
+- della-markey — ledger_cale_name_last_written: October 1979
+- Ch16 (Della): The front door at the Verrill Street house has a transom window above the door frame — four panes across, each pane the height of a handspan — fogged inside from the temperature differential. This is the window Della does not look through in Chapter 16, and the window through which Cale's silhouette would have been visible had she looked up when he was standing outside during the knocking.
+- Ch16 (Della): Della's household ledger runs from January 1979 and covers nearly five years (approximately 200 pages). The last entry containing Cale Markey's name is in October 1979 — she drew a line under it and has not written his name in the ledger since. In Chapter 16 she finds the October page, puts her thumb over his name without reading the letters, and turns back to tonight's page.
+- Ch16 (Della): The kept sentence (Nobody came to that door) is written a third time in the ledger in Chapter 16 — at the bottom of tonight's column, after the 9:30 PM temperature entry of thirty-seven degrees. Della writes it flat, reads it back, puts the pencil in the groove, and closes the ledger.
+- Ch16 (Della): The interior temperature of the Verrill Street house at 9:30 PM on February 11, 1983 is thirty-seven degrees Fahrenheit, read from Harold Markey's kitchen-wall thermometer (installed 1952). The temperature is still falling.
+- Ch16 (Della): The mantle clock reads 9:35 moving to 9:36 in this chapter. Della watches the second hand move from one minute to the other at the mantle, not going to the window above the front door. The not-looking is deliberate and justified in ledger-accounting terms: she has assessed the storm; looking again will not change the assessment.
+
+## 17-a-deposition-in-elkins
+- elkins-deposition-june — date.month: June, present day (eighteenth of June stated in deposition opening)
+- elkins-deposition-june — case_type: worker's compensation
+- elkins-deposition-june — venue: Morrow and Kilhenny, Davis Avenue, Elkins, West Virginia
+- elkins-deposition-june — close_time: 2:49 PM
+- elkins-deposition-june — rough_draft_pages: 114 pages
+- robert-varga — age_range: mid-forties
+- robert-varga — role: claimant/deponent in worker's compensation case against former roofing company employer
+- robert-varga — injury: back injury sustained on east slope of commercial building on Route 20, Elkins area; roofing company employed him for 9 years prior
+- morrow-kilhenny — location: Davis Avenue, Elkins, West Virginia; third floor of sandstone building
+- ellen-vance — deposition.elkins_june.departure_time: 7 AM, left every door in house closed including back-room door with latch engaged
+- ellen-vance — deposition.route_west: Route 33 west from Judy Gap junction to Elkins; return via Route 219 south
+- ellen-vance — trade_loss.personal_face: At Elkins break, defendant's attorney said his firm uses digital audio for straightforward comp cases, described it as 'mostly painless'; Ellen said only 'That's the direction things are going'
+- back-room — door.ajar_during_absence: Found ajar (3-4 inch gap) on Ellen's return from 10-hour absence in Elkins; house unoccupied by any living person; confirms the door's anomalous behavior is not contingent on Ellen's presence in the house
+- Ch17 (A Deposition in Elkins): Ellen drove Route 33 west to Elkins for a worker's compensation deposition at Morrow and Kilhenny (Davis Avenue), leaving Verrill Street at 7 AM with every door closed and the back-room door latch fully engaged. The deponent was Robert Varga, mid-forties, nine years with the roofing company, back injury on Route 20. The deposition closed at 2:49 PM; the rough draft ran 114 pages.
+- Ch17: During a break in the Elkins deposition, the defendant's attorney mentioned his firm uses digital audio recording for straightforward comp cases. Ellen responded: 'That's the direction things are going.' The trade displacement is given its most direct personal face in the narrative here.
+- Ch17: On Ellen's return to Verrill Street (approximately 5:20 PM, 10-hour absence), the back-room door was found ajar — a gap of approximately 3-4 inches — with the anomalous cold reaching through the gap and the room darker than it should have been given the back-yard-facing window in late afternoon. Ellen set the case down, closed the door without looking through the gap, seated the latch, and went downstairs. She did not enter the back room. This confirms the back room's anomalous behavior is not contingent on Ellen's presence in the house.
+- Ch17: Ellen opened the notebook at the desk after returning, found the question from ch15 still on the page — 'Did Cale come back?' — and closed the notebook on it. The record she has assembled does not answer the question. No epistemic advance on P. Ellen's suspects-P stance maintained unchanged from ch15.
+
+## 18-the-sound-of-the-knocking
+- feb-11-knocking — start_time: approximately 9:40 PM
+- feb-11-knocking — pattern: three impacts at a time with deliberate even pauses between sets
+- feb-11-knocking — clock_reading_during: 9:42 PM
+- feb-11-knocking — recognized_by_della: true — she knows the knock without naming its owner
+- feb-11-knocking — answered: false — Della does not go to the door
+- feb-11-knocking — location: front door of verrill-street-house-1983
+- verrill-street-house — elm_tree.location: south side of house
+- verrill-street-house — hallway.coat_hooks.location: at the turn in the front hall, near the front door
+- verrill-street-house — hallway.floor_at_front_door: floorboards transition to slate at the front door threshold
+- verrill-street-house — hallway.bends_at_front_door: true — the hall turns at the front door; transom above door is not visible from foot of stairs
+- della-travel-clock — location: on the mantle in the front room
+- della-travel-clock — moved_to_mantle_when: when Harold Markey moved into the back bedroom
+- della-travel-clock — setting_ritual: set by radio on Sunday mornings — Harold's practice, continued by Della
+- verrill-street-house-1983 — temperature_at_942pm: below 37 degrees Fahrenheit
+- della-markey — position_at_knocking: foot of the front stairs, hall, lamp in right hand — does not move toward the door
+- Chapter 18: The knocking at the front door of the Verrill Street house on February 11, 1983, is first rendered in real time from Della's perspective. She is at the foot of the stairs with the lamp when three impacts hit the front door at approximately 9:40 PM. She conducts a millwright's analysis of the sound (not wind, not ice-fall, not branch) and correctly identifies it as a fist on the solid door her father re-hung in 1970.
+- Chapter 18: Della identifies the knock without naming its owner. She has known the specific force, interval, and pause of Cale Markey's knock for over twenty years — learned at the back door of the Verrill Street house, the plant office door, and other doors before October 1979. Her body identifies it before she finishes thinking about whether she is right. She does not go to the door.
+- Chapter 18: At 9:42 PM the travel clock is checked through the doorway from the foot of the stairs (Della tilts her head to find the face past the lamp's light). The clock reads 9:42. The knocking has been ongoing for several minutes by this time.
+- Chapter 18: Della holds the kept sentence — not written in this moment, held as a bearing measurement held against a load that would shift it. The ledger is closed on the kitchen table, pencil in the groove. She is not writing. The chapter ends with the knocking still ongoing.
+- Chapter 18: The elm tree is on the south side of the Verrill Street house; Harold Markey trimmed it in 1975; Della has kept it trimmed since; there are no branches on the street-facing wall that could reach the front door in any wind.
+- Chapter 18: The front hall bends at the front door — coat hooks at the turn, floorboards transitioning to slate at the door threshold. The transom above the front door is not visible from the foot of the stairs because the hall bends at the door; this is a geometric fact, not an act of will.
+
+## 19-the-back-room
+- markey-household-ledger — start_date: April 1971
+- markey-household-ledger — first_keeper: Harold Markey; entries in his hand from April 1971 through October 1975
+- markey-household-ledger — hand_change_date: October 1975; Della Markey takes over from Harold; same letter forms, different pen pressure
+- markey-household-ledger — location_present_day: back-room closet, bottom shelf, inside cardboard box wrapped in heavy canvas
+- markey-household-ledger — found_by: Ellen Vance; July, present day; ch19
+- markey-household-ledger — cover: brown cloth board; worn through at two corners to gray board; binding intact
+- markey-household-ledger — format: commercially available ruled account book; pale-green ruled lines; red left-margin column; numbered right columns
+- markey-household-ledger — cale_entries_span: November 1975 through October 1979; name disappears after October 1979 estate-dispute entry
+- markey-household-ledger — ellen_reading_stopped_at: December 28, 1981; marked with utility-bill stub; February 1983 not yet reached
+- harold-markey — death_date: October 17, 1978
+- harold-markey — burial_place: Renick Methodist; buried October 20, 1978
+- harold-markey — deed_transfer_date: September 1978 (recorded September 14, 1978); quit-claim to Della Ruth Markey
+- back-room — closet.top_shelf: empty; fine layer of dust in back corner undisturbed
+- back-room — closet.middle_shelf_contents: broken picture frame (glass out, one corner joint loose); glass jar with rusted lid (hardware: nails, bolt-and-nut, two screws); folded heavy canvas drop-cloth weight
+- back-room — closet.bottom_shelf_contents: cardboard box (banker's box size, no handles, brownish-beige aged cardboard, watermark on two sides; interior dry); contains loose papers and the household ledger wrapped in heavy canvas
+- back-room — door.fully_open_event: ch19, July morning: found standing at full swing against door stop — not ajar as in prior chapters; first fully-open state observed
+- back-room — door.left_position_ch19: Ellen left the door at its full swing when she exited with the ledger — did not close it
+- cale-markey — ledger_first_entry: November 1975; 'Cale home, second week of Nov.'
+- cale-markey — ledger_estate_entry: October 1979: 'Cale — estate, final. No resolution.' — last entry containing his name
+- ellen-vance — ledger.reading_session_ch19: read from start (April 1971) through December 1981; approximately 3 hours beginning 8:30 PM; stopped at 11:22 PM; February 1983 not yet reached
+- The Markey household ledger begins in April 1971 in Harold Markey's hand; Della Markey takes over the record-keeping in October 1975, midmonth, without annotation — same letter forms, lighter pen pressure, slightly more fluid descenders. The ledger was found by Ellen in July (ch19) in a cardboard box on the bottom shelf of the back-room closet, wrapped in heavy canvas.
+- The cardboard box in the back-room closet contains, besides the ledger: loose papers (utility bills, hardware receipts, a grocery co-op receipt from Lewisburg, two unopened insurance envelopes addressed to Della R. Markey, Verrill Street, Renick). The box has a watermark on two sides from a past water incursion; interior is dry; cardboard aged to brownish beige.
+- Harold Markey died October 17, 1978; buried at Renick Methodist October 20, 1978. His death is recorded in the household ledger in a single line at the same left margin as the surrounding utility entries.
+- The deed transfer (quit-claim, Harold Markey to Della Ruth Markey, recorded September 14, 1978) is recorded in the household ledger in September 1978 with the full address and county document reference. The transfer occurred while Harold was alive, weeks before his death.
+- Cale Markey's name first appears in the household ledger in November 1975 ('Cale home, second week of Nov.'). Subsequent entries through 1976-1979 record his visits, long-distance charges, an address change to Ohio, and a dispute over mill hours. After Harold's death in October 1978, entries shift to estate-dispute notation. The final entry with his name is October 1979: 'Cale — estate, final. No resolution.' His name does not appear again for the remaining three years and four months of the ledger's life.
+- Ellen reads the ledger through December 1981 in a three-hour session ending at approximately 11:22 PM. She marks her place with a utility bill stub and sets the ledger on the desk between the notebook (containing the question 'Did Cale come back?') and the Markey file folder. February 1983 remains unread.
+- The back-room door was found fully open — standing at its full swing against the door stop — for the first time in ch19. Previous anomalies were 3-4 inch ajar gaps. Ellen did not close the door when she left the room with the ledger.
+- The back-room closet full contents (established in ch19 thorough examination): top shelf empty; middle shelf: broken picture frame (glass out, one corner joint loose), glass jar with rusted lid containing hardware (nails, bolt-and-nut, two screws), folded heavy canvas; bottom shelf: cardboard box. The ch03 brief survey noted the top shelf and wall nails only — the full closet was not examined until ch19.
+
+## 20-the-account-book
+- markey-household-ledger — first_entry_date: April 1971
+- markey-household-ledger — first_keeper: Harold Markey
+- markey-household-ledger — hand_change_date: October 1975, midmonth — Della takes over from Harold
+- markey-household-ledger — cale_name_first_appearance: November 1975 — "Cale home, second week of Nov."
+- markey-household-ledger — cale_name_last_appearance: October 1979 — "Cale — estate, final. No resolution."
+- markey-household-ledger — fathers_death_entry: October 1978 — "Father died, October 17, 1978. Buried at Renick Methodist, October 20." — thirteen words, same margin as utility entries on the same page
+- markey-household-ledger — january_1983_preparation_entries: Jan 8: additional cord 1/2 cord $14.00; Jan 9: lantern oil two quarts $1.80; Jan 14: chimney checked draft clear; Jan 22: oil furnace service annual; Jan 28: storm predicted Thursday
+- markey-household-ledger — ch20_reading_stopped_at: January 31, 1983 — Della reads to here and holds the page; does not turn to February 11
+- markey-household-ledger — ch20_end_location: back-room shelf above the window; set there open to January 31 by Della at close of ch20; shelf was empty since afternoon of February 11
+- della-markey — ch20.location: back room; came from kitchen with the ledger; 9:42–9:50 PM February 11, 1983
+- back-room — shelf.location: above the window (back-yard-facing wall)
+- back-room — della_first_ch_entry: ch20 — first time Della enters the back room in the chapter sequence; previously she has stood at the door but not crossed the threshold in any Della chapter
+- della-markey — ch20.kept_sentence_mode: held (not written) — same as ch18; the writing happens after 9:52 when the knocking stops; in ch20 it is the 'totaled column before you enter the sum'
+- Ch20 (Della): Della enters the back room for the first time in the chapter sequence, having come from the kitchen with the ledger (which was on the kitchen table since afternoon; the back-room shelf was empty per ch04/ch12). She brings the ledger up and reads in order from the front. She stops at January 31, 1983 and does not turn to February 11. She sets the ledger open on the shelf above the back-room window — returning it to its proper place — at the chapter's close.
+- The household account book's internal sequence: Harold's hand April 1971 through October 1975 (hand change midmonth); Della's hand from October 1975; Cale first appears November 1975; father's illness from March 1978; deed transfer September 1978 (Harold to Della); father's death October 17, 1978 (buried Renick Methodist October 20) — thirteen words, same margin as utility entries; Cale's estate entries November 1978 through October 1979; final Cale entry October 1979 'Cale — estate, final. No resolution.'; Cale's name absent from November 1979 through February 1983; household contraction 1980–1982 (100 gal oil Oct 1980 vs 150 gal Oct 1977; hours cut June 1981 $44/wk diff); chimney swept October 1982 draft uncertain; January 1983 storm preparations.
+- The January 1983 ledger entries confirmed by Della's reading: Jan 8 additional half cord stacked south wall $14.00; Jan 9 lantern oil two quarts $1.80; Jan 14 chimney checked draft clear; Jan 22 oil furnace service annual; Jan 28 storm predicted Thursday; Jan 31 running total heating oil column balanced.
+- In ch20 Della explicitly knows what she wrote on February 11, 1983 — she names the entry's contents (stove, storm, power out, cord wood, the knocking, the time nine fifty-two, the last line) without reading them back; the kept sentence is held in her as 'the totaled column before you enter the sum' — not written in this chapter, which is consistent with ch18 establishing that the writing happens after 9:52 when the knocking stops.
+
+## 21-the-final-entry
+- ellen-vance — belief.P: knows P — Record B read in full; the last five words of the entry follow a paragraph documenting knocking, recognition, and refusal; the inversion of the kept sentence is understood; Ellen knows Cale came to the door and Della chose not to go down
+- mabel-duff-statement — false_crossing_disproved: true — Ellen draws bracket around 'daylight hours of February 11th'; knock came at 9:40 PM on February 11, eight hours outside Mabel's observation window; the inference was Ellen's, not a flaw in Mabel's statement
+- cale-markey — feb11_journey: drove from Chillicothe, Ohio to Renick, West Virginia on February 11, 1983 during the Megalopolitan Blizzard; arrived at front door of Verrill Street house approximately 9:40 PM; knocked approximately 12 minutes; left at 9:52 PM without knowing Della was inside
+- markey-household-ledger — feb9_entry_summary: February 9, 1983: barometer dropped 0.4 in overnight; lantern filled three-quarters full; cord wood moved to back porch (estimate quarter cord remaining); stove drawing well; radio storm warning advisory through February 11
+- markey-household-ledger — feb10_entry_summary: February 10, 1983: heavy snow since 3 AM; roads closed 8 AM per radio; stove draft clean and fire strong at first light; Mabel seen at mailbox in morning (she would stay in); storm continuing through February 11 at minimum; candles, matches, cord wood, heating oil in column; final note: Supplies adequate. Power was on during February 10 (no outage noted).
+- markey-household-ledger — power_outage_date: February 11, 1983, approximately 6 PM — first and only power loss; February 10 entry confirms power was on throughout that day
+- markey-household-ledger — ellen_reading_completed: all entries through final February 11 1983 entry (Record B) read by Ellen Vance, chapter 21; ledger reading session complete; final page photographed twice
+- verrill-street-house — state_after_record_b_read: very quiet — the house described as unusually quiet after Ellen reads Record B; the second attention that has characterized prior chapters is not described; stated as fact, not interpreted
+- Chapter 21 establishes the power outage timeline: power was on throughout February 10 (fire strong, draft clean, confirmed in Della's February 10 ledger entry) and went out at approximately 6 PM on February 11. This is consistent with Record B ('Power out since six') and must hold in all subsequent chapters.
+- The false crossing is formally disproved in chapter 21: Ellen draws a bracket around 'daylight hours of February 11th' in Mabel Duff's photocopy. The inference was Ellen's; the statement was accurate; Mabel's observation window ended around midday on February 11, eight hours before the knock at 9:40 PM. This is now part of Ellen's documented investigative record.
+- Chapter 21 confirms Cale Markey drove from Chillicothe, Ohio to Renick, West Virginia on February 11, 1983 during the blizzard. He knocked for approximately twelve minutes (9:40–9:52 PM). He left without knowing Della was inside. He did not know she died.
+- The ledger's February 9 entry (storm preparation: barometer drop 0.4 in, lantern filled, cord wood on back porch, stove drawing, radio advisory) and February 10 entry (heavy snow since 3 AM, roads closed 8 AM, fire strong at first light, Mabel at mailbox in morning, supplies adequate) are now part of the established record. February 9 and 10 entries are before the final entry (Record B) and are freely composed intermediate content.
+- After Ellen reads Record B in chapter 21, the house on Verrill Street is described as 'very quiet' — an observed detail stated as fact without interpretation. This is the first chapter in which the house's second attention is not active; the prose does not explain this.
+- The 'I did not go down' reading is fixed in chapter 21: Ellen reads this as a deliberate choice, not inability — contrasting the exact grammar against 'I could not go down' or 'I was unable.' This reading is now part of the documented proceeding and must not be contradicted in chapters 22, 23, or 24.
+
+## 22-what-she-wrote
+- della-markey — ch22.final_position: hand on back-room door latch; chapter ends mid-gesture; what she does next is not on the page
+- della-markey — belief_correction.chapter: 22-what-she-wrote
+- della-markey — knocking.duration_minutes: 22 minutes
+- markey-household-ledger — ch22_della_reading_completed: true; Della reads Record B in full for the first time since the night she wrote it; forty years since last read
+- markey-household-ledger — ch22_end_location: back-room shelf above the window; open to February 11 (was open to January 31 at ch20 close); Della set it down without closing it
+- markey-household-ledger — blank_pages_after_final_entry: 30-40 pages
+- back-room — door.state_ch22_end: open; Della left it open when she came in; Della's hand on the latch at chapter's end
+- back-room — ledger.open_to_ch22: February 11, 1983
+- della-markey — ch22.stove_failed_time: after eight PM; worked from eight until close to nine; kindling down to three sticks; could not bring draft back
+- cale-markey — ledger.last_entry_wording: October 1979: Cale — estate, discussion. No resolution.
+- Chapter 22 (Della's final chapter): Della reads her own final ledger entry (Record B) in full for the first time since the night she wrote it. The entry is read line by line in the back room with the ledger on the shelf, the travel clock reading 9:52, and the front of the house quiet. She reads: the power out since six; stove losing draft after eight; knocking near quarter to ten — three raps, then steady; three years she had not written his name but she knew it; I did not go down (stated twice); knocking stopped at nine fifty-two; Nobody came to that door.
+- Chapter 22: The wrong belief corrects. Della understands she wrote both the full account (knocking, recognition, refusal) and the mercy (Nobody came to that door) in the same entry, on the same night, in the same hand. She knows it was Cale. She knows she counted twenty-two minutes and did not walk the eight steps to the door, ten steps down the stair, six steps to the front.
+- Chapter 22: The mercy: 'Nobody came to that door' — Della wrote these five words after the twenty-nine that record exactly what she refused. She made the five words carry the night. They carry what she put in them, not the full account above them on the same page.
+- Chapter 22: Della sets the ledger on the back-room shelf, leaves it open to February 11 (it had been open to January 31 since ch20). She goes to the back-room door, puts her hand on the latch. The chapter ends on this gesture, mid-movement. What she does next is not on the page. The alternation severs here — no Della chapter follows.
+- Chapter 22 continuity: The cale_name_last_ledger_entry wording confirmed as 'Cale — estate, discussion. No resolution.' — October 1979. The knocking duration is 22 minutes (near quarter to ten to nine fifty-two). The stove lost its draft after eight PM; Della worked it from eight until close to nine with the kindling down to three sticks before giving up. She took the extra blanket and came up to the back room.
+
+## 23-the-two-records
+- ellen-vance — complete_account.produced: true — three-paragraph written account of Della Markey's death produced in notebook during ch23; July, the morning after ch21
+- ellen-vance — proceeding.status: closed — all documentary materials assembled, account written, proceeding formally complete in Ellen's professional sense
+- ellen-vance — notebook.contents: Record A written out as standalone sentence; three-paragraph account; Mabel Duff photocopy filed inside with bracket in place; notebook closed at end of ch23
+- ellen-vance — ab_sidebyside.completed: true — formal A/B side-by-side: Record A written in notebook, Record B read from ledger, both on desk simultaneously; inversion mechanism named in ch23
+- ellen-vance — deposition.next_tuesday: workman's compensation case deposition, Morgantown, the Tuesday after ch23; confirmed booking; firm worked with twice before
+- markey-written-account — location: inside Ellen's notebook, closed, on the desk at 14 Verrill Street
+- markey-written-account — paragraph1: February 11 1983 events: power out six PM; stove lost draft after eight; Cale knocked near quarter to ten (three raps then steady); Della heard him, recognized knock, did not go down, sat with travel clock, knocking stopped nine fifty-two; she recorded and ended entry Nobody came to that door; died of hypothermia before morning
+- markey-written-account — paragraph2: County verdict note: accidental death accurate as to cause (cold); silent as to choice
+- markey-written-account — paragraph3: Della's sentence note: Nobody came to that door accurate as to exact words; inverts its own meaning in context of the twenty-nine words written above it in the same entry, same night, same hand; the paragraph governs the sentence
+- cale-markey — age_in_ch23_estimate: mid-eighties if alive — approximately 40 in Feb 1983; approximately 83-85 at time of ch23 (present day, July)
+- cale-markey — alive_status_ch23: unknown — Ellen notes he is probably in his mid-eighties; no record of him after 1983; she cannot determine if he is alive
+- cale-markey — knowledge_of_dellas_death: did not know she was inside when he knocked Feb 11 1983; county notified him at Chillicothe address; he did not respond; he has not known for forty years that she was in the house
+- verrill-street-house — ledger.status_ch23: closed; on the corner of the desk in the front room; reading complete; back-room door status unknown to Ellen
+- verrill-street-house — house.status_ch23_close: quiet; Ellen does not go upstairs; back-room door not checked; the proceeding is closed
+- Ch23 (Ellen) — Ellen produces the complete written account of Della Markey's death in her notebook: a three-paragraph certified account naming the sequence of events on February 11 1983 (power out since six PM, stove lost draft after eight, Cale knocked near quarter to ten, Della heard and recognized him, did not go down, knocking stopped at nine fifty-two, she died of hypothermia before morning), a note on the county's verdict (accurate as to cause, silent as to choice), and a note on Della's sentence (accurate as to exact words, inverts its own meaning in context of the twenty-nine words above it). The proceeding is formally closed in Ellen's professional sense.
+- Ch23 — The formal A/B side-by-side: Record A ('Nobody came to that door.') written out as a standalone sentence in Ellen's notebook; Record B (the ledger entry) read from the ledger. Both on the desk simultaneously. Ellen names the inversion mechanism: the sentence read without its paragraph is not the certified record; the excerpt-vs.-certified-transcript argument is the professional apparatus by which the error of five months is named and corrected. The paragraph governs the sentence.
+- Ch23 — Ellen's assessment of Cale: he was approximately forty years old in February 1983; he would be in his mid-eighties at the time of the chapter if alive; he did not know she was inside; the county notified him at 441 Bridge Street, Chillicothe, Ohio, and received no response; he has not known, for forty years, that she was in the house when he knocked. Ellen concludes there is no party to certify the account to.
+- Ch23 — Mabel Duff photocopy filed inside the closed notebook with the pencil bracket around 'daylight hours of February 11th' intact. The ledger is closed and set on the corner of the desk. Ellen does not go upstairs; the back-room door is not checked. The house is quiet. The makers mark of the Renick Furniture Works is under Ellen's left hand at the close.
+- Ch23 — Ellen has a deposition booking the following Tuesday in Morgantown (workman's compensation case); this is confirmed as an active booking; the trade is not recovered, but the work continues.
+
+## 24-the-door-open
+- travel-clock — description: eight-day clock; dark wood case; brass face; lighter than it appears; wound and running since Ellen found it in the back room in spring
+- travel-clock — location.1983: back-room mantle, 412 Verrill Street
+- travel-clock — location.present_day: desk in front room, 412 Verrill Street — moved from back-room mantle by Ellen in ch. 24, late August
+- verrill-street-house — back_room_door.status_ch24: open — Ellen stopped closing it in July after finding and reading the ledger; open at chapter's close
+- verrill-street-house — ledger.status_ch24: returned to back-room shelf by Ellen approximately three weeks after ch. 23; open to February 11; closed and left on shelf by Ellen at end of ch. 24
+- verrill-street-house — house.quality_ch24: quiet in late August in a different way from spring; the quality of attention noted as changed; Ellen notes it, does not interpret it; the back room still specifically cool
+- ellen-vance — staying_in_house: confirmed — staying at 412 Verrill Street; depositions in Morgantown through fall; contract work from Charleston firm; decision not dramatized, stated as the fact of where she is
+- ellen-vance — current_work: depositions in Morgantown three days per week through fall; contract depositions with Charleston firm (called twice in August)
+- ellen-vance — record_b.final_reading: read back once, verbatim, in back room in ch. 24; framed as court-reporter read-back of completed testimony, not as analysis; no annotation; the words stand
+- verrill-street-house — back_room.mantle_status_ch24: empty — travel clock removed by Ellen and placed on desk in front room
+- Ch. 24 (late August): Ellen carries the travel clock from the back-room mantle to the desk in the front room, where it stands beside the maker's mark (Renick Furniture Works) — two objects from Della's world together in Ellen's present; no conclusion is drawn.
+- Ch. 24: The ledger was returned to the back-room shelf by Ellen approximately three weeks after ch. 23; she opened it to February 11 and left it there. At the close of ch. 24 she reads it one final time (Record B verbatim), closes it, and leaves it on the shelf with the spine facing out.
+- Ch. 24: The back room door has been open since July; Ellen stopped closing it after taking the ledger downstairs in ch. 19–21. The door is open at the book's final image; its meaning is not explained.
+- Ch. 24: The house's quality of attention — the quality of waiting that characterized the spring chapters — is noted by Ellen as different in late August. She notes the change and does not append an interpretation. The back room remains specifically cool regardless of season.
+- Ch. 24: Ellen is staying at 412 Verrill Street, Renick, West Virginia. She has depositions in Morgantown three days per week through fall and contract work from a Charleston firm. Her staying is not framed as a decision; it is the fact of where she is.
+- Ch. 24: The book closes on two flat declaratives: 'The house was quiet. / The door was open.' — the back room door open at the book's final image; what becomes of Della is the one thread left deliberately unresolved; the reader holds it.
+
+## canon
+- The fixed proposition P (the mystery spine): On the night of February 11 1983, Cale Markey — Della's estranged older brother — came to the front door of the Verrill Street house during the Megalopolitan Blizzard and knocked from approximately 9:40 to 9:52 PM. Della heard him. She recognized his knock. She chose not to go down. She wrote this in her ledger. She died in the cold she could have walked out of. This proposition is fixed and must not be changed by any drafting phase; it must implicate Della's own choice, never an outsider's failure.
+- The two canonical documents are fixed at the word level. Record A (recordId: kept-sentence): 'Nobody came to that door.' — Della's recurring phrase across her chapters, the mercy she made. Record B (recordId: markey-ledger-1983): 'Friday 11 February 1983 — Power out since six. Stove losing draft after eight, cannot bring it back. Knocking at the front door near quarter to ten — three raps, then steady. Three years I have not written his name but I knew it. I did not go down. I sat here with the travel clock and I did not go down. Knocking stopped at nine fifty-two. Nobody came to that door.' Every chapter re-quoting either document must call read_record first and reproduce the text verbatim inside quotation marks.
+- The membrane rule is absolute: Ellen never sees Della as a figure, never hears her words, never holds a séance. Della never hears Ellen as speech, never reads her thoughts. All information crossing between the two POVs crosses indirectly — through physical objects, public records, or written documents. This rule does not break in any chapter.
+- The register split is structural and must be felt in the first sentence of every chapter without a header. Della's chapters: first-person, present tense, flat millwright-household vocabulary, short sentences closing on physical objects. Ellen's chapters: third-person limited, past tense, stenographic/legal vocabulary, deliberate medium-length sentences. Any chapter where the two registers blend toward each other has structurally failed.
+- The false crossing: a neighbor's inquest statement (Mabel Duff, working name) attests no visitors were seen on February 10 evening and daylight February 11. Ellen initially reads this as confirming nobody came that night (wrong-believes not-P). This belief must persist for at least 2–3 chapters before the ledger corrects it. The statement is not false — it covers the wrong window (the knocking came at 9:40 PM in the storm, in full dark). Ellen's inference is wrong, not Mabel's testimony.
+- The supernatural is never explained. No lore, no rules, no medium, no scene adjudicating what Della is. The prose renders her presence and the house's behavior as fact and moves on. No chapter proposes a mechanism.
+- The alternation breaks asymmetrically near the close: Della's final chapter is her belief-correction (she knows P for the first time — sees the full memory of that night, her own record, whole). There is no Della chapter after it. The book continues in Ellen's chapters and closes in the present, in the house, with the door open.
+- What becomes of Della after her belief corrects is deliberately unresolved. Her final chapter ends on a concrete physical action mid-gesture — on the object, not on a feeling or a fate. No chapter after Della's final chapter answers this question. The warm-light exit and the horror sting are equally forbidden.
+- The two 1983-state house facts and present-day house facts are stored on time-distinct entity IDs: verrill-street-house-1983 for Della's 1983 facts, verrill-street-house for present-day Ellen-timeline facts. Cross-timeline contradictions on house state are expected and should not be flagged as continuity errors.
+- Della knows she is dead and is not confused about her condition. Her error is not her state but her belief about her last night. The 'she doesn't know she's dead' twist is forbidden. No reader-fooled reveal, no apparition jump. Her error is an ordinary character's wrong belief that later corrects; the narration is reliable; only Della-the-person is wrong.

@@ -1,0 +1,469 @@
+{
+  "version": 2,
+  "completed": [
+    "architect",
+    "plotter",
+    "threads",
+    "calibrate-drafter:iter-1-sample",
+    "calibrate-drafter:iter-1-grade",
+    "calibrate-drafter:complete",
+    "drafter:01-the-dock-and-after",
+    "drafter:02-the-icehouse",
+    "drafter:03-the-second-bedroom",
+    "drafter:04-official-report",
+    "drafter:05-fifty-kilometers",
+    "drafter:06-the-half-question",
+    "drafter:07-portland",
+    "drafter:08-mutter",
+    "drafter:09-the-breakwater",
+    "drafter:10-private-reed",
+    "drafter:11-owens-ledger",
+    "drafter:12-the-school-board",
+    "drafter:13-the-gift",
+    "drafter:14-the-unregistered-boat",
+    "drafter:15-franconian",
+    "drafter:16-albrecht-and-karl",
+    "drafter:17-mr-kleins-room",
+    "drafter:18-what-language",
+    "drafter:19-after-eira",
+    "drafter:20-d-day",
+    "drafter:21-karl-speaks",
+    "drafter:22-the-unfinished-letter",
+    "drafter:23-august",
+    "drafter:24-harvest",
+    "drafter:25-what-is-and-isnt-dangerous",
+    "drafter:26-the-harbor-log",
+    "drafter:27-november-weather",
+    "drafter:28-the-names-on-the-board",
+    "drafter:29-what-he-left",
+    "drafter:30-the-spring-opening",
+    "editor-continuity:01-the-dock-and-after",
+    "editor-continuity:02-the-icehouse",
+    "editor-continuity:03-the-second-bedroom",
+    "editor-continuity:04-official-report",
+    "editor-continuity:05-fifty-kilometers",
+    "editor-continuity:06-the-half-question",
+    "editor-continuity:07-portland",
+    "editor-continuity:08-mutter",
+    "editor-continuity:09-the-breakwater",
+    "editor-continuity:10-private-reed",
+    "editor-continuity:11-owens-ledger",
+    "editor-continuity:12-the-school-board",
+    "editor-continuity:13-the-gift",
+    "editor-continuity:14-the-unregistered-boat",
+    "editor-continuity:15-franconian",
+    "editor-continuity:16-albrecht-and-karl",
+    "editor-continuity:17-mr-kleins-room",
+    "editor-continuity:18-what-language",
+    "editor-continuity:19-after-eira",
+    "editor-continuity:20-d-day",
+    "editor-continuity:21-karl-speaks",
+    "editor-continuity:22-the-unfinished-letter",
+    "editor-continuity:23-august",
+    "editor-continuity:24-harvest",
+    "editor-continuity:25-what-is-and-isnt-dangerous",
+    "editor-continuity:26-the-harbor-log",
+    "editor-continuity:27-november-weather",
+    "editor-continuity:28-the-names-on-the-board",
+    "editor-continuity:29-what-he-left",
+    "editor-continuity:30-the-spring-opening",
+    "editor-compression:01-the-dock-and-after",
+    "editor-compression:02-the-icehouse",
+    "editor-compression:03-the-second-bedroom",
+    "editor-compression:04-official-report",
+    "editor-compression:05-fifty-kilometers",
+    "editor-compression:06-the-half-question",
+    "editor-compression:07-portland",
+    "editor-compression:08-mutter",
+    "editor-compression:09-the-breakwater",
+    "editor-compression:10-private-reed",
+    "editor-compression:11-owens-ledger",
+    "editor-compression:12-the-school-board",
+    "editor-compression:13-the-gift",
+    "editor-compression:14-the-unregistered-boat",
+    "editor-compression:15-franconian",
+    "editor-compression:16-albrecht-and-karl",
+    "editor-compression:17-mr-kleins-room",
+    "editor-compression:18-what-language",
+    "editor-compression:19-after-eira",
+    "editor-compression:20-d-day",
+    "editor-compression:21-karl-speaks",
+    "editor-compression:22-the-unfinished-letter",
+    "editor-compression:23-august",
+    "editor-compression:24-harvest",
+    "editor-compression:25-what-is-and-isnt-dangerous",
+    "editor-compression:26-the-harbor-log",
+    "editor-compression:27-november-weather",
+    "editor-compression:28-the-names-on-the-board",
+    "editor-compression:29-what-he-left",
+    "editor-compression:30-the-spring-opening",
+    "editor-pacing:macro",
+    "editor-pacing:01-the-dock-and-after",
+    "editor-pacing:02-the-icehouse",
+    "editor-pacing:03-the-second-bedroom",
+    "editor-pacing:04-official-report",
+    "editor-pacing:05-fifty-kilometers",
+    "editor-pacing:06-the-half-question",
+    "editor-pacing:07-portland",
+    "editor-pacing:08-mutter",
+    "editor-pacing:09-the-breakwater",
+    "editor-pacing:10-private-reed",
+    "editor-pacing:11-owens-ledger",
+    "editor-pacing:12-the-school-board",
+    "editor-pacing:13-the-gift",
+    "editor-pacing:14-the-unregistered-boat",
+    "editor-pacing:15-franconian",
+    "editor-pacing:16-albrecht-and-karl",
+    "editor-pacing:17-mr-kleins-room",
+    "editor-pacing:18-what-language",
+    "editor-pacing:19-after-eira",
+    "editor-pacing:20-d-day",
+    "editor-pacing:21-karl-speaks",
+    "editor-pacing:22-the-unfinished-letter",
+    "editor-pacing:23-august",
+    "editor-pacing:24-harvest",
+    "editor-pacing:25-what-is-and-isnt-dangerous",
+    "editor-pacing:26-the-harbor-log",
+    "editor-pacing:27-november-weather",
+    "editor-pacing:28-the-names-on-the-board",
+    "editor-pacing:29-what-he-left",
+    "editor-pacing:30-the-spring-opening",
+    "editor-voice:01-the-dock-and-after",
+    "editor-voice:02-the-icehouse",
+    "editor-voice:03-the-second-bedroom",
+    "editor-voice:04-official-report",
+    "editor-voice:05-fifty-kilometers",
+    "editor-voice:06-the-half-question",
+    "editor-voice:07-portland",
+    "editor-voice:08-mutter",
+    "editor-voice:09-the-breakwater",
+    "editor-voice:10-private-reed",
+    "editor-voice:11-owens-ledger",
+    "editor-voice:12-the-school-board",
+    "editor-voice:13-the-gift",
+    "editor-voice:14-the-unregistered-boat",
+    "editor-voice:15-franconian",
+    "editor-voice:16-albrecht-and-karl",
+    "editor-voice:17-mr-kleins-room",
+    "editor-voice:18-what-language",
+    "editor-voice:19-after-eira",
+    "editor-voice:20-d-day",
+    "editor-voice:21-karl-speaks",
+    "editor-voice:22-the-unfinished-letter",
+    "editor-voice:23-august",
+    "editor-voice:24-harvest",
+    "editor-voice:25-what-is-and-isnt-dangerous",
+    "editor-voice:26-the-harbor-log",
+    "editor-voice:27-november-weather",
+    "editor-voice:28-the-names-on-the-board",
+    "editor-voice:29-what-he-left",
+    "editor-voice:30-the-spring-opening",
+    "reader:act-1",
+    "reader:act-2",
+    "reader:act-3",
+    "reader:synthesis",
+    "continuity-fact-audit"
+  ],
+  "entries": {
+    "drafter:01-the-dock-and-after": {
+      "at": "2026-06-11T23:32:55.083Z",
+      "artifacts": [
+        "draft/01-the-dock-and-after.md"
+      ],
+      "hashes": {
+        "draft/01-the-dock-and-after.md": "8ab27d1c6b6601da1e1be7e8f15efbc074ce4bfb8b606eb860848eee116574f0"
+      },
+      "eventOffset": 65
+    },
+    "drafter:02-the-icehouse": {
+      "at": "2026-06-11T23:45:38.853Z",
+      "artifacts": [
+        "draft/02-the-icehouse.md"
+      ],
+      "hashes": {
+        "draft/02-the-icehouse.md": "c1736f9e5d2253bb796ddc2c66204aa80019c3ca597b45b4102188423f589dd5"
+      },
+      "eventOffset": 121
+    },
+    "drafter:03-the-second-bedroom": {
+      "at": "2026-06-12T00:00:56.502Z",
+      "artifacts": [
+        "draft/03-the-second-bedroom.md"
+      ],
+      "hashes": {
+        "draft/03-the-second-bedroom.md": "0dc1008a586a86a609a41105f0ceb9c983f1502541e13a2b9d5bfef048b727a7"
+      },
+      "eventOffset": 185
+    },
+    "drafter:04-official-report": {
+      "at": "2026-06-12T00:15:37.254Z",
+      "artifacts": [
+        "draft/04-official-report.md"
+      ],
+      "hashes": {
+        "draft/04-official-report.md": "031fe030552652e16e93b190d17ddea723fdfd2481670e3d83118caa611e910b"
+      },
+      "eventOffset": 207
+    },
+    "drafter:05-fifty-kilometers": {
+      "at": "2026-06-12T00:33:58.530Z",
+      "artifacts": [
+        "draft/05-fifty-kilometers.md"
+      ],
+      "hashes": {
+        "draft/05-fifty-kilometers.md": "4c9afd1eb1b9f84372c768360bee4cc6a1367c6660490bcd45c62d1a9e1160d5"
+      },
+      "eventOffset": 229
+    },
+    "drafter:06-the-half-question": {
+      "at": "2026-06-12T01:55:01.940Z",
+      "artifacts": [
+        "draft/06-the-half-question.md"
+      ],
+      "hashes": {
+        "draft/06-the-half-question.md": "f61f571fe5f721547b8512d2fa65a3cae9e0a6a5d213e13201edd9fdd66b52ea"
+      },
+      "eventOffset": 247
+    },
+    "drafter:07-portland": {
+      "at": "2026-06-12T02:10:57.235Z",
+      "artifacts": [
+        "draft/07-portland.md"
+      ],
+      "hashes": {
+        "draft/07-portland.md": "b1679f8e3043a64fb81a878b54b47c600f2722d8da6d9d9c5e7737a58b51a229"
+      },
+      "eventOffset": 274
+    },
+    "drafter:08-mutter": {
+      "at": "2026-06-12T02:20:17.665Z",
+      "artifacts": [
+        "draft/08-mutter.md"
+      ],
+      "hashes": {
+        "draft/08-mutter.md": "d0795fb9ff8191041e1903abfac94d1ea4166bebe6211eccffe22d695394fdb1"
+      },
+      "eventOffset": 303
+    },
+    "drafter:09-the-breakwater": {
+      "at": "2026-06-12T02:32:17.069Z",
+      "artifacts": [
+        "draft/09-the-breakwater.md"
+      ],
+      "hashes": {
+        "draft/09-the-breakwater.md": "59de4dd62895279c41c19ab4fa6e0a280d0f0830ff05e31b722cf20a416bb489"
+      },
+      "eventOffset": 330
+    },
+    "drafter:10-private-reed": {
+      "at": "2026-06-12T02:43:22.147Z",
+      "artifacts": [
+        "draft/10-private-reed.md"
+      ],
+      "hashes": {
+        "draft/10-private-reed.md": "e7d6fa5cf839ecf0f80431344ed4f78d8969e0ee1ee193e66762075f2f8e5024"
+      },
+      "eventOffset": 368
+    },
+    "drafter:11-owens-ledger": {
+      "at": "2026-06-12T03:25:27.239Z",
+      "artifacts": [
+        "draft/11-owens-ledger.md"
+      ],
+      "hashes": {
+        "draft/11-owens-ledger.md": "33523622476a9b126bf020d1aa43ed382676739f3d12d1a67bc47aa60bfde388"
+      },
+      "eventOffset": 410
+    },
+    "drafter:12-the-school-board": {
+      "at": "2026-06-12T03:31:58.957Z",
+      "artifacts": [
+        "draft/12-the-school-board.md"
+      ],
+      "hashes": {
+        "draft/12-the-school-board.md": "4fcbd6884ea4b36b0486c0925b86636141a285befaac02766c9dc6f80b537a23"
+      },
+      "eventOffset": 441
+    },
+    "drafter:13-the-gift": {
+      "at": "2026-06-12T03:43:05.507Z",
+      "artifacts": [
+        "draft/13-the-gift.md"
+      ],
+      "hashes": {
+        "draft/13-the-gift.md": "78eb354d5050af8225c96212420e947b5c5d814d129c2e19aa6c6d8fe610577c"
+      },
+      "eventOffset": 465
+    },
+    "drafter:14-the-unregistered-boat": {
+      "at": "2026-06-12T03:53:29.930Z",
+      "artifacts": [
+        "draft/14-the-unregistered-boat.md"
+      ],
+      "hashes": {
+        "draft/14-the-unregistered-boat.md": "32560a632ec9d8d88d12ec71b3b7e33c6014f5efd7789d560122a52834094ae3"
+      },
+      "eventOffset": 513
+    },
+    "drafter:15-franconian": {
+      "at": "2026-06-12T03:59:39.865Z",
+      "artifacts": [
+        "draft/15-franconian.md"
+      ],
+      "hashes": {
+        "draft/15-franconian.md": "98b529730c487d96d44833c813d173cd16c82efea9ff03abb7e83017b67aeffd"
+      },
+      "eventOffset": 531
+    },
+    "drafter:16-albrecht-and-karl": {
+      "at": "2026-06-12T04:25:45.708Z",
+      "artifacts": [
+        "draft/16-albrecht-and-karl.md"
+      ],
+      "hashes": {
+        "draft/16-albrecht-and-karl.md": "da40d82c78aaaff41cdad7b51cde5f69a6440ee14319cb13997873fdae618614"
+      },
+      "eventOffset": 545
+    },
+    "drafter:17-mr-kleins-room": {
+      "at": "2026-06-12T04:33:24.174Z",
+      "artifacts": [
+        "draft/17-mr-kleins-room.md"
+      ],
+      "hashes": {
+        "draft/17-mr-kleins-room.md": "07837c3e75a8d85caa66066d4fe01fbd58b154cdec526d9350a623ab77c54470"
+      },
+      "eventOffset": 573
+    },
+    "drafter:18-what-language": {
+      "at": "2026-06-12T04:45:08.740Z",
+      "artifacts": [
+        "draft/18-what-language.md"
+      ],
+      "hashes": {
+        "draft/18-what-language.md": "ffe60fd5cf602bd052db8d9f868f524181867b7c6829f5648174be4b17e3f9f0"
+      },
+      "eventOffset": 599
+    },
+    "drafter:19-after-eira": {
+      "at": "2026-06-12T04:55:48.204Z",
+      "artifacts": [
+        "draft/19-after-eira.md"
+      ],
+      "hashes": {
+        "draft/19-after-eira.md": "ea7630bece5b4531b34bed083971f51ceb81073deb198d58630c2cf3a870e7b6"
+      },
+      "eventOffset": 616
+    },
+    "drafter:20-d-day": {
+      "at": "2026-06-12T05:13:50.925Z",
+      "artifacts": [
+        "draft/20-d-day.md"
+      ],
+      "hashes": {
+        "draft/20-d-day.md": "89d0c7457b3b72315b3b84f3bebb5cf0558e0bd51442249f43106baeaefbeeea"
+      },
+      "eventOffset": 661
+    },
+    "drafter:21-karl-speaks": {
+      "at": "2026-06-12T05:41:09.478Z",
+      "artifacts": [
+        "draft/21-karl-speaks.md"
+      ],
+      "hashes": {
+        "draft/21-karl-speaks.md": "a797d2d7c22e03f5613987d92c135d4cf03c0f506dc8454f0bedc71c01d9e76c"
+      },
+      "eventOffset": 685
+    },
+    "drafter:22-the-unfinished-letter": {
+      "at": "2026-06-12T05:48:33.890Z",
+      "artifacts": [
+        "draft/22-the-unfinished-letter.md"
+      ],
+      "hashes": {
+        "draft/22-the-unfinished-letter.md": "41145110486c6e9f127941c60e6ff0e92392d111fab758d64248837566024b2b"
+      },
+      "eventOffset": 715
+    },
+    "drafter:23-august": {
+      "at": "2026-06-12T07:31:37.890Z",
+      "artifacts": [
+        "draft/23-august.md"
+      ],
+      "hashes": {
+        "draft/23-august.md": "9ad64ed92e63a3fa6fd5817ead032b336c78e0c02bae41c0851f763921f2bc77"
+      },
+      "eventOffset": 750
+    },
+    "drafter:24-harvest": {
+      "at": "2026-06-12T07:38:03.708Z",
+      "artifacts": [
+        "draft/24-harvest.md"
+      ],
+      "hashes": {
+        "draft/24-harvest.md": "ab437f03e8edd00aa39a91262c56e814044640980238c8dd0cf54554aaf2f7fb"
+      },
+      "eventOffset": 772
+    },
+    "drafter:25-what-is-and-isnt-dangerous": {
+      "at": "2026-06-12T07:47:16.575Z",
+      "artifacts": [
+        "draft/25-what-is-and-isnt-dangerous.md"
+      ],
+      "hashes": {
+        "draft/25-what-is-and-isnt-dangerous.md": "f1e8f1752884ed93bfd2b25f356bdcc26173b92fe22e9f29c07347cb3e281c77"
+      },
+      "eventOffset": 789
+    },
+    "drafter:26-the-harbor-log": {
+      "at": "2026-06-12T07:59:08.229Z",
+      "artifacts": [
+        "draft/26-the-harbor-log.md"
+      ],
+      "hashes": {
+        "draft/26-the-harbor-log.md": "215b6b60bf197a55dd4457b0e7c7e6346aca167b4f1bf3b8b15c95cd7fdd6f87"
+      },
+      "eventOffset": 814
+    },
+    "drafter:27-november-weather": {
+      "at": "2026-06-12T08:08:56.575Z",
+      "artifacts": [
+        "draft/27-november-weather.md"
+      ],
+      "hashes": {
+        "draft/27-november-weather.md": "23612bb30c303721bb88ba85b4aaf3b59250cc78d5981220faf89a55bee5eb68"
+      },
+      "eventOffset": 841
+    },
+    "drafter:28-the-names-on-the-board": {
+      "at": "2026-06-12T08:21:42.277Z",
+      "artifacts": [
+        "draft/28-the-names-on-the-board.md"
+      ],
+      "hashes": {
+        "draft/28-the-names-on-the-board.md": "2d7e676944a60d3c57345cd02638069a7c681a9e0ae759fbdd9f2c8a2abd8fc3"
+      },
+      "eventOffset": 879
+    },
+    "drafter:29-what-he-left": {
+      "at": "2026-06-12T09:50:09.120Z",
+      "artifacts": [
+        "draft/29-what-he-left.md"
+      ],
+      "hashes": {
+        "draft/29-what-he-left.md": "077a71c71f103f6f4cc1c55e266bf00be61ae8b5ce39fe86196c156d951b337e"
+      },
+      "eventOffset": 908
+    },
+    "drafter:30-the-spring-opening": {
+      "at": "2026-06-12T10:00:47.892Z",
+      "artifacts": [
+        "draft/30-the-spring-opening.md"
+      ],
+      "hashes": {
+        "draft/30-the-spring-opening.md": "b2cc4581cbb3fcad17ef1d63b35728a0a087e860714f305c6ed222365595b5a7"
+      },
+      "eventOffset": 937
+    }
+  }
+}

@@ -30,7 +30,12 @@ export interface Book {
   blurb: string;
   oneLine: string;
   chapterCount: number;
+  wordCount: number;
+  readingLabel: string;
   hasManuscript: boolean;
+  hasColophon: boolean;
+  hasReaderLetter: boolean;
+  model: string;
   status: "draft" | "in-progress" | "complete";
   artifacts: BookArtifacts;
 }
@@ -84,9 +89,18 @@ function readBlurb(bookDir: string): string {
   if (text.length > PITCH_BLURB_MAX_CHARS) {
     const cut = text.slice(0, PITCH_BLURB_MAX_CHARS);
     const lastSpace = cut.lastIndexOf(" ");
-    text = (lastSpace > 0 ? cut.slice(0, lastSpace) : cut) + "…";
+    text = trimDanglingPunctuation(lastSpace > 0 ? cut.slice(0, lastSpace) : cut) + "…";
   }
   return text;
+}
+
+/**
+ * A truncation that lands on ":", ",", ";" or a dash reads as a promise
+ * the ellipsis then breaks ("…a single unresolved event:…"). Trim any
+ * trailing punctuation that isn't a sentence ending before appending "…".
+ */
+function trimDanglingPunctuation(text: string): string {
+  return text.replace(/[\s:;,\-–—]+$/, "");
 }
 
 // Minimum length for a candidate "first sentence". Avoids one-liners
@@ -141,7 +155,48 @@ function capOneLine(text: string): string {
   if (text.length <= ONE_LINE_MAX_CHARS) return text;
   const cut = text.slice(0, ONE_LINE_MAX_CHARS);
   const lastSpace = cut.lastIndexOf(" ");
-  return (lastSpace > 0 ? cut.slice(0, lastSpace) : cut) + "…";
+  return trimDanglingPunctuation(lastSpace > 0 ? cut.slice(0, lastSpace) : cut) + "…";
+}
+
+/**
+ * Word count for the reading-time label. Prefers manuscript.md (the
+ * press's concatenated source of truth); falls back to summing draft
+ * chapters so in-progress books still get a count.
+ */
+function countWords(bookDir: string): number {
+  const manuscript = safeReadFile(join(bookDir, "manuscript.md"));
+  if (manuscript) return countWordsIn(manuscript);
+
+  const draftDir = join(bookDir, "draft");
+  if (!existsSync(draftDir)) return 0;
+  try {
+    return readdirSync(draftDir)
+      .filter((f) => /^\d{2}-.+\.md$/.test(f))
+      .reduce((sum, f) => sum + countWordsIn(safeReadFile(join(draftDir, f))), 0);
+  } catch {
+    return 0;
+  }
+}
+
+function countWordsIn(md: string): number {
+  const words = md
+    .replace(/^#.*$/gm, "")
+    .split(/\s+/)
+    .filter(Boolean);
+  return words.length;
+}
+
+/**
+ * "13 min read" under ~1 hour, "~4½ hr read" above — the decision-critical
+ * fact for a shelf that ranges from a short story to a full novel.
+ */
+export function readingLabel(wordCount: number): string {
+  if (wordCount <= 0) return "";
+  const minutes = Math.max(1, Math.round(wordCount / 240));
+  if (minutes < 60) return `${minutes} min read`;
+  const halfHours = Math.round(minutes / 30);
+  const whole = Math.floor(halfHours / 2);
+  return halfHours % 2 === 0 ? `~${whole} hr read` : `~${whole}½ hr read`;
 }
 
 function countChapters(bookDir: string): number {
@@ -214,6 +269,10 @@ interface CdkConfig {
   title?: string;
   model?: string;
   visibility?: string;
+  /** Optional hand-set jacket copy; falls back to canon/pitch.md extraction. */
+  blurb?: string;
+  /** Optional hand-set card one-liner; falls back to deriving from the blurb. */
+  oneLine?: string;
 }
 
 /**
@@ -227,7 +286,15 @@ interface CdkConfig {
  * Within the included set, downloads gracefully hide when their
  * artifacts aren't present.
  */
+/** Sort key that ignores a leading article — 7 of 11 titles start with "The". */
+export function shelfSortKey(title: string): string {
+  return title.replace(/^(the|a|an)\s+/i, "").toLowerCase();
+}
+
+let booksCache: Book[] | null = null;
+
 export function getBooks(): Book[] {
+  if (booksCache) return booksCache;
   if (!existsSync(LIBRARY_DIR)) return [];
 
   const entries = readdirSync(LIBRARY_DIR, { withFileTypes: true });
@@ -246,11 +313,24 @@ export function getBooks(): Book[] {
     // Anything else (missing field, "private", typo) → hidden.
     if (config.visibility !== "public") continue;
 
-    const blurb = readBlurb(bookDir);
-    const oneLine = deriveOneLine(blurb);
+    const blurb = config.blurb?.trim() || readBlurb(bookDir);
+    const oneLine = config.oneLine?.trim() || deriveOneLine(blurb);
     const chapterCount = countChapters(bookDir);
+    const wordCount = countWords(bookDir);
     const hasManuscript = existsSync(join(bookDir, "manuscript.md"));
     const artifacts = readArtifacts(slug);
+    const status = determineStatus(chapterCount, hasManuscript, artifacts);
+
+    // A public book with chapters but no readable edition means the press
+    // artifacts were never synced-and-committed — the deployed shelf would
+    // show a finished novel as "in progress" with nothing to download.
+    if (chapterCount > 0 && status !== "complete") {
+      console.warn(
+        `[library] public book "${slug}" has ${chapterCount} chapters but no ` +
+          `epub/pdf/html under public/books/${slug}/ — run the press and ` +
+          `\`npm run sync\`, then commit the artifacts.`
+      );
+    }
 
     books.push({
       slug,
@@ -258,17 +338,120 @@ export function getBooks(): Book[] {
       blurb,
       oneLine,
       chapterCount,
+      wordCount,
+      readingLabel: readingLabel(wordCount),
       hasManuscript,
-      status: determineStatus(chapterCount, hasManuscript, artifacts),
+      hasColophon: existsSync(join(bookDir, "colophon.md")),
+      hasReaderLetter: existsSync(join(bookDir, "logs", "reader-letter.md")),
+      model: config.model || "",
+      status,
       artifacts,
     });
   }
 
-  return books.sort((a, b) => a.title.localeCompare(b.title));
+  const titles = new Map<string, string>();
+  for (const b of books) {
+    const prior = titles.get(b.title);
+    if (prior) {
+      console.warn(
+        `[library] two public books share the title "${b.title}" ` +
+          `(${prior}, ${b.slug}) — the shelf renders them as identical cards.`
+      );
+    }
+    titles.set(b.title, b.slug);
+  }
+
+  // Finished books shelve first; within each group, title order
+  // (ignoring leading articles so the shelf isn't one long "The…" run).
+  books.sort((a, b) => {
+    const aDone = a.status === "complete" ? 0 : 1;
+    const bDone = b.status === "complete" ? 0 : 1;
+    if (aDone !== bDone) return aDone - bDone;
+    return shelfSortKey(a.title).localeCompare(shelfSortKey(b.title));
+  });
+
+  booksCache = books;
+  return books;
+}
+
+/** Test hook — the cache is per-process and tests rebuild fixtures. */
+export function clearBooksCache(): void {
+  booksCache = null;
 }
 
 export function getBook(slug: string): Book | null {
   return getBooks().find((b) => b.slug === slug) ?? null;
+}
+
+/**
+ * The book's opening page, for the excerpt block on its detail page —
+ * the site's one exhibit of the actual prose. Reads the first chapter
+ * (honoring a revision-1/ override, like the press concat does), skips
+ * the chapter heading, and returns the first few paragraphs.
+ */
+export function getExcerpt(slug: string, maxWords = 260): string[] {
+  const bookDir = join(LIBRARY_DIR, slug);
+  const draftDir = join(bookDir, "draft");
+  if (!existsSync(draftDir)) return [];
+
+  let first: string | undefined;
+  try {
+    first = readdirSync(draftDir)
+      .filter((f) => /^\d{2}-.+\.md$/.test(f))
+      .sort()[0];
+  } catch {
+    return [];
+  }
+  if (!first) return [];
+
+  const revised = join(bookDir, "revision-1", first);
+  const md = safeReadFile(existsSync(revised) ? revised : join(draftDir, first));
+  if (!md) return [];
+
+  const paragraphs = md
+    .split(/\n\s*\n/)
+    .map((p) => p.trim())
+    .filter((p) => p && !p.startsWith("#"))
+    .map((p) =>
+      p
+        .replace(/\*\*([^*]+)\*\*/g, "$1")
+        .replace(/\*([^*]+)\*/g, "$1")
+        .replace(/\n/g, " ")
+    );
+
+  const out: string[] = [];
+  let words = 0;
+  for (const p of paragraphs) {
+    out.push(p);
+    words += p.split(/\s+/).length;
+    if (words >= maxWords) break;
+  }
+  return out;
+}
+
+/**
+ * The press's colophon for a book — why it's on the shelf and how it
+ * came out. Plain paragraphs from library/<slug>/colophon.md (heading
+ * stripped); empty array when the book has none.
+ */
+export function getColophon(slug: string): string[] {
+  const md = safeReadFile(join(LIBRARY_DIR, slug, "colophon.md"));
+  if (!md) return [];
+  return md
+    .split(/\n\s*\n/)
+    .map((p) => p.trim())
+    .filter((p) => p && !p.startsWith("#"))
+    .map((p) =>
+      p
+        .replace(/\*\*([^*]+)\*\*/g, "$1")
+        .replace(/\*([^*]+)\*/g, "$1")
+        .replace(/\n/g, " ")
+    );
+}
+
+/** Raw markdown of the pipeline reader's letter on the finished book. */
+export function getReaderLetter(slug: string): string {
+  return safeReadFile(join(LIBRARY_DIR, slug, "logs", "reader-letter.md"));
 }
 
 /**

@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-05-29T17:34:24.674Z",
+  "summary": {
+    "critical": 1,
+    "high": 0,
+    "medium": 1,
+    "low": 3
+  },
+  "findings": [
+    {
+      "id": "thread-drift-001",
+      "category": "thread-drift",
+      "severity": "medium",
+      "title": "Thread 2 (Brother's Absence) functions below its stated weight",
+      "description": "The thread is architecturally staged correctly across five Silas chapters (Ch 01 entry, Ch 09 oblique reference, Ch 11 triple flint-check, Ch 13 Fry notation, Ch 15 deliberately unresolved accounting). On the page, however, the thread is barely felt by a reader who has not read the architecture document. The brief's own disciplinary constraints — interiority as physical observation, grief as absence — have made the thread nearly invisible. The triple flint-check in Ch 11 reads exclusively as competence; nothing in the surrounding prose establishes it as the form grief has taken. Without the thread being felt through the approach chapters, the deliberately unresolved ending in Ch 15 (the brother never named; the grief staying in its converted form) cannot land with its intended weight: the reader experiences a quiet inventory chapter, not a restrained act of suppression. The brief allows one sentence per book to surface the brother directly; the existing candidate in Ch 09 is too oblique to activate the thread for an unprimed reader.",
+      "evidence": [
+        {
+          "file": "draft/01-the-garland.md",
+          "text": "He did not think about his brother. [Entry point — the thread begins as an absence, correctly so, but establishes minimal traction for later chapters to build on.]"
+        },
+        {
+          "file": "draft/09-the-kedge.md",
+          "text": "things he had stored there — in the winter before last — that did not belong to any chain that resolved into action [The one oblique surface of Thread 2 in the approach chapters; too oblique to activate the thread for an unprimed reader.]"
+        },
+        {
+          "file": "draft/11-cumberland-head.md",
+          "text": "He had checked the flints at midnight, at two, and again before leaving his hammock. [Designed as 'grief-as-preparation at its highest concentration' per the architecture; reads exclusively as competence on the page.]"
+        },
+        {
+          "file": "draft/13-port-battery.md",
+          "text": "Fry. He notes the fact. He moves to gun #2. [Thread 2 advancing as designed — but without the earlier chapters establishing the thread's weight, this inventory note cannot carry the suppression the architecture assigns it.]"
+        },
+        {
+          "file": "draft/15-prize-procedures.md",
+          "text": "[The brother is never named; the accounting continues; the grief stays in its converted form. Correctly executed per design, but cannot deliver its full weight without the thread being felt by the reader.]"
+        }
+      ],
+      "suggested_action": "In one approach chapter — Ch 09 is the strongest candidate — add a single concrete detail that allows a reader who is not tracking the thread to hold the brother's absence as a presence. The oblique 'winter before last' reference needs one more unit of purchase: a specific physical fact (a name, an object, a gesture Silas does that he learned from his brother) that grounds the abstraction without explaining it. The brief allows one sentence per book to surface the brother; deploy that sentence so the Ch 15 non-resolution lands as restraint rather than omission.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "over-articulation-001",
+      "category": "over-articulation",
+      "severity": "low",
+      "title": "Post-scene subtext naming in action chapters (Ch 13 and Ch 14)",
+      "description": "Two instances of the style guide's explicitly named failure mode ('post-scene subtext naming'): a declarative sentence arriving after the scene has already shown what it states. Both are single sentences and the prose recovers in both cases; neither constitutes a sustained pattern. Both should be cut.",
+      "evidence": [
+        {
+          "file": "draft/13-port-battery.md",
+          "text": "The starboard battery was finished. [The prose has already inventoried all four guns' states in the preceding paragraph; this declaration announces what the scene has shown.]"
+        },
+        {
+          "file": "draft/14-the-ford.md",
+          "text": "He looked at this once and noted it. [Follows the correctly observed discolored ford water; tells the reader how to process an image the reader can already process.]"
+        }
+      ],
+      "suggested_action": "Cut both sentences. The passages preceding them have done the work; the annotations are redundant and violate the book's no-naming-what-is-shown discipline.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "other-001",
+      "category": "other",
+      "severity": "low",
+      "title": "Cyrus (Ch 15) invokes physical constancy without prior physical grounding",
+      "description": "'He was the same. Twelve years old and the same: the same narrow face, the same set to his shoulders' reaches for the resonance of constancy amid the wreck of the starboard battery. The emotional beat is real and consistent with the register. But Cyrus appears twice by name in Ch 13 without being given a face or physical signature; a reader who has not been given Cyrus's appearance cannot feel what 'the same' is asking them to feel. The callback requires a prior establishment it does not have.",
+      "evidence": [
+        {
+          "file": "draft/13-port-battery.md",
+          "text": "[Cyrus appears twice by name, carrying ammunition, without physical description.]"
+        },
+        {
+          "file": "draft/15-prize-procedures.md",
+          "text": "He was the same. Twelve years old and the same: the same narrow face, the same set to his shoulders. [Invokes physical constancy without prior grounding in Ch 13.]"
+        }
+      ],
+      "suggested_action": "In Ch 13, establish Cyrus's face or physical signature once — one sentence, in stride with the action — so that 'the same' in Ch 15 can land on something the reader already holds.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "stylistic-tic-001",
+      "category": "stylistic-tic",
+      "severity": "low",
+      "title": "Verbatim repetition of garland-count filing formula across Ch 03 and Ch 05",
+      "description": "The phrase 'filed it the way he filed a discrepancy in the garland count' appears in identical form in both Ch 03 (Thread 1's entry chapter) and Ch 05 (Thread 1's second advance). The formulation is correct for Silas's register and earns its place in Ch 03 as the first instance. The verbatim repetition in Ch 05 is a micro-tic; it reads as a house phrase rather than a character construction the second time. Two instances across a 40,000-word manuscript is a low-severity concern, not a pattern failure.",
+      "evidence": [
+        {
+          "file": "draft/03-first-reports.md",
+          "text": "He filed it the way he filed a discrepancy in the garland count. [First instance — correct; establishes the formula.]"
+        },
+        {
+          "file": "draft/05-spring-lines.md",
+          "text": "He filed it the way he filed a discrepancy in the garland count. [Second instance — verbatim repetition; reads as house phrase rather than fresh character construction.]"
+        }
+      ],
+      "suggested_action": "Vary the phrasing in Ch 05. The Ch 03 instance should remain as the original; the Ch 05 instance needs a different formulation that conveys the same cognitive action without repeating the same sentence.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "continuity-fact-audit-001",
+      "category": "continuity-fact",
+      "severity": "critical",
+      "title": "Asa's age at father's Sackett's Harbor homecoming (ch 16) contradicts canonical age of 19",
+      "description": "Chapter 16 narrator-asserts that Asa 'had been fifteen' when his father Nathan returned from Sackett's Harbor in June 1813, and that 'those two things had not stopped being true in the four years since' that June. Both claims are irreconcilable with the canonical age of 19 for Asa in September 1814. If Asa was 15 in June 1813, he would be approximately 16 in September 1814 (only ~15 months later), not 19. And 'four years since' June 1813 would place the narrative in June 1817, not September 1814. The most likely drafter error: the passage conflates two separate canon facts — (a) Asa has been the wage earner since age 15, which is ~4 years before the September 1814 narrative (~1810); and (b) Nathan Beckwith served at Sackett's Harbor in spring 1813 and came home ill — incorrectly treating them as the same event.",
+      "evidence": [
+        {
+          "file": "canon/continuity.md",
+          "text": "Asa Beckwith is fictional, 19 years old, Clinton County militiaman, assigned to Pike's Ford on the Saranac River; millwright's apprentice at his uncle's sash sawmill, three miles upstream of Plattsburgh village."
+        },
+        {
+          "file": "canon/characters.md",
+          "text": "Age: 19"
+        },
+        {
+          "file": "canon/continuity.md",
+          "text": "Asa's father served at Sackett's Harbor and came home with a chronic fever; he has not recovered. Asa has been the wage earner since age fifteen."
+        },
+        {
+          "file": "draft/16-the-retreat.md",
+          "text": "Nathan Beckwith had served at Sackett's Harbor in the spring of 1813. He had come home in June with a fever that had not left him. Asa had been fifteen. From that June forward he had been the wage earner and the man of the house, and those two things had not stopped being true in the four years since."
+        },
+        {
+          "file": "draft/02-the-head-race.md",
+          "text": "Asa had been at the mill since he was fifteen — the wages his and the account-keeping his and the daily walk between the house and the mill simply the distance he covered."
+        }
+      ],
+      "suggested_action": "In draft/16-the-retreat.md, the two interlocking errors need to be resolved together. If the June 1813 Sackett's Harbor homecoming is kept as the narrative anchor, 'Asa had been fifteen' should be changed to approximately 'seventeen' (Asa, born ~September 1795 and aged 19 in September 1814, would have been ~17–18 in June 1813), and 'the four years since' should be changed to reflect the actual elapsed time (~'the year since' or 'the year and some months since'). Alternatively, restructure to separate the two facts: Asa's wage-earning began at 15 (~1810, four years before the narrative), which the Sackett's Harbor illness in 1813 made permanent rather than initiated. A human author must decide which interpretation is canonical before any text change is made.",
+      "auto_repair_safe": false,
+      "repair_agent": null,
+      "repair_params": null
+    }
+  ]
+}

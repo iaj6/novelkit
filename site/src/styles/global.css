@@ -19,7 +19,9 @@
 
   --ink:          #1C140F;   /* primary text */
   --ink-soft:     #4A3F35;   /* secondary text */
-  --ink-faded:    #806E5D;   /* meta, captions, page numbers */
+  /* #806E5D measured ~3.8:1 on --paper — below AA (4.5:1) at the small
+     sizes .meta is used at. #6F5D4B keeps the faded warmth and passes. */
+  --ink-faded:    #6F5D4B;   /* meta, captions, page numbers */
 
   --lantern:      #C99A4A;   /* accent — links, marks */
   --lantern-deep: #A8783A;   /* hover state for accent */

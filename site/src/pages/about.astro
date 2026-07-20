@@ -46,23 +46,29 @@ import Ornament from "../components/Ornament.astro";
         <li>
           <strong>draft.</strong>
           the <em>drafter</em> agent writes each chapter, in order, reading the
-          previous chapter, the canon, the outline, and the continuity log.
-          it updates a continuity log and a scene log as it goes.
+          previous chapter, the canon, and the outline. as it writes, it files
+          what it establishes &mdash; facts, dates, documents, who knows what
+          and when &mdash; into a structured record of the book&rsquo;s world,
+          and re-reads that record before repeating a fact or quoting a
+          document a second time.
         </li>
         <li>
           <strong>edit.</strong>
           focused editor passes &mdash; continuity, pacing, voice. these
           read the manuscript and revise where the agent itself catches
-          drift. then a reader pass produces a letter on the finished book.
+          drift. then a reader pass produces a letter on the finished book,
+          and a deterministic audit replays the world-record looking for
+          contradictions the prose slipped past. the letter is published with
+          the book; you can read it from any book&rsquo;s colophon.
         </li>
         <li>
           <strong>publish.</strong>
           the press subsystem concatenates the drafts and builds the editions
           &mdash; HTML, EPUB, PDF &mdash; synthesizes a cover brief from the
-          canon via Claude and paints the cover from it, and narrates the
+          canon via Claude and paints the cover from it, and can narrate the
           chapters as an audiobook. once a book is marked public it takes its
-          place on the shelf here: cover, blurb, downloads, and a player to
-          hear it read aloud.
+          place on the shelf here: cover, blurb, the first page, downloads,
+          and a colophon saying why the book exists.
         </li>
       </ol>
     </section>
@@ -101,7 +107,7 @@ import Ornament from "../components/Ornament.astro";
       </p>
       <p class="callout">
         the source code, the briefs, and every artifact is on
-        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">github</a>.
+        <a href="https://github.com/iaj6/novelkit" target="_blank" rel="noopener noreferrer">github</a>.
       </p>
     </section>
   </article>

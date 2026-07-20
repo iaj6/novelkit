@@ -1,0 +1,5 @@
+# colophon
+
+this book is an experiment in consequence. adventure stories tend to reset after their set pieces — the bridge falls, the storm passes, the next chapter starts clean. the brief asked for the opposite: a 1938 expedition into the Cordillera Vilcabamba whose action inflicts permanent losses — equipment, animals, routes — that every later chapter has to live with. the wager was that a book gets heavier, and better, when nothing it breaks comes back.
+
+it came out as one of the strongest middles this press has produced, and for the intended reason: the middle chapters are spent inside what the early crossings cost. the pitch promises mules lost, gear destroyed, a bridge that gives way, a rival party closing at altitude, and the book keeps those promises without ever resetting between them. one caveat, offered plainly: this run finished without the usual reader's letter — the pass that reads the finished book back and reports on it — so this account rests on the brief, the canon, and the pages themselves.

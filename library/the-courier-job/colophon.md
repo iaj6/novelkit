@@ -1,0 +1,5 @@
+# colophon
+
+most novels sag in the middle because nothing measurable changes there. this one was built to test a remedy: a courier contract, a sealed bag, a hedge-witch's apprentice sent down three weeks of road in her master's place, six encounters she didn't plan for — and underneath, a secret released in measured steps and a resource that runs down, so something countable shifts in every chapter. it sits on the shelf as the press's argument that a quiet chapter needs a moving number, told in the shelf's fastest register: four teenagers, banter-forward, written for a thirteen-year-old who will not wait.
+
+much of it worked. the four voices are distinct from the first chapter and never blur — you can tell who is talking in the dark — and nothing planted on the road is forgotten. the honest flaw is drift: where the book slows to linger, the prose sometimes slips into an adult literary register the brief forbade, and a few chapters end on a quiet fade where the rule was an interruption. the fast chapters, though, do exactly what the experiment hoped.

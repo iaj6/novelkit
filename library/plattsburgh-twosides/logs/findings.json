@@ -1,0 +1,238 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-05-29T08:01:19.933Z",
+  "summary": {
+    "critical": 1,
+    "high": 4,
+    "medium": 2,
+    "low": 1
+  },
+  "findings": [
+    {
+      "id": "ending-mode-uniformity-001",
+      "category": "ending-mode-uniformity",
+      "severity": "high",
+      "title": "Nine of the final ten chapters end in quiet literary fade — brief specifies mixed endings",
+      "description": "The brief explicitly calls for 'mixed — some resolved beats, some mid-action, no manufactured cliffhangers.' The manuscript delivers near-uniform literary fades (quiet image of water, wind, or darkness) across Act 2 (five consecutive chapters: Ch07–Ch11) and Act 3 (four consecutive chapters: Ch13–Ch16). Each individual ending is defensible in isolation; taken in sequence they create a low-grade monotony in which the approach chapters, the action chapters, and the day-after chapters all close on the same emotional signal. A reader arriving at Ch15 has received the quiet-fade ending nine times in ten chapters. Revision should introduce at least two or three different ending modes — mid-action cut, resolved beat, or turn on new information — before the final literary fades of Ch15 and Ch16.",
+      "evidence": [
+        {
+          "file": "draft/07-the-dispatch.md",
+          "text": "Thomas ending on the southwest wind — quiet atmospheric fade after the springs-on-cables revelation."
+        },
+        {
+          "file": "draft/08-beekmantown.md",
+          "text": "Asa ending on the British fires across the water — quiet atmospheric fade."
+        },
+        {
+          "file": "draft/09-riding-at-anchor.md",
+          "text": "'the night was what the night was, and after a while the watch was done' — quiet atmospheric fade."
+        },
+        {
+          "file": "draft/10-the-night-crossing.md",
+          "text": "'The standoff was four days old and the ford was the ford' — summarizing declaration fading to quiet."
+        },
+        {
+          "file": "draft/11-first-light.md",
+          "text": "'Same as it was.' — quiet compression fade."
+        },
+        {
+          "file": "draft/13-action.md",
+          "text": "'The colors were down. The lake was still.' — quiet water image fade."
+        },
+        {
+          "file": "draft/14-pikes-ford.md",
+          "text": "'The water ran.' — quiet water image fade."
+        },
+        {
+          "file": "draft/15-prize.md",
+          "text": "'The lake went dark. He stayed at the rail until it was.' — quiet darkness/water fade."
+        },
+        {
+          "file": "draft/16-the-south-bank.md",
+          "text": "'The September dark came down.' — quiet darkness fade."
+        }
+      ],
+      "suggested_action": "In a second draft, close Ch05, Ch08, or Ch10 on a different mode — mid-action cut on a drill sequence, a resolved beat after an action decision, or a turn on a piece of information just received. Ch10 is the most natural candidate: end on Asa watching the British prisoners pass rather than on the standoff summary. Ch05 is the second: end on the drill itself, stopping on a precise image of the crew rather than on the night sky. Two changed endings in Act 2 would break the monotony before it reaches the climax.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "over-articulation-001",
+      "category": "over-articulation",
+      "severity": "high",
+      "title": "Recurring 'sentence-after-the-sentence' — prose explains images it has already landed",
+      "description": "The style guide explicitly names this failure mode: 'an image lands (the gun spinning off its carriage, the ford in morning light, smoke moving across the water), and the next sentence explains what the reader just felt. Cut the second sentence.' The pattern appears in at least five chapters and constitutes the manuscript's most pervasive craft failure. In each case the image has already done its work; the explanatory or summarizing sentence that follows blunts the landing and, in some instances, breaks the POV character's register by introducing a mode of reflection the character does not use elsewhere. The instances share a common root: a last-sentence instinct to secure the reader's understanding rather than trust the reader to carry the image.",
+      "evidence": [
+        {
+          "file": "draft/05-running-out.md",
+          "text": "'A working gun crew, when it was right, made a particular sound…' — three-paragraph phenomenological analysis of expert performance, culminating in 'the load cycle occurred. Through them.' Thomas does not analyze his professional cognition at this length anywhere else in the manuscript; the passage breaks his register and precedes the Trafalgar comparison that would carry the thought alone."
+        },
+        {
+          "file": "draft/09-riding-at-anchor.md",
+          "text": "The night-watch passage restates its central image (the stationary lake under stationary mountains) through the moon's descent to the New York shore, then closes 'the night was what the night was' — three sentences where the first image had already landed. Compare Ch11's compression: 'Same as it was.'"
+        },
+        {
+          "file": "draft/13-action.md",
+          "text": "'The gun had been at the ship to the end. It had fired for as long as there was an order to fire, and the sequence had held, and the men had held their sequence, and the cartridges had come up from below at their half-step lateness, reliably, through whatever the morning had been.' — three-sentence inventory explaining what the reader has just witnessed across the full chapter, immediately preceding 'The colors were down. The lake was still.'"
+        },
+        {
+          "file": "draft/15-prize.md",
+          "text": "'He watched it, as he had watched it, and it was what it was.' — colloquial contemporary phrase ('it was what it was') in a chapter otherwise precisely calibrated; the observation it appends has already been made by Thomas's physical action."
+        },
+        {
+          "file": "draft/16-the-south-bank.md",
+          "text": "'He would go back to it.' — names what the preceding mill memories (headgate, pitman arm, smell of pine sap) have already established without declaration. The brief states: 'He does not announce that he will go back.'"
+        }
+      ],
+      "suggested_action": "In each instance: identify the last concrete image or action that has already landed the intended meaning, and cut everything after it. In Ch05, cut from the 'working gun crew' analysis and move directly to the Trafalgar comparison. In Ch09, cut back to the last concrete image before the restatement begins. In Ch13, cut the three-sentence inventory and let 'The colors were down. The lake was still.' arrive directly after the surrender. In Ch15, cut 'it was what it was.' In Ch16, cut 'He would go back to it.'",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "character-voice-drift-001",
+      "category": "character-voice-drift",
+      "severity": "medium",
+      "title": "Ch05 analytical passage breaks Thomas's register; includes water/channel simile belonging to Asa's vocabulary",
+      "description": "The three-paragraph 'working gun crew' analysis in Ch05 ('Running Out') introduces a mode of explicit professional-phenomenological reflection that Thomas's register does not support elsewhere in the manuscript. His interior life is rendered throughout via omission, physical reflex, and professional observation — never via declared analysis of how expertise feels from the inside. Within this passage, a specific simile — 'the way water finds a channel and stops needing to discover it' — uses the water/flow vocabulary that the style guide and brief assign to Asa's register (Asa 'thinks in the river: flow, fall, shoals'). One such crossing is a small thing; it becomes a finding because the same failure mode (Thomas using Asa's imagery) would, if it recurs in later chapters, begin to collapse the register distinction that is the book's central formal achievement.",
+      "evidence": [
+        {
+          "file": "draft/05-running-out.md",
+          "text": "'A working gun crew, when it was right, made a particular sound… the way water finds a channel and stops needing to discover it — and in that state the crew did not perform a load cycle. The load cycle occurred. Through them.' — analytical mode inconsistent with Thomas's register; simile drawn from Asa's vocabulary."
+        }
+      ],
+      "suggested_action": "Cut the three-paragraph analytical passage. Move directly from the drill sequence to the Trafalgar comparison. The comparison carries the professional gap without the phenomenological setup, and Thomas's register is restored. The water/channel simile is removed as a consequence.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "stylistic-tic-001",
+      "category": "stylistic-tic",
+      "severity": "medium",
+      "title": "Verbatim repetition: 'the ford was the ford it had always been' appears in Ch14 and Ch16 two chapters apart",
+      "description": "The formulation 'the ford was the ford it had always been' appears near the close of both Ch14 ('Pike's Ford') and Ch16 ('The South Bank') — the manuscript's final two Asa chapters, separated by a single Thomas chapter. If this is a deliberate callback, the interval is too short for the second instance to register as resonance; it reads as a drafting tic. If it is unintentional, it is the kind of verbatim repetition that deflates rather than deepens. Either consolidate to a single appearance (Ch16, where Thread 3's return-to-the-ordinary is the stronger context) or create enough variation in the second instance that it signals echo rather than repetition.",
+      "evidence": [
+        {
+          "file": "draft/14-pikes-ford.md",
+          "text": "'the ford was the ford it had always been' — near the close of the chapter, after Thread 4's climactic resolution."
+        },
+        {
+          "file": "draft/16-the-south-bank.md",
+          "text": "'the ford was the ford it had always been' — verbatim repetition two chapters later, in Thread 3's resolution chapter."
+        }
+      ],
+      "suggested_action": "In revision, remove the instance from Ch14 (where the ford's constancy has been demonstrated through the chapter's action rather than needing to be stated) and retain the formulation for Ch16 only, where it serves Thread 3's return-to-ordinary resolution. Alternatively, vary the phrasing in one instance so the second reads as echo rather than repetition.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "other-001",
+      "category": "other",
+      "severity": "low",
+      "title": "Dunbar remains a functional role rather than a person across six chapters of sustained page time",
+      "description": "Sergeant Dunbar appears across Chs 06, 08, 10, 12, and 14 as the primary secondary human presence at Pike's Ford — the longest-running named secondary character in the manuscript. He functions correctly as mechanism: issuing orders, posting watch, holding fire, reporting. But given the accumulated page time, his absence of observed texture is noticeable, particularly in contrast to the unnamed young British prisoner in Ch10, who is rendered as fully human in three sentences of external observation. Dunbar is not a POV character, and the book wisely never slips into his interiority. Two or three additional instances of observed exterior behavior — physical habit, word choice, posture — would distinguish him as a person without breaking the POV constraint.",
+      "evidence": [
+        {
+          "file": "draft/06-the-ford.md",
+          "text": "Dunbar introduced as the sergeant who receives Asa's teaching — functional, no observed texture beyond his skepticism."
+        },
+        {
+          "file": "draft/10-the-night-crossing.md",
+          "text": "Dunbar issues orders and holds fire during the raid and the night standoff — present across the chapter, texture unchanged from Ch06."
+        },
+        {
+          "file": "draft/14-pikes-ford.md",
+          "text": "Dunbar holds the position through three assault attempts — his role is largest here, his observed texture still thin."
+        }
+      ],
+      "suggested_action": "In revision, add one or two brief observed details to Dunbar in Ch06 or Ch10 — something specific to his person rather than his function. A physical habit, the way he phrases a correction, a posture that is his. These need not be scenes; single-sentence observations are sufficient.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "continuity-fact-audit-001",
+      "category": "continuity-fact",
+      "severity": "critical",
+      "title": "Elizabeth's letter carrying duration: Ch11 says 'three years' vs. Ch09's 'two months' and Ch15's 'months since late June'",
+      "description": "Chapter 11 states the letter's folds are worn from 'three years of carrying.' Chapter 09 explicitly states Thomas last read the letter 'in late June' and has carried it 'for two months.' Chapter 15 confirms 'the months since the packet brought it to him at Île aux Noix in late June.' The canon (logs/continuity.md) records the arrival date as late June 1814, making the carrying duration approximately two to three months at the time of the September 11 battle — not three years. Ch11's 'three years' is a hard contradiction of both Ch09 and Ch15.",
+      "evidence": [
+        {
+          "file": "draft/11-first-light.md",
+          "text": "the paper worn thin at the folds, the ink faded where the folds had worked it longest in three years of carrying"
+        },
+        {
+          "file": "draft/09-riding-at-anchor.md",
+          "text": "He had read it last in late June, alone in the lower berth of the lodging house at Île aux Noix, the morning before the crew began arriving from the transports, and since then he had carried it folded in his breast pocket as he had carried it for two months"
+        },
+        {
+          "file": "draft/15-prize.md",
+          "text": "it gave slightly under his fingers rather than keeping its folded edges the way it had in the months since the packet brought it to him at Île aux Noix in late June"
+        },
+        {
+          "file": "logs/continuity.md",
+          "text": "The letter from Elizabeth reached Thomas in the packet at Ile aux Noix in late June 1814 — this is the specific arrival date established in Ch15."
+        }
+      ],
+      "suggested_action": "Change 'three years of carrying' in draft/11-first-light.md to 'two months of carrying' (matching Ch09 and the canon arrival date of late June 1814). The full sentence becomes: 'the paper worn thin at the folds, the ink faded where the folds had worked it longest in two months of carrying.'",
+      "auto_repair_safe": true,
+      "repair_agent": "repair-fact-normalize",
+      "repair_params": {
+        "canon_source": "draft/09-riding-at-anchor.md",
+        "edits": [
+          {
+            "file": "draft/11-first-light.md",
+            "wrong_text": "the paper worn thin at the folds, the ink faded where the folds had worked it longest in three years of carrying",
+            "correct_text": "the paper worn thin at the folds, the ink faded where the folds had worked it longest in two months of carrying"
+          }
+        ]
+      }
+    },
+    {
+      "id": "continuity-fact-audit-002",
+      "category": "continuity-fact",
+      "severity": "high",
+      "title": "Captain Downie's apparent age: Ch11 estimates 'thirty-three, perhaps thirty-four' vs. canonical age of 36",
+      "description": "Canon/continuity.md fact #16 and canon/characters.md both establish Captain George Downie's age as 36 at death (born January 19, 1778; killed September 11, 1814). Chapter 11 has Thomas observe Downie during the gun-line inspection and estimate him as 'younger than the lower deck had understood him to be — thirty-three, perhaps thirty-four.' Even as a POV character's subjective estimate, the stated range (33–34) is two to three years off the canonical fact and could mislead readers.",
+      "evidence": [
+        {
+          "file": "draft/11-first-light.md",
+          "text": "He was younger than the lower deck had understood him to be — thirty-three, perhaps thirty-four — and his face when he looked at a gun had the quality of a man assessing something he was responsible for and could not change in its essential nature."
+        },
+        {
+          "file": "canon/continuity.md",
+          "text": "Captain George Downie: born January 19, 1778, Isle of Lewis, Scotland; age 36 at death"
+        },
+        {
+          "file": "canon/characters.md",
+          "text": "Age 36 at death."
+        }
+      ],
+      "suggested_action": "If the estimate is intentional (Thomas misreads Downie's age), consider changing 'thirty-three, perhaps thirty-four' to 'thirty-five, perhaps thirty-six' — close enough to be a plausible misread and consistent with the canonical age. If the estimate was an authorial error, correct to reflect the canonical 36. A human should decide which intent applies before any edit.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "continuity-fact-audit-003",
+      "category": "continuity-fact",
+      "severity": "high",
+      "title": "American gunboat count: Ch07 counts 'twelve' and Ch13 implies ~12, contradicting canon's 'ten gunboats'",
+      "description": "Canon/continuity.md fact #18 states the American squadron included 'ten gunboats.' Chapter 07 has Thomas count 'Twelve of them, or close to it' on rounding Cumberland Head. Chapter 13 gives the total American line as 'fifteen vessels, perhaps sixteen' — consistent with twelve gunboats (4 main vessels + 12 = 16) but not with ten (4 + 10 = 14). The two draft chapters are internally consistent with each other but both contradict the canonical count of ten gunboats.",
+      "evidence": [
+        {
+          "file": "canon/continuity.md",
+          "text": "The American squadron anchored in a north-to-south line in Plattsburgh Bay, approximately 1,000 yards from shore: Eagle (north), Saratoga (flag, Macdonough), Ticonderoga, Preble, with ten gunboats."
+        },
+        {
+          "file": "draft/07-the-dispatch.md",
+          "text": "He counted the gunboats as well. Twelve of them, or close to it; the southern end of the line was partly obscured by the Ticonderoga's hull and he could not be certain of the last."
+        },
+        {
+          "file": "draft/13-action.md",
+          "text": "The whole of the American line — fifteen vessels, perhaps sixteen — every gun on the larboard side bearing on the corridor that had just become the only place Confiance could be."
+        }
+      ],
+      "suggested_action": "If canon's 'ten gunboats' is authoritative, change Ch07's 'Twelve of them, or close to it' to 'Ten of them, or close to it' and adjust Ch13's 'fifteen vessels, perhaps sixteen' to 'thirteen vessels, perhaps fourteen' (4 main + 10 gunboats = 14). A human should verify the intended historical count before repair, as the drafter may have used different sources.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    }
+  ]
+}

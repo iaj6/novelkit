@@ -1,7 +1,14 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Ornament from "../../components/Ornament.astro";
-import { getBooks, artifactUrl, url, type Book } from "../../lib/library";
+import {
+  getBooks,
+  getExcerpt,
+  getColophon,
+  artifactUrl,
+  url,
+  type Book,
+} from "../../lib/library";
 
 export async function getStaticPaths() {
   return getBooks().map((book) => ({
@@ -30,12 +37,31 @@ const hasAudio =
 const audioFiles = book.artifacts.audioElevenlabs.length > 0
   ? book.artifacts.audioElevenlabs
   : book.artifacts.audioOpenai;
+
+const excerpt = getExcerpt(book.slug);
+const colophon = getColophon(book.slug);
+
+const REPO_URL = "https://github.com/iaj6/novelkit";
+const briefUrl = `${REPO_URL}/blob/main/library/${book.slug}/brief.md`;
+const canonUrl = `${REPO_URL}/tree/main/library/${book.slug}/canon`;
+
+const coverMetaLine = [
+  book.chapterCount > 0
+    ? `${book.chapterCount} ${book.chapterCount === 1 ? "chapter" : "chapters"}`
+    : "brief only · not yet drafted",
+  book.readingLabel,
+  book.status !== "complete" && book.chapterCount > 0 ? "in progress" : "",
+]
+  .filter(Boolean)
+  .join(" · ");
 ---
 
 <BaseLayout
   title={book.title}
   description={book.oneLine || `${book.title} — a book from lantern & page.`}
   compactHeader={true}
+  ogImage={coverUrl}
+  ogType="book"
 >
   <article class="book-page">
     <div class="container book-grid">
@@ -51,15 +77,7 @@ const audioFiles = book.artifacts.audioElevenlabs.length > 0
             </div>
           )}
         </div>
-        <p class="meta cover-meta-line">
-          {book.chapterCount > 0 && (
-            <>
-              {book.chapterCount} {book.chapterCount === 1 ? "chapter" : "chapters"}
-              {book.status !== "complete" && <span> &middot; in progress</span>}
-            </>
-          )}
-          {book.chapterCount === 0 && <>brief only &middot; not yet drafted</>}
-        </p>
+        <p class="meta cover-meta-line">{coverMetaLine}</p>
       </aside>
 
       {/* ── Right column: title, blurb, downloads ────────────────── */}
@@ -72,6 +90,21 @@ const audioFiles = book.artifacts.audioElevenlabs.length > 0
         {book.blurb && (
           <section class="blurb reveal reveal-3">
             <p>{book.blurb}</p>
+          </section>
+        )}
+
+        {excerpt.length > 0 && (
+          <section class="excerpt reveal reveal-4">
+            <p class="small-caps excerpt-label">the first page</p>
+            {excerpt.map((para) => (
+              <p class="excerpt-para">{para}</p>
+            ))}
+            {htmlUrl && (
+              <a href={htmlUrl} class="start-reading">
+                start reading <span class="start-note">— the whole book, in your browser</span>
+                <span class="arrow">&rarr;</span>
+              </a>
+            )}
           </section>
         )}
 
@@ -125,16 +158,56 @@ const audioFiles = book.artifacts.audioElevenlabs.length > 0
           )}
         </section>
 
+        {colophon.length > 0 && (
+          <>
+            <Ornament variant="single" />
+            <section class="colophon reveal reveal-5">
+              <p class="small-caps colophon-label">colophon</p>
+              {colophon.map((para) => (
+                <p class="colophon-para">{para}</p>
+              ))}
+              <ul class="evidence-list">
+                <li>
+                  <a href={briefUrl} target="_blank" rel="noopener noreferrer">
+                    the brief it began from
+                  </a>
+                  <span class="evidence-note">— the only human input</span>
+                </li>
+                <li>
+                  <a href={canonUrl} target="_blank" rel="noopener noreferrer">
+                    the canon the agents wrote
+                  </a>
+                  <span class="evidence-note">— world, characters, style contract</span>
+                </li>
+                {book.hasReaderLetter && (
+                  <li>
+                    <a href={url(`/book/${book.slug}/letter/`)}>
+                      the reader&rsquo;s letter
+                    </a>
+                    <span class="evidence-note">
+                      — the pipeline&rsquo;s own verdict on the finished book (spoilers)
+                    </span>
+                  </li>
+                )}
+              </ul>
+            </section>
+          </>
+        )}
+
         <Ornament variant="single" />
 
         <section class="provenance reveal reveal-5">
           <p>
-            drafted autonomously by an AI agent from a one-page brief.
-            no human editing was performed.
+            drafted autonomously{book.model ? ` by ${book.model}` : " by an AI agent"} from
+            a single brief; no human edited the prose.
             {book.chapterCount > 0 && (
               <span class="meta-detail">
-                {" "}&mdash; {book.chapterCount} chapters, written in sequence,
-                each reading the canon, the outline, and what came before.
+                {" "}
+                {`${book.chapterCount} chapters${
+                  book.wordCount > 0
+                    ? `, ${book.wordCount.toLocaleString("en-US")} words`
+                    : ""
+                }, written in sequence, each reading the canon, the outline, and what came before.`}
               </span>
             )}
           </p>
@@ -237,6 +310,99 @@ const audioFiles = book.artifacts.audioElevenlabs.length > 0
     line-height: 1.6;
     color: var(--ink);
     max-width: 36rem;
+  }
+
+  /* ── excerpt ─────────────────────────────────────────────────── */
+
+  .excerpt {
+    margin-top: var(--space-4);
+    max-width: 36rem;
+  }
+
+  .excerpt-label {
+    margin-bottom: var(--space-2);
+  }
+
+  .excerpt-para {
+    font-size: var(--size-body);
+    line-height: 1.65;
+    color: var(--ink);
+    margin-bottom: var(--space-2);
+  }
+
+  .excerpt-para:first-of-type::first-letter {
+    font-family: var(--font-display);
+    font-size: 3.1em;
+    line-height: 0.8;
+    float: left;
+    padding-right: 0.09em;
+    color: var(--ink);
+  }
+
+  .start-reading {
+    display: inline-block;
+    margin-top: var(--space-2);
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 1.3rem;
+    font-variation-settings: "opsz" 30, "SOFT" 50;
+    color: var(--ink);
+    border-bottom: 1px solid var(--lantern);
+    padding-bottom: 2px;
+    transition: color 200ms ease, border-color 200ms ease;
+  }
+
+  .start-reading:hover,
+  .start-reading:focus-visible {
+    color: var(--lantern-deep);
+    border-bottom-color: var(--lantern-deep);
+  }
+
+  .start-reading .start-note {
+    font-family: var(--font-body);
+    font-size: 0.92rem;
+    color: var(--ink-soft);
+  }
+
+  .start-reading .arrow {
+    color: var(--lantern-deep);
+    margin-left: 0.3em;
+  }
+
+  /* ── colophon ────────────────────────────────────────────────── */
+
+  .colophon {
+    max-width: 34rem;
+  }
+
+  .colophon-label {
+    margin-bottom: var(--space-2);
+  }
+
+  .colophon-para {
+    font-size: 0.98rem;
+    line-height: 1.6;
+    color: var(--ink-soft);
+    margin-bottom: var(--space-2);
+  }
+
+  .evidence-list {
+    list-style: none;
+    padding: 0;
+    margin-top: var(--space-2);
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+  }
+
+  .evidence-list a {
+    font-style: italic;
+  }
+
+  .evidence-note {
+    font-size: 0.88rem;
+    color: var(--ink-soft);
+    font-style: italic;
   }
 
   /* ── downloads ───────────────────────────────────────────────── */

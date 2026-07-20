@@ -1,0 +1,11 @@
+{
+  "title": "Two Shores",
+  "model": "claude-sonnet-4-6",
+  "visibility": "public",
+  "research": true,
+  "calibration": {
+    "enabled": true,
+    "max_iterations": 2
+  },
+  "oneLine": "The same nine days on Plattsburgh Bay from both shores of the war \u2014 two men, two registers, one Sunday morning in September 1814."
+}

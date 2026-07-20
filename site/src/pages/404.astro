@@ -1,0 +1,49 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Ornament from "../components/Ornament.astro";
+import { url } from "../lib/library";
+---
+
+<BaseLayout title="not on the shelf" description="this page isn't in the library.">
+  <section class="lost reading">
+    <p class="small-caps reveal reveal-1">shelf mark not found</p>
+    <h1 class="lost-title reveal reveal-2">this page isn&rsquo;t in the library</h1>
+    <p class="lost-lede reveal reveal-3">
+      whatever was here has been reshelved, retitled, or never bound.
+      the lantern&rsquo;s still lit, though.
+    </p>
+    <Ornament variant="single" />
+    <p class="lost-link reveal reveal-4">
+      <a href={url("/")}>back to the shelf &rarr;</a>
+    </p>
+  </section>
+</BaseLayout>
+
+<style>
+  .lost {
+    padding-block: var(--space-7) var(--space-6);
+    text-align: center;
+  }
+
+  .lost-title {
+    font-family: var(--font-display);
+    font-variation-settings: "opsz" 84, "SOFT" 65;
+    font-weight: 400;
+    font-style: italic;
+    font-size: clamp(2.2rem, 5vw, 3.4rem);
+    line-height: 1.05;
+    margin-block: var(--space-2) var(--space-3);
+  }
+
+  .lost-lede {
+    color: var(--ink-soft);
+    max-width: 28rem;
+    margin-inline: auto;
+  }
+
+  .lost-link a {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 1.25rem;
+  }
+</style>

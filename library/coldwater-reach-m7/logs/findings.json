@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-18T12:37:04.112Z",
+  "summary": {
+    "critical": 0,
+    "high": 2,
+    "medium": 3,
+    "low": 0
+  },
+  "findings": [
+    {
+      "id": "over-articulation-001",
+      "category": "over-articulation",
+      "severity": "medium",
+      "title": "Repeated 'He thought about X' syntactic catalogue in Marcus's meditation sequences",
+      "description": "In chapters 13 and 16, Marcus's extended post-action thinking sequences are constructed as a catalogue of parallel 'He thought about X / He thought about Y' clauses applied five or six times in succession. The individual thoughts are well-calibrated to his character and thread; the mechanical syntactic repetition works against his register's defining quality — the careful weighing of one thing at a time — making the thinking feel listed rather than weighed. Chapter 16 is the more saturated instance; chapter 13 shows the same construction but less densely. Both chapters earn the content of these thoughts; the repair is architectural, not thematic.",
+      "evidence": [
+        {
+          "file": "draft/16-the-notebook.md",
+          "text": "He thought about Yarmouth. He thought about what a man does when he has found the dock... He thought about sitting down... He thought about die die versucht haben zu gehen... He thought about Felix K."
+        },
+        {
+          "file": "draft/13-what-the-letter-said.md",
+          "text": "Extended 'He thought about' catalogue in the closing meditation after the classroom exchange; construction appears multiple times in quick succession"
+        }
+      ],
+      "suggested_action": "Break the syntactic parallel in both chapters. Let Marcus reach each thought through a different sensory or physical access point — an image, a sound, something his hand does at the desk — so the thoughts arrive at different speeds and through different routes rather than as a catalogue. The content stays; the frame changes.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "over-articulation-002",
+      "category": "over-articulation",
+      "severity": "medium",
+      "title": "Post-action closing sections exceed the scene's actual endpoint across all three acts",
+      "description": "A recurrent pattern across five chapters in all three acts: a chapter delivers its primary payload (a scene, an exchange, a discovery) and then continues for one or more additional paragraphs of reflection or analysis that restates what the scene has already communicated. In each instance the surrounding prose is good; the problem is that the chapter has already ended and the additional material is gloss. The pattern appears in: Ch. 03 (Marcus analyzing his own psychological situation — 'the credentials requiring periodic validation' — that the surrounding scene has already established through observed detail); Ch. 06 (Marcus walking away from Eira and reflecting on what her 'precision of answers' meant, going one paragraph past the chapter's earned close); Ch. 15 (Hannah's aftermath extended through four stages culminating in an architectural list of catalysts — 'the fence post in December, the letter in February, Dr. Klein's classroom' — that belongs to Marcus's assembly mode, not Hannah's accumulation mode, plus the subsequent sentence that names the very thing the prose should leave unnamed); Ch. 20 (Eira doing explicit verbal analysis of her log-keeping practice for a paragraph beyond her register's tolerance); Ch. 25 (one sentence — 'she had been looking for the word that covered all of it and finding that no single word did' — that tells the reader the structure of Hannah's situation rather than living inside it).",
+      "evidence": [
+        {
+          "file": "draft/03-the-crow-house.md",
+          "text": "Elsewhere in town he was, in some ongoing functional sense, a matter that required decisions: the credentials requiring periodic validation, the provenance requiring explanation when it came up, the presence requiring an account of itself in a community that had not anticipated it"
+        },
+        {
+          "file": "draft/06-at-the-harbormasters.md",
+          "text": "There was only the answer she gave, and around it, in the exact contour of what she had said, the silence of everything she hadn't. He knew the skill. [Final paragraph continues beyond this close]"
+        },
+        {
+          "file": "draft/15-sprechen.md",
+          "text": "She did not know how to locate when it had started: the fence post in December, the letter in February, Dr. Klein's classroom, the north fence in April... Some combination of these and something underneath the combination she didn't have a name for"
+        },
+        {
+          "file": "draft/20-the-mail-boat.md",
+          "text": "She was not certain, yet, what she was making [extended meta-commentary on Eira's log-keeping practice, one paragraph past the scene's earned close]"
+        },
+        {
+          "file": "draft/25-zuhause.md",
+          "text": "she had been looking for the word that covered all of it and finding that no single word did"
+        }
+      ],
+      "suggested_action": "In each affected chapter, identify the sentence at which the chapter's primary payload has fully landed, and cut everything after it that restates or glosses rather than extends. In Ch. 06, the paragraph after 'He knew the skill' should be removed. In Ch. 15, the catalytic list and the sentence about the unnamed combination should be cut or replaced with a sensory image. In Ch. 20, end one paragraph earlier. In Ch. 25, cut the architectural sentence; the clock, the warmth of the kitchen, and the child going to sleep are the chapter's close.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "structural-failure-001",
+      "category": "structural-failure",
+      "severity": "medium",
+      "title": "Chapter 29 (Spring Log) is a redundant resolution beat after Thread 1 already closed fully in Chapter 26",
+      "description": "Thread 1 (What Eira Knows) achieves its designed, complete resolution in Chapter 26: Eira writes the addendum, the petty officer logs it, she returns to the shack and writes the day's conditions. The resolution is earned, in register, and structurally final. Chapter 29, arriving four chapters later in the penultimate position, attempts a second Eira resolution — Owen's unfinished November 12 entry, the final log line 'Harbor in order. Nine years, five months. All boats accounted for.' — that the thread cannot support because it already closed. The chapter's prose is not broken; the mooring dispute set piece is a competent Eira scene, and 'seven out, seven coming back' carries weight. The problem is structural: chapter 29 occupies a position that should function as the last beat before chapter 30's quiet close, but it reads as interval rather than necessity — a coda to a coda. The rereading of Owen's trailing sentence was more powerful in Chapter 07, where it served the act of holding the October 11 memory. Using the same container again for a different cargo, after the thread has already resolved, dilutes both.",
+      "evidence": [
+        {
+          "file": "draft/26-the-addendum.md",
+          "text": "Thread 1 resolution: Eira submits the addendum; the petty officer logs receipt; she returns to the shack and writes the day's conditions. Thread closed.",
+          "chapter": "26-the-addendum"
+        },
+        {
+          "file": "draft/29-spring-log.md",
+          "text": "Eira encounters Owen's unfinished November 12, 1935 entry and writes 'Harbor in order. Nine years, five months. All boats accounted for.' — a second resolution beat on a thread already closed in Ch. 26.",
+          "chapter": "29-spring-log"
+        }
+      ],
+      "suggested_action": "Three options: (A) Compress Ch. 29 to a brief transitional chapter — five to eight paragraphs of spring harbor business — that bridges Ch. 28's liberation-news close to Ch. 30's final scene, without the Owen resolution beat. (B) Move the Owen's-handwriting moment forward into Ch. 23 or Ch. 26 itself, where it would prepare rather than echo Thread 1's close. (C) Cut Ch. 29 entirely and open Ch. 30 with a brief establishment of the late-April harbor. The final log line is strong enough to anchor the chapter it lands in — but it must land before Thread 1 closes, not after.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "det-fact-conflict:eira-bowman:role",
+      "category": "continuity-fact",
+      "severity": "high",
+      "title": "Contradictory role for eira-bowman",
+      "description": "The world store holds conflicting live values for eira-bowman.role: Harbormaster of Coldwater Reach since November 1935 (unknown) vs harbormaster of Coldwater Reach (01-the-breakwater).",
+      "evidence": [
+        {
+          "file": "draft/unknown.md",
+          "text": "role = Harbormaster of Coldwater Reach since November 1935 (unknown)",
+          "fact_id": "fact:unknown:eira-bowman:role",
+          "chapter": "unknown"
+        },
+        {
+          "file": "draft/01-the-breakwater.md",
+          "text": "role = harbormaster of Coldwater Reach (01-the-breakwater)",
+          "fact_id": "fact:01-the-breakwater:eira-bowman:role",
+          "chapter": "01-the-breakwater"
+        }
+      ],
+      "suggested_action": "Reconcile the values; supersede the incorrect assertion (or fix the prose so they agree).",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "det-fact-conflict:hannah-pfeiffer:age",
+      "category": "continuity-fact",
+      "severity": "high",
+      "title": "Contradictory age for hannah-pfeiffer",
+      "description": "The world store holds conflicting live values for hannah-pfeiffer.age: 17 years (unknown) vs 18 years (21-the-second-october).",
+      "evidence": [
+        {
+          "file": "draft/unknown.md",
+          "text": "age = 17 years (unknown)",
+          "fact_id": "fact:unknown:hannah-pfeiffer:age",
+          "chapter": "unknown"
+        },
+        {
+          "file": "draft/21-the-second-october.md",
+          "text": "age = 18 years (21-the-second-october)",
+          "fact_id": "fact:21-the-second-october:hannah-pfeiffer:age",
+          "chapter": "21-the-second-october"
+        }
+      ],
+      "suggested_action": "Reconcile the values; supersede the incorrect assertion (or fix the prose so they agree).",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+- generic [active] [ref=f6e1]:
+  - link "skip to content" [ref=f6e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f6e3]:
+    - generic [ref=f6e4]:
+      - generic "lantern & page" [ref=f6e6]
+      - navigation "primary" [ref=f6e7]:
+        - list [ref=f6e8]:
+          - listitem [ref=f6e9]:
+            - link "library" [ref=f6e10] [cursor=pointer]:
+              - /url: /novelkit/
+          - listitem [ref=f6e11]:
+            - link "about" [ref=f6e12] [cursor=pointer]:
+              - /url: /novelkit/about/
+  - main [ref=f6e13]:
+    - generic [ref=f6e15]:
+      - generic [ref=f6e16]:
+        - paragraph [ref=f6e17]: vol. i · the inaugural shelf
+        - heading "lantern & page" [level=1] [ref=f6e18]:
+          - emphasis [ref=f6e20]: lantern
+          - generic [ref=f6e21]: "&"
+          - emphasis [ref=f6e23]: page
+        - paragraph [ref=f6e24]: a small press of novels drafted, autonomously, by AI agents. one human writes a brief. everything else — the canon, the outline, the chapters, the cover, the audiobook — is produced by the agents from there.
+        - paragraph [ref=f6e25]: this is a reading room, not a bookstore. nothing is for sale. read what you like; download what you want.
+      - figure [ref=f6e26]:
+        - img [ref=f6e27]
+    - figure "the reading room" [ref=f6e28]:
+      - img "a small bookstore interior at dusk — wooden shelves, a brass lantern, an open book on a table near a window" [ref=f6e30]
+      - generic [ref=f6e31]:
+        - emphasis [ref=f6e32]: the reading room.
+        - text: lantern lit at the end of the afternoon.
+    - img [ref=f6e35]
+    - generic [ref=f6e45]:
+      - generic [ref=f6e46]:
+        - paragraph [ref=f6e47]: the shelf
+        - heading "on hand, in print, in audio" [level=2] [ref=f6e48]
+        - paragraph [ref=f6e49]: 4 titles in the library. some published in full; some still being drafted. each began as a single page.
+      - list [ref=f6e50]:
+        - listitem [ref=f6e51]:
+          - article [ref=f6e52]:
+            - link "open Coldwater Reach" [ref=f6e53] [cursor=pointer]:
+              - /url: /novelkit/book/coldwater-reach/
+              - img "cover of Coldwater Reach" [ref=f6e55]
+              - generic [ref=f6e56]:
+                - heading "Coldwater Reach" [level=2] [ref=f6e57]
+                - paragraph [ref=f6e58]: The Breakwater Season is a literary novel set in the fictional coastal town of Coldwater Reach, Maine, from autumn 1943 through spring 1945.
+                - generic [ref=f6e59]: read →
+        - listitem [ref=f6e60]:
+          - article [ref=f6e61]:
+            - link "open The Bottle" [ref=f6e62] [cursor=pointer]:
+              - /url: /novelkit/book/tiny-toy-output/
+              - img "cover of The Bottle" [ref=f6e64]
+              - generic [ref=f6e65]:
+                - heading "The Bottle" [level=2] [ref=f6e66]
+                - paragraph [ref=f6e67]: Maren Voss has kept the lamp at Harrow Point Lighthouse for eleven years — alone, by routine, without incident.
+                - generic [ref=f6e68]: read →
+        - listitem [ref=f6e69]:
+          - article [ref=f6e70]:
+            - link "open The Cold Signal" [ref=f6e71] [cursor=pointer]:
+              - /url: /novelkit/book/the-cold-signal/
+              - img "cover of The Cold Signal" [ref=f6e73]
+              - generic [ref=f6e74]:
+                - heading "The Cold Signal" [level=2] [ref=f6e75]
+                - paragraph [ref=f6e76]: Dr. Elena Hartmann, sixty-four, is a career astrobiologist who has spent thirty years at radio observatories and remote field stations cataloguing what she calls "the corrections"…
+                - generic [ref=f6e77]: read →
+        - listitem [ref=f6e78]:
+          - article [ref=f6e79]:
+            - link "open The Vilcabamba Expedition" [ref=f6e80] [cursor=pointer]:
+              - /url: /novelkit/book/vilcabamba-expedition/
+              - img "cover of The Vilcabamba Expedition" [ref=f6e82]
+              - generic [ref=f6e83]:
+                - heading "The Vilcabamba Expedition" [level=2] [ref=f6e84]
+                - paragraph [ref=f6e85]: In 1938, James Holroyd — a cashiered British army surveyor with a blacklisted name and no good reason to be careful with his life — is hired off the bottom of a short list by the…
+                - generic [ref=f6e86]: read →
+  - contentinfo [ref=f6e87]:
+    - generic [ref=f6e88]:
+      - generic [ref=f6e89]:
+        - link "lantern & page — home" [ref=f6e90] [cursor=pointer]:
+          - /url: /novelkit/
+          - generic "lantern & page" [ref=f6e91]
+        - paragraph [ref=f6e92]: a small press of agent-drafted novels.
+      - paragraph [ref=f6e93]: every book here was drafted autonomously by an AI agent from a single brief. no human editing was performed on the prose. the brief is the only human input.
+      - generic [ref=f6e94]:
+        - paragraph [ref=f6e95]:
+          - link "about the process" [ref=f6e96] [cursor=pointer]:
+            - /url: /novelkit/about/
+          - text: ·
+          - link "source" [ref=f6e97] [cursor=pointer]:
+            - /url: https://github.com/
+        - paragraph [ref=f6e98]: © 2026
+  - generic [ref=f6e101]:
+    - button "Menu" [ref=f6e102]:
+      - img [ref=f6e104]
+      - generic: Menu
+    - button "Inspect" [ref=f6e108]:
+      - img [ref=f6e110]
+      - generic: Inspect
+    - button "Audit" [ref=f6e112]:
+      - img [ref=f6e114]
+      - generic: Audit
+    - button "Settings" [ref=f6e117]:
+      - img [ref=f6e119]
+      - generic: Settings

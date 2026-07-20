@@ -5,13 +5,19 @@ import Ornament from "../components/Ornament.astro";
 import { getBooks, url } from "../lib/library";
 
 const books = getBooks();
+const inPrint = books.filter((b) => b.status === "complete");
+const atThePress = books.filter((b) => b.status !== "complete");
+const anyAudio = books.some(
+  (b) => b.artifacts.audioElevenlabs.length > 0 || b.artifacts.audioOpenai.length > 0
+);
+const shelfTitle = anyAudio ? "on hand, in print, in audio" : "on hand & in print";
 ---
 
 <BaseLayout title="lantern & page">
   <section class="hero">
     <div class="container hero-grid">
       <div class="hero-text">
-        <p class="vol-label small-caps reveal reveal-1">vol. i &middot; the inaugural shelf</p>
+        <p class="vol-label small-caps reveal reveal-1">vol. ii &middot; the second shelf</p>
         <h1 class="hero-title reveal reveal-2">
           <span class="line"><em>lantern</em></span>
           <span class="line ampline">&amp;</span>
@@ -62,21 +68,36 @@ const books = getBooks();
     <div class="container">
       <header class="cat-head reveal reveal-2">
         <p class="small-caps">the shelf</p>
-        <h2 class="cat-title">on hand, in print, in audio</h2>
+        <h2 class="cat-title">{shelfTitle}</h2>
         <p class="cat-lede">
           {books.length} {books.length === 1 ? "title" : "titles"} in the library.
-          some published in full; some still being drafted. each began as a
-          single page.
+          each began as a single page.
         </p>
       </header>
 
       <ol class="book-grid">
-        {books.map((book, i) => (
+        {inPrint.map((book, i) => (
           <li>
             <BookCard book={book} index={i} />
           </li>
         ))}
       </ol>
+
+      {atThePress.length > 0 && (
+        <div class="press-section">
+          <header class="press-head">
+            <p class="small-caps">at the press</p>
+            <p class="cat-lede">still being drafted or bound — no editions yet.</p>
+          </header>
+          <ol class="book-grid">
+            {atThePress.map((book, i) => (
+              <li>
+                <BookCard book={book} index={i} />
+              </li>
+            ))}
+          </ol>
+        </div>
+      )}
     </div>
   </section>
 </BaseLayout>
@@ -142,7 +163,7 @@ const books = getBooks();
   .hero-lantern {
     width: clamp(180px, 22vw, 280px);
     height: auto;
-    mix-blend-mode: multiply;     /* lantern PNG cream blends into paper */
+    /* lantern.webp carries real alpha now — no blend tricks needed */
     filter: drop-shadow(0 22px 28px rgba(28, 20, 15, 0.10));
   }
 
@@ -154,7 +175,9 @@ const books = getBooks();
   }
 
   .hero-scene-frame {
-    aspect-ratio: 3 / 2;
+    /* Letterboxed band, not a full 3:2 viewport of mood — the shelf is
+       the product and should be reachable within a scroll. */
+    aspect-ratio: 21 / 9;
     border: 1px solid var(--paper-edge);
     box-shadow: var(--shadow-page);
     overflow: hidden;
@@ -215,6 +238,16 @@ const books = getBooks();
     padding: 0;
   }
 
+  .press-section {
+    margin-top: var(--space-6);
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--rule);
+  }
+
+  .press-head {
+    margin-bottom: var(--space-4);
+  }
+
   @media (max-width: 800px) {
     .hero-grid {
       grid-template-columns: 1fr;
@@ -226,6 +259,15 @@ const books = getBooks();
     }
     .hero-lantern {
       width: 180px;
+    }
+  }
+
+  /* Phones: two-up so eleven poster-size covers don't become ~10,000px
+     of scrolling. Photographic covers stay legible at ~165px. */
+  @media (max-width: 600px) {
+    .book-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-4) var(--space-2);
     }
   }
 </style>

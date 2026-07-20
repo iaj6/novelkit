@@ -1,0 +1,77 @@
+- generic [active] [ref=f4e1]:
+  - link "skip to content" [ref=f4e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f4e3]:
+    - generic [ref=f4e4]:
+      - link "lantern & page — home" [ref=f4e6] [cursor=pointer]:
+        - /url: /novelkit/
+        - generic "lantern & page" [ref=f4e7]
+      - navigation "primary" [ref=f4e8]:
+        - list [ref=f4e9]:
+          - listitem [ref=f4e10]:
+            - link "library" [ref=f4e11] [cursor=pointer]:
+              - /url: /novelkit/
+          - listitem [ref=f4e12]:
+            - link "about" [ref=f4e13] [cursor=pointer]:
+              - /url: /novelkit/about/
+  - main [ref=f4e14]:
+    - article [ref=f4e15]:
+      - generic [ref=f4e16]:
+        - complementary [ref=f4e17]:
+          - img "cover of The Cold Signal" [ref=f4e19]
+          - paragraph [ref=f4e20]: 15chapters
+        - generic [ref=f4e21]:
+          - generic [ref=f4e22]:
+            - paragraph [ref=f4e23]: a novel · lantern & page
+            - heading "The Cold Signal" [level=1] [ref=f4e24]
+          - paragraph [ref=f4e26]: Dr. Elena Hartmann, sixty-four, is a career astrobiologist who has spent thirty years at radio observatories and remote field stations cataloguing what she calls "the corrections" — the false positives, the instrument ghosts, the signals that turned out to be human noise. She is professionally legendary for skepticism. The institutional joke is that if Hartmann calls it, it's real.
+          - img [ref=f4e28]
+          - generic [ref=f4e36]:
+            - paragraph [ref=f4e37]: take it with you
+            - list [ref=f4e38]:
+              - listitem [ref=f4e39]:
+                - link "epub for any e-reader" [ref=f4e40] [cursor=pointer]:
+                  - /url: /novelkit/books/the-cold-signal/the-cold-signal.epub
+                  - generic [ref=f4e41]: epub
+                  - generic [ref=f4e42]: for any e-reader
+              - listitem [ref=f4e43]:
+                - link "pdf for screen or print" [ref=f4e44] [cursor=pointer]:
+                  - /url: /novelkit/books/the-cold-signal/the-cold-signal.pdf
+                  - generic [ref=f4e45]: pdf
+                  - generic [ref=f4e46]: for screen or print
+              - listitem [ref=f4e47]:
+                - link "html read in the browser" [ref=f4e48] [cursor=pointer]:
+                  - /url: /novelkit/books/the-cold-signal/the-cold-signal.html
+                  - generic [ref=f4e49]: html
+                  - generic [ref=f4e50]: read in the browser
+          - img [ref=f4e52]
+          - paragraph [ref=f4e61]: drafted autonomously by an AI agent from a one-page brief. no human editing was performed. — 15 chapters, written in sequence, each reading the canon, the outline, and what came before.
+  - contentinfo [ref=f4e62]:
+    - generic [ref=f4e63]:
+      - generic [ref=f4e64]:
+        - link "lantern & page — home" [ref=f4e65] [cursor=pointer]:
+          - /url: /novelkit/
+          - generic "lantern & page" [ref=f4e66]
+        - paragraph [ref=f4e67]: a small press of agent-drafted novels.
+      - paragraph [ref=f4e68]: every book here was drafted autonomously by an AI agent from a single brief. no human editing was performed on the prose. the brief is the only human input.
+      - generic [ref=f4e69]:
+        - paragraph [ref=f4e70]:
+          - link "about the process" [ref=f4e71] [cursor=pointer]:
+            - /url: /novelkit/about/
+          - text: ·
+          - link "source" [ref=f4e72] [cursor=pointer]:
+            - /url: https://github.com/
+        - paragraph [ref=f4e73]: © 2026
+  - generic [ref=f4e76]:
+    - button "Menu" [ref=f4e77]:
+      - img [ref=f4e79]
+      - generic: Menu
+    - button "Inspect" [ref=f4e83]:
+      - img [ref=f4e85]
+      - generic: Inspect
+    - button "Audit" [ref=f4e87]:
+      - img [ref=f4e89]
+      - generic: Audit
+    - button "Settings" [ref=f4e92]:
+      - img [ref=f4e94]
+      - generic: Settings

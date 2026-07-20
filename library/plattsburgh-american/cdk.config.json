@@ -1,0 +1,11 @@
+{
+  "title": "A Line of Smoke",
+  "model": "claude-sonnet-4-6",
+  "visibility": "public",
+  "research": true,
+  "calibration": {
+    "enabled": true,
+    "max_iterations": 2
+  },
+  "oneLine": "A quarter-gunner on the Saratoga and a millwright's apprentice at the fords \u2014 the American side of September 1814, drafted independently of its companion volume Two Shores."
+}
