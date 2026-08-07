@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "astro": "^6.4.8",
-    "marked": "^18.0.6"
+    "marked": "^18.0.7"
   },
   "devDependencies": {
     "@vitest/coverage-v8": "^4.1.9",
