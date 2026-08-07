@@ -29,4 +29,15 @@ describe("buildToolServer epistemic tool gating (FM2)", () => {
       expect(allowedToolIds.some((id) => id.endsWith("__read_record"))).toBe(true);
     }
   });
+
+  it("includes the read paths (query_relations/list_records) always — they mirror always-on writers", () => {
+    // record_relation and register_record/read_record are not epistemic-gated, so their
+    // readers must not be either: a gated reader for an ungated writer is the exact
+    // write-rich/read-poor asymmetry this bundle closes.
+    for (const epistemic of [false, true]) {
+      const { allowedToolIds } = buildToolServer({ projectRoot: "/tmp/x", log: stubLog, epistemic });
+      expect(allowedToolIds.some((id) => id.endsWith("__query_relations"))).toBe(true);
+      expect(allowedToolIds.some((id) => id.endsWith("__list_records"))).toBe(true);
+    }
+  });
 });

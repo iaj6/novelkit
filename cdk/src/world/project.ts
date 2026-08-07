@@ -280,6 +280,25 @@ export function liveFactsForEntity(tables: WorldTables, entity: string): Project
   return liveFacts(tables).filter((f) => f.entity === entity);
 }
 
+/**
+ * Every live relation TOUCHING an entity, in either direction — the read path for
+ * `record_relation`, which until now was write-only (nothing in the drafter's tool
+ * surface, no session method, and no markdown view could read an edge back).
+ *
+ * Both directions, deliberately: relations are directed, so "what do I know about
+ * Walter" needs `walter -owes-> mill` AND `josiah -employs-> walter`. Filtering on
+ * `from` alone would silently hide every edge pointing AT the entity the drafter asked
+ * about — the commonest shape for obligation, kinship, and membership.
+ *
+ * Sorted by id codepoint (not insertion order) to match the projector's cross-machine
+ * determinism guarantee: same events -> same order, every machine and locale.
+ */
+export function liveRelationsForEntity(tables: WorldTables, entity: string): ProjectedRelation[] {
+  return [...tables.relations.values()]
+    .filter((r) => r.status === "live" && (r.from === entity || r.to === entity))
+    .sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
+}
+
 export function liveRecords(tables: WorldTables): ProjectedRecord[] {
   return [...tables.records.values()].filter((r) => r.status === "live");
 }

@@ -3,10 +3,12 @@ import { appendEvent, readEvents } from "./store.js";
 import {
   project,
   liveFactsForEntity,
+  liveRelationsForEntity,
   type ProjectedEntity,
   type ProjectedFact,
   type ProjectedKnowledge,
   type ProjectedRecord,
+  type ProjectedRelation,
   type WorldTables,
 } from "./project.js";
 import type { Source, EntityKind, Stance } from "./schema.js";
@@ -341,6 +343,35 @@ export class WorldSession {
   // ── queries (read the projected stream) ─────────────────────────────
   async queryFacts(args: { entity: string }): Promise<ProjectedFact[]> {
     return liveFactsForEntity(await this.tables(), args.entity);
+  }
+
+  /**
+   * Every live relation touching an entity, in either direction (the `record_relation`
+   * read path). Canonicalizes the entity first — SOFT resolve (`canonicalEntity`, which
+   * falls back to the raw string) rather than the hard-reject used on the WRITE path:
+   * a query for an unregistered name should return nothing, never throw.
+   */
+  async queryRelations(args: { entity: string }): Promise<ProjectedRelation[]> {
+    const entity = await this.canonicalEntity(args.entity);
+    return liveRelationsForEntity(await this.tables(), entity);
+  }
+
+  /**
+   * The index of registered records: recordId + label + kind + tier, NEVER the text.
+   * `read_record` is how you get a body — records cap at 8KB each, so returning bodies
+   * here would push a whole corpus through one tool result. Deduped to the latest live
+   * version per recordId (by `seq`, matching queryRecord) and sorted by recordId.
+   */
+  async listRecords(): Promise<Array<Pick<ProjectedRecord, "recordId" | "label" | "kind" | "tier">>> {
+    const latest = new Map<string, ProjectedRecord>();
+    for (const r of (await this.tables()).records.values()) {
+      if (r.status !== "live") continue;
+      const cur = latest.get(r.recordId);
+      if (!cur || r.seq > cur.seq) latest.set(r.recordId, r);
+    }
+    return [...latest.values()]
+      .sort((a, b) => (a.recordId < b.recordId ? -1 : a.recordId > b.recordId ? 1 : 0))
+      .map(({ recordId, label, kind, tier }) => ({ recordId, label, kind, tier }));
   }
 
   async resolveEntity(args: { query: string }): Promise<ProjectedEntity[]> {
