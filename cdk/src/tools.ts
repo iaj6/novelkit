@@ -225,8 +225,12 @@ export function formatKnowledgeLine(k: {
   basisEntity?: string;
 }): string {
   const p = "factRef" in k.proposition ? k.proposition.factRef : k.proposition.prop;
-  const via = k.basisEntity ? ` ${k.basisEntity}` : "";
-  return `- ${k.stance} ${p}${k.basis ? " (" + k.basis + via + ")" : ""}`;
+  // Render the parenthetical when EITHER field is present. basis and basisEntity are
+  // independently optional (record_knowledge declares them so, and schema.ts defers the
+  // basis<->basisEntity coupling invariant), so gating the teller on `basis` would drop it
+  // on a reachable shape — the exact bug this function exists to fix, one field over.
+  const inner = [k.basis, k.basisEntity].filter(Boolean).join(" ");
+  return `- ${k.stance} ${p}${inner ? ` (${inner})` : ""}`;
 }
 
 export function buildToolServer(deps: ToolDeps) {

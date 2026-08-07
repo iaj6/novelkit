@@ -82,6 +82,15 @@ describe("formatKnowledgeLine (who_knows rendering)", () => {
     expect(formatKnowledgeLine({ stance: "unaware", proposition: prop })).toBe("- unaware codicil-forged");
   });
 
+  it("keeps the teller when basisEntity is set but basis is NOT — the two fields are independently optional", () => {
+    // record_knowledge declares basis and basisEntity as separate optional fields and
+    // schema.ts defers the coupling invariant, so this shape reaches the renderer. Gating
+    // the teller on `basis` would drop it here — the same class of bug one field over.
+    expect(formatKnowledgeLine({ stance: "knows", proposition: prop, basisEntity: "josiah" })).toBe(
+      "- knows codicil-forged (josiah)"
+    );
+  });
+
   it("renders a factRef proposition as well as a free slug", () => {
     expect(formatKnowledgeLine({ stance: "knows", proposition: { factRef: "fact:01:x:age" } })).toBe(
       "- knows fact:01:x:age"

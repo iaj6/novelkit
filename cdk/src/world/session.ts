@@ -350,6 +350,25 @@ export class WorldSession {
    * read path). Canonicalizes the entity first — SOFT resolve (`canonicalEntity`, which
    * falls back to the raw string) rather than the hard-reject used on the WRITE path:
    * a query for an unregistered name should return nothing, never throw.
+   *
+   * KNOWN LIMITATION — pass a resolved id, not a display name. Two pre-existing properties
+   * of the shared entity index leak into this reader, and both are MISSES (never wrong-
+   * positives in the audit, which does not read relations at all):
+   *
+   *   1. `relate()` soft-resolves on write and freezes the raw string into the event, so an
+   *      edge recorded BEFORE its entity was upserted stays stored under the free-typed
+   *      name; once the entity is registered, the read-time canonicalization no longer
+   *      agrees with it and the edge is unreachable under every spelling. (Zero incidence
+   *      across all seven committed stores.)
+   *   2. `ensureEntityIndex` is last-write-wins over lowercased display names and aliases,
+   *      so if two entities share a surface form, querying that NAME returns the other
+   *      entity's edges. This one DOES occur: coldwater-reach-m6 `dr-marcus-klein` returns
+   *      6 edges by slug but 2 by "Dr. Marcus Klein", which shadows onto `marcus-klein`.
+   *
+   * Deliberately NOT papered over here. Widening the reader to a union of surface forms
+   * fixes (1) and leaves (2) silently wrong while READING as fixed. The real fix is the
+   * write-path hard-reject for `record_relation` that canonical-form rule #1 already
+   * schedules (docs/world-model.md — shipped for assert_fact, never for relations).
    */
   async queryRelations(args: { entity: string }): Promise<ProjectedRelation[]> {
     const entity = await this.canonicalEntity(args.entity);

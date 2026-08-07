@@ -270,17 +270,24 @@ describe("WorldSession read paths — relations", () => {
     expect(rel.value).toBe(false);
   });
 
-  it("queryRelations is deterministic (codepoint id order), matching the projector guarantee", async () => {
+  it("queryRelations sorts by CODEPOINT, not locale collation (the projector guarantee)", async () => {
     const s = new WorldSession(root);
     await s.openChapter({ chapterId: "01-x" });
-    for (const id of ["z-ent", "m-ent", "a-ent"]) {
+    // Ids chosen so codepoint order and locale collation DIVERGE: codepoint puts every
+    // uppercase letter before every lowercase one, localeCompare interleaves them. A
+    // hardcoded expectation, never a re-sort of the output — comparing the output to
+    // `[...ids].sort()` is circular and passes under either ordering.
+    for (const id of ["aldous", "Ashby", "a-ent"]) {
       await s.upsertEntity({ id, kind: "character", display_name: id });
     }
     await s.upsertEntity({ id: "hub", kind: "place", display_name: "Hub" });
-    for (const id of ["z-ent", "m-ent", "a-ent"]) await s.relate({ from: id, relType: "at", to: "hub" });
+    for (const id of ["aldous", "Ashby", "a-ent"]) await s.relate({ from: id, relType: "at", to: "hub" });
 
-    const ids = (await s.queryRelations({ entity: "hub" })).map((r) => r.id);
-    expect(ids).toEqual([...ids].sort());
+    expect((await s.queryRelations({ entity: "hub" })).map((r) => r.id)).toEqual([
+      "rel:01-x:Ashby:at:hub",
+      "rel:01-x:a-ent:at:hub",
+      "rel:01-x:aldous:at:hub",
+    ]);
   });
 });
 
@@ -305,6 +312,22 @@ describe("WorldSession read paths — record index", () => {
     const recs = await s.listRecords();
     expect(recs.map((r) => r.recordId)).toEqual(["alpha", "zeta"]);
     expect(recs.find((r) => r.recordId === "alpha")?.label).toBe("V2"); // latest by seq
+  });
+
+  it("listRecords tracks the same latest-by-seq row read_record returns (index and body cannot drift)", async () => {
+    const s = new WorldSession(root);
+    await s.openChapter({ chapterId: "01-x" });
+    await s.upsertRecord({ recordId: "log", label: "Label-V1", text: "V1" }); // id A
+    await s.upsertRecord({ recordId: "log", label: "Label-V2", text: "V2" }); // id B, distinct
+    await s.upsertRecord({ recordId: "log", label: "Label-V1", text: "V1" }); // id A re-set: latest EVENT
+
+    // Mirrors the queryRecord out-of-order test. The dedup-by-seq case above (alpha/zeta)
+    // registers in an order where Map iteration and seq agree, so it cannot tell seq-dedup
+    // from unconditional last-wins; this one can — Map order would answer "Label-V2".
+    const body = (await s.queryRecord({ recordId: "log" }))!;
+    const idx = (await s.listRecords()).find((r) => r.recordId === "log")!;
+    expect(idx.label).toBe(body.label);
+    expect(idx.label).toBe("Label-V1");
   });
 
   it("listRecords returns an empty index for a book with no records", async () => {
