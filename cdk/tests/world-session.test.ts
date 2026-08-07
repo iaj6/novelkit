@@ -226,3 +226,111 @@ describe("WorldSession canonical records (M7)", () => {
     expect((await s.queryRecord({ recordId: "log" }))?.text).toBe("V1");
   });
 });
+
+/**
+ * The READ PATHS (Bundle A). `record_relation` was write-only — nothing in the tool
+ * surface, no session method, and no markdown view could read an edge back — and
+ * `read_record` required already knowing a slug, with no way to discover one. These
+ * pin the readers that close both holes.
+ */
+describe("WorldSession read paths — relations", () => {
+  it("queryRelations returns edges in BOTH directions (inbound edges must not be hidden)", async () => {
+    const s = new WorldSession(root);
+    await s.openChapter({ chapterId: "01-x" });
+    await s.upsertEntity({ id: "walter", kind: "character", display_name: "Walter" });
+    await s.upsertEntity({ id: "mill", kind: "place", display_name: "Vale Mill" });
+    await s.upsertEntity({ id: "josiah", kind: "character", display_name: "Josiah" });
+    await s.relate({ from: "walter", relType: "manages", to: "mill" });
+    await s.relate({ from: "josiah", relType: "employs", to: "walter" });
+
+    const rels = await s.queryRelations({ entity: "walter" });
+    expect(rels.map((r) => r.relType).sort()).toEqual(["employs", "manages"]);
+  });
+
+  it("queryRelations resolves a display name/alias to the canonical id (soft, never throws)", async () => {
+    const s = new WorldSession(root);
+    await s.openChapter({ chapterId: "01-x" });
+    await s.upsertEntity({ id: "walter-eccleston", kind: "character", display_name: "Walter Eccleston", aliases: ["Walter"] });
+    await s.upsertEntity({ id: "mill", kind: "place", display_name: "Vale Mill" });
+    await s.relate({ from: "walter-eccleston", relType: "manages", to: "mill" });
+
+    expect(await s.queryRelations({ entity: "Walter" })).toHaveLength(1);
+    // an unregistered name resolves to nothing rather than throwing (read path, not write path)
+    expect(await s.queryRelations({ entity: "nobody-at-all" })).toEqual([]);
+  });
+
+  it("queryRelations preserves negative relations (value:false) rather than dropping them", async () => {
+    const s = new WorldSession(root);
+    await s.openChapter({ chapterId: "01-x" });
+    await s.upsertEntity({ id: "a", kind: "character", display_name: "A" });
+    await s.upsertEntity({ id: "b", kind: "character", display_name: "B" });
+    await s.relate({ from: "a", relType: "knows_of", to: "b", value: false });
+
+    const [rel] = await s.queryRelations({ entity: "a" });
+    expect(rel.value).toBe(false);
+  });
+
+  it("queryRelations sorts by CODEPOINT, not locale collation (the projector guarantee)", async () => {
+    const s = new WorldSession(root);
+    await s.openChapter({ chapterId: "01-x" });
+    // Ids chosen so codepoint order and locale collation DIVERGE: codepoint puts every
+    // uppercase letter before every lowercase one, localeCompare interleaves them. A
+    // hardcoded expectation, never a re-sort of the output — comparing the output to
+    // `[...ids].sort()` is circular and passes under either ordering.
+    for (const id of ["aldous", "Ashby", "a-ent"]) {
+      await s.upsertEntity({ id, kind: "character", display_name: id });
+    }
+    await s.upsertEntity({ id: "hub", kind: "place", display_name: "Hub" });
+    for (const id of ["aldous", "Ashby", "a-ent"]) await s.relate({ from: id, relType: "at", to: "hub" });
+
+    expect((await s.queryRelations({ entity: "hub" })).map((r) => r.id)).toEqual([
+      "rel:01-x:Ashby:at:hub",
+      "rel:01-x:a-ent:at:hub",
+      "rel:01-x:aldous:at:hub",
+    ]);
+  });
+});
+
+describe("WorldSession read paths — record index", () => {
+  it("listRecords indexes registered records WITHOUT their text (8KB bodies stay behind read_record)", async () => {
+    const s = new WorldSession(root);
+    await s.openChapter({ chapterId: "01-x" });
+    await s.upsertRecord({ recordId: "harbor-log", label: "Harbor log", text: "0615 discovery", kind: "log" });
+
+    const [rec] = await s.listRecords();
+    expect(rec).toEqual({ recordId: "harbor-log", label: "Harbor log", kind: "log", tier: "drafted" });
+    expect(rec).not.toHaveProperty("text");
+  });
+
+  it("listRecords dedupes to ONE row per recordId (the latest by seq) and sorts by recordId", async () => {
+    const s = new WorldSession(root);
+    await s.openChapter({ chapterId: "01-x" });
+    await s.upsertRecord({ recordId: "zeta", label: "Zeta", text: "z" });
+    await s.upsertRecord({ recordId: "alpha", label: "V1", text: "one" });
+    await s.upsertRecord({ recordId: "alpha", label: "V2", text: "two" }); // distinct text -> both live
+
+    const recs = await s.listRecords();
+    expect(recs.map((r) => r.recordId)).toEqual(["alpha", "zeta"]);
+    expect(recs.find((r) => r.recordId === "alpha")?.label).toBe("V2"); // latest by seq
+  });
+
+  it("listRecords tracks the same latest-by-seq row read_record returns (index and body cannot drift)", async () => {
+    const s = new WorldSession(root);
+    await s.openChapter({ chapterId: "01-x" });
+    await s.upsertRecord({ recordId: "log", label: "Label-V1", text: "V1" }); // id A
+    await s.upsertRecord({ recordId: "log", label: "Label-V2", text: "V2" }); // id B, distinct
+    await s.upsertRecord({ recordId: "log", label: "Label-V1", text: "V1" }); // id A re-set: latest EVENT
+
+    // Mirrors the queryRecord out-of-order test. The dedup-by-seq case above (alpha/zeta)
+    // registers in an order where Map iteration and seq agree, so it cannot tell seq-dedup
+    // from unconditional last-wins; this one can — Map order would answer "Label-V2".
+    const body = (await s.queryRecord({ recordId: "log" }))!;
+    const idx = (await s.listRecords()).find((r) => r.recordId === "log")!;
+    expect(idx.label).toBe(body.label);
+    expect(idx.label).toBe("Label-V1");
+  });
+
+  it("listRecords returns an empty index for a book with no records", async () => {
+    expect(await new WorldSession(root).listRecords()).toEqual([]);
+  });
+});

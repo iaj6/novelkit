@@ -192,7 +192,7 @@ See [site/README.md](site/README.md) for the custom-domain swap (drop the base p
 
 ```bash
 # cdk
-cd cdk && npm test                     # vitest — 257 tests, ~500ms
+cd cdk && npm test                     # vitest — 272 tests, ~600ms
 cd cdk && npm run test:coverage        # >80% on ansi, runlog, estimate, state, world/
 
 # press

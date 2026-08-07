@@ -54,3 +54,65 @@ describe("resolveInProject (agent file-path jail)", () => {
     );
   });
 });
+
+/**
+ * Tool-output renderers (Bundle A read paths). Extracted pure so the contracts below
+ * are pinned by tests rather than living inside a tool closure.
+ */
+import { formatRelationLine, formatKnowledgeLine } from "../src/tools.js";
+
+describe("formatKnowledgeLine (who_knows rendering)", () => {
+  const prop = { prop: "codicil-forged" };
+
+  it("renders the TELLER for a told_by basis — the regression this fixes", () => {
+    // basisEntity has always been written and projected; who_knows dropped it, so a
+    // propagation chain read back as an anonymous "(told_by)" with no chain in it.
+    expect(
+      formatKnowledgeLine({ stance: "knows", proposition: prop, basis: "told_by", basisEntity: "josiah" })
+    ).toBe("- knows codicil-forged (told_by josiah)");
+  });
+
+  it("omits the teller when there is none, without a trailing space", () => {
+    expect(formatKnowledgeLine({ stance: "suspects", proposition: prop, basis: "inferred" })).toBe(
+      "- suspects codicil-forged (inferred)"
+    );
+  });
+
+  it("renders a bare stance when there is no basis at all", () => {
+    expect(formatKnowledgeLine({ stance: "unaware", proposition: prop })).toBe("- unaware codicil-forged");
+  });
+
+  it("keeps the teller when basisEntity is set but basis is NOT — the two fields are independently optional", () => {
+    // record_knowledge declares basis and basisEntity as separate optional fields and
+    // schema.ts defers the coupling invariant, so this shape reaches the renderer. Gating
+    // the teller on `basis` would drop it here — the same class of bug one field over.
+    expect(formatKnowledgeLine({ stance: "knows", proposition: prop, basisEntity: "josiah" })).toBe(
+      "- knows codicil-forged (josiah)"
+    );
+  });
+
+  it("renders a factRef proposition as well as a free slug", () => {
+    expect(formatKnowledgeLine({ stance: "knows", proposition: { factRef: "fact:01:x:age" } })).toBe(
+      "- knows fact:01:x:age"
+    );
+  });
+});
+
+describe("formatRelationLine (query_relations rendering)", () => {
+  const base = { from: "a", relType: "knows_of", to: "b", provenance: { chapter: "03-x" } };
+
+  it("marks a NEGATIVE relation so a never-met constraint cannot read as its opposite", () => {
+    expect(formatRelationLine({ ...base, value: false })).toBe("- NOT a —knows_of→ b [03-x]");
+  });
+
+  it("renders a positive relation unmarked", () => {
+    expect(formatRelationLine({ ...base, value: true })).toBe("- a —knows_of→ b [03-x]");
+    expect(formatRelationLine(base)).toBe("- a —knows_of→ b [03-x]");
+  });
+
+  it("includes chapter scoping when present", () => {
+    expect(formatRelationLine({ ...base, since_chapter: "02-y", until_chapter: "09-z" })).toBe(
+      "- a —knows_of→ b since 02-y until 09-z [03-x]"
+    );
+  });
+});

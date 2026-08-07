@@ -186,6 +186,53 @@ export function extractRecentCraftEntries(text: string, n: number): string {
   return recent || "(empty)";
 }
 
+/**
+ * Render one live relation for `query_relations`. Pure + exported so the contract is
+ * unit-testable (same precedent as formatChapterCraftEntry).
+ *
+ * `value === false` renders as a leading NOT: a negative relation is an explicit
+ * constraint that the link does NOT hold (a never-met rule), and silently rendering it
+ * identically to a positive edge would invert the meaning for the reading drafter.
+ */
+export function formatRelationLine(r: {
+  from: string;
+  relType: string;
+  to: string;
+  value?: boolean;
+  since_chapter?: string;
+  until_chapter?: string;
+  provenance: { chapter: string };
+}): string {
+  const neg = r.value === false ? "NOT " : "";
+  const since = r.since_chapter ? ` since ${r.since_chapter}` : "";
+  const until = r.until_chapter ? ` until ${r.until_chapter}` : "";
+  return `- ${neg}${r.from} —${r.relType}→ ${r.to}${since}${until} [${r.provenance.chapter}]`;
+}
+
+/**
+ * Render one knowledge row for `who_knows`. Pure + exported so the basisEntity contract
+ * is pinned by a test.
+ *
+ * Includes basisEntity (the teller) — a `told_by` with no teller is unreadable, and the
+ * teller is the entire content of a propagation chain. The projector has always carried
+ * basisEntity (project.ts) and the drafter has always been able to WRITE it; this is the
+ * read path that was missing, so a recorded "who heard it from whom" can be read back.
+ */
+export function formatKnowledgeLine(k: {
+  stance: string;
+  proposition: { factRef: string } | { prop: string };
+  basis?: string;
+  basisEntity?: string;
+}): string {
+  const p = "factRef" in k.proposition ? k.proposition.factRef : k.proposition.prop;
+  // Render the parenthetical when EITHER field is present. basis and basisEntity are
+  // independently optional (record_knowledge declares them so, and schema.ts defers the
+  // basis<->basisEntity coupling invariant), so gating the teller on `basis` would drop it
+  // on a reachable shape — the exact bug this function exists to fix, one field over.
+  const inner = [k.basis, k.basisEntity].filter(Boolean).join(" ");
+  return `- ${k.stance} ${p}${inner ? ` (${inner})` : ""}`;
+}
+
 export function buildToolServer(deps: ToolDeps) {
   const { projectRoot, log } = deps;
   // World-store session — the structured continuity substrate the tools below wrap.
@@ -596,6 +643,34 @@ export function buildToolServer(deps: ToolDeps) {
     }
   );
 
+  const queryRelations = tool(
+    "query_relations",
+    "Return the live relations recorded for an entity — both the ones it points at (from) and the ones pointing at it (to). Use before staging a scene that depends on who is connected to whom (obligations, kinship, membership, possession, never-met constraints), instead of re-reading earlier chapters. A relation shown as NOT is a negative relation (value:false) — an explicit constraint that the link does NOT hold.",
+    { entity: z.string().describe("A resolved entity id (or a name/alias, which is resolved for you).") },
+    async (args) => {
+      const rels = await session.queryRelations(args);
+      log.event("tool", { name: "query_relations", entity: args.entity, count: rels.length });
+      const text = rels.length
+        ? rels.map(formatRelationLine).join("\n")
+        : `(no relations recorded for ${args.entity})`;
+      return { content: [{ type: "text", text }] };
+    }
+  );
+
+  const listRecords = tool(
+    "list_records",
+    "List the registered verbatim records (id, label, kind, tier) — the index of load-bearing documents this book has locked. Use to discover what exists before re-quoting; call read_record with a recordId to get its exact text. Text is deliberately not returned here.",
+    {},
+    async () => {
+      const recs = await session.listRecords();
+      log.event("tool", { name: "list_records", count: recs.length });
+      const text = recs.length
+        ? recs.map((r) => `- ${r.recordId} (${r.kind}, ${r.tier}) — ${r.label}`).join("\n")
+        : "(no records registered yet)";
+      return { content: [{ type: "text", text }] };
+    }
+  );
+
   const resolveEntity = tool(
     "resolve_entity",
     "Look up entities by name/alias/id substring. Use to find the stable id for a name before asserting facts about it.",
@@ -618,12 +693,7 @@ export function buildToolServer(deps: ToolDeps) {
       const states = await session.whoKnows(args);
       log.event("tool", { name: "who_knows", knower: args.knower, count: states.length });
       const text = states.length
-        ? states
-            .map((k) => {
-              const p = "factRef" in k.proposition ? k.proposition.factRef : k.proposition.prop;
-              return `- ${k.stance} ${p}${k.basis ? " (" + k.basis + ")" : ""}`;
-            })
-            .join("\n")
+        ? states.map(formatKnowledgeLine).join("\n")
         : `(${args.knower} has no recorded knowledge as of ${args.asOfChapter})`;
       return { content: [{ type: "text", text }] };
     }
@@ -685,10 +755,14 @@ export function buildToolServer(deps: ToolDeps) {
     }
   );
 
-  const server = createSdkMcpServer({
-    name: SERVER_NAME,
-    version: "0.1.0",
-    tools: [
+  /**
+   * The active tool set. `allowedToolIds` is DERIVED from this below rather than
+   * hand-maintained alongside it: the two lists previously drifted independently, and a
+   * tool registered on the server but missing from the id list is silently unavailable to
+   * the agent — it fails as "the model never called it", not as an error. Deriving makes
+   * that class of bug unrepresentable.
+   */
+  const activeTools = [
       readFile,
       listFiles,
       writeFile,
@@ -709,42 +783,24 @@ export function buildToolServer(deps: ToolDeps) {
       upsertEntity,
       recordRelation,
       queryFacts,
+      queryRelations,
       resolveEntity,
       registerRecord,
       readRecord,
+      listRecords,
       // FM2: expose the epistemic capture/query tools only when the brief opts in
       // (config.epistemic) — otherwise the drafter records who-knows-what unprompted on a
       // linear book, wasting turns and adding store noise (81 stray events on coldwater-reach).
       ...(deps.epistemic ? [recordKnowledge, whoKnows, dramaticIronyTool] : []),
-    ],
+  ];
+
+  const server = createSdkMcpServer({
+    name: SERVER_NAME,
+    version: "0.1.0",
+    tools: activeTools,
   });
 
-  const toolNames = [
-    "read_file",
-    "list_files",
-    "write_file",
-    "append_to_file",
-    "append_continuity",
-    "append_glossary",
-    "record_scene",
-    "record_chapter_craft",
-    "project_state",
-    "update_story_arc",
-    "read_recent_scenes",
-    "read_recent_craft",
-    "write_findings",
-    "append_findings",
-    "open_chapter",
-    "close_chapter",
-    "assert_fact",
-    "upsert_entity",
-    "record_relation",
-    "query_facts",
-    "resolve_entity",
-    "register_record",
-    "read_record",
-    ...(deps.epistemic ? ["record_knowledge", "who_knows", "dramatic_irony"] : []),
-  ];
+  const toolNames = activeTools.map((t) => t.name);
 
   return {
     server,

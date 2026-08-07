@@ -88,7 +88,7 @@ the book directory via `resolveInProject`. Filesystem settings are not loaded
 ## Tests
 
 ```bash
-npm test                # vitest — 106 tests
+npm test                # vitest — 272 tests
 npm run typecheck       # tsc --noEmit
 npm run test:coverage   # >80% on ansi, runlog, estimate, state
 ```
