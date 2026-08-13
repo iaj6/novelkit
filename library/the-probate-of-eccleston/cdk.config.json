@@ -1,0 +1,22 @@
+{
+  "title": "The Probate of Eccleston",
+  "model": "claude-sonnet-4-6",
+  "visibility": "private",
+  "modelByPhase": {},
+  "maxTurnsPerPhase": {
+    "architect": 80,
+    "plotter": 50,
+    "threads": 40,
+    "drafter": 120,
+    "editor-continuity": 40,
+    "editor-pacing": 40,
+    "editor-voice": 40,
+    "reader": 50
+  },
+  "research": true,
+  "epistemic": true,
+  "calibration": {
+    "enabled": true,
+    "max_iterations": 2
+  }
+}
