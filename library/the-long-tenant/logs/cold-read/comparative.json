@@ -1,0 +1,132 @@
+{
+  "lens": "comparative",
+  "score_out_of_10": 8.5,
+  "would_finish": "yes",
+  "verdict": "This novel belongs to a specific and demanding tradition I will call archival grief fiction: the reconstruction of a historical death through documents — deed records, coroner's findings, probate inventories, witness statements — with a narrator who is professionally trained to distinguish between the certified transcript and the excerpt. The closest published analogues are Marilynne Robinson's *Housekeeping* (1980) for prose texture and the house as vessel for loss, W.G. Sebald's *The Emigrants* (1992) for the narrator who handles documents in physical archives to reconstitute a death official records cannot fully explain, and Denis Johnson's *Train Dreams* (2011) for the compressed elegiac treatment of a historical life in the American interior. Against all three comparisons this novel holds. It does something none of them do: it deploys the court reporter's professional discipline — certify the complete record, never the excerpt; the transcript governs the sentence — as both subject and form. The discovery that \"Nobody came to that door\" is technically accurate and morally evasive is the kind of revelation only fiction can produce about the nature of official testimony, and it earns it over twenty-three chapters.\n\nAgainst Robinson's *Housekeeping* this novel is less lyrical and more formally rigorous; Robinson allows herself mythic register and a loose temporal architecture that this novel refuses. Against Sebald this novel is more emotionally transparent and more structurally bold: giving the dead woman her own alternating strand rather than reconstructing her solely from documents. Against Johnson's *Train Dreams* the prose is more controlled and less visionary. The comparison that genuinely illuminates what this novel is doing structurally — the haunted house as a medium through which a present-day investigator and a dead woman become aware of each other — is Sarah Waters's *The Little Stranger* (2009), but Waters's ghost is Gothic and destructive, its revelation about class resentment, whereas here the haunting is domestic and still, the revelation about guilt within a family, and the comparative quietness is not a failure of nerve but a different and more serious purpose. A literary acquiring editor — Graywolf, Tin House, Counterpoint — would take this book. It is uncommercial in its pacing and deliberate in its ambitions, but it builds a reputation.\n\nWhat the novel achieves technically is the economy of its construction. Both narrators share the same physical house across forty years — the third stair, the latch, the oil lamp, the maker's mark in the desk drawer — with each object loaded by the time the book ends. The supernatural element (Della sensing Ellen as a \"tenant,\" Ellen sensing Della as cold air and an uncloseable door) is calibrated precisely: never explained, never overplayed, always expressed through the same registers of material attention that govern the documentary strand. The prose style is consistent across both narrators — declarative, object-first, exact, without ornament — which is technically rare and here correctly signals that both women share a way of being in the world. The one substantive structural risk is the alternating strand arrangement itself: reading Della's chapters is not discovering what happened but watching someone who already knows refuse to look at it directly, and the novel's patience in withholding that reckoning until chapter twenty-two is exactly calibrated. Most novels that attempt this structure either rush or lose confidence in the reader's tolerance. This one does not.\n\nThe weaknesses divide into production artifacts and design limitations. The artifacts — a Mabel Duff statement quoted differently between draft and revision-1 chapters, a wrong address, a pathologist's window cited differently in ch. 9 and ch. 21 — are the kind of inconsistencies a final editorial pass would catch and the kind that slightly undercut a novel whose entire subject is the exactness of documentary records. The design limitation is that Ellen Vance is almost entirely effaced as a personal subject: we learn she came from Martinsburg, that work \"hadn't come back up,\" and nothing further. The novel's conception calls for a receiver rather than a protagonist, and the court reporter's professional restraint is the correct characterization choice, but the complete absence of personal stakes means the reader's investment in Ellen is purely intellectual. This is a real cost. The Elkins deposition chapter tests patience for anyone not genuinely interested in workers' compensation procedure. None of these problems undercut the central achievement, which is genuine and rare.",
+  "strongest": [
+    {
+      "chapters": [
+        "02-the-stove",
+        "12-what-she-kept",
+        "16-his-name",
+        "18-the-sound-of-the-knocking",
+        "21-the-final-entry",
+        "22-what-she-wrote",
+        "23-the-two-records"
+      ],
+      "claim": "The sentence 'Nobody came to that door' is built across the novel from a bare statement of fact into a revelation of culpable refusal. The same five words, read without the twenty-nine words above them in Della's final ledger entry, reverse in meaning when the paragraph is restored: she heard the knock, recognized her brother, chose not to go down, and then wrote the sentence that put the absence on the other side of the threshold."
+    },
+    {
+      "chapters": [
+        "05-chain-of-title",
+        "07-manner-of-death",
+        "09-before-the-scanner",
+        "11-no-visitors",
+        "13-the-account-as-it-stood",
+        "21-the-final-entry",
+        "23-the-two-records"
+      ],
+      "claim": "The court reporter as protagonist is the novel's deepest formal choice. Ellen's professional discipline — certify the complete record, never the excerpt; receive testimony as given before interpreting it — is exactly the discipline the novel requires of its reader. Her discovery that she had 'been reading the excerpt since March' is the climax of both the plot and the formal argument simultaneously."
+    },
+    {
+      "chapters": [
+        "01-verrill-street",
+        "02-the-stove",
+        "03-the-third-step",
+        "04-the-latch",
+        "08-the-oil-lamp",
+        "10-footfall"
+      ],
+      "claim": "Both narrators share the same physical objects — the third stair's flex at center, the latch's bolt and keeper, the maker's mark in the desk drawer, the back-room cold — across forty years, each object accumulating meaning that neither character can fully read alone. The alternating structure is earned rather than imposed because the two voices share the same quality of material attention."
+    },
+    {
+      "chapters": [
+        "02-the-stove",
+        "12-what-she-kept",
+        "16-his-name",
+        "19-the-back-room",
+        "20-the-account-book",
+        "21-the-final-entry"
+      ],
+      "claim": "The ledger as the novel's third document — neither the county's verdict nor a conventional victim's testament, but the record of a household that shows what the official record was never asked and what Della buried in the closing line — is a structurally elegant solution to the problem of what the archive cannot hold."
+    },
+    {
+      "chapters": [
+        "08-the-oil-lamp",
+        "10-footfall",
+        "12-what-she-kept",
+        "17-a-deposition-in-elkins",
+        "24-the-door-open"
+      ],
+      "claim": "The supernatural element is calibrated correctly throughout: never explained, never dramatized as threat, always expressed through the same registers of material attention (cold, warmth, door positions, weight on the floor) that govern the documentary strand. Della sensing Ellen as a warm presence at the wrong angle, Ellen sensing Della as cold with no identifiable source, is the right level of mutual legibility for what the novel is doing."
+    }
+  ],
+  "weakest": [
+    {
+      "chapters": [
+        "11-no-visitors",
+        "13-the-account-as-it-stood",
+        "23-the-two-records"
+      ],
+      "claim": "The Mabel Duff statement is quoted as 'I last saw Miss Markey on the evening of February tenth' in chapters 11 and 13 (from the original document), but as 'I saw Della at her mailbox on the morning of February 10th' in chapter 23 (from revision-1/). This is a production artifact: the revision updated ch. 23 to align the statement with the ledger's 'morning' reference but did not propagate the change back to the earlier draft chapters. In a novel whose entire subject is documentary exactness, the discrepancy in the primary witness statement is the most damaging inconsistency."
+    },
+    {
+      "chapters": [
+        "23-the-two-records"
+      ],
+      "claim": "The address '14 Verrill Street' appears in chapter 23 — 'had seen no visitors to the residence at 14 Verrill Street' — where the correct address, used consistently in every other chapter that names it, is 412 Verrill Street. This is a typo left in the revision pass."
+    },
+    {
+      "chapters": [
+        "09-before-the-scanner",
+        "21-the-final-entry"
+      ],
+      "claim": "The pathologist's time-of-death window is given in chapter 9 as 'sometime between 10:00 p.m. on the evening of February 11 and 4:00 a.m. on the morning of February 12, 1983' (a 10 PM–4 AM range). When Ellen cites the same document in chapter 21 as 'from the inquest file,' the range appears as 'TOD est. 2–5 AM, Feb 11–12' — a different range whose upper bound (5 AM) lies outside the pathologist's stated window. For a court reporter who reads documents with extreme precision, the inconsistency is a production error rather than characterization."
+    },
+    {
+      "chapters": [
+        "01-verrill-street",
+        "17-a-deposition-in-elkins"
+      ],
+      "claim": "Ellen Vance is almost entirely effaced as a personal subject. We learn she came from Martinsburg, that court reporting work 'hadn't come back up,' and nothing further about her relationships, history, or inner life. The novel's design calls for a receiver rather than a conventional protagonist — and the court reporter's professional restraint is the correct characterization choice — but the complete absence of personal stakes outside the Markey investigation leaves her less a character than a professional instrument, and the reader's investment in her remains purely intellectual."
+    },
+    {
+      "chapters": [
+        "17-a-deposition-in-elkins"
+      ],
+      "claim": "The Elkins deposition chapter spends its central pages on a workers' compensation case (Robert Varga's back injury on a twelve-in-twelve roof) that connects to the Markey story thematically — the gap between official account and full truth; the machine that fails through its conditions rather than a mechanical defect — but not narratively. The procedural deposition detail is well-rendered, but the chapter is the novel's most probable put-down point for readers who are not willing to wait for the formal mirror to pay off."
+    }
+  ],
+  "quotes": [
+    {
+      "chapter": "02-the-stove",
+      "text": "I know the thermometer. I know the chimney. I know the count.",
+      "why": "Three sentences that establish Della's method — inventory before interpretation, the column before the conclusion — and establish the register her chapters will sustain throughout the novel. The same discipline applied to the account book will later conceal the most important fact."
+    },
+    {
+      "chapter": "07-manner-of-death",
+      "text": "She was healthy. She was cold. She died.",
+      "why": "Ellen's compression of the pathologist's findings into three words apiece per fact. The third sentence — no verb, no cause, no agent — performs the gap the official record cannot close. The parataxis is exact: each sentence is equally weighted, which is the problem."
+    },
+    {
+      "chapter": "18-the-sound-of-the-knocking",
+      "text": "The knock at the front door is the knock I know. These facts do not add up to anything I am going to do.",
+      "why": "The novel's central moral disclosure, stated in Della's characteristic register: inventory, then refusal. 'These facts do not add up to anything I am going to do' is the sentence that retrospectively changes the meaning of every use of 'Nobody came to that door' in the chapters before it."
+    },
+    {
+      "chapter": "22-what-she-wrote",
+      "text": "I have been saying the five words for forty years. The twenty-nine words above them have been on this page in my own hand. The page has been shut.",
+      "why": "Della reckoning with her own final entry — the account she kept of the night, which contains both the testimony and the evasion. 'The page has been shut' is exact in two registers: the physical ledger and the forty years of self-exculpation."
+    },
+    {
+      "chapter": "23-the-two-records",
+      "text": "An excerpt was not a guarantee.",
+      "why": "The novel's moral compressed to five words, in the court reporter's professional vocabulary. Ellen has been reading the sentence 'Nobody came to that door' without the paragraph that governs it — the same error she would never make in a certified transcript. The sentence applies to every official account in the novel."
+    }
+  ],
+  "put_down_points": [
+    "17-a-deposition-in-elkins: The workers' comp deposition (Robert Varga, roofing injury, twelve-in-twelve pitch) is the novel's longest departure from the Markey investigation. The thematic mirror — an official record that cannot hold what the body actually underwent — is clear, but readers who are not waiting for that payoff will find themselves at some distance from the novel's center for twenty-plus pages.",
+    "09-before-the-scanner through 13-the-account-as-it-stood: Ellen's second and third returns to the courthouse cover ground that overlaps significantly with ch. 7. The mild-hypothermia paragraph, the inquest verdict, and the Mabel Duff statement are documented in ch. 7 and then revisited and reread in chs. 9 and 11. The rereading is thematically justified (she reads more carefully each time), but this is the novel's pacing plateau and readers who are ahead of the investigation may feel the middle section slowing."
+  ],
+  "who_is_this_for": "Readers of literary fiction who tolerate — or require — compressed declarative prose and formal rigor: admirers of Marilynne Robinson (Housekeeping, Gilead), W.G. Sebald (The Emigrants), and Denis Johnson (Train Dreams). Readers interested in Appalachian and mill-town fiction. People who find the machinery of archival research — probate files, coroner's reports, inquest proceedings — interesting as subject matter and who will stay patient while a court reporter drives back and forth to Lewisburg. Not for readers who need conventional plot, extensive dialogue, or access to a protagonist's interior life in the ordinary sense."
+}
