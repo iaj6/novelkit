@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-07-23T04:00:30.822Z",
+  "summary": {
+    "critical": 2,
+    "high": 3,
+    "medium": 2,
+    "low": 2
+  },
+  "findings": [
+    {
+      "id": "structural-failure-001",
+      "category": "structural-failure",
+      "severity": "high",
+      "title": "Duplicate sale-contract chapter: two drafts of the same chapter in the manuscript",
+      "description": "Two separate chapter files cover the identical professional act — the assembly of Walter's mortgage, sale contract, and banking correspondence as financial exhibits, including the verbatim quotation of R4. The shorter version is numbered 11-the-sale-contract; the longer version is numbered 12-the-sale-contract. Both end with 185 days to the hearing, stalling the calendar's required monotonic descent. The chapter numbering is broken because 12-the-sale-contract and 12-the-witnesses share the same slot. R4 (the Walter bank letter), which the brief pins to a single fair-play planting occasion, appears verbatim in both drafts. The story-arc digest contains near-duplicate summary entries for both. This requires a human decision — one version designated canonical, the other removed, and the chapter sequence re-numbered through the middle movement — before the book can be considered structurally sound.",
+      "evidence": [
+        {
+          "file": "draft/11-the-sale-contract.md",
+          "text": "Both chapters end with 185 days to the hearing; both contain R4 in full; chapter numbering broken with 12-the-witnesses"
+        },
+        {
+          "file": "draft/12-the-sale-contract.md",
+          "text": "Longer version of the same chapter — more fully developed mortgage and banking correspondence — but identical in subject matter, R4 quotation, and calendar endpoint"
+        },
+        {
+          "file": "logs/story-arc.md",
+          "text": "Two near-duplicate story-arc entries: '12-the-sale-contract — Walter's mortgage, conditional sale contract, and banking correspondence documented as financial exhibits; R4 enters the file with its \"and her issue\" wording unremarked; 185 days to the hearing.' and '11-the-sale-contract — Walter's mortgage, sale contract, and banking correspondence are assembled as financial exhibits; R4 enters the file with its \"and her issue\" wording unremarked; 185 days remain.'"
+        }
+      ],
+      "suggested_action": "Designate one version canonical (the longer 12-the-sale-contract draft is the stronger and more developed version). Remove the other. Re-sequence chapter numbering through the middle movement so the 12-the-witnesses chapter no longer conflicts. Verify the calendar is monotonically decreasing across the corrected sequence. Do not attempt to merge the two versions; choose one.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "over-articulation-001",
+      "category": "over-articulation",
+      "severity": "medium",
+      "title": "Ch 18 Garside beat delivers explicit insight that Ch 17 has displaced and Ch 20 will resolve definitively",
+      "description": "Chapter 18 contains an explicit statement about the September register entry — 'He had written it as though he understood that, which he had not... He had written it that way because it was his habit to write it that way, and the habit was now the proof' — that covers the same ground as chapter 17's displacement image (the register in Garside's hand, somewhere below) and anticipates the definitive statement chapter 20 will make more fully. Three articulations of the same Garside insight across three consecutive chapters (17 as displacement image, 18 as explicit statement, 20 as resolution) is one too many. Chapter 18's explicit version slightly flattens chapter 20's earned close by anticipating its conclusion.",
+      "evidence": [
+        {
+          "file": "draft/18-counsels-brief.md",
+          "text": "Garside displacement via the September register entry: precision noted in one compound sentence ('he had written it as though he understood that, which he had not'), followed immediately by return to procedure — but the insight is the same one Ch 20 will carry as the book's definitive close"
+        },
+        {
+          "file": "draft/17-the-ninth-word.md",
+          "text": "The close as displacement-image: 'somewhere below, the strong-room register in Garside's hand on its shelf' — Garside named only via his physical trace in the building"
+        },
+        {
+          "file": "draft/20-the-estate.md",
+          "text": "The definitive Garside close: 'More precise than the occasion required. He could not have known it; he had made it anyway, because that was his habit'"
+        }
+      ],
+      "suggested_action": "Trim or soften chapter 18's Garside passage to return it to the displacement register — the register entry visible, its meaning not explicitly stated — and let chapter 20 carry the explicit resolution. Reducing it to one or two sentences of observed fact (the entry on the page, the precision of its wording) rather than a stated conclusion about habit and proof is sufficient. Chapter 20's close will then land with its full weight.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "over-articulation-002",
+      "category": "over-articulation",
+      "severity": "medium",
+      "title": "Ch 14 inference passage runs too long, approaching summary-recap tone",
+      "description": "After the commission refusal lands, chapter 14 develops nearly six paragraphs of reasoning about the 'shape to the situation' — the inference that the two witnesses' dual unavailability in the same autumn maps to deliberate selection by the forger. The passage is labeled inadmissible and the pen is drawn through it, but it covers ground already implied by chapter 12, and its length and register approach the 'So far Prescott has established' tone the style guide identifies as a failure mode for this book. The commission refusal itself lands effectively; the inference padding around it dilutes the pivot sentence ('What remained was the text') and the brevity that makes it work.",
+      "evidence": [
+        {
+          "file": "draft/14-the-commission.md",
+          "text": "Nearly six paragraphs on the inference about deliberate witness selection — the shape to the situation, the four-date column, the professional suppression construction used a second time on material already handled in Ch 12"
+        },
+        {
+          "file": "draft/12-the-witnesses.md",
+          "text": "The witness-selection design is already implied in Ch 12's mapping of both witnesses as chosen because beyond reach; Ch 14 re-walks the inference rather than advancing it"
+        }
+      ],
+      "suggested_action": "Cut three to four paragraphs from the inference section in chapter 14. The admission at the window (the single sentence about a man who sits down immediately not having quite finished admitting the thing) and the pivot sentence are the chapter's weight; the extended reasoning between them can be compressed to one or two sentences. The professional suppression (pen drawn through the inference, inadmissible) is already established in Ch 12 and needs only a reference here, not a re-enactment.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "over-articulation-003",
+      "category": "over-articulation",
+      "severity": "low",
+      "title": "Ch 16 working note restates the chapter's own argument, producing a double-statement",
+      "description": "Chapter 16 covers the date asymmetry through Prescott's narrated noticing, then closes with a formal two-part working note that sets out the same argument in period-legal register with exhibit citations. The note adds the legal formulation the surrounding narrative doesn't fully achieve, so it is not strictly redundant in kind — but a reader will feel the chapter cover the same ground twice. The style does permit formal document inserts, and a solicitor building a brief would produce exactly this note; the concern is one of proportion rather than form.",
+      "evidence": [
+        {
+          "file": "draft/16-the-date.md",
+          "text": "The chapter's narrated working-through of the date asymmetry (Prescott examining R5, the memory-vs-writing hinge, the conclusion that the date had been in writing while the text had not) followed by a two-part working note covering the same date element and operative-word element with exhibit citations"
+        }
+      ],
+      "suggested_action": "Either trim the narrated approach to the working note (so the note carries the full argument rather than restating a prior narrated version), or trim the working note to its purely legal-formulation function (eliminating those parts that re-cover ground the narrative already established). Either direction works; the goal is a single pass through the argument rather than two.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "over-articulation-004",
+      "category": "over-articulation",
+      "severity": "low",
+      "title": "Ch 7 instrument-register passage re-establishes a fact already closed in Ch 3",
+      "description": "Chapters 3 and 7 both walk the instrument register and arrive at the same conclusion: every instrument of Josiah's adult life came through this firm, nothing after the first codicil. Chapter 3 does this through the full index and earlier wills. Chapter 7 does it again — 'The original lease of Vale Mill, 1884... Nothing after it' — before proceeding to the chapter's genuinely new material (the diary entry for August 14 and the letter to Nora Fairhurst, which close door (f) on its diary-and-correspondence side). The new material in chapter 7 justifies the chapter. The instrument register passage does not advance the prior closure; it re-enacts it.",
+      "evidence": [
+        {
+          "file": "draft/07-the-file.md",
+          "text": "Instrument register walk naming the sequence from 1884 through the first codicil — 'The original lease of Vale Mill, 1884... Nothing after it' — covering ground established in Ch 3's register survey"
+        },
+        {
+          "file": "draft/03-the-habit.md",
+          "text": "Ch 3 closes door (f) through the full instrument index and the 1924 attendance note; the register walk's conclusion (all through this firm, nothing private) is established here"
+        }
+      ],
+      "suggested_action": "Trim the instrument-register re-walk in chapter 7 to a single sentence of reference ('The register confirmed what chapter 3 had established; he moved on') or remove it entirely, opening the chapter directly on the new material — Josiah's August diary and the Nora Fairhurst correspondence — which is the chapter's actual foreclosure.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "continuity-fact-audit-001",
+      "category": "continuity-fact",
+      "severity": "critical",
+      "title": "Strong-room register entry (19 Sep 1926) quoted with substantially different text in Ch01 vs. Ch05 and the canonical registered record",
+      "description": "Chapter 1 and Chapter 5 both present the September 1926 strong-room register entry in italics as a direct quotation, but the two texts differ materially. Chapter 1 omits the critically plot-bearing phrase 'including date' from 'Instrument read entire', replaces the specific persons named ('Mr. E. Beckett (steward); one other of the household') with the generic count 'two members of the household', omits the purpose detail ('testator's health declining; testator wished there to be no surprises'), and omits the timed return record ('Time out: 9.45 a.m. Time returned: 3.20 p.m. Document in good order on return'). Chapter 5 reproduces the canonical registered text faithfully in all substantive respects. The canonical registered record ('september-register-entry') is the authoritative text; Chapter 1 diverges from it substantially.",
+      "evidence": [
+        {
+          "file": "draft/01-the-strong-room.md",
+          "text": "*First codicil, J. Eccleston — fetched from strong-room. Reading at Eccleston Hall at testator's request. Present: H.G., A.P., W. Eccleston, two members of the household. Instrument read entire. Returned same day. H.G.*"
+        },
+        {
+          "file": "draft/05-the-hinge.md",
+          "text": "*19 September 1926. Document: First Codicil, J. Eccleston, dated 15 March 1924. Purpose: Read to assembled family at testator's request; testator's health declining; testator wished there to be no surprises. Persons present: H. Garside; A. Prescott; W. Eccleston; Mr. E. Beckett (steward); one other of the household. Instrument read entire, including date. Time out: 9.45 a.m. Time returned: 3.20 p.m. Document in good order on return. H.G.*"
+        },
+        {
+          "file": "canon/glossary.md",
+          "text": "Canonical registered text (september-register-entry): '19 September 1926. Document: First Codicil, J. Eccleston dec., dated 15 March 1924. Purpose: Read to assembled family at testator's request; testator's health declining; testator wished there to be no surprises. Persons present: H. Garside; A. Prescott; W. Eccleston; Mr. E. Beckett (steward); one other of the household. Instrument read entire, including date. Time out: 9.45 a.m. Time returned: 3.20 p.m. Document in good order on return. H.G.'",
+          "fact_id": "september-register-entry"
+        }
+      ],
+      "suggested_action": "Replace the italicised register-entry quotation in draft/01-the-strong-room.md with the canonical verbatim text. The correct text (matching the canonical registered record) is: '*19 September 1926. Document: First Codicil, J. Eccleston dec., dated 15 March 1924. Purpose: Read to assembled family at testator's request; testator's health declining; testator wished there to be no surprises. Persons present: H. Garside; A. Prescott; W. Eccleston; Mr. E. Beckett (steward); one other of the household. Instrument read entire, including date. Time out: 9.45 a.m. Time returned: 3.20 p.m. Document in good order on return. H.G.*' Note that the surrounding narrative in Ch01 (Prescott's recollection of who stood where — 'two women from the household, and Josiah's man beside the door') is POV memory and need not be altered; only the italicised document quotation must match the registered record.",
+      "auto_repair_safe": true,
+      "repair_agent": "repair-fact-normalize",
+      "repair_params": {
+        "canon_source": "draft/05-the-hinge.md",
+        "edits": [
+          {
+            "file": "draft/01-the-strong-room.md",
+            "wrong_text": "*First codicil, J. Eccleston — fetched from strong-room. Reading at Eccleston Hall at testator's request. Present: H.G., A.P., W. Eccleston, two members of the household. Instrument read entire. Returned same day. H.G.*",
+            "correct_text": "*19 September 1926. Document: First Codicil, J. Eccleston dec., dated 15 March 1924. Purpose: Read to assembled family at testator's request; testator's health declining; testator wished there to be no surprises. Persons present: H. Garside; A. Prescott; W. Eccleston; Mr. E. Beckett (steward); one other of the household. Instrument read entire, including date. Time out: 9.45 a.m. Time returned: 3.20 p.m. Document in good order on return. H.G.*"
+          }
+        ]
+      }
+    },
+    {
+      "id": "continuity-fact-audit-002",
+      "category": "continuity-fact",
+      "severity": "critical",
+      "title": "Hearing date stated as 'sixth of October 1927' in Chapter 5 and canon glossary, but as '14 Oct. 1927' in Chapter 19's custody note; countdown figures in Chapters 15–18 are all consistent with October 14, not October 6",
+      "description": "Chapter 5 explicitly names the hearing date as 'the sixth of October 1927' and confirms it with arithmetic ('Two hundred and ninety days' from 20 December 1926 = 6 October). The canon glossary repeats 'sixth of October 1927' with the same 290-day count. However, Chapter 19 records the hearing date in Prescott's own custody note as 'RCJ, 14 Oct. 1927. A.P.' — a narrator-asserted documentary fact. The countdown figures in Chapters 15–18 are all internally consistent with October 14, not October 6: Ch15 'One hundred and twenty-five days' from second week of June (≈ June 11 + 125 = October 14); Ch16 'Ninety days' dated 16 July 1927 (July 16 + 90 = October 14); Ch17 'Eighty-eight days' dated 18 July 1927 (July 18 + 88 = October 14); Ch18 'Sixty days' with brief sealed 15 August 1927 (August 15 + 60 = October 14). None of these figures yield October 6. The canon glossary and Chapter 5 form a consistent October 6 pair; Chapters 15–19 form a consistent October 14 group. A human must decide which date is authoritative, as both have explicit support.",
+      "evidence": [
+        {
+          "file": "draft/05-the-hinge.md",
+          "text": "The date fixed: the sixth of October 1927. [...] Two hundred and ninety days."
+        },
+        {
+          "file": "canon/glossary.md",
+          "text": "Probate Division Hearing (sixth of October 1927) — The fixed hearing date for the solemn-form action to prove the will and codicils in the Probate Division of the High Court. Set down in December 1926; 290 days from December 20, 1926."
+        },
+        {
+          "file": "draft/19-solemn-form.md",
+          "text": "R2. Returned from use. RCJ, 14 Oct. 1927. A.P."
+        },
+        {
+          "file": "draft/15-the-hall.md",
+          "text": "One hundred and twenty-five days."
+        },
+        {
+          "file": "draft/16-the-date.md",
+          "text": "Ninety days to the hearing. [working note dated 16 July 1927 — July 16 + 90 = October 14]"
+        },
+        {
+          "file": "draft/17-the-ninth-word.md",
+          "text": "The eighteenth of July. Eighty-eight days. [July 18 + 88 = October 14]"
+        },
+        {
+          "file": "draft/18-counsels-brief.md",
+          "text": "Sixty days to the hearing. [brief sealed 15 August 1927 — August 15 + 60 = October 14]"
+        }
+      ],
+      "suggested_action": "A human must adjudicate which date is correct. If October 14 is chosen (supported by Chapters 15–19): change 'the sixth of October 1927' to 'the fourteenth of October 1927' and 'Two hundred and ninety days' to 'Two hundred and ninety-eight days' in draft/05-the-hinge.md, and update the glossary entry in canon/glossary.md accordingly. If October 6 is chosen (supported by the canon glossary and Chapter 5 arithmetic): change 'RCJ, 14 Oct. 1927' to 'RCJ, 6 Oct. 1927' in draft/19-solemn-form.md, and revise the countdown figures in Chapters 15–18 to figures consistent with October 6 (e.g. Ch15 125→117 from June 11; Ch16 90→82 from July 16; Ch17 88→80 from July 18; Ch18 60→52 from August 15).",
+      "auto_repair_safe": false,
+      "repair_agent": null,
+      "repair_params": null
+    },
+    {
+      "id": "continuity-fact-audit-003",
+      "category": "continuity-fact",
+      "severity": "high",
+      "title": "Chapter 5 quotes strong-room register entry as 'J. Eccleston' omitting the canonical 'dec.' abbreviation",
+      "description": "When Chapter 5 reproduces the 19 September 1926 strong-room register entry verbatim, it renders the document description as 'First Codicil, J. Eccleston, dated 15 March 1924.' The canonical registered text (september-register-entry) reads 'First Codicil, J. Eccleston dec., dated 15 March 1924.' — the standard abbreviation 'dec.' (deceased) is present in the canonical form but absent in Chapter 5's quotation. The rest of the Chapter 5 quotation matches the canonical text exactly. This is the only point where Chapter 5 diverges from the registered record.",
+      "evidence": [
+        {
+          "file": "draft/05-the-hinge.md",
+          "text": "*19 September 1926. Document: First Codicil, J. Eccleston, dated 15 March 1924. Purpose: Read to assembled family at testator's request..."
+        },
+        {
+          "file": "canon/glossary.md",
+          "text": "Canonical registered text: '19 September 1926. Document: First Codicil, J. Eccleston dec., dated 15 March 1924. Purpose: Read to assembled family at testator's request...'",
+          "fact_id": "september-register-entry"
+        }
+      ],
+      "suggested_action": "Change 'J. Eccleston, dated 15 March 1924' to 'J. Eccleston dec., dated 15 March 1924' in the italicised register-entry quotation in draft/05-the-hinge.md.",
+      "auto_repair_safe": true,
+      "repair_agent": "repair-fact-normalize",
+      "repair_params": {
+        "canon_source": "logs/continuity.md",
+        "edits": [
+          {
+            "file": "draft/05-the-hinge.md",
+            "wrong_text": "Document: First Codicil, J. Eccleston, dated 15 March 1924. Purpose",
+            "correct_text": "Document: First Codicil, J. Eccleston dec., dated 15 March 1924. Purpose"
+          }
+        ]
+      }
+    },
+    {
+      "id": "det-fact-conflict:arthur-prescott:days_to_hearing",
+      "category": "continuity-fact",
+      "severity": "high",
+      "title": "Contradictory days_to_hearing for arthur-prescott",
+      "description": "The world store holds conflicting live values for arthur-prescott.days_to_hearing: 172 days (12-the-witnesses) vs 60 days (18-counsels-brief).",
+      "evidence": [
+        {
+          "file": "draft/12-the-witnesses.md",
+          "text": "days_to_hearing = 172 days (12-the-witnesses)",
+          "fact_id": "fact:12-the-witnesses:arthur-prescott:days_to_hearing",
+          "chapter": "12-the-witnesses"
+        },
+        {
+          "file": "draft/18-counsels-brief.md",
+          "text": "days_to_hearing = 60 days (18-counsels-brief)",
+          "fact_id": "fact:18-counsels-brief:arthur-prescott:days_to_hearing",
+          "chapter": "18-counsels-brief"
+        }
+      ],
+      "suggested_action": "Reconcile the values; supersede the incorrect assertion (or fix the prose so they agree).",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    }
+  ]
+}

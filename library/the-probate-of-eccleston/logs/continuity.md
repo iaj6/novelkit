@@ -1,0 +1,614 @@
+# Continuity ledger
+
+The accumulating fact ledger — every durable fact established so far, by chapter. Later drafting must stay consistent with these. Store-derived; do not edit by hand.
+
+## 01-the-strong-room
+- arthur-prescott — age: 38 years
+- arthur-prescott — role: junior partner
+- arthur-prescott — years_in_firm: 16 years
+- arthur-prescott — employer: Garside & Prescott
+- henry-garside — role: senior partner
+- henry-garside — register_maintained_since: 1906 year
+- henry-garside — age: 74 years
+- josiah-eccleston — alive: false
+- josiah-eccleston — age_at_death: 81 years
+- josiah-eccleston — death_month: October 1926
+- josiah-eccleston — death_day_of_week: Tuesday
+- josiah-eccleston — occupation: cotton spinner, magistrate
+- josiah-eccleston — death_location: east bedroom, Eccleston Hall
+- josiah-eccleston — failing_since: August 1926
+- margaret-fairhurst — alive: false
+- margaret-fairhurst — death_month: May 1925
+- margaret-fairhurst — relationship_to_josiah: niece (collateral)
+- edgar-fairhurst — occupation: schoolmaster
+- edgar-fairhurst — address: Bank Parade, Preston
+- nora-fairhurst — age: 19 years
+- george-fairhurst — age: 16 years
+- nora-fairhurst — minor: true
+- george-fairhurst — minor: true
+- walter-eccleston — role: mill manager
+- walter-eccleston — years_managing_mill: 15 years
+- walter-eccleston — present_at_september_1926_reading: true
+- walter-eccleston — present_at_despatch_box_inventory: true
+- the-will — date.executed: 3 June 1919
+- the-will — beneficiary.residue: Walter Eccleston
+- the-will — executor: Walter Eccleston
+- the-will — location: strong-room, Garside & Prescott
+- first-codicil — date.executed: 15 March 1924
+- first-codicil — revokes: clause 4 of the will (gift and executorship entire)
+- first-codicil — beneficiary.primary: Margaret Fairhurst
+- first-codicil — beneficiary.substitutional: issue of Margaret Fairhurst
+- first-codicil — location: strong-room, Garside & Prescott
+- first-codicil — executor_appointment: none (clause 4 revoked entire)
+- strong-room-register — maintained_by: Henry Garside (since 1906)
+- strong-room-register — september_reading.date: 19 September 1926
+- strong-room-register — september_reading.instrument_read_entire: true
+- strong-room-register — september_reading.returned_same_day: true
+- strong-room-register — september_reading.present: H. Garside, A. Prescott, W. Eccleston, two household members
+- strong-room-register — september_reading.entry_in_garside_hand: true
+- eccleston-deed-box — color: black painted steel
+- eccleston-deed-box — label_text: ECCLESTON (white lettering)
+- despatch-box-attendance-note — maker: Arthur Prescott
+- despatch-box-attendance-note — date_approximate: approximately one week after Josiah's death, October 1926
+- despatch-box-attendance-note — codicil_found: false
+- despatch-box-attendance-note — contents_listed: three insurance policies; title deeds to the Hall; unsigned drafts of two rental agreements; a bank letter dated 1923; three letters tied in blue ribbon; unsigned copy of the will
+- garside-and-prescott — address: Winckley Square, Preston
+- vale-mill — location: above Ribchester, Ribble valley
+- vale-mill — mortgaged: true
+- eccleston-hall — location: Ribchester, half a mile up the valley from Vale Mill
+- eccleston-hall — september_reading_room: drawing room
+- The strong-room register entry of 19 September 1926 (in Garside's hand) records: first codicil fetched, read at Eccleston Hall at the testator's request, read entire (including date), present were H.G. (Garside), A.P. (Prescott), W. Eccleston, and two members of the household — returned same day. This entry surfaces in chapter 1 and is load-bearing for the compounding mechanism (door h — the September reading).
+- The Eccleston despatch-box inventory attendance note (Prescott's hand, approximately one week after Josiah's death, October 1926) lists the box contents item by item: three insurance policies; title deeds to the Hall; unsigned drafts of two rental agreements; a bank letter dated 1923; three letters tied in blue ribbon; an unsigned copy of the will. No codicil of any kind was in the box at that time. Walter Eccleston was present during the inventory. This is a contemporaneous record in Prescott's hand (load-bearing for door g — the despatch-box).
+- The Eccleston deed box is black painted steel with 'ECCLESTON' in white on the lid; Garside's copper-plate handwriting is on the label. Garside always carries this box himself.
+- Josiah died on a Tuesday evening in October 1926, in the east bedroom at the Hall. He had been failing since at least August 1926.
+- Walter Eccleston was physically present at the September 1926 Hall reading and heard the first codicil read aloud entire (including 'or her issue' and the codicil's date, 15 March 1924) — but his memory had already encoded 'and her issue' from Josiah's March 1924 spoken account, and one hearing aloud did not correct the error. He has never had the executed text before his eyes.
+- Garside has maintained the Garside & Prescott strong-room register in his own hand since 1906. Prescott has added entries in his own narrower hand as required. The two scripts occupy the same columns for two decades.
+- The legal consequence of the first codicil if it stands: no executor (clause 4 revoked entire); grant would be letters of administration with the will annexed, to Edgar Fairhurst as guardian of the minor children. Majority was twenty-one in 1926 law; both Nora (19) and George (16) are minors at Josiah's death.
+- Chapter 1 compounding-mechanism doors: (g) the despatch-box — opened (inventory note establishes no second codicil approximately one week after Josiah's death); (h) the September reading — opened (register entry establishes fetch, reading entire, same-day return, names of those present including Walter).
+
+## 02-the-second-codicil
+- mr-booth — role: managing clerk
+- mr-booth — employer: Garside &amp; Prescott
+- mr-booth — at_firm_since: 1911 year
+- thurston-and-marsh — role: solicitors acting for Walter Eccleston
+- thurston-and-marsh — location: Preston
+- thomas-birch — occupation: carrier
+- thomas-birch — address: Ribchester
+- thomas-birch — role_in_second_codicil: attesting witness (first named)
+- thomas-birch — alive: false
+- thomas-birch — death_cause: influenza
+- thomas-birch — death_date: 28 September 1926
+- frederick-hallett — occupation: jobbing gardener
+- frederick-hallett — address: lane near Salesbury (no fixed address after departure)
+- frederick-hallett — role_in_second_codicil: attesting witness (second named)
+- frederick-hallett — whereabouts: Canada (sailed mid-October 1926; no fixed address)
+- second-codicil — paper_type: good foolscap
+- second-codicil — produced_by: Thurston &amp; Marsh (on behalf of Walter Eccleston)
+- second-codicil — witness_1: Thomas Birch, carrier, Ribchester
+- second-codicil — witness_2: Frederick Hallett, gardener, near Salesbury
+- second-codicil — status: propounded (in dispute; caveat entered 8 November 1926)
+- walter-attendance-note — maker: Arthur Prescott
+- walter-attendance-note — date: early November 1926 (same day as letter from Thurston &amp; Marsh)
+- walter-attendance-note — cover_story_recorded: found second codicil in despatch-box going through insurance papers after inventory; Josiah must have typed it at mill office on a spring visit
+- eccleston-caveat — date: 8 November 1926
+- eccleston-caveat — entered_by: Edgar Fairhurst
+- eccleston-caveat — notice_received_at_firm: 11 November 1926
+- arthur-prescott — belief.second_codicil: believes second codicil is a forgery (from caveat onward)
+- The second codicil (R3, recordId 'second-codicil') was formally produced by Thurston & Marsh (Walter's solicitors, Preston) in early November 1926, enclosing a copy with a covering letter. The copy was typed on good foolscap, signed 'Josiah Eccleston' in dark ink, and bore two attesting witnesses: Thomas Birch, carrier, of Ribchester; and Frederick Hallett, gardener, of a lane near Salesbury.
+- Thomas Birch (first attesting witness on the second codicil) died of influenza on 28 September 1926 and is beyond examination. Frederick Hallett (second attesting witness) sailed to Canada in mid-October 1926 without leaving a fixed address and is also beyond examination. Neither witness can testify; their genuine signatures on earlier estate papers exist for comparison.
+- Walter Eccleston's cover story (recorded in Prescott's attendance note, early November 1926): he found the second codicil in the despatch-box while going through insurance papers after the inventory; Josiah must have typed it himself at the mill office on a spring visit (the mill typewriter is the implied machine), and put it away without telling anyone.
+- The firm's letter-book carbon of R5 (2 November 1926) confirms that the only information Garside & Prescott ever sent to Thurston & Marsh about the first codicil was its date — 'the 15th March 1924' — and that it 'materially affects the disposition of the residue.' No text, no terms, no wording of any clause was ever provided.
+- Door (g) the despatch-box: closed in Chapter 2. Walter's own attendance-note account confirms the timeline: box inventoried with no second codicil (Prescott's attendance note, late October 1926); box stood at the mill in Walter's keeping for six days; second codicil produced after the box was returned. This record is in both Prescott's attendance note and Walter's own account.
+- Door (e) the firm: opened in Chapter 2. No instruction to draw a second codicil was ever received at Garside & Prescott. No request for the text of the first codicil — or for any word of its terms — was ever received. Only R5 went out, giving the date of the first codicil in writing and nothing else.
+- Edgar Fairhurst entered a caveat at the Probate Registry on 8 November 1926, on Prescott's advice; the caveat notice was received at Winckley Square on 11 November 1926. A solemn-form action is now formally joined and inevitable. No hearing date is yet fixed.
+- Arthur Prescott believes the second codicil is a forgery from the caveat onward (Ch 2). He does not yet notice, and is not yet aware of the significance of, the 'or/and' variance between R2 and R3. He will not know he can prove the forgery until the discovery (Ch 17).
+- Walter Eccleston first spoken misquotation appears in Ch 2, in an attendance at Garside & Prescott: 'the arrangement for Margaret and her issue wouldn't stand as he'd left it' — said mid-sentence, the topic being Josiah's stated intentions to revise. This is the second of the three pinned fair-play plants (the first being R4, a future chapter; the third being Walter to the children at Bank Parade, a later chapter). No further misquotations may be added.
+
+## 03-the-habit
+- josiah-eccleston — first_instrument_year: 1884 year
+- josiah-eccleston — first_will_year: 1891 year
+- josiah-eccleston — second_will_year: 1904 year
+- josiah-eccleston — last_correspondence_with_firm: June 1926
+- josiah-eccleston — private_drafting_evidence: none
+- josiah-eccleston — all_instruments_through_firm: true
+- josiah-eccleston — correspondence_revocation_intent: none in March 1924 to June 1926 correspondence
+- vale-mill-mortgage-1921 — lender: Blackburn bank
+- vale-mill-mortgage-1921 — instructions_date: 17 March 1921
+- garside-1924-attendance-note — date: 15 March 1924
+- garside-1924-attendance-note — or_form_noted_as_deliberate: true
+- garside-1924-attendance-note — status: corroborating exhibit
+- eccleston-index — pages: 3 pages
+- eccleston-index — written_by: Henry Garside
+- eccleston-index — span_years: 1884 to 1924
+- Door (f) — the habit — is closed in Ch 3. Josiah Eccleston used Garside & Prescott for every legal instrument from the first conveyance in March 1884 to the first codicil in March 1924. Two superseded wills (1891, 1904), the Hall deeds, the Vale Mill mortgage (1921, Blackburn bank), tenancy agreements — all through the firm, with no exception. No instrument of Josiah's was made privately, before a stranger solicitor, or outside this firm.
+- Josiah Eccleston's correspondence with Garside & Prescott, from the day the first codicil was executed (15 March 1924) to his last letter in June 1926, contains no mention of any desire to revoke or alter the first codicil. This is established from the firm's file in Ch 3 and is part of the record against the second codicil's cover story.
+- Garside's attendance note of 15 March 1924 (record id: garside-1924-attendance-note) records the reconciliation with Margaret Fairhurst in one understated sentence and annotates the settled wording: 'Or her issue: collateral; substitutional form required.' This note establishes that the choice of 'or her issue' was deliberate professional judgment, not inadvertence. It is a designated corroborating exhibit and will matter in Movement III. Drafters who re-quote it must call read_record first.
+- Josiah Eccleston's last correspondence with Garside & Prescott was in June 1926 (a tenancy renewal question from Eccleston Hall). After June 1926, Josiah wrote no further letters to the firm before his death in October 1926.
+- Vale Mill mortgage (1921): issued by a Blackburn bank; Garside & Prescott prepared the instrument on Josiah's instructions, dated 17 March 1921. This is the debt that kept the mill running through the early years of the cotton slump, and its ongoing burden is part of Walter's financial context.
+- Henry Garside's habit of building the file better than the occasion required: Josiah's April 1924 thank-you letter filed in a small folded card (not flat in the packet as was standard) — the card kept the letter clean and flat. First displacement beat of Thread 2 (Garside in the file), introduced subtly in Ch 3 without naming its significance.
+
+## 04-bank-parade
+- josiah-letter-to-margaret — date: 15 March 1924
+- josiah-letter-to-margaret — author: Josiah Eccleston
+- josiah-letter-to-margaret — recipient: Margaret Fairhurst
+- josiah-letter-to-margaret — current_custodian: Garside & Prescott (Exhibit A)
+- josiah-letter-to-margaret — prior_custodian: Edgar Fairhurst (Margaret's papers)
+- josiah-letter-to-margaret — exhibit_number: A
+- josiah-letter-to-margaret — key_phrase: I did not act in a soft mood that I expected to revise
+- edgar-fairhurst — occupation: schoolmaster
+- edgar-fairhurst — age: approximately 45
+- edgar-fairhurst — location: Bank Parade, Preston
+- edgar-fairhurst — can_fund_action: false
+- edgar-fairhurst — instructions_given: true
+- nora-fairhurst — age: 19 years
+- george-fairhurst — age: 16 years
+- nora-fairhurst — location: Bank Parade, Preston
+- george-fairhurst — location: Bank Parade, Preston
+- administrator-pendente-lite — role: neutral Preston accountant; court-appointed; collects and pays but cannot distribute estate assets
+- administrator-pendente-lite — status: to be appointed
+- Josiah's letter to Margaret Fairhurst (15 March 1924, registered as josiah-letter-to-margaret-mar1924): personal note written the day the first codicil was executed. Key phrase: 'I did not act in a soft mood that I expected to revise.' The letter confirms the reconciliation as deliberate and final, not temporary sentiment. It makes no reference to the specific terms of the codicil (no 'or her issue' or 'and her issue'). It mentions that Josiah met Margaret on a Wednesday before the 15th, and asks after George's progress at his lessons. Original retained by Prescott as Exhibit A in the matter; a receipt was given to Edgar Fairhurst. This letter directly contradicts Walter's claim in R4 (June 1925) that Josiah 'made it in a soft mood' — a contradiction the reader will be able to see when R4 enters the record in Ch 11.
+- Edgar Fairhurst gave Prescott his instructions at Bank Parade on a Tuesday afternoon in late November 1926. He cannot fund the action; the firm carries costs at its own risk, recoverable on success. Edgar stated: 'you have my instructions; whatever the firm requires of us, we will provide.' He accepted the administrator pendente lite arrangement without objection.
+- Nora Fairhurst, at the Ch 4 Bank Parade visit, asked Prescott directly what her mother was to have had (the Hall, the mill shares, the residue) and how long the action would take (Prescott's answer: more than a year). She does not know the specific words of the first codicil ('or her issue' vs 'and her issue'); neither does Edgar. Neither should be written as knowing the operative language of either codicil.
+- The Fairhurst household at Bank Parade: schoolmaster's household, books throughout the parlour, exercise books and a Latin primer on the hall table. George Fairhurst briefly appeared on the stair landing in Ch 4 and was sent back up — he is sixteen, doing lessons. The lamp in his upstairs room was lit when Prescott turned to look back at the terrace on his walk home through the Avenham parks.
+
+## 05-the-hinge
+- henry-garside — alive: false
+- henry-garside — death_cause: heart failure at his desk
+- henry-garside — death_location: his desk at Garside & Prescott, Winckley Square, Preston
+- henry-garside — death_time_approx: approximately half past nine in the morning
+- probate-hearing — date: 6 October 1927
+- probate-hearing — days_from_chapter5: 290 days
+- probate-hearing — court: Probate Division of the High Court
+- probate-hearing — count_chapter5_date: 20 December 1926
+- elias-beckett — role: steward at Eccleston Hall
+- elias-beckett — present_at_september_1926_reading: true
+- september-register-entry — date_of_reading: 19 September 1926
+- september-register-entry — instrument_read_entire: true
+- september-register-entry — date_explicitly_read: true
+- september-register-entry — time_out: 9:45 a.m.
+- september-register-entry — time_returned: 3:20 p.m.
+- september-register-entry — signed_by: H. Garside (H.G.)
+- september-register-entry — persons_present: H. Garside; A. Prescott; W. Eccleston; Mr. E. Beckett (steward); one other of the household
+- strong-room-register — physical_form: tall narrow ledger
+- strong-room-register — two_hands: Garside copper-plate (dominant) and Prescott narrower script (latter years)
+- garside-and-prescott — sole_partner_from_december_1926: Arthur Prescott
+- arthur-prescott — sole_partner: true
+- Henry Garside died at his desk at Garside & Prescott, Winckley Square, Preston, in December 1926 — his heart, at approximately half past nine in the morning. The pen lay on the page still uncapped; the annotation in progress was three words and not finished. Dr. Ainsworth attended and confirmed. Garside's sister in Harrogate (his only surviving family) was telegraphed that day. The firm's affairs were managed by Mr. Booth through the transition.
+- The firm is now Prescott and Booth alone, from December 1926 onward. Two long-running matters were referred to larger firms; the remaining matters were carried by Prescott. Prescott is the sole partner.
+- The strong-room register is a tall narrow ledger. Twenty years of entries in two hands: Garside's copper-plate dominant, Prescott's narrower script appearing in the same columns in the latter years. Garside's standard was invariable: instrument named in full, date, purpose of withdrawal, persons present, time out, time in, condition on return, initials — whether the occasion was large or small. No practice requirement compelled this; it was simply what the register was.
+- The strong-room register entry of 19 September 1926 (in Garside's hand, signed H.G.) reads verbatim: '19 September 1926. Document: First Codicil, J. Eccleston dec., dated 15 March 1924. Purpose: Read to assembled family at testator's request; testator's health declining; testator wished there to be no surprises. Persons present: H. Garside; A. Prescott; W. Eccleston; Mr. E. Beckett (steward); one other of the household. Instrument read entire, including date. Time out: 9.45 a.m. Time returned: 3.20 p.m. Document in good order on return. H.G.' This text is now registered as record id 'september-register-entry' and is the canonical verbatim text; later chapters must read_record before re-quoting it.
+- Mr. Elias Beckett was Josiah Eccleston's steward at Eccleston Hall. He was present at the September 1926 reading of the first codicil, as recorded in the strong-room register entry in Garside's hand. He is one of the two 'household members' listed in the September 1926 register entry.
+- The hearing date is fixed: sixth of October 1927, in the Probate Division of the High Court. Prescott counted forward from December 20, 1926: two hundred and ninety days. This is the first calendar number stated in the book. Every subsequent chapter must name a smaller number — the countdown is monotonic.
+- Chapter 5 compounding-mechanism: door (h) — the September reading — closed. The strong-room register entry is read entire for the first time. Its full content is now established as a fixed fact: the first codicil was fetched on 19 September 1926, read entire (including its date of 15 March 1924) to the assembled family at Josiah's request, returned the same day. Walter was present and heard the instrument read entire. The register cannot be altered. 'Instrument read entire, including date' is Garside's phrase, not a legal requirement: it is the Garside-displacement beat of Thread 2.
+
+## 06-the-letter-book
+- probate-hearing — days_from_chapter6: 265 days
+- probate-hearing — count_chapter6_date: 14 January 1927
+- edgar-fairhurst-letter-1924 — date: 19 March 1924
+- edgar-fairhurst-letter-1924 — recipient: Edgar Fairhurst, Bank Parade, Preston
+- edgar-fairhurst-letter-1924 — operative_clause_disclosed: false
+- edgar-fairhurst-letter-1924 — content_summary: testamentary provision made for Mrs. Fairhurst and her family; firm holds the instrument; no terms or operative clause given
+- prescott-working-note-ch6 — date: 14 January 1927
+- prescott-working-note-ch6 — finding: no request for text of 1924 codicil ever received from any party; R5 transmitted date only; terms never transmitted by any channel
+- prescott-working-note-ch6 — door_closed: door (e) — the firm
+- letter-book-garside-prescott — standard: same level as strong-room register: complete, dated, enclosures noted, references carried through
+- letter-book-garside-prescott — first-codicil-text-transmitted: false
+- Chapter 6 (14 January 1927): Prescott reviews the firm's letter-book, 1924–1926, for the Eccleston matter. Four 1924 entries examined: covering letter to Josiah (draft enclosed, not quoted), execution attendance note (already in bundle), Josiah's acknowledgment, and Garside's letter to Edgar Fairhurst (19 March 1924). The Fairhurst letter says only that Josiah made 'a testamentary provision' for Mrs. Fairhurst and her family; the firm holds the instrument. No operative clause or terms of the first codicil given to Edgar in that letter.
+- Negative established as a record item (door (e) — the firm — closed): No request for the text of the first codicil, or its full terms, was ever received from Thurston & Marsh, Walter Eccleston, or any other party between the date of the instrument (15 March 1924) and the review (14 January 1927). The firm's notice letter R5 (2 November 1926) transmitted the date of the first codicil only. The terms of the instrument were never transmitted by any channel from Garside & Prescott to any external party at any time.
+- Prescott working note (14 January 1927) placed at front of file: establishes the firm-channel negative formally. Will go into the brief to counsel. The carbon of R5 extracted from letter-book and clipped as exhibit behind the working note.
+- The letter-book is at the same standard as the strong-room register: every outgoing letter complete, dated, enclosures listed in the margin column. Built by Garside's hand to the same purpose as the register — second Garside displacement beat (first was Ch 5, the register).
+- Calendar count at chapter 6: 265 days to the hearing (14 January 1927, counting to 6 October 1927). This continues the monotonic countdown from 290 (Ch 5, 20 December 1926).
+- garside-letter-fairhurst-1924 — date: 19 March 1924
+- garside-letter-fairhurst-1924 — addressee: Edgar Fairhurst, Bank Parade, Preston
+- garside-letter-fairhurst-1924 — content: States only that Josiah had made a testamentary provision for the benefit of Mrs. Fairhurst and her family; gives no operative clause, no wording from the first codicil, no indication of its terms beyond existence and materiality
+- garside-letter-fairhurst-1924 — codicil-text-transmitted: false
+- garside-letter-fairhurst-1924 — location: firm letter-book carbon; never left the office
+- josiah-last-letter-june-1926 — date: 8 June 1926
+- josiah-last-letter-june-1926 — subject: farm tenancy — thanking Garside for advice; noting Josiah would speak to the tenant himself
+- josiah-last-letter-june-1926 — handwriting: more effortful than correspondence from previous year — declining health evident
+- josiah-last-letter-june-1926 — significance: Last letter from Josiah to the firm; after 8 June 1926 the letter-book records nothing from the Hall until after his death in October 1926
+- eccleston-probate-hearing — date: 6 October 1927
+- eccleston-probate-hearing — days-remaining-ch05: 290 days
+- eccleston-probate-hearing — days-remaining-ch06: 265 days
+- eccleston-probate-hearing — location: Probate, Divorce and Admiralty Division of the High Court, London
+- eccleston-probate-hearing — ch06-date: 14 January 1927
+- Garside's letter to Edgar Fairhurst (19 March 1924) stated only that Josiah had made a testamentary provision for the benefit of Mrs. Fairhurst and her family; it gave no operative clause and no wording from the first codicil. The letter is in the firm's letter-book as a carbon; it never left the office. This was established in Ch 6 as part of the negative record: the terms of the first codicil were never communicated by the firm to any external party.
+- Josiah Eccleston's last letter to the firm is dated 8 June 1926 and concerns a farm tenancy matter. His handwriting in this letter is noticeably more effortful than in prior correspondence — the declining health visible on the page. After 8 June 1926 the firm's letter-book records nothing from the Hall or from Josiah until after his death in October 1926.
+- As of 14 January 1927 (Chapter 6 chapter date), there are 265 days remaining to the hearing on 6 October 1927. The countdown runs monotonically from 290 days (established Ch 5, 20 December 1926).
+- Door (e) — the firm — is closed as of Ch 6. No request for the text of the first codicil, or its full terms, was ever received by Garside & Prescott from Thurston & Marsh, Walter Eccleston, or any other party. The firm's only transmission of any information about the first codicil to an external party was R5 (2 November 1926), which gave the date (15 March 1924) and nothing else. This negative is now a file item (Prescott's working note, 14 January 1927) and cannot be revisited.
+- The letter-book carbon of R5 was extracted by Prescott in Ch 6 and clipped separately as an exhibit for the brief to counsel.
+
+## 07-the-file
+- josiah-eccleston — diary.last-mill-entry-date: 14 May 1926
+- josiah-eccleston — diary.last-entry-date: 14 August 1926
+- josiah-1926-diary — year: 1926 year
+- josiah-1926-diary — provenance: Eccleston Hall, produced through administrator by registered post
+- josiah-1926-diary — last-entry-content: Hot again. Beckett here this afternoon — the south field question — resolved. Neck troubling me this morning.
+- josiah-nora-letter-1926 — date: 3 April 1926
+- josiah-nora-letter-1926 — recipient: Nora Fairhurst
+- josiah-nora-letter-1926 — exhibit-status: corroborating exhibit, file of Garside & Prescott
+- garside-covering-letter-1924 — date: 14 March 1924
+- garside-covering-letter-1924 — sentence-count: 3 sentences
+- garside-covering-letter-1924 — exhibit-status: corroborating exhibit, file of Garside & Prescott
+- prescott-working-note-jan27 — date: 27 January 1927
+- prescott-working-note-jan27 — door-closed: door-f-the-habit
+- strong-room-register — eccleston-column-last-entry: First Codicil, J. Eccleston dec., 15 March 1924
+- dr-cullis — role: physician to Josiah Eccleston, 1926
+- prescott-working-note-jan27 — days-to-hearing: 250 days
+- Josiah Eccleston's 1926 pocket diary: sparse entries throughout the year; mill appointments reducing from January onward; last mill diary entry 14 May 1926 ('W.E. — mill — morning.'); entries increasingly domestic through summer (Beckett the steward; south field; insurance broker; no professional appointments after May); last diary entry 14 August 1926 — mundane: 'Hot again. Beckett here this afternoon — the south field question — resolved. Neck troubling me this morning.' Blank pages from August 15 onward through September, October, and the rest of the year. No entry in the diary mentions any testamentary act, any codicil, any change of mind, or any communication with a solicitor after March 1924.
+- Josiah Eccleston's 1926 correspondence bundle (formal and household), produced through the administrator: formal side contains three letters to or from Garside & Prescott (all already in the firm's letter-book), one tenancy letter from a Ribchester solicitor, two from the insurance brokers — nothing to or from Thurston & Marsh, nothing from any other firm on any question touching the will or codicil. Household side: family correspondence, local matter replies; includes Josiah's letter to Nora Fairhurst (3 April 1926). No letter in the bundle reflects any change of testamentary intention after March 1924.
+- Josiah's letter to Nora Fairhurst, 3 April 1926 (record id: josiah-nora-letter-april-1926): warm; three-quarters of a page; says nothing about the estate's disposition explicitly but confirms the reconciliation as settled and permanent. Key phrase: 'I am very glad we have the matter settled between us, and I mean it to stay settled. Your mother knew it. You know it. That is what I wished.' Set aside as corroborating exhibit by Prescott on 27 January 1927.
+- Garside's covering letter to Josiah Eccleston, 14 March 1924 (record id: garside-covering-letter-march-1924): three sentences on plain notepaper (not firm's standard paper); transmits the engrossed first codicil; states the witness requirement in full (two witnesses present together, neither taking a benefit) for a man who had signed instruments since 1884; offers Garside's attendance or receipt of the executed original. Written for the record, not for instruction. Found at bottom of the instrument bundle in the file on 27 January 1927; added to the corroborating exhibits.
+- Prescott working note, 27 January 1927 (record id: prescott-working-note-jan27-1927), placed at front of working file: establishes that no private record or correspondence contains any reference to any intention to revoke or alter the first codicil after its execution in March 1924; no instrument in the firm's register was made in the name of Josiah Eccleston after that date; the survey is complete — forty years, every instrument through the firm, the last being the first codicil. Door (f) — the habit — is closed by this note. This door must not be re-walked in any later chapter.
+- 250 days to the hearing as of 27 January 1927 (chapter 07 calendar statement). The countdown is monotonic; subsequent chapters must name a number below 250.
+- Josiah Eccleston's instrument history as recorded in the firm's register, confirmed by review: original Vale Mill lease 1884; mortgage 1889, discharged 1892; deed of gift of Ribchester farmland 1903; lease extension 1908; will 3 June 1919; first codicil 15 March 1924. Nothing after 1924. The Eccleston column in the strong-room register ends with the first codicil.
+
+## 08-the-gazette
+- gazette-advertisement — date_placed: week of 3 February 1927
+- gazette-advertisement — response_received: false
+- lancashire-solicitor-canvass — firms_canvassed: 46 firms
+- lancashire-solicitor-canvass — all_replies_negative: true
+- lancashire-solicitor-canvass — date_completed: 24 February 1927
+- lancashire-solicitor-canvass — circular_letters_sent_date: 3 February 1927
+- lancashire-solicitor-canvass — door_closed: door (d) — the profession
+- prescott-canvass-note-feb1927 — date: 24 February 1927
+- prescott-canvass-note-feb1927 — finding: no solicitor in Lancashire took testamentary instructions from Josiah Eccleston after March 1924; canvass complete; result negative in every case
+- probate-hearing — days_from_chapter8: 235 days
+- probate-hearing — count_chapter8_date: mid-February 1927
+- The London Gazette advertisement (week of 3 February 1927) and circular letters to 46 Lancashire solicitors' firms (sent 3 February 1927, completed 24 February 1927) produced no evidence that any solicitor was instructed by Josiah Eccleston in connection with any testamentary instrument after March 1924. All 46 firms replied; every reply was negative. The Gazette advertisement produced no response of any kind.
+- Door (d) — the profession — is closed as of 24 February 1927 (Ch 8). No solicitor anywhere in Lancashire took instructions from Josiah Eccleston to draw or revoke any testamentary instrument after the first codicil of 15 March 1924. The consolidated working note (record id: prescott-canvass-note-feb1927) is the file item that establishes this. This door must not be re-walked in any later chapter.
+- Prescott's consolidated canvass note, 24 February 1927 (record id: prescott-canvass-note-feb1927): 'The London Gazette advertisement, placed the week of the 3rd February 1927, produced no response of any kind. Circular letters were addressed to every firm of solicitors known to practise in the county of Lancaster — forty-six firms in all, including three valley offices not listed in the principal directory — and every firm has now replied. [...] The canvass is complete; the result is negative in every case.' Placed at front of file.
+- 235 days to the hearing as of mid-February 1927 (chapter 08 calendar statement). The countdown is monotonic; subsequent chapters must state a number below 235.
+- Two of the forty-six canvassed firms required a note: (1) A Lancaster office had a 1919 conveyance file in which they acted for the other party — unrelated to the estate and immaterial even if it had been on Josiah's behalf; (2) A Burnley firm confused Josiah Eccleston's estate with a different family and had no file for Josiah personally. Neither firm had testamentary instructions from Josiah after March 1924.
+- Chapter 08 compounding-mechanism: door (d) — the profession — closed. Every solicitor in the county was canvassed; the Gazette advertisement was placed; no professional involvement was found. The cover story's claim that Josiah 'had it typed' privately is consistent with nothing in the professional record.
+
+## 09-vale-mill
+- administrator-hadfield — role: administrator pendente lite, Eccleston estate
+- administrator-hadfield — profession: accountant, Preston
+- foreman-naylor — role: foreman, Vale Mill
+- mill-daybook — located_in: Vale Mill counting house
+- mill-daybook — keeper: Naylor (foreman), in his own hand
+- mill-daybook — josiah-last-visit.date: 14 May 1926
+- mill-daybook — josiah-last-visit.entry: Mr. Eccleston visited, inspected the shed, attended the office; May 14, 1926
+- mill-daybook — josiah-last-visit.nature: contemporaneous routine working notation; not made for evidentiary purpose
+- vale-mill-typewriter — make: Underwood Standard
+- vale-mill-typewriter — located_in: Vale Mill office
+- vale-mill-typewriter — distinguishing-features: e-slug sits a fraction high; full-stop key shows wear across its face
+- vale-mill-typewriter — identified-by-prescott.date: approximately 4 March 1927
+- vale-mill-typewriter — sole-typewriter-on-estate: true
+- vale-mill — workers.current: 40 men
+- vale-mill — capacity.percent: 40 percent
+- vale-mill — income.covers-fixed-charges: false
+- vale-mill — reserves.months-remaining: 4 months
+- vale-mill — office.floor: stone
+- vale-mill — office.filing-cabinets: 2 metal filing cabinets
+- vale-mill — office.window.aspect: south, overlooking the yard
+- vale-mill — construction: stone-built, four storeys, Victorian weaving shed
+- vale-mill — sale-contract.status: in place but purchaser will not extend completion date again
+- josiah-eccleston — last-mill-visit.date: 14 May 1926
+- josiah-eccleston — last-mill-visit.source: mill daybook, foreman Naylor's hand, contemporaneous entry
+- second-codicil — door-b.status: Josiah's last mill visit confirmed 14 May 1926 — formal depositions on Hall movements pending (Ch 15)
+- Vale Mill office (Ribchester): stone floor; two metal filing cabinets; a worn desk; an inkstand without a pen; a window looking south over the yard; a typewriter (Underwood Standard).
+- The Vale Mill office typewriter is an Underwood Standard machine with a worn carriage, e-slug sitting a fraction high, and wear across the full-stop key face. It is the only typewriter on the estate premises; Eccleston Hall has no typewriter. Prescott observed but did not touch the machine on approximately 4 March 1927 and noted make and distinguishing features in his pocket-book.
+- Josiah Eccleston's last confirmed visit to Vale Mill was 14 May 1926, documented in the mill foreman's daybook entry: 'Mr. Eccleston visited, inspected the shed, attended the office; May 14, 1926.' The entry is contemporaneous and routine; ink continuous with surrounding entries. Foreman Naylor's hand throughout. The second codicil is dated 14 August 1926 — three months after Josiah's last confirmed presence at the mill.
+- Administrator pendente lite: Mr. Hadfield, a neutral Preston accountant. He keeps the estate's monthly accounts and provides Prescott with figures. As of early March 1927: the mill is running at approximately 40% former capacity; income does not cover fixed charges; mortgage interest is being met from estate capital reserves, which Hadfield estimates will last four months at the current rate.
+- Vale Mill foreman: Naylor. Keeper of the mill daybook. Has specified 'Mr. Walter Eccleston' to distinguish from Josiah for fifteen years.
+- As of approximately 4 March 1927: 218 days to the hearing. The estate's reserves will last approximately four months at the current rate of loss.
+- The mill sale contract is still in place as of early March 1927 but the prospective purchaser has extended twice and will not extend again. The sale requires a grant of representation establishing the vendor's title; while the action is pending that grant cannot issue.
+- Door (a) — the machine: the Vale Mill office typewriter has been identified by make and model (Underwood Standard) by Prescott on site. The document-examiner comparison with the second codicil is the next step (Ch 10). The machine has not been touched or removed.
+- Door (b) — Josiah's presence: the mill daybook establishes Josiah's last confirmed visit as 14 May 1926. Formal depositions confirming Josiah did not leave the Hall unaccompanied after May 1926 are not yet taken; that is Ch 15.
+- Walter Eccleston was observed crossing the mill yard on 4 March 1927 by Prescott. He wore a flat cap and shed coat; he was heavier than Prescott remembered from Preston meetings; he moved through the yard with the ease of a man who understood every building in it. He spoke briefly to a mechanic and they crouched over a shared problem together. Walter did not see Prescott and there was no exchange.
+
+## 10-the-machine
+- eccleston-action — days-to-hearing: 200 days
+- eccleston-action — chapter-date: approximately 20 March 1927
+- a-j-croft — role: document examiner
+- a-j-croft — location: Manchester
+- a-j-croft — practicing_since: 1912 year
+- a-j-croft — engaged_by: Garside &amp; Prescott
+- a-j-croft — engagement_date: last week of January 1927
+- croft-report-march1927 — page_count: 11 pages
+- croft-report-march1927 — specimens_taken_date: 12 March 1927
+- croft-report-march1927 — conclusion: second codicil typed on mill-office Underwood Standard; no other machine matches; operator and date not established by typewriting examination
+- croft-report-march1927 — defects_identified_count: 4 defects
+- vale-mill-typewriter — confirmed_by_examiner: true
+- vale-mill-typewriter — examiner_defect_1: lower-case e-slug displaced upward, producing raised e visible in every line
+- vale-mill-typewriter — examiner_defect_2: full-stop key worn across its entire face, left impression lighter than right
+- vale-mill-typewriter — examiner_defect_3: lower-case d has lost upper terminus of left-hand serif — squared rather than tapered end
+- vale-mill-typewriter — examiner_defect_4: lower-case r displaced fractionally upward and left of true base-line, right foot not aligning with surrounding characters
+- second-codicil — door-a.status: CLOSED — typed on mill-office Underwood Standard, confirmed by Croft report March 1927; four individual machine defects concurrently identified; no other machine matches; Hall confirmed to have no typewriter
+- second-codicil — typed_on: Vale Mill office Underwood Standard — confirmed by Croft examination, March 1927
+- second-codicil — paper_note: plain rag-content writing paper, medium weight; consistent with mill-office correspondence stock; inconsistent with solicitors' engrossment paper
+- eccleston-hall — has_typewriter: false
+- eccleston-hall — typewriter_absence_confirmed_by: Hadfield (administrator) and household statement; included in Croft report as formal professional confirmation
+- A. J. Croft (document examiner, Manchester, practising since 1912) was retained by Garside & Prescott in the last week of January 1927. Comparison specimens from the Vale Mill office typewriter were obtained on 12 March 1927, by arrangement with administrator Hadfield. Croft's report (eleven pages) arrived at Winckley Square approximately 20 March 1927.
+- Croft's conclusion (canonical): 'It is my conclusion, reached from the foregoing examination and based upon both typeface design and individual machine characteristics, that the typewriting of the propounded second codicil was produced upon the Underwood Standard typewriting machine located in the office of Vale Mill, Ribchester. I was unable to identify any other machine examined as the source of the typewriting. The examination of typewriting specimens does not establish the identity of the operator or the date of production: those are matters beyond my evidence.'
+- Four individual machine defects concurrently identified by Croft in both the second codicil and the mill-office comparison specimens: (1) lower-case e-slug displaced upward, raised e in every line; (2) full-stop key worn across its entire face, left impression lighter than right; (3) lower-case d missing upper terminus of left-hand serif (squared rather than tapered end); (4) lower-case r displaced fractionally upward and left of true base-line. These defects are absent in all comparison specimens from other machines.
+- Eight solicitors' office machines were examined and excluded. Eccleston Hall is confirmed by administrator Hadfield and a household statement to have no typewriting machine; this confirmation is formally included in Croft's report.
+- Paper supplementary note (Croft): the paper used for the second codicil is plain rag-content writing paper of medium weight, consistent with mill-office correspondence stock and inconsistent with solicitors' engrossment paper. This is stated as consistent with, but not independently proving, mill-office origin.
+- Prescott working note (machine finding), approximately 20 March 1927 (record id: prescott-machine-note-mar1927): 'The second codicil (exhibited as B in this action) was typed upon the Underwood Standard typewriting machine at Vale Mill office, Ribchester. This finding is made by Mr. A. J. Croft, document examiner, Manchester, on the basis of typeface design and four individual machine characteristics concurrently identified in both the codicil's typewriting and in comparison specimens from the mill-office machine; no other machine examined produces a corresponding match. No typewriting machine was present at Eccleston Hall. Croft's report and supplementary paper note are filed at this page.' Filed at front of working file.
+- Door (a) — the machine — is CLOSED as of approximately 20 March 1927 (Ch 10). The second codicil was typed on the mill-office Underwood Standard; no other machine matches; Hall confirmed empty. This door must not be re-walked in any later chapter.
+- 200 days to the hearing as of approximately 20 March 1927 (chapter 10 calendar statement). The countdown is monotonic; subsequent chapters must name a number below 200.
+- The typewriting examination does not establish who operated the machine or when. The operator/timing question is addressed by other evidence: Josiah's last confirmed mill visit was 14 May 1926 (Ch 9 daybook); Hall depositions (Ch 15) will establish he did not visit the mill after May. The machine is the mill's; the occasion is not yet formally foreclosed but is established by the combined record.
+- Ch 10 compounding-mechanism: door (a) — the machine — closed. The second codicil's typewriting is matched to the mill-office Underwood Standard by Croft's examination. The cover story's claim that Josiah typed or had it typed at the mill requires a visit; Josiah's last visit was May 1926, three months before the codicil's August date.
+
+## 11-the-sale-contract
+- eccleston-sale-contract — completion_condition: grant of representation establishing the vendor's title to the said estate and hereditaments
+- eccleston-sale-contract — page_count: 43 pages
+- eccleston-sale-contract — condition_clause: clause 22
+- eccleston-sale-contract — extension_memoranda_count: 2 memoranda
+- eccleston-sale-contract — first_extension_date: January 1927
+- eccleston-sale-contract — second_extension_date: 15 March 1927
+- eccleston-sale-contract — third_extension_expected: false
+- vale-mill-mortgage-1921 — principal: 8500 pounds sterling
+- vale-mill-mortgage-1921 — interest_rate: 4.5 percent per annum
+- vale-mill-mortgage-1921 — security: Vale Mill plant, machinery, and business goodwill
+- vale-mill-mortgage-1921 — interest_paid_from: estate capital reserves (last two quarter-days by April 1927)
+- walter-holt-correspondence — letter_count: 9 letters
+- walter-holt-correspondence — date_range: spring 1924 to January 1927
+- walter-holt-correspondence — holt_reply_count: 5 letters
+- walter-holt-correspondence — provenance: copies obtained through discovery in the action; via Hadfield's parcel
+- walter-holt-correspondence — pattern: Walter assures bank the codicil will not stand and the estate will come through; later letters abandon explanation and simply affirm
+- administrator-hadfield — march1927_income_loss: little over 300 pounds sterling
+- administrator-hadfield — reserves_months_remaining_april1927: approximately 3 months
+- walter-bank-letter — exhibit_status: filed as financial exhibit in the Eccleston action brief (Ch 11)
+- walter-bank-letter — key_phrase: in favour of my late cousin Mrs. Fairhurst and her issue
+- walter-bank-letter — chapter_first_appearance: 11 (Ch 11 — first and only full appearance before the discovery)
+- probate-hearing — days_from_chapter11: 185 days
+- probate-hearing — count_chapter11_date: approximately 4 April 1927
+- The Eccleston estate sale contract (43 pages, standard post-1925 form) is conditioned at clause 22 on 'a grant of representation establishing the vendor's title to the said estate and hereditaments.' Two extension memoranda have been granted (January 1927; 15 March 1927, eight weeks each). Thurston & Marsh have advised the purchaser's solicitors that a third extension is not expected. Without the grant of representation — which cannot issue while the action is pending — the sale cannot complete.
+- The Vale Mill mortgage (1921, Blackburn bank, eight thousand five hundred pounds at four and a half per cent) is secured on the mill's plant, machinery, and business goodwill. It was prepared by Garside & Prescott. As of April 1927, the last two quarter-days' interest have been paid from the estate's capital reserves; the principal is untouched and cannot be repaid without the sale proceeds.
+- Walter Eccleston's banking correspondence with his bank manager Mr. Holt comprises nine letters (spring 1924 to January 1927) and five replies from Holt (growing shorter as the correspondence ran on). The pattern throughout: Walter assures the bank the codicil will not stand and the estate will come through. In the later letters (1926–1927) he abandons explanation and simply affirms. All nine letters and five replies are now in the action brief as financial exhibits, obtained through discovery.
+- R4 (walter-bank-letter, 11 June 1925 — recordId 'walter-bank-letter') entered the Eccleston action brief as a financial exhibit in Ch 11. Its wording — 'in favour of my late cousin Mrs. Fairhurst and her issue' — was printed in full as a set-off passage and was not remarked on by the narration. This is the first and only full appearance of R4 before the discovery. Its language is a written instance of Walter's misquotation of the operative clause, dated June 1925 — fourteen months before the second codicil's date of 14 August 1926.
+- Administrator Hadfield's March 1927 monthly account: the mill lost a little over three hundred pounds against projected income. Mortgage interest paid from estate capital reserves. Hadfield's estimate of remaining reserves: approximately three months at the current rate (consistent with his February estimate of four months, one month having elapsed).
+- 185 days to the hearing as of approximately 4 April 1927. The countdown is monotonic; subsequent chapters must name a number below 185.
+- Door (i) — the date asymmetry: R4 enters the brief as a record item. Its language ('and her issue') now exists in the file alongside R2's executed text ('or her issue') — though no one in the book has yet placed them side by side. The door is opened but not yet closed; that is the discovery chapter.
+
+## 12-the-sale-contract
+- vale-mill-mortgage — date.made: spring 1921
+- vale-mill-mortgage — principal: 8500 pounds sterling
+- vale-mill-mortgage — interest_rate: 4.5 percent per annum
+- vale-mill-mortgage — lender: County Bank, Blackburn
+- vale-mill-mortgage — drafter: Henry Garside
+- sale-contract — condition.grant_required: grant of representation establishing vendor's title to the estate and hereditaments
+- sale-contract — extension_count: 2 memoranda
+- sale-contract — extension.first.date: January 1927
+- sale-contract — extension.second.date: 15 March 1927
+- sale-contract — third_extension_expected: false
+- sale-contract — purchaser.type: textile firm
+- mr-holt — role: bank manager
+- walter-eccleston — bank_letters.count: 9 letters to Mr. Holt, spring 1924 to January 1927
+- walter-eccleston — bank_replies.count: 5 replies from Mr. Holt
+- Chapter 12-the-sale-contract is a fresh draft of The Sale Contract chapter, covering the same beats as 11-the-sale-contract under the stale pipeline task ID from before the chapter reordering. Both draft files exist (draft/11-the-sale-contract.md and draft/12-the-sale-contract.md); a consolidation pass should select one. All canon values (mortgage principal £8,500 at 4.5%, nine Holt letters, two extension memoranda, 185 days) are identical across both.
+- Vale Mill Mortgage: £8,500 at 4.5% per annum from County Bank, Blackburn; made spring 1921; Garside's drafting; interest payable quarterly; interest paid from estate capital for at least two consecutive quarter-days before April 1927; principal untouched throughout.
+- Conditional Sale Contract (Vale Mill Estate): conditioned on a grant of representation establishing the vendor's title (clause 24); purchaser is a textile firm; two extension memoranda granted (January 1927 and 15 March 1927, each eight weeks); no third extension anticipated per Thurston & Marsh's written note.
+- Walter Eccleston's banking correspondence with Mr. Holt: nine letters, spring 1924 to January 1927; five replies from Holt; pattern shifts from explanation (1924–1925) to bare affirmation (1926–1927) as Holt's replies grew shorter. The arc of diminishing response is a record of the financial position's deterioration.
+- R4 (walter-bank-letter, 11 June 1925) enters the brief as a financial exhibit in this chapter. It is the second of the three pinned misquotation occasions ('and her issue' in Walter's hand, June 1925, fourteen months before the second codicil's date). The narration does not remark on its language. This is Misquotation 2 on the page.
+- Hadfield's March 1927 monthly account: little over £300 net loss against projected income; mortgage interest paid from estate capital; approximately three months of liquid reserves remaining at that rate. Hadfield has no authority to recommend or act; can only record.
+
+## 12-the-witnesses
+- thomas-birch — death_certificate_obtained: true
+- thomas-birch — death_registered: Ribchester sub-district registrar
+- thomas-birch — authenticated_specimens.count: 2 instruments
+- thomas-birch — authenticated_specimens.instruments: cottage document November 1914; property schedule March 1921
+- thomas-birch — croft_attestation_finding: consistent with genuine hand — cannot distinguish from skilled reproduction on certified copies and two specimens; not broken
+- frederick-hallett — last_employer: Ogden, farmer on Salesbury road near Ribchester
+- frederick-hallett — departure_date: first week of October 1926
+- frederick-hallett — departure_port: Liverpool (assisted passage to Canada)
+- frederick-hallett — authenticated_specimens.count: 1 instruments
+- frederick-hallett — authenticated_specimens.instruments: property schedule March 1921 (one specimen only)
+- frederick-hallett — croft_attestation_finding: consistent with single authentic specimen — cannot distinguish from skilled reproduction; one specimen and certified copies only; not broken
+- commission-application — filed_date: last week of April 1927
+- commission-application — disclosed_difficulty: absence of fixed Canadian address for Hallett
+- second-codicil — door-c.status: OPEN — Birch dead (28 Sept 1926, certificate obtained); Hallett in Canada, no address; both attestation signatures consistent but unbreakable; commission application submitted (pending Ch 14 refusal)
+- atkinson — location: Ribchester
+- atkinson — role: solicitor, agricultural conveyancing; occasional local inquiry
+- mitchell — role: London counsel, Garside & Prescott's London man
+- ogden — occupation: farmer on Salesbury road near Ribchester
+- arthur-prescott — days_to_hearing: 172 days
+- Thomas Birch, carrier, Ribchester: confirmed dead 28 September 1926 by Ribchester sub-district registrar (influenza and its sequelae); death certificate obtained and filed. Authentic signatures located on two earlier estate instruments: cottage document November 1914 and property schedule March 1921. Croft's report (April 1927): attestation signature consistent with genuine hand; cannot distinguish from skilled reproduction on certified copies and two specimens; unbreakable.
+- Frederick Hallett, jobbing gardener, late of a lane near Salesbury: no death registered. Traced through Atkinson (Ribchester solicitor) to departure for Canada on assisted passage from Liverpool, first week of October 1926; last employer Ogden (farmer, Salesbury road). No fixed Canadian address. Authentic signature on one instrument only: property schedule March 1921. Croft's report: consistent with genuine hand, one specimen and certified copies only; cannot distinguish from skilled reproduction; unbreakable.
+- Garside's instrument index (maintained since 1906) records the name, trade, location, and instrument for every witness engaged for every document the firm drew — this index is what yields the authenticated signatures of both Birch and Hallett for comparison purposes.
+- Commission application to the Probate Division to examine Frederick Hallett in Canada drafted by Prescott and filed in London by Mitchell (Garside & Prescott's London counsel) in the last week of April 1927. Application discloses absence of a fixed Canadian address. Outcome unknown in this chapter; determined adverse in Ch 14.
+- 172 days to the hearing as of the end of April 1927.
+- New secondary characters established: Atkinson (Ribchester solicitor, agricultural conveyancing, engaged for local inquiry); Mitchell (London counsel, filed commission application); Ogden (farmer, Salesbury road, Hallett's last employer).
+- Door (c) — the witnesses: open as of this chapter. Both attesting witnesses beyond examination; both attestation signatures consistent but unbreakable. Commission pending; text argument must carry the weight of the case.
+- frederick-hallett — departure_ship: SS Aurania (Liverpool to Quebec)
+- commission-application-hallett — status: submitted — outcome pending
+- commission-application-hallett — filed_by: Mitchell (London counsel), last week April 1927
+- commission-application-hallett — address_difficulty_disclosed: true
+- commission-application-hallett — outcome_chapter: Ch 14 (The Commission) — refused for want of traceable address
+- thomas-birch — age_at_death: 64 years
+- Chapter 12 (The Witnesses): Thomas Birch, carrier, Ribchester — confirmed dead 28 September 1926 (influenza) by Ribchester registrar; death certificate obtained and filed. Age at death: 64. Two authenticated specimen signatures on estate papers: cottage tenancy deed November 1914 and property schedule March 1921.
+- Chapter 12 (The Witnesses): Frederick Hallett, gardener near Salesbury — alive but untraceable in Canada. Last employer: Ogden, farmer on the Salesbury road near Ribchester. Left employment first week October 1926; sailed from Liverpool on the SS Aurania (assisted passage to Quebec) in the second week of October 1926; no fixed address in Canada. One authenticated specimen signature: property schedule March 1921 (same document as Birch's second specimen).
+- Chapter 12 (The Witnesses): Croft's attestation reports: both attestation signatures on the second codicil are consistent with the genuine hands but cannot be distinguished from skilled reproductions on the available evidence (photographic copies of the propounded instrument; two Birch specimens and one Hallett specimen only). Neither attestation is broken.
+- Chapter 12 (The Witnesses): Commission application for Hallett submitted to the Probate Division by Mitchell (London counsel) in the last week of April 1927. Address difficulty disclosed in full. Outcome in Ch 14: the commission is refused for want of a traceable address — this is the calendar-against-Prescott beat.
+- Chapter 12 (The Witnesses): Door (c) — the witnesses — opens. Both witnesses are beyond examination. Carter dead; gardener in Canada without address; attestations consistent but unbreakable. The design of the selection (both men conveniently beyond reach by the time the codicil is produced) is visible to Prescott in the four-date column of his attendance book but is not statable as evidence and does not go into the brief.
+- Chapter 12 (The Witnesses): Garside displacement beat: the instrument index (maintained in Garside's hand since 1906, recording witnesses by name, trade, address, instrument number, and date) is what yields the authenticated specimens of both witnesses. Without Garside's record-keeping habit, there would be no comparison material for Croft.
+- Chapter 12 (The Witnesses): 172 days to the hearing as of end of April 1927.
+
+## 13-the-fairhursts
+- walter-bank-parade-visit-may1927 — date: approximately Tuesday 8 May 1927
+- walter-bank-parade-visit-may1927 — location: Bank Parade, Preston
+- walter-bank-parade-visit-may1927 — walter.described_codicil_as: giving everything to Margaret Fairhurst and her issue — Misquotation 3; narration unremarked
+- walter-bank-parade-visit-may1927 — walter.demeanor: kind; seemed genuinely fond of Margaret; sorrow not performed
+- hadfield-april-1927-account — loss_against_projected: just under 300 pounds
+- hadfield-april-1927-account — mortgage_interest_source: estate capital — third consecutive quarter-day
+- hadfield-april-1927-account — mill_working_days_per_week: 3.5 days
+- hadfield-april-1927-account — improvement_expected: not before late summer 1927
+- nora-fairhurst — character.sentiment_about_money: not sentimental — clear-eyed about the practical stakes
+- nora-fairhurst — character.sentiment_about_mother: deeply fond; believes Margaret would have been uncomfortable being made the subject of a legal action
+- george-fairhurst — character.manner_under_uncertainty: asks direct questions; understands plainly; does not speak further after receiving an answer
+- Walter Eccleston visited Bank Parade in early May 1927 (approximately Tuesday 8 May) and told Nora and George Fairhurst what their mother was to have received under the first codicil. He described the codicil as 'giving everything to their mother and her issue, which meant us' — the third and final pinned misquotation on the page (Misquotation 3), occurring in Nora's reported speech to Prescott. The narration does not remark on the phrasing. Walter's manner was kind; he seemed genuinely fond of Margaret; he said Josiah had always meant to put it right, and that he was sorry it had come to this.
+- Josiah's March 1924 letter to Margaret Fairhurst (Exhibit A in the brief since Ch 4) was described by Nora as kind in tone — the letter of a man who meant what he had done rather than one settling an obligation. Prescott, who already holds the letter, says only 'Yes' and does not remark further.
+- Prescott must NOT be written as connecting Nora's report of Walter's misquotation with R4's 'and her issue' (the bank letter from June 1925). That connection is made in Ch 17 only.
+- Hadfield's April 1927 account: approximately £300 loss against projected income; mortgage interest paid from capital for the third consecutive quarter-day; mill working approximately 3.5 days per week; no improvement expected before late summer 1927.
+- 155 days to the hearing as of approximately 8 May 1927 (down from 172 at end of April 1927).
+
+## 14-the-commission
+- commission-application — status: refused — court declined to issue; not appealable on these facts
+- commission-application — refusal_ground: applicant unable to supply fixed address in Canada for Hallett; court will not issue commission that cannot be executed
+- commission-application — calendar_weeks_lost: 8 weeks
+- commission-application — fresh_application_condition: requires verified fixed address for Hallett in Canada; none currently available
+- commission-application — door_c_witnesses_status: permanently closed — both witnesses beyond examination; attestation cannot be challenged or confirmed by any testimony at hearing
+- arthur-prescott — brief_completion_deadline: 8 weeks from mid-May 1927 at the outside
+- arthur-prescott — case_strategy_as_of_ch14: typewriter evidence and text argument carry the entire case; witness avenue definitively closed
+- Ch 14 (The Commission): The commission to examine Frederick Hallett in Canada is refused by the court on the ground that no fixed address can be supplied; a commission cannot be executed without a mechanism of service, and the decision is not appealable on these facts.
+- Ch 14: The calendar moves against Prescott in Ch 14 — 8 weeks consumed by the commission application; 140 days remain to the hearing (down from 172 when the application was filed). This is the designated calendar-against-Prescott beat and must not be repeated.
+- Ch 14: Door (c) — the witnesses — is permanently closed as of this chapter. Both witnesses are beyond examination; the attestation cannot be challenged or confirmed by any testimony at the hearing. This door must not be reopened.
+- Ch 14: Prescott identifies the negative shape of the witness selection — both men newly unavailable in October 1926, which would require foreknowledge if the instrument was genuinely executed in August — but brackets it as inference, not evidence, and twice declines to write it in the attendance book. It is argument-in-waiting only.
+- Ch 14: Prescott writes to Mitchell confirming the case must now be made on typewriter evidence and text alone; brief to be complete within 8 weeks of mid-May 1927.
+- Ch 14: Garside displacement beat — the letter-opening knife that was Garside's, used without comment in the chapter's first paragraph.
+- Ch 14: The pivot sentence 'What remained was the text' is the chapter's turn — the case is recontextualised as resting entirely on the text argument, which Prescott notes has always been the core. The reader understands (dramatic irony maintained) that the text argument includes the 'and her issue' / 'or her issue' variance that Prescott has not yet connected.
+
+## 15-the-hall
+- elias-beckett — role: steward, Eccleston Hall
+- elias-beckett — years_at_hall: 14 years
+- elias-beckett — deposition.josiah_last_departure: 14 May 1926 (mill visit, Simms driving)
+- elias-beckett — deposition.josiah_august_outing: none; nothing left the Hall without Beckett's knowledge in August 1926
+- elias-beckett — diary.september_reading_date: 15 September 1926
+- mrs-hargreaves — role: cook, Eccleston Hall
+- mrs-hargreaves — years_at_hall: 9 years
+- mrs-hargreaves — deposition.josiah_august_outing: none confirmed; she was on premises throughout August 1926 except two specified half-days
+- ellen-bradshaw — role: housemaid, Eccleston Hall
+- ellen-bradshaw — years_at_hall: 2 years
+- ellen-bradshaw — deposition.josiah_august_outing: none confirmed; Josiah did not leave the house in August 1926
+- dr-hartley — role: physician, Ribchester
+- dr-hartley — medical_notes.august_1926.visit_count: 4 visits
+- dr-hartley — medical_notes.august_1926.first_visit: 5 August 1926
+- dr-hartley — medical_notes.august_1926.last_visit: 27 August 1926
+- dr-hartley — opinion.josiah_august_mobility: not capable of a twelve-mile journey in August 1926; journey medically inadvisable in the strongest terms; satisfied on clinical evidence he did not make one
+- josiah-eccleston — health.june_1926: restricted to house; doctor visiting weekly from June 1926
+- josiah-eccleston — health.august_1926: housebound; doctor visiting twice weekly; incapable of twelve-mile journey to mill
+- josiah-eccleston — last_hall_departure: 14 May 1926
+- josiah-eccleston — last_hall_departure.source: Beckett household diary (corroborates mill daybook, Ch 9)
+- beckett-household-diary — entry.may_14_1926: Mr E. to the mill, with Simms. Home by four.
+- beckett-household-diary — entry.sep_15_1926: Mr. Garside and another from Preston, half past ten. Drawing room. Instruments. Family. Gone by noon.
+- beckett-household-diary — location: Eccleston Hall library
+- Eccleston Hall: two storeys, late Georgian stone, south-facing front aspect; half a mile up the valley from Vale Mill; in administration (pendente lite) during the probate action, maintained at minimum domestic expense. Coach-house unoccupied during the action; kitchen garden worked by reduced staff.
+- Beckett's household diary and the strong-room register in Garside's hand are mutually corroborating records of the September 15 1926 reading at the Hall — one kept at the Hall, one in the Garside & Prescott basement twelve miles away. Both state the same date, the same attendees, the same event.
+- Door (b) — Josiah's presence at the mill on the date of the second codicil — is closed as of Chapter 15. Working note filed: Josiah did not leave the Hall after 14 May 1926; was incapable of a twelve-mile journey from June 1926 onward; on 14 August 1926 was confined to the Hall in failing health. This door must not be re-opened in later chapters.
+- Dr. Hartley's August 1926 medical notes: four visits (5 August through 27 August); progressive frailty, restricted movement, medication adjusted twice; no outing or journey noted. Professional opinion: Josiah not capable of a twelve-mile journey that month.
+- Beckett's household diary entry for 14 May 1926: 'Mr E. to the mill, with Simms. Home by four.' — the last outing entry for many pages; corroborates Ch 9 mill daybook. Entry for 15 September 1926: 'Mr. Garside and another from Preston, half past ten. Drawing room. Instruments. Family. Gone by noon.' — corroborates the strong-room register entry in Garside's hand.
+
+## 16-the-date
+- hearing-brief — assembly_date: second week of July 1927
+- hearing-brief — total_exhibits_at_ch16: 23 exhibits
+- hearing-brief — exhibit_1: R2 — first codicil (executed 15 March 1924)
+- hearing-brief — exhibit_2: R3 — second codicil (dated 14 August 1926)
+- hearing-brief — exhibit_7: letter-book record confirming no operative text of first codicil transmitted
+- hearing-brief — exhibit_14: R4 — Walter Eccleston to Mr. Holt, 11 June 1925 (bank letter with 'and her issue')
+- hearing-brief — exhibit_21: attendance note 13 May 1927 — Nora Fairhurst's account of Walter's spoken misquotation
+- hearing-brief — exhibit_23: R5 — firm notice letter to Thurston & Marsh, 2 November 1926
+- hearing-brief — exhibit_24: extract from the strong-room register
+- date-asymmetry-working-note — date: 16 July 1927
+- date-asymmetry-working-note — conclusion: Recital reproduced the date available from R5 in writing; operative words not from R5 or any written source; match Walter's documented version (R4 and attendance note); recital was not composed from the executed first codicil
+- date-asymmetry-working-note — days_to_hearing: 90 days
+- second-codicil — forgery_window_start: 2 November 1926 — after R5 gave Walter the codicil's date in writing
+- second-codicil — recital_date_source: R5 (firm notice letter, 2 November 1926) — gave the date '15th March 1924' in writing to Thurston & Marsh
+- second-codicil — recital_operative_words_source: Walter's documented version ('and her issue') — from memory of Josiah's spoken account, not from the executed text; consistent with R4 (June 1925) and attendance note (May 1927)
+- Ch 16 (The Date): The hearing brief is being assembled in the second week of July 1927, with exhibits numbered per a schedule Mr. Booth drew up. As of 16 July 1927, 90 days remain to the hearing.
+- Ch 16: Exhibit numbers established in the brief: Exhibit 1 = R2 (first codicil); Exhibit 2 = R3 (second codicil); Exhibit 7 = letter-book record; Exhibit 14 = R4 (Walter's bank letter to Holt); Exhibit 21 = attendance note of 13 May 1927; Exhibit 23 = R5 (firm notice letter, 2 Nov 1926); Exhibit 24 = strong-room register extract.
+- Ch 16: The date asymmetry working note (A.P., 16.vii.27) formally establishes the two-part asymmetry as a record item: (1) The date in R3's recital ('the fifteenth day of March 1924') corresponds exactly to the date given by R5 to Thurston & Marsh on 2 November 1926 — the date was in writing from that date; (2) The operative words in R3's recital ('and her issue') do not correspond to the executed first codicil ('or her issue' — R2) but do correspond to Walter's documented version in R4 and the May 1927 attendance note. The recital reproduced what was available in writing; it did not reproduce the operative text that was not available in writing.
+- Ch 16: The forgery window is confirmed: Walter could not have composed the recital with the correct date before 2 November 1926 (when R5 gave him the date in writing); before that date, only memory of the September reading was available. The second codicil was therefore forged between 2 November 1926 and when Walter produced it to Thurston & Marsh.
+- Ch 16: As of this chapter, Prescott has NOT yet placed R2 (first codicil) and R3 (second codicil) side by side in direct visual comparison. That act — the discovery of the ninth word — is the subject of Ch 17. The working note establishes the analytical argument; the direct comparison is the experiential revelation.
+- Ch 16: The letter-book carbon of R5 confirms transmission of the firm's notice letter on 2 November 1926. The Garside-established letter-book system has not varied since Prescott entered the office as an articled clerk.
+
+## 17-the-ninth-word
+- arthur-prescott — direct_r2_r3_comparison_made: true
+- arthur-prescott — discovery_date: 18 July 1927
+- arthur-prescott — variance_found: true
+- arthur-prescott — brief_dispatch_deadline: 1 August 1927
+- second-codicil — recital_ninth_word: and (where executed first codicil says or)
+- second-codicil — variance_discovered_chapter: 17-the-ninth-word
+- hearing-brief — working_note_date: 18 July 1927
+- On the evening of 18 July 1927, Prescott places the executed first codicil (R2) next to the propounded second codicil (R3) on his desk at Garside & Prescott, doing a final citation check before dispatching the brief to London counsel. He reads the recital of R3 against the operative clause of R2 and finds the ninth word of the recital's gift is wrong: R3 says 'and her issue'; R2 says 'or her issue.'
+- Prescott pulls exhibit fourteen (R4, Walter to Holt, 11 June 1925) from the exhibit cabinet and re-reads it: it contains 'and her issue' in Walter's hand, fourteen months before the second codicil's stated date of 14 August 1926. The three pieces (R2, R3, R4) are on the desk together for the first time.
+- Prescott writes a working note (registered as ch17-working-note): 'The recital of the second codicil (R3, exhibit 2) cites the first codicil as giving the residue unto my niece Margaret Fairhurst and her issue absolutely. The executed instrument (R2, exhibit 1) says or her issue. The variance is between R2 and R3's recital. A.P., 18.vii.27.'
+- Door (i) — the date asymmetry — is now closed. The recital has the date right (from R5, the firm's notice letter of 2 November 1926) and the operative word wrong (from Walter's memory of Josiah's spoken account in March 1924). The recital was not composed from the executed text.
+- 88 days remain to the hearing as of 18 July 1927. Prescott begins writing the addition to the brief the same evening.
+- The discovery is made by file discipline — Prescott doing Garside's citation check — not by intuition. Nothing material enters the record in this chapter that was not already before the reader in Ch 1 (R2), Ch 2 (R3), and Ch 11 (R4).
+
+## 18-counsels-brief
+- hearing-brief — date.dispatched: 15 August 1927
+- hearing-brief — destination: London counsel
+- hearing-brief — argument.spine: recital variance: second codicil recital says 'and her issue'; executed first codicil says 'or her issue'; recital not taken from the instrument
+- hearing-brief — argument.structure: variance as spine; nine doors as exclusion argument; authorship section; handwriting evidence stated as subsidiary and inconclusive
+- hearing-brief — handwriting.plaintiff_examiner: Mr. A.V. Mathers — opinion: signature not genuine
+- hearing-brief — handwriting.defendant_examiner: Mr. G.T. Whitmore — opinion: signature genuine
+- hearing-brief — handwriting.split: irreconcilable; neither examiner doubts his conclusion; case does not depend on either opinion
+- arthur-prescott — days_to_hearing: 60 days
+- mr-mathers — role: document examiner; plaintiff's expert witness
+- mr-mathers — opinion.second_codicil_signature: not genuine to the hand of the testator
+- mr-whitmore — role: document examiner; defendant's expert witness
+- mr-whitmore — opinion.second_codicil_signature: genuine to the hand of the testator
+- thurston-marsh — inquiry_letter.date: 12 August 1927
+- thurston-marsh — inquiry_letter.signatory: Marsh (partner)
+- thurston-marsh — inquiry_letter.content: confirms hearing proceeding on fixed date; asks whether plaintiff proceeds on all filed exhibits; requests notice of any late evidence — carefully worded; signals awareness that evidence is coming
+- hearing-brief — originals_travelling_to_london: R1 (will clause, from strong-room); R2 (executed first codicil, from deed-box) — travelling under registered cover; R3 (propounded second codicil) to travel with Thurston and Marsh from court file
+- Ch 18 (18-counsels-brief): The hearing brief is dispatched to London counsel on 15 August 1927, 60 days before the hearing. It leads with the recital variance as spine (three-sentence proposition: recital says 'and her issue'; executed first codicil says 'or her issue'; a recital that misquotes the instrument it recites was not taken from that instrument), proceeds through the nine door-closures as an exclusion argument, and closes the argument section with the authorship finding: the recital reproduced the date from R5 (in writing, 2 November 1926) and the operative word from exhibit 14 (Walter's bank letter, 11 June 1925, fourteen months before the codicil's stated date).
+- Ch 18: The handwriting evidence is handled in one set-off paragraph in the brief: Mr. A.V. Mathers (plaintiff's examiner) finds the signature not genuine; Mr. G.T. Whitmore (defendant's examiner) finds it genuine; the two opinions are directly irreconcilable; the brief states the case does not depend on either and will not be argued as though it does.
+- Ch 18: Thurston and Marsh write on 12 August 1927 — signed by Marsh himself — inquiring whether the plaintiff proceeds on all filed exhibits and requesting notice of any late evidence. Prescott replies confirming all exhibits as filed, no late evidence. Both parties file the exchange. The letter is interpreted by Prescott and Mr. Booth as a signal that the defence knows something is coming.
+- Ch 18: The originals of R1 (will clause, strong-room) and R2 (executed first codicil, deed-box) are to travel to London under separate registered cover for the hearing; R3 (propounded second codicil) is in the court file and will travel with Thurston and Marsh.
+- Ch 18: The Eccleston deed-box is verified against the inventory before the originals are listed for London travel; the contents match the custody record exactly.
+- Ch 18: The handwriting experts named: A.V. Mathers (plaintiff, finds signature false); G.T. Whitmore (defendant, finds signature genuine). Both have twenty years' standing. They are irreconcilable and the book does not resolve them — the one licensed irresolution beyond Thread 6.
+
+## 19-solemn-form
+- keane — role: plaintiff's counsel at the solemn-form hearing
+- keane — age: 45 years
+- ardern — role: defendant's counsel at the solemn-form hearing
+- ardern — years_at_bar: 25 years
+- probate-hearing-1927 — date: 14 October 1927
+- probate-hearing-1927 — location: Royal Courts of Justice, London, Probate Divorce and Admiralty Division
+- probate-hearing-1927 — outcome: second codicil not proved; action abandoned by defendant; instruments of 1919 and 1924 stand
+- probate-hearing-1927 — costs: to be paid by defendant; Garside and Prescott to recover in full
+- second-codicil — probate_outcome: not admitted to probate; action to prove it abandoned 14 October 1927
+- walter-eccleston — first_codicil_read: 14 October 1927 — first time Walter reads executed first codicil; reads word "or" for the first time in his life
+- walter-eccleston — claim_status: withdrawn; action abandoned 14 October 1927 on counsel's instructions
+- first-codicil — custody_note_oct1927: R2. Returned from use. RCJ, 14 Oct. 1927. A.P.
+- garside-and-prescott — costs_recoverable: true — costs order made 14 October 1927 against defendant
+- The solemn-form hearing took place on 14 October 1927 at the Royal Courts of Justice (Probate, Divorce and Admiralty Division). The plaintiff's counsel was Keane; the defendant's counsel was Ardern.
+- Walter Eccleston read the executed first codicil (R2) for the first time in his life on 14 October 1927, in the corridor outside the Probate, Divorce and Admiralty Division, handed to him by his counsel Ardern at Prescott's agreement. He read the word 'or' — the operative word in the gift clause — for the first time.
+- After reading the codicil, Walter spoke to Ardern; Ardern withdrew with him; on returning, Ardern stated that his client was not in a position to proceed and that he was instructed to apply for a withdrawal of the claim.
+- The second codicil was not proved and not admitted to probate. The will of 1919 and the first codicil of 1924 stand. Letters of administration with the will annexed to be sought through the Principal Registry.
+- The two handwriting opinions (Mathers for plaintiff: not genuine; Whitmore for defendant: genuine) were noted by the judge as irreconcilable and as not determinative of the decision. The case was decided on text.
+- Costs were ordered against the defendant. Garside & Prescott, having carried the action at its own risk from the caveat, recover them in full. The firm is financially solvent.
+- Prescott noted the custody of R2 on the custody list after returning it to the deed-box: 'R2. Returned from use. RCJ, 14 Oct. 1927. A.P.'
+- Prescott intends to telephone Mr. Booth from the hotel and write to Edgar Fairhurst on the afternoon of 14 October 1927.
+
+## 20-the-estate
+- eccleston-estate — grant.type: letters of administration with the will annexed
+- eccleston-estate — grant.date: November 1927, third week
+- eccleston-estate — grant.grantee: Edgar Fairhurst, as guardian of Nora and George Fairhurst
+- vale-mill — sale.date: January 1928
+- vale-mill — sale.outcome: mortgage discharged; residue remaining; estate not a ruin
+- vale-mill — sold: true
+- walter-eccleston — criminal_status: charged; prosecution follows; new year 1928
+- garside-prescott — costs.recovered: December 1927
+- garside-prescott — status.post_action: solvent; will continue
+- garside-prescott — sole_partner: Arthur Prescott
+- eccleston-estate — matter_file.status: closed; returned to strong-room; January 1928
+- eccleston-estate — handwriting_reports.status: two reports in direct opposition; one finding signature genuine, one not; decision did not rest on either; irresolution confirmed
+- Ch 20 (The Estate): Letters of administration with the will annexed granted to Edgar Fairhurst, as guardian of Nora and George Fairhurst (both minors), in the third week of November 1927. This is NOT probate; no executor was made. This is the correct legal form when the second codicil has failed.
+- Ch 20: Vale Mill sold in January 1928. Proceeds discharged the mortgage; a diminished residue remains. The estate is not a ruin. The children hold Eccleston Hall and the residue.
+- Ch 20: Walter Eccleston charged in the new year (early 1928); the criminal prosecution follows. Stated plainly in the text — not dramatised. He was not a monster; he went down anyway.
+- Ch 20: Garside and Prescott costs taxed and paid December 1927. The firm recovers its costs in full; it is solvent and will continue. It is now Prescott's firm alone.
+- Ch 20: The Eccleston matter file — approximately three inches of cotton-taped paper — returned to the strong-room in January 1928 once the costs receipt was filed. Prescott writes the final entry in the strong-room register below Garside's last entries.
+- Ch 20: The two handwriting reports (Mathers for the plaintiff, finding the signature not genuine; Whitmore for the defendant, finding it genuine) remain in the file in direct opposition. The decision did not rest on either. This is confirmed as the one licensed irresolution — the handwriting experts are never reconciled.
+- Ch 20: Prescott reads back up the strong-room register to the September 1926 entry in Garside's hand: the codicil fetched, the instrument read entire, date confirmed, returned the same day. More precise than the occasion required. Made anyway, because that was Garside's habit.
+- Ch 20: George Fairhurst asks Prescott what happens to the men at the mill. Prescott answers: they pass with the sale; they are the purchaser's concern. Prescott acknowledges in narration that it was not the right thing to say — it was correct but insufficient.
+- Ch 20: Nora Fairhurst at the final Bank Parade visit is quieter than Prescott expected — not exultant, not aggrieved. The way people are when something long-awaited arrives and proves to be not quite what was imagined.
+- Ch 20: The book closes with Prescott sitting down and opening the next file on a Tuesday in January, fifteen months after Josiah Eccleston died at eighty-one in the east bedroom at Eccleston Hall, on a Tuesday in October.
+- Ch 20: Prescott's hotel letter to Edgar Fairhurst (October 14, 1927, afternoon): brief — action succeeded, second codicil failed of proof, letters of administration with the will annexed to be sought, estate to pass to the children under the 1924 codicil; fuller detail to follow on return to Preston.
+
+## canon
+- The operative words of the first codicil (R2, recordId 'first-codicil') are 'or her issue' — this is the canonical registered text and may never be altered, corrected, or reconciled toward any other version by any downstream agent or repair pass.
+- The recital in the second codicil (R3, recordId 'second-codicil') says 'and her issue' — this is the canonical registered text and may never be altered, corrected, or reconciled toward any other version by any downstream agent or repair pass. The one-word variance between R2 and R3 is the book's engine, by design.
+- Walter Eccleston always says 'and her issue' in dialogue when quoting the first codicil. This is deliberate characterisation — the plot device itself — rooted in Josiah's spoken words to him in March 1924: 'I've left it to Margaret and her issue after her.' No continuity, audit, or repair pass may correct Walter's spoken dialogue toward the registered record text.
+- No copy, draft, or carbon of the first codicil has ever existed outside Garside & Prescott's strong-room (the executed original and the letter-book carbon of covering correspondence, nothing else). Drafters must not invent a copy at Eccleston Hall or anywhere else. This is load-bearing: it is why a genuine privately-made second codicil could not have recited the text correctly, and why nobody innocent could have recited it wrongly with the date exactly right.
+- Arthur Prescott is the single POV throughout — third person limited, past tense. No other POV chapters exist. Off-page events reach the book only through period-true channels (correspondence, attendance notes, depositions, opposing solicitors' letters, witness testimony in the room). Verbatim document inserts are records within chapters, not POV breaches.
+- The ending is fully resolved and the resolution is the contract of the book: the forgery is proven on the page; Walter's authorship is established; the action collapses; the estate passes under the 1924 codicil via letters of administration with the will annexed to Edgar Fairhurst as guardian; criminal consequence begins and is stated plainly. No withheld answer, no final-page unsettling. The editor and reader passes must not re-complicate it.
+- The handwriting experts split honestly and remain split throughout. This is a feature, not a defect — the book's argument about the limits of expert evidence. No agent, editor, or repair pass may resolve the handwriting question. Text convicts; ink and typewriter evidence only narrows provenance.
+- R5 (recordId 'firm-notice-letter', Garside & Prescott to Thurston & Marsh, 2 November 1926) gave Walter the date of the first codicil in writing — 'a codicil thereto dated the 15th March 1924' — without ever giving him its text. This is how Walter could forge a codicil with the right date but the wrong one word: the date came from R5; the text came from his own memory.
+- Both children (Nora Fairhurst, 19; George Fairhurst, 16) are minors under 1926 law (majority was 21 until the Family Law Reform Act 1969). If the second codicil fails, the grant is letters of administration with the will annexed to Edgar Fairhurst as their guardian — not probate to the children. Walter is never the executor under any surviving instrument after the first codicil revoked that appointment in its entirety.
+- Every chapter must close or materially narrow one of the nine enumerated innocent explanations of the second codicil: (a) the machine, (b) Josiah's presence, (c) the witnesses, (d) the profession, (e) the firm, (f) the habit, (g) the despatch-box, (h) the September reading, (i) the date asymmetry. A door once closed must not be re-walked. The calendar countdown (days to the hearing) must appear in every chapter and decrease monotonically.

@@ -1,0 +1,344 @@
+{
+  "version": 2,
+  "completed": [
+    "researcher",
+    "architect",
+    "plotter",
+    "threads",
+    "calibrate-drafter:iter-1-sample",
+    "calibrate-drafter:iter-1-grade",
+    "calibrate-drafter:complete",
+    "drafter:01-the-strong-room",
+    "drafter:02-the-second-codicil",
+    "drafter:03-the-habit",
+    "drafter:04-bank-parade",
+    "drafter:05-the-hinge",
+    "drafter:06-the-letter-book",
+    "drafter:07-the-file",
+    "drafter:08-the-gazette",
+    "drafter:09-vale-mill",
+    "drafter:10-the-machine",
+    "drafter:11-the-sale-contract",
+    "drafter:11-the-witnesses",
+    "drafter:12-the-sale-contract",
+    "drafter:12-the-witnesses",
+    "drafter:13-the-fairhursts",
+    "drafter:14-the-commission",
+    "drafter:15-the-hall",
+    "drafter:16-the-date",
+    "drafter:17-the-ninth-word",
+    "drafter:18-counsels-brief",
+    "drafter:19-solemn-form",
+    "drafter:20-the-estate",
+    "editor-continuity:01-the-strong-room",
+    "editor-continuity:02-the-second-codicil",
+    "editor-continuity:03-the-habit",
+    "editor-continuity:04-bank-parade",
+    "editor-continuity:05-the-hinge",
+    "editor-continuity:06-the-letter-book",
+    "editor-continuity:07-the-file",
+    "editor-continuity:08-the-gazette",
+    "editor-continuity:09-vale-mill",
+    "editor-continuity:10-the-machine",
+    "editor-continuity:11-the-sale-contract",
+    "editor-continuity:12-the-sale-contract",
+    "editor-continuity:12-the-witnesses",
+    "editor-continuity:13-the-fairhursts",
+    "editor-continuity:14-the-commission",
+    "editor-continuity:15-the-hall",
+    "editor-continuity:16-the-date",
+    "editor-continuity:17-the-ninth-word",
+    "editor-continuity:20-the-estate",
+    "editor-compression:01-the-strong-room",
+    "editor-compression:02-the-second-codicil",
+    "editor-compression:03-the-habit",
+    "editor-compression:04-bank-parade",
+    "editor-compression:05-the-hinge",
+    "editor-compression:06-the-letter-book",
+    "editor-compression:07-the-file",
+    "editor-compression:08-the-gazette",
+    "editor-compression:09-vale-mill",
+    "editor-compression:10-the-machine",
+    "editor-compression:11-the-sale-contract",
+    "editor-compression:12-the-sale-contract",
+    "editor-compression:12-the-witnesses",
+    "editor-compression:13-the-fairhursts",
+    "editor-compression:14-the-commission",
+    "editor-compression:15-the-hall",
+    "editor-compression:16-the-date",
+    "editor-compression:17-the-ninth-word",
+    "editor-compression:18-counsels-brief",
+    "editor-compression:19-solemn-form",
+    "editor-compression:20-the-estate",
+    "editor-pacing:macro",
+    "editor-pacing:01-the-strong-room",
+    "editor-pacing:02-the-second-codicil",
+    "editor-pacing:03-the-habit",
+    "editor-pacing:04-bank-parade",
+    "editor-pacing:05-the-hinge",
+    "editor-pacing:06-the-letter-book",
+    "editor-pacing:07-the-file",
+    "editor-pacing:08-the-gazette",
+    "editor-pacing:09-vale-mill",
+    "editor-pacing:10-the-machine",
+    "editor-pacing:11-the-sale-contract",
+    "editor-pacing:12-the-sale-contract",
+    "editor-pacing:12-the-witnesses",
+    "editor-pacing:13-the-fairhursts",
+    "editor-pacing:14-the-commission",
+    "editor-pacing:15-the-hall",
+    "editor-pacing:16-the-date",
+    "editor-pacing:17-the-ninth-word",
+    "editor-pacing:18-counsels-brief",
+    "editor-pacing:19-solemn-form",
+    "editor-pacing:20-the-estate",
+    "editor-voice:01-the-strong-room",
+    "editor-voice:02-the-second-codicil",
+    "editor-voice:03-the-habit",
+    "editor-voice:04-bank-parade",
+    "editor-voice:05-the-hinge",
+    "editor-voice:06-the-letter-book",
+    "editor-voice:07-the-file",
+    "editor-voice:08-the-gazette",
+    "editor-voice:09-vale-mill",
+    "editor-voice:10-the-machine",
+    "editor-voice:11-the-sale-contract",
+    "editor-voice:12-the-sale-contract",
+    "editor-voice:12-the-witnesses",
+    "editor-voice:13-the-fairhursts",
+    "editor-voice:14-the-commission",
+    "editor-voice:15-the-hall",
+    "editor-voice:16-the-date",
+    "editor-voice:17-the-ninth-word",
+    "editor-voice:18-counsels-brief",
+    "editor-voice:19-solemn-form",
+    "editor-voice:20-the-estate",
+    "reader:act-1",
+    "reader:act-2",
+    "reader:act-3",
+    "reader:synthesis",
+    "continuity-fact-audit",
+    "editor-continuity:18-counsels-brief",
+    "editor-continuity:19-solemn-form"
+  ],
+  "entries": {
+    "drafter:01-the-strong-room": {
+      "at": "2026-07-21T14:14:42.878Z",
+      "artifacts": [
+        "draft/01-the-strong-room.md"
+      ],
+      "hashes": {
+        "draft/01-the-strong-room.md": "d0509263764e343e174fc3b2d3abcd2776c399bb0fff2d339e75a03208f53636"
+      },
+      "eventOffset": 154
+    },
+    "drafter:02-the-second-codicil": {
+      "at": "2026-07-21T14:28:40.868Z",
+      "artifacts": [
+        "draft/02-the-second-codicil.md"
+      ],
+      "hashes": {
+        "draft/02-the-second-codicil.md": "9289fd360b3615dd051d305803a2d2e9700796143454a7da04f0a99bf713761a"
+      },
+      "eventOffset": 207
+    },
+    "drafter:03-the-habit": {
+      "at": "2026-07-21T14:41:55.106Z",
+      "artifacts": [
+        "draft/03-the-habit.md"
+      ],
+      "hashes": {
+        "draft/03-the-habit.md": "90eb0466fd1578c7f846419f26b3028bafafb9f27052891d40b1957849b4b647"
+      },
+      "eventOffset": 243
+    },
+    "drafter:04-bank-parade": {
+      "at": "2026-07-21T14:58:20.619Z",
+      "artifacts": [
+        "draft/04-bank-parade.md"
+      ],
+      "hashes": {
+        "draft/04-bank-parade.md": "d315c38c67ed53affc742d690d24b21c0c1c98cd211b8823a662fc15a237bd56"
+      },
+      "eventOffset": 279
+    },
+    "drafter:05-the-hinge": {
+      "at": "2026-07-21T15:14:24.617Z",
+      "artifacts": [
+        "draft/05-the-hinge.md"
+      ],
+      "hashes": {
+        "draft/05-the-hinge.md": "72ee90f134865dad11af5e3182c1d94286293ae4cb4cf47de3b99693ac028366"
+      },
+      "eventOffset": 323
+    },
+    "drafter:06-the-letter-book": {
+      "at": "2026-07-22T19:40:05.879Z",
+      "artifacts": [
+        "draft/06-the-letter-book.md"
+      ],
+      "hashes": {
+        "draft/06-the-letter-book.md": "1bc85c342c129665b4e855c738078e6ec77ac3f8928663d323b2d5b4ebfa5b1c"
+      },
+      "eventOffset": 384
+    },
+    "drafter:07-the-file": {
+      "at": "2026-07-22T20:02:25.027Z",
+      "artifacts": [
+        "draft/07-the-file.md"
+      ],
+      "hashes": {
+        "draft/07-the-file.md": "d196b2cc5bb32e18290100c50e8baa0fcff2eb7645a6be2822c66ae2bc096058"
+      },
+      "eventOffset": 426
+    },
+    "drafter:08-the-gazette": {
+      "at": "2026-07-22T20:17:32.542Z",
+      "artifacts": [
+        "draft/08-the-gazette.md"
+      ],
+      "hashes": {
+        "draft/08-the-gazette.md": "01abb740a220e074b60cb0b360054416a9b46830d41791505e9c6de80f4d2220"
+      },
+      "eventOffset": 452
+    },
+    "drafter:09-vale-mill": {
+      "at": "2026-07-22T20:32:10.550Z",
+      "artifacts": [
+        "draft/09-vale-mill.md"
+      ],
+      "hashes": {
+        "draft/09-vale-mill.md": "51014581543b4df145237a4caecb2ab35e72a5c56edef22783f0d45565184d3f"
+      },
+      "eventOffset": 506
+    },
+    "drafter:10-the-machine": {
+      "at": "2026-07-22T20:47:59.414Z",
+      "artifacts": [
+        "draft/10-the-machine.md"
+      ],
+      "hashes": {
+        "draft/10-the-machine.md": "c47967efad4625932fd47d5098f7c9c9314074c2f570baf7ab45741754feeb8e"
+      },
+      "eventOffset": 549
+    },
+    "drafter:11-the-sale-contract": {
+      "at": "2026-07-22T21:02:23.111Z",
+      "artifacts": [
+        "draft/11-the-sale-contract.md"
+      ],
+      "hashes": {
+        "draft/11-the-sale-contract.md": "5e8c120b9dfde924b4349d96d8e65b5530075f8681253bedb8f8d4026765799f"
+      },
+      "eventOffset": 592
+    },
+    "drafter:11-the-witnesses": {
+      "at": "2026-07-22T21:22:10.807Z",
+      "artifacts": [
+        "draft/11-the-witnesses.md"
+      ],
+      "hashes": {},
+      "eventOffset": 636
+    },
+    "drafter:12-the-sale-contract": {
+      "at": "2026-07-22T21:33:30.769Z",
+      "artifacts": [
+        "draft/12-the-sale-contract.md"
+      ],
+      "hashes": {
+        "draft/12-the-sale-contract.md": "e2921941d7e63b4bb6de0c10d51f4fbef116de6a48d0a236c855d41f2bfc6183"
+      },
+      "eventOffset": 665
+    },
+    "drafter:12-the-witnesses": {
+      "at": "2026-07-22T21:48:26.596Z",
+      "artifacts": [
+        "draft/12-the-witnesses.md"
+      ],
+      "hashes": {
+        "draft/12-the-witnesses.md": "e12f47bca5ba552ddefe79e337c3a567c53aea8dd528a743cc93b8ee2d826198"
+      },
+      "eventOffset": 688
+    },
+    "drafter:13-the-fairhursts": {
+      "at": "2026-07-22T21:58:49.702Z",
+      "artifacts": [
+        "draft/13-the-fairhursts.md"
+      ],
+      "hashes": {
+        "draft/13-the-fairhursts.md": "e44cc477489d19e6b358d87407f2d9616c953e5a10821c6cd5ba252549e3130b"
+      },
+      "eventOffset": 716
+    },
+    "drafter:14-the-commission": {
+      "at": "2026-07-22T22:08:13.667Z",
+      "artifacts": [
+        "draft/14-the-commission.md"
+      ],
+      "hashes": {
+        "draft/14-the-commission.md": "0b52ba6f3fe78c7420b2dd4b4f7a07247aeec29320c4e9f809840811777f1067"
+      },
+      "eventOffset": 739
+    },
+    "drafter:15-the-hall": {
+      "at": "2026-07-22T22:19:28.663Z",
+      "artifacts": [
+        "draft/15-the-hall.md"
+      ],
+      "hashes": {
+        "draft/15-the-hall.md": "33a96c25e65f7a2fddc77ff5a5635535d711882737edf173fd8c17b22e3fb0c9"
+      },
+      "eventOffset": 780
+    },
+    "drafter:16-the-date": {
+      "at": "2026-07-22T22:34:53.026Z",
+      "artifacts": [
+        "draft/16-the-date.md"
+      ],
+      "hashes": {
+        "draft/16-the-date.md": "02723e084692dcd9896c1f01ba5e762e59454d10c8af6036cea92a46197eaf8f"
+      },
+      "eventOffset": 812
+    },
+    "drafter:17-the-ninth-word": {
+      "at": "2026-07-22T22:54:51.648Z",
+      "artifacts": [
+        "draft/17-the-ninth-word.md"
+      ],
+      "hashes": {
+        "draft/17-the-ninth-word.md": "909a4d4dd04db0a8e857ff976d11c5d6b91284ce1d360fe06441eb82227487c9"
+      },
+      "eventOffset": 837
+    },
+    "drafter:18-counsels-brief": {
+      "at": "2026-07-22T23:05:07.755Z",
+      "artifacts": [
+        "draft/18-counsels-brief.md"
+      ],
+      "hashes": {
+        "draft/18-counsels-brief.md": "eff4986bc2d33c15c9414d16366c355e2c4616926b5e78a104a3f0975e184b2c"
+      },
+      "eventOffset": 871
+    },
+    "drafter:19-solemn-form": {
+      "at": "2026-07-22T23:16:39.333Z",
+      "artifacts": [
+        "draft/19-solemn-form.md"
+      ],
+      "hashes": {
+        "draft/19-solemn-form.md": "51c19f8ff64c4417ab9802fb27004fe3e4e9c04308f5199bb20dedf838bee41a"
+      },
+      "eventOffset": 904
+    },
+    "drafter:20-the-estate": {
+      "at": "2026-07-22T23:27:05.600Z",
+      "artifacts": [
+        "draft/20-the-estate.md"
+      ],
+      "hashes": {
+        "draft/20-the-estate.md": "1ec3ec4bd863d2cc5eb80f939d589253623b6e35f997e6c5fb71b6a6a458c792"
+      },
+      "eventOffset": 934
+    }
+  }
+}
