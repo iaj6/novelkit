@@ -1,0 +1,333 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-11T10:15:48.047Z",
+  "summary": {
+    "critical": 3,
+    "high": 4,
+    "medium": 4,
+    "low": 1
+  },
+  "findings": [
+    {
+      "id": "continuity-fact-001",
+      "category": "continuity-fact",
+      "severity": "high",
+      "title": "N1 bracket printed incomplete in Ch. 09 — sentence missing from one of four permitted full quotations",
+      "description": "Chapter 09 is one of the four permitted full printings of the master document (N1, recordId `master-n1`) and the chapter where the reader receives N1 and N17 side by side to establish the central dramatic irony. The canonical text of the bracket, as registered under `master-n1`, reads: '[ 7 or 8 — take her in. Say she began bleeding on her own and you do not know why. Do not wait for the morning. ]' The chapter renders the bracket without the middle sentence, printing only: '[ 7 or 8 — take her in. Do not wait for the morning. ]' The omission is functional, not merely formal: 'what to say when you get there' is part of the document's practical purpose. The truncation also produces a cross-chapter inconsistency: Ch. 06 has Doina correctly recite the full bracket text from N14 (which includes the omitted sentence), so the master as printed in Ch. 09 is shorter than the copy the reader encountered three chapters earlier. The act-1 assessor identified this by direct comparison against the registered record.",
+      "evidence": [
+        {
+          "file": "draft/09-the-bracket.md",
+          "text": "[ 7 or 8 — take her in. Do not wait for the morning. ] (bracket rendered without 'Say she began bleeding on her own and you do not know why.')"
+        },
+        {
+          "file": "draft/06-the-good-coat.md",
+          "text": "Doina recites the full bracket including 'Say she began bleeding on her own and you do not know why.' — correctly matching N14's canonical text, which creates the cross-chapter inconsistency with ch. 09's rendering of N1"
+        }
+      ],
+      "suggested_action": "In draft/09-the-bracket.md, restore the bracket to its full registered text: '[ 7 or 8 — take her in. Say she began bleeding on her own and you do not know why. Do not wait for the morning. ]' Verify against `read_record('master-n1')` before finalizing.",
+      "auto_repair_safe": true,
+      "repair_agent": "repair-fact-normalize",
+      "repair_params": {
+        "canon_source": "canon/continuity.md",
+        "edits": [
+          {
+            "file": "draft/09-the-bracket.md",
+            "wrong_text": "[ 7 or 8 — take her in. Do not wait for the morning. ]",
+            "correct_text": "[ 7 or 8 — take her in. Say she began bleeding on her own and you do not know why. Do not wait for the morning. ]"
+          }
+        ]
+      }
+    },
+    {
+      "id": "continuity-fact-002",
+      "category": "continuity-fact",
+      "severity": "medium",
+      "title": "N14 line 6 word-order may have drifted from registered canonical text in Ch. 14",
+      "description": "In Ch. 14, Doina's full recitation of N14 renders line 6 as 'Burn nothing until she is well. Keep and wash.' The canonical text of N1 reads 'Burn nothing until she is well. Wash and keep.' (word order: Wash, then keep). The brief explicitly requires that 'before re-quoting any node in a later chapter, read_record it and reproduce it exactly.' The word-order reversal ('Keep and wash' versus 'Wash and keep') is either (a) an intentional incidental variant registered in the canonical text of `copy-n14` — which the brief permits on non-terminal lines — or (b) an in-prose drift from N14's canonical registered text. This cannot be resolved in synthesis mode without calling read_record on `copy-n14`. If the registered text of copy-n14 reads 'Wash and keep' and the chapter reads 'Keep and wash,' this is a continuity-fact error. Requires human verification against the registered record before the manuscript is finalised.",
+      "evidence": [
+        {
+          "file": "draft/14-the-ash.md",
+          "text": "N14 line 6 rendered as 'Burn nothing until she is well. Keep and wash.' — word order may diverge from registered copy-n14 canonical text"
+        }
+      ],
+      "suggested_action": "Call read_record('copy-n14') and compare line 6 against the chapter's in-prose rendering. If the registered text reads 'Wash and keep,' correct the chapter to match. If the registered text already reads 'Keep and wash,' the variant is intentional and no action is needed.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "structural-failure-001",
+      "category": "structural-failure",
+      "severity": "medium",
+      "title": "Ch. 25 — Munteanu explains document genealogy directly to Doina, violating brief hard constraint",
+      "description": "The brief states: 'Any chapter in which a character narrates the structure of the network to another character is a failed chapter.' In Ch. 25, during the final interrogation of Doina, Munteanu says: 'The difference is inherited — it means your copy comes from a branch that did not go through the version that produced this wording. A branch that is older, or separate. That is what the arithmetic says.' This uses 'branch' and 'inherited' in direct explanatory address to Doina, narrating the transmission structure. The word 'tree' does not appear, and the scene is dramatically motivated (Munteanu is using his analysis as an interrogation lever), but the constraint covers structural terms and the narration of transmission patterns — both of which are present. The scene works in other respects; this is a targeted overstep, not a pervasive pattern.",
+      "evidence": [
+        {
+          "file": "draft/25-the-questioning-room.md",
+          "text": "'The difference is inherited — it means your copy comes from a branch that did not go through the version that produced this wording. A branch that is older, or separate. That is what the arithmetic says.' — Munteanu to Doina, using 'branch' and 'inherited' in explanatory address"
+        }
+      ],
+      "suggested_action": "Revise Munteanu's interrogation so he demonstrates his knowledge of Doina's position in the transmission without narrating the structure to her. He can lay two copies side by side and indicate the line-9 difference with one finger, letting the implication carry what the current version over-states. Remove or reframe the 'branch' and 'inherited' sentences.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "over-articulation-001",
+      "category": "over-articulation",
+      "severity": "medium",
+      "title": "Ch. 29 formal determination includes explicit causal language naming the mechanism the book carries structurally",
+      "description": "The brief states that the book's argument 'must be carried entirely by the tree of copies — never stated by a character,' and that 'any sentence that begins to say what the mutations mean is an instance of this failure.' Munteanu's written determination in Ch. 29 includes: 'In one branch of transmission, a formatting difference in the source's ninth element propagated a material change in the rendered instruction.' This is a document (a formal determination), not dialogue, and the phrase 'a material change in the rendered instruction' does not name what Ana did or what happened to her. But the sentence articulates the causal mechanism of the formatting difference — exactly the mechanism the book is designed to carry through structure rather than statement. The surrounding passages handle this well ('The file did not contain the reason the document had existed... The file did not contain the reason the cellar had been dark'), and the one over-articulated sentence stands out against them.",
+      "evidence": [
+        {
+          "file": "draft/29-the-deadline.md",
+          "text": "'In one branch of transmission, a formatting difference in the source's ninth element propagated a material change in the rendered instruction.' — Munteanu's formal determination, naming the causal mechanism the book intends to carry structurally"
+        }
+      ],
+      "suggested_action": "Revise this sentence in the determination toward a purely institutional register that describes the administrative event without naming the causal mechanism: e.g., characterise the formatting difference as a documentary discrepancy and note that a descendant copy contained altered wording in the terminal instruction, without stating that the formatting difference caused the alteration. The surrounding passages model the appropriate restraint.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "structural-failure-002",
+      "category": "structural-failure",
+      "severity": "medium",
+      "title": "Ch. 21 and Ch. 23 re-inventory material the reader already holds — compounding-mechanism gate 2 partially failed",
+      "description": "The compounding mechanism requires that each chapter change a named fact, foreclose an option, or recontextualise something the reader holds — and that what it changes be new, not a re-measurement of something established in a prior chapter. Ch. 21 opens with Ilinca's three-branch accounting (N2 confirmed clean, N3 confirmed clean, N4 open) — an accounting established in Ch. 19 — and lingers in this re-inventory for approximately two-thirds of the chapter before reaching the chapter's new element: the decision to go to Strada Crișan. The decision is new; the arithmetic driving the chapter is not. Ch. 23 reproduces Munteanu's G1 profile from his notebook (female, mill or mill-adjacent, working familiarity with standard documents) — a profile the reader holds in full from earlier chapters — as a substantial middle passage before arriving at the day count (seven days) and the decision to go to Dorobanților. Both chapters advance their threads by their close; neither is a dead chapter. But both contain sustained passages that re-take a reading already on the page, diluting the compression Act III requires.",
+      "evidence": [
+        {
+          "file": "draft/21-the-window.md",
+          "text": "Opening two-thirds reiterate the three-branch accounting (N2, N3, N4) established in Ch. 19 — new element (the decision to go to Strada Crișan) arrives late"
+        },
+        {
+          "file": "draft/23-three-days-remaining.md",
+          "text": "Middle section reproduces Munteanu's G1 profile from his notebook — a profile the reader holds from earlier chapters — before arriving at the day count and Dorobanților decision"
+        }
+      ],
+      "suggested_action": "In Ch. 21, cut or compress the three-branch re-inventory; the reader holds that arithmetic. Open closer to the decision. In Ch. 23, cut or compress the G1-profile re-reading from Munteanu's notebook; name what has changed (the address, the day count, the next action), not what has not. Both chapters can keep their new elements while losing the re-measurement material.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "ending-mode-uniformity-001",
+      "category": "ending-mode-uniformity",
+      "severity": "low",
+      "title": "Act II literary-fade ending dominance — five to six of ten chapters close in atmospheric quiet",
+      "description": "The brief specifies 'closing register may vary freely; quiet endings where the chapter wants them, hard cuts where it does not. Do not adopt a uniform closing mode.' In Act II (chapters 11–20), approximately five to six of the ten chapters close in variants of atmospheric quiet: lamp going off, fog sitting on the street, heat coming on briefly, a character sitting still in the dark. The two clearest exceptions are Ch. 18 (hard cut on Munteanu reaching for his pen) and Ch. 15 (elliptical close on the bracket-or-nine question). The remaining chapters default toward the literary-fade mode. The brief does not prohibit quiet endings — it prohibits a uniform closing mode — and the Act II irony and compounding mechanism carry the act regardless. But a reader who has internalized the book's clock will notice the suspended-held-quiet close becoming predictable rather than chosen. This is a texture issue concentrated in one act, not a book-level structural problem; hence the low severity.",
+      "evidence": [
+        {
+          "file": "draft/11-the-sister.md",
+          "text": "Literary-fade close (quiet atmospheric ending)",
+          "chapter": "11"
+        },
+        {
+          "file": "draft/13-the-bloc-woman.md",
+          "text": "Literary-fade close",
+          "chapter": "13"
+        },
+        {
+          "file": "draft/16-two-branches.md",
+          "text": "Literary-fade close",
+          "chapter": "16"
+        },
+        {
+          "file": "draft/17-nine-or-bracket.md",
+          "text": "Literary-fade close",
+          "chapter": "17"
+        },
+        {
+          "file": "draft/19-doina-marcu.md",
+          "text": "Literary-fade close",
+          "chapter": "19"
+        }
+      ],
+      "suggested_action": "Select two or three Act II chapters whose content would support a harder close — particularly chapters following strong compounding-mechanism beats (Ch. 15, Ch. 17, Ch. 19 are candidates) — and revise their endings toward mid-action cut, declarative close, or turn. Leave the literary-fade closings where the chapter genuinely wants them (fog and cold are the book's ambient register and are not always wrong); revise the ones that feel like default rather than choice.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "continuity-fact-audit-001",
+      "category": "continuity-fact",
+      "severity": "critical",
+      "title": "N1 bracket text truncated in Ch 09 — sentence missing vs canonical master-n1",
+      "description": "Chapter 09 presents Ilinca physically reading N1 from her desk and renders the bracket as '[ 7 or 8 — take her in. Do not wait for the morning. ]' — omitting the sentence 'Say she began bleeding on her own and you do not know why.' The canonical registered record master-n1 includes that sentence, and chapters 24 and 28 both reproduce the full text correctly. The missing sentence is load-bearing: it distinguishes the instruction from a mere timing directive and establishes the alibi phrasing. Its absence in the chapter 09 verbatim rendering is a narrator-asserted re-quotation divergence from a registered document.",
+      "evidence": [
+        {
+          "file": "draft/09-the-bracket.md",
+          "text": "[ 7 or 8 — take her in. Do not wait for the morning. ]",
+          "chapter": "09-the-bracket"
+        },
+        {
+          "file": "draft/24-the-light-from-the-door.md",
+          "text": "7 or 8 — take her in. Say she began bleeding on her own and you do not know why. Do not wait for the morning.",
+          "chapter": "24-the-light-from-the-door"
+        },
+        {
+          "file": "draft/28-the-handover.md",
+          "text": "[ 7 or 8 — take her in. Say she began bleeding on her own and you do not know why.\n     Do not wait for the morning. ]",
+          "chapter": "28-the-handover"
+        }
+      ],
+      "suggested_action": "In draft/09-the-bracket.md, replace the truncated bracket with the full canonical bracket text from master-n1, adding the missing sentence between 'take her in.' and 'Do not wait for the morning.'",
+      "auto_repair_safe": true,
+      "repair_agent": "repair-fact-normalize",
+      "repair_params": {
+        "canon_source": "canon/continuity.md (item 3) and registered record master-n1",
+        "edits": [
+          {
+            "file": "draft/09-the-bracket.md",
+            "wrong_text": "[ 7 or 8 — take her in. Do not wait for the morning. ]",
+            "correct_text": "[ 7 or 8 — take her in. Say she began bleeding on her own and you do not know why.\n     Do not wait for the morning. ]"
+          }
+        ]
+      }
+    },
+    {
+      "id": "continuity-fact-audit-002",
+      "category": "continuity-fact",
+      "severity": "critical",
+      "title": "Ana Petrescu's hospital admission time and death time differ between Ch 04 and Ch 29",
+      "description": "Chapter 04 presents Munteanu reading from the official hospital notification form and death certificate: Ana Petrescu was admitted at nineteen hundred hours (19:00) and died at 23:12 on 4 November 1984. Chapter 29 presents the same facts in Munteanu's formal determination: admitted at 14:33, died at 18:47. Both sets of times are narrator-asserted from official documents, not POV estimates. The duration is nearly identical in both versions (~4 h 12–14 min), indicating one set was shifted in drafting. Rodica Petrescu's testimony in Ch 04 ('did not take her to the hospital until the evening of the fourth') is consistent with 19:00 but not with 14:33.",
+      "evidence": [
+        {
+          "file": "draft/04-the-file-opens.md",
+          "text": "Admitted to the Spitalul Orășenesc at nineteen hundred hours on the fourth of November. Death recorded at twenty-three hundred and twelve on the same date.",
+          "chapter": "04-the-file-opens"
+        },
+        {
+          "file": "draft/29-the-deadline.md",
+          "text": "Admitted to the Dej district hospital at 14:33 on 4 November 1984, died at 18:47 the same date.",
+          "chapter": "29-the-deadline"
+        },
+        {
+          "file": "draft/04-the-file-opens.md",
+          "text": "she did not take her to the hospital until the evening of the fourth because going to the hospital was — she stopped again.",
+          "chapter": "04-the-file-opens"
+        }
+      ],
+      "suggested_action": "A human must decide which set of times is canonical. The Ch 04 set (19:00/23:12) is supported by Rodica's 'evening' testimony in the same chapter. If 19:00/23:12 is confirmed canonical, update Ch 29's determination text to match. If 14:33/18:47 is chosen instead, update Ch 04's official-document reading and reconcile Rodica's 'evening' phrasing.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "continuity-fact-audit-003",
+      "category": "continuity-fact",
+      "severity": "critical",
+      "title": "Ch 20 Munteanu notebook (24 Nov) names Strada Crișan; canonical registered record and plot timeline require Dorobanților",
+      "description": "Chapter 20 shows Munteanu writing his 24 November private notebook entry with the line 'Address on Strada Crișan not yet visited.' But the canonical registered record munteanu-notebook-nov24 ends 'Maker and address: pending visit, Dorobanților.' Chapter 27 explicitly establishes that Munteanu had only the Dorobanților address on November 24 (from Damian's interview in Ch 12) and did not learn the Strada Crișan address until the Population Section registry on December 1: 'The address on Dorobanților that he had spent the morning of the twenty-ninth working had yielded a woman who had moved out in February; the population register had been what gave him Strada Crișan.' Writing 'Strada Crișan' in the November 24 notebook entry is therefore both a verbatim divergence from the registered canonical record and a plot-timeline anachronism.",
+      "evidence": [
+        {
+          "file": "draft/20-seven-copies.md",
+          "text": "He stopped. He wrote: Maker of prior document not yet identified. Address on Strada Crișan not yet visited.",
+          "chapter": "20-seven-copies"
+        },
+        {
+          "file": "draft/27-the-address.md",
+          "text": "The address on Dorobanților that he had spent the morning of the twenty-ninth working had yielded a woman who had moved out in February; the population register had been what gave him Strada Crișan.",
+          "chapter": "27-the-address"
+        }
+      ],
+      "suggested_action": "In draft/20-seven-copies.md, change 'Address on Strada Crișan not yet visited' to 'Address on Dorobanților not yet visited' to match the canonical munteanu-notebook-nov24 record and the timeline established in Ch 27.",
+      "auto_repair_safe": true,
+      "repair_agent": "repair-fact-normalize",
+      "repair_params": {
+        "canon_source": "registered record munteanu-notebook-nov24",
+        "edits": [
+          {
+            "file": "draft/20-seven-copies.md",
+            "wrong_text": "Maker of prior document not yet identified. Address on Strada Crișan not yet visited.",
+            "correct_text": "Maker of prior document not yet identified. Address on Dorobanților not yet visited."
+          }
+        ]
+      }
+    },
+    {
+      "id": "det-fact-conflict:ilinca-rosca:collation_node_count",
+      "category": "continuity-fact",
+      "severity": "high",
+      "title": "Contradictory collation_node_count for ilinca-rosca",
+      "description": "The world store holds conflicting live values for ilinca-rosca.collation_node_count: 2 nodes (03-georgeta) vs 11 nodes (22-nine-numbered) vs 12 nodes (26-recovery).",
+      "evidence": [
+        {
+          "file": "draft/03-georgeta.md",
+          "text": "collation_node_count = 2 nodes (03-georgeta)",
+          "fact_id": "fact:03-georgeta:ilinca-rosca:collation_node_count",
+          "chapter": "03-georgeta"
+        },
+        {
+          "file": "draft/22-nine-numbered.md",
+          "text": "collation_node_count = 11 nodes (22-nine-numbered)",
+          "fact_id": "fact:22-nine-numbered:ilinca-rosca:collation_node_count",
+          "chapter": "22-nine-numbered"
+        },
+        {
+          "file": "draft/26-recovery.md",
+          "text": "collation_node_count = 12 nodes (26-recovery)",
+          "fact_id": "fact:26-recovery:ilinca-rosca:collation_node_count",
+          "chapter": "26-recovery"
+        }
+      ],
+      "suggested_action": "Reconcile the values; supersede the incorrect assertion (or fix the prose so they agree).",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "det-fact-conflict:node-n14:location",
+      "category": "continuity-fact",
+      "severity": "high",
+      "title": "Contradictory location for node-n14",
+      "description": "The world store holds conflicting live values for node-n14.location: folded inside Doina's geography book (unknown) vs Miliție evidence, Dej district station — retrieved from Doina Marcu's factory locker, 22 November 1984 (18-the-hostel-door).",
+      "evidence": [
+        {
+          "file": "draft/unknown.md",
+          "text": "location = folded inside Doina's geography book (unknown)",
+          "fact_id": "fact:unknown:node-n14:location",
+          "chapter": "unknown"
+        },
+        {
+          "file": "draft/18-the-hostel-door.md",
+          "text": "location = Miliție evidence, Dej district station — retrieved from Doina Marcu's factory locker, 22 November 1984 (18-the-hostel-door)",
+          "fact_id": "fact:18-the-hostel-door:node-n14:location",
+          "chapter": "18-the-hostel-door"
+        }
+      ],
+      "suggested_action": "Reconcile the values; supersede the incorrect assertion (or fix the prose so they agree).",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "det-fact-conflict:vasile-munteanu:node_count",
+      "category": "continuity-fact",
+      "severity": "high",
+      "title": "Contradictory node_count for vasile-munteanu",
+      "description": "The world store holds conflicting live values for vasile-munteanu.node_count: 1 nodes (04-the-file-opens) vs 3 nodes (12-fourth-generation) vs 3 nodes (13-the-bloc-woman) vs 11 nodes (28-the-handover).",
+      "evidence": [
+        {
+          "file": "draft/04-the-file-opens.md",
+          "text": "node_count = 1 nodes (04-the-file-opens)",
+          "fact_id": "fact:04-the-file-opens:vasile-munteanu:node_count",
+          "chapter": "04-the-file-opens"
+        },
+        {
+          "file": "draft/12-fourth-generation.md",
+          "text": "node_count = 3 nodes (12-fourth-generation)",
+          "fact_id": "fact:12-fourth-generation:vasile-munteanu:node_count",
+          "chapter": "12-fourth-generation"
+        },
+        {
+          "file": "draft/13-the-bloc-woman.md",
+          "text": "node_count = 3 nodes (13-the-bloc-woman)",
+          "fact_id": "fact:13-the-bloc-woman:vasile-munteanu:node_count",
+          "chapter": "13-the-bloc-woman"
+        },
+        {
+          "file": "draft/28-the-handover.md",
+          "text": "node_count = 11 nodes (28-the-handover)",
+          "fact_id": "fact:28-the-handover:vasile-munteanu:node_count",
+          "chapter": "28-the-handover"
+        }
+      ],
+      "suggested_action": "Reconcile the values; supersede the incorrect assertion (or fix the prose so they agree).",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    }
+  ]
+}

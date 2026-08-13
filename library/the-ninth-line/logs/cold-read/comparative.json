@@ -1,0 +1,133 @@
+{
+  "lens": "comparative",
+  "score_out_of_10": 7.5,
+  "would_finish": "yes",
+  "verdict": "The closest published comparison is Madeleine Thien's *Do Not Say We Have Nothing* (2016, Booker shortlist) — another novel about forbidden knowledge transmitted through multiple hands under communism, with lethal consequences for errors in transmission. Thien is more lyrical and emotionally generous; this novel is more formally rigorous and architecturally severe. Both operate in the same prize-eligible register, and the comparison is instructive: what this novel does that Thien's doesn't is make the error's mechanism — a bracket misread as a nine — both the plot engine and the moral architecture simultaneously. I cannot identify a published novel that uses the textual transmission of a forbidden document this way. Herta Müller's Romanian trilogy (*The Appointment*, *The Land of Green Plums*) is the obvious setting-based comp, but Müller's prose is hallucinatory where this is hyper-rational; the closest prose register is Francis Spufford's *Red Plenty* (2010), which also uses administrative and economic language as the primary medium for lived experience under communist planning. Anna Burns's *Milkman* (2018) shares the oblique refusal to name names and the surveillance-state interior monologue — the Doina chapters especially would appeal to Burns readers. All of these comps point to the same acquisition target: a house with strong literary fiction credentials and a track record with Eastern European material (Farrar Straus, Granta, Fitzcarraldo). At an unknown author, the advance is £15,000–£30,000 in the U.K., $20,000–$45,000 in the U.S. This is not a commercial book; it is a prize-plausible one, and that matters in editorial meetings.\n\nThe premise is genuinely original. A woman who writes aftercare instructions for illegal abortions makes, in twenty minutes of inadequate light in a coal cellar, a copying error: she converts the bracketed override instruction (do not wait for the morning) into a numbered ninth step, which propagates through four more hands until a careful downstream copyist reads nine numbered lines in sequence, inherits \"morning\" from line eight, and writes \"take her in in the morning.\" A woman dies in the morning. Nobody in the chain is careless; the system is. The novel holds this moral complexity without editorializing, which is harder than it looks and which Thien — for all her emotional generosity — sometimes fails at. The three voices are exactly calibrated: Ilinca thinks in nodes and branches; Doina thinks in things she checks against a mental list; Munteanu thinks in working observations and formal file entries. All three practice rigorous self-censorship even in interior monologue, which is structurally precise for a surveillance state novel.\n\nAgainst all of this: the manuscript has real problems. The document is reproduced in full four times across thirty chapters, and by the fourth reproduction the reader's eyes slide across it — precisely the opposite of what the novel intends. More seriously, line 4 of the document reads \"every hour\" in the formal full-text reproductions in chapters 09 and 28 but \"each hour\" in chapters 14, 17, and 30, and Doina's entire arc — six chapters of her working to remember \"each\" against her instinct of \"every\" — requires that N1 say \"each.\" If N1 says \"every\" (which appears to be what the chapter 9 and 28 reproductions show), then Doina is struggling to memorize a word *different* from the original, which makes no sense. This is a drafting error, the kind a copyeditor catches on the first pass, and it directly undercuts the novel's most carefully developed motif. Munteanu is thinner as a person than the two women — rendered mostly as method until chapters 25 and 27, which is too late. The Dorobanților/Moga Rodica chain creates genuine confusion: the novel designates Moga Rodica (Dorobanților) as \"G2\" in Munteanu's notation, which would require Ilinca to have made a fourth copy she doesn't account for; the most coherent reading is that Damian gave a false address to protect her sister, but this requires retroactive reconstruction the novel doesn't fully support. None of these require structural surgery, but they require editorial attention before submission.",
+  "strongest": [
+    {
+      "chapters": [
+        "01-the-ledger-spine",
+        "09-the-bracket",
+        "24-the-light-from-the-door",
+        "28-the-handover"
+      ],
+      "claim": "The bracket-to-nine mechanism is conceptually original and fully earned. Converting a marginal override into a numbered list step is both plot engine and moral architecture simultaneously; the novel exploits the distinction between sequence and override at the level of both content and form in a way I cannot find in any published comparator."
+    },
+    {
+      "chapters": [
+        "07-livia",
+        "11-the-sister",
+        "15-the-name-on-the-list",
+        "21-the-window"
+      ],
+      "claim": "Ilinca's 'ledger prose' voice sustains under load for the full novel without strain or self-parody. The style — short declaratives with precisely subordinated clauses, checking figures twice before entering them — is in absolute register with the character and never tips into gimmick."
+    },
+    {
+      "chapters": [
+        "04-the-file-opens",
+        "08-copies-laid-out",
+        "16-two-branches",
+        "20-seven-copies"
+      ],
+      "claim": "The three-POV structure is economically managed: all three perspectives track the same chain from different angles, and the information each holds is precisely rationed so that no chapter redundantly confirms what another has already demonstrated."
+    },
+    {
+      "chapters": [
+        "22-nine-numbered",
+        "24-the-light-from-the-door",
+        "26-recovery",
+        "28-the-handover"
+      ],
+      "claim": "The moral complexity is genuinely sustained. The error was made by someone trying to help, in twenty minutes of inadequate light, by a woman who checked the words and not the column. Nobody is the villain. The novel holds this without editorializing across all thirty chapters."
+    },
+    {
+      "chapters": [
+        "02-the-geography-book",
+        "06-the-good-coat",
+        "10-the-outer-ring",
+        "14-the-ash",
+        "30-the-bracket-included"
+      ],
+      "claim": "Doina's voice is the novel's strongest individual achievement — wry, precise, comic in the dark manner of Anna Burns, and consistently sympathetic without self-pity. Her chapters are the book's most immediately readable and the most emotionally available."
+    }
+  ],
+  "weakest": [
+    {
+      "chapters": [
+        "09-the-bracket",
+        "14-the-ash",
+        "17-nine-or-bracket",
+        "28-the-handover",
+        "30-the-bracket-included"
+      ],
+      "claim": "A concrete editorial artifact: line 4 of the document reads 'every hour' in the formal full-text reproductions in chapters 09 and 28, but 'each hour' in chapters 14, 17, and 30. Since Doina's entire arc across six chapters turns on her working to remember 'each' against her instinct of 'every,' the original document (N1) must say 'each'; the appearances of 'every' in the two formal printings are drafting errors left uncorrected. A copyeditor reading for inconsistencies would catch this on the first pass."
+    },
+    {
+      "chapters": [
+        "09-the-bracket",
+        "17-nine-or-bracket",
+        "28-the-handover"
+      ],
+      "claim": "The document is reproduced in full four times across thirty chapters. The first reproduction (chapter 9) is essential; the second (chapter 17) is instructive; the third and fourth (both in chapter 28, showing N1 and N4 side by side) convey information the reader has long since absorbed. By the fourth reproduction, repetition erodes the precision the novel is working to embody."
+    },
+    {
+      "chapters": [
+        "04-the-file-opens",
+        "08-copies-laid-out",
+        "12-fourth-generation",
+        "16-two-branches"
+      ],
+      "claim": "Munteanu is rendered almost entirely as method across the first sixteen chapters — working file, notation, formal versus private observation — and only begins to acquire interior life in chapters 25 and 27, when he infers what Ilinca is likely to do before she does it. Compared to the two women, he is a function for too long."
+    },
+    {
+      "chapters": [
+        "10-the-outer-ring",
+        "11-the-sister",
+        "12-fourth-generation",
+        "13-the-bloc-woman"
+      ],
+      "claim": "The mid-section — Ilinca tracing nodes through proxy conversations (borrowed pot, pharmacy note, bread relay) while Munteanu collects copies one by one — becomes procedural across roughly four consecutive chapters. The mechanism is identical each time and the variations feel administrative rather than revelatory."
+    },
+    {
+      "chapters": [
+        "12-fourth-generation",
+        "15-the-name-on-the-list",
+        "16-two-branches",
+        "25-the-questioning-room",
+        "27-the-address"
+      ],
+      "claim": "The Dorobanților/Moga Rodica chain is genuinely obscure. Munteanu designates Moga Rodica at Dorobanților as 'G2' (one step from the source), which would require Ilinca to have made a fourth copy she never accounts for. The most coherent reading — that Viorica Damian gave a false address to protect her real sister at Strada Crișan — requires retroactive reconstruction the novel does not cleanly support, and the Dorobanților visit is compressed to a single subordinate clause in chapter 27."
+    }
+  ],
+  "quotes": [
+    {
+      "chapter": "09-the-bracket",
+      "text": "A bracket given a number has become a step in a list.",
+      "why": "The axis sentence of the whole novel: nine words that encode the full mechanism and the full tragedy without naming either. A competent-but-ordinary sentence would explain what happened; this sentence *is* what happened, in the grammar of its own subject."
+    },
+    {
+      "chapter": "09-the-bracket",
+      "text": "The error is in the being careful.",
+      "why": "The novel's central moral irony in six words. The syntax inverts expectation: the error is not in carelessness but in care. The downstream copyist who turned the bracket into line nine was being careful — that is exactly the problem. An ordinary sentence would say 'the careful copyist made the error'; this sentence makes the care itself the agent."
+    },
+    {
+      "chapter": "04-the-file-opens",
+      "text": "That was not an error of copying. That was copying. That was what copying produced, line by line and hand by hand, generation by generation. A word at a time.",
+      "why": "Sets up the transmission theory that powers the whole investigation. The three short declarative sentences perform incremental accumulation — they enact the process they describe. The final four-word sentence is the arrest: 'a word at a time' as both method and verdict."
+    },
+    {
+      "chapter": "06-the-good-coat",
+      "text": "I mention it because being in my coat meant I didn't have to decide what to do with my coat, and that morning I had enough to decide about without adding coat.",
+      "why": "The best single example of Doina's voice: wry self-analysis embedded in a throwaway practical detail, the comic intelligence that makes her more than a victim. The repetition of 'coat' three times in one sentence is a Burns-like syntactic tick that works precisely because it refuses to be elegant."
+    },
+    {
+      "chapter": "30-the-bracket-included",
+      "text": "There is no way to draw a bracket in memory. What you have instead is the space where the bracket was: the pause before the thing that overrides the sequence, the one that says the eight steps end here and here is what supersedes them.",
+      "why": "The closing chapter's most important sentence, and the one that lifts the bracket into metaphor without announcing the metaphor. What Doina has — what survives detention — is not the paper but the shape of the absence. The bracket as the form of resistance that cannot be confiscated."
+    }
+  ],
+  "put_down_points": [
+    "Chapters 10-13 (10-the-outer-ring through 13-the-bloc-woman): Ilinca traces nodes through proxy conversations using the same relay mechanism (borrowed object → intermediary → coded message → reply) four times in quick succession while Munteanu collects copies by the same interview pattern. The mechanism is the novel's DNA, but in this stretch the variations feel administrative rather than revelatory. A reader who is not yet fully committed to the formal game will stall here."
+  ],
+  "who_is_this_for": "Readers of Herta Müller (*The Appointment*, *The Land of Green Plums*), Madeleine Thien (*Do Not Say We Have Nothing*), and Anna Burns (*Milkman*); readers interested in women's lives under Romanian communism and the specific brutality of Decree 770/1966; readers who respond to formally demanding literary fiction that treats administrative precision — double-checking a column, drawing a bracket in the margin — as a form of moral intelligence. Not for readers who need plot velocity or emotional expressiveness; this novel withholds both deliberately and rewards the patience."
+}

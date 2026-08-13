@@ -1,0 +1,60 @@
+{
+  "generated_at": "2026-08-13T02:03:47.396Z",
+  "per_lens": [
+    {
+      "lens": "literary",
+      "exact": 6,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "airport",
+      "exact": 5,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "thriller",
+      "exact": 4,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "authenticity",
+      "exact": 7,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "comparative",
+      "exact": 5,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "ordinary",
+      "exact": 5,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    }
+  ],
+  "problems": [],
+  "totals": {
+    "exact": 32,
+    "near": 0,
+    "misattributed": 0,
+    "absent": 0
+  }
+}
