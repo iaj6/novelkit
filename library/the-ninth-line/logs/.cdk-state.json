@@ -1,0 +1,478 @@
+{
+  "version": 2,
+  "completed": [
+    "researcher",
+    "architect",
+    "plotter",
+    "threads",
+    "calibrate-drafter:iter-1-sample",
+    "calibrate-drafter:iter-1-grade",
+    "calibrate-drafter:complete",
+    "drafter:01-the-ledger-spine",
+    "drafter:02-the-geography-book",
+    "drafter:03-georgeta",
+    "drafter:04-the-file-opens",
+    "drafter:05-elena",
+    "drafter:06-the-good-coat",
+    "drafter:07-livia",
+    "drafter:08-copies-laid-out",
+    "drafter:09-the-bracket",
+    "drafter:10-the-outer-ring",
+    "drafter:11-the-sister",
+    "drafter:12-fourth-generation",
+    "drafter:13-the-bloc-woman",
+    "drafter:14-the-ash",
+    "drafter:15-the-name-on-the-list",
+    "drafter:16-two-branches",
+    "drafter:17-nine-or-bracket",
+    "drafter:18-the-hostel-door",
+    "drafter:19-doina-marcu",
+    "drafter:20-seven-copies",
+    "drafter:21-the-window",
+    "drafter:22-nine-numbered",
+    "drafter:23-three-days-remaining",
+    "drafter:24-the-light-from-the-door",
+    "drafter:25-the-questioning-room",
+    "drafter:26-recovery",
+    "drafter:27-the-address",
+    "drafter:28-the-handover",
+    "drafter:29-the-deadline",
+    "drafter:30-the-bracket-included",
+    "editor-continuity:01-the-ledger-spine",
+    "editor-continuity:02-the-geography-book",
+    "editor-continuity:03-georgeta",
+    "editor-continuity:04-the-file-opens",
+    "editor-continuity:05-elena",
+    "editor-continuity:06-the-good-coat",
+    "editor-continuity:07-livia",
+    "editor-continuity:08-copies-laid-out",
+    "editor-continuity:09-the-bracket",
+    "editor-continuity:10-the-outer-ring",
+    "editor-continuity:11-the-sister",
+    "editor-continuity:12-fourth-generation",
+    "editor-continuity:13-the-bloc-woman",
+    "editor-continuity:14-the-ash",
+    "editor-continuity:15-the-name-on-the-list",
+    "editor-continuity:16-two-branches",
+    "editor-continuity:17-nine-or-bracket",
+    "editor-continuity:18-the-hostel-door",
+    "editor-continuity:19-doina-marcu",
+    "editor-continuity:20-seven-copies",
+    "editor-continuity:21-the-window",
+    "editor-continuity:22-nine-numbered",
+    "editor-continuity:23-three-days-remaining",
+    "editor-continuity:24-the-light-from-the-door",
+    "editor-continuity:25-the-questioning-room",
+    "editor-continuity:26-recovery",
+    "editor-continuity:27-the-address",
+    "editor-continuity:28-the-handover",
+    "editor-continuity:29-the-deadline",
+    "editor-continuity:30-the-bracket-included",
+    "editor-compression:01-the-ledger-spine",
+    "editor-compression:02-the-geography-book",
+    "editor-compression:03-georgeta",
+    "editor-compression:04-the-file-opens",
+    "editor-compression:05-elena",
+    "editor-compression:06-the-good-coat",
+    "editor-compression:07-livia",
+    "editor-compression:08-copies-laid-out",
+    "editor-compression:09-the-bracket",
+    "editor-compression:10-the-outer-ring",
+    "editor-compression:11-the-sister",
+    "editor-compression:12-fourth-generation",
+    "editor-compression:13-the-bloc-woman",
+    "editor-compression:14-the-ash",
+    "editor-compression:15-the-name-on-the-list",
+    "editor-compression:16-two-branches",
+    "editor-compression:17-nine-or-bracket",
+    "editor-compression:18-the-hostel-door",
+    "editor-compression:19-doina-marcu",
+    "editor-compression:20-seven-copies",
+    "editor-compression:21-the-window",
+    "editor-compression:22-nine-numbered",
+    "editor-compression:23-three-days-remaining",
+    "editor-compression:24-the-light-from-the-door",
+    "editor-compression:25-the-questioning-room",
+    "editor-compression:26-recovery",
+    "editor-compression:27-the-address",
+    "editor-compression:28-the-handover",
+    "editor-compression:29-the-deadline",
+    "editor-compression:30-the-bracket-included",
+    "editor-pacing:macro",
+    "editor-pacing:01-the-ledger-spine",
+    "editor-pacing:02-the-geography-book",
+    "editor-pacing:03-georgeta",
+    "editor-pacing:04-the-file-opens",
+    "editor-pacing:05-elena",
+    "editor-pacing:06-the-good-coat",
+    "editor-pacing:07-livia",
+    "editor-pacing:08-copies-laid-out",
+    "editor-pacing:09-the-bracket",
+    "editor-pacing:10-the-outer-ring",
+    "editor-pacing:11-the-sister",
+    "editor-pacing:12-fourth-generation",
+    "editor-pacing:13-the-bloc-woman",
+    "editor-pacing:14-the-ash",
+    "editor-pacing:15-the-name-on-the-list",
+    "editor-pacing:16-two-branches",
+    "editor-pacing:17-nine-or-bracket",
+    "editor-pacing:18-the-hostel-door",
+    "editor-pacing:19-doina-marcu",
+    "editor-pacing:20-seven-copies",
+    "editor-pacing:21-the-window",
+    "editor-pacing:22-nine-numbered",
+    "editor-pacing:23-three-days-remaining",
+    "editor-pacing:24-the-light-from-the-door",
+    "editor-pacing:25-the-questioning-room",
+    "editor-pacing:26-recovery",
+    "editor-pacing:27-the-address",
+    "editor-pacing:28-the-handover",
+    "editor-pacing:29-the-deadline",
+    "editor-pacing:30-the-bracket-included",
+    "editor-voice:01-the-ledger-spine",
+    "editor-voice:02-the-geography-book",
+    "editor-voice:03-georgeta",
+    "editor-voice:04-the-file-opens",
+    "editor-voice:05-elena",
+    "editor-voice:06-the-good-coat",
+    "editor-voice:07-livia",
+    "editor-voice:08-copies-laid-out",
+    "editor-voice:09-the-bracket",
+    "editor-voice:10-the-outer-ring",
+    "editor-voice:11-the-sister",
+    "editor-voice:12-fourth-generation",
+    "editor-voice:13-the-bloc-woman",
+    "editor-voice:14-the-ash",
+    "editor-voice:15-the-name-on-the-list",
+    "editor-voice:16-two-branches",
+    "editor-voice:17-nine-or-bracket",
+    "editor-voice:18-the-hostel-door",
+    "editor-voice:19-doina-marcu",
+    "editor-voice:20-seven-copies",
+    "editor-voice:21-the-window",
+    "editor-voice:22-nine-numbered",
+    "editor-voice:23-three-days-remaining",
+    "editor-voice:24-the-light-from-the-door",
+    "editor-voice:25-the-questioning-room",
+    "editor-voice:26-recovery",
+    "editor-voice:27-the-address",
+    "editor-voice:28-the-handover",
+    "editor-voice:29-the-deadline",
+    "editor-voice:30-the-bracket-included",
+    "reader:act-1",
+    "reader:act-2",
+    "reader:act-3",
+    "reader:synthesis",
+    "continuity-fact-audit",
+    "cold-read:literary",
+    "cold-read:airport",
+    "cold-read:thriller",
+    "cold-read:authenticity",
+    "cold-read:comparative",
+    "cold-read:ordinary",
+    "cold-read:synthesis",
+    "cold-read:audit"
+  ],
+  "entries": {
+    "drafter:01-the-ledger-spine": {
+      "at": "2026-08-10T15:53:02.335Z",
+      "artifacts": [
+        "draft/01-the-ledger-spine.md"
+      ],
+      "hashes": {
+        "draft/01-the-ledger-spine.md": "2a45cb0dd1f72b5153839ede371c487bfd440603f39f96d0536d394e459f3fa9"
+      },
+      "eventOffset": 121
+    },
+    "drafter:02-the-geography-book": {
+      "at": "2026-08-10T16:02:48.627Z",
+      "artifacts": [
+        "draft/02-the-geography-book.md"
+      ],
+      "hashes": {
+        "draft/02-the-geography-book.md": "9f0653bf466911d274163e09b329e22410b0a330b0b6e8493b64f5a85a02830b"
+      },
+      "eventOffset": 163
+    },
+    "drafter:03-georgeta": {
+      "at": "2026-08-10T16:22:26.658Z",
+      "artifacts": [
+        "draft/03-georgeta.md"
+      ],
+      "hashes": {
+        "draft/03-georgeta.md": "17344695ebd671582adac2cddae65e0fe7a2e8b0280e35be0f71d978d23bae1f"
+      },
+      "eventOffset": 208
+    },
+    "drafter:04-the-file-opens": {
+      "at": "2026-08-10T16:35:14.867Z",
+      "artifacts": [
+        "draft/04-the-file-opens.md"
+      ],
+      "hashes": {
+        "draft/04-the-file-opens.md": "68737c66f3671ffb5d0c2b31fa0611da55720a2c515119eaa2934ea40ef677b9"
+      },
+      "eventOffset": 260
+    },
+    "drafter:05-elena": {
+      "at": "2026-08-10T16:44:31.922Z",
+      "artifacts": [
+        "draft/05-elena.md"
+      ],
+      "hashes": {
+        "draft/05-elena.md": "e9a15907a09ff4399602faa3b252d6f6accb2c90598e459a946f62cc346c4dcc"
+      },
+      "eventOffset": 283
+    },
+    "drafter:06-the-good-coat": {
+      "at": "2026-08-10T16:54:09.921Z",
+      "artifacts": [
+        "draft/06-the-good-coat.md"
+      ],
+      "hashes": {
+        "draft/06-the-good-coat.md": "9b6f886da9ef82a3ff3e3d22b2f62c8abca59011edfa0ee67622c5d60504bb41"
+      },
+      "eventOffset": 310
+    },
+    "drafter:07-livia": {
+      "at": "2026-08-10T17:02:24.002Z",
+      "artifacts": [
+        "draft/07-livia.md"
+      ],
+      "hashes": {
+        "draft/07-livia.md": "4bd097cf08c27fe22a446864a8c3b35d0bbf6ee684e95492a83004f1aada540c"
+      },
+      "eventOffset": 337
+    },
+    "drafter:08-copies-laid-out": {
+      "at": "2026-08-10T17:17:54.408Z",
+      "artifacts": [
+        "draft/08-copies-laid-out.md"
+      ],
+      "hashes": {
+        "draft/08-copies-laid-out.md": "287fc0c60b423f7e99e5dc58d33305af2d0c67b508c836a44a350b4543c4ba1b"
+      },
+      "eventOffset": 383
+    },
+    "drafter:09-the-bracket": {
+      "at": "2026-08-10T17:28:25.290Z",
+      "artifacts": [
+        "draft/09-the-bracket.md"
+      ],
+      "hashes": {
+        "draft/09-the-bracket.md": "5791d7588a69bf2609b3b266f2ebc3333435fd8f6619fed6313e8efc798ee68e"
+      },
+      "eventOffset": 409
+    },
+    "drafter:10-the-outer-ring": {
+      "at": "2026-08-10T17:41:36.215Z",
+      "artifacts": [
+        "draft/10-the-outer-ring.md"
+      ],
+      "hashes": {
+        "draft/10-the-outer-ring.md": "f15bee3f1bca4691caed357c3ac8f46ea5fc258ab954c1576b9a62bb22007d95"
+      },
+      "eventOffset": 440
+    },
+    "drafter:11-the-sister": {
+      "at": "2026-08-10T17:53:18.952Z",
+      "artifacts": [
+        "draft/11-the-sister.md"
+      ],
+      "hashes": {
+        "draft/11-the-sister.md": "c016937629ce0c2465eabc3a5d499bc31f136c45a2c81c873d6680974c8a23b1"
+      },
+      "eventOffset": 471
+    },
+    "drafter:12-fourth-generation": {
+      "at": "2026-08-10T18:09:37.220Z",
+      "artifacts": [
+        "draft/12-fourth-generation.md"
+      ],
+      "hashes": {
+        "draft/12-fourth-generation.md": "ddcc9ff4209110f2bbb97910357be0402b56ddb1f2f6294add4d53792a8d3628"
+      },
+      "eventOffset": 509
+    },
+    "drafter:13-the-bloc-woman": {
+      "at": "2026-08-10T18:23:27.925Z",
+      "artifacts": [
+        "draft/13-the-bloc-woman.md"
+      ],
+      "hashes": {
+        "draft/13-the-bloc-woman.md": "ec128eed2c2608cbe6d88058736bf283e27b83b6f7798a882bfa1204883a2cfe"
+      },
+      "eventOffset": 537
+    },
+    "drafter:14-the-ash": {
+      "at": "2026-08-10T18:33:40.614Z",
+      "artifacts": [
+        "draft/14-the-ash.md"
+      ],
+      "hashes": {
+        "draft/14-the-ash.md": "e13f29f8436a7b31172944c86540957c8483d2788cd387c6829741a054d5c05e"
+      },
+      "eventOffset": 561
+    },
+    "drafter:15-the-name-on-the-list": {
+      "at": "2026-08-10T18:50:04.057Z",
+      "artifacts": [
+        "draft/15-the-name-on-the-list.md"
+      ],
+      "hashes": {
+        "draft/15-the-name-on-the-list.md": "a4f059e12bdc2f2e3121e84f65f248fe93fac9b49b65b2a96978d59db98d07bd"
+      },
+      "eventOffset": 586
+    },
+    "drafter:16-two-branches": {
+      "at": "2026-08-10T19:02:48.496Z",
+      "artifacts": [
+        "draft/16-two-branches.md"
+      ],
+      "hashes": {
+        "draft/16-two-branches.md": "552a17b20759e63652ddf2be1df33872736faaf69b6b92558ff126d8a0a977aa"
+      },
+      "eventOffset": 619
+    },
+    "drafter:17-nine-or-bracket": {
+      "at": "2026-08-10T19:16:18.138Z",
+      "artifacts": [
+        "draft/17-nine-or-bracket.md"
+      ],
+      "hashes": {
+        "draft/17-nine-or-bracket.md": "c19454ab9cb96a3f79e1c7834d5bd7b1d2674ddd9e3ef01689029e8252a23297"
+      },
+      "eventOffset": 644
+    },
+    "drafter:18-the-hostel-door": {
+      "at": "2026-08-10T19:24:24.653Z",
+      "artifacts": [
+        "draft/18-the-hostel-door.md"
+      ],
+      "hashes": {
+        "draft/18-the-hostel-door.md": "30d0cbf06fc8b4e91e03af280eb16d02f602209a8b31d5053a5ad636c32c2b43"
+      },
+      "eventOffset": 672
+    },
+    "drafter:19-doina-marcu": {
+      "at": "2026-08-10T19:33:29.448Z",
+      "artifacts": [
+        "draft/19-doina-marcu.md"
+      ],
+      "hashes": {
+        "draft/19-doina-marcu.md": "7bb897a37a202a5edfb76346aabc982a4ef2fed876d281e974056a1d0c0c874a"
+      },
+      "eventOffset": 696
+    },
+    "drafter:20-seven-copies": {
+      "at": "2026-08-10T19:48:27.929Z",
+      "artifacts": [
+        "draft/20-seven-copies.md"
+      ],
+      "hashes": {
+        "draft/20-seven-copies.md": "d704e14745557068d23a0b6839bf771308e9fdda9406112f1c19774e4ef6dc75"
+      },
+      "eventOffset": 730
+    },
+    "drafter:21-the-window": {
+      "at": "2026-08-10T20:07:25.898Z",
+      "artifacts": [
+        "draft/21-the-window.md"
+      ],
+      "hashes": {
+        "draft/21-the-window.md": "b78ca67f3fa226867ca076167a265a29e27dcf891bf84e04488f4a4a3fe3bb07"
+      },
+      "eventOffset": 759
+    },
+    "drafter:22-nine-numbered": {
+      "at": "2026-08-10T20:19:15.074Z",
+      "artifacts": [
+        "draft/22-nine-numbered.md"
+      ],
+      "hashes": {
+        "draft/22-nine-numbered.md": "ba90c0c77548734fbc4117cca7afef2a9ecc63493bf59533b97f9908c2aaaff6"
+      },
+      "eventOffset": 785
+    },
+    "drafter:23-three-days-remaining": {
+      "at": "2026-08-10T20:39:21.536Z",
+      "artifacts": [
+        "draft/23-three-days-remaining.md"
+      ],
+      "hashes": {
+        "draft/23-three-days-remaining.md": "66ef75bea2345e83fa6a61351cb7723886f2b89488dab177a5ab571a14b36f2c"
+      },
+      "eventOffset": 825
+    },
+    "drafter:24-the-light-from-the-door": {
+      "at": "2026-08-10T20:49:55.514Z",
+      "artifacts": [
+        "draft/24-the-light-from-the-door.md"
+      ],
+      "hashes": {
+        "draft/24-the-light-from-the-door.md": "8e590d03ef1fc906bbd86e81b6580fc6440fe8485216aaa69bee180e4aac1b55"
+      },
+      "eventOffset": 849
+    },
+    "drafter:25-the-questioning-room": {
+      "at": "2026-08-10T21:05:33.185Z",
+      "artifacts": [
+        "draft/25-the-questioning-room.md"
+      ],
+      "hashes": {
+        "draft/25-the-questioning-room.md": "e32e4c95151b4ae911c2f8672083ff7903c260098748b477f4c8419fc49285da"
+      },
+      "eventOffset": 884
+    },
+    "drafter:26-recovery": {
+      "at": "2026-08-10T21:19:35.042Z",
+      "artifacts": [
+        "draft/26-recovery.md"
+      ],
+      "hashes": {
+        "draft/26-recovery.md": "f2cd0dfc264fc774c609f2804ba0f2ac4fcfc3c0be3ca4dfa95aa4819caa6e17"
+      },
+      "eventOffset": 913
+    },
+    "drafter:27-the-address": {
+      "at": "2026-08-10T21:31:34.991Z",
+      "artifacts": [
+        "draft/27-the-address.md"
+      ],
+      "hashes": {
+        "draft/27-the-address.md": "80f46c52130831b0e0b76fb64dbb0ecb8982435cd0e2235b13bcea5de1bdc8b9"
+      },
+      "eventOffset": 941
+    },
+    "drafter:28-the-handover": {
+      "at": "2026-08-10T21:42:44.757Z",
+      "artifacts": [
+        "draft/28-the-handover.md"
+      ],
+      "hashes": {
+        "draft/28-the-handover.md": "1dcb81be3a6a61f81b5c93d144b8ae32a8dc21a9aa95051b6548ac196e65c941"
+      },
+      "eventOffset": 980
+    },
+    "drafter:29-the-deadline": {
+      "at": "2026-08-10T21:54:21.838Z",
+      "artifacts": [
+        "draft/29-the-deadline.md"
+      ],
+      "hashes": {
+        "draft/29-the-deadline.md": "f32e2adf4c9ec325ea5e94a188e1f3ed3d23647a721e28d1ebf3de8ad6136dd1"
+      },
+      "eventOffset": 1007
+    },
+    "drafter:30-the-bracket-included": {
+      "at": "2026-08-10T22:06:08.732Z",
+      "artifacts": [
+        "draft/30-the-bracket-included.md"
+      ],
+      "hashes": {
+        "draft/30-the-bracket-included.md": "517c39a966f284d83e078b6c43ebbb0156e7336deaa2903018aaef547895b973"
+      },
+      "eventOffset": 1025
+    }
+  }
+}

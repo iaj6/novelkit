@@ -1,0 +1,134 @@
+{
+  "lens": "thriller",
+  "score_out_of_10": 5.5,
+  "would_finish": "skimmed",
+  "verdict": "This is a meticulously engineered literary novel wearing thriller clothes, and the distinction matters. The three-POV structure is genuinely elegant: an investigator working up a chain of handwritten copies, the document's author working laterally across it, a young mill worker caught between them in a November that keeps getting darker. The central mechanism — a bracket that became a nine in a coal cellar by a six-centimetre strip of light, and the nine that then killed someone twelve months and four hands later — is an original idea that generates real dramatic irony. A bookkeeper who checks for words and not format, and whose precision is precisely what blinds her: this is not a clever plot device. It is the kind of devastating observation that sustains a novel.\n\nBut this is also a book that moves at the pace of a payroll being audited, and for genre purposes that is a serious problem. Roughly chapters 11 through 17, both Munteanu and Ilinca accumulate nodes at approximately the same rate, neither gaining ground on the other. The clock is established at chapter 16 when the captain names December 5 as a deadline — fifteen days, specific, real — but the chapters that follow do not accelerate toward it. No one closes the gap. The suspense is intellectual rather than kinetic: we see both columns running in parallel, and that is interesting, but a thriller promises to increase pressure over time, and this book holds it level through its middle third.\n\nThe climax is structurally correct and morally satisfying. Ilinca Roșca arrives at the station, places both documents on Munteanu's desk, and Munteanu makes two phone calls. This is the right ending for this character — arrived at through moral arithmetic rather than dramatic confrontation — but it has no obstacle. Nothing goes wrong. The secondary protagonist, Doina Marcu, who supplies the most conventional thriller energy in the book, is absent for the entire back third after her arrest in chapter 18, surfacing only in the final chapter. A genre reader who had been following her across the bridge of chapter 10 — the fog, the women in the bread queue, the man in the coat writing in his notebook — will feel her removal as a structural deprivation.\n\nThere is also a concrete error that an editor would need to address before publication. Chapter 4 gives Ana Petrescu's hospital admission time as nineteen hundred hours and her death time as twenty-three hundred and twelve. Chapter 29 gives the admission time as 14:33 and death at 18:47. Both are stated as official document facts within the same investigation file. They cannot both be true, and neither is marked as approximate. This is not ambiguity; it is an unresolved factual contradiction that a thriller reader, tracking the evidentiary record, will notice.",
+  "strongest": [
+    {
+      "chapters": [
+        "01-the-ledger-spine",
+        "03-georgeta",
+        "09-the-bracket",
+        "22-nine-numbered",
+        "24-the-light-from-the-door",
+        "28-the-handover"
+      ],
+      "claim": "The central mechanism — bracket becoming nine, then nine propagating a fatal mistranslation downstream — generates sustained dramatic irony that a competent-but-ordinary thriller would not achieve, because the error is invisible at the moment it is made and its consequences can only be assembled retrospectively across three simultaneous timelines."
+    },
+    {
+      "chapters": [
+        "04-the-file-opens",
+        "08-copies-laid-out",
+        "12-fourth-generation",
+        "16-two-branches",
+        "20-seven-copies",
+        "23-three-days-remaining",
+        "25-the-questioning-room",
+        "27-the-address"
+      ],
+      "claim": "Munteanu's investigative method — reading variant prepositions to reconstruct copying ancestry, building the chain from the bottom without knowing what he is ascending toward — is specifically realized and creates mounting structural pressure without requiring the novel to invent false urgency."
+    },
+    {
+      "chapters": [
+        "05-elena",
+        "07-livia",
+        "10-the-outer-ring",
+        "11-the-sister",
+        "13-the-bloc-woman",
+        "18-the-hostel-door",
+        "19-doina-marcu"
+      ],
+      "claim": "The three-POV architecture sustains dramatic irony throughout: each of the three protagonists can see only their own thread of the chain, but the reader sees all three simultaneously and knows, before any single character does, exactly where the lines will intersect."
+    },
+    {
+      "chapters": [
+        "19-doina-marcu",
+        "21-the-window",
+        "24-the-light-from-the-door",
+        "26-recovery",
+        "28-the-handover"
+      ],
+      "claim": "Ilinca's decision to surrender — reached by moral arithmetic rather than dramatic confrontation, with the confirmed figure sitting unchanged in her head before she acts on it — is the book's most unexpected thriller move: the protagonist walks into the police station not because she is caught but because she has balanced her own ledger."
+    },
+    {
+      "chapters": [
+        "04-the-file-opens",
+        "08-copies-laid-out",
+        "12-fourth-generation",
+        "16-two-branches",
+        "20-seven-copies"
+      ],
+      "claim": "The document-as-physical-object — paper stocks, crease patterns, handwriting angles, copied prepositions — gives the investigation its texture and makes Munteanu's purely documentary methods feel grounded rather than procedurally convenient."
+    }
+  ],
+  "weakest": [
+    {
+      "chapters": [
+        "11-the-sister",
+        "12-fourth-generation",
+        "13-the-bloc-woman",
+        "14-the-ash",
+        "15-the-name-on-the-list",
+        "16-two-branches",
+        "17-nine-or-bracket"
+      ],
+      "claim": "The middle third — chapters 11 through 17 — has both Munteanu and Ilinca accumulating nodes at roughly the same pace through bread-queue contacts, delivery-boy relays, borrowed pots, and pharmacy notes. The clock is established but neither character closes the gap on the other. The suspense is intellectual, the prose tempo does not shift, and a genre reader expecting escalation will feel the engine idling for the equivalent of sixty pages."
+    },
+    {
+      "chapters": [
+        "28-the-handover",
+        "29-the-deadline"
+      ],
+      "claim": "The climax has no obstacle. Ilinca walks in, sets down both documents, Munteanu makes two calls. Nothing goes wrong, no one is caught mid-action, there is no near-miss or complication. The resolution is morally correct but structurally insufficient for the genre: a thriller earns its ending by placing something in front of it."
+    },
+    {
+      "chapters": [
+        "18-the-hostel-door",
+        "19-doina-marcu",
+        "30-the-bracket-included"
+      ],
+      "claim": "Doina Marcu — the novel's most conventionally sympathetic thriller character, nineteen years old with an incriminating document and an investigator closing in — is arrested at the end of chapter 18 and effectively absent from chapters 19 through 29. Her final chapter is the book's warmest, but she is off-page through the entire climax."
+    },
+    {
+      "chapters": [
+        "04-the-file-opens",
+        "29-the-deadline",
+        "30-the-bracket-included"
+      ],
+      "claim": "Ana Petrescu's death times are internally contradicted. Chapter 4 gives her hospital admission as nineteen hundred hours and death at twenty-three hundred and twelve; chapter 29 gives admission at 14:33 and death at 18:47. Both are stated as the content of official documents in the same investigation file. Additionally, Doina in chapter 30 states Ana 'died in the morning,' which contradicts both timestamps. This is not ambiguity — it is an unresolved factual error."
+    },
+    {
+      "chapters": [
+        "12-fourth-generation",
+        "16-two-branches"
+      ],
+      "claim": "Viorica Damian is interviewed twice: at her apartment on November 15 (chapter 12), where Munteanu collects a copy on an AFE production form and she names her sister on Dorobanților; and at the laundry on November 20 (chapter 16), where he collects what appears to be a second physical copy and receives the same sister's name again. Both scenes are written as first encounters. This is a continuity error."
+    }
+  ],
+  "quotes": [
+    {
+      "chapter": "04-the-file-opens",
+      "text": "That was not an error of copying. That was copying.",
+      "why": "Eight words that contain the novel's whole thesis. What looks like fidelity — copying what you read — is itself the mechanism of distortion. A competent-but-ordinary thriller line would have named the consequence; this names the structure."
+    },
+    {
+      "chapter": "09-the-bracket",
+      "text": "A bracket given a number has become a step in a list.",
+      "why": "The clearest statement of the fatal mutation, placed in Ilinca's chapter at the moment she first understands it from outside evidence. The sentence is formally precise — a piece of bookkeeping logic — which makes its devastation quiet rather than announced."
+    },
+    {
+      "chapter": "17-nine-or-bracket",
+      "text": "She cannot see what she wrote below line eight. She cannot see whether the shape at the left margin, in that light, was a bracket or a nine.",
+      "why": "The novel's highest-tension sentence. It arrives not during confrontation but during a woman sitting at a kitchen table with a lamp. The stakes are entirely interior — a question about her own hand — and the thriller has trained the reader to know exactly what hangs on the answer."
+    },
+    {
+      "chapter": "29-the-deadline",
+      "text": "The file did not contain the reason the document had existed.",
+      "why": "The determination chapter's strongest moment — Munteanu acknowledging the limit of official record. The line works because it has been earned by thirty chapters of a document's existence, and what the file can hold and what it cannot turns out to be the book's actual subject."
+    }
+  ],
+  "put_down_points": [
+    "Chapters 11 through 17: Ilinca traces relay after relay — a borrowed pot returned to a cousin, a pharmacy acquaintance, a delivery boy, a child carrying a message to a tram stop — to confirm that two of her three branches are clean while Munteanu makes symmetrically steady progress in the opposite direction. The craft here is real but the effect is stasis; a genre reader expecting acceleration will find that both columns of the ledger grow at the same rate and the gap between pursuer and quarry does not close. This is the most likely point of attrition for thriller readers."
+  ],
+  "who_is_this_for": "Literary readers with an appetite for historical fiction set in communist Eastern Europe — specifically readers whose patience for internal, documentary, and moral tension exceeds their appetite for physical danger or chase. The comparison shelf is Anna Funder's Stasiland or Herta Müller's The Appointment: fiction where the system is the antagonist and the thriller engine runs on bureaucratic dread rather than kinetics. Genre thriller readers who expect the prose to accelerate in the final third, or who need a confrontational obstacle in the climax, will be underserved. The ideal reader finds a payroll column as tense as a locked door."
+}
