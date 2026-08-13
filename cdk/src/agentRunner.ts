@@ -64,6 +64,10 @@ export type AgentRunArgs = {
   projectRoot: string;
   userPrompt: string;
   maxTurnsOverride?: number;
+  /** Restrict the tool surface (see ToolDeps.profile). Defaults to the full pipeline set. */
+  toolProfile?: "full" | "cold-read";
+  /** Restrict read_file/list_files to these project-relative prefixes (see ToolDeps.readAllowPrefixes). */
+  readAllowPrefixes?: string[];
 };
 
 export type AgentRunResult = {
@@ -207,6 +211,8 @@ export async function runAgent(args: AgentRunArgs): Promise<AgentRunResult> {
     log,
     source: phaseToSource(args.phase),
     epistemic: config.epistemic,
+    profile: args.toolProfile,
+    readAllowPrefixes: args.readAllowPrefixes,
   });
 
   const maxTurns = args.maxTurnsOverride ?? config.maxTurnsPerPhase[args.phase];

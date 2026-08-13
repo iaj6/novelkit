@@ -6,6 +6,8 @@ import { clearState, loadState, saveState } from "./state.js";
 import { readCostSummary, formatCostSummary } from "./runlog.js";
 import { setVisibility, type Visibility } from "./config.js";
 import { runRepairFactNormalize } from "./phases/repair-fact-normalize.js";
+import { runColdRead } from "./phases/cold-read.js";
+import { DEFAULT_LENSES } from "./coldread/lenses.js";
 import { SEVERITIES, type Severity } from "./findings.js";
 import * as c from "./ansi.js";
 
@@ -17,6 +19,9 @@ function usage(): never {
   cdk review <dir>                          re-run only the Reader phase on an existing manuscript
   cdk repair <dir> [--severity=<lvl>]       apply repair agents to findings.json (default severity=critical)
                                             <lvl> ∈ ${SEVERITIES.join(" | ")}
+  cdk coldread <dir> [--force] [--lens=a,b] independent brief-blind review panel over the finished
+                                            manuscript; writes logs/cold-read/. Resumes by default.
+                                            lenses: ${DEFAULT_LENSES.map((l) => l.id).join(", ")}
   cdk phase <name> <dir>                    run one phase, ignoring state
     where <name> is one of: ${ALL_PHASE_NAMES.join(", ")}
     (\`editor\` runs continuity, pacing, and voice passes in sequence)
@@ -180,6 +185,26 @@ async function main() {
     const minSeverity = parseSeverity(sevArg);
     console.log(`[cdk] repair pass at severity≥${minSeverity}`);
     await runRepairFactNormalize(path.resolve(target), minSeverity);
+  } else if (cmd === "coldread") {
+    const target = positional[0];
+    if (!target) usage();
+    const projectRoot = path.resolve(target);
+    if (flags.includes("--force")) {
+      const state = await loadState(projectRoot);
+      const reset = state.completed.filter((k) => k.startsWith("cold-read"));
+      if (reset.length > 0) {
+        state.completed = state.completed.filter((k) => !k.startsWith("cold-read"));
+        await saveState(state, projectRoot);
+        console.log(
+          `[cdk] cleared ${reset.length} cold-read state task${reset.length === 1 ? "" : "s"} for a fresh panel`
+        );
+      }
+    }
+    const lensArg = findFlagValue(flags, "--lens");
+    const lenses = lensArg
+      ? lensArg.split(",").map((s) => s.trim()).filter(Boolean)
+      : undefined;
+    await runColdRead(projectRoot, { lenses });
   } else if (cmd === "phase") {
     const phase = positional[0] as PhaseName | undefined;
     const target = positional[1];

@@ -12,6 +12,7 @@ import { runEditorVoice } from "./phases/editor-voice.js";
 import { runReader } from "./phases/reader.js";
 import { runContinuityFactAudit } from "./phases/continuity-fact-audit.js";
 import { runRepairFactNormalize } from "./phases/repair-fact-normalize.js";
+import { runColdRead } from "./phases/cold-read.js";
 import { readCostSummary, formatCostSummary } from "./runlog.js";
 import { estimateRun, formatDurationRange } from "./estimate.js";
 import { detectBillingMode } from "./billing.js";
@@ -34,7 +35,8 @@ export type PhaseName =
   | "editor-voice"
   | "reader"
   | "continuity-fact-audit"
-  | "repair-fact-normalize";
+  | "repair-fact-normalize"
+  | "cold-read";
 
 /**
  * Phases that `cdk run` iterates through. `editor` here expands into all four sub-passes. Repair phases are opt-in via `cdk repair`.
@@ -61,6 +63,10 @@ export const ALL_PHASE_NAMES: PhaseName[] = [
   "editor-pacing",
   "editor-voice",
   "repair-fact-normalize",
+  // Opt-in evaluation, not part of `cdk run` — same posture as repair. It is an
+  // INDEPENDENT check on a finished manuscript, so folding it into the pipeline that
+  // produced the manuscript would defeat its purpose.
+  "cold-read",
 ];
 
 export async function runPhase(phase: PhaseName, projectRoot: string) {
@@ -93,6 +99,8 @@ export async function runPhase(phase: PhaseName, projectRoot: string) {
       return runContinuityFactAudit(projectRoot);
     case "repair-fact-normalize":
       return runRepairFactNormalize(projectRoot);
+    case "cold-read":
+      return runColdRead(projectRoot);
   }
 }
 

@@ -15,7 +15,10 @@ export type PhaseId =
   | "editor-voice"
   | "reader"
   | "continuity-fact-audit"
-  | "repair-fact-normalize";
+  | "repair-fact-normalize"
+  | "cold-read"
+  | "cold-read-synthesis"
+  | "cold-read-audit";
 
 export type Visibility = "private" | "public";
 
@@ -61,6 +64,12 @@ export type Config = {
    * register. Capped iteration; the pipeline always proceeds eventually.
    */
   calibration: CalibrationConfig;
+  /**
+   * Optional per-book override of the cold-read panel (`cdk coldread`). Omit to use
+   * the built-in roster. Ids must exist in DEFAULT_LENSES; an unknown id is an error
+   * rather than a silent drop, so two runs are never quietly incomparable.
+   */
+  coldRead?: { lenses?: string[] };
   modelByPhase: Partial<Record<PhaseId, string>>;
   maxTurnsPerPhase: Record<PhaseId, number>;
 };
@@ -82,6 +91,14 @@ const DEFAULT_MAX_TURNS: Record<PhaseId, number> = {
   reader: 50,
   "continuity-fact-audit": 80,
   "repair-fact-normalize": 30,
+  // A cold reader reads EVERY chapter (the reader phase only reads one act), so the
+  // floor is chapters + 1 write before any thinking turns: a 30-chapter book needs
+  // >30 on reads alone. 80 leaves headroom without being a target.
+  "cold-read": 80,
+  "cold-read-synthesis": 40,
+  // The auditor re-checks reviewer claims against the manuscript, so it needs turns
+  // to look things up rather than take the panel's word.
+  "cold-read-audit": 60,
 };
 
 const DEFAULT_CALIBRATION: CalibrationConfig = {
