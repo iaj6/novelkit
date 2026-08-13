@@ -1,0 +1,125 @@
+{
+  "lens": "airport",
+  "score_out_of_10": 8,
+  "would_finish": "yes",
+  "verdict": "The book you've bought is a double narrative: a court reporter named Ellen buys a house in a small West Virginia town and slowly discovers that its previous owner, Della Markey, died alone of hypothermia in February 1983; Della herself narrates the night of her death in alternating chapters, almost in real time. The central device is five words — \"Nobody came to that door\" — which appear first as a statement of lonely fact and last as the closing line of a paragraph recording something entirely different: a brother's knock, recognized, and deliberately refused. The revelation is not that Della was murdered. The revelation is that the county's official account was accurate and incomplete simultaneously, and that the ledger she kept — the third document, in the back-room closet of the house Ellen now owns — was the record neither the 1983 inquest nor a buyer's careful four-month investigation had yet read in full.\\n\\nThis is literary fiction with ghost-story elements handled with genuine restraint. Both narrative registers are fully inhabited. Ellen thinks like a court reporter — sequential, fiercely anti-inferential, committed to the certified record — and this professional discipline is not just characterization but the novel's epistemological engine: the discipline that makes her extend Mabel Duff's daylight testimony to cover the dark, and later catch herself doing it. Della thinks like a millwright's daughter: everything by column, what holds and what doesn't, the logic not personal. The decision to let Della sense Ellen across time as a living person \"in some other hour of this house\" inverts the usual haunted-house framework with real elegance. The novel is not about Ellen being haunted; it is about Della being visited by a future tenant who is trying to understand what the record contains.\\n\\nFor an airport reader, the first half is gripping. The back-room cold, the door that won't stay latched, the deed search, the name in the probate file — all of it moves at the right pace and rewards attention. The middle third, when Ellen revisits the courthouse a third time to re-read already-photographed documents, will test patience; Chapter 14 is the book's one genuine indulgence, justified thematically by the narrowing of hypothermic consciousness but slow to survive without wifi and nothing else to read. The Elkins deposition chapter (17) introduces the threat of digital replacement for stenographers and then drops it without structural consequence — the subplot exists to establish Ellen's professional world and then stops. These are the real friction points. The back end of the book earns the patience they ask for: the discovery of the ledger and the assembly of the full sentence in Chapter 21 is a properly surprising and emotionally correct revelation, and the final chapter closes on exactly the right note — the account finished, the door left open, the half-sentence that stops just before Della's name. That restraint is the book's genuine achievement and the reason it stays with you after the flight lands.",
+  "strongest": [
+    {
+      "chapters": [
+        "02-the-stove",
+        "21-the-final-entry",
+        "23-the-two-records"
+      ],
+      "claim": "The five-word sentence 'Nobody came to that door' is planted as apparent fact in Chapter 2 and only becomes legible in Chapter 21 when read with the twenty-nine words that precede it in the same entry, the same hand, the same night. The construction is fully earned and genuinely surprising."
+    },
+    {
+      "chapters": [
+        "02-the-stove",
+        "04-the-latch",
+        "06-the-flue",
+        "12-what-she-kept",
+        "16-his-name"
+      ],
+      "claim": "Della's first-person voice in the 1983 chapters — sparse, inventory-minded, the trained patience of a millwright's daughter — is entirely convincing and carries genuine emotional weight. The stove mechanism, the match counting, the column method: all of it is specific and earned rather than atmospheric."
+    },
+    {
+      "chapters": [
+        "08-the-oil-lamp",
+        "10-footfall",
+        "12-what-she-kept"
+      ],
+      "claim": "The ghost-story inversion is handled with real elegance: Della senses Ellen as a warm presence at the wrong angle for the season — 'a living person in my house, in some other hour of this house than the one I am in' — rather than Ellen being haunted by Della. The novel reorients both narratives around each other without explaining the mechanism."
+    },
+    {
+      "chapters": [
+        "11-no-visitors",
+        "15-the-probate-record",
+        "21-the-final-entry",
+        "23-the-two-records"
+      ],
+      "claim": "Ellen's professional discipline — reading sequentially, refusing to extend testimony beyond what the source supports, flagging inaudibles rather than filling them — is both thorough characterization and the novel's epistemological spine. The moment she catches herself having extended Mabel Duff's daylight observation to cover the dark is the book's most precise moral beat."
+    },
+    {
+      "chapters": [
+        "18-the-sound-of-the-knocking"
+      ],
+      "claim": "Chapter 18 (The Sound of the Knocking) is the best-sustained chapter in the book: Della at the foot of the stairs, the knock she recognizes before she has decided anything about it, the sentence held rather than written. The chapter does what only prose can do — it inhabits the duration of a refusal."
+    }
+  ],
+  "weakest": [
+    {
+      "chapters": [
+        "14-near-quarter-to-ten"
+      ],
+      "claim": "Chapter 14 (Near Quarter to Ten) asks the airport reader to watch a clock complete its circuits — 9:36, 9:37, 9:38 — for several pages of reiterated stillness. The thematic justification (mild hypothermia narrowing consciousness to the second hand) is real, but the execution is the book's one indulgence. This is the most likely put-down point."
+    },
+    {
+      "chapters": [
+        "17-a-deposition-in-elkins"
+      ],
+      "claim": "The Elkins deposition chapter (17) is a structural detour. It introduces the threat of digital recording displacing court reporters, gestures at Ellen's professional precarity, and then drops both threads without consequence for the Markey investigation or the ending. As pacing it stalls the book at the moment of maximum investigative interest."
+    },
+    {
+      "chapters": [
+        "06-the-flue",
+        "12-what-she-kept",
+        "14-near-quarter-to-ten"
+      ],
+      "claim": "The match tin has three incompatible locations. In Chapter 6, Della explicitly puts it 'in my coat pocket' after finding two matches remain. In Chapter 12 she refers to 'the two matches in the tin in the drawer to the left of the sink, where they have always been kept.' In Chapter 14 they are 'in the tin on the kitchen shelf.' No intervening action moves the tin out of the coat pocket. This is a continuity error."
+    },
+    {
+      "chapters": [
+        "09-before-the-scanner",
+        "19-the-back-room",
+        "20-the-account-book",
+        "22-what-she-wrote"
+      ],
+      "claim": "The physical ledger's resting place is inconsistent across the two narrative strands. Deputy Harman's statement (Chapter 9) confirms the ledger was on the kitchen table when Della died; the probate file notes it was inventoried and 'remains in situ.' Yet Ellen finds it in Chapter 19 in a cardboard box on the bottom shelf of the back-room closet — and in Chapters 20 and 22, ghost-Della places it on 'the shelf above the window.' That is three distinct locations (kitchen table, closet box, shelf above window) with no accounting for the discrepancy."
+    },
+    {
+      "chapters": [
+        "07-manner-of-death",
+        "09-before-the-scanner",
+        "11-no-visitors"
+      ],
+      "claim": "Ellen's three separate courthouse visits in Chapters 7, 9, and 11 cover substantially overlapping documentary ground. Each visit adds incremental new material, but the repetition of the reading-room setting and the document-by-document procedure across all three is more friction than craft for a reader without patience to spare."
+    }
+  ],
+  "quotes": [
+    {
+      "chapter": "02-the-stove",
+      "text": "The chimney is doing what chimneys do. The logic is not personal.",
+      "why": "The controlling sentence for Della's voice throughout: everything by column, cause without distress, the machine's logic kept separate from the person operating it. The line does in thirteen words what a character study might spend a chapter reaching."
+    },
+    {
+      "chapter": "07-manner-of-death",
+      "text": "The question it had not been charged with — that was not in the scope of the investigation and was therefore not in the report — was why a thirty-seven-year-old woman in otherwise normal health had sat in a failing house in a February blizzard and died there when the door had been latched from the inside and no one had made her stay.",
+      "why": "The novel's central question, stated plainly at roughly the midpoint. The phrasing 'no one had made her stay' does a great deal of work without asserting anything about Della's agency — it holds the gap open rather than filling it, the way the narrative holds it for another seven chapters."
+    },
+    {
+      "chapter": "08-the-oil-lamp",
+      "text": "There is a living person in my house. In this room or near it, in some other hour of this house than the one I am in.",
+      "why": "The ghost-story inversion in a single sentence: Della is not the haunting; Ellen is the presence from another time. This reframes both narratives at once and is the book's most formally inventive moment."
+    },
+    {
+      "chapter": "21-the-final-entry",
+      "text": "I did not go down. I sat here with the travel clock and I did not go down.",
+      "why": "The line that distinguishes this novel from the county's version of events. The refusal stated twice — once while the knocking was still going, once after she had watched the clock — is the only repeated construction in a ledger where everything else is written once and done. Ellen notes the emphasis; the reader feels it."
+    },
+    {
+      "chapter": "23-the-two-records",
+      "text": "The same five words. The paragraph governs the sentence.",
+      "why": "The novel's epistemological thesis in six words. The court reporter's professional guarantee applied to a household ledger. This is the moment the two narrative strands fully converge, and the sentence earns it."
+    },
+    {
+      "chapter": "24-the-door-open",
+      "text": "The house was quiet.\n\nThe door was open.",
+      "why": "The novel's last two sentences. They answer the book's central image (the door that would not stay closed, the cold that would not account for itself) without resolving what Della's choice meant. The door is open now. That is all the ending will offer, and it is correct."
+    }
+  ],
+  "put_down_points": [
+    "Chapter 14 (Near Quarter to Ten): Della watches the second hand complete circuit after circuit through 9:36, 9:37, 9:38 for several pages. Thematically justified as mild hypothermia narrowing consciousness to the present moment, but for an airport reader without patience this is the book's most likely put-down — nothing happens, deliberately, for too long.",
+    "Chapters 13-15 (The Account as It Stood / Near Quarter to Ten / The Probate Record): Ellen's third courthouse visit covers ground largely assembled from the first two. A reader who has already absorbed the investigation structure may feel the proceeding has stalled rather than advanced at precisely the moment they have learned Cale Markey existed and want to know whether he came back."
+  ],
+  "who_is_this_for": "Readers of quiet literary fiction who can live with a mystery that stays morally unresolved. Fans of Marilynne Robinson's domestic precision or Sarah Waters's restrained ghost stories. Anyone professionally involved in documentation, testimony, or records who will recognize the epistemological stakes — what a certified transcript guarantees versus what an excerpt implies. Not for readers who need their ghost stories explained or their verdicts changed. Not for airport readers who need something to happen every twenty pages."
+}

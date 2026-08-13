@@ -1,0 +1,108 @@
+{
+  "lens": "propulsion",
+  "score_out_of_10": 7,
+  "would_finish": "yes",
+  "verdict": "This novel's central formal invention earns its place: \"Nobody came to that door\" is a sentence that means one thing in isolation and something entirely different in the context of the paragraph that precedes it in Della Markey's account book. The book spends twenty-three chapters building toward the moment when a court reporter reads that paragraph for the first time, recognizes that she has been certifying an excerpt rather than a complete record, and writes three paragraphs to close the proceeding the county never properly opened. That payoff is genuinely original, and the novel earns it.\n\nThe engine is dual and documentarian: Ellen's courthouse visits drive forward pull through a chain of records — deed index, death certificate, inquest file, pathologist's report, witness statements, the ledger itself — each document clarifying and limiting the previous one. Della's alternating chapters supply atmospheric pressure and, eventually, the testimony the official record lacked. The pull is strongest in the documentary track. The courthouse visits are procedurally precise and dramatically effective. It is weakest in the Della chapters between chapters 8 and 16, where the cold house and the failing stove and the ticking clock are inventoried in close succession without escalation. Eight Della chapters cover roughly the same three-hour window before the knocking arrives in chapter 18. Information accretes — Della's father, the ledger method, the company's history — but the structural pressure does not build. Chapter 17's fourteen-page workers' comp deposition in Elkins arrives precisely when tension should be building toward the ledger, and that detour's thematic connections — what records capture, the threat of digital replacement — are present but insufficient to justify the structural cost.\n\nThe two voices are the book's genuine achievement. Ellen's court-reporter precision — thinking in transcripts, brackets, inference notations — is calibrated exactly to her professional discipline, and the discipline gives her guarded concessions about the house's quality of stillness a force they would not have in a less controlled register. Della's account-book method — dates, descriptions, figures, never a strikethrough — is equally well-realized. The formal relationship between them (both women keeping records; one's method contains the truth the other's cannot reach) is the novel's best structural idea.\n\nThe supernatural layer — Della aware of Ellen as a \"tenant\" with warmth at the wrong angle, Ellen registering a quality of attention that does not move with her — is atmospherically effective and consistent with the novel's refusal to explain what cannot be explained. But it receives no structural payoff. The final chapter gestures at a resolution for Della (the back-room door left open, the ledger open at February 11, the changed quality of the house's silence) that is too faint to carry the full weight the dual narrative has been building. The reader leaves with a secure sense of Ellen's completed account and a much vaguer sense of what, if anything, has concluded for Della. Whether this asymmetry is deliberate artistic restraint or a structural failure to discharge what was promised is a question the novel does not answer.",
+  "strongest": [
+    {
+      "chapters": [
+        "01-verrill-street",
+        "02-the-stove",
+        "21-the-final-entry",
+        "23-the-two-records"
+      ],
+      "claim": "The dual-register voices are superbly distinguished and their formal relationship is the novel's best structural idea: both women keep records, one professionally, one domestically, and one's method contains the truth the other's cannot reach."
+    },
+    {
+      "chapters": [
+        "21-the-final-entry",
+        "22-what-she-wrote",
+        "23-the-two-records"
+      ],
+      "claim": "The sentence-versus-paragraph payoff is the most original structural move in the book. Ellen's recognition that she has been reading 'Nobody came to that door' as an excerpt rather than a certified record — and that the paragraph above it inverts its meaning — is properly earned and thematically on target."
+    },
+    {
+      "chapters": [
+        "18-the-sound-of-the-knocking"
+      ],
+      "claim": "Chapter 18 is the strongest chapter in the novel. Della's sustained analysis of the knock's pattern, her identification of the hand before she decides anything, and her refusal to shorten the twelve feet to the door — all narrated without self-pity or explanation — constitute the structural and emotional climax the preceding chapters have been spending toward."
+    },
+    {
+      "chapters": [
+        "05-chain-of-title",
+        "07-manner-of-death",
+        "09-before-the-scanner",
+        "11-no-visitors"
+      ],
+      "claim": "The documentary trail through Greenbrier County's courthouse is procedurally precise and dramatically effective. The chain of title, inquest file, pathologist's mild-hypothermia paragraph, and Mabel Duff's statement (whose observation window the novel eventually brackets with devastating precision) give the investigation the authority of long familiarity with how these documents work."
+    },
+    {
+      "chapters": [
+        "02-the-stove",
+        "06-the-flue"
+      ],
+      "claim": "The technical grounding of Della's situation — exterior chimney, draft reversal, the physical distinction between cold that comes from a direction and cold that simply is — is handled with genuine knowledge and made to carry emotional weight without being explained to the reader more than once."
+    }
+  ],
+  "weakest": [
+    {
+      "chapters": [
+        "08-the-oil-lamp",
+        "10-footfall",
+        "12-what-she-kept",
+        "14-near-quarter-to-ten"
+      ],
+      "claim": "The Della chapters between chapters 8 and 16 cover essentially the same three-hour window — stove out, thermometer dropping, clock ticking, lamps adequate, one piece of cord wood held — without meaningful escalation. By chapters 12 and 14 the reader is doing inventory alongside Della rather than being pulled forward. The knocking that justifies all this dread does not arrive until chapter 18, and the accumulation is too long for the escalation it earns."
+    },
+    {
+      "chapters": [
+        "17-a-deposition-in-elkins"
+      ],
+      "claim": "Chapter 17 is a fourteen-page workers' comp deposition that removes Ellen from the Markey investigation entirely at the moment when forward pull should be tightening toward the ledger. The thematic connections — what the record captures, the threat digital transcription poses to Ellen's profession — are imported rather than generated by the narrative's own pressure."
+    },
+    {
+      "chapters": [
+        "09-before-the-scanner",
+        "23-the-two-records"
+      ],
+      "claim": "The witness's middle name is given inconsistently across two chapters, a production artifact. In chapter 9, the statement index identifies her as 'Mabel W. Duff' — middle initial W. In chapter 23, the same witness is called 'Mabel Evelyn Duff' — middle initial E. The two names are irreconcilable."
+    },
+    {
+      "chapters": [
+        "23-the-two-records"
+      ],
+      "claim": "Chapter 23 contains a dropped digit in the property address. Della's house is consistently '412 Verrill Street' throughout the novel, but chapter 23's summary of Mabel Duff's statement describes her as having 'seen no visitors to the residence at 14 Verrill Street' — a production artifact that misquotes the address the book has established in every preceding chapter."
+    },
+    {
+      "chapters": [
+        "08-the-oil-lamp",
+        "10-footfall",
+        "12-what-she-kept",
+        "24-the-door-open"
+      ],
+      "claim": "The supernatural layer — Della sensing Ellen as a tenant with warmth at the wrong angle, Ellen registering a quality of attention that does not move with her — is introduced in chapters 8, 10, and 12 and then never integrated into the resolution. The final chapter gestures at Della's release (the back-room door left open, the changed quality of the silence) but the gesture is too faint and unspecific to discharge what the dual narrative has been promising."
+    }
+  ],
+  "quotes": [
+    {
+      "chapter": "02-the-stove",
+      "text": "Nobody came to that door.",
+      "why": "The refrain that drives the novel's central question. It first appears as the closing line of Della's account-book entry, received as plain fact. Its meaning inverts completely by the final third once the paragraph above it is read in full — making this earliest occurrence, in retrospect, the most charged sentence in the book."
+    },
+    {
+      "chapter": "18-the-sound-of-the-knocking",
+      "text": "A hand does not change how it knocks. You do not forget what you have heard.",
+      "why": "The precise articulation of recognition that makes Della's refusal morally complete. A competent line would tell us she recognized the knock; this line tells us why recognition was inevitable and why ignorance was never available as an excuse."
+    },
+    {
+      "chapter": "23-the-two-records",
+      "text": "The paragraph governs the sentence.",
+      "why": "The crystallization of the novel's central formal insight — that a sentence read without its context is not the certified record of what a document says. Four words that name what the entire preceding novel has been demonstrating."
+    }
+  ],
+  "put_down_points": [
+    "Chapters 12-14: the Della chapters in the book's middle section, where the cold-house inventory cycles through the same conditions without structural escalation. A reader watching the thermometer drop from forty-two to thirty-seven to thirty-five across successive chapters, with the knocking still five chapters away, is accumulating without advancing.",
+    "Chapter 17: the Elkins deposition. Fourteen pages of a workers' comp proceeding interrupts the investigation at the moment Ellen is closest to understanding she needs the ledger. A reader who has been tracking Cale Markey's absence from three certified letters and a probate file is not ready to spend this long on Robert Varga's roofing injury."
+  ],
+  "who_is_this_for": "Readers of quiet literary fiction who value formal precision over plot velocity — at home with Marilynne Robinson, Penelope Fitzgerald, or the sparse end of contemporary British literary fiction. The book will reward readers interested in what documents do and fail to do, in the gap between an official finding and the full record, in the way a professional discipline shapes the person who practices it. It is not for readers expecting the genre machinery a haunted-house premise or cold-case mystery normally supplies: there is no horror, no thriller pacing, and the ghost — if that is what Della is — never fully crosses into legibility. The reader who finishes satisfied will be the one who came for the voices and the formal architecture, not the one who came for the answer."
+}

@@ -133,7 +133,16 @@
     "reader:act-3",
     "reader:synthesis",
     "continuity-fact-audit",
-    "editor-voice:12-what-she-kept"
+    "editor-voice:12-what-she-kept",
+    "cold-read:literary",
+    "cold-read:airport",
+    "cold-read:propulsion",
+    "cold-read:authenticity",
+    "cold-read:comparative",
+    "cold-read:verisimilitude",
+    "cold-read:ordinary",
+    "cold-read:synthesis",
+    "cold-read:audit"
   ],
   "entries": {
     "drafter:01-verrill-street": {
