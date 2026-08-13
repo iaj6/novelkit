@@ -4,7 +4,7 @@ import { runAgent } from "../agentRunner.js";
 import { loadState, isComplete, markComplete } from "../state.js";
 import { loadConfig } from "../config.js";
 import { resolveLenses, type Lens } from "../coldread/lenses.js";
-import { resolveManuscript, type ManuscriptChapter } from "../coldread/manuscript.js";
+import { resolveManuscript, type ManuscriptChapter } from "../manuscript.js";
 import { ColdReadSchema, type ColdRead } from "../coldread/schema.js";
 import { verifyPanel, type VerificationReport } from "../coldread/verify.js";
 import { COLD_READ_ALLOW_PREFIXES } from "../tools.js";

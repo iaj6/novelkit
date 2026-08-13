@@ -13,6 +13,7 @@ import { runReader } from "./phases/reader.js";
 import { runContinuityFactAudit } from "./phases/continuity-fact-audit.js";
 import { runRepairFactNormalize } from "./phases/repair-fact-normalize.js";
 import { runColdRead } from "./phases/cold-read.js";
+import { checkProjectInvariants } from "./invariants.js";
 import { readCostSummary, formatCostSummary } from "./runlog.js";
 import { estimateRun, formatDurationRange } from "./estimate.js";
 import { detectBillingMode } from "./billing.js";
@@ -218,6 +219,19 @@ export async function runAll(projectRoot: string) {
       `${c.dim("priciest phase:")}  ${heaviest[0]} ${c.dim(`(${c.cost(heaviest[1].usd)} across ${heaviest[1].calls} call${heaviest[1].calls === 1 ? "" : "s"})`)}`
     );
   }
+  // The brief's structural contract, re-checked once the whole pipeline has run.
+  // Nothing used to do this, which is how the compression pass silently pushed three
+  // chapters under a stated word floor the drafter had honoured in all thirty.
+  const violations = await checkProjectInvariants(projectRoot);
+  if (violations.length > 0) {
+    console.log("");
+    console.log(c.yellow(`invariant violations (${violations.length}):`));
+    for (const v of violations) console.log(`  ${c.yellow("!")} ${v.message}`);
+    console.log(
+      c.dim("  (declared in cdk.config.json \"invariants\"; a later phase mutated the text past them)")
+    );
+  }
+
   const wallSec = Math.round(wallMs / 1000);
   const wallLabel =
     wallSec < 60

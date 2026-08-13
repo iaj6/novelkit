@@ -7,7 +7,7 @@ import {
   verifyChapterRefs,
   verifyPanel,
 } from "../src/coldread/verify.js";
-import type { ManuscriptChapter } from "../src/coldread/manuscript.js";
+import type { ManuscriptChapter } from "../src/manuscript.js";
 import type { ColdRead } from "../src/coldread/schema.js";
 
 const chapters: ManuscriptChapter[] = [

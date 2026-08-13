@@ -7,6 +7,8 @@ import { readCostSummary, formatCostSummary } from "./runlog.js";
 import { setVisibility, type Visibility } from "./config.js";
 import { runRepairFactNormalize } from "./phases/repair-fact-normalize.js";
 import { runColdRead } from "./phases/cold-read.js";
+import { runRevisePlan } from "./phases/revise-plan.js";
+import { runReviseApply } from "./phases/revise-apply.js";
 import { DEFAULT_LENSES } from "./coldread/lenses.js";
 import { SEVERITIES, type Severity } from "./findings.js";
 import * as c from "./ansi.js";
@@ -22,6 +24,9 @@ function usage(): never {
   cdk coldread <dir> [--force] [--lens=a,b] independent brief-blind review panel over the finished
                                             manuscript; writes logs/cold-read/. Resumes by default.
                                             lenses: ${DEFAULT_LENSES.map((l) => l.id).join(", ")}
+  cdk revise <dir> [--apply]                plan a revision from findings + cold-read into
+                   [--approve-all]          logs/revision-plan.json; --apply executes approved
+                                            items into revision-1/ with rollback on failure
   cdk phase <name> <dir>                    run one phase, ignoring state
     where <name> is one of: ${ALL_PHASE_NAMES.join(", ")}
     (\`editor\` runs continuity, pacing, and voice passes in sequence)
@@ -205,6 +210,17 @@ async function main() {
       ? lensArg.split(",").map((s) => s.trim()).filter(Boolean)
       : undefined;
     await runColdRead(projectRoot, { lenses });
+  } else if (cmd === "revise") {
+    const target = positional[0];
+    if (!target) usage();
+    const projectRoot = path.resolve(target);
+    const approveAll = flags.includes("--approve-all");
+    if (flags.includes("--apply") || approveAll) {
+      await runReviseApply(projectRoot, { approveAll });
+    } else {
+      // Planning is the default: the destructive mode must be asked for by name.
+      await runRevisePlan(projectRoot);
+    }
   } else if (cmd === "phase") {
     const phase = positional[0] as PhaseName | undefined;
     const target = positional[1];
