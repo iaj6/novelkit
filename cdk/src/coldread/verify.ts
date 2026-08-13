@@ -1,4 +1,4 @@
-import type { ManuscriptChapter } from "./manuscript.js";
+import type { ManuscriptChapter } from "../manuscript.js";
 import type { ColdRead } from "./schema.js";
 
 export const QUOTE_VERDICTS = ["exact", "near", "misattributed", "absent"] as const;

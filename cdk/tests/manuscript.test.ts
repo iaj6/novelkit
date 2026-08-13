@@ -2,7 +2,7 @@ import { describe, it, expect, beforeEach, afterEach } from "vitest";
 import { mkdtempSync, mkdirSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
-import { resolveManuscript } from "../src/coldread/manuscript.js";
+import { resolveManuscript } from "../src/manuscript.js";
 
 let tmpRoot: string;
 

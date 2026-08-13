@@ -18,9 +18,24 @@ export type PhaseId =
   | "repair-fact-normalize"
   | "cold-read"
   | "cold-read-synthesis"
-  | "cold-read-audit";
+  | "cold-read-audit"
+  | "revise-plan"
+  | "revise-chapter";
 
 export type Visibility = "private" | "public";
+
+/**
+ * A book's structural contract, checked mechanically after any phase that mutates
+ * the text. Declared here rather than inferred from brief.md — an inferred floor
+ * would be as unreliable as the drift it guards against, and a wrong one fails runs
+ * for imaginary reasons. Omit the block entirely to impose no constraint.
+ */
+export type InvariantsConfig = {
+  /** Minimum words per chapter, e.g. a brief's stated "no chapter under 1,900 words". */
+  minWordsPerChapter?: number;
+  /** Minimum words across the whole manuscript. */
+  minTotalWords?: number;
+};
 
 export type CalibrationConfig = {
   /** Whether the drafter calibration loop runs before drafter. Default: true. */
@@ -70,6 +85,11 @@ export type Config = {
    * rather than a silent drop, so two runs are never quietly incomparable.
    */
   coldRead?: { lenses?: string[] };
+  /**
+   * The book's structural contract, re-checked after any phase that mutates the
+   * text (see src/invariants.ts). Omit to impose no constraint.
+   */
+  invariants?: InvariantsConfig;
   modelByPhase: Partial<Record<PhaseId, string>>;
   maxTurnsPerPhase: Record<PhaseId, number>;
 };
@@ -99,6 +119,10 @@ const DEFAULT_MAX_TURNS: Record<PhaseId, number> = {
   // The auditor re-checks reviewer claims against the manuscript, so it needs turns
   // to look things up rather than take the panel's word.
   "cold-read-audit": 60,
+  // The planner reads the whole manuscript plus findings before proposing anything.
+  "revise-plan": 80,
+  // A reviser rewrites one chapter with its findings and protected passages in hand.
+  "revise-chapter": 40,
 };
 
 const DEFAULT_CALIBRATION: CalibrationConfig = {

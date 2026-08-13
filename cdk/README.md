@@ -32,6 +32,8 @@ cdk repair <dir> [--severity=<lvl>] apply repair agents to logs/findings.json
                                     (default severity=critical)
 cdk coldread <dir> [--force]        independent brief-blind review panel over the finished
              [--lens=a,b]           manuscript; writes logs/cold-read/. Resumes by default.
+cdk revise <dir> [--apply]          plan a revision from findings + cold-read into
+                 [--approve-all]    logs/revision-plan.json; --apply executes approved items
 cdk phase <name> <dir>              run a single phase, ignoring state
 cdk status <dir>                    show output files, completed-task state, cost so far
 cdk publish <dir>                   set visibility=public  (book appears on the site)
@@ -94,6 +96,55 @@ The default roster is seven lenses (`literary`, `airport`, `propulsion`, `authen
 genre — `propulsion` asks what supplies this book's forward pull before judging whether it works,
 and `verisimilitude` works out what the book claims fidelity to (a period, a place, a profession, or
 in an invented world only its own rules) before checking it.
+
+## Revision — the pipeline's one destructive phase
+
+`cdk revise` is what closes the gap between a first draft and a book. The four editor passes work
+line by line; nothing else acts on a developmental finding that needs judgment — compressing a
+chapter, cashing a planted setup, reconciling a fact that drifted across a dozen chapters.
+
+It runs in two steps with a human between them:
+
+```
+cdk revise <dir>            # propose  → logs/revision-plan.json (every item approved:false)
+cdk revise <dir> --apply    # execute  → only items you set to approved:true
+```
+
+Every plan item must cite the findings it answers (`source_findings` is required and non-empty), so
+revision is always traceable to a diagnosis rather than an agent rewriting prose it disliked. Items
+declare a **blast radius**; an edit outside it aborts the whole run, because the radius is what you
+approved. Two classes exist — `in-chapter` and `cross-chapter-fact` — and structural cut/merge/reorder
+deliberately does not, since the world store keys facts and records to chapter ids.
+
+**Every item is transactional.** Before it runs, the affected chapters are snapshotted; afterwards
+these are checked *in code*:
+
+- **Protected passages survive.** Items carry verbatim quotes that must still be present. This is the
+  guard that matters: on a live run it preserved a legitimate `Strada Crișan` reference sitting in the
+  same paragraph as one being corrected, where a blanket rename would have destroyed the book's
+  address chain. Passages are verified against the manuscript at *plan* time too — a paraphrased quote
+  makes the guard vacuous, and a vacuous guard is worse than none because it reports as a pass.
+- **Brief invariants hold** (see below), judged against a per-item baseline so an item is never rolled
+  back for a violation it inherited — books that already break their contract are exactly the ones
+  needing revision.
+
+Any failure rolls the item back to its exact pre-state, including deleting a `revision-1/` file that
+did not exist before. Applied items are recorded in state, so re-running after editing the plan does
+not revise an already-revised chapter on top of itself.
+
+## Invariants
+
+`cdk.config.json` may declare a book's structural contract:
+
+```json
+"invariants": { "minWordsPerChapter": 1900, "minTotalWords": 62000 }
+```
+
+These are re-checked after revision and reported at the end of `cdk run`. They exist because nothing
+used to verify the brief's contract after a later phase mutated the text: on one book the drafter
+honoured a stated 1,900-word floor in all thirty chapters and the compression pass then pushed three
+under it, silently, because no code knew the floor existed. Invariants are **declared, not inferred** —
+an inferred floor would be as unreliable as the drift it guards against. Omit the block for no constraint.
 
 `repair-fact-normalize` is opt-in via `cdk repair` — it applies auto-repair-safe
 continuity-fact findings into `revision-1/` without mutating the original drafts.
