@@ -5,6 +5,7 @@ import * as path from "node:path";
 import type { RunLog } from "./runlog.js";
 import { FindingSchema, writeFindings as persistFindings, appendFindings as persistAppendFindings } from "./findings.js";
 import { resolveInProject } from "./paths.js";
+import { ColdReadSchema } from "./coldread/schema.js";
 import { WorldSession } from "./world/session.js";
 import { ENTITY_KINDS, STANCES, BASES, TIERS, CONFIDENCES, POLARITIES, RECORD_KINDS, type Source } from "./world/schema.js";
 
@@ -51,7 +52,38 @@ export type ToolDeps = {
   source?: Source;
   /** Opt-in: expose the epistemic capture/query tools (record_knowledge, who_knows, dramatic_irony). Off keeps them out of the tool set entirely. */
   epistemic?: boolean;
+  /**
+   * Tool surface for this phase. "full" (default) is the normal pipeline set.
+   * "cold-read" exposes ONLY read_file, list_files and write_cold_read — no
+   * world-store tools at all, so a cold reader can neither mutate canon nor have
+   * its writes mislabeled by phaseToSource's "drafter" fallback.
+   */
+  profile?: "full" | "cold-read";
+  /**
+   * When set, read_file and list_files refuse any path outside these
+   * project-relative directory prefixes.
+   *
+   * This is what makes the cold-read panel blind rather than merely asked to be
+   * blind. A reviewer that can read brief.md is grading conformance to intent,
+   * which is exactly the failure this harness exists to avoid — so the constraint
+   * is enforced here rather than in a prompt. It also makes lens isolation
+   * structural: with logs/ unreadable, one lens cannot see another's report.
+   */
+  readAllowPrefixes?: string[];
 };
+
+/** Directories a cold reader may read. Everything else in the project is invisible to it. */
+export const COLD_READ_ALLOW_PREFIXES = ["draft", "revision-1"];
+
+/**
+ * True when `rel` (a project-relative path) sits inside one of `prefixes`.
+ * Segment-aware, so "draft" does not admit "draft-notes". Pure; exported for tests.
+ */
+export function isReadAllowed(rel: string, prefixes: string[] | undefined): boolean {
+  if (!prefixes || prefixes.length === 0) return true;
+  const norm = rel.split(path.sep).join("/").replace(/^\.\//, "");
+  return prefixes.some((p) => norm === p || norm.startsWith(`${p}/`));
+}
 
 // The file-path jail (resolveInProject) now lives in paths.ts so the world store
 // and any other module can share the exact same containment check without pulling
@@ -239,11 +271,32 @@ export function buildToolServer(deps: ToolDeps) {
   // Since M6 the store is the source of truth; logs/continuity.md is regenerated from it.
   const session = new WorldSession(projectRoot, deps.source ?? "drafter");
 
+  const allowPrefixes = deps.readAllowPrefixes;
+  const scopeNote = allowPrefixes
+    ? ` Reads are restricted to: ${allowPrefixes.map((p) => `${p}/`).join(", ")}. Any other path is refused.`
+    : "";
+
+  /**
+   * Refuse reads outside the allowlist. Thrown as an ordinary tool error so the
+   * agent sees the refusal and can adapt, rather than silently receiving nothing.
+   */
+  function assertReadable(rel: string) {
+    if (!isReadAllowed(rel, allowPrefixes)) {
+      log.event("read_denied", { path: rel, allow: allowPrefixes });
+      throw new Error(
+        `Read denied: '${rel}' is outside this phase's readable scope ` +
+          `(${allowPrefixes!.map((p) => `${p}/`).join(", ")}). ` +
+          `You are reviewing the manuscript only; supporting material is deliberately withheld.`
+      );
+    }
+  }
+
   const readFile = tool(
     "read_file",
-    "Read a file within the project. Path is relative to the project root (e.g. 'brief.md', 'canon/world.md').",
+    `Read a file within the project. Path is relative to the project root (e.g. 'brief.md', 'canon/world.md').${scopeNote}`,
     { path: z.string() },
     async (args) => {
+      assertReadable(args.path);
       const abs = resolveInProject(projectRoot, args.path);
       const content = await fs.readFile(abs, "utf-8");
       log.event("tool", { name: "read_file", path: args.path, bytes: content.length });
@@ -253,9 +306,10 @@ export function buildToolServer(deps: ToolDeps) {
 
   const listFiles = tool(
     "list_files",
-    "List files in a project subdirectory. Path is relative to the project root. Use '.' for the root.",
+    `List files in a project subdirectory. Path is relative to the project root. Use '.' for the root.${scopeNote}`,
     { path: z.string() },
     async (args) => {
+      assertReadable(args.path);
       const abs = resolveInProject(projectRoot, args.path);
       let entries: string[] = [];
       try {
@@ -266,6 +320,37 @@ export function buildToolServer(deps: ToolDeps) {
       const text = entries.length ? entries.sort().join("\n") : "(empty)";
       log.event("tool", { name: "list_files", path: args.path, count: entries.length });
       return { content: [{ type: "text", text }] };
+    }
+  );
+
+  const writeColdRead = tool(
+    "write_cold_read",
+    "Submit your completed cold-read assessment. Call this exactly once, at the end. Quotes are mechanically verified against the manuscript after the run, so quote short and quote exactly.",
+    // The review's fields are declared individually rather than as one opaque
+    // `review` object: given an untyped parameter the model serializes the whole
+    // structure to a JSON *string*, which then fails validation on every attempt
+    // (observed 15 consecutive rejections on the first live run). A typed shape
+    // gives the model a real contract per field.
+    ColdReadSchema.shape,
+    async (args) => {
+      const parsed = ColdReadSchema.safeParse(args);
+      if (!parsed.success) {
+        const detail = parsed.error.issues
+          .map((i) => `${i.path.join(".") || "<root>"}: ${i.message}`)
+          .join("; ");
+        log.event("cold_read_invalid", { detail });
+        // Returned as an error so the agent corrects and retries rather than
+        // the phase persisting a malformed review that breaks verification.
+        throw new Error(`cold read does not match the required schema (${detail}). Fix and call again.`);
+      }
+      const rel = `logs/cold-read/${parsed.data.lens}.json`;
+      const abs = resolveInProject(projectRoot, rel);
+      await fs.mkdir(path.dirname(abs), { recursive: true });
+      const tmp = `${abs}.tmp.${process.pid}.${Date.now()}`;
+      await fs.writeFile(tmp, JSON.stringify(parsed.data, null, 2) + "\n", "utf-8");
+      await fs.rename(tmp, abs);
+      log.event("tool", { name: "write_cold_read", lens: parsed.data.lens, path: rel });
+      return { content: [{ type: "text", text: `wrote ${rel}` }] };
     }
   );
 
@@ -762,7 +847,9 @@ export function buildToolServer(deps: ToolDeps) {
    * the agent — it fails as "the model never called it", not as an error. Deriving makes
    * that class of bug unrepresentable.
    */
-  const activeTools = [
+  const activeTools = deps.profile === "cold-read"
+    ? [readFile, listFiles, writeColdRead]
+    : [
       readFile,
       listFiles,
       writeFile,
@@ -793,6 +880,7 @@ export function buildToolServer(deps: ToolDeps) {
       // linear book, wasting turns and adding store noise (81 stray events on coldwater-reach).
       ...(deps.epistemic ? [recordKnowledge, whoKnows, dramaticIronyTool] : []),
   ];
+
 
   const server = createSdkMcpServer({
     name: SERVER_NAME,

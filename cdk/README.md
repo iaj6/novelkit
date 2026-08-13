@@ -30,6 +30,8 @@ cdk resume <dir>                    alias for `cdk run`
 cdk review <dir>                    re-run only the Reader phase on an existing manuscript
 cdk repair <dir> [--severity=<lvl>] apply repair agents to logs/findings.json
                                     (default severity=critical)
+cdk coldread <dir> [--force]        independent brief-blind review panel over the finished
+             [--lens=a,b]           manuscript; writes logs/cold-read/. Resumes by default.
 cdk phase <name> <dir>              run a single phase, ignoring state
 cdk status <dir>                    show output files, completed-task state, cost so far
 cdk publish <dir>                   set visibility=public  (book appears on the site)
@@ -57,6 +59,41 @@ cdk unpublish <dir>                 set visibility=private (default; hidden from
 8. **reader** — a developmental read of the whole manuscript; emits prose notes plus
    structured `logs/findings.json`.
 9. **continuity-fact-audit** — cross-chapter fact check against the continuity log.
+
+## Cold read — independent evaluation
+
+`cdk coldread` is an evaluation, not a pipeline phase, and is deliberately outside `cdk run`.
+
+Every reviewing stage inside the pipeline reads `brief.md` first, so it grades *conformance to
+intent*. The reader phase also works act-by-act and synthesizes from its own summaries, so nothing
+in `cdk run` ever holds the whole manuscript at once. A cold read closes both gaps: a panel of
+independent lenses reads the finished book — `draft/`, with `revision-1/` overriding per chapter —
+and nothing else.
+
+Blindness is enforced in code, not requested in a prompt: cold-read agents get a read-allowlist of
+`draft/` and `revision-1/`, so `brief.md`, `canon/`, `outline/` and prior reviews are unreachable.
+The same guard makes lens isolation structural — with `logs/` unreadable, no lens can see another's
+report.
+
+Stages: **lenses** (one agent each, independent) → **verification** (deterministic TypeScript, not
+an agent — classifies every quote as exact / near / misattributed / absent against the manuscript)
+→ **synthesis** (reports only) → **panel audit** (audits the *reviewers*, and gets the manuscript so
+it can check their claims rather than trust them).
+
+Outputs land in `logs/cold-read/`; `logs/findings.json` is never touched, so the pipeline's
+self-assessment and the independent check stay separable.
+
+`verification.json` carries a `panel_health` block of **book-independent** metrics — score spread,
+fabrication rate, claim volume, and warnings such as a suspiciously narrow score band. These exist
+so a run can be judged as a *harness* run: "did it rediscover the defects I already know about in
+this manuscript" measures the book and does not transfer to the next one.
+
+The default roster is seven lenses (`literary`, `airport`, `propulsion`, `authenticity`,
+`comparative`, `verisimilitude`, `ordinary`), overridable per book via `coldRead.lenses` in
+`cdk.config.json` or `--lens`. Lenses derive their frame from the book rather than presuming a
+genre — `propulsion` asks what supplies this book's forward pull before judging whether it works,
+and `verisimilitude` works out what the book claims fidelity to (a period, a place, a profession, or
+in an invented world only its own rules) before checking it.
 
 `repair-fact-normalize` is opt-in via `cdk repair` — it applies auto-repair-safe
 continuity-fact findings into `revision-1/` without mutating the original drafts.
