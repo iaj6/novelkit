@@ -1,0 +1,125 @@
+{
+  "lens": "propulsion",
+  "score_out_of_10": 7,
+  "would_finish": "yes",
+  "verdict": "This novel runs on triple-engine propulsion: the external mystery of what Ren Ashford found in the Hollowback waystation, the accumulated secrets of the four party members, and the atmospheric dread of the Hollowback itself. The first engine is the most reliable, and it delivers. The waystation sequence across Chapters 8-13 earns what the approach built: three mechanically distinct obstacles in the antechamber, the Hollowed One revealed not as a monster but as an ethical failure sustained by a machine, and Agda's invocation under full draw in Chapter 13 — on her knees, arguing her case to Duhr while the filter lattice fails around her — the most genuinely tense scene in the book. The Vethic road discovery in Chapter 6 does something rarer: it earns the scale the waystation will require before that scale has been demanded. The Hollowback's strangeness is rendered through sensory accumulation rather than genre shorthand — distances that read further than they measure, the unlocatable water sound, light that behaves differently in Vethic stone — and this restraint pays compound interest when the waystation's horror needs no additional preparation.\\n\\nThe second engine misfires on its two most heavily built chambers. Corvin's \"dereliction\" is planted in Chapter 3 with Radwick's taunt, invested in as a sustained mystery across nine chapters, and discharged in Chapter 15 via Sela's inference that he confirms wordlessly: \"you refused an order you knew was wrong, and it cost you.\" The moral shape is accurate but the book prepared a revelation and gave a summary. More seriously, Evren's personal stake — the cartographer Lira who went into a waystation three years ago and didn't return — is planted in the Chapter 2 watch scene, named and foregrounded in Chapter 12 (\"I want to know what happened to her\"), and then the waystation gives him no answer. The Hollowed One is not Lira. The structure gives Evren proximity to a category of mystery without resolving the specific question he asked. That is a structural hole, not deliberate ambiguity, because the book has provided enough to understand this as answerable.\\n\\nThere is also a production artifact in the chapter headers that survived into the finished text: Chapters 6-12 carry a \"Chapter X —\" prefix before their titles, while Chapters 1-5 and 13-16 do not. This pattern follows no narrative logic — it does not delineate an act break or a shift in voice — and is the residue of an inconsistently applied drafting template. A reader moving through the volume will notice the discrepancy at Chapter 6 and again when it drops away at Chapter 13.\\n\\nThe return journey and Thorngate close earn their quietness through thoroughness that preceded them. Relationships are acknowledged at the right temperature, the contract is closed without ceremony, and Sela crossing the same threshold she left eleven days ago — her calibration permanently adjusted — is genuinely good structural payoff for the first engine. The Evren-Agda dynamic is built with care across Chapters 7 and 11 and gets only a half-gesture in Chapter 16; this reads as a scene that was intended and not written rather than as a deliberate withholding. The book is closer to excellent than these structural failures allow it to be.",
+  "strongest": [
+    {
+      "chapters": [
+        "08-the-antechamber",
+        "09-interior",
+        "10-found",
+        "11-the-thing-the-empire-kept",
+        "13-the-hollowed"
+      ],
+      "claim": "The waystation sequence delivers on every promise built during the approach. The Hollowed One is rendered as an ethical failure — a volunteer held by a machine past the empire's collapse — rather than a monster, and its horror is architectural rather than spectacular. Agda's invocation under full draw in Chapter 13 (on her knees, continuing to argue her case to Duhr while the filter lattice consumes itself) is the book's most complete piece of propulsive design."
+    },
+    {
+      "chapters": [
+        "08-the-antechamber"
+      ],
+      "claim": "The antechamber trap sequence in Chapter 8 runs three mechanically distinct obstacles in sequence — path-marked chalk marks, pressure plates, combination rings — each revealing character without explaining it. Evren's Vethic fluency, Agda's deliberate walk under the ceiling block ('don't run in tight stone passages'), and Sela's foot-slip resolved by Evren's hard grip in the dark are the best demonstration in the book of propulsion through character competence rather than violence."
+    },
+    {
+      "chapters": [
+        "01-the-worst-job-on-the-board"
+      ],
+      "claim": "The initial ensemble assembly deploys four characters through action and dialogue in a single chapter, with a withheld question ('why has no one taken this contract for six days?') pulling the reader forward before any of the characters have been explained. The hiring-hall opening is efficient and specific without being mechanical."
+    },
+    {
+      "chapters": [
+        "05-charter",
+        "11-the-thing-the-empire-kept",
+        "14-threshold"
+      ],
+      "claim": "Agda's arc is the most fully realized in the book because her restraint is given a concrete object: she has Duhr's name and the threshold tradition, and both are tested and pay. The Vott checkpoint scene, her practical form of Duhr-invocation, and the corridor moment in Chapter 11 ('the door is closed') constitute the most complete character design in the ensemble."
+    },
+    {
+      "chapters": [
+        "06-what-the-empire-paved"
+      ],
+      "claim": "The Vethic road discovery earns the scale the waystation will require before that scale has been demanded. 'The road was built by people who expected it to last. It did. They didn't.' is the book's best line because it registers the emotional fact of the empire's ruin in the grammar of its own certainty."
+    }
+  ],
+  "weakest": [
+    {
+      "chapters": [
+        "03-dereliction",
+        "15-the-road-tells-you-things"
+      ],
+      "claim": "Corvin's dereliction backstory is among the most prominently planted mysteries in the book — the Radwick ambush exists primarily to deliver the 'derelicted' charge, and the chapter is titled after it — but is discharged in Chapter 15 via Sela's inference ('you refused an order you knew was wrong, and it cost you') that Corvin neither confirms nor denies in specifics. The moral shape is right; the book invested more in the mystery than the resolution earns."
+    },
+    {
+      "chapters": [
+        "07-watch",
+        "12-what-we-do-now",
+        "14-threshold"
+      ],
+      "claim": "Lira's fate — the cartographer who went into a waystation three years ago and didn't come back — is planted in Chapter 2, foregrounded as a specific personal question in Chapter 12 ('I want to know what happened to her'), and then not answered. The Hollowed One is not Lira. The waystation gives Evren proximity to the category of mystery without resolving the question he named. The book seems to assume that proximity to the general mystery substitutes for resolution of the specific one."
+    },
+    {
+      "chapters": [
+        "06-what-the-empire-paved",
+        "07-watch",
+        "08-the-antechamber",
+        "09-interior",
+        "10-found",
+        "11-the-thing-the-empire-kept",
+        "12-what-we-do-now"
+      ],
+      "claim": "The chapter header format is inconsistent across the manuscript: Chapters 6-12 carry a 'Chapter X —' prefix before the title, while Chapters 1-5 and 13-16 do not. This pattern follows no narrative logic and is a production artifact — the residue of an inconsistently applied drafting template that was not cleaned up."
+    },
+    {
+      "chapters": [
+        "10-found",
+        "11-the-thing-the-empire-kept",
+        "12-what-we-do-now"
+      ],
+      "claim": "Ren as destination character does not carry the weight of eight chapters of buildup. He arrives in Chapter 10 fully organized, immediately becomes an exposition mechanism, and his stated stubbornness ('the work is not finished') is resolved within one scene of resistance. His intellectual relationship with Sela and the brief exchange with Evren are the only moments that develop him as a person rather than a plot function."
+    },
+    {
+      "chapters": [
+        "07-watch",
+        "11-the-thing-the-empire-kept",
+        "16-thorngate"
+      ],
+      "claim": "The Evren-Agda dynamic is built with visible care across the watch scene in Chapter 7 (twenty minutes of no jokes while she sits beside him) and the corridor exchange in Chapter 11, but receives only a half-gesture in Chapter 16 (Evren walks north, after Agda). The scenes before it prepared the reader for something more complete. This reads as a scene that was intended and not written rather than as a deliberate structural withholding."
+    }
+  ],
+  "quotes": [
+    {
+      "chapter": "01-the-worst-job-on-the-board",
+      "text": "Six days was visible information.",
+      "why": "The second sentence of the book establishes the information-economy that drives its propulsion: facts that can be read by a competent reader before anyone explains them. The novel earns its forward pull most consistently when it trusts this mode."
+    },
+    {
+      "chapter": "02-east",
+      "text": "I once heard a cartographer's description of it.",
+      "why": "The first plant of Evren's concealed knowledge — the sentence stops exactly where truth would have to begin. The pronoun 'she' five chapters later will land because this withholding was established here."
+    },
+    {
+      "chapter": "06-what-the-empire-paved",
+      "text": "The road was built by people who expected it to last. It did. They didn't.",
+      "why": "The book's best line because it does the work of historical register in eleven words without reaching for it. The tricolon's grammar enacts what it describes: the third beat shorter and final."
+    },
+    {
+      "chapter": "10-found",
+      "text": "The shape inside the housing did not move and was not still.",
+      "why": "The Hollowed One's paradox rendered in one sentence. 'Not still' carries more dread than any elaboration because it names the exact category of wrongness the book has been building toward."
+    },
+    {
+      "chapter": "12-what-we-do-now",
+      "text": "There was a cartographer who went into a station like this one.",
+      "why": "The moment Evren's arc is explicitly named as a personal quest — cited here because it opens a question the book does not answer. The waystation gives him proximity to the category of mystery but not resolution of this specific one."
+    },
+    {
+      "chapter": "15-the-road-tells-you-things",
+      "text": "You refused an order you knew was wrong, and it cost you.",
+      "why": "The Corvin payoff, delivered as Sela's inference rather than revelation. Cited as illustration of the disproportion between investment in the mystery and the thinness of its discharge."
+    }
+  ],
+  "put_down_points": [
+    "Chapters 11-12: the shift from atmospheric discovery to Ren's extended expository explanation of Vethic vital-energy transfer research temporarily displaces the sensory mode the book does best. Readers whose forward pull derives from mystery and atmosphere may find this the stretch where momentum most visibly dips — the book stops showing the Hollowed One and starts explaining the experiment that produced it."
+  ],
+  "who_is_this_for": "Readers of quiet ensemble secondary-world fantasy who want character over spectacle and atmospheric dread over explanatory horror — the audience for Ursula K. Le Guin's intimate mode or early Joe Abercrombie without the grimdark. It will satisfy readers who find restraint satisfying rather than withholding, and who are willing to tolerate an unhurried approach phase (the first five chapters are setup) in exchange for a payoff grounded in ethical weight rather than violence. Readers who expect foregrounded mysteries to be answered within the volume that raises them will be frustrated by Lira's unanswered question and Corvin's thin resolution."
+}

@@ -1,0 +1,133 @@
+{
+  "lens": "verisimilitude",
+  "score_out_of_10": 7,
+  "would_finish": "yes",
+  "verdict": "This is a secondary-world quest novel with an 18-day courier journey as its spine, asking to be judged against an internally derived reference frame: a guild system with competing factions and jurisdictions, a two-tier magic system (hedge-witch chalk-and-herb versus guild-trained power), and a tracked calendar. By those standards it earns genuine credit. The seal number — \"two letters, a numeral, three letters, a numeral\" — is recited, checked, and verified obsessively from chapter 1 through chapter 11, and the count is always seven, always in the same order. The kit's consumables (chalk, salt, herbs, cord) are treated as finite material with a running tally: every working draws down the chalk stock, the ford destroys most of what's left, and the loss is felt immediately in narrative terms. The rope looted in chapter 3 is the rope used at the ford in chapter 9. Iri's post-working depletion follows a consistent pattern across three incidents separated by chapters. The explicit day-count runs from day 1 (departure) through day 18 (Asterhall arrival) with intermediate checkpoints at days 7, 9, 11, 13, 15, and 17, and none of these contradict each other or the events they bracket. The retrospective in chapter 11 — in which Tess reconstructs the full operation against her party — can be verified line by line against the earlier chapters, and it holds. This is more calendrical and resource discipline than most published fantasy manages.\n\nThen there are the errors. The road-guild's identifying mark contradicts itself across the two revision-1 chapters. Chapter 2 describes the checkpoint officer's crest as \"the same interlocked rings as the bag's seal\" — identical to the Weavers' Guild emblem. Chapter 4 specifies the enforcement wing badge is \"Not the interlocked-rings mark of the Weavers' Guild, not the road-guild's chain motif\" — meaning the road-guild's symbol is a chain motif, not interlocked rings. Both chapters are in revision-1, and the revision did not reconcile them. A reader tracking guild markings for plot reasons will catch this immediately.\n\nA second production artifact: chapter 3 and chapter 4 share, nearly verbatim, the exchange in which Tess asks whether the ditch-man wants to talk and Pip says \"Taking that as a no.\" Chapter 3's version closes the ambush cleanup; chapter 4's version adds one line (the waterskin). This is the same moment, written twice, with the chapter 4 version apparently a revised expansion of the chapter 3 original, both retained in the finished manuscript. Neither reading is incoherent alone; together they signal that the draft and its revision were not compared at the scene level.\n\nThird: a named mystery object — the canvas-wrapped thing Pip calls \"insurance\" in chapter 1 — never appears in any subsequent chapter. Twelve chapters track what every pack contains. A deliberately refused explanation that receives no payoff across 60,000 words is a dropped thread, not a withholding. These three errors are discrete and correctable. The scaffolding underneath them is genuinely careful work.",
+  "strongest": [
+    {
+      "chapters": [
+        "02-the-wagon-road",
+        "04-the-guild-token",
+        "05-the-innkeeper-at-long-crossing",
+        "06-the-rival-party",
+        "07-the-pavers-country",
+        "08-two-days-out",
+        "09-the-crossing"
+      ],
+      "claim": "The 18-day calendar is explicit and internally consistent. Intermediate day numbers at chapters 2 (days 2–4), 4 (day 7), 5 (day 9), 6 (day 11), 7 (day 13), 8 (day 15), and 9 (day 17) all agree with each other and with the events they bracket. No chapter places an event on a day that conflicts with any other chapter's numbering."
+    },
+    {
+      "chapters": [
+        "03-the-ambush",
+        "07-the-pavers-country",
+        "09-the-crossing"
+      ],
+      "claim": "Kit consumables are tracked as real finite resources. Chalk is drawn down by use in the ambush (chapter 3), depleted further in the Pavers' Country ward (chapter 7), and destroyed at the ford (chapter 9). Each loss is registered in narrative terms and has consequences for what Tess can do next."
+    },
+    {
+      "chapters": [
+        "02-the-wagon-road",
+        "03-the-ambush",
+        "04-the-guild-token",
+        "09-the-crossing",
+        "11-the-advocates-court"
+      ],
+      "claim": "The seal number is described and verified with rigorous consistency. 'Two letters, a numeral, three letters, a numeral' is established in chapter 2 and the seven-character count holds in every subsequent reference through chapter 11, including Tess's verbal recitation to Sable Orr."
+    },
+    {
+      "chapters": [
+        "03-the-ambush",
+        "09-the-crossing"
+      ],
+      "claim": "The rope looted from the ambushers in chapter 3 ('You always take the rope') is the same rope used to rig the ford crossing in chapter 9, split into two forty-foot sections. A planted detail with a specific mechanical payoff."
+    },
+    {
+      "chapters": [
+        "02-the-wagon-road",
+        "03-the-ambush",
+        "05-the-innkeeper-at-long-crossing",
+        "06-the-rival-party",
+        "09-the-crossing",
+        "11-the-advocates-court"
+      ],
+      "claim": "The chapter 11 retrospective — in which Tess reconstructs the enforcement wing's full operation — can be checked line by line against earlier chapters. Every event she names (day 6 ambush, day 9 Rossa's ledger seal, day 11 rival party, the bridge cuts, the ford note) corresponds to an actual scene in the correct chapter. The retrospective introduces no false memories."
+    }
+  ],
+  "weakest": [
+    {
+      "chapters": [
+        "02-the-wagon-road",
+        "04-the-guild-token"
+      ],
+      "claim": "The road-guild's identifying emblem contradicts itself between two revision-1 chapters. Chapter 2 says the checkpoint officer's crest is 'the same interlocked rings as the bag's seal' — that is, the Weavers' Guild mark. Chapter 4 says the enforcement wing badge is 'Not the interlocked-rings mark of the Weavers' Guild, not the road-guild's chain motif,' assigning the road-guild a chain motif instead. Both chapters are in revision-1. The revision did not reconcile them."
+    },
+    {
+      "chapters": [
+        "03-the-ambush",
+        "04-the-guild-token"
+      ],
+      "claim": "The exchange in which Tess asks whether the ditch-man wants to talk and Pip says 'Taking that as a no' appears nearly verbatim in both chapter 3 and chapter 4, in different positions within what is structurally the same cleanup scene. Chapter 4's version adds one line (the waterskin). This is a production artifact: a passage drafted in the original and expanded in the revision, with both versions retained in the finished manuscript."
+    },
+    {
+      "chapters": [
+        "01-departure"
+      ],
+      "claim": "The canvas-wrapped object Pip arrives with in chapter 1 — 'roughly the shape and size of a small lute,' called 'insurance' when Tess asks what it is — is never mentioned, used, explained, or referenced in any of the eleven chapters that follow. In a book that tracks kit contents with precision, a named mystery object that simply disappears from the narrative is a dropped thread."
+    },
+    {
+      "chapters": [
+        "08-two-days-out"
+      ],
+      "claim": "A conversation between Brann and Tess in chapter 8 contains what appears to be a cut that was not smoothed over. Brann says 'I was going to ask my father about the forge... Before the debt thing,' and the next paragraph is immediately 'The ward,' Brann said. 'The one you laid in the Pavers' Country.' No intervening response from Tess, no narrative transition, no beat. The debt reference — which goes back to chapter 1's setup — appears to be the lead-in to a passage that was deleted."
+    },
+    {
+      "chapters": [
+        "04-the-guild-token",
+        "05-the-innkeeper-at-long-crossing"
+      ],
+      "claim": "The enforcement wing badge recovered in chapter 4 is described as 'enamel on copper'; the matching seal in Rossa's lodger-ledger in chapter 5 is described as 'enamel on brass.' These may be intentionally different objects (badge versus bookbinding inlay), but the prose treats them as the same organization's symbol without noting the material distinction, and readers cross-referencing the two descriptions will notice the inconsistency."
+    }
+  ],
+  "quotes": [
+    {
+      "chapter": "02-the-wagon-road",
+      "text": "The crest on his lapel was the same interlocked rings as the bag's seal.",
+      "why": "Establishes road-guild emblem as interlocked rings — directly contradicted by chapter 4's description of the road-guild's symbol as a 'chain motif.'"
+    },
+    {
+      "chapter": "04-the-guild-token",
+      "text": "Not the interlocked-rings mark of the Weavers' Guild, not the road-guild's chain motif.",
+      "why": "Assigns road-guild a chain motif, contradicting chapter 2's description of the same guild's crest as interlocked rings. Both chapters are in revision-1."
+    },
+    {
+      "chapter": "03-the-ambush",
+      "text": "\"Taking that as a no,\" Pip said.",
+      "why": "First appearance of a near-verbatim exchange that recurs in chapter 4 at a different point in the same cleanup scene — a production artifact of drafting and revision."
+    },
+    {
+      "chapter": "04-the-guild-token",
+      "text": "\"Taking that as a no,\" Pip said.",
+      "why": "Second appearance of the same exchange, with the waterskin detail added. The duplication confirms the passage was written twice across draft and revision-1."
+    },
+    {
+      "chapter": "01-departure",
+      "text": "\"Insurance,\" he said.",
+      "why": "Pip's only explanation for the canvas-wrapped object he carries. The object is never referenced, used, or explained in any of the eleven subsequent chapters."
+    },
+    {
+      "chapter": "09-the-crossing",
+      "text": "The chalk itself was gone — dissolved back into nothing by river water through the cloth weave.",
+      "why": "The payoff of three chapters of chalk-stock tracking. Demonstrates the book's discipline about consumable resources: the loss is total, immediate, and narratively consequential."
+    },
+    {
+      "chapter": "02-the-wagon-road",
+      "text": "two letters, a numeral, three letters, a numeral",
+      "why": "The seal number's format, established here and consistent in every subsequent verification across chapters 3, 4, 9, and 11. An example of the book's rigorous internal bookkeeping."
+    }
+  ],
+  "put_down_points": [
+    "Chapter 7 (The Pavers' Country): the ward-laying sequence runs to over 1,500 words of technical magic procedure. Readers without patience for craft-level magical detail will slow here, and the chapter's climax — Iri's one-fingertip correction of the curved anchor point — may not reward the investment for readers who haven't bought into the chalk-geometry system.",
+    "Chapter 12 (The Decision): the novel ends on 'She took one step' without revealing which direction. Tess's choice between testifying and leaving is the book's final question, and it is answered with a direction-free step. YA readers expecting resolution of a decision that has been built across two chapters will feel the ending as a withholding rather than a resonant open close."
+  ],
+  "who_is_this_for": "YA and adult readers who enjoy secondary-world ensemble quest fiction — tight party dynamics, rising stakes, a protagonist whose competence is real but limited. Closest shelf neighbors: Tamora Pierce's early Tortall work, Frances Hardinge's road narratives, early Robin Hobb in its willingness to track unglamorous logistics. Readers who find kit inventories and chalk-geometry interesting rather than tedious will get the most out of it. The ambiguous ending will frustrate readers who came for a closed arc; it rewards those willing to accept a delivered contract as resolution and an open future as a different kind of answer."
+}

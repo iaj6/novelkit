@@ -1,0 +1,114 @@
+{
+  "lens": "ordinary",
+  "score_out_of_10": 8,
+  "would_finish": "yes",
+  "verdict": "This is a probate novel — a solicitor named Prescott building the case, one exhibit at a time, that a dead man's will codicil is a forgery. The pace is almost punishingly deliberate. The emotions are deeply buried under professional precision. And it moved me anyway, which surprised me and which I think is the point of it.\n\nWhat makes the book work is that the case IS the novel — not background to a story but the story itself. Each chapter adds one piece of evidence, closes one door, eliminates one innocent explanation, and you are building the case alongside Prescott in real time. By the time he finally sits with both codicils in front of him and finds that the forged document says \"and her issue\" where the genuine one says \"or her issue\" — one wrong preposition in a formal recital — I caught my breath. I'd known for chapters that the codicil was forged. I did not know the HOW would arrive through a single word, or that a single word could feel like a verdict.\n\nThe emotional rewards are quiet but genuine. Garside's death in Chapter 5 is announced through an uncapped pen lying on an unfinished annotation: no drama, no preparation, three words on a page and then a man is gone. Walter Eccleston reading the genuine codicil in the courthouse corridor — slowing, going back, going still, and then that sentence, \"He was not large now\" — is the book's finest scene and is written entirely through observation, no interiority at all. The Fairhursts are the moral heart of the novel: Nora asking in Chapter 4, flatly and without self-pity, \"what was our mother to have had\" — and her later observation that her mother would have been glad about the action but would not have wanted to know the detail. These are small details that stay with you a day later.\n\nThe weaknesses are real and I won't pretend otherwise. The canvass of forty-six solicitors in Chapter 8 is the most faithful depiction of professional procedure I've encountered in fiction and also the most sustained test of reader patience. The financial and mortgage material in Chapter 11 is the driest stretch in the book. Walter Eccleston is kept at such a distance — barely three real scenes — that I wanted to feel his desperation more concretely, not just observe its consequences. And there is a production artifact in the chapter headings that an editor needed to catch: Chapters 1–3 are headed \"Chapter 1 — Title,\" \"Chapter 2 — Title,\" \"Chapter 3 — Title\" with Arabic numerals; Chapters 4–6 switch without explanation to \"Chapter Four — Title\" with written-out words; and from Chapter 7 onward the number disappears entirely, leaving only the title. This drift across twenty chapters looks like the manuscript was assembled from drafts at different stages of completion and the inconsistency was never resolved.",
+  "strongest": [
+    {
+      "chapters": [
+        "16-the-date",
+        "17-the-ninth-word"
+      ],
+      "claim": "The 'or/and' discrepancy is the book's masterpiece. Built quietly over chapters of file-building, the revelation in Chapter 17 that the forged recital says 'and her issue' where the genuine instrument says 'or her issue' — and that this version appears in Walter's own handwriting fourteen months before the codicil's stated date — is a textbook mystery revelation executed with extraordinary patience. It lands hard because the book made you earn it."
+    },
+    {
+      "chapters": [
+        "05-the-hinge"
+      ],
+      "claim": "Garside's death is the most economical death in the manuscript. 'The pen lay on the page, still uncapped, the ink dried in the nib before anyone had thought to close it. The annotation was three words and not finished.' No scene is set; no mourning is staged. The uncapped pen says everything."
+    },
+    {
+      "chapters": [
+        "19-solemn-form"
+      ],
+      "claim": "Walter's moment reading the genuine codicil in the courthouse corridor is the emotional climax of the novel. 'He was fifty or thereabouts, broad-shouldered, a man whose presence had always been larger than his physical size. He was not large now.' The scene is written entirely through external observation and is more devastating for it."
+    },
+    {
+      "chapters": [
+        "04-bank-parade"
+      ],
+      "claim": "The Fairhurst scenes in Chapter 4 are the moral anchor of the whole novel. Nora Fairhurst saying she wants to know 'what was our mother to have had. Not abstractly. She wanted the particulars' — and receiving the answer without comment — establishes everything you need to feel about what is at stake."
+    },
+    {
+      "chapters": [
+        "01-the-strong-room",
+        "03-the-habit",
+        "07-the-file",
+        "08-the-gazette",
+        "10-the-machine"
+      ],
+      "claim": "The novel's architecture is its greatest technical achievement. Each chapter adds one piece of evidence and closes one innocent explanation, and the reader accumulates the case the way Prescott does. The structure enacts the theme: that records kept to a high standard, with no foreknowledge of their future use, become their own kind of proof."
+    }
+  ],
+  "weakest": [
+    {
+      "chapters": [
+        "04-bank-parade",
+        "05-the-hinge",
+        "06-the-letter-book",
+        "07-the-file",
+        "08-the-gazette"
+      ],
+      "claim": "Production artifact: the chapter heading format is inconsistent across the manuscript. Chapters 1–3 use 'Chapter N — Title' with Arabic numerals. Chapters 4–6 switch to 'Chapter Four — Title' with written-out words. From Chapter 7 onward the number disappears entirely and only the title remains. This three-tier inconsistency across twenty chapters is an editorial artifact left in the finished text."
+    },
+    {
+      "chapters": [
+        "08-the-gazette"
+      ],
+      "claim": "Chapter 8 is the flattest sustained stretch in the book. The accounting of forty-six solicitors, their replies arriving in batches, the ticking of Booth's list — this is procedural realism taken to its limit, and for an ordinary reader it is the most likely point of abandonment. The evidence it produces (total absence of any outside solicitor) is important; the chapter that produces it is close to unreadable."
+    },
+    {
+      "chapters": [
+        "11-the-sale-contract"
+      ],
+      "claim": "Chapter 11 is the driest individual chapter. The mortgage instrument, the conditional sale contract, the banking correspondence — all of it necessary context, none of it carrying the human texture that keeps other evidential chapters alive. Walter's letter to Holt is the only moment of real character, and it is buried at the end of a chapter full of figures."
+    },
+    {
+      "chapters": [
+        "02-the-second-codicil",
+        "09-vale-mill",
+        "19-solemn-form"
+      ],
+      "claim": "Walter Eccleston is kept at such deliberate distance — we see him in an office, across a mill yard, and in a courthouse corridor — that the book lacks a fully felt antagonist. His bank letters reveal desperation; his visit to the Fairhursts is reported second-hand by Nora. An ordinary reader wants to feel his situation more directly, and the novel does not quite allow it."
+    },
+    {
+      "chapters": [
+        "12-the-witnesses",
+        "14-the-commission"
+      ],
+      "claim": "The witness avenue — Birch dead, Hallett in Canada, commission refused — is carefully plotted but experientially frustrating. Chapter 14 is a chapter-length account of a door being closed that was never very open. The structural logic is sound; as a reading experience, it takes a full chapter to arrive at nothing usable."
+    }
+  ],
+  "quotes": [
+    {
+      "chapter": "04-bank-parade",
+      "text": "settled is the word I mean to use, and I use it deliberately; I did not act in a soft mood that I expected to revise",
+      "why": "This is Josiah's letter to Margaret, read aloud in the parlour. It demolishes Walter's whole narrative — that the first codicil was made 'in a soft mood' — in a single sentence, in a dead man's words. It is the best single piece of evidence in the case and you feel it as such the moment Prescott opens it."
+    },
+    {
+      "chapter": "03-the-habit",
+      "text": "Josiah was not a man who did things unofficially",
+      "why": "Garside says this in passing, on his way out the door. It is the thesis of the entire novel in seven words. Everything Prescott builds for the next seventeen chapters is a demonstration that this sentence is true."
+    },
+    {
+      "chapter": "07-the-file",
+      "text": "The file was the work of a man who had never distinguished between what required a record and what deserved one.",
+      "why": "This is Prescott understanding Garside — and understanding that the habit of precision, built over forty years without knowing it would ever be needed, is the thing that is going to win the case. It's also quietly the emotional centre of Prescott's grief."
+    },
+    {
+      "chapter": "19-solemn-form",
+      "text": "He was not large now.",
+      "why": "Five words that do more work than five pages of interior monologue. You've just watched Walter realize his forgery was undone by a word he got wrong years before he wrote it. The sentence earns the restraint of the previous eighteen chapters."
+    },
+    {
+      "chapter": "19-solemn-form",
+      "text": "ordinary documents do not accommodate themselves to what comes after",
+      "why": "The judge says this in his summation, and it is the novel's theme stated plainly. It is also exactly right, and it is a line that stays with you because you have spent nineteen chapters watching it be proved."
+    }
+  ],
+  "put_down_points": [
+    "Chapter 8 (The Gazette) — the accounting of forty-six firms and their replies in batches is the most procedurally faithful and experientially flat section of the book; a casual reader who reaches this chapter before being fully committed to the case will likely stop here.",
+    "Chapter 11 (The Sale Contract) — the mortgage and monthly account figures, combined with banking correspondence, represent the driest sustained stretch; a reader still deciding whether to commit may not push through."
+  ],
+  "who_is_this_for": "Readers who prize precision over pace — the kind of person who reads Hilary Mantel for the texture of professional life rather than dramatic incident. People who like a mystery where the solution is a single preposition. Anyone who has ever kept a proper file and understood, without quite being able to explain it, why that matters. Not for readers who need emotional volatility, a villain with a face, or a plot that moves faster than the evidence allows."
+}

@@ -1,0 +1,101 @@
+{
+  "generated_at": "2026-08-13T23:13:33.895Z",
+  "per_lens": [
+    {
+      "lens": "literary",
+      "exact": 5,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "airport",
+      "exact": 5,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "propulsion",
+      "exact": 7,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "authenticity",
+      "exact": 5,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "comparative",
+      "exact": 5,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "verisimilitude",
+      "exact": 6,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "ordinary",
+      "exact": 6,
+      "near": 0,
+      "misattributed": 1,
+      "absent": 0,
+      "badChapterRefs": []
+    }
+  ],
+  "problems": [
+    {
+      "lens": "ordinary",
+      "chapter": "07-the-fever",
+      "text": "He did not think about the man with the cough.",
+      "verdict": "misattributed",
+      "foundIn": "06-criteria"
+    }
+  ],
+  "totals": {
+    "exact": 39,
+    "near": 0,
+    "misattributed": 1,
+    "absent": 0
+  },
+  "panel_health": {
+    "lenses": 7,
+    "scores": {
+      "min": 6.5,
+      "max": 8,
+      "mean": 7.21,
+      "spread": 1.5
+    },
+    "finish": {
+      "reluctantly": 3,
+      "yes": 4
+    },
+    "claims": {
+      "strongest": 35,
+      "weakest": 35,
+      "fewestWeaknessesOnALens": 5
+    },
+    "quotes": {
+      "total": 40,
+      "fabricationRate": 0
+    },
+    "flags": [
+      "1 misattributed quote"
+    ]
+  }
+}

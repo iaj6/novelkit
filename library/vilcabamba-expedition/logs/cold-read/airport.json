@@ -1,0 +1,120 @@
+{
+  "lens": "airport",
+  "score_out_of_10": 7.5,
+  "would_finish": "reluctantly",
+  "verdict": "This is a precise, morally serious literary expedition novel set in 1930s Peru — three principals (British surveyor Holroyd, bilingual field researcher Isobel Carrow, Quechua arriero Mariano Quispe) racing a German Ahnenerbe party to a lost pre-Inca city in the high Andes. It has no interest in being a thriller. The prose is short, declarative, and surgically controlled: each sentence does real work, and the book earns its best effects by accumulation of registered detail rather than set-piece drama. By the airport test, the honest answer is: I kept reading because the writing is too good to put down, but it asked me more than once to be more patient than airport mode permits.\n\nThe book's actual subject is the ethics of documentation and the question of who gets to define the past. Holroyd's field notebook — what he records and, more importantly, what he deliberately omits — is the moral through-line. The Leica camera accumulates meaning across all eight chapters: first as professional equipment kept warm inside the jacket, then as the instrument of the race against Riedel, then as a device whose nineteen frames represent something Holroyd cannot yet decide what to do with. This is a book about records, not about discovery. If you come to it expecting the discovery to be the climax, you'll find the final chapter too quiet. If you come to it correctly — understanding that the climax is the moment Holroyd decides not to expose the film on the descent, and then decides he won't — the ending is earned.\n\nMariano Quispe is the book's real achievement. In most expedition fiction the indigenous guide is functional scenery. Here the POV chapter in The Snowline reveals he already owns crampons bought three months before the commission, that he attempted this climb alone in March and turned back at a verglas face at 17,200 feet, and that he is operating under a specific community obligation — going as a witness, not as a hired body. That transformation of a stock type into the novel's moral center is not something most literary fiction manages, even with the best intentions. His stillness at the center of Rititambo's bowl — while Holroyd and Riedel document and debate — is the scene that stays.\n\nWhere the airport test is real: Chapter One's first pages are genuinely slow — load arithmetic, Finch's cable, the careful exposition of being fourth on the list — before the German party's twelve-day lead arrives and the plot begins to move. And Chapter Three's second half, the oilskin case and the father's marginalia, is emotionally right and structurally asks you to stop moving for six pages when the bridge disaster in Chapter Two has just set the pace. The significance of Rititambo itself — why pre-Inca versus Inca matters, what Chavin de Huántar changes in the argument — is not fully communicated to a reader who doesn't bring some background; Isobel's corrective speech to Riedel in Chapter Seven is exactly right but assumes you already feel the weight of the distinction. You have to take it on faith.",
+  "strongest": [
+    {
+      "chapters": [
+        "02-selva-alta"
+      ],
+      "claim": "The gorge bridge sequence is the book's finest sustained passage. The fraying rope is shown early, the decision not to wait is made with a specific arithmetic ('The twelve-day gap did not shorten by standing in the selva alta while a rope dried'), the disaster unfolds in physically precise stages, and the aftermath — Holroyd sitting with the notebook, aware of what he is not writing — delivers the book's central moral concern in a single understated moment: 'He was aware of standing and watching.'"
+    },
+    {
+      "chapters": [
+        "04-snowline"
+      ],
+      "claim": "The pivot to Mariano's perspective transforms him from functional guide to the novel's moral center. The revelation that he already owns crampons, that he attempted this climb alone in March and turned back, and that he has been 'sent on behalf of the valley' as a witness rather than an employee, is handled without announcement. The passage defining witness — 'a witness was not a man who wrote things down' — is the book's cleanest statement of what it is about, and it belongs to the character with the least institutional power."
+    },
+    {
+      "chapters": [
+        "03-puna"
+      ],
+      "claim": "Isobel's discovery of her father's marginalia in the oilskin case is structurally elegant. Her self-revision — she had read him as a man retreating into obsession, and the margins show he was doing something entirely different for thirty years — is earned without sentimentality. The Quechua entry at the end ('Rikhuriq. Hamuq, kutimunqa.') correctly echoes forward into Mariano's arc without explaining itself."
+    },
+    {
+      "chapters": [
+        "06-rititambo",
+        "07-what-it-proves"
+      ],
+      "claim": "Riedel is not a cartoon villain. His acknowledgment that Holroyd got there first, his willingness to listen to Isobel's architectural argument, and his final warning ('Don't let them make it what it isn't') make the Ahnenerbe threat morally complex: he is wrong about the site's origins, but his concern about institutional distortion is legitimate and aimed as much at London as at Berlin. Kern's cerebral edema provides the pressure that ends the standoff without requiring anyone to fire a rifle."
+    },
+    {
+      "chapters": [
+        "01-the-bottom-of-the-list",
+        "02-selva-alta",
+        "04-snowline",
+        "05-the-storm",
+        "08-the-descent"
+      ],
+      "claim": "The Leica is the book's best-sustained concrete symbol. It appears in Chapter One as maintained equipment, accumulates meaning through each decision about when to shoot and when not to, becomes the site of the descent's ethical crisis (the open-back temptation), and ends the book unresolved in a Cusco hotel room. This is how a recurring object should work: not announced, not explained, thickening with each appearance."
+    }
+  ],
+  "weakest": [
+    {
+      "chapters": [
+        "01-the-bottom-of-the-list"
+      ],
+      "claim": "Chapter One is genuinely slow to start. The opening paragraphs front-load logistical inventory — load arithmetic, atadito counts, the Finch cable paraphrased at length, sardine tin shortages — before the narrative engine (the twelve-day gap, the German party) arrives. An airport reader who opened to page one expecting the bridge of Chapter Two would be at real risk of putting this down before the tienda scene."
+    },
+    {
+      "chapters": [
+        "03-puna"
+      ],
+      "claim": "Chapter Three breaks the expedition's forward momentum in its second half. The bridge disaster in Chapter Two establishes pace; stopping for six pages of Isobel reading marginalia by lamplight is emotionally correct but pacing-wrong for the airport mode. The significance of the father's project is real, but the book asks the reader to trust that significance before it has earned it within the chapter."
+    },
+    {
+      "chapters": [
+        "06-rititambo",
+        "07-what-it-proves"
+      ],
+      "claim": "Rititambo's significance is not fully communicated to the non-specialist reader. Isobel's corrective to Riedel — the comparison to Chavin de Huántar and Tiahuanaco, the argument that the absence of Inca iconography means pre-Inca not non-Andean — is correct and well-written, but it requires the reader to feel the weight of the Chavin/Inca distinction to register as the pivotal intellectual moment the book intends. An airport reader who doesn't bring Andean archaeology background takes it on faith."
+    },
+    {
+      "chapters": [
+        "01-the-bottom-of-the-list",
+        "02-selva-alta",
+        "03-puna",
+        "04-snowline",
+        "05-the-storm",
+        "06-rititambo",
+        "07-what-it-proves",
+        "08-the-descent"
+      ],
+      "claim": "The chapter heading format is a production artifact — inconsistent across all eight files. Chapters 2 and 3 carry explicit numbers ('Chapter 2 — Selva Alta', 'Chapter 3: Puna'); Chapter 5 spells it out ('Chapter Five: The Storm'); the remaining five chapters have only a title and no number at all. The separator varies between em-dash and colon. This is a drafting residue, not a formal choice, and would need standardizing before publication."
+    },
+    {
+      "chapters": [
+        "08-the-descent"
+      ],
+      "claim": "The frame-count arithmetic in Chapter Eight is inconsistent. Frame 13 is shot at the end of Chapter Seven. Chapter Eight describes 'the east wall full-frame, then mid-frame, then close on the stonework' as methodical torchlit photography before labeling the sealed chamber 'frame fourteen' — but if those three east-wall shots were taken, the sealed chamber should be frame sixteen or seventeen, not fourteen. The final total of nineteen frames is internally consistent, but the intermediate labeling is off, and a careful reader tracking the count will notice."
+    }
+  ],
+  "quotes": [
+    {
+      "chapter": "01-the-bottom-of-the-list",
+      "text": "He found none of this humiliating. He found it accurate.",
+      "why": "Holroyd's response to being fourth on Finch's list. A lesser writer would have made this a wound or a joke. Here it establishes the book's epistemological register in six words: this is a man who is unusually good at looking at evidence about himself."
+    },
+    {
+      "chapter": "02-selva-alta",
+      "text": "The twelve-day gap did not shorten by standing in the selva alta while a rope dried.",
+      "why": "The sentence that makes the wrong decision legible. It is exactly the kind of arithmetic a man does when he has already decided and is justifying it, and the book does not editorialize — it just shows the reasoning before showing the consequences."
+    },
+    {
+      "chapter": "02-selva-alta",
+      "text": "He was aware of standing and watching.",
+      "why": "After Rufino nearly falls, Mariano pulls him up, and Holroyd stands at the gorge edge. The sentence does more work than a paragraph of guilt: it names the fact without comment and leaves the reader to feel the weight."
+    },
+    {
+      "chapter": "04-snowline",
+      "text": "a witness was not a man who wrote things down",
+      "why": "The book's philosophical center, spoken in Mariano's interior and never explained to any other character. It reframes everything Holroyd does with his field notebook as a different — and not obviously superior — form of knowing."
+    },
+    {
+      "chapter": "07-what-it-proves",
+      "text": "Don't let them make it what it isn't.",
+      "why": "Riedel's parting line is the novel's best single sentence. It is addressed to Holroyd but aimed equally at London and Berlin, and it is the one moment where antagonist and protagonist share the same concern. The 'Neither will I' that follows makes it worse — because you believe him, and you know that won't be enough."
+    },
+    {
+      "chapter": "08-the-descent",
+      "text": "He did not think of it as a decision. He thought of it as an accounting.",
+      "why": "Holroyd on why he doesn't expose the film. This sentence retroactively names the moral logic running through the entire book — the field notebook, the bridge report, the choice not to open the sealed chamber — and it does it without announcing itself as a theme statement."
+    }
+  ],
+  "put_down_points": [
+    "Chapter 01, pages 1-3: the load-count and sardine-shortage logistics before the tienda scene and the twelve-day gap. An airport reader buying this for a flight may not make it to the first real tension.",
+    "Chapter 03, second half: the expedition stops moving and Isobel reads her father's book by lamplight. Emotionally right, pace-wrong. A reader who came for the expedition race will feel the novel has stalled."
+  ],
+  "who_is_this_for": "Readers who finished Apsley Cherry-Garrard's *The Worst Journey in the World* and wanted more interiority, or who read Peter Matthiessen's *The Snow Leopard* and didn't mind that the snow leopard never appears. Readers of Kazuo Ishiguro who can tolerate outdoor settings. People who find the ethics of documentation and attribution interesting as a subject in itself. Not: anyone who wants a thriller, a clear villain defeated, a discovery celebrated, or a final chapter that tells them what to think. The jacket should promise quiet moral complexity in an expedition setting, not adventure."
+}

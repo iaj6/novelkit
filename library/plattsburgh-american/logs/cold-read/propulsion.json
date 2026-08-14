@@ -1,0 +1,111 @@
+{
+  "lens": "propulsion",
+  "score_out_of_10": 7,
+  "would_finish": "yes",
+  "verdict": "This is a dual-narrative war novel set during the Battle of Plattsburgh, September 1814. It follows Silas, a gunner's mate on the USS Saratoga, and Asa, a Clinton County militiaman whose years of mill work on the Saranac have given him an intimate knowledge of Pike's Ford. The book's engine is neither thriller-pacing nor relationship drama. It is something rarer and harder to sustain: the slow installation of specific technical knowledge as structural promise. We are shown, in meticulous early chapters, exactly how each man's expertise will matter — the spring lines and kedge geometry on the ship, the hidden topography of the ford with its gravel trough and submerged log. The novel's structural bet is that knowing what the gravel trough will do to a column in formation, or what \"haul on the kedge\" means for a ship whose starboard battery has gone silent, will create genuine forward pull without jeopardy in the conventional sense. The bet largely pays. Chapters 13 and 14 are the best in the book precisely because they discharge the specific promises made in chapters 8 and 9: the kedge turns, the British column hits the shifting gravel, the willows catch two men and the deep current receives them. This is structural architecture working as it should.\n\nThe structure fails in the middle. Chapters 5 through 9 cover the days between the British army's arrival at the north bank and the morning of battle — and all five are waiting chapters. Only chapter 9 materially advances the forward pull, giving Silas the kedge geometry from an overheard conversation. The other four apply the same battery-walk formula: tompions, breeching fasts, flannel hatch, touch-holes dry. This ritual appears in every Silas chapter starting from chapter 1, and by its fourth or fifth iteration it has stopped revealing character and started filling space. The dual-narrative structure compounds rather than relieves the problem: in a healthy dual narrative you switch strands when one is at a high point, pulling the reader forward through the quieter half. Here both strands are in waiting mode simultaneously across chapters 5 through 9, so the alternation provides no momentum dividend. Reader patience will crack somewhere in chapters 5–7 and the question is whether it recovers before chapter 11. It does, but the structural problem is real and the book loses whatever lean forward it had built.\n\nTwo smaller failures matter. First, chapter 1 establishes Silas as a man with something withheld — \"He did not think about his brother\" — and this is the single direct signal of interior life we get in his entire arc. The brother is never mentioned again across fifteen chapters. As a structural promise this is unresolved; as a characterization gesture it creates an expectation the novel does not meet. Second, the gun-number convention shifts precisely at chapter 11 from spelled-out form (\"gun one\") to the hash-numeral form (\"gun #1\") and stays there through all battle and aftermath chapters. It is systematic enough to be intentional — possibly marking the shift from preparation to battle — but it reads as a convention change made mid-draft that was never decided about. The novel should commit to one or acknowledge neither.\n\nThe ending (chapter 16) earns its quiet. Asa stands above the ford at the limestone outcrop, sees its geometry from the soldier's angle for the first time, sees the whole shape of what he only knew from inside, and then walks back to drink weak coffee by the river. \"The river ran.\" This is the right close for a novel whose engine was topographical knowledge. What the novel doesn't quite earn is the hundred-and-fifty pages it takes to get there. Three chapters in the middle could be compressed to one without losing the forward pull the book actually has. As it stands, a tighter version of this book would be a very good book. As it is, it is a good book with a structural problem in its midsection and a structural achievement at its core.",
+  "strongest": [
+    {
+      "chapters": [
+        "05-spring-lines",
+        "09-the-kedge",
+        "13-port-battery"
+      ],
+      "claim": "The kedge maneuver is set up across three chapters with precise geometry and paid exactly in the battle chapter. Silas traces the spring-line arrangement in ch 5, overhears the carpenter and works out the winding sequence in ch 9, and the kedge is employed in ch 13 at the exact moment and in the exact manner promised. Three-chapter structural arc, clean delivery."
+    },
+    {
+      "chapters": [
+        "08-pikes-ford",
+        "14-the-ford"
+      ],
+      "claim": "The ford survey in ch 8 is the land-battle equivalent of the kedge setup. Asa maps three hidden hazards (the gravel trough, the sinkhole under the alders, the submerged log in the willows) and ch 14 activates each one against the British column. The gravel changes the column's footing, the willows catch two men who find the deep current off the log's far end. The promise is paid precisely."
+    },
+    {
+      "chapters": [
+        "13-port-battery"
+      ],
+      "claim": "Chapter 13 (Port Battery) structures the naval battle as a progressive degradation that earns the kedge turn. Gun 4 goes first (carriage broken at the axle-tree), then gun 3 (traverse block gone, one more shot only), then Fry is wounded, then the torn cartridge nearly fires loose powder. Each loss is a named, mechanically specific step down, so when the starboard battery goes silent the winding is the logical consequence of an arithmetic Silas has been tracking."
+    },
+    {
+      "chapters": [
+        "06-beekmantown-road"
+      ],
+      "claim": "Chapter 6 (Beekmantown Road) functions as a taste of battle that rewards preparation chapters without giving away the main event. Cole's voice cutting through the militia's rout ('Those who are stopping, face north') and the five men who stop out of forty are more effective than a conventional action scene because the ground was laid in the drill chapters."
+    },
+    {
+      "chapters": [
+        "16-the-retreat"
+      ],
+      "claim": "The ending earns its quiet. Asa sees the ford from above for the first time — the whole geometry at once, the tilt in the limestone shelf visible from the outcrop — then walks back to coffee. The novel whose engine was topographic knowledge closes by giving its protagonist the one angle on his ground he had never had. 'The river ran.' is the right last sentence for this book."
+    }
+  ],
+  "weakest": [
+    {
+      "chapters": [
+        "05-spring-lines",
+        "07-at-anchor",
+        "09-the-kedge",
+        "11-cumberland-head"
+      ],
+      "claim": "The battery-walk formula — tompions, breeching fasts, flannel hatch, touch-holes dry — appears in every Silas chapter from chapter 1 onward. By its fourth or fifth iteration the ritual has stopped characterizing Silas and started filling space. In ch 7 ('Tompions set on all four guns. Breeching fasts correct on all four carriages. The flannel hatch on the magazine passageway closed and its lashing right.') it is indistinguishable from its ch-5 predecessor. A formula earns its repetitions when each pass adds pressure or variation; this one adds neither."
+    },
+    {
+      "chapters": [
+        "01-the-garland"
+      ],
+      "claim": "'He did not think about his brother.' appears once, in chapter 1, and is never returned to. It is the only direct signal of interior life in Silas's arc across sixteen chapters. Planted as a characterization hook, it is abandoned. A reader who notices it — and the construction makes it hard to miss — will wait for a payoff that does not come."
+    },
+    {
+      "chapters": [
+        "05-spring-lines",
+        "07-at-anchor"
+      ],
+      "claim": "The standoff period (chapters 5–9) covers British arrival at the north bank and the American fleet's wait without generating meaningful new forward pull except in chapter 9 (the kedge geometry). Because both narrative strands are in waiting mode simultaneously, the alternation between Silas and Asa that should provide momentum dividend instead compounds the sag. A dual narrative needs at least one strand moving; here both are still at the same time."
+    },
+    {
+      "chapters": [
+        "01-the-garland",
+        "11-cumberland-head"
+      ],
+      "claim": "Gun numbers are spelled out throughout chapters 1–10 ('gun one,' 'gun two,' 'gun three,' 'gun four') and then switch to hash-numeral format in chapters 11–15 ('gun #1,' 'gun #2') with no transition. The shift is perfectly systematic — every pre-battle chapter uses words, every battle and aftermath chapter uses symbols — which is suspicious enough to read as an uncleaned production decision rather than a confirmed formal choice. The novel should commit to one convention."
+    },
+    {
+      "chapters": [
+        "09-the-kedge",
+        "13-port-battery"
+      ],
+      "claim": "In chapter 9, the mate's voice says 'long as the kedge cable holds' — a conditional that promises the winding could fail and creates a crisis-point to anticipate. In chapter 13, the kedge is employed and works cleanly; the cable groans but holds without incident. The conditional is never tested. A promise of possible failure that is not at least briefly endangered during the event is a false alarm, and it dulls what should be the book's most tense passage."
+    }
+  ],
+  "quotes": [
+    {
+      "chapter": "01-the-garland",
+      "text": "He did not think about his brother.",
+      "why": "The novel's only direct signal of interior life in Silas's arc, planted in chapter 1 and never returned to in sixteen chapters. A structural promise that goes unresolved."
+    },
+    {
+      "chapter": "09-the-kedge",
+      "text": "Let go the stern anchor. Cut the bower cable. Haul on the kedge.",
+      "why": "The moment Silas assembles the winding geometry into its three-step sequence. This sentence is the structural hinge of the whole novel — everything in chapters 5–9 has been building toward it, and chapter 13 pays it exactly."
+    },
+    {
+      "chapter": "07-at-anchor",
+      "text": "Tompions set on all four guns. Breeching fasts correct on all four carriages. The flannel hatch on the magazine passageway closed and its lashing right.",
+      "why": "The battery-walk formula at its fourth iteration. Nearly identical prose appears in ch 1, ch 5, ch 9, and ch 11. By this point the ritual is a default rather than a characterization tool."
+    },
+    {
+      "chapter": "13-port-battery",
+      "text": "The *Saratoga* began to turn.",
+      "why": "The payoff sentence. After eight chapters of preparation, two chapters of battle degradation, and the kedge geometry worked out in secret — four words that discharge the structural promise made in chapter 9."
+    },
+    {
+      "chapter": "16-the-retreat",
+      "text": "The river ran.",
+      "why": "The novel's last sentence and the right one. The engine was topographic knowledge; the close gives Asa the one angle on his ground he had never had, then returns him to the river that framed everything. Earned."
+    }
+  ],
+  "put_down_points": [
+    "Chapters 5–7: the waiting period, where neither strand has meaningful forward movement and the battery-walk formula repeats without variation. A reader who has been patient through the preparation chapters will feel the pace flatten here and may skim the ritual passages.",
+    "Chapter 7 (At Anchor) specifically: it covers British smoke columns, the grape reallocation, and a musket exchange Silas cannot see or interpret — the same informational state as chapter 5, without the kedge geometry that saves chapter 9."
+  ],
+  "who_is_this_for": "Historical fiction readers with patience for quiet, technical, atmospheric prose — Patrick O'Brian's audience more than Bernard Cornwell's. Military history readers who value period accuracy and professional competence as character. Readers who accept that two protagonists can share a battle without ever meeting, and that interiority can be expressed entirely through methodology. Not for readers who need human relationships to sustain attention, or who expect a novel to tell them what its characters feel rather than show what they do."
+}

@@ -119,7 +119,16 @@
     "reader:synthesis",
     "continuity-fact-audit",
     "editor-continuity:18-counsels-brief",
-    "editor-continuity:19-solemn-form"
+    "editor-continuity:19-solemn-form",
+    "cold-read:literary",
+    "cold-read:airport",
+    "cold-read:propulsion",
+    "cold-read:authenticity",
+    "cold-read:comparative",
+    "cold-read:verisimilitude",
+    "cold-read:ordinary",
+    "cold-read:synthesis",
+    "cold-read:audit"
   ],
   "entries": {
     "drafter:01-the-strong-room": {

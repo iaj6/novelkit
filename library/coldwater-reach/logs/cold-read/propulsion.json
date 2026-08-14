@@ -1,0 +1,123 @@
+{
+  "lens": "propulsion",
+  "score_out_of_10": 7,
+  "would_finish": "yes",
+  "verdict": "This is a novel whose forward engine is not plot but restraint — the gap between what is known and what is recorded, what is felt and what is said, what a language can carry and what falls out in translation. The book knows this about itself and organizes its structure accordingly: three point-of-view characters, each keeping something in an inner drawer, each arriving at their situations gradually, each living in the space between what they can act on and what they cannot. By these standards, it mostly earns its quietness.\n\nThe structural success is clearest in the Marcus strand, which has genuine propulsion: a hypothesis about the dead man's identity assembled from peripheral evidence across several chapters, an institutional test of his belonging, and a choice between the academic life he trained for and the life he has accumulated in Coldwater — paid cleanly in chapter 27 with the cornbread scene. The Hannah-Karl strand escalates by deliberate calibration: fence conversation, first direct address, the ledger transferred, the columbine, Karl's confession about southern France, the farewell in four sentences. The final image of the pressed flower in chapter 29 is the book's most complete closing image and the one payoff that fully discharges its setup.\n\nThe Eira strand is where propulsion fails. The log entry that omits the man on the north wharf is a superb structural invention — an ethical omission given form as a bureaucratic document. But the book assembles the same list of what that entry doesn't contain at extended length five separate times: chapters 4, 11, 17, 25, and 28. Each iteration adds something small — the harbor geometry in chapter 14 refines the picture, \"He was afraid of me\" in chapter 17 is genuinely new — but the surrounding material is largely a re-run of information the reader already holds. By the fifth accounting, the strand has been circling its moral situation for twenty-four chapters without advancing it. The case closes in chapter 28. The war ends in the background. A woman arrives with a photograph in chapter 30 and is told the harbormaster cannot help. This discharges no pressure. The harbor opens for spring. The log entry is made. A reader who trusted the opening's implied mystery will feel the book absorbed the pressure it built rather than releasing it.\n\nThis is the honest structural complaint: the engine the book chose — withheld moral weight rather than external jeopardy — demands that the weight eventually shift or settle. It does shift for Marcus and Hannah. For Eira, it is simply carried to the end and set down on the shelf alongside the harbor log, unchanged.",
+  "strongest": [
+    {
+      "chapters": [
+        "01-the-night-watch",
+        "04-what-the-ledger-holds",
+        "17-the-log-entry",
+        "28-filed"
+      ],
+      "claim": "The harbor log as an ethical and formal device. The gap between the log entry and what Eira actually saw is the novel's moral architecture — a bureaucratic omission that functions as a withheld promise to the reader. The device is introduced with precision and never cheapened."
+    },
+    {
+      "chapters": [
+        "19-which-end",
+        "20-paris-1940",
+        "22-southern-france",
+        "30-all-moorings-secure"
+      ],
+      "claim": "The war as a structural clock. D-Day (ch. 19-20), Paris liberation (ch. 22), and the German collapse on April 30, 1945 (ch. 30) are used with restraint and timing: each event lands on all three strands simultaneously and advances rather than merely illustrating."
+    },
+    {
+      "chapters": [
+        "06-english-only",
+        "13-what-meaning-costs"
+      ],
+      "claim": "Hannah's essays on translation as thematic anchor. The 'home of the meaning' passage in chapter 6 and the Mörike essay in chapter 13 give the book's central concern — what survives the crossing between languages, countries, and wars — a concrete, student-voiced articulation that is neither obvious nor manufactured."
+    },
+    {
+      "chapters": [
+        "03-the-question-nobody-asked",
+        "09-what-a-spy-would-say",
+        "13-what-meaning-costs",
+        "16-licensing"
+      ],
+      "claim": "Marcus's slow assembly of the case from peripheral evidence is propulsive without being thriller-adjacent. His careful, never-overstated reasoning — from the furnace register in chapter 3 to the harbor office confrontation in chapter 16 — generates forward pull through precision of inference rather than action."
+    },
+    {
+      "chapters": [
+        "01-the-night-watch",
+        "04-what-the-ledger-holds",
+        "14-the-dory"
+      ],
+      "claim": "The harbor geometry as a delayed payoff. The north beach, north wharf, and breakwater are established individually across the first four chapters and then assembled as a coherent line of evidence in chapter 14 when Dakin finally tells Eira about the dory — a six-chapter setup paid cleanly."
+    }
+  ],
+  "weakest": [
+    {
+      "chapters": [
+        "04-what-the-ledger-holds",
+        "11-portland",
+        "17-the-log-entry",
+        "25-one-year",
+        "28-filed"
+      ],
+      "claim": "Eira's inventory of what the log doesn't contain is assembled at full length five times — chapters 4, 11, 17, 25, and 28 — with only incremental additions. This is the book's main propulsion failure: not slow movement, which the register justifies, but the same ground re-covered at the same depth."
+    },
+    {
+      "chapters": [
+        "01-the-night-watch",
+        "25-one-year",
+        "28-filed",
+        "30-all-moorings-secure"
+      ],
+      "claim": "The dead man is never identified and Eira's moral weight is never adjudicated outside her own accounting. The final encounter in chapter 30 — a woman with a photograph is told the harbormaster cannot help — closes nothing. The opening chapter builds the pressure of a mystery; the book absorbs rather than discharges it."
+    },
+    {
+      "chapters": [
+        "07-december-protocol",
+        "08-shorter-letters",
+        "09-what-a-spy-would-say",
+        "10-lonzos-war",
+        "11-portland",
+        "12-bread"
+      ],
+      "claim": "The middle section — chapters 7 through 12 — sags because all three strands are in extended establishment simultaneously. December Protocol, Shorter Letters, What a Spy Would Say, Lonzo's War, Portland, and Bread are individually accomplished but collectively tread water: no strand escalates during this run, and it constitutes roughly a fifth of the novel."
+    },
+    {
+      "chapters": [
+        "26-last-day"
+      ],
+      "claim": "Karl's departure in chapter 26 is so committed to restraint — he walks to the gate and does not look back, four sentences of farewell — that it risks reading as underwritten rather than controlled. The most emotionally loaded moment the Hannah strand promises is handled more briefly than the fence conversations that precede it."
+    },
+    {
+      "chapters": [
+        "21-the-stranger-at-the-dock",
+        "25-one-year",
+        "28-filed"
+      ],
+      "claim": "Werner Kahl arrives in chapter 21 with a photograph and new information (he names the brother, names the transit network indirectly), but the novel is already 21 chapters in and his appearance changes nothing about Eira's behavior or conclusions. He is introduced too late to function as escalation."
+    }
+  ],
+  "quotes": [
+    {
+      "chapter": "01-the-night-watch",
+      "text": "Mooring lines north wharf — all secure. Wind NW 12 knots.",
+      "why": "The log entry that doesn't contain the man is the novel's central structural device, and this is its first appearance — accurate in every recorded fact, omitting the only fact that matters morally. Its recurrence across five chapters earns its weight here and exposes the repetition problem later."
+    },
+    {
+      "chapter": "06-english-only",
+      "text": "It might be the home of the meaning.",
+      "why": "This is the thematic sentence the novel is organized around — what a word houses beyond its transferable meaning — and it arrives from a 17-year-old in a farm county without quotation marks, without self-consciousness, without any sense that she has coined anything. The modesty of the delivery is what makes it land."
+    },
+    {
+      "chapter": "16-licensing",
+      "text": "I think what happened to him was not anyone's fault. Or not anyone here.",
+      "why": "Marcus gives this to Eira at the door without requiring a response, and it functions for both characters differently: for him, a precise and honest absolution; for her, a line she will spend the rest of the novel testing against the word 'useful' versus the word 'true.' The chapter's moral weight turns on these two sentences."
+    },
+    {
+      "chapter": "17-the-log-entry",
+      "text": "He was afraid of me.",
+      "why": "The only genuinely new discovery in Eira's fifth rehearsal of the case — and the one that changes its moral character. It arrives late and costs real patience, but it is the right insight: not that she failed to act, but that her official markings made action impossible for him. Worth the wait; packaged in too much repetition."
+    }
+  ],
+  "put_down_points": [
+    "Chapter 17 ('The Log Entry'): Eira reads the harbor log at home and arrives at conclusions she has been circling since chapter 4. The delayed insight about the man's fear is real and worth having, but the approach is a full re-tread of previously assembled information. This is the chapter I came closest to skimming.",
+    "Chapters 7-12 as a sequence: individually well-written, collectively stalled. No strand advances during this run, and the accumulation of establishment without escalation makes the novel's pace feel uncertain about where it is going."
+  ],
+  "who_is_this_for": "Readers who prize moral interiority and prose precision over resolution — fans of Marilynne Robinson's Gilead, Kent Haruf's quiet American realism, or the restrained historical mode of Penelope Fitzgerald. Not for readers who want a mystery answered or a wartime love story brought to a conventional conclusion. The ideal reader can hold an unresolved ethical situation for 30 chapters and find the irresolution honest rather than evasive."
+}

@@ -1,0 +1,122 @@
+{
+  "lens": "propulsion",
+  "score_out_of_10": 7.5,
+  "would_finish": "yes",
+  "verdict": "This is a 1930s historical adventure set in the Peruvian Andes, and it runs on two engines: a race (Holroyd's party must reach an undocumented pre-Inca city before a German expedition that has a twelve-day head start) and an inheritance (Isobel Carrow must encounter, midway up a mountain, the shape of her dead father's real life's work). Both engines are genuine, which is the novel's first and largest structural virtue. The race is tracked rigorously — the gap narrows from twelve days to nine to one day's worth of cold ash in a campfire hollow — and at every stage a decision is required and a cost is extracted. The gorge sequence in chapter two is the structural spine of the entire book: Holroyd refuses Mariano the two hours needed to splice the frayed load rope, the bridge collapses, the mule and a week of provisions are lost, and the chapter ends with Holroyd standing on the far bank after a two-hour repair, the identical two hours he had refused. No editorial gloss. Just the fact, bare and complete. This is what structural discipline looks like at the sentence level, and this novel has it.\n\nWhere the propulsion slackens, it slackens in identifiable places. Chapter three's discovery of the annotated Arce text — Isobel reading thirty years of her father's margin notes in failing puna light — is the most emotionally affecting sequence in the book, but it arrives exactly when the race engine should be tightening. The reduction from twelve to nine days' gap gets swallowed by twenty minutes of backstory; the pacing trades urgency for interiority at the wrong moment. Chapter four compounds this: giving Mariano a full-POV chapter for backstory and philosophy, while structurally necessary to establish his role as witness, still arrives at the race's tightest point and decelerates when the reader should feel the altitude and the closing distance simultaneously. These are not large failures, but they are real ones, and a reader who came for the race might lose the thread in chapters three and four.\n\nThe ending is the book's most complex structural question. Holroyd reaches Rititambo first. The sealed chamber is not opened. Riedel is not the cartoon villain he could have been — his exit line (\"Don't let them make it what it isn't\") is the novel's best sentence and deliberately implicates Holroyd's own institutional pressures. Mariano departs south to tell \"the woman who keeps the knowledge\" what he saw, which is the witness concept paid in full and earns the book's emotional close. What does not close: the photographs. Nineteen frames of Rititambo sit in Holroyd's Leica in his Cusco hotel room on the last page, and Holroyd boards a train without having decided. For a propulsion reader, this is a 20% discharge shortfall on a question the novel has been carefully building — what does the record say, and who controls it? — since the first chapter. The ambiguity is thematically honest: Holroyd is a man who has practiced \"bad accounting\" for seven years and knows what the ledger costs look like when the altitude clears. The ending respects that. But structurally, the central pressure discharges only most of the way, which is a meaningful distinction from the way the gorge sequence or the sealed-chamber standoff fully discharge theirs.",
+  "strongest": [
+    {
+      "chapters": [
+        "02-selva-alta"
+      ],
+      "claim": "The gorge sequence is the structural backbone of the whole novel. Holroyd refuses the two-hour rope repair; the bridge collapses; the mule and provisions fall; the chapter closes with Holroyd standing on the repaired far bank, the last line delivering the reckoning without commentary. This is cause-consequence writing at its most exact."
+    },
+    {
+      "chapters": [
+        "01-the-bottom-of-the-list",
+        "02-selva-alta",
+        "03-puna",
+        "04-snowline",
+        "05-the-storm"
+      ],
+      "claim": "The race engine is tracked with genuine rigor. The gap narrows in measurable steps — twelve days at Cusco, nine at the herder camp, a single morning's cold ash in a campfire hollow at 16,500 feet — and each reduction costs the party something specific. The gap is never merely asserted; it is always arrived at by arithmetic that the reader can check."
+    },
+    {
+      "chapters": [
+        "06-rititambo",
+        "07-what-it-proves",
+        "08-the-descent"
+      ],
+      "claim": "The Leica frame counter functions as a second internal clock in the final act. Frames are numbered as they are exposed (one through six, seven through twelve, then thirteen through nineteen), and the count creates a ticking resource that the confrontation with Riedel, the camp in the bowl, and the descent all run against. This is formal device working unobtrusively in service of propulsion."
+    },
+    {
+      "chapters": [
+        "07-what-it-proves"
+      ],
+      "claim": "Riedel is handled without simplification. He concedes Holroyd's priority, listens to Isobel's argument and accepts it may be right, backs down when Kern collapses, and exits with a line that implicates both himself and Holroyd equally. The antagonist's final sentence discharges the book's political theme more efficiently than any chapter of dramatized Ahnenerbe menace could have."
+    },
+    {
+      "chapters": [
+        "04-snowline",
+        "08-the-descent"
+      ],
+      "claim": "The witness concept — Mariano as a man sent by his valley to stand inside a fact and return knowing he has stood there — is established in chapter four and paid in full in chapter eight's departure scene. He walks south at the same pace he walked at seventeen thousand feet, headed for the woman who keeps the knowledge. It is the book's most emotionally complete structural transaction."
+    }
+  ],
+  "weakest": [
+    {
+      "chapters": [
+        "04-snowline"
+      ],
+      "claim": "Mariano's full-POV backstory chapter arrives at the race's tightest moment — the campfire evidence confirms Riedel is one day ahead — and then decelerates into interiority. The failed March attempt, the crampons backstory, and the witness philosophy are all necessary material but structurally mistimed: the reader needs to climb, and the novel turns inward instead."
+    },
+    {
+      "chapters": [
+        "08-the-descent"
+      ],
+      "claim": "The photographs are never resolved. Holroyd boards the train without deciding what to do with nineteen frames of Rititambo. The book has built its central moral question — what does the record say and who controls it — from the first chapter, and the ending delivers honest ambiguity where the propulsion engine requires discharge. The gorge sequence closes; the sealed chamber closes; the photographs do not."
+    },
+    {
+      "chapters": [
+        "01-the-bottom-of-the-list",
+        "02-selva-alta",
+        "03-puna",
+        "04-snowline",
+        "05-the-storm",
+        "06-rititambo",
+        "07-what-it-proves",
+        "08-the-descent"
+      ],
+      "claim": "The chapter-heading format is inconsistent in a way that reads as a production artifact rather than a deliberate formal choice. Five chapters carry no chapter number (The Bottom of the List, The Snowline, Rititambo, What It Proves, The Descent). Three carry numbered prefixes in three different formats: Arabic numeral with em-dash ('Chapter 2 — Selva Alta'), Arabic numeral with colon ('Chapter 3: Puna'), and spelled-out numeral with colon ('Chapter Five: The Storm'). This appears to be an editorial cleanup that was not completed."
+    },
+    {
+      "chapters": [
+        "03-puna"
+      ],
+      "claim": "The father's backstory and the annotated Arce text — the novel's most emotionally resonant material — arrive when the race urgency should be peaking. The chapter's best discovery (thirty years of cross-referencing oral tradition against the missionary account) takes the form of extended close reading in the field, slowing the approach at exactly the structural position where it should accelerate."
+    },
+    {
+      "chapters": [
+        "07-what-it-proves",
+        "08-the-descent"
+      ],
+      "claim": "The institutional stakes — what the Ahnenerbe will do with Riedel's photographs, why it matters which party's frame wins the argument in Berlin — are named but never shown. Riedel's motives are handled only through implication and one exit line. For a reader unfamiliar with Nazi pseudo-archaeology, the threat remains abstract, and the antagonist's institutional weight is never dramatized to match his moral weight on the page."
+    }
+  ],
+  "quotes": [
+    {
+      "chapter": "01-the-bottom-of-the-list",
+      "text": "He found none of this humiliating. He found it accurate.",
+      "why": "The repetition of 'found' converts what could be a defense of ego into a statement about Holroyd's epistemology — he treats himself the way he treats survey data. A competent-but-ordinary line would read: 'He didn't find it humiliating.' This version establishes the character's method in six words."
+    },
+    {
+      "chapter": "02-selva-alta",
+      "text": "Two hours. The same two hours he'd refused Mariano the day before.",
+      "why": "The gorge callback is the novel's best structural moment. No annotation, no moral, just the arithmetic of consequence. The chapter's entire second half earns this sentence."
+    },
+    {
+      "chapter": "03-puna",
+      "text": "Your father was careful.",
+      "why": "Mariano's three-word response to Isobel's disclosure about the twelve names is the correct amount of acknowledgment and not one word more. The restraint is precise rather than withholding."
+    },
+    {
+      "chapter": "05-the-storm",
+      "text": "They were going up.",
+      "why": "The chapter's final line — Riedel and Kern continuing after Fischer's injury and evacuation — is the strongest chapter-closing in the book. Three words that reopen the race and reframe Riedel's moral status simultaneously."
+    },
+    {
+      "chapter": "07-what-it-proves",
+      "text": "Don't let them make it what it isn't.",
+      "why": "Riedel's exit line is the novel's clearest statement of its central concern, and it works precisely because it implicates Holroyd and the RGS as much as it implicates the Ahnenerbe. The antagonist's final sentence does the thematic work that four hundred pages of dramatized institutional politics could not."
+    },
+    {
+      "chapter": "04-snowline",
+      "text": "He waited for morning the way a man waits for a thing he has been waiting for all his life — without drama, because the drama is the duration, and he has already served it.",
+      "why": "The witness concept in its most compressed form. The sentence earns its length because the clause after the dash reframes the whole first clause: not stoic endurance but a completed account, duration already paid."
+    }
+  ],
+  "put_down_points": [
+    "Chapter 3 (Puna): the extended reading of the father's annotated Arce text — four pages of margin-note decoding at a point when the race gap has just been confirmed at nine days — is the most likely place a propulsion reader sets the book down. The material is the novel's most emotionally intelligent sequence, but its placement works against the race engine rather than with it.",
+    "Chapter 4 (Snowline): the Mariano POV chapter arrives immediately after the fresh-campfire evidence (one day's gap), and then spends significant time in backstory and philosophy rather than climbing. A reader who has been tracking the race may lose patience here."
+  ],
+  "who_is_this_for": "Readers who respond to historical fiction built on moral precision rather than incident — the company of Patrick Modiano's *The Search Warrant* or Colm Tóibín's *The Master*, rather than the adventure plotting of Wilbur Smith. Specifically: readers who find a man standing at a gorge-edge counting the cost of his own decision more interesting than the action that created the cost. Readers comfortable with an ending that withholds the final verdict. Not for readers who require full closure, or for those who come to Andean-adventure fiction for landscape and incident: this book is more interested in the ledger than the journey."
+}

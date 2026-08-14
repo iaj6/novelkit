@@ -1,0 +1,127 @@
+{
+  "lens": "airport",
+  "score_out_of_10": 8,
+  "would_finish": "yes",
+  "verdict": "This is a quiet, procedural legal novel set in 1920s Lancashire, following solicitor Prescott as he builds an evidentiary case that a will codicil is a forgery. It operates almost entirely in the register of the legal file itself — spare, exact, non-demonstrative — and is either exactly your sort of thing or completely alien to your usual reading experience. On an airport buy, whether you finish it depends on whether the first three chapters hook you enough to carry you through a sustained middle section where the human texture nearly disappears under documentary procedure.\n\nThe central mechanism is genuinely brilliant: the forger's error is that he recited the earlier codicil as giving the estate to Margaret Fairhurst \"and her issue\" when the executed instrument said \"or her issue\" — a single conjunction that betrays him because he had never seen the original, only heard it described in speech. This is discovered calmly, almost accidentally, during the protagonist's citation-check before the brief goes to counsel. The book's great achievement is that this revelation feels inevitable rather than contrived, because it arises from exactly the kind of meticulous record-keeping that the novel has been dramatizing for 200 pages. Garside's old habit of noting \"Instrument read entire, including date\" in the strong-room register — a habit formed with no thought of evidence, a habit the old man could not have known would matter — is the architecture the whole case rests on. That is a very good idea for a novel, and the book is equal to it.\n\nThe airport test bites hardest in Chapters 6–11, where the narrative enters a dense documentary corridor — letter-book review, 46-solicitor canvass, sale contract analysis, the examiner's typewriter report — with minimal human contact. Smart readers will understand what's happening but may lose the emotional thread that Bank Parade established. The book demands that you trust the architecture and bank the human stakes from Chapter 4, then wait. Some readers won't wait.\n\nThe ending is exactly right: the courtroom scene where Walter reads the executed instrument and discovers his own mistake is rendered entirely in physical gesture; the judge's dry observation about ordinary documents lands with the authority of a verdict the book has earned over 300 pages; and the final image — Prescott closing the register, opening the next file — is the correct note to end on. For the right reader, this is a rare thing: a novel that knows exactly what it is, never reaches for more than its register permits, and delivers its particular satisfaction with complete integrity.",
+  "strongest": [
+    {
+      "chapters": [
+        "17-the-ninth-word",
+        "19-solemn-form"
+      ],
+      "claim": "The 'or/and' revelation and its courtroom payoff. In Chapter 17, Prescott discovers during a routine citation-check that the forged recital says 'and her issue' where the executed instrument says 'or her issue' — a single word that proves the author never read the original. In Chapter 19, Walter reads the executed codicil for the first time in the courthouse corridor and the moment is rendered entirely in physical gesture, without a word of explanation: he slows, goes back a line, 'read it again from that point, deliberately, his head very slightly inclined,' and then 'was quite still.' This is the book's emotional and structural climax, and it is completely earned."
+    },
+    {
+      "chapters": [
+        "01-the-strong-room",
+        "05-the-hinge",
+        "18-counsels-brief",
+        "20-the-estate"
+      ],
+      "claim": "Garside's strong-room register entry as posthumous evidence. The September 1926 register entry — noting that the instrument was 'read entire, including date' — was made with no thought of legal proceedings; Garside could not have known it would matter. The novel returns to this entry three times, each reading revealing more of its significance. The final return, in Chapter 20, produces the book's best prose sentence: 'More precise than the occasion required. He could not have known it; he had made it anyway.' A habit becomes proof, and the dead man wins the case."
+    },
+    {
+      "chapters": [
+        "04-bank-parade"
+      ],
+      "claim": "The Fairhurst visit establishes the human stakes in a single scene. Nora Fairhurst's question — 'What was our mother to have had' — frames the entire legal action as a question about what a dead woman was owed. Josiah's letter to Margaret, produced from a wardrobe box, shifts from exhibit to testimony of character with exactly the right weight. The chapter earns every subsequent procedural chapter by giving them a face."
+    },
+    {
+      "chapters": [
+        "12-the-witnesses"
+      ],
+      "claim": "Prescott's crossed-out attendance note is the finest moment of characterisation in the book. The four dates — Birch's death, Hallett's departure, Josiah's death, the inventory — 'made a column and described a shape, and the shape described a thing, and he drew his pen through the space where that thing would have been written, because the brief was not a place for what was not evidence.' A man of complete professional discipline who also sees exactly what the evidence implies and will not write it until it is evidence. This is done better than almost any direct method of showing the same quality."
+    },
+    {
+      "chapters": [
+        "19-solemn-form"
+      ],
+      "claim": "The judge's observation lifts the ending into thematic statement without announcing itself. 'Ordinary documents do not accommodate themselves to what comes after' is said in the judge's 'flat tone' between the disposition of instruments and the costs order. It names what the whole novel has been showing — that Garside's unadorned, habit-driven record-keeping was stronger than any designed evidence — and says it in the register of a man who finds it unremarkable."
+    }
+  ],
+  "weakest": [
+    {
+      "chapters": [
+        "07-the-file",
+        "08-the-gazette",
+        "09-vale-mill",
+        "10-the-machine",
+        "11-the-sale-contract",
+        "12-the-witnesses",
+        "13-the-fairhursts",
+        "14-the-commission",
+        "15-the-hall",
+        "16-the-date",
+        "17-the-ninth-word",
+        "18-counsels-brief",
+        "19-solemn-form",
+        "20-the-estate"
+      ],
+      "claim": "Production artifact: missing chapter-number prefixes. Chapters 1–6 all carry 'Chapter N — Title' headings (with the slight inconsistency that Chapter 4 uses the word 'Four' while Chapters 1–3 use numerals). From Chapter 7 onward, every chapter carries only a title heading — 'The File,' 'The Gazette,' 'Vale Mill,' etc. — with no chapter number. Since revision-1 chapters (01, 05) both have numbered headings, and the earliest draft chapters (02–06) also have them, the pattern strongly indicates that draft chapters 07–20 have not been through the revision pass that adds chapter numbers. This is an editorial artifact left in the manuscript."
+    },
+    {
+      "chapters": [
+        "06-the-letter-book",
+        "07-the-file",
+        "08-the-gazette",
+        "10-the-machine",
+        "11-the-sale-contract"
+      ],
+      "claim": "The middle-section procedural corridor loses human texture for too long. From the letter-book review through the Croft report and the sale contract analysis, the narrative's contact with a living character is reduced almost to zero. Each step in this sequence is purposeful within the architecture, but the airport reader who hasn't committed to the book by Chapter 6 will put it down here. Chapter 8 in particular — forty-six solicitors, forty-six negative returns, presented in a working-note format without dramatic modulation — is the book's lowest-tension passage."
+    },
+    {
+      "chapters": [
+        "02-the-second-codicil",
+        "09-vale-mill",
+        "13-the-fairhursts",
+        "19-solemn-form"
+      ],
+      "claim": "Walter Eccleston is too thinly present in the middle of the book for the courtroom climax to carry its full weight. He appears in Chapter 2 with genuine presence; is glimpsed across a yard in Chapter 9; appears second-hand through Nora's account in Chapter 13; and then collapses under the weight of discovery in Chapter 19. The Chapter 19 scene works by itself, but the gap — one sighting across a yard in 200 pages — means the emotional heft of his collapse depends on an antagonist the reader has barely met."
+    },
+    {
+      "chapters": [
+        "12-the-witnesses"
+      ],
+      "claim": "Small but real day-count inconsistency. Chapter 12 states that Mitchell filed the commission application 'in the last week of April' and then gives the countdown as 'One hundred and seventy-two days to the hearing.' Working backward from the fixed hearing date of October 6, 1927, 172 days corresponds to April 17 — which is mid-April, not 'last week of April' (April 24–30). The two facts cannot both be exactly right; one has been revised without updating the other."
+    },
+    {
+      "chapters": [
+        "20-the-estate"
+      ],
+      "claim": "'He was not a monster. He went down anyway.' The criminal prosecution of Walter Eccleston is disposed of in two sentences in the final chapter. After 300 pages of meticulous legal procedure, the most consequential event in Walter's life — and a moment that would test everything the novel has built about evidence, moral judgment, and professional restraint — is curtailed entirely. The terse register is consistent with Prescott's character, but the brevity here reads more like avoidance than discipline; the book has earned the right to a considered treatment of the criminal matter and doesn't take it."
+    }
+  ],
+  "quotes": [
+    {
+      "chapter": "04-bank-parade",
+      "text": "settled is the word I mean to use, and I use it deliberately; I did not act in a soft mood that I expected to revise",
+      "why": "Josiah's letter to Margaret, produced from a wardrobe box by Edgar Fairhurst, is the novel's emotional anchor. This sentence does two things simultaneously: it refutes Walter's claim that the first codicil was made 'in a soft mood,' and it reveals Josiah as a man who chose his words with the care he gave his legal instruments. 'Deliberately' carries the weight of an old man writing to someone he wants to reassure."
+    },
+    {
+      "chapter": "12-the-witnesses",
+      "text": "The four dates made a column and described a shape, and the shape described a thing, and he drew his pen through the space where that thing would have been written, because the brief was not a place for what was not evidence.",
+      "why": "This is the finest characterisation sentence in the book. It shows Prescott seeing the implication clearly, naming it to himself, and then declining to write it — not out of doubt, but out of professional discipline. 'The space where that thing would have been written' is exact: the blank in the attendance book is the evidence of his restraint, not of ignorance."
+    },
+    {
+      "chapter": "19-solemn-form",
+      "text": "He read it the way a man reads a document he expects to confirm what he knows: quickly, his eyes moving across the type.",
+      "why": "The sentence establishes the mode before the deviation from it. What follows — Walter slowing, going back, coming to rest at a particular point — is made devastating by this baseline. A competent writer would simply have described Walter's surprise; this writer shows the expectation first, then the interruption of it."
+    },
+    {
+      "chapter": "19-solemn-form",
+      "text": "ordinary documents do not accommodate themselves to what comes after",
+      "why": "The judge's observation names the novel's central argument in eleven words. The whole case rests on the fact that Garside's register entry — made with no thought of its future use — could not have been adjusted to serve later purposes, as a designed document might have been. Said in 'the same flat tone' the judge has used throughout: the flatness is the point."
+    },
+    {
+      "chapter": "20-the-estate",
+      "text": "More precise than the occasion required. He could not have known it; he had made it anyway.",
+      "why": "The novel's thesis in three sentences. Garside's habit of noting 'instrument read entire, including date' in the register was not required by law or practice; it was the mark of a man who could not distinguish between what required a record and what deserved one. That habit, exercised without foreknowledge, is what wins the case. The compression here — a long novel's argument resolved into twenty words — is the right note to end on."
+    }
+  ],
+  "put_down_points": [
+    "Chapter 06-the-letter-book: the narrative enters a dense documentary corridor with no human contact; readers who have not yet committed to the book's register will begin to flag here.",
+    "Chapter 08-the-gazette: forty-six solicitors, forty-six negative returns, presented as a working record with no dramatic modulation. The lowest-tension passage in the book; the purpose is clear but the experience is austere.",
+    "Chapter 11-the-sale-contract: the financial documents and the banking correspondence from Walter to his manager are purposeful but represent a second sustained stretch without a living scene or character encounter."
+  ],
+  "who_is_this_for": "Readers who value exact historical period prose and the procedural novel as a literary form — the audience for Hilary Mantel's Wolf Hall, Penelope Fitzgerald's The Gate of Angels, or the English legal fiction of C. P. Snow. Anyone who has spent time with real Edwardian or inter-war legal documents will find the record-keeping authentic and satisfying. Not recommended for readers expecting thriller mechanics, emotional directness, or a villain who speaks his villainy. The jacket needs to promise slow-burn procedural fiction honestly, or the reader will feel misled."
+}

@@ -1,0 +1,100 @@
+{
+  "generated_at": "2026-08-13T23:13:36.573Z",
+  "per_lens": [
+    {
+      "lens": "literary",
+      "exact": 5,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "airport",
+      "exact": 6,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "propulsion",
+      "exact": 4,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "authenticity",
+      "exact": 7,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "comparative",
+      "exact": 7,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "verisimilitude",
+      "exact": 4,
+      "near": 0,
+      "misattributed": 1,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "ordinary",
+      "exact": 5,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    }
+  ],
+  "problems": [
+    {
+      "lens": "verisimilitude",
+      "chapter": "04-what-the-ledger-holds",
+      "text": "I record what I find. If I'd found something significant, it would be in the log.",
+      "verdict": "misattributed",
+      "foundIn": "07-december-protocol"
+    }
+  ],
+  "totals": {
+    "exact": 38,
+    "near": 0,
+    "misattributed": 1,
+    "absent": 0
+  },
+  "panel_health": {
+    "lenses": 7,
+    "scores": {
+      "min": 7,
+      "max": 8.5,
+      "mean": 7.71,
+      "spread": 1.5
+    },
+    "finish": {
+      "yes": 7
+    },
+    "claims": {
+      "strongest": 35,
+      "weakest": 35,
+      "fewestWeaknessesOnALens": 5
+    },
+    "quotes": {
+      "total": 39,
+      "fabricationRate": 0
+    },
+    "flags": [
+      "1 misattributed quote"
+    ]
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "completed": [
     "architect",
     "plotter",
@@ -122,6 +122,16 @@
     "reader:act-2",
     "reader:act-3",
     "reader:synthesis",
-    "continuity-fact-audit"
-  ]
+    "continuity-fact-audit",
+    "cold-read:literary",
+    "cold-read:airport",
+    "cold-read:propulsion",
+    "cold-read:authenticity",
+    "cold-read:comparative",
+    "cold-read:verisimilitude",
+    "cold-read:ordinary",
+    "cold-read:synthesis",
+    "cold-read:audit"
+  ],
+  "entries": {}
 }

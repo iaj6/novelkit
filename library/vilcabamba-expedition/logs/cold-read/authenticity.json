@@ -1,0 +1,121 @@
+{
+  "lens": "authenticity",
+  "score_out_of_10": 7.5,
+  "would_finish": "yes",
+  "verdict": "This is a genuinely controlled novel operating in a demanding register: quiet, compressed, restrained, meaning arriving through what isn't said and emotional weight built from procedural precision. It is attempting to be a moral inquiry wearing expedition clothes — three principals in a race to a pre-Inca site in 1930s Peru, where the real competition turns out to be not German against British but record-keeping against witness-bearing. At its best the book fully inhabits this. At its worst it performs it.\n\nThe authenticity failures are real but concentrated. The sharpest is a voice problem: three point-of-view characters — Holroyd, Isobel, Mariano — are distinguished by what they notice, not by how the prose behind their noticing sounds. The \"not X but Y\" negation-affirmation pattern appears in all three POV sections (\"not cautiously, not in the way of a nervous man, but as a matter of practice\"; \"not wonder — wonder would have admitted doubt — but confirmation\"; \"not exactly dishonesty, but a selection\"). The aphoristic cadence that closes key passages is shared across all three. This is especially audible in Mariano's witness meditation in Chapter 4, where thoughts that arrive as \"He had sent himself, on behalf of the valley. This seemed to him like the correct arrangement\" have the same elegant compression as Holroyd's accounting register. That compression is earned for Holroyd — it is his actual epistemic mode. Applied to Mariano, who the book is carefully presenting as operating in a different tradition entirely, it sounds like the author organizing Mariano's interiority rather than Mariano having it.\n\nThe second specific failure is aphorism-creep: the book earns its insights when they arrive through action — Holroyd walking past the two hours he refused Mariano, saying nothing; the notebook held open to nothing and closed — but stumbles when it tries to name the insight in prose. \"The drama is the duration, and he has already served it\" (end of Chapter 4) sounds exact and is evasive; it gestures at a claim without making one. \"He meant both sentences equally\" (Chapter 7) explains what the reader has already understood from Riedel's exit. These are the places where the novel stops trusting its reader, and they land at the worst possible moments — the emotional peaks where trust is most required.\n\nThere is also a production artifact: the chapter heading format is inconsistent. Chapters 2, 3, and 5 carry numbered prefixes (\"Chapter 2 — Selva Alta,\" \"Chapter 3: Puna,\" \"Chapter Five: The Storm\") with inconsistent separators; the other five have none. This is an unfinished editorial decision, not a stylistic choice.\n\nWhat survives all this is a book with a specific moral intelligence about record-keeping, witnessing, and what you owe to the account you are building and to the people who kept knowledge before you arrived. \"His attention given to it without remainder\" — four words in Chapter 7 that use Holroyd's accounting language in reverse to describe Mariano's total presence in the bowl — is the best thing this novel does, and it is genuinely excellent. The Leica at the end, still undecided, is the right note to go out on. The book has earned its irresolution.",
+  "strongest": [
+    {
+      "chapters": [
+        "02-selva-alta"
+      ],
+      "claim": "The bridge collapse sequence is the book's finest sustained passage. The explanation of how a walking weight creates harmonic resonance in a rope structure is technically exact and not made up; the specificity of Rufino getting his forearm (not his hand, not his wrist) through the loop is the difference between a rescue and a tragedy on the page; and 'He was aware of standing and watching. He was aware that there was nothing else for him to do' is quiet self-indictment delivered as pure report. The whole sequence earns its moral weight through physics, not sentiment."
+    },
+    {
+      "chapters": [
+        "04-snowline"
+      ],
+      "claim": "The crampon reveal — Mariano bought crampons three months before Isobel came to him with the commission, said nothing, and will put them on before Holroyd thinks to ask — is a genuinely earned narrative surprise that requires structural patience to achieve. It retroactively reframes Mariano's entire involvement, and the book delivers it in one flat sentence with no emphasis. This is what showing rather than telling looks like when a writer is in control."
+    },
+    {
+      "chapters": [
+        "04-snowline"
+      ],
+      "claim": "The fire ring forensics on the high camp platform — ash temperature test with a bare hand held two inches above, boot print aging from edge sharpness, tent peg impressions, cartridge headstamp identification — present Mariano's knowledge as active methodology rather than background color. Each step of reasoning is exactly enough and not one word more."
+    },
+    {
+      "chapters": [
+        "07-what-it-proves"
+      ],
+      "claim": "'His attention given to it without remainder' is the best phrase in the book. It uses Holroyd's own accounting language — the ledger, the remainder, what is left over — applied in reverse to Mariano's presence in the bowl. Holroyd is always remainder: unresolved, withholding, not quite present. Mariano is not. The phrase is doing structural work across eight chapters, not just decorating a moment."
+    },
+    {
+      "chapters": [
+        "08-the-descent"
+      ],
+      "claim": "The camera hesitation on the descent snowfield — Holroyd considers opening the back of the Leica to destroy the film, holds it, then decides not to because destroying a record is the same category of wrong as falsifying it — is where the novel's moral argument arrives. It arrives through Holroyd's own ethical framework, without sentiment, without a confirming gesture from another character, without the novel telling us this is the thesis. This is the book fully inhabiting rather than imitating its register."
+    }
+  ],
+  "weakest": [
+    {
+      "chapters": [
+        "01-the-bottom-of-the-list",
+        "02-selva-alta",
+        "03-puna",
+        "04-snowline",
+        "05-the-storm",
+        "06-rititambo",
+        "07-what-it-proves",
+        "08-the-descent"
+      ],
+      "claim": "The chapter heading format is an unfinished editorial decision left in the finished text. Chapters 2, 3, and 5 carry numbered prefixes ('Chapter 2 — Selva Alta,' 'Chapter 3: Puna,' 'Chapter Five: The Storm') with inconsistent separators (em-dash, colon, none). The other five chapters have no prefix at all, and Chapter 5 spells the number as a word while Chapters 2 and 3 use numerals. This is a production artifact."
+    },
+    {
+      "chapters": [
+        "04-snowline",
+        "07-what-it-proves"
+      ],
+      "claim": "Aphorism-creep at emotional peaks. 'The drama is the duration, and he has already served it' (end of Chapter 4, Mariano waiting for morning) sounds like a claim and is an evasion — what does 'the drama is the duration' actually assert? That waiting a long time is the dramatic event? The formulation performs profundity without delivering it. The same problem appears in Chapter 7 with 'He meant both sentences equally,' which explains Riedel's exit speech to a reader who has already understood it. The book's best moments trust the reader entirely; these do not."
+    },
+    {
+      "chapters": [
+        "03-puna"
+      ],
+      "claim": "The journal-reading scene over-explains Isobel's insight about her father's work. Both the old wrong reading and the corrected reading are stated at length in the prose: 'She had been watching him for years with the particular steady attention of someone who understood displacement... The obsession had seemed to her a way of circling what he could not name... She had been wrong.' The emotional revelation is asserted rather than shown. Earlier in the same chapter, 'Your father was careful' — four Quechua words and a tether peg — does more work in two lines than this passage does in six paragraphs."
+    },
+    {
+      "chapters": [
+        "03-puna",
+        "04-snowline",
+        "06-rititambo"
+      ],
+      "claim": "The three point-of-view sections are distinguished by content, not by prose register. The 'not X but Y' negation-affirmation pattern and the aphoristic sentence cadence appear equally in Holroyd's sections, Isobel's sections, and Mariano's. This is especially damaging in Mariano's chapter, where the book is explicitly presenting him as operating in a different epistemic tradition from Holroyd — yet the prose organizing his interiority is stylistically identical to the prose organizing Holroyd's. The voices are not genuinely distinct."
+    },
+    {
+      "chapters": [
+        "03-puna"
+      ],
+      "claim": "The pack metaphor for grief ('she had been carrying it the way she carried her pack, not attending to it directly, letting it reshape the load distribution without looking at what it was') is too neat for a character who is literally carrying a pack through a mountain expedition. The metaphor calls attention to its own cleverness about the setting rather than arriving as a felt thing. A competent-but-ordinary line would use a less situationally convenient comparison; this one takes the easy route."
+    }
+  ],
+  "quotes": [
+    {
+      "chapter": "01-the-bottom-of-the-list",
+      "text": "He found none of this humiliating. He found it accurate.",
+      "why": "The shift from 'humiliating' to 'accurate' enacts Holroyd's conversion of emotion to data in two sentences. A competent-but-ordinary line would tell us he was stoic or self-aware; this shows the mechanism itself operating."
+    },
+    {
+      "chapter": "02-selva-alta",
+      "text": "He was aware of standing and watching.",
+      "why": "Quiet self-indictment delivered as pure report. The awareness of his own passivity is itself passive — no drama, no self-exculpation, no appeal to helplessness. The book's moral register in one sentence."
+    },
+    {
+      "chapter": "02-selva-alta",
+      "text": "Walking loads rope differently from standing.",
+      "why": "Opens the paragraph that explains the bridge failure through actual mechanics. The sentence is specific and correct and belongs to a mind that thought through the physics, not one that decorated a scene. The book is often this good on procedure."
+    },
+    {
+      "chapter": "04-snowline",
+      "text": "the drama is the duration, and he has already served it",
+      "why": "The clearest instance of aphorism-creep: it sounds like a claim but dissolves under pressure. 'The drama is the duration' is circular (what it means is: the long wait is the dramatic thing), and 'he has already served it' gestures at a completion that the actual sentence has not earned. The novel is worst when it does this."
+    },
+    {
+      "chapter": "07-what-it-proves",
+      "text": "not wonder — wonder would have admitted doubt — but confirmation",
+      "why": "The 'not X but Y' pattern cited as a voice tic, but here it works: the parenthetical performs Holroyd's reading of Riedel's face mid-clause, which is itself what Holroyd does — reads, files, moves on. Effective where the book uses the pattern once rather than four times."
+    },
+    {
+      "chapter": "07-what-it-proves",
+      "text": "his attention given to it without remainder",
+      "why": "The best phrase in the book. Uses Holroyd's accounting register in reverse: Holroyd always has remainder (things left unresolved, not entered in the ledger), Mariano does not. Doing structural work across the whole novel, not just marking a moment."
+    },
+    {
+      "chapter": "07-what-it-proves",
+      "text": "He meant both sentences equally.",
+      "why": "The novel's habit of trust in the reader abandoned at the worst moment. Riedel's exit speech is clear; its doubleness is legible; this sentence explains the explanation. Flagged as the most obvious editorial artifact remaining in the prose."
+    }
+  ],
+  "put_down_points": [
+    "The journal-reading sequence in the middle of 03-puna, where the prose over-explains Isobel's insight about her father's work across several paragraphs. The book's habitual compression drops away entirely; the revelation is stated twice (the old wrong reading, then the corrected one), and a reader attuned to the novel's restraint will feel the loosening acutely. This is the highest put-down risk in the manuscript."
+  ],
+  "who_is_this_for": "Readers of disciplined quiet literary fiction with historical or expedition settings — the company is Patrick White's Voss in its blend of the physical and the metaphysical, Robert Macfarlane in its attention to the specific materiality of landscape and terrain, or a more austere J.L. Carr. Not for adventure-thriller readers; the pace is deliberately slow and the drama is moral rather than physical. Readers who want every silence earned and find most literary fiction too gabby will respond well to this."
+}

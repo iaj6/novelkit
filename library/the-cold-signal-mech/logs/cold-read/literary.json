@@ -1,0 +1,120 @@
+{
+  "lens": "literary",
+  "score_out_of_10": 7.5,
+  "would_finish": "yes",
+  "verdict": "This is a novel of scientific interiority — a solo Antarctic researcher, Elena, who detects a forty-seven-second anomalous radio signal on the night of 1 June 1991 and spends twelve days managing deteriorating evidence (magnetic tape whose binder is failing at a measurable rate, a generator losing variance stability, a relay window she watches close without pressing a key) while deciding, with full deliberation, not to communicate her finding until she can hand the notebook to her colleague in person. It is, formally, a protocol log that has been taught to feel. The subject is not the signal — we never learn whether it is genuine — but the ethics of custody: who owns a discovery, what the institutions designed to certify it actually do to it, and at what cost a scientist protects her own rigour from the systems meant to verify it. This is original material and the novel earns its central irony: Elena's methodological scrupulousness, the very quality that makes her the right person to have found the signal, is the same quality that prevents her from acting with the urgency the discovery might warrant.\n\nThe prose is uniformly disciplined and sometimes excellent — precise, restrained, capable of carrying large weight in declarative sentences that refuse to be more than they are. The best chapter (07, the relay window) is a small masterpiece of negative drama: Elena sits at the terminal for over an hour while the satellite carrier is live, reads the document for perhaps the tenth time, leaves to touch the tape housing, returns, and still does not press F5. When the carrier drops — \"Elena sat. Her hand was no longer near the keyboard\" — the sentence lands because the preceding thirty pages of resource arithmetic have made the inaction genuinely costly rather than merely stoic. That is the book at its best: form in service of dramatic weight.\n\nThe problem is that this technique — the protagonist as method, interiority accessible only through what she calculates and tracks and deliberately does not reach for — becomes habitual across the middle chapters in ways that feel less like discipline than avoidance. By chapters 06 through 09, the rhythm of each chapter opening on a thermometer reading, proceeding through fuel arithmetic and binder stress measurements and voltage variance arcs, and closing on an item not acted on becomes monotonous in a way that the subject doesn't redeem. The dramatic situation (tape decaying, power window closing, independent corroboration sixty kilometres away that Elena has herself inoculated against access) is genuinely suspenseful, but the prose mirrors Elena's methodology so completely that it becomes difficult to feel through the metronomic logbook register. Fidelity to method is the novel's argument, but a good argument can still bore its audience.\n\nThe face-down page — Elena's one gesture toward writing in a register neither log nor evidence summary — is the novel's most revealing choice. She writes six lines and stops mid-sentence; she folds the page and eventually places it in the back of the notebook. We never read it. This may be principled: Elena cannot be known through anything but her methods, and neither can the reader know her. But it functions as emotional evasion dressed as formal rigour, and it produces the precise feeling of being locked out at the door the book has been moving toward. The question for any reader who gets this far is whether this is the door opening or the door staying shut. My reading: the form has protocolled the emotional core into the same silence it has maintained throughout, and the face-down page is not pregnant silence — it is withholding.",
+  "strongest": [
+    {
+      "chapters": [
+        "07-the-window"
+      ],
+      "claim": "The relay window chapter executes the novel's pivot — Elena's failure to press F5 — with extraordinary restraint. The inaction is more dramatically charged than any equivalent action, and it is earned by the preceding resource arithmetic without a word of psychological explanation."
+    },
+    {
+      "chapters": [
+        "01-forty-seven-seconds",
+        "04-the-inventory",
+        "05-worse-than-calculated"
+      ],
+      "claim": "Elena is characterised entirely through decisions, methods, and arithmetic rather than psychological exposition. We understand her in depth by watching her cross out the comfortable number and write the correct one, by her annotation 'do not treat as confirmed' in her own notes. This is a formal achievement: character as epistemology."
+    },
+    {
+      "chapters": [
+        "03-anomalous",
+        "10-sixty-kilometers-east"
+      ],
+      "claim": "The Lars Engström subplot is the novel's structural ace: independent corroboration from sixty kilometres east that Elena herself has inoculated against access by telling him 'probably ionospheric' on Day 3. When Lars discloses the forty-seven-second duration and 432.275 MHz frequency in Chapter 10, the reader understands the full cost of Elena's earlier deflection. Two characters who never share the same room are in the same data."
+    },
+    {
+      "chapters": [
+        "11-the-physical-record",
+        "12-one-remaining"
+      ],
+      "claim": "The evidence summary in Chapter 11 — Elena's formal statement of what can and cannot be claimed, distinguishing 'inconsistent with all terrestrial and natural signal sources within the scope of the five-point verification protocol' from the stronger formulation she explicitly rejects — is the most precise formal achievement in the book. The language earns every qualification."
+    },
+    {
+      "chapters": [
+        "02-the-second-run",
+        "04-the-inventory",
+        "09-core-dropout",
+        "11-the-physical-record"
+      ],
+      "claim": "The physical deterioration of the tape (binder stress extending at 1.5 cm/day, dropout growing from five to nine seconds across runs, the printout's timestamp column fracturing under cold) creates a ticking clock that is both scientifically plausible and formally elegant: the evidence decays at a measured rate while Elena measures it."
+    }
+  ],
+  "weakest": [
+    {
+      "chapters": [
+        "13-fourteen-hours",
+        "14-the-last-run"
+      ],
+      "claim": "The description of the face-down page contains an internal contradiction. Chapter 13 establishes the writing in three stages: one line, then three more, then two more with the unfinished sentence in the last of the six. Chapter 14 describes the same page as 'Six lines, stopping mid-sentence in the third.' The two accounts are inconsistent unless 'the third' is read as the third group of writing rather than the third line — a reading the text does not clearly support. This is a production-level oversight in the novel's most emotionally charged moment."
+    },
+    {
+      "chapters": [
+        "05-worse-than-calculated",
+        "06-before-the-window",
+        "08-after",
+        "09-core-dropout"
+      ],
+      "claim": "The middle section — five consecutive chapters each opening on a thermometer or gauge reading and closing on an item not acted on — becomes genuinely tedious. The generator fault log entries, heater percentages, and dropout measurements lose differentiation. A reader not already committed will begin skimming in Chapter 06 and resume attention only when the window opens in Chapter 07."
+    },
+    {
+      "chapters": [
+        "03-anomalous",
+        "10-sixty-kilometers-east"
+      ],
+      "claim": "Lars Engström is instrumentalised by the plot at the expense of his existence as a character. He appears only in formal SSB exchanges, always in the register of call signs and weather reports. By Chapter 10, when his data constitutes the novel's second most significant revelation, the reader has no investment in him as a person. Given how much structural weight his corroborating detection carries, this is a material underdevelopment."
+    },
+    {
+      "chapters": [
+        "13-fourteen-hours",
+        "14-the-last-run"
+      ],
+      "claim": "The face-down page withholds the novel's only moment of uncensored interiority. Six lines in a register 'not quite the evidence-summary register either; something between the two' are folded, placed in the notebook, and never disclosed. This may be principled — Elena cannot be known through anything but her methods — but it functions as emotional evasion: the form protocolling the emotional core into the same silence it has maintained for fourteen chapters."
+    },
+    {
+      "chapters": [
+        "10-sixty-kilometers-east",
+        "12-one-remaining"
+      ],
+      "claim": "The fourteen-minute timing offset between Lars's detection (approximately 2208) and Elena's (22:21:52) implies a sweeping-beam source — a signal that took fourteen minutes to traverse sixty kilometres, which rules out simple wavefront propagation at light speed and requires a rotating or moving transmitter. Elena is a radio physicist who has been building geometric consistency arguments for days. That she never notes this implication, even in the analysis notebook, reads as either an oversight or an unacknowledged gap in a book otherwise scrupulous about its physics."
+    }
+  ],
+  "quotes": [
+    {
+      "chapter": "01-forty-seven-seconds",
+      "text": "She did not yet write the word she could not write.",
+      "why": "The novel's central technique in miniature: character rendered through the act of withholding rather than disclosure. The sentence carries enormous weight because it is the only moment the prose allows itself a gap between Elena's knowledge and Elena's language — and it names the gap without crossing it."
+    },
+    {
+      "chapter": "01-forty-seven-seconds",
+      "text": "The numbers were what they were.",
+      "why": "The cleanest sentence in the book. It does what the entire novel does in five words: declines to make a claim larger than the data supports, while the context makes the withheld claim enormous."
+    },
+    {
+      "chapter": "07-the-window",
+      "text": "Elena sat. Her hand was no longer near the keyboard.",
+      "why": "The pivot of the novel. Two declarative sentences do the work of a scene. The restraint — no internal monologue, no named emotion — lands with exactly the force that thirty pages of resource arithmetic have prepared for it."
+    },
+    {
+      "chapter": "08-after",
+      "text": "She had not made a decision. She had made a calculation. The two were different things, and she knew which one she had done.",
+      "why": "The novel's thesis, stated directly and only once. The distinction between decision and calculation is where the book lives — the claim that Elena's inaction at the relay window was not a choice but an arithmetic result. The sentence is honest about this in a way the rest of the novel does not always manage."
+    },
+    {
+      "chapter": "10-sixty-kilometers-east",
+      "text": "Two stations. Two instruments. Two frequency bands. Two independent detection events, fourteen minutes apart, sixty kilometers of Antarctic ice sheet between them.",
+      "why": "The anaphoric enumeration arrives as the culmination of nine chapters of resource accounting, and it works because the four 'Two' sentences each add a different kind of independence — spatial, instrumental, spectral, temporal. The sentence earns what it is doing."
+    },
+    {
+      "chapter": "09-core-dropout",
+      "text": "The second parametric segment was gone.",
+      "why": "Blunt monosyllables after pages of measurement hedged to the decimal point. The syntactic simplicity is the right register for irrevocable loss — not 'degraded,' not 'partially readable,' but gone. The word choice shows the novel knows the difference."
+    }
+  ],
+  "put_down_points": [
+    "Chapter 06 (Before the Window) through Chapter 09 (Core Dropout): the combination of generator fault monitoring, dropout arithmetic, and relay-window deliberation reaches a plateau of sameness. Each chapter opens on an instrument reading, processes through the day's measurements, and closes on an inaction. Chapter 07 (The Window) is the exception and is the book's best chapter; the three surrounding it are where the metronomic logbook register stops feeling like form and starts feeling like repetition. A reader who has not committed to Elena's specific manner of attention will begin skimming here."
+  ],
+  "who_is_this_for": "Readers of literary science fiction in the Ted Chiang register — stories where scientific epistemology is the emotional content, not the backdrop. Also: readers who responded to the procedural interiority of Kazuo Ishiguro's narrators, or to the slow institutional dread of early le Carré, transposed into Antarctic radio astronomy. Not for readers who want plot momentum; not for readers who require a named emotion. This is a novel for people who will feel the weight of 'do not treat as confirmed' written in a scientist's own margin."
+}

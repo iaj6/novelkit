@@ -1,0 +1,109 @@
+{
+  "generated_at": "2026-08-14T00:02:15.388Z",
+  "per_lens": [
+    {
+      "lens": "literary",
+      "exact": 5,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "airport",
+      "exact": 5,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "propulsion",
+      "exact": 5,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "authenticity",
+      "exact": 5,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "comparative",
+      "exact": 4,
+      "near": 0,
+      "misattributed": 1,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "verisimilitude",
+      "exact": 5,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "ordinary",
+      "exact": 4,
+      "near": 0,
+      "misattributed": 1,
+      "absent": 0,
+      "badChapterRefs": []
+    }
+  ],
+  "problems": [
+    {
+      "lens": "comparative",
+      "chapter": "13-action",
+      "text": "the crew did not perform a load cycle. The load cycle occurred. Through them.",
+      "verdict": "misattributed",
+      "foundIn": "05-running-out"
+    },
+    {
+      "lens": "ordinary",
+      "chapter": "06-the-ford",
+      "text": "He had read deer this way — holding his look on the tree line without pressing it, letting the patience do the work, waiting for the fragments to resolve into one shape with a direction and a purpose.",
+      "verdict": "misattributed",
+      "foundIn": "08-beekmantown"
+    }
+  ],
+  "totals": {
+    "exact": 33,
+    "near": 0,
+    "misattributed": 2,
+    "absent": 0
+  },
+  "panel_health": {
+    "lenses": 7,
+    "scores": {
+      "min": 7,
+      "max": 8,
+      "mean": 7.5,
+      "spread": 1
+    },
+    "finish": {
+      "yes": 6,
+      "reluctantly": 1
+    },
+    "claims": {
+      "strongest": 35,
+      "weakest": 35,
+      "fewestWeaknessesOnALens": 5
+    },
+    "quotes": {
+      "total": 35,
+      "fabricationRate": 0
+    },
+    "flags": [
+      "score spread 1.0 is narrow — lenses with different priorities returned nearly the same number, which can indicate one judgement in several costumes rather than independent reads",
+      "2 misattributed quotes"
+    ]
+  }
+}

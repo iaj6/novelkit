@@ -1,0 +1,154 @@
+{
+  "generated_at": "2026-08-14T00:48:18.198Z",
+  "per_lens": [
+    {
+      "lens": "literary",
+      "exact": 6,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 1,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "airport",
+      "exact": 3,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 3,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "propulsion",
+      "exact": 5,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "authenticity",
+      "exact": 5,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "comparative",
+      "exact": 5,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 1,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "verisimilitude",
+      "exact": 6,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 1,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "ordinary",
+      "exact": 3,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 4,
+      "badChapterRefs": []
+    }
+  ],
+  "problems": [
+    {
+      "lens": "literary",
+      "chapter": "01-departure",
+      "text": "Deliver it whole. Whatever happens on that road, deliver it whole.",
+      "verdict": "absent"
+    },
+    {
+      "lens": "airport",
+      "chapter": "01-departure",
+      "text": "Deliver it whole. Whatever happens on that road, deliver it whole.",
+      "verdict": "absent"
+    },
+    {
+      "lens": "airport",
+      "chapter": "02-the-wagon-road",
+      "text": "That man works for the Guild. Quiet. No joke in it.",
+      "verdict": "absent"
+    },
+    {
+      "lens": "airport",
+      "chapter": "07-the-pavers-country",
+      "text": "Your dreams may be inaccurate, Iri said.",
+      "verdict": "absent"
+    },
+    {
+      "lens": "comparative",
+      "chapter": "02-the-wagon-road",
+      "text": "He found out what I told him. Which is that the merchant had an irregular pattern that couldn't be explained by his trade routes. That's not the same as finding out.",
+      "verdict": "absent"
+    },
+    {
+      "lens": "verisimilitude",
+      "chapter": "04-the-guild-token",
+      "text": "Not the interlocked-rings mark of the Weavers' Guild, not the road-guild's chain motif.",
+      "verdict": "absent"
+    },
+    {
+      "lens": "ordinary",
+      "chapter": "01-departure",
+      "text": "Deliver it whole. Whatever happens on that road, deliver it whole.",
+      "verdict": "absent"
+    },
+    {
+      "lens": "ordinary",
+      "chapter": "02-the-wagon-road",
+      "text": "He found out what I told him. Which is that the merchant had an irregular pattern that couldn't be explained by his trade routes. That's not the same as finding out.",
+      "verdict": "absent"
+    },
+    {
+      "lens": "ordinary",
+      "chapter": "06-the-rival-party",
+      "text": "You have no idea what you're carrying.",
+      "verdict": "absent"
+    },
+    {
+      "lens": "ordinary",
+      "chapter": "11-the-advocates-court",
+      "text": "Mara Weft. Of Drey.",
+      "verdict": "absent"
+    }
+  ],
+  "totals": {
+    "exact": 33,
+    "near": 0,
+    "misattributed": 0,
+    "absent": 10
+  },
+  "panel_health": {
+    "lenses": 7,
+    "scores": {
+      "min": 7,
+      "max": 8,
+      "mean": 7.29,
+      "spread": 1
+    },
+    "finish": {
+      "yes": 7
+    },
+    "claims": {
+      "strongest": 35,
+      "weakest": 35,
+      "fewestWeaknessesOnALens": 5
+    },
+    "quotes": {
+      "total": 43,
+      "fabricationRate": 0.2326
+    },
+    "flags": [
+      "score spread 1.0 is narrow — lenses with different priorities returned nearly the same number, which can indicate one judgement in several costumes rather than independent reads",
+      "10 fabricated quotes (23.3%) — discount the affected lenses"
+    ]
+  }
+}
