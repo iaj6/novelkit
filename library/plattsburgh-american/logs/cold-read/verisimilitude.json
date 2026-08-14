@@ -1,0 +1,128 @@
+{
+  "lens": "verisimilitude",
+  "score_out_of_10": 8,
+  "would_finish": "yes",
+  "verdict": "This is a dual-strand historical novel about the Battle of Plattsburgh (Lake Champlain, September 11, 1814), following Silas, a gun-section leader on the USS Saratoga, and Asa Beckwith, a Clinton County militia man defending Pike's Ford on the Saranac River. The novel's implicit contract is fidelity to two domains: the War of 1812 as it unfolded on the northern frontier, and the physical and procedural realities of early-nineteenth-century naval gunnery and frontier combat. On both counts it largely delivers at an unusually high level.\n\nThe technical specificity is sustained and, with a few exceptions, accurate throughout. The fleet composition at the battle is correct: Confiance, Linnet, Chubb, Finch, gunboats. Command is correctly identified — Macdonough as Master Commandant, Macomb on the south bank, Pring on the Linnet. The kedge-and-spring-line maneuver that turned the Saratoga's fresh port battery onto the damaged British line is correctly explained as geometry in Ch. 09 and executes in Ch. 13 exactly as Silas had predicted. The water-milling technology (head race, sash saw, ragwheel, pitman arm) is accurate for the period. The garland arithmetic runs clean from first count (18 per gun, Ch. 01) through the grape-shot amendment (16 + 2, Ch. 07) to the 72 empty rings confirmed in Ch. 15 — a piece of self-consistency that required the author to track a single number across fourteen chapters without flinching.\n\nThree failures interrupt this accuracy. The HMS Confiance is described in Ch. 11 as \"thirty-seven guns, a sixth-rate frigate\"; by Royal Navy rating a 37-gun ship is a fifth-rate, not a sixth. In Ch. 14, Asa's loading sequence introduces \"Ball and patch\" — a patched-ball, rifle-technique load — for a weapon loaded from paper cartridges in every prior instance (Chs. 06, 08, 10), where the wad is correctly the \"paper\" of the cartridge. Most visibly, the gun-number notation shifts at Ch. 11 from \"gun one / two / three / four\" (all nine preceding Silas chapters) to \"gun #1 / #2 / #3 / #4\" (Chs. 11, 13, 15), an editorial artifact indicating the battle chapters were drafted or processed separately with a different convention that was never reconciled with the pre-battle text.\n\nThe novel's most impressive verisimilitude achievement is something subtler than period accuracy: each narrator knows only what he could know. Silas hears the south-bank musket exchanges as muffled sound at two miles and receives information in pieces through the ship's chain. Asa registers the entire naval battle as air pressure and smoke above a ridge he cannot see past, and files the cessation of the cannonade as a change in weather rather than a datum he can interpret. Neither ever breaks this limit. That discipline — epistemic fidelity rather than period fidelity — is harder to maintain and more important to get right.",
+  "strongest": [
+    {
+      "chapters": [
+        "01-the-garland",
+        "07-at-anchor",
+        "15-prize-procedures"
+      ],
+      "claim": "Garland arithmetic is meticulous and load-bearing across the whole novel. Eighteen shot per gun is established in Ch. 01, amended in Ch. 07 to sixteen round plus two grape (still eighteen per gun), and confirmed at seventy-two empty rings in Ch. 15 — four guns times eighteen, checked."
+    },
+    {
+      "chapters": [
+        "03-first-reports",
+        "05-spring-lines",
+        "09-the-kedge",
+        "13-port-battery"
+      ],
+      "claim": "The kedge-winding maneuver is introduced as a carpenter's observation in Ch. 03, assembled into a geometrical inference in Ch. 05 and Ch. 09, and executes in Ch. 13 precisely as Silas deduced it. The geometry (bower cut, stern let go, kedge hauled, hull rotates 180 degrees, port battery bears) is correct and handled without error."
+    },
+    {
+      "chapters": [
+        "08-pikes-ford",
+        "10-two-ranks",
+        "12-before-light",
+        "14-the-ford",
+        "16-the-retreat"
+      ],
+      "claim": "The ford topography is established by wading in Ch. 08 (limestone shelf, gravel trough, the angled flat stone, the sinkhole under the alders, the submerged log in the willows), tested by British reconnaissance in Ch. 10, exploited in Chs. 12 and 14, and finally seen from above in Ch. 16 — where the limestone's half-foot eastern tilt, knowable only by feel from inside the water, is visible for the first time. Every detail placed earlier pays off and nothing contradicts."
+    },
+    {
+      "chapters": [
+        "11-cumberland-head",
+        "13-port-battery",
+        "15-prize-procedures"
+      ],
+      "claim": "Historical fleet composition and command are accurate throughout: the Confiance's 37 guns, the Linnet as Pring's brig, the Chubb taken early, the Finch aground near Crab Island, Macdonough's rank as Master Commandant, Macomb commanding the land force. No invented detail contradicts the record."
+    },
+    {
+      "chapters": [
+        "05-spring-lines",
+        "07-at-anchor",
+        "12-before-light",
+        "14-the-ford"
+      ],
+      "claim": "Each narrator's knowledge is bounded by his physical position throughout the battle sequence and the standoff that precedes it. Silas receives south-bank news only through the ship's chain, in fragments. Asa perceives the naval battle as air pressure and smoke above a ridge. Neither ever acquires information his position cannot supply."
+    }
+  ],
+  "weakest": [
+    {
+      "chapters": [
+        "11-cumberland-head"
+      ],
+      "claim": "The HMS Confiance is described as 'thirty-seven guns, a sixth-rate frigate.' By Royal Navy rating classification, a 37-gun ship is a fifth-rate frigate; a sixth-rate carries 20–28 guns. The gun count is correct; the rate is wrong."
+    },
+    {
+      "chapters": [
+        "06-beekmantown-road",
+        "08-pikes-ford",
+        "10-two-ranks",
+        "14-the-ford"
+      ],
+      "claim": "'Ball and patch. Ramrod — one full stroke to the bore's base' in Ch. 14 introduces rifle-style patched-ball loading for Asa's weapon. But Ch. 06, Ch. 08, and Ch. 10 all show him loading from paper cartridges, where the 'paper' of the cartridge is the wad. Patched-ball technique requires a separate patch cloth and no paper cartridge; the two methods are incompatible. This is a technical inconsistency internal to the novel, not just a period-accuracy question."
+    },
+    {
+      "chapters": [
+        "01-the-garland",
+        "11-cumberland-head",
+        "13-port-battery",
+        "15-prize-procedures"
+      ],
+      "claim": "The notation for Silas's guns shifts from 'gun one / gun two / gun three / gun four' (Chs. 01 through 09) to 'gun #1 / gun #2 / gun #3 / gun #4' (Chs. 11, 13, 15) without any narrative warrant. This is a production artifact: the battle chapters were apparently drafted or processed with a different editorial convention that was never reconciled with the pre-battle manuscript."
+    },
+    {
+      "chapters": [
+        "08-pikes-ford",
+        "10-two-ranks",
+        "14-the-ford"
+      ],
+      "claim": "The loading sequence is consistently called 'nine steps' (Ch. 08: 'He loaded at full speed, all nine steps') but the same sentence enumerates seven items: 'Bite, prime, frizzen, barrel, ball, paper, ram.' Ch. 10 enumerates eight steps. Ch. 14 enumerates eight. The novel never produces nine in any actual enumeration, leaving a small but recurring gap between the named count and the listed steps."
+    },
+    {
+      "chapters": [
+        "13-port-battery"
+      ],
+      "claim": "Pinney takes over gun #1's lanyard mid-battle in Ch. 13 and is shown operating it correctly — the sequence keeps running. But when Silas leads survivors to the port battery a few pages later, he brings 'two from gun #1 who were not Webb or Pinney,' leaving Pinney's fate between those two moments unaddressed. The gap is small but Pinney was explicitly placed and working, making his disappearance from the survivors notable rather than merely implied by battle attrition."
+    }
+  ],
+  "quotes": [
+    {
+      "chapter": "01-the-garland",
+      "text": "Gun one's lock had a chipped flint.",
+      "why": "Establishes the 'gun one / gun two' spelled-out notation used throughout Chs. 01–09; contrast with the '#1' notation that begins at Ch. 11 marks an unreconciled production shift."
+    },
+    {
+      "chapter": "11-cumberland-head",
+      "text": "He came to his position at gun #1 in the dark and did not check them again.",
+      "why": "First appearance of the hash-numeral notation; the shift from 'gun one' to 'gun #1' at the battle chapters is an editorial artifact with no narrative explanation."
+    },
+    {
+      "chapter": "11-cumberland-head",
+      "text": "thirty-seven guns, a sixth-rate frigate",
+      "why": "By Royal Navy rating, 37 guns = fifth-rate frigate. 'Sixth-rate' is factually wrong for a ship of this size."
+    },
+    {
+      "chapter": "08-pikes-ford",
+      "text": "He loaded at full speed, all nine steps, and said nothing during any of it. His hands did not explain themselves. Bite, prime, frizzen, barrel, ball, paper, ram.",
+      "why": "The novel calls this 'nine steps' but the sentence enumerates seven. The count is never reconciled in Ch. 10 (eight items) or Ch. 14 (eight items)."
+    },
+    {
+      "chapter": "14-the-ford",
+      "text": "Ball and patch. Ramrod — one full stroke to the bore's base",
+      "why": "Patched-ball technique, used here for Asa's weapon, is incompatible with the paper-cartridge loading method the same weapon uses in Chs. 06, 08, and 10."
+    },
+    {
+      "chapter": "09-the-kedge",
+      "text": "Stern let go, bower cut, kedge hauled: the hull comes around and the port guns bear.",
+      "why": "The kedge-winding geometry is correctly stated here and executes without error in Ch. 13. One of the novel's most technically ambitious claims, and it holds."
+    }
+  ],
+  "put_down_points": [
+    "The standoff sequence — Chs. 07 through 10 — covers roughly three days of waiting across four chapters and has the novel at its lowest narrative velocity. Both strands are doing necessary work (establishing the kedge geometry, mapping the ford in detail, completing the two-rank drill), but neither strand delivers an event with stakes for its protagonist, and a reader impatient for the battle will feel the length of the pause. The alternating structure compounds this: the two POVs do not accelerate each other during the standoff, they simply take turns waiting."
+  ],
+  "who_is_this_for": "Readers who want War of 1812 historical fiction with genuine technical fidelity — the kind of reader who annotates Patrick O'Brian for naval inaccuracies or reads Bernard Cornwell specifically for the correct musket-loading procedure. Also suitable for readers interested in the Battle of Plattsburgh in particular: the novel functions as a ground-level reconstruction of both the naval engagement and the Saranac River crossings, and it takes the geography and the fleet record seriously. Readers who require a conventional plot engine or a protagonist with an articulated desire beyond doing their work well will find the novel frustrating."
+}

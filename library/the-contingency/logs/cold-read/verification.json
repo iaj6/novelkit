@@ -1,0 +1,115 @@
+{
+  "generated_at": "2026-08-14T05:07:26.352Z",
+  "per_lens": [
+    {
+      "lens": "literary",
+      "exact": 4,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "airport",
+      "exact": 3,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 1,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "propulsion",
+      "exact": 5,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "authenticity",
+      "exact": 4,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "comparative",
+      "exact": 5,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "verisimilitude",
+      "exact": 3,
+      "near": 0,
+      "misattributed": 1,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "ordinary",
+      "exact": 3,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 1,
+      "badChapterRefs": []
+    }
+  ],
+  "problems": [
+    {
+      "lens": "airport",
+      "chapter": "09-the-outer-barrier",
+      "text": "I think you are intelligent. I have thought so for six months. I cannot prove it.",
+      "verdict": "absent"
+    },
+    {
+      "lens": "verisimilitude",
+      "chapter": "12-staging-area",
+      "text": "Six names ahead of his own when the roll call started. Three now.",
+      "verdict": "misattributed",
+      "foundIn": "14-the-platform"
+    },
+    {
+      "lens": "ordinary",
+      "chapter": "09-the-outer-barrier",
+      "text": "I think you are intelligent. I have thought so for six months. I cannot prove it.",
+      "verdict": "absent"
+    }
+  ],
+  "totals": {
+    "exact": 27,
+    "near": 0,
+    "misattributed": 1,
+    "absent": 2
+  },
+  "panel_health": {
+    "lenses": 7,
+    "scores": {
+      "min": 6.5,
+      "max": 7.5,
+      "mean": 7.07,
+      "spread": 1
+    },
+    "finish": {
+      "yes": 4,
+      "reluctantly": 3
+    },
+    "claims": {
+      "strongest": 35,
+      "weakest": 34,
+      "fewestWeaknessesOnALens": 4
+    },
+    "quotes": {
+      "total": 30,
+      "fabricationRate": 0.0667
+    },
+    "flags": [
+      "score spread 1.0 is narrow — lenses with different priorities returned nearly the same number, which can indicate one judgement in several costumes rather than independent reads",
+      "2 fabricated quotes (6.7%) — discount the affected lenses",
+      "1 misattributed quote"
+    ]
+  }
+}

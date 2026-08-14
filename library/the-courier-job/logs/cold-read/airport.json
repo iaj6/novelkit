@@ -1,0 +1,118 @@
+{
+  "lens": "airport",
+  "score_out_of_10": 7.5,
+  "would_finish": "yes",
+  "verdict": "This is a tight road-quest fantasy novel — four teenagers escorting a sealed bag from a rural village to a city advocate over eighteen days of worsening trouble. The book knows exactly what it is: a plot novel driven by character texture rather than worldbuilding exposition, told entirely through the single close POV of fifteen-year-old courier Tess. The mode is controlled and confident. By the end of chapter two I had no interest in watching a movie instead.\n\nThe opening chapters are nearly excellent. All four characters are distinct from their first appearance — Brann established by the single act of catching Pip's elbow on a frozen road rut, Iri by a one-breath pause looking at the bag seal that Tess files and never quite forgets, Pip by talking past a curtain of tolls at four in the morning. The road-threat escalation across chapters two through six is well-paced: the observation at the departure post, the riderless horse at the ford, the hillside watcher, the ambush, the inn at Long Crossing, the confrontation clearing, all building to a sense of a single sustained operation that the final chapter makes explicit. This is not a book that stumbles over genre furniture.\n\nAttention flags in chapter seven (The Pavers' Country). It is the longest chapter by some distance and the ward-laying sequence is too detailed — the chalk-on-stone friction, the three failed anchor attempts, each step of the procedure — dropping the tension to near-zero for several consecutive pages. The chapter earns its ending (Iri's one-finger correction, Tess asleep in her own circle) but the path to it is labored. Chapter eight restores urgency and is some of the best character writing in the book: Pip facing east with all his performing faces off, Brann offering a single word of genuine praise for work well done. The ford in chapter nine is genuinely tense. The inner-gate checkpoint in chapter ten is slow-burn masterwork. The payoff in chapter eleven — Sable reading the names and reaching Mara Weft of Drey — is fully earned and lands hard. The ending, one step taken without the destination named, is the right ending for this book.\n\nThere is a production artifact: chapters three and four materially overlap the same post-ambush scene. Both chapters contain the man in the ditch, the near-verbatim exchange (\"Does he want to tell us anything?\" / \"Taking that as a no\"), the tending of Brann's arm, and the badge discovery. Chapter three (draft/) ends on hoofbeats; chapter four (revision-1/) opens by resolving them as a merchant and then restages the cleanup. This is clearly a revision of the chapter-end that was never merged into a single file — a folder-labeling artifact left visible in the final manuscript. It is not severe enough to ruin the experience, but the sharp reader will notice. There are also minor weaknesses of a craft rather than production nature, detailed below. What the book does well, it does at a level above competence.",
+  "strongest": [
+    {
+      "chapters": [
+        "01-departure",
+        "02-the-wagon-road"
+      ],
+      "claim": "All four characters are distinct and legible from first appearance through behavior alone, with no character-summary exposition."
+    },
+    {
+      "chapters": [
+        "01-departure",
+        "07-the-pavers-country",
+        "09-the-crossing"
+      ],
+      "claim": "The chalk and kit inventory functions as a precise emotional tracker: departing full, burned in the ambush, nearly gone after the Pavers' Country ward, dissolved in the ford. The reader tracks Tess's capability without it ever being stated as such."
+    },
+    {
+      "chapters": [
+        "02-the-wagon-road",
+        "03-the-ambush",
+        "05-the-innkeeper-at-long-crossing",
+        "06-the-rival-party"
+      ],
+      "claim": "The road-threat escalation is built correctly: each incident reveals one more layer of the coordinated operation, so the final chapter's retrospective accounting feels earned rather than reverse-engineered."
+    },
+    {
+      "chapters": [
+        "11-the-advocates-court",
+        "12-the-decision"
+      ],
+      "claim": "The Mara-as-deponent reveal lands with structural and emotional force because the logic of why Tess wasn't told is made legible at the moment of revelation, not before."
+    },
+    {
+      "chapters": [
+        "08-two-days-out",
+        "10-the-walls",
+        "11-the-advocates-court"
+      ],
+      "claim": "Pip's letter — carried eighteen days, never mentioned, deployed exactly once at the gate — is set up through behavioral cues (junction avoidance, east-facing silence, the face under all the faces) and pays off cleanly without feeling planted."
+    }
+  ],
+  "weakest": [
+    {
+      "chapters": [
+        "03-the-ambush",
+        "04-the-guild-token"
+      ],
+      "claim": "Production artifact: chapters three and four overlap the same post-ambush scene nearly verbatim. Both contain the ditch man, the identical dialogue exchange ('Does he want to tell us anything?' / 'Taking that as a no'), Brann's arm treatment, and the badge discovery. Chapter four is in the revision-1/ directory and is clearly a re-draft of the chapter-end that was never merged — it reads as two versions of the same scene served sequentially."
+    },
+    {
+      "chapters": [
+        "07-the-pavers-country"
+      ],
+      "claim": "Chapter seven runs significantly long and the ward-laying sequence kills narrative urgency. The chalk-on-stone friction, the three anchor-point failures, the step-by-step procedure: too much manual detail for a scene whose actual purpose is establishing Tess's limits and Iri's underlying common geometry with hedge magic."
+    },
+    {
+      "chapters": [
+        "06-the-rival-party",
+        "11-the-advocates-court"
+      ],
+      "claim": "Vel is characterized as making a genuine, fair offer — and the scene is well-written — but her larger role in the guild operation is never accounted for. Is she enforcement wing? Contracted? Her final departure from the clearing closes her subplot without resolving her function in the conspiracy, leaving the scheme partially opaque."
+    },
+    {
+      "chapters": [
+        "06-the-rival-party",
+        "07-the-pavers-country"
+      ],
+      "claim": "After Vel uses the word 'testimony' in the confrontation clearing, Tess hears it and moves on. The book trusts reader patience, but a general reader — especially a younger one — may not register the stakes clearly again until chapter eleven. One beat of reflection on the word after the immediate danger passes would carry real weight."
+    },
+    {
+      "chapters": [
+        "12-the-decision"
+      ],
+      "claim": "The final line ('She took one step') withholds destination. This is defensible as craft, and the ambiguity fits the book's tone, but it sits near the edge of actively punishing readers who stayed for a resolution. Without a sequel signal, some fraction of the audience will feel deprived rather than invited."
+    }
+  ],
+  "quotes": [
+    {
+      "chapter": "01-departure",
+      "text": "Deliver it whole. Whatever happens on that road, deliver it whole.",
+      "why": "The line does double work: it establishes the mission and plants a mystery. 'Whole' carries weight the reader can't fully assign yet. A competent-but-ordinary line would say 'keep it safe' and lose the specific, loaded demand of wholeness that pays off in chapter eleven."
+    },
+    {
+      "chapter": "02-the-wagon-road",
+      "text": "That man works for the Guild. Quiet. No joke in it.",
+      "why": "The register shift — the abrupt absence of the joke — is how the book signals genuine threat more efficiently than any description of danger. The narrator's gloss ('quiet. No joke in it.') earns its place by naming what's absent."
+    },
+    {
+      "chapter": "04-the-guild-token",
+      "text": "I was wrong to be surprised they sent this many.",
+      "why": "Iri's only major disclosure before chapter seven. It confirms she knows what the bag contains without saying so, and it reframes the ambush retroactively. The sentence is doing three things simultaneously."
+    },
+    {
+      "chapter": "07-the-pavers-country",
+      "text": "Your dreams may be inaccurate, Iri said.",
+      "why": "A small line that lands with comic flatness because of its delivery — the same register Iri uses for everything — and because it perfectly captures the book's mode of treating magical strangeness as a logistical fact rather than spectacle."
+    },
+    {
+      "chapter": "11-the-advocates-court",
+      "text": "She said you were the right person to send.",
+      "why": "Sable is repeating Mara's judgment. The book has spent eleven chapters showing whether that judgment was correct. Arriving here after the ford and the gate and the chalk gone to river water, the sentence is either consolation or verdict, and the reader gets to decide which."
+    },
+    {
+      "chapter": "12-the-decision",
+      "text": "What you are doesn't require their recognition to be real.",
+      "why": "Iri, in the dark, possibly asleep, possibly not, with no context given. It functions as counsel about testimony specifically and about Tess's magic practice and identity generally. The novel earns this because Iri has withheld opinions throughout — when she finally offers one unprompted, it carries weight."
+    }
+  ],
+  "put_down_points": [
+    "The ward-laying sequence in 07-the-pavers-country — roughly from the start of the outer boundary work through the third anchor-point failure — is the only extended passage where I was reading at reduced speed. Not put-down territory for most readers, but the chapter earns the impatient among them."
+  ],
+  "who_is_this_for": "Smart YA readers 13–17 who don't need to be talked down to, and adult fantasy readers who can appreciate a quiet ending and a book that trusts behavioral detail over exposition. Not for readers who require romance as a substantial thread (the Tess/Brann moment is sweet but brief), not for readers who need explicit worldbuilding or a resolved sequel hook. Ideal carry-on book precisely because it clocks the journey at a page-turning pace and the ending demands nothing — a second volume would be welcome but is not required."
+}

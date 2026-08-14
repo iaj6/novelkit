@@ -1,0 +1,100 @@
+{
+  "generated_at": "2026-08-14T06:05:55.175Z",
+  "per_lens": [
+    {
+      "lens": "literary",
+      "exact": 8,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "airport",
+      "exact": 5,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "propulsion",
+      "exact": 4,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 1,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "authenticity",
+      "exact": 5,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "comparative",
+      "exact": 5,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "verisimilitude",
+      "exact": 5,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "ordinary",
+      "exact": 5,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    }
+  ],
+  "problems": [
+    {
+      "lens": "propulsion",
+      "chapter": "17-the-ninth-word",
+      "text": "The recital said and. The executed instrument said or.",
+      "verdict": "absent"
+    }
+  ],
+  "totals": {
+    "exact": 37,
+    "near": 0,
+    "misattributed": 0,
+    "absent": 1
+  },
+  "panel_health": {
+    "lenses": 7,
+    "scores": {
+      "min": 7,
+      "max": 8,
+      "mean": 7.64,
+      "spread": 1
+    },
+    "finish": {
+      "yes": 7
+    },
+    "claims": {
+      "strongest": 35,
+      "weakest": 35,
+      "fewestWeaknessesOnALens": 5
+    },
+    "quotes": {
+      "total": 38,
+      "fabricationRate": 0.0263
+    },
+    "flags": [
+      "score spread 1.0 is narrow — lenses with different priorities returned nearly the same number, which can indicate one judgement in several costumes rather than independent reads",
+      "1 fabricated quote (2.6%) — discount the affected lenses"
+    ]
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "generated_at": "2026-08-14T00:14:49.828Z",
+  "per_lens": [
+    {
+      "lens": "literary",
+      "exact": 6,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "airport",
+      "exact": 5,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "propulsion",
+      "exact": 5,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 1,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "authenticity",
+      "exact": 2,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 2,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "comparative",
+      "exact": 5,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "verisimilitude",
+      "exact": 7,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "ordinary",
+      "exact": 5,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    }
+  ],
+  "problems": [
+    {
+      "lens": "propulsion",
+      "chapter": "01-forty-seven-seconds",
+      "text": "She was not going to write *ruled out* and mean *probably ruled out.*",
+      "verdict": "absent"
+    },
+    {
+      "lens": "authenticity",
+      "chapter": "01-forty-seven-seconds",
+      "text": "She was not going to write ruled out and mean probably ruled out. She was going to write it when it was true.",
+      "verdict": "absent"
+    },
+    {
+      "lens": "authenticity",
+      "chapter": "10-sixty-kilometers-east",
+      "text": "Duration: forty-seven seconds. He said it without emphasis, the same way he said every technical figure.",
+      "verdict": "absent"
+    }
+  ],
+  "totals": {
+    "exact": 35,
+    "near": 0,
+    "misattributed": 0,
+    "absent": 3
+  },
+  "panel_health": {
+    "lenses": 7,
+    "scores": {
+      "min": 7,
+      "max": 8.5,
+      "mean": 7.64,
+      "spread": 1.5
+    },
+    "finish": {
+      "yes": 6,
+      "reluctantly": 1
+    },
+    "claims": {
+      "strongest": 34,
+      "weakest": 35,
+      "fewestWeaknessesOnALens": 5
+    },
+    "quotes": {
+      "total": 38,
+      "fabricationRate": 0.0789
+    },
+    "flags": [
+      "3 fabricated quotes (7.9%) — discount the affected lenses"
+    ]
+  }
+}

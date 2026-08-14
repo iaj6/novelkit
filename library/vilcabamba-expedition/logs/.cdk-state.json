@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "completed": [
+    "cold-read:literary",
+    "cold-read:airport",
+    "cold-read:propulsion",
+    "cold-read:authenticity",
+    "cold-read:comparative",
+    "cold-read:verisimilitude",
+    "cold-read:ordinary",
+    "cold-read:synthesis",
+    "cold-read:audit"
+  ],
+  "entries": {}
+}

@@ -1,0 +1,118 @@
+{
+  "lens": "literary",
+  "score_out_of_10": 8,
+  "would_finish": "yes",
+  "verdict": "This is a novel about who owns a discovery and what a record is for. It takes a quest-and-discovery structure — a British surveyor fourth on the hiring list, a bilingual Quechua-English woman whose father spent thirty years doing something she only just understood, a Quechua guide with a prior and unannounced claim on the site, and a competing German party with Ahnenerbe backing — and uses it to ask a serious question about the ethics of documentation: who gets to name, photograph, and publish a pre-Inca city at 17,900 feet in the Peruvian cordillera, and does the asking of that question by outsiders already constitute a form of appropriation? The novel navigates this without didacticism because its central ethical tensions are carried by the plot mechanism itself — the field notebook, the photographs, the sealed chamber, the record that goes to Finch versus the testimony that Mariano walks home to deliver in person, in Quechua, to the woman who keeps the knowledge.\n\nThe prose is good throughout and excellent in stretches. The book's central technique is negative capability applied to the ledger: the most morally significant facts are the ones that don't enter the record, and the prose renders these omissions with a precision that a competent thriller would announce through inner monologue and this novel simply places beside what does appear. \"He was aware of not writing it\" is doing something that a lesser book would spend a paragraph on. Holroyd's character is entirely constructed through the management of his own field notebooks — what he writes, what he doesn't write, what he sources and what he leaves unattributed — and this is a genuine formal achievement. The rotating close third-person (Holroyd for six of eight chapters, Isobel for the puna chapter, Mariano for one chapter at the snowline) is not a technique imposed from outside but a structural necessity: Mariano's interiority in the snowline chapter is what makes his stillness in the bowl legible from the outside, when we are back in Holroyd's limited and mechanically cataloguing perspective. He can see that Mariano's stillness is private but not what it means. We can.\n\nThe weaknesses are real but mostly at the level of execution rather than conception. Riedel is more function than character — he appears in chapter 7, speaks in the grammar of a thesis committee, concedes Isobel's architectural argument with careful fairness, and exits a chapter later with a line that is eloquent but has been prepared by a characterisation too thin to carry the weight it's asked to carry. \"Neither will I\" lands as a line; it doesn't quite land as a revelation about a person. The ending earns its ambiguity — Holroyd still in Cusco, not knowing what to do with the photographs, getting on the train — but the Leica appears once too many times in the final pages as a portable symbol, accumulating a deliberateness that slightly undercuts the organic quality of the rest. There is also an arithmetic inconsistency: the novel's setting must be after Holroyd's 1934 survey, yet Riedel is described photographing \"a city no one else had entered for three hundred and sixty years,\" placing that last entry around 1573 — the year of Friar Arce's account. If the story is set 1936 or later, the three-hundred-and-sixty-year figure is off by at least two or three years, and if it refers to Arce's specific visit it would be wrong in a different direction (Arce turned back at the rock step; he never entered the bowl). Small, but exactly the kind of error a careful editor catches.\n\nWhat the novel does that competent historical fiction usually doesn't is understand that Mariano is the book's moral centre and arrange the evidence accordingly. He has owned crampons suited to this climb for three months before the commission — purchased on his own initiative, said nothing because it was irrelevant to the question of his qualifications — and this detail, disclosed in the one chapter narrated from inside his perspective, organises everything before and after it. By the time he stands in the centre of the bowl in silence while Holroyd and Riedel photograph and argue, the reader understands what kind of witness he is and why the silence is the testimony and not the noise around it. That is literature. Whether the rest of the book consistently earns that sustained note is, I think, the right question to put to it — and the answer is mostly yes, with the qualifications noted.",
+  "strongest": [
+    {
+      "chapters": [
+        "01-the-bottom-of-the-list",
+        "02-selva-alta",
+        "08-the-descent"
+      ],
+      "claim": "Holroyd's moral arithmetic is rendered entirely through the management of his field notebooks — what enters the record, what doesn't, and his precise awareness of the gap between them. This is the novel's central formal achievement: ethical complexity carried by a single recurring object, with no announcement."
+    },
+    {
+      "chapters": [
+        "04-snowline",
+        "06-rititambo",
+        "07-what-it-proves",
+        "08-the-descent"
+      ],
+      "claim": "Mariano Quispe is the most fully realised character in the novel, and the crampons detail — bought three months before the commission, never mentioned because they weren't relevant to the question of his qualifications — is the finest piece of characterisation in the book. It retroactively organises the rope scar, the mule expertise, the March attempt in the wrong season, and the stillness in the bowl into a single coherent life."
+    },
+    {
+      "chapters": [
+        "03-puna",
+        "04-snowline",
+        "06-rititambo",
+        "07-what-it-proves"
+      ],
+      "claim": "The rotating POV design is a genuine structural necessity rather than a device. Mariano's interiority is given to the reader in one chapter only, so that Holroyd's inability to read his stillness in the bowl is simultaneously a characterisation of Holroyd and a formal enactment of the novel's central question about who can access what kind of knowledge and from where."
+    },
+    {
+      "chapters": [
+        "03-puna"
+      ],
+      "claim": "The revelation about Isobel's father's marginalia — that he was not retreating into obsession but contributing, for thirty years, to a document the valley communities could use as corroboration on their own terms — is the novel's most emotionally generous passage, and is earned by the precision with which it revises a reading we were given no reason to distrust."
+    },
+    {
+      "chapters": [
+        "07-what-it-proves",
+        "08-the-descent"
+      ],
+      "claim": "The ending is honest. Holroyd does not send the photographs. He does not destroy them either. The decision is still open when he gets on the train, and the novel's refusal to resolve it is consistent with everything it has argued about false certainty. An ending that arrives cleanly would have contradicted the book's subject."
+    }
+  ],
+  "weakest": [
+    {
+      "chapters": [
+        "01-the-bottom-of-the-list",
+        "02-selva-alta",
+        "03-puna",
+        "04-snowline",
+        "05-the-storm",
+        "06-rititambo",
+        "07-what-it-proves",
+        "08-the-descent"
+      ],
+      "claim": "The chapter headers are inconsistent across all eight chapters in ways that read as a production artifact rather than a deliberate design: no number and title only (ch01, ch04, ch06, ch07, ch08), Arabic numeral with em-dash (ch02), Arabic numeral with colon (ch03), and spelled-out ordinal with colon (ch05). Five formats across eight chapters with no discernible pattern."
+    },
+    {
+      "chapters": [
+        "07-what-it-proves"
+      ],
+      "claim": "Riedel arrives in chapter 7 and exits in the same chapter. His 'Neither will I' is eloquent as a line but the character has been established almost entirely through boot-prints, cartridge cases, and binocular surveillance — enough to function as a rival, not enough to make his concession feel like a person changing rather than a scheduled courtesy. A novel this interested in epistemological difference needed to dramatise his ideology, not just gesture at it."
+    },
+    {
+      "chapters": [
+        "07-what-it-proves"
+      ],
+      "claim": "An arithmetic inconsistency: the novel's setting is demonstrably after Holroyd's 1934 survey, yet chapter 7 describes 'a city no one else had entered for three hundred and sixty years,' placing the last entry around 1573 — the year of Arce's account. If the story is set in 1937 or 1938, the figure is off by three to five years; if it refers specifically to Arce's visit, it is also wrong in a different direction, since Arce turned back at the rock step and never entered the bowl."
+    },
+    {
+      "chapters": [
+        "02-selva-alta"
+      ],
+      "claim": "The bridge repair takes exactly two hours the morning after Holroyd refused Mariano exactly two hours at the anchor post. The symmetry is presented without comment, which is stylistically consistent with the novel's restraint, but the precision is too perfect — it reads as a moral ledger entry rather than life, and the novel's best moments resist this kind of bookkeeping."
+    },
+    {
+      "chapters": [
+        "03-puna",
+        "08-the-descent"
+      ],
+      "claim": "The father thread is opened in chapter 3 with real depth — a thirty-year project, twelve named communities, Quechua marginalia in arthritic handwriting — and then handled in chapter 8 with a restraint that tips into opacity. The conversation between Isobel and Mariano in Quechua at the valley junction is pointedly untranslated, which is structurally correct (Holroyd can't follow it), but it means the reader also cannot access whether the thread closed or only paused."
+    }
+  ],
+  "quotes": [
+    {
+      "chapter": "01-the-bottom-of-the-list",
+      "text": "He found none of this humiliating. He found it accurate.",
+      "why": "Establishes Holroyd's entire moral register in two sentences: a man who processes his position in the world as data, without sentiment or self-pity. Everything that follows — the overridden route advice, the field report after the gorge, the decision about the photographs — is already in this."
+    },
+    {
+      "chapter": "02-selva-alta",
+      "text": "He was aware of not writing it.",
+      "why": "The novel's ethical centre, stated in six words. The full arithmetic of Holroyd's career — what goes into the record, why, and at whose expense — is compressed here into a sentence about an absence."
+    },
+    {
+      "chapter": "04-snowline",
+      "text": "He had sent himself, on behalf of the valley. This seemed to him like the correct arrangement.",
+      "why": "The sentence that makes Mariano's silence in the bowl legible. A competent-but-ordinary line would explain the obligation; this one conveys it through the grammar of settled fact."
+    },
+    {
+      "chapter": "06-rititambo",
+      "text": "something in the quality of his stillness was private in a way that did not admit observation",
+      "why": "The formal payoff of the POV design: Holroyd can see that Mariano's stillness is significant and cannot enter it, which is precisely the right relationship between these two characters at this moment."
+    },
+    {
+      "chapter": "08-the-descent",
+      "text": "he was not certain, and he put it inside his jacket and went downstairs and had breakfast, and the day after that he got on the train.",
+      "why": "The ending refuses to resolve. The Leica goes inside the jacket — neither destroyed nor delivered — and the sentence keeps moving with the flat rhythm of a man who has decided not to decide yet. The novel earns this."
+    }
+  ],
+  "put_down_points": [
+    "Chapter 03 (Puna), the middle section covering the herder's house and the marginalia discovery: the information density is high and the pace drops sharply. The payoff is real, but a reader coming for expedition tension will feel the stall before they understand why it was necessary."
+  ],
+  "who_is_this_for": "Readers who attend to the ethics of documentation, indigenous heritage, and the institutional impulse to appropriate what it cannot own. Readers of Sebald's lateral historical attention or the quieter passages of Bruce Chatwin's *The Songlines* — but more disciplined than either. Not for readers who want conventional action or the satisfactions of a race-to-the-summit plot; the discovery at the novel's centre happens quietly, the climax is a moral standoff resolved by altitude sickness, and the ending refuses the expected closure. This is a book for people who will notice that Holroyd writes the archaeological argument without attribution because \"the argument was right and the record needed to be right,\" and understand what that costs him."
+}

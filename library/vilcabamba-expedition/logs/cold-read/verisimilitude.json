@@ -1,0 +1,120 @@
+{
+  "lens": "verisimilitude",
+  "score_out_of_10": 7,
+  "would_finish": "yes",
+  "verdict": "This is a deliberately paced expedition novel set in August 1936 Peru: a British surveyor who is fourth choice for the commission, his Quechua-speaking research assistant carrying her dead father's secret archive, and an Andean guide with his own prior, private stake in the destination. The three climb toward a sealed pre-Inca city in the eastern Cordillera while a Nazi-affiliated German party moves on the same target ahead of them. The competition is real but handled with restraint — the Germans are not villains, the confrontation in the bowl is not violent, and the book's real preoccupations are epistemic: who gets to document, what enters the record, and whose witnessing counts. It is a quiet book and it asks the reader to keep up.\n\nFrom a verisimilitude standpoint the novel earns genuine respect across most of its surface. Altitude physiology is consistent throughout all eight chapters: the coca-leaf threshold is established and justified in chapter 1, Holroyd's two-day-old headache is identified by Mariano in chapter 4 without being announced, HACE is diagnosed and treated correctly in Kern during chapter 7, and the clearing of Holroyd's persistent pressure at 14,000 feet in chapter 8 is rendered exactly as altitude physiology works. Period equipment is period-accurate: Leica IIIa (introduced 1935), Rolleiflex twin-lens reflex, 7.92mm Mauser ammunition matched to headstamp, Kodak Super-X panchromatic film (commercially available from 1933). The practice of carrying the Leica against the body to keep the shutter mechanism warm is an authentic cold-weather technique. Expedition logistics — pack weights, mule behaviour, rope-bridge mechanics, campfire forensics — hold up under close examination. The nine-days / twelve-days gap timeline is internally consistent across chapters 1, 2, and 3 without the book ever drawing attention to the arithmetic.\n\nHowever, specific failures undercut this foundation. The most serious is geometric: from the 16,500-foot ledge in chapter 4, Mariano estimates \"the summit ice was perhaps eight hundred feet above,\" placing the summit at approximately 17,300 feet. The bowl floor is measured barometrically at 17,900 feet and the entrance estimated at 18,200 feet. A hollow on SM-7's cliff face cannot be 600 feet above the mountain's own summit; this is physically impossible. An experienced mountaineer estimating in clear conditions from a stable vantage would not be off by 600–900 feet on a feature directly above him. A production artifact also shows in chapter 1, where the same short exchange reports the German party as both \"a German party of four\" and then \"five men, no women\" — the novel's confirmed final count is four (Riedel, Kern, Fischer, Agustín), and the herder in chapter 3 independently gives the same count, making \"five men\" a residue of earlier drafting rather than intentional ambiguity. A chronological error surfaces in chapter 2: the Assam incident is explicitly dated to November 1931, and in the same paragraph the narrator states \"He'd been doing that arithmetic for seven years\" — but the expedition is in August 1936, not quite five years after November 1931. The book's world is well-built and its rules consistent in most respects; these are the concrete costs rather than the texture of the whole.",
+  "strongest": [
+    {
+      "chapters": [
+        "01-the-bottom-of-the-list",
+        "02-selva-alta",
+        "03-puna",
+        "04-snowline",
+        "05-the-storm",
+        "06-rititambo",
+        "07-what-it-proves",
+        "08-the-descent"
+      ],
+      "claim": "Altitude physiology is sustained accurately across all eight chapters without internal contradiction. Coca-leaf use is justified against the 15,000-foot threshold in chapter 1 and the need is confirmed in practice above that elevation. Holroyd's altitude headache is tracked over days, remarked on by Mariano in chapter 4, and clears on descent at 14,000 feet in chapter 8. Kern's HACE (visual disturbance, progressive unresponsiveness) is diagnosed and evacuated correctly. The body's descent relief — smell returning, pressure clearing, the specific sense of restoration — is rendered accurately in chapter 8."
+    },
+    {
+      "chapters": [
+        "01-the-bottom-of-the-list",
+        "02-selva-alta",
+        "03-puna"
+      ],
+      "claim": "The twelve-days-behind / nine-days-behind gap is internally consistent across three chapters without ever being made explicit. In chapter 1 Holroyd calculates 12 days behind at the tienda (day 0). The herder in chapter 3 says the Germans came through nine days ago — by which point approximately three travel days have elapsed. 12 minus 3 equals 9. The book does this correctly and quietly."
+    },
+    {
+      "chapters": [
+        "04-snowline"
+      ],
+      "claim": "Mariano's forensic reading of the platform campsite is the most precisely anchored passage in the book. Each inference is tethered to a specific observation: boot-print edge deterioration rate in cold, the wind-grit skin over ash except at one disturbed edge, warmth only detectable when holding still, tent-peg compression spacing, and the 7.92mm cartridge headstamp matched to Mauser pattern. The conclusion — 'Riedel was here this morning' — is earned by evidence, not asserted."
+    },
+    {
+      "chapters": [
+        "02-selva-alta"
+      ],
+      "claim": "The bridge episode is internally consistent and psychologically credible as a study of expeditionary authority. Holroyd refuses Mariano's two-hour splice request; loses a mule, a tent-pole set, and a week of emergency rations; crosses the repaired bridge the next morning after exactly two hours. The book does not editorialize the parallel. The failure's costs — one stove, no margin for delay above 16,000 feet — are tracked and carried forward through the rest of the expedition."
+    },
+    {
+      "chapters": [
+        "01-the-bottom-of-the-list",
+        "04-snowline",
+        "05-the-storm"
+      ],
+      "claim": "Period equipment is consistently and accurately deployed. The Leica IIIa (introduced 1935, one year before the expedition), the Rolleiflex twin-lens reflex, the 36-exposure Kodak Super-X panchromatic cassette, the secondhand crampons from a Cusco climbing club, and the barometric pocket altimeter as a survey instrument are all period-plausible and used in ways that match how these objects actually work."
+    }
+  ],
+  "weakest": [
+    {
+      "chapters": [
+        "01-the-bottom-of-the-list"
+      ],
+      "claim": "A production artifact: the same short passage reports the German party as 'a German party of four' and then, three lines later, 'Five men, no women.' The novel's confirmed count throughout — four people (Riedel, Kern, Fischer, Agustín), corroborated by the herder's 'three of them. A Peruvian man with them' in chapter 3 and the visual count of four in chapter 5 — makes 'five men' an error, most likely a residue of earlier drafting."
+    },
+    {
+      "chapters": [
+        "04-snowline",
+        "05-the-storm",
+        "08-the-descent"
+      ],
+      "claim": "A geometric impossibility in the altitude sequence. At the 16,500-foot ledge in chapter 4, Mariano looks up and estimates 'the summit ice was perhaps eight hundred feet above' — placing SM-7's summit at approximately 17,300 feet. But the bowl floor is measured barometrically at 17,900 feet (chapter 8) and the bowl entrance estimated at 18,200 feet (chapter 5). A natural depression on the cliff face of a mountain cannot be 600 feet above that mountain's summit. An experienced mountaineer estimating from a clear vantage in dry-season visibility would not be off by this margin on a feature directly above him."
+    },
+    {
+      "chapters": [
+        "02-selva-alta"
+      ],
+      "claim": "A chronological inconsistency: the passage explicitly anchors its comparison to 'an office in Assam in November 1931' and then states 'He'd been doing that arithmetic for seven years.' The expedition is in August 1936, which is approximately four years and nine months after November 1931, not seven. If 'seven years' is meant to measure from a different earlier incident, the text does not establish one — the Assam reference is what immediately precedes the claim, making the natural reading a two-year error."
+    },
+    {
+      "chapters": [
+        "02-selva-alta"
+      ],
+      "claim": "The mule weight description is ambiguous in a way that admits an impossibility. 'The animal at the head of the line: 160 pounds of mule, two full ataditos, eighty pounds per side' — read literally, '160 pounds of mule' assigns a body weight of 160 pounds to the pack animal, but a functional Andean cargo mule weighs at minimum 400 lbs and typically 500–700 lbs. If the sentence means '160 pounds [of load] on the mule' (matching the two-atadito math), the phrasing is contradictory: it then doubles-counts the load. Either reading creates a problem."
+    },
+    {
+      "chapters": [
+        "07-what-it-proves",
+        "08-the-descent"
+      ],
+      "claim": "The frame count has a displaced label. Chapter 7 confirms 12 exposures have been made with 24 remaining. In chapter 8's night-watch sequence, three approaches to the east wall are described ('full-frame, then mid-frame, then close on the stonework') before the text assigns 'frame fourteen' to the sealed chamber door. Three shots before the chamber would make it frame 16, not 14. The final 'Frame nineteen' for Isobel is internally consistent with the 19-frame total stated in the chapter 8 field notes, but the 'frame fourteen' label appears displaced by two frames."
+    }
+  ],
+  "quotes": [
+    {
+      "chapter": "01-the-bottom-of-the-list",
+      "text": "He saw a German party of four cross the trailhead heading east.",
+      "why": "First of two consecutive, contradictory counts in the same passage. The novel's confirmed party size is four (Riedel, Kern, Fischer, Agustín); 'four' here is correct. Three lines later the same source gives 'Five men, no women' — a production artifact."
+    },
+    {
+      "chapter": "01-the-bottom-of-the-list",
+      "text": "Five men, no women.",
+      "why": "The second count, directly following the 'party of four' description in the same exchange. One of these two figures is wrong; the rest of the novel confirms four, making this a residue of an earlier draft."
+    },
+    {
+      "chapter": "04-snowline",
+      "text": "The summit ice was perhaps eight hundred feet above.",
+      "why": "Said from the 16,500-foot ledge, this places SM-7's summit at approximately 17,300 feet. The bowl floor (chapter 8: 17,900 ft barometric) and entrance (chapter 5: approximately 18,200 ft) are both higher than this estimated summit, creating a geometric impossibility — a hollow on the cliff face cannot be above the peak it is part of."
+    },
+    {
+      "chapter": "02-selva-alta",
+      "text": "He'd been doing that arithmetic for seven years.",
+      "why": "Stated immediately after anchoring the comparison to 'an office in Assam in November 1931.' The expedition is August 1936 — approximately four years and nine months after November 1931. Seven years from Assam would be November 1938. The claim does not match the established timeline by approximately two years."
+    },
+    {
+      "chapter": "04-snowline",
+      "text": "The fire had been damped with snow rather than exhausted. Four hours ago. Maybe six.",
+      "why": "Exemplifies the novel's best verisimilitude work: a specific physical inference (ash disturbed at one edge, warmth felt only when holding still) produces a bounded time estimate. No claim is made that cannot be defended by the evidence that precedes it."
+    },
+    {
+      "chapter": "08-the-descent",
+      "text": "the east wall full-frame, then mid-frame, then close on the stonework. He photographed the sealed chamber door from twelve feet — frame fourteen",
+      "why": "Three sequential approaches to the east wall are described before the chamber is labeled 'frame fourteen.' If these represent three separate exposures (as the systematic professional language implies), the chamber should be frame 16 given the confirmed 12-exposure count at the end of chapter 7. The labeling appears displaced."
+    }
+  ],
+  "put_down_points": [
+    "03-puna: the extended interior passage in which Isobel reads her father's marginalia is written with care but asks the reader to fully engage with a second emotional register at the point where a certain kind of reader will want expedition momentum. The father's cross-referencing project — thirty years of visits, twelve communities, the Quechua final entry — is earned material, but it occupies the chapter's centre and requires patience from anyone who picked up the book for its adventure mechanics."
+  ],
+  "who_is_this_for": "Readers drawn to quiet, densely observed expedition fiction — closer to Eric Newby or Patrick Leigh Fermor than to a thriller. It rewards close attention to logistical and moral texture and demands engagement with characters who do not explain themselves. Readers interested in Andean history, the ethics of archaeological documentation, or the 1930s politics of indigenous knowledge will find specific satisfaction. Readers who need external plot momentum to sustain them will struggle in the puna chapters."
+}

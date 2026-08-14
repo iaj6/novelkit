@@ -1,0 +1,125 @@
+{
+  "lens": "propulsion",
+  "score_out_of_10": 7,
+  "would_finish": "yes",
+  "verdict": "The engine is a withheld answer paired with escalating jeopardy: what is in the bag, and will the enforcement wing take it? Both questions are well-chosen for the material. Every chapter between one and eleven adds a distinct layer of obstruction — the rider who clocks the seal on the first morning, the pre-contracted ambush, the inn's ledger with its inlaid enforcement device, the deliberately cut bridge, the inner-gate inspection table that has no precedent in the contract papers — without any of them feeling like repetition, because each reveals a new dimension of how thoroughly the enforcement wing prepared. The surveillance operation reconstructed in retrospect in Chapter 11 lands as genuine structural payoff: twelve separate data points were real all along, and when Sable Orr reads \"Mara Weft. Of Drey.\" the book demonstrates that it has been architecturally sound from its first page.\n\nThe book's best technical achievement is running two parallel depletion arcs alongside the central jeopardy. Tess's chalk dwindles from a full stick at departure to a stub in Chapter 7 to a gray river-washed smear in Chapter 9. Iri's capacity depletes from a full working in Chapter 3 to near-collapse in Chapter 6 to a small current-shifting at the ford in Chapter 9. Both characters visibly spend down toward a city where no more help is available. Chapter 7's ward-laying sequence is where these arcs integrate most precisely — Tess rationing chalk she cannot replace while Iri corrects a single curved anchor point with one fingertip — and the scene's revelation that hedge-witchery and guild magic share identical underlying geometry is the book's most satisfying piece of worldbuilding precisely because it arrives as a consequence of two characters working in close proximity under pressure.\n\nThe structure fails at the end. \"The Decision\" promises a decision; \"She took one step\" replaces resolution with a freeze-frame. This might function as the opening setup of a series, but as a standalone close it breaks the book's own primary virtue. It has been meticulous about paying what it promises — the watcher on the hill pays the rider's glance at the seal; Mara's name pays eighteen chapters of withheld information; the letter at the inner gate pays the passing reference to \"Mara's contacts\" in Chapter 1. Sable Orr's deadline (\"by tomorrow morning\") builds real pressure. The final chapter dissipates that pressure into atmosphere rather than discharging it. A book whose engine runs on delivery cannot end by refusing to deliver.\n\nTwo additional problems damage the manuscript's credibility as a finished artifact. The man-in-the-ditch scene — the concentration on the treeline, \"Not scared. Done,\" and the exchange \"Does he want to tell us anything?\" / \"Taking that as a no, Pip said\" — appears in nearly identical language across both Chapters 3 and 4, an unclosed seam between a draft chapter and its revision. Pip's canvas-wrapped object, introduced in Chapter 1 with deliberate mystery, is never mentioned again. The ridge watchers at the end of Chapter 6 simply do not follow, with no accounting offered. These are not artistic choices that reward attention; they are structural residue in a manuscript that presents itself as finished.",
+  "strongest": [
+    {
+      "chapters": [
+        "03-the-ambush",
+        "04-the-guild-token",
+        "05-the-innkeeper-at-long-crossing",
+        "06-the-rival-party",
+        "07-the-pavers-country",
+        "08-two-days-out",
+        "09-the-crossing"
+      ],
+      "claim": "Two parallel depletion arcs — Tess's chalk and Iri's working capacity — run alongside the central jeopardy and create genuine, accumulating cost for every obstacle. Neither arc is merely decorative: both converge on Chapter 9's ford, where Tess's kit is destroyed by river water and Iri spends what little remained to shift the current. The visible, accountable cost of magic is the book's most sustained structural achievement."
+    },
+    {
+      "chapters": [
+        "11-the-advocates-court"
+      ],
+      "claim": "The Mara reveal pays what the book has been withholding for eleven chapters. The retrospective reconstruction of the enforcement wing's surveillance operation — from the guild rider at the fence post on day one to the inner-gate table on day eighteen — demonstrates that the throughline was architecturally sound: twelve separate data points were planted in sequence and all of them were real."
+    },
+    {
+      "chapters": [
+        "01-departure",
+        "04-the-guild-token",
+        "05-the-innkeeper-at-long-crossing",
+        "08-two-days-out",
+        "10-the-walls",
+        "11-the-advocates-court",
+        "12-the-decision"
+      ],
+      "claim": "Pip's characterization accumulates one concrete layer per chapter — the enforcement badge recognized on sight, the junction road avoided, the gate letter carried from before departure, V's dry fordside note — arriving at full emotional weight in Chapter 12. It is the book's best sustained character construction because each revelation changes the meaning of everything previously established."
+    },
+    {
+      "chapters": [
+        "07-the-pavers-country"
+      ],
+      "claim": "The ward-laying sequence is the book's technical peak. Chalk math against depleted stock, Oldwork interference degrading the anchor seats, the curved line at the fourth position, Iri's one-finger correction — every element is specific and earned. The scene integrates two character arcs and the novel's central piece of worldbuilding (hedge geometry and guild geometry are identical) into a single continuous action, which is harder to do than it looks."
+    },
+    {
+      "chapters": [
+        "01-departure",
+        "02-the-wagon-road",
+        "03-the-ambush",
+        "04-the-guild-token",
+        "05-the-innkeeper-at-long-crossing",
+        "06-the-rival-party",
+        "07-the-pavers-country",
+        "08-two-days-out",
+        "09-the-crossing",
+        "10-the-walls",
+        "11-the-advocates-court"
+      ],
+      "claim": "The sealed bag functions as a physical metronome of anxiety across all eleven chapters leading to the delivery. The seal-checking never becomes empty repetition because the specificity is maintained throughout — seven characters, interlocked rings, the groove in the shoulder — and the weight of what is inside accumulates retroactively from the moment Sable reads the sixth name aloud."
+    }
+  ],
+  "weakest": [
+    {
+      "chapters": [
+        "12-the-decision"
+      ],
+      "claim": "The ending does not discharge the pressure it builds. The chapter title is 'The Decision' and Sable Orr's deadline ('by tomorrow morning') creates real urgency, but the book ends with 'She took one step' in an unspecified direction. A book whose engine runs on delivery — on the promise that the bag will arrive whole — cannot close by refusing to show the moment the courier chooses. This is the most important structural failure in the manuscript."
+    },
+    {
+      "chapters": [
+        "03-the-ambush",
+        "04-the-guild-token"
+      ],
+      "claim": "A production artifact: the man-in-the-ditch scene appears in nearly identical language across both chapters — the concentration on the treeline, 'Not scared. Done.' and the exchange 'Does he want to tell us anything?' / 'Taking that as a no, Pip said' — verbatim. This is an unclosed seam between the draft chapter and its revision, not a deliberate repetition. It is the clearest evidence the manuscript is not yet finished."
+    },
+    {
+      "chapters": [
+        "01-departure"
+      ],
+      "claim": "Pip's canvas-wrapped object, introduced with specific deliberate mystery in Chapter 1 and answered only with 'Insurance. / That's not an explanation. / I know.' — is never mentioned again in twelve chapters. Either a dropped thread or a series setup, but as it stands it is a promise the book does not pay."
+    },
+    {
+      "chapters": [
+        "06-the-rival-party",
+        "07-the-pavers-country"
+      ],
+      "claim": "The ridge watchers — four or five figures Pip identifies as having observed the entire confrontation clearing fight from above — are introduced as a cliffhanger at the end of Chapter 6 and dismissed in Chapter 7's opening paragraph: they did not pursue. No accounting is given for why not. The non-pursuit deflates the escalation that ending on that beat had built, and the information is never used."
+    },
+    {
+      "chapters": [
+        "06-the-rival-party"
+      ],
+      "claim": "Vel, the rival-party leader, is the book's most fully realized external antagonist — calm, not cruel, making a genuinely fair offer before she escalates to force. She retreats at the end of Chapter 6 and never appears again. Whether 'V' in the fordside note is Vel or a separate Asterhall contact is never resolved. The investment in her characterization produces no return."
+    }
+  ],
+  "quotes": [
+    {
+      "chapter": "06-the-rival-party",
+      "text": "You're going to die for someone's testimony.",
+      "why": "Vel uses the precise legal term 'testimony' — not secrets, not documents — signaling she has been briefed on the bag's exact contents. It is the book's sharpest single information escalation: the enforcement wing knows not merely that there is a courier, but what the courier carries and why it matters."
+    },
+    {
+      "chapter": "11-the-advocates-court",
+      "text": "\"Mara Weft,\" Sable said. \"Of Drey.\"",
+      "why": "The payoff line of the entire novel. Its power comes entirely from compression and placement: six words, no commentary, after eleven chapters of Tess not knowing. The absence of any authorial underlining is what makes it land."
+    },
+    {
+      "chapter": "07-the-pavers-country",
+      "text": "But the geometry is identical.",
+      "why": "The book's central piece of worldbuilding — that hedge-witchery and guild magic share the same underlying structure — arrives not as exposition but as the conclusion of a scene in which two practitioners have just worked on the same problem in the dark. It earns the claim rather than asserting it."
+    },
+    {
+      "chapter": "05-the-innkeeper-at-long-crossing",
+      "text": "East was where the word was going now, and faster.",
+      "why": "The best single line in the book. It encapsulates the logic of the entire road sequence — the enforcement wing always knows where the party is, always has the information advantage — in one sentence that is also a statement about the nature of the threat they cannot outrun, only outpace."
+    },
+    {
+      "chapter": "12-the-decision",
+      "text": "She took one step.",
+      "why": "Cited as a weakness, not a strength: this is the last line of the book, and it replaces a decision with a freeze-frame. Worth quoting precisely because it demonstrates the structural problem — it is not a bad sentence, it is a sentence placed where a different sentence was needed."
+    }
+  ],
+  "put_down_points": [
+    "The long interior stretch of Chapter 7 (the ward-laying sequence) is the book's slowest passage — readers who came for escalating jeopardy will find sustained technical interiority here instead. The scene earns its length by its final quarter, but it is the point where a reader expecting continuous plot pressure is most likely to drift."
+  ],
+  "who_is_this_for": "Older middle-grade and YA readers who prefer quiet-competence ensemble quest stories over spectacle — who want the magic system to have visible, accountable costs, who find road logistics satisfying rather than boring, and who will track three weeks of accumulating detail and feel rewarded when it coheres. Readers of Tamora Pierce's training sequences for procedural satisfaction, or Robin McKinley's quest structures for road texture and earned interiority. Not for readers who need a resolved ending."
+}

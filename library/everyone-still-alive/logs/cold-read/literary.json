@@ -1,0 +1,130 @@
+{
+  "lens": "literary",
+  "score_out_of_10": 6.5,
+  "would_finish": "reluctantly",
+  "verdict": "This is a mosaic post-apocalyptic novel — five strands, five registers, approximately two years of unnamed catastrophe rendered from the inside. Jesse and Amara survive a school outbreak in Week One; Selle keeps a checkpoint log on a bridge in Month Two; Lenn and his son Theo walk south in Month Six; Cass runs a scavenging crew in Year One's winter; Nadia keeps a logbook on a raft community in Year Two's spring. The novel's connective object is a small fish carved from a broken school stool, passed hand to hand across the book's full span until it is touched — for the first time by anyone in Nadia's chapters — in the closing image. A secondary motif, the \"Reader of Names\" broadcast, runs through three strands without explicit connection, arriving as mystery and departing as mystery. The book is evidently attempting to ask how people organise themselves under pressure, and what forms of record-keeping — the checkpoint log, the raft logbook, the name broadcast, the carved object — constitute human survival when institutions fail.\n\nThe ambitions are real and the achievements are partial. The Selle chapters are the novel's formal peak: a checkpoint procedural in which bureaucratic language carries genuine moral weight. The Nadia chapters are the emotional peak, and the logbook form is used with formal necessity rather than mere novelty — when Nadia writes a decision into the record it becomes true in a way that the community cannot walk back, and the novel understands this. The fish motif is handled with professional restraint throughout: never over-explained, never sentimentalised, accumulating meaning through accumulated hands. The prose at sentence level is consistently above average and occasionally excellent.\n\nBut the structural problems are real and cannot be dissolved by prose quality. The Cass strand (chapters 12–14) runs three chapters of genuine moral complexity — including the novel's most arresting single gesture, the kid locking the padlock — and is then abandoned without resolution, with no connection to the fish or the name broadcast. The Jesse/Amara opening creates four chapters of protagonist-level investment the mosaic structure refuses to honour; their disappearance is not a formal gesture but an unacknowledged gap. And the Galena arc is constructed with deliberate care — sealed hatches, sounds below, a transmitter set to the Reader of Names frequency — and then the novel closes. That convergence of the frequency and the ship is the biggest discovery in the book. The novel ends nine pages after it. The closing image earns its beauty, but beauty cannot substitute for the reckoning this narrative has built toward and then deferred.",
+  "strongest": [
+    {
+      "chapters": [
+        "05-the-notebook",
+        "06-criteria",
+        "07-the-fever"
+      ],
+      "claim": "The checkpoint chapters achieve a genuinely distinctive register: bureaucratic procedural as moral philosophy. Selle's 'internal inventory' — his habit of filing facts that have no standard field, including the fact that a rule's application can be correct and still cost something — is the novel's most original formal device. The decision to turn back Marta Solak and her feverish three-year-old is rendered without sentimentality and without the numbing comfort of moral certainty."
+    },
+    {
+      "chapters": [
+        "01-the-wrong-sound",
+        "03-the-night-and-the-names",
+        "08-day-three",
+        "11-crossing",
+        "22-what-we-keep"
+      ],
+      "claim": "The fish as passed object does exactly what it should: accumulates meaning through restraint. Its provenance is established (Jesse, a broken stool, his father's knife) without ceremony, and each transfer (Theo to the woman at the crossing, the woman toward the lake settlements, the mast with no recorded donor) adds weight without explanation. The closing image — 'Her hand on the fish' — pays off the entire chain without the novel explaining what has been paid off."
+    },
+    {
+      "chapters": [
+        "19-the-eastern-shore",
+        "20-the-vote",
+        "21-the-canoe"
+      ],
+      "claim": "The Mikkel vote is the novel's thematic and moral peak. A community built on functional solidarity votes to expel a useful, blameless member because he came from the same direction as a drifting ship. Nadia's private accounting in the running record — what she did not say in the meeting, that fear is a reason and is not the same as a reason, that she did not vote for or against — uses the logbook form against itself with genuine precision."
+    },
+    {
+      "chapters": [
+        "15-the-log",
+        "16-shore",
+        "17-the-last-entry"
+      ],
+      "claim": "The logbook form in Nadia's chapters is a formal necessity, not a device. Because the logbook is the community's binding record, the act of writing something constitutes it in a way that speech does not, and the novel understands this: the formal entry for Mikkel's expulsion makes it real; the running account in which Nadia records what she did not say has no formal standing and therefore costs nothing and changes nothing. The distance between those two documents is the book's most precise moral space."
+    },
+    {
+      "chapters": [
+        "01-the-wrong-sound",
+        "02-amaras-door",
+        "03-the-night-and-the-names",
+        "04-out"
+      ],
+      "claim": "The four opening chapters establish the thriller mode with economy and genuine skill. 'The corridor smelled of copper and heat' does more sensory and tonal work than a paragraph of description. Amara's decision to open the stairwell door is fully motivated and still terrifying. Jesse not saying her name at the end of chapter 2 is the first instance of the novel's characteristic restraint — the withheld thing carrying more weight than the named thing."
+    }
+  ],
+  "weakest": [
+    {
+      "chapters": [
+        "12-clearance",
+        "13-what-parish-calls-it",
+        "14-the-basement"
+      ],
+      "claim": "The Cass/scavenging strand is structurally orphaned. Three chapters of strong, laconic first-person narration — including the kid locking the padlock to protect the people in the basement, the novel's single most morally complex gesture — and then the strand stops entirely, with no return and no resolution. Crucially, the Cass chapters make no contact with either of the novel's two connecting networks: the fish is with Theo/Lenn during this period and never passes through this storyline; the name broadcast is not mentioned. The strand functions as a self-contained unit that the mosaic cannot absorb."
+    },
+    {
+      "chapters": [
+        "01-the-wrong-sound",
+        "02-amaras-door",
+        "03-the-night-and-the-names",
+        "04-out"
+      ],
+      "claim": "The Jesse/Amara opening creates protagonist-level investment the novel's structure then refuses without acknowledging the refusal. Four chapters establish Jesse as a specific interior presence — his father's knife, the fish he carves to keep his hands occupied, the specificity of his tactical thinking under pressure. Then Jesse and Amara disappear, replaced by Selle, and the handoff is unannounced and unreciprocated. The carved fish is the only thread. That is a slender return on four chapters of what reads like a conventional novel's protagonist introduction."
+    },
+    {
+      "chapters": [
+        "18-east-wind",
+        "19-the-eastern-shore",
+        "20-the-vote",
+        "21-the-canoe",
+        "22-what-we-keep"
+      ],
+      "claim": "The Galena mystery is elaborately built and then declined. The sealed hatches with sounds below, the transmitter set to the Reader of Names frequency, the community watching the ship pass west — these are discoveries that the novel sets up across five chapters. The ship arrives, is boarded, yields two significant facts, and drifts on. The novel closes. The discovery that the ship's transmitter is set to the broadcast frequency is the largest convergence in the book's structure, and the narrative ends nine pages after it. This is not earned ambiguity; it is a reckoning deferred."
+    },
+    {
+      "chapters": [
+        "05-the-notebook",
+        "08-day-three",
+        "12-clearance",
+        "15-the-log"
+      ],
+      "claim": "The transitions between strands are entirely unmarked beyond the time-stamp headers (Week One / Month Two / Month Six / Year One / Year Two). There is no framing device, no section title, no structural signal that this is a mosaic novel. A reader who misses that the time-stamps indicate months or years of separation — or who reads chapter 5 as a continuation of Jesse's story in a different location — will not be corrected by the text. The novel assumes a reader who will infer its architecture from small details, but it provides no scaffolding for that inference to grip."
+    },
+    {
+      "chapters": [
+        "11-crossing",
+        "15-the-log",
+        "22-what-we-keep"
+      ],
+      "claim": "The fish's transit from Theo's pocket (Month Six, Day 13) to Nadia's mast (Year Two, Spring — Day 412 and counting) is a gap the novel acknowledges but does not address even retrospectively. The woman who receives the fish at the crossing is heading northeast to the lake settlements; the fish ends up on a raft on Lake Ashford; no breadcrumb connects these facts. The novel's policy of deliberate withholding is a genuine aesthetic position, but at this particular gap — the central object's most important journey — the withholding feels more like avoidance than restraint. The other connections in the book are inferrable; this one is not."
+    }
+  ],
+  "quotes": [
+    {
+      "chapter": "01-the-wrong-sound",
+      "text": "The corridor smelled of copper and heat.",
+      "why": "Eight words that do the work of a paragraph: the infection has a smell, the school's institutional setting has been replaced by something organic and wrong. It earns its position as the first fully physical signal that the category of 'normal' has closed."
+    },
+    {
+      "chapter": "07-the-fever",
+      "text": "He was not cruel. Selle recorded this in the part of his internal inventory that held true facts for which there was no standard field",
+      "why": "The internal-inventory device at its finest: the moral observation is filed into the filing system that is itself on trial. That Pruett's decency must be entered in an unofficial register is both the novel's sharpest structural irony and its most honest account of how bureaucratic systems fail the people they process."
+    },
+    {
+      "chapter": "11-crossing",
+      "text": "It was that the road could not reach what the boy did with his hands at a crossing. Not had not yet. Could not.",
+      "why": "The novel's most emotionally precise sentence. The revision from 'had not yet' to 'could not' is the father's recognition that Theo's capacity for gratuitous generosity is not innocence waiting to be lost but something structurally immune to what the road does. This is the Lenn/Theo strand's entire argument in three sentences."
+    },
+    {
+      "chapter": "20-the-vote",
+      "text": "His face when the vote was read. I will not forget it. I have written that I will not forget it.",
+      "why": "The logbook form turned against itself: Nadia's promise to remember is entered in the record that is the community's collective document, making her private guilt a public entry. The sentence knows that writing 'I will not forget' is what you do when you are afraid you will, and that the logbook cannot hold the face."
+    },
+    {
+      "chapter": "22-what-we-keep",
+      "text": "Her hand on the fish.",
+      "why": "The novel's final image and its full emotional weight. Four words that close a chain running from chapter 1 through twenty-two chapters and two years. Its power depends entirely on what precedes it; it does nothing on its own and everything in context. Whether the novel has earned it depends on whether you think the Galena's unanswered question is a formal virtue or a structural evasion — and that question is the novel's central unresolved debate with itself."
+    }
+  ],
+  "put_down_points": [
+    "Chapter 05 (The Notebook): the shift from Jesse's four-chapter thriller-mode opening to Selle's checkpoint procedural is the most likely put-down in the book. The transition is unmarked, the register change is extreme, and readers who invested in Jesse have been given no signal that this is the novel's actual structure. Thriller readers will not trust the book to return to what they were reading.",
+    "Chapters 05–06 (The Notebook / Criteria): the procedural mode is demanding without narrative payoff. Two full chapters of checkpoint intake — the farmer, the woman on the bicycle, the young man who will not show his hands, the family with the grandfather's shoulder — are morally interesting but plot-still. Readers who need momentum will stall here.",
+    "Chapter 14 (The Basement): the Cass strand's abrupt end. The kid locks the padlock; the chapter closes; the strand never returns. Readers who have trusted the novel's architecture may question it here when the architecture fails to close the loop."
+  ],
+  "who_is_this_for": "Readers of literary post-apocalyptic fiction who value prose and formal intelligence over narrative resolution: the audience for Cormac McCarthy's The Road (for the Lenn/Theo strand's road-novel elegiac mode), Jenny Offill's Dept. of Speculation (for the logbook's documentary-lyric mode), and Lawrence Thornton or Jesmyn Ward-adjacent disaster-as-moral-philosophy. Not for genre readers who want the monster named, the collapse explained, or the survivors' fates resolved. The ideal reader will find the Galena's unanswered questions a feature; readers who need convergence will find it a betrayal. The book does not signal clearly enough which reader it is for."
+}

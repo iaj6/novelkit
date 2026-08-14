@@ -22,7 +22,16 @@
     "drafter:13-fourteen-hours",
     "drafter:14-the-last-run",
     "drafter:15-the-plane",
-    "continuity-fact-audit"
+    "continuity-fact-audit",
+    "cold-read:literary",
+    "cold-read:airport",
+    "cold-read:propulsion",
+    "cold-read:authenticity",
+    "cold-read:comparative",
+    "cold-read:verisimilitude",
+    "cold-read:ordinary",
+    "cold-read:synthesis",
+    "cold-read:audit"
   ],
   "entries": {
     "drafter:01-forty-seven-seconds": {

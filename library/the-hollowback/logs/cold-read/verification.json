@@ -1,0 +1,130 @@
+{
+  "generated_at": "2026-08-14T05:19:30.106Z",
+  "per_lens": [
+    {
+      "lens": "literary",
+      "exact": 4,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 1,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "airport",
+      "exact": 5,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "propulsion",
+      "exact": 6,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "authenticity",
+      "exact": 5,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "comparative",
+      "exact": 5,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "verisimilitude",
+      "exact": 5,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 5,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "ordinary",
+      "exact": 5,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    }
+  ],
+  "problems": [
+    {
+      "lens": "literary",
+      "chapter": "01-the-worst-job-on-the-board",
+      "text": "Tell him I got his letter.",
+      "verdict": "absent"
+    },
+    {
+      "lens": "verisimilitude",
+      "chapter": "01-the-worst-job-on-the-board",
+      "text": "He stood with his weight on his left foot when he was thinking.",
+      "verdict": "absent"
+    },
+    {
+      "lens": "verisimilitude",
+      "chapter": "07-watch",
+      "text": "He had found the survey notes three years ago, two months after she'd stopped being reachable.",
+      "verdict": "absent"
+    },
+    {
+      "lens": "verisimilitude",
+      "chapter": "12-what-we-do-now",
+      "text": "Three years ago, he said. She didn't come back.",
+      "verdict": "absent"
+    },
+    {
+      "lens": "verisimilitude",
+      "chapter": "10-found",
+      "text": "Sela was at thirty-one past the archive floor landing when the stair ended.",
+      "verdict": "absent"
+    },
+    {
+      "lens": "verisimilitude",
+      "chapter": "05-charter",
+      "text": "The bond requirement stands, under Section Four of the Charter Enforcement Supplement, adopted eleven years before the Third Consolidation and therefore not superseded by it.",
+      "verdict": "absent"
+    }
+  ],
+  "totals": {
+    "exact": 35,
+    "near": 0,
+    "misattributed": 0,
+    "absent": 6
+  },
+  "panel_health": {
+    "lenses": 7,
+    "scores": {
+      "min": 7,
+      "max": 8,
+      "mean": 7.36,
+      "spread": 1
+    },
+    "finish": {
+      "yes": 7
+    },
+    "claims": {
+      "strongest": 35,
+      "weakest": 35,
+      "fewestWeaknessesOnALens": 5
+    },
+    "quotes": {
+      "total": 41,
+      "fabricationRate": 0.1463
+    },
+    "flags": [
+      "score spread 1.0 is narrow — lenses with different priorities returned nearly the same number, which can indicate one judgement in several costumes rather than independent reads",
+      "6 fabricated quotes (14.6%) — discount the affected lenses"
+    ]
+  }
+}

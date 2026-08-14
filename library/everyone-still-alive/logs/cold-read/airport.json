@@ -1,0 +1,121 @@
+{
+  "lens": "airport",
+  "score_out_of_10": 7,
+  "would_finish": "reluctantly",
+  "verdict": "This is a quiet, formally ambitious mosaic novel about what survives collapse — not civilization, not systems, but small human acts of attention: a boy who carves a fish, a soldier who keeps a log, a community that still votes. It is emphatically not what the opening promises. Chapters 1–4 are controlled, tense survival-horror: a school in lockdown, a corridor with something wrong-fast at the far end, a barricade of stools and a supply-closet dark. Any airport reader who picks this up from the cover will arrive at Chapter 5 expecting more of that, and instead receive a border-checkpoint ledger in a different month with different characters. That pivot is the book's bravest choice and its greatest risk. The reader who recalibrates will find something genuinely accomplished; the reader who wanted the thriller will put it down on the tarmac.\n\nThe novel's structural achievement is its restraint. The carved fish Jesse makes in the school closet travels through five pairs of hands — coat pocket, boy's jacket, woman at a river crossing, raft mast — without any chapter advertising the connection. The raft community's vote to expel Mikkel in Chapter 20 replicates the checkpoint's decision about the man with the cough in Chapter 6 without the book pointing at the parallel once. When both of these things register, the reader is in a richer book than the one they thought they were reading. The prose throughout is clean and exactly calibrated: nothing decorative, nothing slack. The Selle sections (Chapters 5–7) are the moral center — bureaucratic rule-keeping as a machine that does wrong while telling itself it does right — and the mother with the feverish child (Chapter 7) is the finest single scene. Nadia's logbook voice, the official register cracking at precise moments, is elegant sustained work.\n\nBut the mosaic's seams are real frustrations. Jesse and Amara disappear after Chapter 4 with no resolution — Amara's fate deliberately withheld, never revisited. Selle's moral arc is abandoned after Chapter 7. Lenn and Theo walk off the page in Chapter 11. Cass's crew exits after Chapter 14. Only Nadia's raft receives sustained development and something approaching closure — and that closure is deliberately incomplete: the Galena drifts west; the sealed hatches are left sealed; Mikkel's canoe comes back empty; the transmitter tuned to the dead-name frequency is found and not explained. For the literary reader who trusts the open ending, this is correct. For the airport reader on a five-hour flight, it is maddening. The book asks for a patience it hasn't fully earned from a general reader it initially recruited with a thriller opening.",
+  "strongest": [
+    {
+      "chapters": [
+        "05-the-notebook",
+        "06-criteria",
+        "07-the-fever"
+      ],
+      "claim": "The checkpoint chapters are the book's moral center and its finest sustained writing. The woman with the feverish child (Chapter 7) — turned back because the verbal attestation of a dissolved camp's physician cannot be verified — is the single best scene. The rule is right and the outcome is monstrous, and the book commits to both."
+    },
+    {
+      "chapters": [
+        "03-the-night-and-the-names",
+        "04-out",
+        "08-day-three",
+        "11-crossing",
+        "15-the-log",
+        "22-what-we-keep"
+      ],
+      "claim": "The carved fish as structural connective tissue: Jesse makes it in a school closet, leaves it in a coat pocket, it reaches Lenn and Theo, Theo gives it to a stranger at a bridge crossing, it ends up on Nadia's raft mast. No chapter announces the connection. The object carries moral weight by accumulation, not declaration."
+    },
+    {
+      "chapters": [
+        "15-the-log",
+        "17-the-last-entry",
+        "20-the-vote",
+        "21-the-canoe",
+        "22-what-we-keep"
+      ],
+      "claim": "Nadia's logbook voice is a formal achievement: an official record that keeps cracking open to admit what the template cannot hold. 'I do not have language for what this is. I have never not had language.' The tension between the logged fact and the human cost of logging it is sustained across eight chapters without becoming mannered."
+    },
+    {
+      "chapters": [
+        "20-the-vote"
+      ],
+      "claim": "The vote to send Mikkel south (Chapter 20) re-enacts the checkpoint's logic — fear dressed as procedure, a rule applied to an uncertainty that a rule cannot resolve — without the book naming the parallel once. This is structural irony working at full power."
+    },
+    {
+      "chapters": [
+        "01-the-wrong-sound",
+        "02-amaras-door",
+        "03-the-night-and-the-names",
+        "04-out"
+      ],
+      "claim": "The opening escape sequence is controlled and genuinely tense. 'Wrong-fast, a side-tilting speed, a gait that went at an angle people didn't go at' is precise sensory work — it tells the reader exactly what is wrong without naming what it is."
+    }
+  ],
+  "weakest": [
+    {
+      "chapters": [
+        "04-out",
+        "07-the-fever",
+        "11-crossing",
+        "14-the-basement"
+      ],
+      "claim": "Every POV except Nadia's is abandoned without resolution. Jesse and Amara: dropped after Chapter 4, Amara's fate withheld and never revisited. Selle: abandoned mid-arc after Chapter 7. Lenn and Theo: exit in Chapter 11. Cass's crew: done after Chapter 14. The mosaic structure means no strand closes. Airport readers who invested in Jesse will feel stranded, and the investment compounds as the book repeats the pattern."
+    },
+    {
+      "chapters": [
+        "04-out",
+        "05-the-notebook"
+      ],
+      "claim": "The genre pivot between Chapter 4 and Chapter 5 — from tense survival-horror to a border-checkpoint ledger with an entirely new character in a different month — is unannounced and stark. Readers who entered on the school outbreak will face a readjustment the book does nothing to ease. This is the most likely put-down point for a general reader."
+    },
+    {
+      "chapters": [
+        "21-the-canoe",
+        "22-what-we-keep"
+      ],
+      "claim": "The Galena's non-resolution is evocative but evasive. The sealed hatches with sounds below, the transmitter tuned to the dead-name frequency, Mikkel's empty canoe — all held in suspension, none resolved. The book earns ambiguity in its quieter moments but here the withholding of information covers for what may simply be an unfinished narrative."
+    },
+    {
+      "chapters": [
+        "08-day-three"
+      ],
+      "claim": "The name 'Lenn' appears exactly once in Chapter 8 — 'Lenn took it. He turned it over in his palm.' — in a narrative that otherwise calls this character 'the man' throughout Chapters 8–11. Nowhere else is the name introduced or used in these chapters. This reads as an editorial artifact: a name that survived one pass but was not fully converted to the chapter's deliberate withholding strategy."
+    },
+    {
+      "chapters": [
+        "13-what-parish-calls-it"
+      ],
+      "claim": "Chapter 13 is the book's weakest chapter by some margin. Parish's naming-game and the hardware-store inventory are charming but extended past their dramatic yield. The discovery in the storage room is powerful, but the chapter takes too long reaching it and the register — lighter, more quizzical than the material around it — doesn't fully absorb what happens there."
+    }
+  ],
+  "quotes": [
+    {
+      "chapter": "01-the-wrong-sound",
+      "text": "Wrong-fast, a side-tilting speed, a gait that went at an angle people didn't go at.",
+      "why": "This is the book doing what it does best: naming the wrongness exactly without explaining it. A lesser version would say 'it moved like an animal' or 'inhuman speed.' This gives the reader the precise sensory fact and stops there."
+    },
+    {
+      "chapter": "05-the-notebook",
+      "text": "There was nothing in it that had told him anything was wrong.",
+      "why": "The closing sentence of the chapter, about Selle's notebook entry after the man who won't show his hands has been turned away. The notebook — the record — is being indicted in the same breath as it is closed. A comfortably ordinary line that is actually devastating."
+    },
+    {
+      "chapter": "07-the-fever",
+      "text": "\"You know that,\" she said.",
+      "why": "The mother of the feverish child says this to Selle — not accusing, not pleading, simply naming what is true, that he knows it is a chest cold. The sentence is four words and the whole moral structure of Chapters 5–7 collapses into it."
+    },
+    {
+      "chapter": "11-crossing",
+      "text": "He walked south with his son.",
+      "why": "The final line of the chapter, and the only line in Chapters 8–11 that names Theo as the man's son. It arrives after 70 pages of 'the man' and 'the boy.' The book saves the word for here, and the word earns its place."
+    },
+    {
+      "chapter": "20-the-vote",
+      "text": "fear is a reason and is not the same as a reason.",
+      "why": "Nadia writing in the running account what she did not say in the meeting. This is the book's thesis in a sentence, and the sentence works because it is structurally ambiguous — it applies to Selle, to the kid in the basement, to the community on the raft, to every decision this novel watches people make."
+    }
+  ],
+  "put_down_points": [
+    "Between Chapter 4 and Chapter 5: the genre pivot from school-lockdown survival to border-checkpoint ledger with a new character in a new month. No transition, no bridge. General readers who bought the thriller will face a complete readjustment with no guide.",
+    "Chapter 13 ('What Parish Calls It'): the hardware-store sweep runs long and the chapter's tone is lighter than the surrounding material. If attention has been flagging since the Cass sections began, this is where it drops furthest."
+  ],
+  "who_is_this_for": "Literary fiction readers comfortable with mosaic structure and open endings — closer in spirit to Colum McCann's Let the Great World Spin or Emily St. John Mandel's Station Eleven than to The Road. Readers who want moral questions held open, endings that trust images over resolution, and prose that earns its quietness. Not for readers who need their storylines closed or their genre signals kept. The airport reader who adjusts expectations by Chapter 7 will be glad they read it; the one who doesn't will feel stranded."
+}

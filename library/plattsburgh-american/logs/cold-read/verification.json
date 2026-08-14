@@ -1,0 +1,108 @@
+{
+  "generated_at": "2026-08-13T23:08:49.116Z",
+  "per_lens": [
+    {
+      "lens": "literary",
+      "exact": 5,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "airport",
+      "exact": 4,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 1,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "propulsion",
+      "exact": 5,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "authenticity",
+      "exact": 5,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "comparative",
+      "exact": 7,
+      "near": 0,
+      "misattributed": 1,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "verisimilitude",
+      "exact": 6,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "ordinary",
+      "exact": 5,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    }
+  ],
+  "problems": [
+    {
+      "lens": "airport",
+      "chapter": "14-the-ford",
+      "text": "After a moment he said: \"Check your flint.\"",
+      "verdict": "absent"
+    },
+    {
+      "lens": "comparative",
+      "chapter": "10-two-ranks",
+      "text": "one tooth advancing on each upstroke, the pawl catching it and the carriage moving forward, not because the gearman decided to advance but because the wheel came around and the pawl was there.",
+      "verdict": "misattributed",
+      "foundIn": "08-pikes-ford"
+    }
+  ],
+  "totals": {
+    "exact": 37,
+    "near": 0,
+    "misattributed": 1,
+    "absent": 1
+  },
+  "panel_health": {
+    "lenses": 7,
+    "scores": {
+      "min": 6,
+      "max": 8,
+      "mean": 7.21,
+      "spread": 2
+    },
+    "finish": {
+      "yes": 6,
+      "reluctantly": 1
+    },
+    "claims": {
+      "strongest": 35,
+      "weakest": 35,
+      "fewestWeaknessesOnALens": 5
+    },
+    "quotes": {
+      "total": 39,
+      "fabricationRate": 0.0256
+    },
+    "flags": [
+      "1 fabricated quote (2.6%) — discount the affected lenses",
+      "1 misattributed quote"
+    ]
+  }
+}

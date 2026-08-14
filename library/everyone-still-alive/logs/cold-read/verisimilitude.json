@@ -1,0 +1,139 @@
+{
+  "lens": "verisimilitude",
+  "score_out_of_10": 7.5,
+  "would_finish": "yes",
+  "verdict": "This is a mosaic post-collapse novel with five interlocking narrative strands, unified by a carved wooden fish and a radio broadcast that reads the names of the dead. The book implicitly asks the reader to accept the rules of a near-future North American collapse in which some people have transformed into fast-moving, predatory creatures, and in which the survivors are improvising new institutions — checkpoints, raft communities, scavenging crews — under extreme resource pressure. Against that reference frame, the world holds together with unusual discipline. The checkpoint chapters (05–07) are the verisimilitude high-water mark: three separate chapter-length treatments of the same bureaucratic procedure, with precisely consistent log formats, a temperature threshold applied correctly to every case, and a thermometer described identically each time it appears. Very few novels could sustain that level of procedural detail across three chapters without contradiction; this one does. The fish's trajectory from Jesse's closet in Week One to the mast of a raft in Year Two is tracked across eight chapters with enough specificity — wood type, finish quality, the scored-line eye — to cross-check, and it survives the check.\\n\\nThe weaknesses are smaller in scale but genuinely present. The most concrete is dimensional: the splinter Jesse carves from is described as \"two inches maybe\" in Chapter 2, but the fish produced is \"palm-sized\" — a carving cannot exceed its source material in length. A charitable reading (two inches was the portion jutting visibly from the crack, with more embedded inside) saves the passage, but the text doesn't cue that reading. A second inconsistency involves Coach Briggs: Chapter 1 places his voice \"two floors below\" the third-floor art room (which yields the first floor), while Chapter 3 has Jesse confidently filing the fact that \"Briggs was in the basement\" (which is below the first floor). These are either different times on the same night — in which case Briggs moved, and the inconsistency dissolves — or descriptions of the same moment with conflicting floor counts. The text does not clarify which, and the ambiguity is not managed. There is also a coat-color discrepancy: Jesse deposits the fish in \"a grey wool peacoat\" (Chapter 4); Theo finds it in \"a wool coat of a dark color\" (Chapter 8). Dark grey is both, but the match is imperfect. None of these issues threaten the novel's core logic; they are the kind of small-scale carelessness that survives drafting and editing because each instance reads naturally in isolation.",
+  "strongest": [
+    {
+      "chapters": [
+        "05-the-notebook",
+        "06-criteria",
+        "07-the-fever"
+      ],
+      "claim": "The checkpoint procedure is maintained with exact consistency across three chapters. The five rules are stated once (ch. 05) and then applied correctly in every subsequent case: Rule 3's threshold of 38.5°C is applied accurately to readings of 38.3 (below; Chapter 6 turn-back is on respiratory grounds, not fever), 38.7 and 38.6 (both above; Chapter 7 denial). The crossing-log format, the thermometer protocol (four centimetres from the forehead), and the signing conventions are reproduced without error."
+    },
+    {
+      "chapters": [
+        "03-the-night-and-the-names",
+        "04-out",
+        "08-day-three",
+        "09-the-ash-sky",
+        "11-crossing",
+        "15-the-log",
+        "22-what-we-keep"
+      ],
+      "claim": "The fish's provenance chain is complete and cross-checkable across eight chapters. Jesse carves it from a stool splinter, leaves it in a coat pocket at the school loading dock. Theo finds it in that coat pocket months later, carries it, gives it at the river crossing to a woman heading northeast toward the lake. It ends on the raft's mast. Each transfer includes physical detail — grain, finish, the scored-line eye — that the next chapter's description matches or extends."
+    },
+    {
+      "chapters": [
+        "03-the-night-and-the-names",
+        "09-the-ash-sky",
+        "15-the-log",
+        "17-the-last-entry",
+        "20-the-vote",
+        "22-what-we-keep"
+      ],
+      "claim": "The 'Reader of Names' radio broadcast appears in six chapters with consistent characteristics — gender-indeterminate voice, one name per breath, no commentary — and its final appearance (the Galena's transmitter set to the same frequency) is a coherent payoff that does not contradict any prior description of the broadcast."
+    },
+    {
+      "chapters": [
+        "01-the-wrong-sound",
+        "05-the-notebook",
+        "08-day-three",
+        "12-clearance",
+        "15-the-log"
+      ],
+      "claim": "The timeline across all five narrative strands is consistent with real seasonal weather. Week One's October leaves and November cold at the checkpoint accord with each other; Month Six snowfall is plausible for March; Year One Winter's Day 84 falls in mid-January, which the chapter label confirms. No strand's season contradicts its heading."
+    },
+    {
+      "chapters": [
+        "15-the-log",
+        "16-shore",
+        "17-the-last-entry",
+        "18-east-wind",
+        "19-the-eastern-shore",
+        "20-the-vote",
+        "21-the-canoe",
+        "22-what-we-keep"
+      ],
+      "claim": "Nadia's logbook voice and abbreviation conventions are maintained without a slip across eight chapters. GHP (Gus), T. (Tomás), MIV (Mikkel), the latching of the case, the practice of writing the time twice when she wants the record to know she was certain — all return exactly as established."
+    }
+  ],
+  "weakest": [
+    {
+      "chapters": [
+        "02-amaras-door",
+        "03-the-night-and-the-names",
+        "08-day-three"
+      ],
+      "claim": "The fish is carved from a two-inch splinter but described as palm-sized. Chapter 2 establishes the raw material as 'two inches maybe' of visible wood jutting from the crack; Chapter 3 has Jesse remove it and produce a 'palm-sized' fish. A carving cannot be longer than its source material. The charitable reading — that two inches was only the exposed portion, with more embedded in the crack — is not signalled by the text."
+    },
+    {
+      "chapters": [
+        "01-the-wrong-sound",
+        "03-the-night-and-the-names"
+      ],
+      "claim": "Coach Briggs's floor location is given inconsistently. Chapter 1 states the voice came 'from two floors below' the third-floor art room — arithmetically, the first floor. Chapter 3 has Jesse confidently conclude 'Briggs was in the basement,' which is one floor further down. Both observations occur on the same night (Day 1). Either Briggs moved between the two incidents, or the floor count is wrong; the text does not resolve this."
+    },
+    {
+      "chapters": [
+        "04-out",
+        "08-day-three"
+      ],
+      "claim": "The coat carrying the fish is described as 'a grey wool peacoat' when Jesse deposits the fish (Chapter 4) and as 'a wool coat of a dark color' when Theo finds it (Chapter 8). Grey and dark are imperfect matches; a dark charcoal grey could satisfy both, but the text does not bridge the gap."
+    },
+    {
+      "chapters": [
+        "18-east-wind",
+        "19-the-eastern-shore",
+        "20-the-vote"
+      ],
+      "claim": "The Galena is described as 'riding high — not loaded, not running with ballast either.' A 400-foot lake freighter without cargo or ballast would sit high and dangerously unstable in open water, especially in any wind. The passage treats this as a routine navigational observation. The condition is not impossible in calm spring conditions but is more hazardous than the prose acknowledges."
+    },
+    {
+      "chapters": [
+        "05-the-notebook",
+        "06-criteria",
+        "07-the-fever"
+      ],
+      "claim": "Pruett's logbook signature varies without explanation between chapters. In Chapters 5 and 6, crossing entries are signed '(Sig: Pruett.)' — surname only, no rank. In Chapter 7, the same crossing entry is signed '(Sig: C. Pruett, Sgt.)' — first initial and rank included. This is a minor format inconsistency that may be editorial residue rather than deliberate characterisation."
+    }
+  ],
+  "quotes": [
+    {
+      "chapter": "02-amaras-door",
+      "text": "A splinter of pale wood jutted from the crack, two inches maybe, the shape of something narrow and curved if you looked at it right.",
+      "why": "Establishes the raw material for the fish at two inches — in tension with the fish later being described as palm-sized, a dimensional inconsistency the book never resolves."
+    },
+    {
+      "chapter": "03-the-night-and-the-names",
+      "text": "Jesse filed it. Briggs was alive. Briggs was in the basement.",
+      "why": "Jesse's confident inference places Briggs in the basement, but Chapter 1 described the voice coming from 'two floors below' the third floor — which is the first floor, not the basement. The discrepancy is real regardless of whether Jesse's inference is treated as possibly wrong."
+    },
+    {
+      "chapter": "04-out",
+      "text": "He reached across to the rack and slid the fish into the pocket of the nearest coat. A grey wool peacoat, heavy, somebody's good winter coat.",
+      "why": "The coat is explicitly grey here. In Chapter 8 it is 'a wool coat of a dark color' — an imperfect match that is the only seam in the fish's otherwise well-maintained provenance chain."
+    },
+    {
+      "chapter": "05-the-notebook",
+      "text": "Travelers must show no visible wound or fever exceeding 38.5 degrees Celsius.",
+      "why": "This is Rule 3 as stated, and the book applies it correctly in every subsequent case — 38.3 is passed on temperature grounds in Chapter 6, 38.7 is denied in Chapter 7. Citing the rule as stated allows verification of each application."
+    },
+    {
+      "chapter": "18-east-wind",
+      "text": "Riding high — not loaded, not running with ballast either.",
+      "why": "A 400-foot freighter without ballast would be genuinely dangerous in open water; the passage treats this as a routine assessment. The condition is underplayed relative to its actual nautical risk."
+    },
+    {
+      "chapter": "22-what-we-keep",
+      "text": "The wood dark from months of lake air, the surface worn smooth in places where hands had been — whoever those hands were, wherever those hands were now.",
+      "why": "This description of the fish after 18+ months outdoors (darkened, worn smooth) is consistent with its earlier descriptions as pale, light-grained wood. The book's tracking of physical change over time is precise."
+    }
+  ],
+  "put_down_points": [
+    "Chapter 12 (Clearance): The Cass/Jute/Parish strand begins with no orientation to new characters after the emotional high of Lenn and Theo's crossing in Chapter 11. The chapter opens in media res with a new group whose relationships and setting take several pages to establish, and some readers will feel the mosaic structure demanding too much fresh investment at this moment.",
+    "Chapters 5–6 (The Notebook, Criteria): The checkpoint procedural sections are admirably consistent but deliberately slow. Readers who came for the school-survivor momentum of Chapters 1–4 may stall here before the emotional logic of the checkpoint becomes clear."
+  ],
+  "who_is_this_for": "Readers of literary post-collapse fiction — the Station Eleven / The Road audience, not the horror or thriller audience. The creatures that cause the collapse are never named or explained; the book is interested in institutions, moral procedure, and what small human objects carry across catastrophe. It rewards patience with procedural detail and finds its emotion in restraint rather than event."
+}

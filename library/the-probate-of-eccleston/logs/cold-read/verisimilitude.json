@@ -1,0 +1,131 @@
+{
+  "lens": "verisimilitude",
+  "score_out_of_10": 7,
+  "would_finish": "yes",
+  "verdict": "This is a legal procedural set in 1926–27 Lancashire: a solicitor building the case that a post-mortem codicil, produced by the expectant nephew of a dead mill-owner, is a forgery. Its implicit contract with the reader is one of precision — dates count, prepositions count, the documentary record matters — and from a verisimilitude lens it should be held to exactly that contract.\n\nThe legal world holds up remarkably well. The Wills Act 1837 section 33 analysis (anti-lapse for descendants only, not collateral relatives), the mechanics of a caveat, letters of administration with the will annexed in the absence of an executor, the administrator pendente lite, solemn form probate procedure before the Probate, Divorce and Admiralty Division, and the recovery of costs on success are all accurate for the period and consistently applied. The forensic argument at the centre — that the second codicil's recital uses \"and her issue\" where the executed first codicil says \"or her issue,\" and that the wrong preposition is documented in Walter Eccleston's own bank correspondence fourteen months before the instrument's stated date — is elegantly constructed and never once violated across twenty chapters. The cross-corroboration between documents produced by different hands at opposite ends of twelve miles (the strong-room register and the Hall's household journal, each recording the September 1926 reading without contradiction) is exactly the kind of layered consistency this lens values.\n\nAgainst that achievement, the countdown that gives the book its procedural rhythm develops a definite fracture in chapters 16 and 17. The hearing date is established as the sixth of October 1927 in chapter 5, and every countdown figure from chapter 5 through chapter 15 checks against that date to within the precision the chapters claim. Then chapter 16 contains a working note explicitly headed \"16 July 1927\" and dated \"A.P., 16.vii.27\" at its foot, and the chapter closes with \"Ninety days to the hearing.\" July 16 to October 6 is eighty-two days, not ninety. Chapter 17 compounds the error: the working note is dated \"18.vii.27\" and the chapter ends \"The eighteenth of July. Eighty-eight days.\" July 18 to October 6 is eighty days. Both figures (90 and 88) are internally consistent with a hearing on October 14 rather than October 6 — a draft variant that was evidently never reconciled with the authoritative date. Chapter 18 returns correctly to October 6, sealing the brief on August 15 with \"fifty-two days to the hearing\" — which checks. The error is localised to chapters 16–17 but it is the worst possible location: the payoff section where Prescott is assembling the exact textual argument that turns on a single word's provenance.\n\nSmaller date-placement errors appear at chapters 12 and 15. \"The last week of April\" for the commission application immediately precedes \"one hundred and seventy-two days to the hearing,\" but 172 days before October 6 is April 17 — the third week of April, not the last. \"The second week of June\" for the Hall visit precedes \"one hundred and twenty-five days,\" but June 3 is 125 days before October 6 (first week of June; the second week gives roughly 120–113 days). A production artifact is also present: chapters 1–6 consistently carry the \"Chapter N — Title\" header format; chapters 7–20 drop it entirely, leaving title only. This appears to be a drafting inconsistency, not a stylistic one, given the regularity of the early chapters and the abruptness of the shift.",
+  "strongest": [
+    {
+      "chapters": [
+        "01-the-strong-room",
+        "02-the-second-codicil",
+        "05-the-hinge",
+        "19-solemn-form",
+        "20-the-estate"
+      ],
+      "claim": "The legal framework is accurate for the period throughout. Wills Act section 33 applied correctly to collateral versus descendant beneficiaries; the caveat-to-solemn-form pipeline; letters of administration with will annexed in the absence of an executor; the administrator pendente lite; costs recoverable on success — all are precisely right and consistently used."
+    },
+    {
+      "chapters": [
+        "01-the-strong-room",
+        "02-the-second-codicil",
+        "11-the-sale-contract",
+        "16-the-date",
+        "17-the-ninth-word"
+      ],
+      "claim": "The 'or'/'and' discrepancy is set up in chapter 1, confirmed verbatim in the second codicil in chapter 2, documented in Walter's own hand in chapter 11, and paid off forensically in chapters 16–17. It is the novel's central mechanism and it holds across all twenty chapters without once being contradicted by the text."
+    },
+    {
+      "chapters": [
+        "01-the-strong-room",
+        "05-the-hinge",
+        "15-the-hall"
+      ],
+      "claim": "The cross-corroboration between the strong-room register and the Hall household journal on the September 19 reading is carefully handled: two records produced by different people at opposite ends of twelve miles confirm the same event in compatible but not identical language, and the timing is consistent (document out at 9:45 a.m. in Preston; Garside and party arriving at the Hall 'half past ten')."
+    },
+    {
+      "chapters": [
+        "09-vale-mill",
+        "10-the-machine"
+      ],
+      "claim": "The document examination methodology — typeface design and four concurrent individual machine characteristics — is plausible professional practice for the period and correctly hedged: Croft explicitly cannot speak to operator or date, and the novel builds on that limit rather than exceeding it."
+    },
+    {
+      "chapters": [
+        "09-vale-mill",
+        "11-the-sale-contract",
+        "13-the-fairhursts",
+        "14-the-commission"
+      ],
+      "claim": "The financial picture of the estate (mortgage interest drawn from capital for consecutive quarter-days, the stalled sale contract conditional on a grant that cannot issue, the purchaser's two extensions running out) is internally consistent throughout and interacts correctly with the legal timeline."
+    }
+  ],
+  "weakest": [
+    {
+      "chapters": [
+        "16-the-date",
+        "17-the-ninth-word"
+      ],
+      "claim": "Chapters 16 and 17 contain working notes explicitly dated July 16 and July 18, 1927, with countdown figures of 90 and 88 days. July 16 to the October 6 hearing is 82 days; July 18 is 80 days. Both figures are internally consistent with a hearing on October 14 — a date variant evidently present during drafting but never reconciled against the authoritative October 6 date established in chapter 5 and confirmed by every other countdown in the book."
+    },
+    {
+      "chapters": [
+        "12-the-witnesses",
+        "14-the-commission"
+      ],
+      "claim": "Chapter 12 places the commission application 'in the last week of April' immediately before 'One hundred and seventy-two days to the hearing.' But 172 days before October 6 is April 17 — the third week of April. The same error is repeated in chapter 14, which explicitly links the 172-day figure to 'the last week of April.'"
+    },
+    {
+      "chapters": [
+        "15-the-hall"
+      ],
+      "claim": "Chapter 15 sets the Hall visit in 'the second week of June' and closes with 'One hundred and twenty-five days.' June 3 is 125 days before October 6; the second week of June (June 8–14) corresponds to roughly 120–113 days. The stated week and the countdown figure are five to twelve days apart."
+    },
+    {
+      "chapters": [
+        "13-the-fairhursts"
+      ],
+      "claim": "Chapter 13 gives the countdown as 'One hundred and fifty-five days' at Prescott's Bank Parade visit, corresponding to May 4. But Nora reports that Walter Eccleston called 'last week' — a visit she dates to 'the eighth or the ninth' of May. If Walter's visit preceded Prescott's by one week, Prescott's visit falls around May 15–16, corresponding to approximately 143–144 days, not 155."
+    },
+    {
+      "chapters": [
+        "07-the-file",
+        "08-the-gazette",
+        "09-vale-mill",
+        "10-the-machine",
+        "11-the-sale-contract",
+        "12-the-witnesses",
+        "13-the-fairhursts",
+        "14-the-commission",
+        "15-the-hall",
+        "16-the-date",
+        "17-the-ninth-word",
+        "18-counsels-brief",
+        "19-solemn-form",
+        "20-the-estate"
+      ],
+      "claim": "A production artifact is present in the chapter headers: chapters 1–6 all carry the 'Chapter N — Title' format (using numerals for chapters 1–3, words for 4–6); chapters 7–20 drop the 'Chapter' prefix and number entirely, leaving title only. The shift is abrupt at chapter 7 and is not a graduated stylistic transition — it reads as a drafting inconsistency rather than a deliberate formal choice."
+    }
+  ],
+  "quotes": [
+    {
+      "chapter": "01-the-strong-room",
+      "text": "Instrument read entire, including date.",
+      "why": "This phrase, entered without apparent emphasis in the strong-room register, becomes the book's pivotal forensic proof: Garside recorded it by habit, not prescience, and the habit is what makes it irrefutable. A competent-but-ordinary register entry would say 'codicil read to family.' This one says more — which is exactly why it matters."
+    },
+    {
+      "chapter": "01-the-strong-room",
+      "text": "Section thirty-three of the Wills Act does nothing for a niece against lapse. She is collateral, not a descendant.",
+      "why": "Accurate Wills Act 1837 law stated cleanly in dialogue. The book earns its legal world at the outset, and this line is evidence that the research is precise rather than decorative."
+    },
+    {
+      "chapter": "16-the-date",
+      "text": "Ninety days to the hearing.",
+      "why": "The working note in this same chapter is headed '16 July 1927' and initialled 'A.P., 16.vii.27.' July 16 to October 6 is 82 days, not 90. This is the clearest of the countdown errors and it sits in the chapter most concerned with the precision of dates."
+    },
+    {
+      "chapter": "17-the-ninth-word",
+      "text": "The eighteenth of July. Eighty-eight days.",
+      "why": "July 18 to the October 6 hearing is 80 days. This is the second consecutive chapter in which an explicitly stated date contradicts the adjacent countdown figure. Both errors correspond to an October 14 hearing date — a draft variant that was not cleaned up."
+    },
+    {
+      "chapter": "12-the-witnesses",
+      "text": "Mitchell filed the application in the last week of April.",
+      "why": "The paragraph immediately following gives 'One hundred and seventy-two days to the hearing.' But 172 days before October 6 is April 17 — the third week of April. The phrase 'last week of April' is wrong by approximately ten days, and it is repeated in chapter 14."
+    }
+  ],
+  "put_down_points": [
+    "Chapter 11 (the-sale-contract): the bundle of nine letters from Walter to his bank manager is the most procedurally dense passage in the book. The financial picture it builds is necessary, but the letters-within-the-chapter structure risks losing readers who have been managing the action's slow pace and want some forward movement.",
+    "Chapter 14 (the-commission): the commission application fails on a technicality (no fixed address for the witness in Canada) and the chapter closes a door without opening another. For a reader already finding the pace deliberate, this is the most natural stopping point — a whole chapter that ends exactly where it started."
+  ],
+  "who_is_this_for": "Readers who find legal procedural fiction satisfying at the level of institutional mechanism — who would read the Chancery scenes in Bleak House for the procedure, not just the atmosphere, and who are willing to sit with a novel whose drama is entirely in the documentary record. It is not for readers who want character revelation, emotional confrontation, or plot momentum; the book offers none of those in conventional quantity. Solicitors and barristers with an interest in period practice may find the Wills Act and probate mechanics unusually well-handled."
+}

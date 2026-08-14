@@ -1,0 +1,93 @@
+{
+  "generated_at": "2026-08-14T05:48:01.696Z",
+  "per_lens": [
+    {
+      "lens": "literary",
+      "exact": 5,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "airport",
+      "exact": 6,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "propulsion",
+      "exact": 6,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "authenticity",
+      "exact": 7,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "comparative",
+      "exact": 6,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "verisimilitude",
+      "exact": 6,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "ordinary",
+      "exact": 5,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    }
+  ],
+  "problems": [],
+  "totals": {
+    "exact": 41,
+    "near": 0,
+    "misattributed": 0,
+    "absent": 0
+  },
+  "panel_health": {
+    "lenses": 7,
+    "scores": {
+      "min": 7,
+      "max": 8,
+      "mean": 7.57,
+      "spread": 1
+    },
+    "finish": {
+      "yes": 6,
+      "reluctantly": 1
+    },
+    "claims": {
+      "strongest": 35,
+      "weakest": 35,
+      "fewestWeaknessesOnALens": 5
+    },
+    "quotes": {
+      "total": 41,
+      "fabricationRate": 0
+    },
+    "flags": [
+      "score spread 1.0 is narrow — lenses with different priorities returned nearly the same number, which can indicate one judgement in several costumes rather than independent reads"
+    ]
+  }
+}
