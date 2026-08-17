@@ -95,11 +95,11 @@ describe("estimateRun — chapter inference", () => {
 
 describe("estimateRun — model multiplier", () => {
   // The absolute figure is a CALIBRATION that is re-fit whenever the phase set changes (it moved
-  // when editor-voice and editor-pacing's per-chapter loop left the default expansion — see
+  // when editor-pacing's per-chapter loop left the default expansion — see
   // docs/editor-ablation.md, which mandates another re-fit after the first post-deletion run).
   // So only ONE test pins the absolute baseline; the multiplier tests assert the RATIO they are
   // actually about, and survive re-calibration.
-  const BASELINE_USD = 4.7 + 10 * 1.39; // FIXED + 10 chapters × PER_CHAPTER, estimate.ts
+  const BASELINE_USD = 4.7 + 10 * 1.64; // FIXED + 10 chapters × PER_CHAPTER, estimate.ts
 
   it("Sonnet 4.6 uses the baseline 1× multiplier", async () => {
     makeProject({ outlineChapters: 10, model: "claude-sonnet-4-6" });
