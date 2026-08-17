@@ -445,7 +445,12 @@ export function computeCompoundingStats(tables: WorldTables): CompoundingStats {
   for (const f of tables.facts.values()) {
     if (f.status === "retracted") continue;
     if (f.attribute === "statement") continue;
-    const stem = `${f.entity} ${attributeStem(f.attribute)}`;
+    // JSON-array key, matching findContradictions above: unambiguous for any entity/attribute
+    // content and no magic separator. This line previously used a LITERAL NUL byte as the
+    // separator, which made the whole file read as binary -- `grep` silently skipped it, so
+    // every search for TIME_VARYING_ATTRIBUTES or auto_repair_safe returned nothing. Purely
+    // an internal grouping key: never persisted, never emitted.
+    const stem = JSON.stringify([f.entity, attributeStem(f.attribute)]);
     if (realIds.has(f.provenance.chapter)) {
       pushTo(byChapter, f.provenance.chapter, { entity: f.entity, stem });
     } else {
