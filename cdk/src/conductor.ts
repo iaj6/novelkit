@@ -40,7 +40,11 @@ export type PhaseName =
   | "cold-read";
 
 /**
- * Phases that `cdk run` iterates through. `editor` here expands into all four sub-passes. Repair phases are opt-in via `cdk repair`.
+ * Phases that `cdk run` iterates through. `editor` expands into three sub-passes: continuity,
+ * compression, and pacing's macro arc assessment. `editor-voice` and pacing's per-chapter review were
+ * removed from the default expansion on measured nulls (see docs/editor-ablation.md); both names are
+ * still accepted below, so `cdk phase editor-voice` works and restoring the default is a one-liner.
+ * Repair phases are opt-in via `cdk repair`.
  *
  * `researcher` is NOT in this list — it is a conditional phase prepended by `runAll` only when the brief opts in (via a `## Research scope` section in brief.md or `"research": true` in cdk.config.json). It IS in `ALL_PHASE_NAMES` so `cdk phase researcher` can invoke it directly regardless of trigger.
  */

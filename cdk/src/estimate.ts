@@ -11,6 +11,20 @@
  *   ──────────────────────────────────
  *   FIXED ≈ $4.70   PER_CHAPTER ≈ $1.86
  *
+ * 2026-08 ADJUSTMENT — the constants above are a FIT; the ones below are that
+ * fit minus a measured subtraction, which is a projection. Two passes left the
+ * default `editor` expansion (see docs/editor-ablation.md), removing a measured
+ * $0.47/chapter:
+ *
+ *   editor-voice              $81.07 / 327 calls = $0.248/chapter
+ *   editor-pacing per-chapter $72.68 / 328 calls = $0.222/chapter
+ *
+ * so PER_CHAPTER 1.86 → 1.39, and PER_CHAPTER_SECONDS is scaled by the same
+ * ratio (0.747). RE-FIT BOTH against the first completed post-deletion run
+ * rather than trusting these; and note the wall-time constant was already known
+ * to UNDER-estimate on edit-heavy runs before this change, which this PR does
+ * not attempt to fix.
+ *
  * The fit is on Sonnet 4.6 (the project default). Other models apply a
  * rough pricing multiplier relative to Sonnet 4.6 baseline.
  *
@@ -22,7 +36,7 @@ import * as path from "node:path";
 import { loadConfig } from "./config.js";
 
 const FIXED_USD = 4.7;
-const PER_CHAPTER_USD = 1.86;
+const PER_CHAPTER_USD = 1.39;
 const UNCERTAINTY = 0.25; // ±25% band
 
 const DEFAULT_CHAPTERS = 25;
@@ -37,9 +51,11 @@ const MODEL_MULTIPLIER: Record<string, number> = {
 };
 
 // Wall-time estimate — based on observed ~80–100 sec per chapter end-to-end
-// across editor passes + drafter, plus ~3-5 min for fixed phases.
+// across editor passes + drafter, plus ~3-5 min for fixed phases. Scaled by
+// 0.747 for the two removed passes (see the 2026-08 note above); re-fit after
+// the first post-deletion run.
 const FIXED_SECONDS = 240;
-const PER_CHAPTER_SECONDS = 95;
+const PER_CHAPTER_SECONDS = 71;
 
 export interface RunEstimate {
   chapters: number;

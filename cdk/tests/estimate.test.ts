@@ -94,26 +94,32 @@ describe("estimateRun — chapter inference", () => {
 });
 
 describe("estimateRun — model multiplier", () => {
+  // The absolute figure is a CALIBRATION that is re-fit whenever the phase set changes (it moved
+  // when editor-voice and editor-pacing's per-chapter loop left the default expansion — see
+  // docs/editor-ablation.md, which mandates another re-fit after the first post-deletion run).
+  // So only ONE test pins the absolute baseline; the multiplier tests assert the RATIO they are
+  // actually about, and survive re-calibration.
+  const BASELINE_USD = 4.7 + 10 * 1.39; // FIXED + 10 chapters × PER_CHAPTER, estimate.ts
+
   it("Sonnet 4.6 uses the baseline 1× multiplier", async () => {
     makeProject({ outlineChapters: 10, model: "claude-sonnet-4-6" });
     const est = await estimateRun(tmpRoot);
     expect(est.modelMultiplier).toBe(1.0);
-    // FIXED 4.7 + 10 * 1.86 = 23.3 baseline
-    expect(est.expectedUsd).toBeCloseTo(23.3, 1);
+    expect(est.expectedUsd).toBeCloseTo(BASELINE_USD, 1);
   });
 
   it("Haiku 4.5 applies the 0.25× multiplier", async () => {
     makeProject({ outlineChapters: 10, model: "claude-haiku-4-5" });
     const est = await estimateRun(tmpRoot);
     expect(est.modelMultiplier).toBe(0.25);
-    expect(est.expectedUsd).toBeCloseTo(23.3 * 0.25, 2);
+    expect(est.expectedUsd / est.modelMultiplier).toBeCloseTo(BASELINE_USD, 1);
   });
 
   it("Opus 4.7 applies the 5× multiplier", async () => {
     makeProject({ outlineChapters: 10, model: "claude-opus-4-7" });
     const est = await estimateRun(tmpRoot);
     expect(est.modelMultiplier).toBe(5.0);
-    expect(est.expectedUsd).toBeCloseTo(23.3 * 5, 1);
+    expect(est.expectedUsd / est.modelMultiplier).toBeCloseTo(BASELINE_USD, 1);
   });
 
   it("unknown models fall back to 1× with a warning-worthy multiplier", async () => {
