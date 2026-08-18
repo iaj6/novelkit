@@ -38,27 +38,19 @@ export async function runEditorPacing(projectRoot: string) {
     console.log("[editor-pacing] macro arc assessment already complete — skipping");
   }
 
-  for (let i = 0; i < chapters.length; i++) {
-    const chapterFile = chapters[i];
-    const chapterId = chapterFile.replace(/\.md$/, "");
-    const key = `editor-pacing:${chapterId}`;
-    if (isComplete(state, key)) {
-      console.log(`[editor-pacing] ${chapterFile} already complete — skipping`);
-      continue;
-    }
-    console.log(`[editor-pacing] reviewing ${chapterFile} (${i + 1}/${chapters.length})…`);
-    await runAgent({
-      phase: "editor-pacing",
-      projectRoot,
-      userPrompt: [
-        `Per-chapter pacing review for draft/${chapterFile} (chapter ${i + 1} of ${chapters.length}).`,
-        "Read logs/editor-pacing.md (the macro arc assessment is at the top), canon/threads.md, logs/story-arc.md, and the chapter itself.",
-        "Apply small fixes via write_file (cut a redundant beat, tighten a sequence). Document larger issues via append_to_file('logs/editor-pacing.md', '## " +
-          chapterFile +
-          "\\n\\n<your note>\\n').",
-        "If the chapter is clean, stop without writing.",
-      ].join(" "),
-    });
-    await markComplete(state, projectRoot, key);
-  }
+  // The per-chapter pacing review that used to run here has been REMOVED on measurement.
+  //
+  // It cost $72.88 across ~328 lifetime calls and had a measured null against the only external
+  // instrument available: chapters it cut appear in blind cold-read panels' weakest lists at 53.1%
+  // versus 57.9% for chapters it left alone — i.e. no detectable improvement, and it removed
+  // over-articulation at only 1.19x a random-deletion baseline.
+  //
+  // The macro assessment above is KEPT deliberately. It is the inverse case: $2.73 lifetime, prose-
+  // blind by construction, and the only pipeline-internal judgment that survives contact with
+  // independent data (its named sag ranges track where blind readers stop, chi2=6.62, p~0.010 —
+  // though see docs/editor-ablation.md, which records that the diagnosis fails a stricter
+  // per-book test against a positional constant at the sample size currently available).
+  //
+  // Restoring the per-chapter pass means reinstating this loop; nothing else changed, and the
+  // `editor-pacing:<chapterId>` state keys it used are simply no longer written.
 }
