@@ -95,11 +95,18 @@ being the scoreboard. **Pick one in writing.**
 A book ships when **all** of these hold:
 
 1. **Voice** — a blind panel confirms POV/register distinctness.
-2. **No production artifacts** — zero unfilled placeholders, duplicated scenes, or notes-to-self.
-   ⟳ **Violated, but not as previously stated.** Of the three named types only **duplicated scenes**
-   occur (2 of 11 published books). **Zero** unfilled placeholders and **zero** notes-to-self exist in
-   any published manuscript. A class the criterion never named *is* present: **178 build-provenance
-   HTML comments leaking an absolute home directory path into the deployed site.** Add it.
+2. **No production artifacts** — ~~zero unfilled placeholders, duplicated scenes, or notes-to-self~~
+   → **zero build machinery in the reader's copy.** ⟳ **All three originally named types were wrong,
+   and the real one was unnamed.** Zero unfilled placeholders and zero notes-to-self exist in any
+   published manuscript. **Duplicated scenes do not occur either** — an evidence pass over all 21
+   books found 6 candidates and all 6 were *registered documents being deliberately re-quoted*, which
+   is the record layer's designed behaviour; the earlier "2 of 11 books" was that same false
+   positive, twice. What *was* present, in all 11 published books: **178 build-provenance comments
+   leaking an absolute home directory path into the deployed site.**
+   **Now fixed at source and gated** — `cdk publish` refuses on any absolute path or build comment in
+   a shipped artifact (`cdk/src/artifacts.ts`), 11/11 books pass, and the defect class is measured at
+   **0.86 panel points**, larger than the entire between-book spread of the corpus. This is the first
+   criterion on this list to actually become a gate.
 3. **Contract met** — declared `invariants` in `cdk.config.json` hold, enforced not warned.
    ⟳ **Currently vacuous: 0 of 21 books declare an `invariants` block on main.** `checkProjectInvariants`
    is a `console.log` at the tail of `runAll` — no throw, no exit code. The criterion gates nothing.
@@ -192,9 +199,14 @@ Four things learned that should outlive any of the above:
    p=0.135. The pairs already exist on disk; it needs n≈180, not a new experiment. ~$25.
 2. **Validate the judge against a human** — ~40 pairs. Every preference figure above currently reads
    "a strong LLM judge prefers," not "a reader prefers," and nothing distinguishes those yet.
-3. **Make the bar a gate.** All four criteria are currently unenforceable as written: invariants are
-   vacuous (0 of 21 books), `findings.json` has no `status` field, and the artifact check misses the
-   one class actually present. Fix the representations before the checks.
+3. **Make the rest of the bar a gate.** ⟳ Criterion 2 is now done — `cdk publish` refuses on build
+   machinery in a shipped artifact, and the leak it was built for is fixed at source. The remaining
+   two are blocked on *representation*, not on checking: `invariants` is vacuous until a book
+   declares one (0 of 21 do, and `checkProjectInvariants` is a `console.log` with no throw), and
+   "no open `critical` finding" is not expressible until `findings.json` gains a `status` field.
+   Fix the representations before writing the checks. The pattern criterion 2 established is the one
+   to copy: **hand-check precision across the corpus before wiring anything to an exit code** — that
+   pass is what revealed two of the three originally-named artifact types do not occur at all.
 4. **Correct the shelf** — the machinery-exercising runs are private, the toy is public.
 
 **Deliberately not next:** a per-piece conformance audit. It produces a gap list, and a gap list gets
