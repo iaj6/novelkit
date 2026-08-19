@@ -11,6 +11,7 @@ import { runRevisePlan } from "./phases/revise-plan.js";
 import { runReviseApply } from "./phases/revise-apply.js";
 import { DEFAULT_LENSES } from "./coldread/lenses.js";
 import { SEVERITIES, type Severity } from "./findings.js";
+import { checkProductionArtifacts, formatArtifactFindings } from "./artifacts.js";
 import * as c from "./ansi.js";
 
 function usage(): never {
@@ -31,13 +32,32 @@ function usage(): never {
     where <name> is one of: ${ALL_PHASE_NAMES.join(", ")}
     (\`editor\` runs continuity, pacing, and voice passes in sequence)
   cdk status <dir>                          show output files and completed-task state
-  cdk publish <dir>                         mark book as public (visible on the deployed site)
+  cdk publish <dir> [--force]               mark book as public; refuses if build machinery
+                                            leaked into the shipped copy (--force overrides)
   cdk unpublish <dir>                       mark book as private (hidden from the deployed site)
 `);
   process.exit(1);
 }
 
-async function cmdPublish(target: string, visibility: Visibility) {
+async function cmdPublish(target: string, visibility: Visibility, opts: { force?: boolean } = {}) {
+  // SHIP GATE. Only on the way OUT — unpublishing is always allowed, and a run may finish dirty.
+  // Deterministic and taste-free: every finding is text that is unambiguously not prose. See
+  // artifacts.ts for why this is not a quality score and why duplicated scenes are excluded.
+  if (visibility === "public") {
+    const findings = await checkProductionArtifacts(target);
+    if (findings.length > 0) {
+      console.error(c.red(`refusing to publish: ${findings.length} production artifact(s) in the shipped copy`));
+      console.error(formatArtifactFindings(findings));
+      console.error(
+        c.dim("\nthese are build machinery in the reader's copy, not prose. rebuild with\n" +
+              "  press/concat_chapters.sh <book> && press/md_to_html.sh <book>\n" +
+              "then re-run publish. --force overrides.")
+      );
+      if (!opts.force) process.exitCode = 1;
+      if (!opts.force) return;
+      console.error(c.yellow("--force: publishing anyway"));
+    }
+  }
   const result = await setVisibility(target, visibility);
   const verb = result === "public" ? "published" : "unpublished";
   const tag = result === "public" ? c.green("public") : c.dim("private");
@@ -233,7 +253,7 @@ async function main() {
   } else if (cmd === "publish") {
     const target = positional[0];
     if (!target) usage();
-    await cmdPublish(path.resolve(target), "public");
+    await cmdPublish(path.resolve(target), "public", { force: flags.includes("--force") });
   } else if (cmd === "unpublish") {
     const target = positional[0];
     if (!target) usage();

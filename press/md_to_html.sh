@@ -35,8 +35,13 @@ if [[ -f "$cover_src" ]]; then
 fi
 
 note "building HTML: $out"
+# --strip-comments: the concat step emits `<!-- source: draft/NN-slug.md -->` per chapter because
+# prepare_tts.py splits on those markers. The reader-facing HTML has no such need, so the machinery
+# is dropped here rather than shipped. Until 2026-08 these comments carried ABSOLUTE paths and put
+# an author's home directory into 178 places on the deployed site.
 pandoc "$in" \
   --standalone \
+  --strip-comments \
   --template "$template" \
   --lua-filter "$filter" \
   --toc \

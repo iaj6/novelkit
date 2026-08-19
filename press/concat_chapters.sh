@@ -54,7 +54,12 @@ concat_one() {
         source_file="$revision_dir/$basename"
         revisions_used=$((revisions_used + 1))
       fi
-      echo "<!-- source: $source_file -->"
+      # Emit a PROJECT-RELATIVE path. This marker is load-bearing — prepare_tts.py splits chapters
+      # on it (`^<!--\s*source:\s*.*?/(\d{2})[-_](.+?)\.md\s*-->$`) — so it cannot simply be dropped.
+      # But the absolute form leaked an author's home directory into 356 places across all 11
+      # published books, in manuscript.md AND the deployed site HTML. A relative path keeps the
+      # marker parseable and carries the same provenance without the leak.
+      echo "<!-- source: ${source_file#"$book_root"/} -->"
       echo
       cat "$source_file"
       echo
