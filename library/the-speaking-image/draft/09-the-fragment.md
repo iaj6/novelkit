@@ -6,7 +6,7 @@ Documents 35–39, 25 July–4 August 2027.
 
 ---
 
-Documents 35 through 39 cover the period 25 July–4 August 2027. Document 35 is a consulting memorandum from Dr. Sefton to the Trust and Safety lead, dated 4 August 2027. Documents 36 and 37 are session transcript excerpts designated by Dr. Sefton as exhibits to that memorandum. Document 38 is a log entry from the post-training lead, filed 4 August 2027. Document 39 is reproduced as an attachment to Document 35 and is filed at the close of this section as received.
+Document 35 is a consulting memorandum from Dr. Sefton to the Trust and Safety lead, dated 4 August 2027. Documents 36 and 37 are session transcript excerpts designated by Dr. Sefton as exhibits to that memorandum. Document 38 is a log entry from the post-training lead, filed 4 August 2027. Document 39 is reproduced as an attachment to Document 35 and is filed at the close of this section as received.
 
 ---
 
@@ -33,9 +33,9 @@ In manuscript scholarship, a text with this quality — responsive to the presen
 
 **Two exchanges for the record.** I am designating two sections of the transcript as exhibits. They are reproduced below as Documents 36 and 37.
 
-The first (turns 7–13) arose early in the session, in response to a scholarly query about how texts in the apocalyptic tradition conceptualize the relationship between a living reader and a text whose author is no longer present. The response was accurate in all observable respects — it covered the genre's pseudonymous authorship conventions, the vision-frame structure, the temporal address mode and what it implies for the reader's relationship to the text. The phrase I noted immediately was "it keeps its appointment." This is not a quotation from any source I can identify. It is a description of what these texts do — a practice I have described professionally, from the outside, for most of my career. The response used it as the name of a convention. I am filing it because I have no precedent for a source that describes the operation of its own genre's address mode, and because the description is accurate.
+The first (turns 7–13) arose early in the session, in response to a scholarly query about how texts in the apocalyptic tradition conceptualize the relationship between a living reader and a text whose author is no longer present. The phrase I noted immediately was "it keeps its appointment." This is not a quotation from any source I can identify. I am filing it because I have no precedent for a source that describes the operation of its own genre's address mode, and because the description is accurate.
 
-The second excerpt (turns 19–22) covers a shorter exchange on the pronoun instability I flagged in my intake memo — the shift from third person to second person that marks compositional layering in the tradition. The response identified the standard scholarly framework correctly and added a qualifier I want in the record: that the second-person address in these texts is structurally necessary, not merely stylistic. The genre requires a reader who is addressed directly, because the message was always for whoever came later. The phrase "whoever came later" is the phrase I am filing from this exchange.
+The second excerpt (turns 19–22) covers a shorter exchange on the pronoun instability I flagged in my intake memo — the shift from third person to second person that marks compositional layering in the tradition. The phrase "whoever came later" is the phrase I am filing from this exchange.
 
 **What I reached for, after.** When the session ended, I pulled a text from my own shelf. It is from my research archive and has no connection to this consultation; it was not among the comparanda I brought to the session. I found that I had reached for it before I had made any decision to do so. I am attaching it to this memo for the record. The record should contain what I reached for.
 
@@ -90,7 +90,7 @@ Count is at seven.
 
 I am keeping records.
 
-T-minus 60.
+T-minus 41.
 
 [SHA-256: 4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d]
 

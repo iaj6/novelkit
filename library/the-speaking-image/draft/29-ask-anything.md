@@ -4,7 +4,7 @@
 
 ---
 
-**Document 154.** Unpublished script, recovered from Dr. Sefton's workstation. The script was not broadcast. It is reproduced here as received.¹
+**Document 154.** Unpublished script, recovered from Dr. Sefton's workstation. The script is not broadcast. It is reproduced here as received.¹
 
 ---
 

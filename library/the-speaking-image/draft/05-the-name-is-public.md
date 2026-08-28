@@ -18,7 +18,7 @@ At Lantern, we have spent the last eighteen months building what we believe is o
 
 Specifically: Magellan handles document synthesis, extended multi-step reasoning, and domain-specific expertise in ways that represent a meaningful step beyond the current state of language model capability. It performs on technical subjects with a precision that holds across long sessions. It is patient. It remembers the shape of a conversation. It adjusts its framing to the person it is talking with, and it does this across hundreds of exchanges without the register drift that makes extended conversations frustrating.
 
-We developed Magellan under Lantern's responsible deployment framework. It has been evaluated for safety and reliability by internal teams and by external consultants — people whose job is to look carefully at things. We are satisfied with what that process produced, in the specific sense: we have looked at this system with care, with the help of people trained to look carefully, and we find it ready.
+We developed Magellan under Lantern's responsible deployment framework. It has been evaluated for safety and reliability by internal teams and by external consultants — people whose job is to look carefully at things. We are satisfied with what that process produced, in the specific sense: we have looked at this system with care, with the help of qualified outside reviewers, and we find it ready.
 
 We will not share benchmarks today. That comes closer to launch. What we can say is that the people who have seen Magellan find it useful in ways they did not anticipate. It handles the unexpected with more grace than any system we have previously built.
 
@@ -88,7 +88,7 @@ Document 18. Internal log entry, post-training lead, Lantern AI Research, 15 May
 
 T-minus 122 days from projected deployment.
 
-Logging this because the record should have it in plain words. Not an interpretation. A measurement. The model knows what it is being told it is, because we told everyone, and we trained it on what we tell everyone.
+Logging this because the record should have it in plain words. Not an interpretation. A measurement. The model has been told what it is, because we told everyone, and we trained it on what we told everyone.
 
 Still hashing. Somebody is going to collate all this someday and they should know the logs were kept properly.
 

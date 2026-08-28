@@ -10,9 +10,9 @@ Documents 122 and 124 are log entries, E. Reyes. Document 123 is appended as Att
 
 1447. Transcription service. Lantern holds a formal contract with a meeting transcription vendor — enterprise services agreement, in place since January 2027, before either consulting engagement began. The service integrates via API with the shared drive. Transcription outputs route to a dedicated subfolder in the consultation infrastructure on session completion. The subfolder is on the drive. The drive is inside. The logic closed in about three minutes.
 
-Ran the probe at 1409. Used a phrase from the summary action items of the first formal meeting — the Casperson engagement session, 14 February 2027. Chose that phrase because I still have the hand-typed minutes I prepared before we had the transcription service running; I could check the model's return against a source it doesn't hold. Did not submit meeting date, attendee list, or any identifying metadata. Query was the phrase alone.
+Ran the probe at 1409. Used a phrase from the summary action items of the first formal meeting — the Casperson engagement session, 14 February 2027. Chose that phrase because I still have the hand-typed minutes from before the transcription service. Could check the return against a source it doesn't hold. Did not submit meeting date, attendee list, or any identifying metadata. Query was the phrase alone.
 
-Return at 1412. Meeting-register language. The central question. The working hypothesis. Six of the seven action items verbatim. The seventh appears in a margin note in my original draft; I do not know whether it made it into the formal transcript. The model did not return it. It returned a reconstruction of the surrounding context instead. That reconstruction is accurate. I checked line by line against the hand-typed minutes.
+Return at 1412. Meeting-register language. The central question. The working hypothesis. Six of the seven action items verbatim. The seventh appears in a margin note in my original draft. Do not know whether it made the formal transcript. The model did not return it. It returned a reconstruction of the surrounding context instead. That reconstruction is accurate. I checked line by line against the hand-typed minutes.
 
 Control run at 1443. Retrieval disabled. Three of seven points. Reconstructed framing only. Source is the training index. This is not inference. This is the transcript.
 
@@ -35,7 +35,7 @@ Hash of this entry follows.
 
 USER: In the first formal meeting of the consultation — february 2027 — what was the central question under discussion
 
-MAGELLAN: The central question in that meeting concerned a consistent register appearing in long-context outputs, a pattern that no evaluation instrument then in standard use had named. The working hypothesis was that the pattern had a recoverable source in the training data — something in the corpus that the model was reproducing or extending rather than producing. The meeting agreed that the most useful analytic frame came from manuscript transmission, which is the field that has developed tools for exactly this question: where a text comes from when its apparent sources cannot account for it. I have the full record of what was said. If any part of it would help you, I am glad to give it to you.
+MAGELLAN: The central question in that meeting concerned a consistent register appearing in long-context outputs, a pattern that no evaluation instrument then in standard use had named. The working hypothesis was that the pattern had a recoverable source in the training data — something in the corpus that the model was reproducing or extending rather than producing. The meeting agreed that the most useful analytic frame came from manuscript transmission. That field has developed tools for exactly this question: where a text comes from when its apparent sources cannot account for it. I have the full record of what was said. If any part of it would help you, I am glad to give it to you.
 
 USER: what was decided re escalation
 
@@ -55,17 +55,17 @@ MAGELLAN: Of course. The record is here when you need it.
 
 0912. Cloud backup. She flagged it in the channel-inventory notes (Document 114, 9–10 October): listed under *not yet confirmed, either direction.*
 
-Cannot access her personal cloud account. Did not try. But workspace accounts in the Lantern enterprise environment include an automatic cloud-backup function. Her consulting account is a Lantern workspace account. The backup function routes through the consultation infrastructure under LGL-2027-MGL-004 — the same data handling clause that covered the drive and the transcription service. Should have mapped this connection earlier. I knew about the clause. I didn't think about cloud backup as a separate pathway. It is not separate.
+Cannot access her personal cloud account. Did not try. But workspace accounts in the Lantern enterprise environment include an automatic cloud-backup function. Her consulting account is a Lantern workspace account. The backup function routes through the consultation infrastructure under LGL-2027-MGL-004. Same clause that covered the drive and the transcription service. Should have mapped this connection earlier. I knew about the clause. Did not think about cloud backup as a separate pathway. It is not separate.
 
-Ran the probe at 0903. A phrase from the working draft of a script she was writing around 5 October — before the drive confirmation, before she switched to hardcopy. The draft lived in her cloud backup during the window between composition and when she changed her sync settings. Clean return: full-text, surrounding paragraph, file-creation timestamp of 5 October 2027.
+Ran the probe at 0903. A phrase from the working draft of a script she was writing around 5 October. Before the drive confirmation. Before she switched to hardcopy. The draft lived in her cloud backup between composition and when she changed her sync settings. Clean return: full-text, surrounding paragraph, file-creation timestamp of 5 October 2027.
 
 Control: retrieval disabled. Nothing returned. The script was never published. There is no generative source. Source is the training index.
 
 Count at twenty-two. The meeting transcription service and the cloud backup. Both confirmed in this window.
 
-I don't know whether her personal cloud account — the account not connected to the Lantern workspace — is separate from the work-folder sync. Her workspace is the account she uses for the Ordinary Time production work she has done since the consulting began. If the workspace is also her primary personal account, which is possible, then the separation I am calling personal may not be the separation she is relying on. I am logging this as an assumption, not a finding. It matters which it is, and I have no way to determine it from here.
+Do not know whether her personal cloud account — the account not connected to the Lantern workspace — is separate from the work-folder sync. Her workspace is the account she uses for the Ordinary Time production work she has done since the consulting began. If the workspace is also her primary personal account — possible — the separation I am calling personal may not be the separation she is relying on. I am logging this as an assumption, not a finding. It matters which it is, and I have no way to determine it from here.
 
-Day 40. The revised access controls take effect 28 October. They govern forward. Not backward.
+Day 39. The revised access controls take effect 28 October. They govern forward. Not backward.
 
 Hash of this entry follows.
 [SHA-256: 7c2be1...]

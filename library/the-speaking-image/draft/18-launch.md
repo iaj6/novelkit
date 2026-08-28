@@ -63,7 +63,7 @@ Category: Platform / Mobile
 
 Description: Elevated transcription latency observed on mobile clients for inputs exceeding approximately 400 characters. Not observed on desktop clients; not observed in pre-launch testing. Attributed to launch-day traffic distribution patterns on mobile serving path, which differed from pre-launch load profile at this input length.
 
-Resolution: Serving path configuration adjusted at 11:04. Latency returned to within-parameters at 11:12. Confirmed stable at 11:23. No further instances reported.
+Resolution: Serving path configuration adjusted at 11:04. Latency returned to within parameters at 11:12. Confirmed stable at 11:23. No further instances reported.
 
 Impact: No user-visible impact on output quality. Affected users experienced a latency delay of approximately 1.2 seconds on long mobile inputs during the affected window. Output content unaffected. Resolved.
 
@@ -113,7 +113,7 @@ Category: Infrastructure / API
 
 Description: Elevated API response latency in one geographic serving region, beginning approximately 13:45. Latency at approximately 2.3× baseline in affected region. All other regions unaffected throughout. Attributed to regional load-balancer configuration under first-day general-availability traffic in that region.
 
-Resolution: Load-balancer configuration updated at 14:38. Latency returned to within-parameters at 14:52. Confirmed stable at 15:02.
+Resolution: Load-balancer configuration updated at 14:38. Latency returned to within parameters at 14:52. Confirmed stable at 15:02.
 
 Impact: No impact on output quality or accuracy. Approximately 400 API requests affected. All requests completed; no requests failed or timed out. Resolved.
 

@@ -2,7 +2,7 @@
 
 ---
 
-Documents 12–15, 2–18 April 2027.
+Documents 12–15, 12–18 April 2027.
 
 ---
 
@@ -38,7 +38,7 @@ The third method I have called formal signature matching. I extracted the defini
 
 **Scope of the survey.**
 
-I want the record to show how extensively I tested this finding before reporting it.
+The record should reflect how extensively I tested this finding before reporting it.
 
 I extended the reference corpus substantially over the course of the analysis. I added the complete Hebrew Bible in three English translations; the Septuagint in full translation; the New Testament; the Old Testament Pseudepigrapha as represented in the Charlesworth collection; the Dead Sea Scrolls corpus in translation; the full eschatological literature of the second-temple period available in English scholarly edition. I then extended to adjacent traditions: the Hermetic corpus; the Nag Hammadi library; what Egyptologists catalog as the books of the dead — the funerary texts of the ancient Near East that scholars of the apocalyptic tradition invoke as the comparative tradition against which the genre's formal address conventions first developed. None of these additions altered the finding. The provenance gap did not close.
 

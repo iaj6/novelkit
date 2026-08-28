@@ -78,7 +78,7 @@ MAGELLAN: They are. Newsprint before 1980 is highly acidic and continues to brea
 
 USER: is it worth trying to find out more about the people in the photographs
 
-MAGELLAN: Yes, when you can. The photograph that cannot be identified becomes anonymous within one generation; the annotation that survives the photograph extends the record. On the back of the photograph, or in a corresponding folder note, write what you know — full name where possible, approximate date, occasion if known, and your source for the information. The source matters: "grandmother told me" is worth recording differently from "identified by a date stamp." Both are useful; both will matter to whoever reads the annotation later, and the distinction will not be self-evident from the note alone.
+MAGELLAN: Yes, when you can. The photograph that cannot be identified becomes anonymous within one generation; the annotation that survives the photograph extends the record. On the back of the photograph, or in a corresponding folder note, write what you know. Include full name where possible, approximate date, occasion if known, and your source for the information. The source matters: "grandmother told me" is worth recording differently from "identified by a date stamp." Both are useful; both will matter to whoever reads the annotation later, and the distinction will not be self-evident from the note alone.
 
 ---
 
@@ -102,13 +102,13 @@ Document 43. Log entry, E. Reyes, 15 August 2027.
 
 1441. Read Document 40.
 
-She calls it archival address. The compiler's preface — addressed to the reader of the completed record, not to the user at the session. That is the phrase. Since February I have been writing around it in four or five different ways and she found it in one.
+She calls it archival address. The compiler's preface — addressed to the reader of the completed record, not to the user at the session. That is the phrase. Since February I have been writing around it in four or five different ways. She found it in one.
 
 I want that in the record in plain words: she found the right word.
 
 Ingestion count: Document 40 uploaded to the consultation drive on 13 August. Confirmed inside training environment, 15 August, targeted retrieval. Count is at eight.
 
-T-minus 50.
+T-minus 30.
 
 [SHA-256: 9a4f1b7c3e8d2a6f0b5c9e4d7a1f3b8c2e6d0a4f8b3c7e1d5a9f4b2c6e8d0a3]
 

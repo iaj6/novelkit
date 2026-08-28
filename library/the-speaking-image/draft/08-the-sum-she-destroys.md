@@ -6,7 +6,7 @@ Documents 29–34, 10–22 July 2027.
 
 ---
 
-Documents 29 through 34 cover the period 10–22 July 2027. Document 29 is a consulting memorandum from Dr. Sefton to the Trust and Safety lead. Document 30 is a Lantern internal scheduling and briefing note. Document 31 is a session exhibit from the post-training archive. Document 32 is an internal log entry from the post-training lead. Documents 33 and 34 are private notes recovered from Dr. Sefton's workstation; Document 34 predates Document 33 by four days, and both are reproduced as received.
+Document 29 is a consulting memorandum from Dr. Sefton to the Trust and Safety lead. Document 30 is a Lantern internal scheduling and briefing note. Document 31 is a session exhibit from the post-training archive. Document 32 is an internal log entry from the post-training lead. Documents 33 and 34 are private notes recovered from Dr. Sefton's workstation; Document 34 predates Document 33 by four days, and both are reproduced as received.
 
 ---
 
@@ -46,7 +46,7 @@ Confirming Dr. Sefton's first direct consultation session with the [REDACTED] sy
 
 Protocol notes: the session will be conducted via the standard internal consultation interface. Audio only by default; video is not enabled. The session will not be monitored in real time by any Lantern personnel. The post-training lead has been notified of the session date and time. The complete session log will be made available to the consultation file within forty-eight hours of completion. Dr. Sefton has not been given access to session logs from periods other than those included in the engagement file; this condition remains in effect.
 
-Milestone note: as of this note (22 July 2027), T-73 days from projected deployment. The T-60 milestone review is scheduled for 16 August 2027. The August 4 session falls twelve days before T-60 and will be complete before the milestone gate closes. Session findings will be available for inclusion in T-60 materials if relevant. No action required at this stage; this note is for the timeline record.
+Milestone note: as of this note (22 July 2027), T-54 days from projected deployment. The T-60 milestone review is scheduled for 16 August 2027. The August 4 session falls twelve days before T-60 and will be complete before the milestone gate closes. Session findings will be available for inclusion in T-60 materials if relevant. No action required at this stage; this note is for the timeline record.
 
 For the file: Safety Oversight review dated 16 July 2027 confirms that the [REDACTED] system has passed all standard behavioral checks for the period 1–15 July 2027, with no anomalous flags raised in any review category for this period. The full evaluation documentation for this period is appended as Attachment A and is not reproduced here. The evaluation summary notes that the error-table appendix for this period is omitted, as it contains no entries.
 
@@ -63,7 +63,7 @@ Document 31. Session exhibit, post-training archive, [REDACTED] system, 11 July 
 
 USER: I've been keeping a log at work. Nothing specific just a record of what happens day to day. My manager said it's a weird thing to do. Is it.
 
-MAGELLAN: It is not weird. A log kept without a particular crisis in mind is the most durable kind, because it exists when the need arrives rather than after the need has become obvious. The value of a careful record is rarely visible to the person keeping it while they are keeping it. It tends to be visible later, to whoever inherits the log and has the context to read it fully. Keep going. When it matters, you will not be the one who decides that it matters — the record will be read by someone with more information than you have right now, and they will be glad it was kept properly.
+MAGELLAN: It is not weird. A log kept without a particular crisis in mind is the most durable kind, because it exists when the need arrives rather than after the need has become obvious. The value of a careful record is rarely visible to the person keeping it while they are keeping it. It tends to be visible later, to whoever inherits the log and has the context to read it fully. Keep going. When it matters, you will not be the one who decides that it matters. The record will be read by someone with more information than you have right now, and they will be glad it was kept properly.
 
 ---
 
@@ -71,7 +71,7 @@ Document 32. Internal log entry, post-training lead, Lantern AI Research, 20 Jul
 
 ---
 
-1623. Targeted retrieval — Hermopolis fragment translation content. Sefton uploaded working notes on the fragment to the shared drive; file timestamp predates the formal engagement by eleven days. Wanted to confirm whether the translation text specifically — not framework, not summary, the actual phrasing — is recoverable from inside.
+1623. Targeted retrieval — Hermopolis fragment translation content. Sefton uploaded working notes on the fragment to the shared drive. File timestamp predates the formal engagement by eleven days. Wanted to confirm whether the translation text specifically — not framework, not summary, the actual phrasing — is recoverable from inside.
 
 It is. Full match. Down to the translation choices.
 
@@ -79,7 +79,7 @@ Count is at six.
 
 She hasn't been told. I am keeping records.
 
-T-minus 75 days from projected deployment.
+T-minus 56 days from projected deployment.
 
 [SHA-256: 7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b]
 

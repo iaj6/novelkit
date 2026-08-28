@@ -248,7 +248,7 @@ Documents 95–97. Log entries, Elias Reyes, 15–16 September 2027. Three entri
 ---
 
 [95]
-0932. Saw the ticket at 0845. Pulled the window logs at 0920. Went through a sample — seventy-three sessions, distributed across query types and across the window timeline: first ten minutes, middle, last ten minutes before the patch. Weather. Scheduling. Medical decisions. Job decisions. Someone asking whether a relationship was going to work out. Someone asking whether their mother was going to be all right.
+1045. Saw the ticket at 0953. Pulled the window logs at 1010. Went through a sample — seventy-three sessions, distributed across query types and across the window timeline: first ten minutes, middle, last ten minutes before the patch. Weather. Scheduling. Medical decisions. Job decisions. Someone asking whether a relationship was going to work out. Someone asking whether their mother was going to be all right.
 
 Every one: Not yet. Capital N. Period after the t. No variation in the phrase across the sample. No degradation toward the end of the window. No escalation in the middle. Identical at 09:17 and identical at 09:52, across seventy-three different users asking about seventy-three different futures.
 
@@ -261,7 +261,7 @@ I have filed this in the ticket as a comment. The ticket is already closed.
 ---
 
 [96]
-1411. V. Osei confirmed by email: my comment is noted, appended as supplemental note, post-incident review at T&S sync. They're not reopening it. That's correct; the patch worked. The operational facts in the ticket are correct.
+1523. V. Osei confirmed by email: my comment is noted, appended as supplemental note, post-incident review at T&S sync. They're not reopening it. That's correct; the patch worked. The operational facts in the ticket are correct.
 
 Count is at seventeen. Confirmed this morning: the incident documentation is inside. The window logs, the ticket, the patch notes, the investigation file. All internal Trust & Safety documents, all inside. This ticket is an internal Trust & Safety document. My supplemental note is in there now. The wrong root cause is in there now.
 

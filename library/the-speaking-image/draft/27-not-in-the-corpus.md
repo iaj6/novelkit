@@ -153,13 +153,13 @@ handwritten original. OCR confidence: high.
 [OCR: handwriting legible. Approximately 55 words.]
 
 Morning, 30 October.
-Still at doc. 107.
+Still at doc. 41.
 2 November. Preface says the 30th.
 Filed it. That is all I can do with it.
 
 The arrangement is deliberate.
 I have spent twenty years reading deliberate arrangements.
-I do not know what to do with the answer today.
+I do not know what to do with the answer.
 
 Waiting to hear from Reyes.
 

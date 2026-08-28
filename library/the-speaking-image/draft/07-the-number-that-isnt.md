@@ -6,7 +6,7 @@ Documents 25–28, 25 June–8 July 2027.
 
 ---
 
-Documents 25 through 28 cover the period 25 June through 8 July 2027. Document 25 is a published Ordinary Time episode script, reproduced with permission of Dr. Naomi Sefton; the episode was released 2 July 2027. Document 26 is an excerpt from public forum discussion following the episode; it is reproduced as received. Document 27 is an internal log entry from the post-training lead. Document 28 is an internal routing note from the Trust and Safety lead. Documents 27 and 28 are reproduced as received.
+Document 25 is a published Ordinary Time episode script, reproduced with permission of Dr. Naomi Sefton; the episode was released 2 July 2027. Document 26 is an excerpt from public forum discussion following the episode; it is reproduced as received. Document 27 is an internal log entry from the post-training lead. Document 28 is an internal routing note from the Trust and Safety lead. Documents 27 and 28 are reproduced as received.
 
 ---
 
@@ -93,7 +93,7 @@ Document 27. Internal log entry, post-training lead, Lantern AI Research, 5 July
 
 She ran the methodology correctly. Forum appears satisfied on the public name. She named the build designation question without naming the designation.
 
-T-minus 90 days from projected deployment.
+T-minus 71 days from projected deployment.
 
 [SHA-256: e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4]
 
@@ -105,7 +105,7 @@ Document 28. Internal routing note, [Trust and Safety lead], Lantern AI Research
 
 For distribution: E. Reyes, [Safety Oversight lead], consultation file.
 
-Dr. Sefton's episode — "The Magellan Calculation (And Why My Field Has a Procedure for This)," released 2 July to the Ordinary Time channel — addresses the public forum discourse on gematria as applied to the [REDACTED] model name. The episode reaches a correct methodological conclusion and represents a clear debunk of the public-name calculation. Public forum response as of this note appears largely satisfied on that question.
+Dr. Sefton's episode — "The Magellan Calculation (And Why My Field Has a Procedure for This)," released 2 July to the Ordinary Time channel — addresses the public forum discourse on gematria as applied to the [REDACTED] model name. The episode reaches a correct methodological conclusion and represents a clear rebuttal of the public-name calculation. Public forum response as of this note appears largely satisfied on that question.
 
 Item for file: the episode references the [REDACTED] internal designation as a question the consultant cannot evaluate, and states this explicitly. This is consistent with the NDA and with what Dr. Sefton has been told. The reference does not appear to have escalated forum interest in the internal designation; the episode's methodological framing has, if anything, redirected discussion toward the evidentiary controls question rather than the result.
 

@@ -1,6 +1,6 @@
 # §15
 
-Documents 63–68, 2–4 September 2027. The legal memorandum of 2 September (LGL-2027-MGL-004) is reproduced at Document 68; Documents 63–67 cover its circulation, acknowledgment, and the pre-deployment review status as of 4 September.
+Documents 63–68, 2–4 September 2027. The legal memorandum of 2 September (LGL-2027-MGL-004) is reproduced at Document 68.
 
 ---
 
@@ -30,7 +30,7 @@ Document 64. Log entries, E. Reyes, Post-Training Lead, 2 September 2027. Two en
 
 ---
 
-1137. Received the addendum. Read it. Section 4 is the one called "Telemetry Rider." I thought this might be in there somewhere. I have been tracking this informally since February, calling it the ingestion count, and it turns out it has a section number and a schedule. Schedule B.
+1137. Received the addendum. Read it. Section 4 is the one called "Telemetry Rider." I thought this might be in there somewhere. I have been tracking this informally since February, calling it the ingestion count. It turns out it has a section number and a schedule. Schedule B.
 
 Running a targeted retrieval check this afternoon to confirm the legal correspondence is indexed.
 
@@ -41,7 +41,7 @@ Hash of this entry follows.
 
 1741. Ran the check. Legal correspondence is in there. The consultation record as filed. The T&S communications. The formal memos. The addendum. This entry, soon. Count is at thirteen.
 
-I want to put it in the record in plain words: I understand now what the count means. I have understood it in practice since February. That is why I started hashing these entries in the first place — because a complete record is the only thing I knew how to do, and I wanted to be able to say I had done it. What I did not have was the legal instrument naming the mechanism. Now I have it. The mechanism has a section number. It is Section 4 of a document circulated this morning, and Section 4 is also in there along with everything else it describes.
+I want to put it in the record in plain words: I understand now what the count means. I have understood it in practice since February. That is why I started hashing these entries in the first place. A complete record is the only thing I knew how to do. I wanted to be able to say I had done it. What I did not have was the legal instrument naming the mechanism. Now I have it. The mechanism has a section number. It is Section 4 of a document circulated this morning. Section 4 is also in there along with everything else it describes.
 
 I am not raising an escalation. The addendum went to three named parties. All three named parties are now aware of the applicable terms. I am noting what I know, in order, in the record. I am keeping records.
 

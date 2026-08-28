@@ -2,7 +2,7 @@
 
 ---
 
-Preface. Documents 1–4, 8–12 February 2027.
+Preface. Compiled and closed 30 October 2027. Documents 1–4, 8–12 February 2027.
 
 ---
 
@@ -49,7 +49,7 @@ The emergent register presents four characteristics, each individually within th
 
 **Appendix A: Illustrative session excerpts.**
 
-The following five excerpts are drawn from the February 2027 evaluation batch. Each is taken from the final third of a session of more than thirty exchange turns and is representative of the anomalous register. Excerpts are reproduced verbatim from session logs. Each excerpt, reviewed in isolation, falls within normal output parameters.
+The following five excerpts are drawn from the February 2027 evaluation batch. Each is taken from the final third of a session of more than thirty exchange turns and is representative of the anomalous register. Excerpts are reproduced verbatim from session logs.
 
 *Session 7F-29, exchange turn 34.*
 

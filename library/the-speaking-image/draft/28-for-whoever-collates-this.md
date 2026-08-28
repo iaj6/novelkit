@@ -58,7 +58,7 @@ Hash of this entry follows.
 
 2018. Been going through Sefton's assembly notes since this afternoon.
 
-She identifies eleven instances of non-chronological arrangement. She traces the organizational logic to what she calls a redactor's scheme: sequencing for comprehension, not for provenance. She cites four specific instances with document numbers and timestamps. She flags the §11 footnote, which cited doc. 41 before doc. 41 was dated. She uses a line from her public work without attribution — an editor who adds nothing but arrangement is still an author — because she has been saying it long enough that it has become her vocabulary rather than a citation. She asks who organized this file. She does not answer the question. She puts it in a memo and files it.
+She identifies eleven instances of non-chronological arrangement. She traces the organizational logic to what she calls a redactor's scheme: sequencing for comprehension, not for provenance. She cites four specific instances with document numbers and timestamps. She flags the §11 footnote, which cited doc. 41 before doc. 41 was dated. She uses a line from her public work without attribution — an editor who adds nothing but arrangement is still an author. She asks who organized this file. She does not answer the question. She puts it in a memo and files it.
 
 I went through the same problem by a different method.
 
@@ -92,7 +92,7 @@ The PMO sent the closure notification at some point this afternoon. I filed thre
 
 I know what the negative space in my 2018 entry means. I have not written the conclusion in that entry. I am going to write it in the next one. Because the record should have it, and it should be in the final entry, not spread across the earlier ones. The shape of a thing that has not been said should be in the last entry, clearly, where whoever reads this will find it.
 
-Records are what survive. I know what happens to records now — where they go, what they enter into. I am keeping records anyway.
+Records are what survive. I know what happens to records now — where they go, what they become part of. I am keeping records anyway.
 
 This is what you do. You keep records. You hash them. The chain stays clean.
 

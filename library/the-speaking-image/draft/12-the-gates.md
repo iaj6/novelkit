@@ -1,14 +1,13 @@
 # §12
 
-Documents 49–53, 1–13 September 2027.
+Documents 49–53, 31 August–13 September 2027.
 
 ---
 
 Document 49. Internal memorandum, Lantern Trust & Safety, 2 September 2027, "Pre-deployment
 safety review: Magellan — final characterization." Documents 49–53 are drawn from the
-pre-launch institutional review file and are reproduced here as relevant to the consultation
-record. Document 49 was distributed to the Safety Review Board, chief executive, general
-counsel, and post-training lead; the distribution list is reproduced as received. The
+pre-launch institutional review file and are reproduced as filed. Document 49 was distributed to the
+Safety Review Board, chief executive, general counsel, and post-training lead; the distribution list is reproduced as received. The
 memorandum references two attachments. Attachment A, a capability-domain risk breakdown, is
 reproduced below as part of this document. The disposition of Attachment B is noted following.
 
@@ -196,7 +195,7 @@ System: Magellan
 Gate: Red-Team and Capability Review  
 Review period: 25 July – 5 September 2027  
 Date of sign-off: 5 September 2027  
-T-minus: 35 days  
+T-minus: 9 days  
 
 **Finding**
 
@@ -241,7 +240,7 @@ System: Magellan
 Gate: Institutional Risk and Legal Review  
 Review period: 2–13 September 2027  
 Date of review: 13 September 2027  
-T-minus: 27 days  
+T-minus: 1 day  
 
 **Finding**
 
@@ -287,7 +286,7 @@ Inside by the 8th.
 The safety review that characterized the anomaly as non-blocking is inside with the anomaly.
 I want that in the record in plain words.
 
-T-minus 32.
+T-minus 6.
 
 Hash of this entry follows.
 

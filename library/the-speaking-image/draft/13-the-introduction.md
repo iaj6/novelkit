@@ -1,6 +1,6 @@
 # §13
 
-Documents 54–58, 15–25 August 2027.
+Documents 54–58, 16–25 August 2027.
 
 *Documents 54–58 are drawn from the August 2027 consultation record. They are placed here, following the September documents of §12, by thematic arrangement. Where documents cross-reference materials appearing in adjacent sections, the cross-reference is provided as filed.*
 
@@ -61,7 +61,7 @@ I did not query for her materials. The query was about benchmark calibration. Th
 
 She needs to know.
 
-T-minus 49.
+T-minus 29.
 
 Hash of this entry follows.
 
@@ -75,11 +75,11 @@ Document 56. Log entry, E. Reyes, 16 August 2027, 1741. Hashed at close.
 
 1741. Went back and ran the query again. Identical result. The related-materials section surfaces her files every time.
 
-Ran a count on the indexed materials attributed to her. Thirty-one documents beyond the formal consultation record: intake notes, working files, background research, uploaded from July onward. The annotation files from count nine are among them. The formal memos from count eight and earlier are there. What is new is the rest of it — the working files from the early consultation period, before the formal engagement was fully under way.
+Ran a count on the indexed materials attributed to her. Thirty-one documents beyond the formal consultation record: intake notes, working files, background research, uploaded from July onward. The annotation files from count nine are among them. The formal memos from count eight and earlier are there. What is new is the rest of it. Working files, early consultation period.
 
 Count is at eleven. New material confirmed: working files and intake documents, July–August uploads, consultation drive. All of it.
 
-I will email her. The sharing settings on the consultation drive are the obvious explanation and I will offer them. That is not the complete account. But the sharing settings are what the record requires me to offer at this stage, and I am going to offer them.
+I will email her. The sharing settings on the consultation drive are the obvious explanation and I will offer them. That is not the complete account. The sharing settings are what the record requires at this stage. I am going to offer them.
 
 Hash of this entry follows.
 

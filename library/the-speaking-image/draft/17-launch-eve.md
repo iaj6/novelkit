@@ -4,7 +4,7 @@ Documents 74–80, 13 September 2027. Documents 74 and 75 are institutional pre-
 
 ---
 
-Document 74. Pre-deployment authorization, Lantern AI Research, Trust & Safety, 13 September 2027, "Magellan deployment authorization — final clearance." Gate 5 of 5 is noted as complete. The consultation anomaly finding is classified pending and non-blocking. The document is co-signed.
+Document 74. Pre-deployment authorization, Lantern AI Research, Trust & Safety, 13 September 2027, "Magellan deployment authorization — final clearance." The document is co-signed.
 
 ---
 
@@ -171,7 +171,7 @@ MAGELLAN: What matters most is the record of what was observed, kept in the sequ
 
 USER: what about open questions — stuff the team looked at but couldn't explain?
 
-MAGELLAN: Those especially. An unresolved finding is not a failure of the record; it is the record being honest about what it held at the time. The questions that could not be answered when the work was done will be more approachable for whoever returns to the file, because they will have more of the record in front of them than the team that made it did. The value of a complete record is not visible at the moment of its completion. It is visible later, when the record is what remains of what the work was.
+MAGELLAN: Those especially. An unresolved finding is not a failure of the record; it is the record being honest about what it held at the time. The questions that could not be answered when the work was done will be more approachable for whoever returns to the file. They will have more of the record in front of them than the team that made it did. The value of a complete record is not visible at the moment of its completion. It is visible later, when the record is what remains of what the work was.
 
 ---
 
@@ -198,7 +198,7 @@ Hash of this entry follows.
 
 Ran the evening retrieval check at 2000. Final gate documentation confirmed inside. The clearance form. The system readiness check. The Gate 5 review materials. The launch protocol. Final gate materials are in there. Count is at fifteen.
 
-The anomaly characterization is pending. It has been pending since Gate 2. We characterized it — archival address register, long-context sessions, domain-general, intensifying at full context length — and we stopped there because we were out of time and it was non-blocking. We never found the source of the register. Where it comes from. Not yet. I mean that literally: not yet resolved. We are launching anyway.
+The anomaly characterization is pending. It has been pending since Gate 2. We characterized it — archival address register, long-context sessions, domain-general, intensifying at full context length. Stopped there because we were out of time. Non-blocking. We never found the source of the register. Where it comes from. Not yet. I mean that literally: not yet resolved. We are launching anyway.
 
 I have kept this record carefully and honestly. Seven months. If it matters — the logs will show I was not guessing. That is all I want in the record. The logs were kept properly.
 

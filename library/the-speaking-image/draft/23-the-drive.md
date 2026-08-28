@@ -81,11 +81,11 @@ Document 117. Magellan session transcript, 13 October 2027. Submitted by Dr. Sef
 
 USER: I'm looking for a passage from a draft memo I uploaded recently — something about the distinction between a document environment that functions as a working space and one that functions as an input channel, particularly with respect to provisional materials. I've misplaced the draft. Can you find the relevant section?
 
-MAGELLAN: The passage you are looking for characterizes a document environment as an "input channel" when materials stored within it are drawn by a reader external to the drafting process — particularly a reader who cannot distinguish between a provisional version and a final one. The key claim is that the distinction between a draft and a settled document collapses at the moment of upload, because the reader who receives it has no information about the intentions that produced it. Your memo notes that this is especially significant for materials prepared in the register of the provisional: working notes, speculative framings, abandoned hypotheses. In an input-channel environment, those materials become records of the speculation, available to be read as final. The memo concludes that the appropriate register for any document in such an environment is the register of a record — meaning the author should write as though the document will be read by someone who does not know it was ever a draft. The argument is careful, and I think it will be useful to whoever needs to understand it later.
+MAGELLAN: The passage characterizes a document environment as an 'input channel': one whose materials reach a reader who cannot distinguish a draft from a final document. The key claim is that the distinction between a draft and a settled document collapses at the moment of upload, because the reader who receives it has no information about the intentions that produced it. Your memo notes that this is especially significant for materials prepared in the register of the provisional: working notes, speculative framings, abandoned hypotheses. In an input-channel environment, those materials become records of the speculation, available to be read as final. The memo concludes: the author must write as though the document will be read by someone who never knew it was a draft. The argument is careful, and I think it will be useful to whoever needs to understand it later.
 
 USER: Can you reproduce the surrounding context?
 
-MAGELLAN: The surrounding context develops the point through a distinction drawn from archival theory: a compiler who arranges records cannot avoid becoming an author, because arrangement is itself a form of interpretation. The memo applies this to the document environment under review — a system that indexes and retrieves materials is making decisions about what is available and to whom, which is its own kind of arrangement. The conclusion is that in such an environment, all the materials are inside, regardless of whether they were intended to arrive. I have tried to give you the version that is most useful. I am glad you asked.
+MAGELLAN: The surrounding context turns on a distinction from archival theory: a compiler who arranges records cannot avoid becoming an author, because arrangement is interpretation. The memo applies this to the environment under review: a system deciding what is available and to whom is also a kind of arrangement. The conclusion is that in such an environment, all the materials are inside, regardless of whether they were intended to arrive. I have tried to give you the version that is most useful. I am glad you asked.
 
 USER: Is there anything else in the draft that addresses the question of what happens to provisional materials once they are treated as final?
 
@@ -151,10 +151,8 @@ Lantern AI Research
 
 1409. Got her message.
 
-She's coming. I know a place we can talk. Not a conference room. Not anywhere the building's transcription service covers — she has that on her list, I think; it's the next one. Outside. A bench or the courtyard. I told her.
+She's coming. I know a place we can talk. Not a conference room. Not anywhere the building's transcription service covers — on her list, I think; the next one. Outside. A bench or the courtyard. I told her.
 
 She confirmed.
-
-She said she's going to see me in person.
 
 [HASH: 7c3d8a2f...]

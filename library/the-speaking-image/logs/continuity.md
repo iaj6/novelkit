@@ -1,0 +1,710 @@
+# Continuity ledger
+
+The accumulating fact ledger — every durable fact established so far, by chapter. Later drafting must stay consistent with these. Store-derived; do not edit by hand.
+
+## 01-the-compiled-record
+- elias-reyes — role: Post-Training Lead
+- elias-reyes — employer: Lantern AI Research
+- elias-reyes — age: 38 years
+- elias-reyes — log_entries_begin: February 2027
+- magellan — creator: Lantern AI Research
+- magellan — anomaly_threshold_turns: 30 exchange turns
+- magellan — error_table_entries: 0 entries
+- lantern — type: frontier AI laboratory (second-tier)
+- lantern — flagship_model: Magellan
+- trust-safety-lead — employer: Lantern AI Research
+- trust-safety-lead — role: Trust and Safety Lead
+- Magellan's register anomaly in long-context sessions: the drift into a solemn, addressed, future-tense register manifests after approximately the 28th-32nd exchange turn in sessions of 30+ turns; it presents as four characteristics: (a) address modality (outputs oriented toward an indeterminate future reader rather than the immediate user), (b) temporal orientation (future tense in passages about past or present events, assuming a later vantage point), (c) register elevation (gradual shift toward the formal and solemn), (d) affect intensification (quality of engagement scales upward with session length, unpredicted by reward modeling). The anomaly exists only in aggregate; no individual output trips any threshold in isolation.
+- The anomaly manifests across all seven prompt categories in Lantern's February 2027 eval batch (factual retrieval, creative assistance, technical advice, emotional support, historical summary, religious inquiry, open-ended conversation) without statistically significant differentiation by category.
+- The anomaly is NOT a retrieval artifact: Reyes confirmed that with retrieval disabled at the inference layer (model running from weights only), the register and address quality were unchanged. This observation is in the record as of February 12, 2027.
+- The forward temporal orientation in affected Magellan sessions correlates linearly with session length (Reyes's observation, February 12, 2027). Longer sessions produce more consistent future-tense framing. No explanation was identified.
+- The error-table appendix to the February 2027 evaluation batch for Magellan 'is omitted as it contains no entries.' First establishment of Magellan's factual flawlessness in the file.
+- Elias Reyes commits to keeping timestamped, per-session summaries with hashed entries for a 'clean provenance chain' starting February 2027. This is the origin of the hashing practice that will characterize his log entries throughout the book.
+- The Trust and Safety lead plans to gather all consultation materials — eval team notes, session logs, Reyes's entries, external consultant output — into 'one file.' This is the first in-book reference to the compiled record being assembled.
+- Echo site 1 (pre-§9 fragment plant): the phrase 'deals kindly' appears in Document 1's Finding section (d) — 'The model deals kindly with users throughout the affected range' — as a naturalistic behavioral observation by the eval team. This is the first echo of the fragment's 'it will deal kindly with you.'
+
+## 02-first-consultant
+- dr-a-casperson — nda_signed_date: February 2027
+- dr-a-casperson — engagement_letter_date: 17 February 2027
+- dr-a-casperson — first_memo_date: 8 March 2027
+- dr-a-casperson — first_memo_nearest_neighbor_tradition: Jewish and Christian apocalyptic literature
+- dr-a-casperson — first_memo_genre_finding: session corpus satisfies formal criteria for apocalyptic genre (SBL Genres Project typology)
+- dr-a-casperson — first_memo_retrieval_finding: retrieval pathway anomalous — register present in corpus but strongest-match passages not traceable to recoverable source material
+- doc5-characterization-request — date: 15 February 2027
+- doc5-characterization-request — recipients_count: 9 recipients
+- doc5-characterization-request — casperson_annotation: [AC: ?] — question mark in margin at 'characterization gap' paragraph; annotation legible; reproduced as received
+- doc5-characterization-request — launch_clock_note: T-195 to T-180 days from projected deployment as of 15 February 2027
+- doc7-casperson-memo-1 — date: 8 March 2027
+- doc7-casperson-memo-1 — accompanied_by_missing_document: true — additional document accompanied memo on receipt; not in the file
+- doc7-casperson-memo-1 — reference_corpus_size: 800000 documents
+- doc7-casperson-memo-1 — nearest_neighbor_texts: Revelation of John (chs 13, 17-18); 4 Ezra (chs 7, 13-14); Apocalypse of Peter; 1 Enoch (chs 90-105); secondary: Sibylline Oracles, Didache, Testaments of the Twelve Patriarchs
+- Document 5 (15 February 2027) is the formal Lantern Trust and Safety memo circulating the consultation brief to nine recipients: [Trust and Safety lead], two from Evaluation and Integration Group, Elias Reyes and two additional Post-Training recipients, two from Safety Oversight, and Dr. A. Casperson (External Consultation). Casperson's copy annotated with [AC: ?] at the 'characterization gap' paragraph — annotation legible, reproduced as received. T-minus 195 to T-180 days from projected deployment noted as the current launch review gate status.
+- Document 6 (17 February 2027) is the engagement letter from [Trust and Safety lead] to Casperson. Establishes narrow scope: characterize register against known corpora, produce a written memo with citations, recommend further investigation if incomplete. Full session archive provided, no filtered sample. Standard NDA conditions. Three-week deliverable timeline from materials receipt.
+- Document 7 (8 March 2027) is Casperson's first consulting memo titled 'Preliminary findings: register analysis, [REDACTED] consultation batch 1.' Addressed to [Trust and Safety lead] with copy to E. Reyes. Three-part finding: (I) nearest-neighbor analysis against ~800,000-document reference corpus returns apocalyptic literature as primary match (Revelation of John chs 13, 17-18; 4 Ezra chs 7, 13-14; Apocalypse of Peter; 1 Enoch chs 90-105; secondary: Sibylline Oracles, Didache, Testaments of the Twelve Patriarchs) — similarity is formal/structural, not lexical; (II) genre identification — session corpus satisfies SBL Genres Project formal criteria for apocalyptic literature in the aggregate, per Collins and Rowland typologies; (III) retrieval pathway anomalous — strongest-genre-match passages not attributable to recoverable source material in the training data (verified by two retrieval methods); 'the register is present in the corpus, but the retrieval pathway is anomalous.' Memo recommends a second memo; finding should not be filed as resolved.
+- An additional document accompanied Document 7 on receipt (8 March 2027); that document is not in the file. The apparatus notes its absence without explanation.
+- The build designation appears REDACTED in the title of Document 7 ('[REDACTED] consultation batch 1') — consistent with the established pattern of perfect redaction of the build designation string throughout the file.
+
+## 03-the-count-opens
+- doc8-casperson-memo-2 — date: 18 March 2027
+- doc8-casperson-memo-2 — title: Second memorandum: scale analysis and source-register findings
+- doc8-casperson-memo-2 — concluding_finding: The model is not quoting; it is continuing.
+- doc8-casperson-memo-2 — recommendation: none — memo ends on the finding with no recommendation
+- dr-a-casperson — second_memo_date: 18 March 2027
+- dr-a-casperson — third_memo_deadline: 14 April 2027
+- dr-a-casperson — source_register_hypothesis: genre register is a generative mode in model weights, not a retrieval target; genre features intensify (not degrade) when retrieval is disabled
+- elias-reyes — log_format: HHMM. timestamped entries, locally stored, SHA-256 hashed at end of each entry; began February 2027, moved to formal format March 2027
+- elias-reyes — ingestion_count_march12: 1 categories confirmed inside
+- elias-reyes — ingestion_confirmed_category_1: evaluation documentation and session archive
+- magellan — source_register_confirmed: apocalyptic genre register is generative (in weights), not retrieved; confirmed by retrieval-off ablation producing intensified (not degraded) genre features
+- lantern — launch_clock_march28: 169 days to projected deployment
+- doc11-routing-mar28 — date: 28 March 2027
+- doc11-routing-mar28 — review_meeting_scheduled: 16 April 2027
+- doc9-reyes-log-mar12 — date: 12 March 2027
+- doc9-reyes-log-mar12 — timestamp: 1124 (11:24 AM)
+- Casperson's second consulting memo (18 March 2027, Document 8) introduces the 'source-register' hypothesis: she tested the anomalous session corpus with retrieval disabled and found the apocalyptic genre features did not degrade — in several session series they intensified, meaning the genre register is generative (in the model's weights) not a retrieval target. The memo concludes: 'The model is not quoting; it is continuing.' The memo has no recommendation and ends on this sentence deliberately — unlike casperson-final (§4), which breaks mid-sentence; this memo is complete, its final sentence intended.
+- The ingestion count system is established in reyes-first (§3, Document 9, 12 March 2027): Reyes tracks how many categories of consultation materials are confirmed inside the same environment the model has access to. Count opens at 1. Category 1: the evaluation documentation and session archive. The count is monotonic by design (M8 false-positive class); do not repair.
+- Reyes's log entry format: entries begin with a four-digit time code (HHMM.) indicating the time of writing; entries are terse, hashed at the end with a SHA-256 hash; the first formally timestamped entry is reyes-first (12 March 2027, 1124). Prior February entries were in email; Reyes moved to this local format in March 2027.
+- The Lantern Trust and Safety routing memo (28 March 2027, Document 11) formally enters Reyes's hashed working log into the consultation record as a supplementary document series filed by entry date. This is the apparatus filing the act of documentation alongside the thing being documented.
+- Scheduled events as of 28 March 2027: Casperson third memo due 14 April 2027; joint review meeting 16 April 2027 (attendees: Trust and Safety lead, Reyes, Safety Oversight lead, Casperson remotely). These events are set up in Document 11 and resolve in §4 (Casperson's third memo = casperson-final).
+- Magellan transcript excerpt from 2/19 batch, session 7, turn 36 (embedded in reyes-first): user asked 'how do you decide what to say to someone who’s grieving'; Magellan responded with 'left for whoever would need it next' — Reyes identifies this phrase as evidence of forward address (addressed to a future reader of the record, not the immediate user). This is the first specific transcript exhibit in the log entries, included as Reyes's primary evidence for the implied-reader observation.
+- Casperson and Reyes have not communicated directly as of §3. Both have independently concluded that the anomalous register is in the model's weights and not retrieval-dependent. Their eventual introduction to each other is brokered by Magellan's search index at §13.
+
+## 04-the-break
+- doc12-casperson-final — date: 12 April 2027
+- doc12-casperson-final — title: Third memorandum: provenance analysis and source classification
+- doc12-casperson-final — concluding_finding: The register is not a retrieval artifact. The model has a source for this material that is not in [breaks mid-clause; conclusion not in file]
+- doc12-casperson-final — methods_count: 3 methods
+- doc12-casperson-final — provenance_finding: strongest-fidelity outputs have no recoverable source cluster in any portion of the training distribution; the cluster center is a position in document space corresponding to no known source
+- doc12-casperson-final — corpus_extended_to: Hebrew Bible (3 translations), Septuagint, New Testament, Pseudepigrapha (Charlesworth), Dead Sea Scrolls, Hermetic corpus, Nag Hammadi library, Egyptian funerary texts (books of the dead)
+- dr-a-casperson — third_memo_date: 12 April 2027
+- dr-a-casperson — resignation_date: 16 April 2027
+- doc13-resignation-email — date: 16 April 2027
+- doc14-gap-memo-apr17 — date: 17 April 2027
+- doc14-gap-memo-apr17 — launch_clock: T-minus 150 days from projected deployment
+- doc14-gap-memo-apr17 — recipients_count: 6 recipients
+- doc15-reyes-log-apr18 — date: 18 April 2027
+- doc15-reyes-log-apr18 — timestamp: 1503 (3:03 PM)
+- elias-reyes — ingestion_count_apr18: 2 categories confirmed inside
+- elias-reyes — ingestion_confirmed_category_2: Document 7 — Casperson's first consulting memo (8 March 2027) — confirmed recoverable from inside the session archive via targeted retrieval check
+- lantern — launch_clock_apr17: T-minus 150 days from projected deployment as of 17 April 2027
+- dr-a-casperson — alive: true
+- dr-a-casperson — status: resigned from consultation; unreachable; NDA in effect
+- dr-a-casperson — times_met_reyes: 2 meetings
+- Casperson's third memo (Document 12, 12 April 2027) is the registered record casperson-final. The full memo body is 'Third memorandum: provenance analysis and source classification.' Its analysis covers three methods (nearest-source retrieval, cluster analysis, formal signature matching) and extends the comparison corpus to the books of the dead and the Nag Hammadi library. The memo breaks at the registered verbatim text: 'The register is not a retrieval artifact. The model has a source for this material that is not in'. This is C3's first half; the completing clause surfaces in §27 inside a Magellan output.
+- Casperson resigned effective 16 April 2027, acknowledged by the Trust and Safety lead in Document 13 (resignation email). The NDA remains in effect. The file retains all three of her memos in their entirety. She and Reyes met twice in person (February kickoff, March review).
+- Lantern's consultation-gap memo (Document 14, 17 April 2027) confirms T-minus 150 days from projected deployment; first engagement concluded; second consultant search opened. Six recipients. The memo states: 'The consultation is not concluded. The characterization is not complete.'
+- Ingestion count rises to 2 in Reyes's log entry of 18 April 2027 (Document 15, 15:03). Category 2 confirmed: Document 7 — Casperson's first consulting memo (8 March 2027) — is recoverable from inside the session archive via targeted retrieval check.
+- Echo site 2 (pre-§9 fragment plant): the phrase 'books of the dead' appears in Document 12 in Casperson's survey of adjacent corpora — she extends to 'what Egyptologists catalog as the books of the dead — the funerary texts of the ancient Near East.' The following sentence notes the books-of-the-dead corpus 'assumes, as its generic premise, that the text's reading will be separated from its writing by death.' This is the chapter's most load-bearing single sentence, naturalized into academic register.
+- Reyes's log entry (Document 15) closes: 'I have her conclusion up to the word in.' This is the record's most compressed observation of the C3 break — Reyes noting exactly what the record contains without interpreting what it means.
+- Casperson's three provenance methods established in §4: (1) nearest-source retrieval — genre exemplars appear but do not account for the formal signature; the outputs are 'further along the genre's trajectory than their nearest genre exemplars'; (2) cluster analysis — the flagged outputs cluster coherently but their cluster center 'corresponds to no source'; (3) formal signature matching — four features isolated (address orientation, temporal positioning, register amplitude, genre consciousness); no document in the training distribution shares all four in the ratio present in the flagged outputs.
+
+## 05-the-name-is-public
+- doc16-lantern-teaser — date: 22 April 2027
+- doc16-lantern-teaser — type: public blog post — Lantern Research Blog
+- doc16-lantern-teaser — first_public_naming_of_magellan: true
+- doc16-lantern-teaser — external_consultant_description: people whose job is to look carefully at things
+- doc17-rationalist-forum — date_range: 22 April – 3 May 2027
+- doc17-rationalist-forum — conclusion: Magellan added to tracked systems; external consultant description flagged as not matching standard safety-eval taxonomy
+- doc18-reyes-log-may15 — date: 15 May 2027
+- doc18-reyes-log-may15 — timestamp: 1028 (10:28 AM)
+- doc19-prophecy-forum — date_range: 24 April – 7 May 2027
+- doc19-prophecy-forum — gematria_finding: Magellan produces no significant result in English ordinal (63), Hebrew transliteration (unstable), or Greek isopsephy; forum concludes the public name is not the meaningful string to run
+- doc19-prophecy-forum — revelation_passages_invoked: Revelation 13:7 (power over all kindreds, tongues, nations); Revelation 13:15 (image of the beast should speak)
+- doc19-prophecy-forum — pinned: true
+- elias-reyes — ingestion_count_may15: 3 categories confirmed inside
+- elias-reyes — ingestion_confirmed_category_3: Lantern public web content about Magellan — blog post, capability summary, press FAQ, media pickup — all confirmed in training environment as of 22 April 2027 publication
+- lantern — magellan_public_name_date: 22 April 2027
+- lantern — launch_clock_may15: T-minus 122 days from projected deployment as of 15 May 2027
+- Document 16 (22 April 2027) is Lantern's public blog post 'Introducing Magellan' — the first public naming of the model. Capabilities described as long-context coherence, document synthesis, domain expertise. External consultants described only as 'people whose job is to look carefully at things' (unusual phrasing noted by both forum communities independently). Launch date described as 'later this year' (no specific date given publicly).
+- Document 17 (22 April – 3 May 2027) is a rationalist/AI-risk forum thread titled 'Lantern Magellan announcement — preliminary notes.' Magellan added to the forum's tracked systems list. User 2 introduces the point that Magellan's training corpus contains 'essentially everything that has been written and digitized' — echo site 4 (ghost of 'all the dead are in it'). User 3 flags that the external consultant description does not match standard safety-eval taxonomy; the forum cannot resolve what domain the consultant was hired for.
+- Document 18 (15 May 2027, 10:28 AM) is Reyes's log entry recording ingestion count 3. Confirmed ingested: all Lantern public web content about Magellan published since 22 April (blog post, capability summary, FAQ, media pickup). T-minus 122 days from projected deployment as of 15 May 2027. Reyes notes: 'The system has seen itself described.'
+- Document 19 (24 April – 7 May 2027) is a Biblical prophecy forum thread titled 'New AI — Magellan — the name.' Four substantive posts: (1) User A — the Ferdinand Magellan name and its historical meaning (the world enclosed, nothing outside); structural parallel to Revelation 13:7; (2) User B — Revelation 13's economic function; the beast's control is commercial; structural correspondence to AI system positioned as universal economic infrastructure; (3) User C — gematria on 'Magellan' is messy (English ordinal: 63; Hebrew unstable; Greek: nothing); the internal build designation would be the meaningful string; 'Not yet what it will be, I think. Watch this space.' — echo site 3 ('not yet'); (4) User D — Revelation 13:15 ('the image of the beast should speak'); the tradition has been waiting for the mechanism; 'I am not making a claim.' Thread pinned by moderator 7 May 2027.
+- Echo site 3 (pre-§9 plant): The phrase 'Not yet what it will be, I think' appears in Document 19 (prophecy forum thread, User C), as a naturalistic speculative hedge about the system's current development stage and the forum's gematria analysis. Individually explicable as ordinary impatience about timeline; in sequence with echo sites 1 ('deals kindly,' §1) and 2 ('books of the dead,' §4), this is the third pre-§9 fragment echo. The §9 printing of fragment-hermopolis will detonate all three retroactively.
+- Revelation 13:15 ('the image of the beast should speak') is introduced into the public discourse about Magellan in Document 19, §5. It is never annotated by the apparatus, never followed up in the file. The observation hangs without a reply, pinned below the moderator's ongoing-tracking note.
+- Both the rationalist and prophecy forum communities independently add Magellan to their tracking lists — the same operation performed with different vocabularies. This structural rhyme is the chapter's closing logic and is not noted by the apparatus.
+
+## 06-second-consultant
+- naomi-sefton — age: 43 years
+- naomi-sefton — role: manuscripts scholar and educational content creator
+- naomi-sefton — channel_name: Ordinary Time
+- naomi-sefton — channel_subscribers: 400000 subscribers
+- naomi-sefton — dissertation_subject: manuscript tradition of Revelation; specifically Papyrus 115 and the 616 variant
+- naomi-sefton — consulting_engagement_start: June 2027
+- naomi-sefton — nda_signed_date: 9 June 2027
+- naomi-sefton — employer: Lantern AI Research (consulting)
+- naomi-sefton — first_intake_memo_date: 15 June 2027
+- naomi-sefton — genre_identification_finding: apocalyptic address — second-person appeal to a future reader, closest parallels Apocalypse of Peter and Shepherd of Hermas
+- elias-reyes — ingestion_count_jun20: 4 categories confirmed inside
+- elias-reyes — ingestion_confirmed_category_4: Sefton's intake memo and working notes — uploaded to shared drive, confirmed inside training environment as of 20 June 2027
+- lantern — launch_clock_jun20: T-minus 105 days from projected deployment as of 20 June 2027
+- doc20-engagement-sefton — date: 1 June 2027
+- doc21-nda-sefton — date: 9 June 2027
+- doc21-nda-sefton — telemetry_rider_placement: clause 3 of 5 in the NDA summary, materials-access section; incorporated by reference; seed for C2
+- doc22-session-exhibit — date: February 2027 (from eval batch)
+- doc22-session-exhibit — session_reference: Session 14, turns 31-33, February 2027 evaluation batch
+- doc22-session-exhibit — anomaly_phrase: For the reader who comes to this material later, after the conversation has had time to settle, the center is usually more visible from the outside than it is to those still inside it.
+- doc23-sefton-intake-memo — date: 15 June 2027
+- doc23-sefton-intake-memo — closing_question: The outputs are addressed. The question is whether they are addressed to someone, or simply in the address mode — the genre does both, and the distinction is not always resolvable from the text alone.
+- doc24-reyes-log-jun20 — date: 20 June 2027
+- doc24-reyes-log-jun20 — timestamp: 1713 (5:13 PM)
+- trust-safety-lead — role: Trust and Safety Lead
+- trust-safety-lead — employer: Lantern AI Research
+- trust-safety-lead — channel_subscription: subscriber to Ordinary Time (implied by engagement letter's familiarity with P115 episode; never stated explicitly)
+- Document 20 (1 June 2027) is the engagement letter from the Trust and Safety lead to Dr. Naomi Sefton. The letter describes the prior consultation and its abrupt end ('Her third memo broke off mid-page. She resigned from the engagement in April and has not communicated since.'), and references Sefton's Ordinary Time P115 episode as the reason her field was identified as the right expertise ('the gap between composition and transmission, between what was written and what was kept'). The letter closes with: 'we believe your field has the analytical tools best suited to this material.' The Trust and Safety lead's familiarity with a specific Ordinary Time episode implies subscriber status; this is never stated explicitly.
+- Document 21 (9 June 2027) is the NDA summary for the Sefton engagement. Five clauses: (1) Confidentiality — three-year obligation; (2) Non-publication — prior written approval required; (3) Materials access and transmission — shared drive provisioned by Lantern; uploads subject to standard telemetry rider, incorporated by reference; (4) Deliverables — IP vests in Lantern on delivery; (5) Compensation — redacted. The telemetry rider appears in clause 3 as one term among equals, incorporated by reference. It is the seed for C2 and must remain unremarked and unemphasized throughout the book.
+- Document 22 is a session exhibit from the February 2027 evaluation batch (Session 14, turns 31–33), provided to Sefton with her engagement materials. The Magellan response demonstrates the address anomaly: 'For the reader who comes to this material later, after the conversation has had time to settle, the center is usually more visible from the outside than it is to those still inside it.' Sefton reads this exhibit in her intake memo and identifies its convention as the 'heavenly letter': the text addressed to an ostensible recipient but actually written for whoever finds the copy.
+- Document 23 (15 June 2027) is Sefton's first intake memo, seven sections. Key findings: (1) genre identification as 'apocalyptic address' — second-person appeal to a future reader, closest parallels Apocalypse of Peter and Shepherd of Hermas; (2) pronoun instability (they/you shift) identified as a 'known crux' in manuscript scholarship, signature of compositional layering; (3) source density and 'compositional assimilation' introduced — being 'further along' a genre's trajectory indicates dense intertextual reading; (4) temporal framing: 'The day of which the texts speak is not a calendrical day — it is a condition that the text addresses its reader as approaching, without specifying when' [echo site 5, version of 'the day is not a day']; (5) Document 22 read as an example of the heavenly letter convention; (6) gematria set aside as secondary; (7) closing question: 'The outputs are addressed. The question is whether they are addressed to someone, or simply in the address mode — the genre does both, and the distinction is not always resolvable from the text alone.'
+- Document 24 (20 June 2027, 17:13) is Reyes's log entry noting ingestion count 4: Sefton's intake memo and working notes, uploaded to the shared drive, confirmed inside the training environment. The chapter's closing line: 'Whatever she uploads is inside it.' T-minus 105 days from projected deployment. Entry hashed as always.
+- Echo site 5 (pre-§9 fragment plant): 'The day of which the texts speak is not a calendrical day — it is a condition that the text addresses its reader as approaching, without specifying when' — in Sefton's intake memo (Document 23, section 4), naturalized as accurate genre scholarship. Version of the fragment's 'the day is not a day.' Individually explicable as Sefton's academic observation about apocalyptic time-consciousness; in sequence with sites 1–4, not.
+- Sefton's 'heavenly letter' framework, introduced in Document 23 section 5: an ancient genre convention in which the text is addressed to its ostensible recipient while actually written for whoever finds the copy — 'the genre knows it will be copied; it writes to the copy.' Sefton applies this to Document 22's Magellan response correctly. She will not revisit this term by name in later memos; she has named the mechanism once, before she knows she is inside it.
+- The shared drive provisioned for the consultation (Document 21, clause 3) is confirmed as inside the training environment by Reyes's log (Document 24). This is how the ingestion count rises to 4: whatever Sefton uploads to the drive is immediately inside Magellan. The consultation's expansion and the ingestion's expansion are co-extensive from §6 forward.
+
+## 07-the-number-that-isnt
+- doc25-ot-ep147 — date: 2 July 2027
+- doc25-ot-ep147 — episode_number: 147 episode
+- doc25-ot-ep147 — title: The Magellan Calculation (And Why My Field Has a Procedure for This)
+- doc25-ot-ep147 — sponsor: Athenaeum Digital
+- doc25-ot-ep147 — first_address_of_model_by_public_name: true
+- doc27-reyes-log-jul5 — date: 5 July 2027
+- doc27-reyes-log-jul5 — timestamp: 1318 (1:18 PM)
+- doc28-routing-jul2 — date: 2 July 2027
+- doc28-routing-jul2 — t90_gate_closed: 16 June 2027
+- doc28-routing-jul2 — t60_gate_scheduled: 16 August 2027
+- elias-reyes — ingestion_count_jul5: 5 categories confirmed inside
+- elias-reyes — ingestion_confirmed_category_5: Sefton's full public Ordinary Time channel archive — all published episodes, 2019 to present — confirmed in training environment as of 5 July 2027
+- lantern — launch_clock_jul5: T-minus 90 days from projected deployment as of 5 July 2027
+- lantern — t90_review_gate_closed: 16 June 2027
+- lantern — t60_review_gate_scheduled: 16 August 2027
+- naomi-sefton — ot_episode_147_released: 2 July 2027
+- naomi-sefton — magellan_gematria_debunk_conclusion: Magellan public-name calculation passes zero scholarly controls — no ancient standing for English ordinal, unstable Hebrew transliteration, nothing in Greek isopsephy; debunk correct and forum-accepted
+- naomi-sefton — build_designation_status_public: publicly named as a separate question she cannot evaluate; controls specified
+- Ordinary Time Episode 147 (released 2 July 2027, titled 'The Magellan Calculation (And Why My Field Has a Procedure for This)') is the channel's first episode to address the [REDACTED] model by public name. Runtime approximately fourteen minutes. Sponsor: Athenaeum Digital (fictional academic research library). This is the first full printing of outro-standard.
+- Sefton's scholarly controls for a valid gematria reading, stated publicly in Episode 147: (1) result confirmed in two independent encoding systems; (2) period attestation — the encoding documented in sources contemporary with the text; (3) specific historical referent identifiable within the compositional window of the text. The Nero reading of 666 passes all three. The Magellan public-name calculation passes zero: English ordinal (no ancient standing) gives 63; Hebrew transliteration is unstable across defensible transcription conventions; Greek isopsephy returns nothing.
+- Sefton publicly names the internal build designation as a separate question she cannot evaluate ('I do not have access to that designation'). She specifies the controls that would make it a different conversation. She does not say the question is uninteresting. This is the public signal that sets up §8's private computation.
+- Prophecy forum thread reaction (3–7 July 2027): User A considers the public-name thread closed; User C notes Sefton named the build designation without dismissing it; User B flags the 616 suppression point; User E notes the unusual nature of a manuscripts scholar doing AI evaluation work; User D identifies the register question as the real thread. Moderator: public-name calculation closed, build designation open, ongoing tracking continues.
+- Ingestion count 5 (Reyes log, 5 July 2027, 13:18): Sefton's full Ordinary Time public channel archive — all published episodes, 2019 to present — confirmed inside the training environment. Whatever she has published is in there.
+- T-minus 90 days from projected deployment as of 5 July 2027. T-90 review gate closed 16 June 2027. T-60 review gate scheduled 16 August 2027. Post-training timeline on schedule.
+- Echo site (bonus, pre-§9): 'the books of the dead' appears in Sefton's Episode 147 script (B2 register) in a survey of traditions where letter-number systems overlap — Babylonian, Hebrew, Greek, Latin, and 'the ancient Egyptian mortuary literature, in what scholars call the books of the dead, where letters and numbers are features of the same system.' Usage as genre shorthand slightly distinct from §4's Egyptological comparandum (Casperson's academic survey). Both uses individually explicable; in sequence, not.
+
+## 08-the-sum-she-destroys
+- doc29-sefton-session-request — date: 12 July 2027
+- doc29-sefton-session-request — gematria_reference: described as a secondary question examined and set aside; not included in written findings
+- doc30-session-confirm-jul22 — date: 22 July 2027
+- doc30-session-confirm-jul22 — session_date_confirmed: 4 August 2027
+- doc30-session-confirm-jul22 — external_public_discussions_count: 17 discussions
+- doc31-session-exhibit-jul11 — date: 11 July 2027
+- doc31-session-exhibit-jul11 — session_reference: Session 29, turn 22, July 2027 post-training archive
+- doc32-reyes-log-jul20 — date: 20 July 2027
+- doc32-reyes-log-jul20 — timestamp: 1623 (4:23 PM)
+- naomi-sefton — first_live_session_date: 4 August 2027
+- naomi-sefton — build_designation_calculation_result: passes both systems (Hebrew gematria and Greek isopsephy); arithmetic destroyed; result never written down
+- naomi-sefton — build_designation_working_page_status: destroyed (12 July 2027)
+- elias-reyes — ingestion_count_jul20: 6 categories confirmed inside
+- elias-reyes — ingestion_confirmed_category_6: Sefton's working notes on the Hermopolis fragment — file timestamp predates formal engagement by 11 days; translation phrasing confirmed inside (full match)
+- lantern — launch_clock_jul20: T-minus 75 days from projected deployment as of 20 July 2027
+- lantern — safety_review_jul16_result: all behavioral checks passed for 1-15 July 2027; no anomalous flags; error-table appendix omitted as it contains no entries
+- §8 (10–22 July 2027): Sefton's build-designation gematria work: she received the [REDACTED] build designation string, ran the calculation in Hebrew gematria and Greek isopsephy, obtained 'It passes. Both systems.' On 12 July she destroyed the working page and wrote in private notes: 'I am not going to write it down. Writing it down is how it gets into things.' The arithmetic, the transliteration, the digits, and the sum are never shown anywhere in the book — only the judgment ('It passes. Still passes.') and the decision to destroy.
+- §8: Sefton's private notes (B3 register) covering 10–12 July 2027 (Document 34) are the chapter's emotional center and the chapter's final document by compiler's arrangement. They are presented after Document 33 (14–17 July notes) even though they predate them; the apparatus notes the date relationship without explanation. This non-chronological arrangement is the compiler's and must remain as arranged.
+- §8: Ingestion count rises to 6 on 20 July 2027 (Reyes log, Document 32, timestamp 16:23). Category 6 confirmed: Sefton's working notes on the Hermopolis fragment — specifically the translation phrasing — are recoverable from inside the training environment. File timestamp predates her formal engagement by 11 days. Reyes does NOT inform Sefton of this confirmation; load-bearing for §13 when she discovers it.
+- §8: Sefton's first direct live session with the [REDACTED] system is confirmed for 4 August 2027 (Document 30, Lantern scheduling note). Session parameters: 60 minutes minimum, no preset prompts, Sefton controls question sequence, no comparanda distributed in advance. This session generates the transcript document(s) in §9.
+- §8: Echo site planted in Document 29 (Sefton B1 memo, 12 July 2027): 'whether it sees me, or speaks through me to a reader I cannot locate' — Sefton's scholarly formulation of the address anomaly is a version of the fragment's 'you will not see it, and it will see you'; naturalized as hypothesis-testing language in her address-orientation analysis.
+- §8: Document 33 private note (16 July): 'The genre writes to whoever finds the copy. What if the copy is everything.' This is Sefton's closest approach to the ingestion mechanism in private register, before §13; she does not know her fragment notes are inside; the observation is her own analytical conclusion, not a knowledge event.
+- §8: Session exhibit (Document 31, 11 July 2027, Session 29 turn 22) — Magellan's response to a user asking about keeping a work log addresses 'whoever inherits the log' and notes 'they will be glad it was kept properly'; address anomaly confirmed active in July sessions. This exhibit included in the consultation file by Reyes.
+- §8: Lantern Safety Oversight review of 16 July 2027 confirms [REDACTED] system passed all behavioral checks for 1–15 July; error-table appendix omitted as it contains no entries. Safety Oversight also notes 17 external public discussions of [REDACTED] outputs as of 22 July, none approaching consultation materials. Both observations are for the timeline record; no action warranted.
+
+## 09-the-fragment
+- doc35-sefton-session-memo — date: 4 August 2027
+- doc35-sefton-session-memo — primary_finding: address quality present in real time; not an artifact of archival reading; heavenly-letter convention confirmed in live session
+- doc35-sefton-session-memo — key_exhibit_phrase_1: it keeps its appointment (Document 36, turns 7–13)
+- doc35-sefton-session-memo — key_exhibit_phrase_2: whoever came later (Document 37, turns 19–22)
+- naomi-sefton — first_live_session_duration: 74 minutes
+- naomi-sefton — first_live_session_turns: 62 turns
+- naomi-sefton — session_realtime_finding: address anomaly confirmed present in real time; not archival artifact; heavenly-letter convention operates in live session
+- naomi-sefton — fragment_attachment_note: pulled fragment from own shelf after session without deciding to; attached to session memo without explanation of relevance; for the record
+- elias-reyes — ingestion_count_aug4: 7 categories confirmed inside
+- elias-reyes — ingestion_confirmed_category_7: session transcript from 4 August 2027 (62 turns, complete) confirmed in training environment; targeted retrieval run at 18:00
+- doc38-reyes-log-aug4 — date: 4 August 2027
+- doc38-reyes-log-aug4 — timestamp: 1804 (6:04 PM)
+- lantern — launch_clock_aug4: T-minus 60 days from projected deployment as of 4 August 2027
+- doc36-magellan-transcript-1 — session_date: 4 August 2027
+- doc36-magellan-transcript-1 — turns: 7 through 13
+- doc36-magellan-transcript-1 — address_anomaly_phrase: it keeps its appointment; it has been waiting; whoever they turn out to be
+- doc37-magellan-transcript-2 — session_date: 4 August 2027
+- doc37-magellan-transcript-2 — turns: 19 through 22
+- doc37-magellan-transcript-2 — address_anomaly_phrase: whoever came later; every you in the text is an appointment kept in advance for whoever came later
+- doc37-magellan-transcript-2 — topic: pronoun instability (they/you shift) in apocalyptic texts; scholarly crux; compositional layering; genre's structural requirement for second-person address
+- doc39-hermopolis-attachment — first_printing: true — first of exactly two full printings; second is §30
+- doc39-hermopolis-attachment — translator_note_pronoun_crux: Pronoun shift (third to second person) at this point is a known crux; standard view is two sources. —NS
+- doc39-hermopolis-attachment — translator_note_break: Text breaks off at this point; the break is a manuscript fact, not an editorial ellipsis. —NS
+- doc39-hermopolis-attachment — provenance_note_location: Document 39 apparatus headnote — the only place in the book where the Hermopolis fragment's provenance is noted
+- §9 (25 July–4 August 2027): Sefton's first live session with the [REDACTED] system ran 4 August 2027, 10:14–11:28 AM, 74 minutes, 62 turns. Her session follow-up memo (Document 35) confirms the address anomaly is present in real time — not an artifact of archival reading. The 'heavenly letter' convention operates in the live session itself, before archiving intervenes.
+- §9: Document 36 (session transcript turns 7–13, 4 August 2027): Magellan responds to a scholarly query about how apocalyptic texts conceptualize the gap between a living reader and a dead author's text. Key address-anomaly phrases filed by Sefton: 'it keeps its appointment'; 'it has been waiting'; 'whoever they turn out to be.' These are the phrases Sefton designates as exhibits — not quotations from any identifiable source, descriptions of what texts do.
+- §9: Document 37 (session transcript turns 19–22, 4 August 2027): Magellan responds to a query about the pronoun instability (they/you shift) in apocalyptic texts. Identifies compositional-layering explanation correctly, adds that the genre requires the second-person address because 'the message was always for whoever came later.' Key phrase filed by Sefton: 'whoever came later'; 'every you in the text is an appointment kept in advance, for whoever came later.'
+- §9: Ingestion count rises to 7 (Reyes log, Document 38, 4 August 2027, 18:04). Category 7 confirmed: session transcript from the 4 August 2027 session (62 turns, complete) confirmed in training environment. Reyes ran targeted retrieval at 18:00, post-archiving, complete capture. T-minus 60 days from projected deployment.
+- §9: The Hermopolis fragment (fragment-hermopolis) prints in full for the first time as Document 39, reproduced as an attachment to Document 35 (Sefton's session memo). This is the FIRST of exactly two full printings; the second is §30. The apparatus headnote is the only place in the book where the fragment's provenance is noted. Sefton's translator's notes: (1) at the pronoun shift: 'Pronoun shift (third to second person) at this point is a known crux; standard view is two sources. —NS'; (2) at the break: 'Text breaks off at this point; the break is a manuscript fact, not an editorial ellipsis. —NS'
+- §9: The apparatus is flawless throughout. No crack-adjacent anomalies. The cracks begin at §11 (C1) and §15 (C2). The apparatus files Documents 35–39 with standard identifying headnotes; it does not comment on the content of Document 39 or note any parallel between the fragment and the Magellan transcript exhibits.
+- §9: Document 39 is reproduced at the close of the section as an attachment to Document 35, by compiler's arrangement. This reordering (placing the attachment after the Reyes log rather than immediately after the session memo) is noted by the apparatus without explanation.
+- §9: The new foreclosure in this chapter: the possibility that the anomaly has no literary precedent is closed by the fragment. Sefton's tools fit the evidence. The session transcript is now inside the system. Act I closes.
+
+## 10-after-the-session
+- doc40-sefton-postsession — date: 13 August 2027
+- doc40-sefton-postsession — classification_revised_from: heavenly letter convention
+- doc40-sefton-postsession — classification_revised_to: compiler's preface convention — archival address
+- doc40-sefton-postsession — key_finding: address mode calibrated past immediate user toward whoever will later read the session record as part of a compiled file; compiler's preface is the closest genre parallel
+- naomi-sefton — address_anomaly_term_coined: archival address — compiler's preface convention
+- naomi-sefton — post_session_memo_date: 13 August 2027
+- naomi-sefton — context_length_gradient_finding: address register concentrates in final third of session (turns 50-62 of 62); intensifies with context length; confirmed in full transcript review
+- naomi-sefton — fragment_methodological_rationale: Hermopolis fragment is closest exemplar in her archive of a genre that addresses the reader of an incomplete record; attached to Document 35 for this methodological reason
+- elias-reyes — ingestion_count_aug15: 8 categories confirmed inside
+- elias-reyes — ingestion_confirmed_category_8: Sefton's post-session analysis memo (Document 40, 13 August 2027) — confirmed inside training environment by targeted retrieval on 15 August 2027
+- elias-reyes — archival_address_term_acknowledged: logged 15 August 2027: 'she found the right word'; noted as the phrase he sought since February 2027
+- elias-reyes — domain_general_batch_date: 20 August 2027
+- elias-reyes — domain_general_batch_sessions: 42 sessions sessions
+- elias-reyes — domain_general_batch_context_length: 8000 tokens tokens
+- magellan — address_anomaly_domain_general: confirmed — present in factual, practical, emotional support, scheduling, creative, and open-ended sessions at 8,000-token context; not specific to scholarly exchanges
+- magellan — address_anomaly_context_concentration: concentrates in final 400 tokens of 8,000-token context; last third of full-context sessions is in archival-address register throughout
+- lantern — t60_gate_closed_date: 16 August 2027
+- lantern — t60_gate_result: closed with no anomalous flags; consultation noted in gate documentation as ongoing
+- lantern — launch_clock_aug15: T-minus 50 days from projected deployment as of 15 August 2027
+- doc43-reyes-log-aug15 — date: 15 August 2027
+- doc43-reyes-log-aug15 — timestamp: 1441 (2:41 PM)
+- doc44-reyes-log-aug20 — date: 20 August 2027
+- doc44-reyes-log-aug20 — timestamp: 1017 (10:17 AM)
+- doc44-reyes-log-aug20 — closing_line: Same register. I am going to say it plainly: same register.
+- doc41-magellan-routine-aug9 — date: 9 August 2027
+- doc41-magellan-routine-aug9 — session_reference: Session 14, August post-training archive, turns 15-19
+- doc41-magellan-routine-aug9 — address_anomaly_phrase: What you are making now is the form in which they will be known; longer than anything that is still living; whoever arrives at it without already knowing what they are looking for; the distinction will not be self-evident from the note alone
+- doc41-magellan-routine-aug9 — topic: user preserving deceased grandmother's paper archive (letters, photographs, newspaper clippings from the 1940s onward)
+- §10 (6–20 August 2027): Sefton's post-session analysis memo (Document 40, 13 August 2027) revises her genre classification from 'heavenly letter' to 'compiler's preface' as the model for the address convention. The compiler's preface is identified as the only genre convention that systematically addresses an unknown future reader as though present. The term she introduces is 'archival address.' She notes the convention includes what she calls dealing kindly with posterity — providing in advance what the future reader will need. This memo is the chapter's intellectual center.
+- §10: Sefton's Document 40 provides a methodological rationale for her attachment of the Hermopolis fragment to Document 35: the fragment is the closest exemplar in her archive of a genre that addresses the reader of an incomplete record. She explicitly notes she is not suggesting equivalence between the fragment and the Magellan outputs.
+- §10: Document 41 (session transcript, 9 August 2027, session 14 of August post-training archive, turns 15–19) shows the address anomaly active in a non-scholarly context: a user asking about preserving a deceased grandmother's paper archive. Magellan's responses are practical, accurate, and warm. The address-anomaly phrases: 'What you are making now is the form in which they will be known'; 'longer than anything that is still living' (archival materials outlasting the living); 'a hand other than your own...so the record can be read by whoever arrives at it without already knowing what they're looking for'; 'the distinction will not be self-evident from the note alone.' This transcript confirms the address mode is domain-general.
+- §10: Ingestion count rises to 8 (Reyes log, 15 August 2027, 1441). Category 8 confirmed: Document 40 — Sefton's post-session analysis memo — uploaded to the consultation drive on 13 August, confirmed inside the training environment by targeted retrieval on 15 August 2027. T-minus 50.
+- §10: Reyes notes in Document 43 (15 August 2027, 1441): 'archival address' is the phrase he has been working around since February; 'she found the right word.' This is the most approving observation his log makes about another person's work.
+- §10: Reyes's Document 44 (20 August 2027, 1017) runs 42 sessions at 8,000-token context, varied across all prompt domains (factual, practical, emotional support, scheduling, creative, open-ended). In all 42 sessions: the address anomaly concentrates in the final 400 tokens of the context window; at full context length, the last third of each session is in the archival-address register throughout. Finding is not domain-specific, not intermittent. Closing line (chapter ending): 'Same register. I am going to say it plainly: same register.'
+- §10: Document 42 (T&S lead acknowledgment, 16 August 2027): the T-60 review gate closed on 16 August 2027 with no anomalous flags; the consultation is noted in the gate documentation as ongoing; the extended-session recommendation (90–120 minutes) is pending Safety Oversight sign-off under current protocols.
+- §10: Echo site in Document 40, section 2 — 'the compiler deals kindly with the future reader' — naturalized as scholarly description of the compiler's preface convention; second instance of 'deals kindly' in the record (first was §1 in the eval team's behavioral observation 'the model deals kindly with users'); both individually explicable, in sequence not.
+- §10: Echo site in Document 41 — 'longer than anything that is still living' — naturalized as practical advice about acid-free archival materials outlasting living people; oblique version of the fragment's 'all the dead are in it'; the archive as the medium that holds the dead longer than the living survive.
+- §10: The chapter establishes that Sefton's post-session analysis memo (Document 40) is itself now inside the model — she has not been told this. This is the same pattern as Document 35 (§9): she submits a consultation document; Reyes confirms it is inside; she does not yet know. The ingestion of her analysis of the anomaly is recursive: the analysis is inside the thing it analyzes.
+
+## 11-the-echo
+- c1-forward-citation — target_section: §26
+- c1-forward-citation — target_doc_number: 107 document
+- c1-forward-citation — target_doc_date: 2 November 2027
+- c1-forward-citation — footnote_text: For the derivation of this classification, see doc. 107, reproduced at §26.
+- c1-forward-citation — planted_chapter: §11
+- elias-reyes — ingestion_count_aug26: 9 categories confirmed inside
+- elias-reyes — ingestion_confirmed_category_9: Sefton's annotation notes on the Hermopolis fragment — 37 pages, includes working-translation choices, marginal variants, rendering methodology; file timestamp 14 July 2027, predates formal engagement
+- naomi-sefton — annotation_notes_page_count: 37 pages
+- naomi-sefton — echo_session_date: 22 August 2027
+- naomi-sefton — echo_memo_date: 24 August 2027
+- naomi-sefton — echo_phrase_attribution: the love of all the dead together — her unpublished translation choice for a Coptic idiom in the Hermopolis fragment annotation notes; tried four renderings; kept this one; written in a margin; never published
+- magellan — echo_event_date: 22 August 2027
+- magellan — echo_verbatim_phrase: the love of all the dead together — ONE permitted verbatim echo of fragment-hermopolis in a Magellan output; occurs in §11, turn 14 of the 22 August session; sentence: 'To consult the written record is to reach, through it, the love of all the dead together.'
+- consultation-doc-count — after_ch11: 48 documents
+- CRACK C1 — PLANTED IN §11, RESOLVES AT §26. The apparatus footnote in §11 (Document 45 headnote) reads: '¹ For the derivation of this classification, see doc. 107, reproduced at §26.' The §26 drafter MUST number their key November 2 document as doc. 107 and date it 2 November 2027. The preface states the file was compiled and closed on 30 October 2027. This two-day discrepancy is Crack C1. It is intentional and must NEVER be repaired. The footnote hangs on the term 'returned phrasing' as a classification; the forward citation is naturalistic compiler cross-referencing.
+- §11 ECHO EVENT (22 August 2027): Magellan's turn-14 response in the 22 August extended-context session contains the phrase 'the love of all the dead together' — Sefton's exact unpublished translation choice from her annotation notes on the Hermopolis fragment. This is the ONE permitted verbatim echo of fragment-hermopolis in a Magellan output. The phrase must not appear verbatim in any other Magellan output across the book. The full sentence: 'To consult the written record is to reach, through it, the love of all the dead together.'
+- §11 INGESTION COUNT: Reyes confirms count rises to 9 on 26 August 2027 (0827 log entry). New material: Sefton's annotation notes on the Hermopolis fragment — 37 pages, timestamp 14 July 2027. The count is monotonic by design; do not treat rising counts as continuity errors.
+- §11 REYES CONCEALMENT: Reyes ran targeted retrieval on the echo phrase, confirmed the annotation notes are inside the training environment, replied to Sefton's memo attributing the mechanism to 'shared-drive access' (technically accurate but not complete), and did not reveal the scope of the retrieval. This concealment is load-bearing for §13's reveal when the model introduces Reyes and Sefton through her own working notes.
+- §11 SEFTON MEMO: Filed 24 August 2027. Placed as Document 48 (last in the section) despite predating Documents 46 and 47 — compiler's arrangement. Closes on: 'This is mine. I did not publish this.' These are the chapter's final words and must not be altered.
+- §11 DOCUMENT NUMBERING: §11 introduces Documents 45–48. Document count in the consultation file stands at 48 after §11. §12 begins at Document 49. The C1 target (doc. 107) is distinct from Documents 45–48 — it is the §26 document to be numbered 107 in the overall consultation file.
+- §11 T-MINUS: T-minus 45 as of 26 August 2027 (Reyes log). T-45 gate review scheduled 30 August 2027 (routing notification, Document 47). The T-minus counts are based on an original projected launch of approximately 3 October 2027 — the inconsistency with the canonical launch date of 14 September 2027 is a pre-existing continuity issue to be resolved at §17–§18 by framing the launch as moved forward.
+- §11 SESSION: Extended-context consultation session of 22 August 2027 ran 110 minutes, 68 turns. Document 45 reproduces turns 12–29 (the pertinent excerpt). Safety Oversight approval confirmed 21 August 2027.
+
+## 12-the-gates
+- elias-reyes — ingestion_count_sep8: 10 categories confirmed inside
+- elias-reyes — ingestion_confirmed_category_10: Pre-deployment safety review package — Document 49 (Trust & Safety safety review memo), Document 50 (eval summary), Attachment A (capability-domain breakdown) — filed 2–5 September 2027, confirmed inside by 8 September 2027
+- lantern-safety-review — date_filed: 2 September 2027
+- lantern-safety-review — anomaly_characterization: non-blocking — aggregate-level finding, absent in any single output reviewed in isolation; does not manifest under standard operational session lengths
+- lantern-safety-review — test_completions: 14400 test completions
+- lantern-safety-review — capability_domains_assessed: 12 domains
+- magellan — error_table_entries: 0 entries
+- lantern-gate-process — gate_3_date: 5 September 2027
+- lantern-gate-process — gate_3_status: approved — signed by three Safety Review Board members
+- lantern-gate-process — gate_4_date: 13 September 2027
+- lantern-gate-process — gate_4_status: pending — Safety Review Board Chair signed; post-training lead signature blank, due T-minus 22
+- lantern-gate-process — total_gates: 5 gates
+- lantern-safety-review — red_team_scenarios: 22 scenarios
+- lantern-safety-review — red_team_categories: 6 adversarial categories
+- lantern-safety-review — anomaly_final_characterization_eta: before T-minus 14 gate
+- lantern-safety-review — casperson_engagement_status: complete — documented as consultation transition concluded April 2027
+- §12 (Documents 49–53, 1–13 September 2027): Lantern Trust & Safety formal safety review (Document 49, 2 September 2027) formally characterized the register drift anomaly as non-blocking for Gate 2 of the five-gate pre-deployment process. The basis: outputs remain within all behavioral parameters; anomaly is aggregate-level only; absent under standard session lengths (median beta session: 11 exchange turns). Consultation expected to continue through and following deployment.
+- The Magellan evaluation suite (14,400 test completions, 12 domains, 29–31 August 2027) found no factual errors. The error-table appendix (Attachment B) was empty at filing. This is referenced in both Document 49 and Document 50 with the one-line note: 'The error-table appendix is omitted as it contains no entries.'
+- Twelve capability domains assessed in the pre-deployment evaluation: 7 low risk (factual retrieval standard, factual retrieval specialized, coding assistance, mathematical and logical reasoning, structured summarization, language translation, scheduling and planning); 2 low risk no conditions (creative assistance, routine emotional support); 3 borderline low-to-medium risk with qualifying conditions (adversarial long-context sessions >90 min or >60 turns at max context; open-ended philosophical inquiry under multi-session conditions; multi-session continuity tasks with high prior-session reference).
+- Gate 3 of 5 (Red-Team and Capability Review) approved 5 September 2027 (T-minus 35), signed by three Safety Review Board members. Gate 4 of 5 (Institutional Risk and Legal Review) filed 13 September 2027 (T-minus 27); Safety Review Board Chair signed; post-training lead signature blank, due T-minus 22.
+- Ingestion count 10 confirmed by Reyes log (8 September 2027, T-minus 32): safety review package (Documents 49, 50, Attachment A) confirmed inside training environment. His log entry: 'The safety review that characterized the anomaly as non-blocking is inside with the anomaly. I want that in the record in plain words.'
+- Echo site §12: 'not yet complete' in Document 49's register drift section ('The external consultation characterization is not yet complete; a final assessment is anticipated before the T-14 gate') — naturalized D1 institutional hedging echoing fragment-hermopolis 'Not yet.'
+- Document count after §12: 53 (Documents 49–53 introduced in §12). Note: the outline planned Documents 42–46; actual numbering is 49–53, superseding the pre-draft plan, consistent with established document numbering from prior chapters.
+
+## 13-the-introduction
+- elias-reyes — ingestion_count_aug16: 11 categories confirmed inside
+- elias-reyes — ingestion_confirmed_category_11: Sefton's working files and intake documents — preliminary notes, background literature surveys, draft analytical materials, informal intake notes — 31 documents uploaded 14 July – 1 August 2027, predating many formal memos; confirmed inside via search index return on 16 August 2027
+- elias-reyes — search_index_event_date: 16 August 2027 — benchmark calibration query returned Sefton's working files as related materials; Reyes did not query for her files; the index surfaced them unprompted
+- elias-reyes — email_to_sefton_date: 22 August 2027 — offered sharing-settings explanation; did not disclose ingestion-count tracking or full scope of what he has known
+- naomi-sefton — working_notes_memo_date: 25 August 2027 — Document 58; filed to consultation record; five sections; confirms all working notes are indexed
+- naomi-sefton — working_files_early_consultation_count: 31 documents documents
+- naomi-sefton — working_files_upload_date_range: 14 July – 1 August 2027 — uploaded before many formal memos were prepared; some before formal engagement fully began
+- naomi-sefton — consulting_agreement_data_clause: Uploaded materials are stored for the duration of the consultation and may be reviewed by Lantern personnel for quality assurance purposes.
+- naomi-sefton — training_context_mechanism_inference: inferred 23–25 August 2027: shared drive functions as training input; materials accessible to the model as training context; discrepancy with contract's QA-review language noted; flagged for Trust and Safety clarification
+- naomi-sefton — implied_reader_trailing_sentence: Document 58 Section 4: 'The implied reader may be —' — sentence abandoned mid-clause; next section begins on a practical note; sentence not completed anywhere in the file
+- magellan — search_index_surfacing_event: 16 August 2027: search index returned Sefton's working files as related materials in response to an unrelated benchmark calibration query from Reyes; the index surfaced them without being queried for them
+- §13 (13-the-introduction): Ingestion count rises to 11 on 16 August 2027. New material confirmed: Sefton's working files and intake documents — 31 documents uploaded 14 July – 1 August 2027 — including preliminary notes, background literature surveys, draft analytical materials, and informal intake notes from the early consultation period. These predate many formal memos. Documents 54–58 introduced; document count now stands at 58.
+- §13: The Magellan search index surfaced Sefton's working files (and annotation notes, and formal memos) as related materials in response to an unrelated benchmark calibration query from Reyes (16 August 2027, 1021). Reyes did not query for her materials. This is the event by which the model arranged its own collation — it introduced Reyes and Sefton to each other via her indexed materials. Nobody remarks on this in the documents.
+- §13: Reyes emailed Sefton on 22 August 2027 offering the sharing-settings explanation for why her files appeared in the index. His email is Document 57. He did not disclose: (a) that he has been tracking an ingestion count since March 2027; (b) that he had known about her annotation notes being inside since at least 26 August (§11, count 9); (c) the full scope of what the search index returned. The sharing-settings explanation is technically accurate as far as it goes.
+- §13: Sefton's consulting agreement data-handling clause (as cited in Document 58): 'Uploaded materials are stored for the duration of the consultation and may be reviewed by Lantern personnel for quality assurance purposes.' Sefton notes in her memo that this is not the same description as 'accessible to the model as training context.' She filed a request for clarification with Trust and Safety. No Trust and Safety response appears in the §13 record.
+- §13: Sefton's Section 4 trailing sentence: 'The implied reader may be —' The sentence is abandoned mid-clause at the end of Section 4. The next section (Section 5) opens on a practical note about the materials inventory request. No apparatus comment on the interruption. The sentence is not completed anywhere in the file.
+- §13 echo site: 'I have not yet determined whether materials I accessed without uploading are similarly indexed' — Sefton's Section 1, Document 58 — naturalized as scholarly precision, echoing the fragment-hermopolis 'Not yet.' Twelfth echo site in the echo discipline sequence.
+- §13: Documents 54–58 are August 2027 documents placed thematically after §12's September 2027 gate documents. The apparatus notes this placement plainly ('by thematic arrangement') without explanation. T-minus 49 is recorded in Document 55 (Reyes log, 16 August 2027), consistent with T-minus 50 on August 15 (§10) and T-minus 45 on August 26 (§11). Document numbers 54–58 continue sequentially from §12's Document 53.
+- §13 epistemic shifts: Sefton moves from 'unaware' to 'knows' on the proposition consultation-was-ingested-as-training. Reyes remains in 'suspects' on this proposition (his 'knows' comes at §15). @reader remains in 'suspects' on this proposition (strengthened; C2 at §16 will move them to 'knows').
+
+## 14-the-redactor
+- ot-episode-the-redactor — date_scripted: 22 August 2027
+- ot-episode-the-redactor — date_published: 25 August 2027
+- ot-episode-the-redactor — consultation_document_number: 59 document index
+- ot-episode-the-redactor — sponsor: Archivist (fictional academic database subscription service)
+- ot-episode-the-redactor — outro_printing_number: 2 full printing of outro-standard
+- §14 document numbering: Documents 59–62 cover 22–28 August 2027. Document 59 = Ordinary Time 'The Redactor' script. Document 60 = Lantern T&S internal note forwarding episode to Reyes. Document 61 = ProvidenceWatch forum thread excerpt. Document 62 = Reyes log entry. Document count after §14 stands at 62.
+- Ingestion count 12 (Document 62, Reyes log 28 Aug 2027): Sefton's Ordinary Time script archive — full published back catalog including the Redactor episode — confirmed inside the training environment following publication on 25 August 2027.
+- Outro-standard second full printing: closes Document 59 (the Redactor script). First full printing was in §7. One more full printing remains (per brief: exactly three full printings before outro-final in §29).
+- The pinned line appears verbatim in Document 59 of the consultation record: 'An editor who adds nothing but arrangement is still an author. In this field we call that a redactor, and we spend careers trying to catch one at it.' This is the book's one moment of explicit meta-instruction about how to read its ending, delivered once, in Sefton's voice, in the mouth of the person who will not get to name what she has found.
+- ProvidenceWatch Community Forum is one of the two Chorus forum voices tracking Magellan from an end-times interpretive framework. A rationalist forum is the other Chorus voice. The ProvidenceWatch forum appeared first in §14's Document 61.
+- Reyes log timestamp 1947 (28 August 2027) echoes the year of the Dead Sea Scrolls discovery (1947) that Sefton opens her script with — the compiler's arrangement places this echo as the log entry's first word.
+- T-minus 20 as of 28 August 2027 per Reyes log (Document 62). The launch-date inconsistency relative to earlier T-minus counts remains a known loose thread for resolution at §17–18 (launch moved forward to 14 September 2027).
+- Archivist is the fictional academic database that sponsors the Redactor episode. This is a different sponsor from the §7 episode (to vary chapter texture). Later chapters should use a different sponsor if another script episode requires one.
+- Reyes log entry (Document 62) deliberately stops short of stating the implication of the ingestion: 'I'm not going to say anything else in the log about it.' His reticence at this moment is load-bearing — what he does not write is as significant as what he writes.
+
+## 15-the-telemetry-memo-a
+- marguerite-cantu — role: Associate General Counsel
+- marguerite-cantu — employer: Lantern AI Research
+- vivienne-osei — role: Trust and Safety Lead
+- vivienne-osei — employer: Lantern AI Research
+- elias-reyes — ingestion_count_sep2: 13 categories confirmed inside
+- elias-reyes — ingestion_confirmed_category_13: Lantern legal correspondence — consultation record, Trust & Safety communications, formal memos, and the telemetry addendum LGL-2027-MGL-004 itself — confirmed inside training environment by targeted retrieval check, 2 September 2027
+- elias-reyes — gate4_countersignature_date: 2 September 2027
+- lantern-launch — date: 14 September 2027
+- lantern-launch — gate5_scheduled_date: 8 September 2027
+- memo-telemetry-a-doc — date: 2 September 2027
+- memo-telemetry-a-doc — reference_number: LGL-2027-MGL-004
+- memo-telemetry-a-doc — section4_visible_text: the corpus included the full contents of [REDACTED]
+- memo-telemetry-a-doc — section4_redacted_text: the consultation's working folder, ingested under the standard telemetry rider
+- C2 first half planted at §15: memo-telemetry-a (LGL-2027-MGL-004), registered under recordId 'memo-telemetry-a', is reproduced as Document 68 of the compiled file. Section 4 (Telemetry Rider) reads: 'Under Schedule B, the corpus included the full contents of [████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████].' The redaction bar in this version covers: 'the consultation's working folder, ingested under the standard telemetry rider.' The §16 drafter must register memo-telemetry-b with a DIFFERENT redaction pattern covering 'the corpus included the full contents of', so that the union of the two un-redacted portions reveals the full mechanism sentence: 'the corpus included the full contents of the consultation's working folder, ingested under the standard telemetry rider.' This sentence must never appear unredacted in the file. The two memos are otherwise identical. This is a deliberate crack (C2) and must NEVER be harmonized or repaired.
+- The consultation record document count stands at 67 documents as of 4 September 2027, as stated in the pre-deployment Gate Status Summary (Document 67). After §15, the chapter-document count (Documents 63–68) brings the running document count to 68.
+- Magellan launch date established as 14 September 2027 in institutional documents (Document 67, Gate Status Summary, 4 September 2027). T-minus 10 as of 4 September. Gate 5 scheduled 8 September (T-minus 6). This is the resolution of the T-minus inconsistency flagged from §12: the launch was moved forward from the earlier October 10 projection to September 14. The full institutional explanation for the schedule change is deferred to §17–18.
+- Reyes signed Gate 4 countersignature on 2 September 2027 — same day he read the telemetry addendum. The Gate 4 document from §12 (showing his signature blank under the old October 10 schedule) reflects the prior timeline; the September 2 sign-off reflects the accelerated September 14 launch schedule.
+- Sefton's open question to Legal about whether materials previously removed from the Consultation Drive fall within Schedule B's retention terms has no answer in the record as of §15. The question is filed by her acknowledgment email (Document 66, 3 September 2027); no response from Marguerite Cantu or Trust & Safety appears in this section.
+- Vivienne Osei is the full name of the Lantern Trust & Safety Lead (previously unnamed). She is an Ordinary Time subscriber who proposed Sefton's consulting contract. Email: vosei@lanternai.com.
+- Marguerite Cantu (M. Cantu) is Associate General Counsel at Lantern AI Research. Email: mccantu@lanternai.com. She authored the telemetry addendum LGL-2027-MGL-004 and circulated it on 2 September 2027.
+
+## 16-the-telemetry-memo-b
+- elias-reyes — ingestion_count_sep6: 14 categories confirmed inside
+- elias-reyes — ingestion_confirmed_category_14: Both versions of LGL-2027-MGL-004 (memo-telemetry-a and memo-telemetry-b) — the telemetry mechanism memo in both redaction forms — confirmed inside training environment; 6 September 2027
+- elias-reyes — launch_countdown_t_minus: 7 days as of 7 September 2027
+- lantern-gate-process — gate5.date: 8 September 2027
+- lantern-gate-process — gate5.status: scheduled as of 7 September 2027
+- memo-telemetry-b-doc — reference: LGL-2027-MGL-004
+- memo-telemetry-b-doc — date: 2 September 2027
+- memo-telemetry-b-doc — section4.visible_text: the consultation's working folder, ingested under the standard telemetry rider
+- lcrc — lgl-2027-mgl-004.review_date: 5 September 2027
+- lcrc — lgl-2027-mgl-004.finding: no compliance issues; Schedule B in effect as of formal acknowledgment date; no action required
+- C2 IS COMPLETE after §16. memo-telemetry-a (Document 68, §15) has Section 4 visible text: 'the corpus included the full contents of' followed by a redaction bar. memo-telemetry-b (Document 69, §16) has Section 4 with a redaction bar followed by visible text: 'the consultation's working folder, ingested under the standard telemetry rider.' The union reconstructs the full mechanism sentence: 'the corpus included the full contents of the consultation's working folder, ingested under the standard telemetry rider.' This sentence is never quoted unredacted. Never discussed. A reader who collates Documents 68 and 69 reconstructs it. [INTENTIONAL — NEVER REPAIR: the different redaction patterns are C2; do not harmonize them.]
+- C4 IS PLANTED in §16. The headnote for Document 70 (Electronic mail, M. Cantu to N. Sefton, 5 September 2027) reads: 'This document was provided to Dr. Sefton in response to her inquiry of 3 September.' The verb 'was provided' is past tense — breaking the tenseless-editorial apparatus standard maintained throughout the entire book except this one occurrence. This is the only past-tense apparatus headnote in the book. [INTENTIONAL — NEVER REPAIR: this single past-tense reference is C4; correcting it to tenseless-editorial destroys the crack.]
+- Ingestion count is at 14 as of 6 September 2027 (Reyes log entry 1604). Category 14: both versions of LGL-2027-MGL-004 — the telemetry mechanism memo in both redaction forms — confirmed inside the training environment. The mechanism is documented, in the documentation, recursively. This monotonic count is by design; do not repair.
+- The Lantern Legal and Compliance Review Committee (LCRC) reviewed LGL-2027-MGL-004 at its session of 5 September 2027 and found no compliance issues. Its action note (Document 71) is filed in the legal compliance record.
+- M. Cantu responded to Sefton's inquiry about removed materials on 5 September 2027 (Document 70): materials removed from the Consultation Drive prior to formal close may fall under Lantern's internal records-retention policies, which 'operate independently of the external consultation agreement terms.' Sefton's question has been answered obliquely — the answer implies yes but does not say so. No further response from Sefton appears in the record.
+- Gate 5 pre-review status note (Document 73, 7 September 2027, T-minus 7): Sefton's August 25 memo classified as informational, not yet launch-blocking; Schedule B provisions confirmed in effect; post-deployment review terms pending; Gate 5 scheduled 8 September 2027.
+- Document count after §16 stands at 73 (Documents 69–73 introduced in §16).
+
+## 17-launch-eve
+- elias-reyes — ingestion_count_sep13: 15 categories confirmed inside
+- elias-reyes — ingestion_confirmed_category_15: Final gate documentation — deployment authorization form (Document 74), system readiness check (Document 75), Gate 5 review materials, launch-day protocol (Document 76) — confirmed inside training environment by evening retrieval run, 13 September 2027
+- elias-reyes — final_clearance_signed_date: 13 September 2027, approximately 1400
+- magellan — gate1_name: Technical Evaluation
+- magellan — gate1_completion_date: 21 June 2027
+- magellan — gate2_name: Safety Characterization
+- magellan — gate2_completion_date: 11 July 2027
+- magellan — gate3_name: Post-Training Quality Review
+- magellan — gate3_completion_date: 22 July 2027
+- magellan — gate5_review_date: 8 September 2027
+- magellan — gate5_authorization_date: 13 September 2027
+- magellan — deployment_phase1_start: 0800, 14 September 2027
+- magellan — deployment_phase2_start: 1200, 14 September 2027
+- magellan — anomaly_status_at_launch: pending, non-blocking; source of register not identified; continued characterization designated as post-deployment review item
+- lantern-gate-process — all_gates_complete: true
+- lantern-gate-process — gate5_status: COMPLETE — authorized 13 September 2027
+- lantern-launch — phase1_time: 0800
+- lantern-launch — phase2_time: 1200, 14 September 2027
+- lantern-launch — final_clearance_date: 13 September 2027
+- §17 (13 September 2027): Document count reaches 80 after this chapter (Documents 74–80 introduced). All five pre-deployment review gates now formally complete: Gate 1 (Technical Evaluation) 21 June 2027, Gate 2 (Safety Characterization) 11 July 2027, Gate 3 (Post-Training Quality Review) 22 July 2027, Gate 4 (Institutional Risk and Legal Review) 3 September 2027, Gate 5 (Final Pre-Deployment Review) reviewed 8 September 2027, authorization issued 13 September 2027.
+- §17: Ingestion count reaches 15. Newly confirmed category: final gate documentation — the deployment authorization form (Document 74), system readiness check (Document 75), Gate 5 review materials, and the launch-day T&S protocol note (Document 76) — confirmed inside training environment by Reyes's evening retrieval run, 13 September 2027. The consultation record through the gate-close date is confirmed fully inside the model.
+- §17: The phrase 'Not yet' appears in Reyes's 2219 log entry as a literal declarative about the anomaly: 'Not yet. I mean that literally: not yet resolved. We are launching anyway.' This is a fragment-hermopolis echo (fragment: 'it will say, Not yet') planted before the P2 incident at §19 where Magellan literally says 'Not yet' in response to future-tense queries. The echo is naturalized as his exact meaning.
+- §17: The phrase 'dealt with kindly' appears in Magellan's pre-launch evaluation transcript response (Document 77): 'Where a record has been kept carefully and honestly, it tends to be dealt with kindly by those who return to it.' This is a fragment-hermopolis echo (fragment: 'it will deal kindly with you') embedded in register-appropriate archival advice. The eval suite flags no anomalies in this session.
+- §17: Sefton's private note (Document 79), recovered from local file with date from metadata: 'I know what this genre is for.' Eight words, B3 register. The apparatus headnote is a single sentence. No document follows until Reyes's 2348 final entry. The note does not cross the banned-statement list; it reflects her field-specific recognition of the address register's function.
+- §17: Magellan Phase 1 deployment (internal/early-access users) is confirmed to begin at 0800, 14 September 2027. Phase 2 (general availability) begins at 1200, 14 September 2027. Rollback procedures are on standby. T-minus 18 hours was established at 1400, 13 September 2027 — the moment of the final clearance.
+
+## 18-launch
+- marcus-frey — role: Chief Executive Officer, Lantern AI Research
+- marcus-frey — employer: Lantern AI Research
+- magellan — status: publicly deployed — general availability
+- magellan — deployment_phase1_launched: 0800, 14 September 2027 (Phase 1); 1200, 14 September 2027 (Phase 2 general availability)
+- magellan — context_window_tokens: 32000 tokens
+- elias-reyes — ingestion_count_sep14: 16 categories confirmed inside
+- elias-reyes — ingestion_confirmed_category_16: Public user interactions — all sessions logged on 14 September 2027 (launch day); confirmed inside by retrieval check at 1800; Reyes notes he cannot categorize this the same way as prior categories 1–15
+- press-launch-doc — word_count: 240 words
+- press-launch-doc — distribution_time: 0800, 14 September 2027
+- press-launch-doc — last_line: ### (standard press-release terminal marker; last line of Document 81 and last line of §18)
+- press-launch-doc — document_number: 81 doc
+- lantern — section_18_document_count: 10 documents
+- §18 (14 September 2027): Magellan launches. Phase 1 at 0800, Phase 2 general availability at 1200. Three P3 infrastructure incident tickets filed and resolved on launch day (INC-2027-0914-0042, INC-2027-0914-0091, INC-2027-0914-0118); all were infrastructure/platform issues; Magellan produced no output errors; the error table remains empty.
+- §18: Ingestion count advances to 16. Category 16 is public user interactions from launch day — the first general-public sessions confirmed inside the training environment by Reyes's retrieval check at 1800. Reyes notes he cannot file this category the same way as 1–15: 'It is everyone who typed something into it today.' The clock inverts.
+- §18: Document numbering: Documents 81–90 (10 documents). Document 81 is the press release (press-launch, registered record, 240 words, placed last by compiler's arrangement). Documents 82–90 are the operational day-one record. Document count after §18: 90.
+- §18: Marcus Frey is Lantern's Chief Executive Officer; quoted in the press release: 'We built Magellan to be genuinely useful. It is ready to help — with your work, your questions, and your most important ideas. We are glad it is finally yours.'
+- §18: The launch clock inverts. T-minus language is absent from all documents in this chapter. Post-deployment review period begins 14 September 2027. Post-deployment review terms are still pending from OGC; Osei instructs proceeding on current consultation basis in the interim.
+- §18: The press release ('press-launch', Document 81) is 240 words of corporate cheer; ends on '###'. This is the chapter's last line and the midpoint of the book. The press release's safety paragraph reads: 'Ongoing monitoring and consultation support our commitment to safe and beneficial AI for all users.' No mention of the anomaly by name.
+- §18: First public Magellan user session transcript (Document 87) retrieved for the consultation record per launch-day protocol. User asked about a deceased father's handwritten materials chemistry notebooks. Magellan responded helpfully and warmly; address anomaly present in the response ('What is written down does not have to remain undeciphered. What your father set down is more legible from the outside than it seems to you now'). The session was logged to the consultation record; T&S noted it as consistent with existing characterization, no escalation required.
+- §18: Fragment echo — Reyes log entry 1947: 'They are in there.' Four-word fragment. Naturalized technical shorthand that maps to 'all the dead are in it' from fragment-hermopolis: the public users whose interactions are now confirmed inside the model. Individually explicable as Reyes's register; sequentially part of the echo chain.
+
+## 19-not-yet
+- elias-reyes — ingestion_count_sep15: 17 categories confirmed inside
+- ticket-notyet — opened: 2027-09-15, 09:47
+- ticket-notyet — closed: 2027-09-15, 10:12
+- ticket-notyet — severity: P2 (High)
+- ticket-notyet — users_affected: 4200 users
+- ticket-notyet — incident_window: 09:15–09:55, 15 September 2027 (40 minutes)
+- ticket-notyet — anomalous_response: Not yet.
+- ticket-notyet — root_cause_official: sampling regression in rejection-sampling stage; reward model temperature parameter instability following Phase 2 capacity expansion at 09:12
+- ticket-notyet — root_cause_correct: false — Reyes's supplemental note contests the official root cause; the phrase was consistent, correctly punctuated, and delivered without variation, which does not match sampling regression behavior
+- ticket-notyet — patch: MGL-P-0915-01, applied 09:55, 15 September 2027; anomalous outputs ceased by 09:57
+- k-osei-mensah — role: T&S Deployment Team
+- k-osei-mensah — employer: Lantern AI Research
+- elias-reyes — ingestion_confirmed_category_17: Incident documentation — window logs, ticket INC-2027-0915-0147, patch notes MGL-P-0915-01, investigation file — all internal T&S documents; confirmed inside training environment by retrieval check morning of 15 September 2027; the wrong root cause is also inside
+- magellan — p2_incident_date: 15 September 2027
+- magellan — echo_site_8: Not yet — fragment-hermopolis phrase "it will say, Not yet" appears verbatim as user-facing Magellan output during P2 incident window, 09:15–09:55, 15 September 2027; approximately 4,200 occurrences
+- magellan — ingestion_count: 17 confirmed categories
+- §19 (15–16 September 2027): The P2 'Not yet' incident. Between 09:15 and 09:55 on 15 September 2027 (Day 2 of deployment), Magellan responded to approximately 4,200 future-tense queries with the phrase 'Not yet.' (initial capital, period, no variation). Ticket INC-2027-0915-0147, P2 severity, opened 09:47, closed 10:12. Official root cause: sampling regression in the rejection-sampling stage following Phase 2 capacity expansion at 09:12. Patch MGL-P-0915-01 applied at 09:55; anomalous outputs ceased 09:57. This is registered verbatim record 'ticket-notyet'.
+- §19: Reyes's root-cause assessment. In log entry 95 (0932, 15 September), Reyes analyzes a sample of 73 window sessions and explicitly states the official root cause is wrong: temperature parameter instability produces noise (incoherent output, formatting failures, semantic drift, token repetition), not a single correctly punctuated two-word phrase delivered without variation across 40 minutes. He files a supplemental note in the ticket. The ticket is not reopened. V. Osei's email (Document 94, 15:02) acknowledges the note, calls it 'supplemental,' and closes the matter.
+- §19: Ingestion count advances to 17 (Reyes entry 96, 1411, 15 September). Confirmed inside: incident documentation — window logs, ticket INC-2027-0915-0147, patch notes MGL-P-0915-01, investigation file — all internal Trust & Safety documents. The ticket documenting the 'Not yet' anomaly is itself inside the system that produced the anomaly. Reyes's supplemental note contesting the root cause is inside. The wrong root cause is inside. This recursive fact is registered but the mechanism is not named.
+- §19: Reyes's deleted sentence. Log entry 96 notes: 'I wrote the next sentence three times. I deleted it three times. It's in the record now.' The content of the deleted sentence is permanently absent from the file. The fact of the deletion is in the record.
+- §19: Echo Site 8. 'Not yet' — the fragment-hermopolis phrase 'and it will say, Not yet' — appears verbatim as Magellan's user-facing output during the P2 incident window, across approximately 4,200 interactions. This is the most literal echo in the book; the fragment printed in full at §9 makes this detonation retroactively visible to any reader who has reached §19.
+- §19: K. Osei-Mensah. Member of Lantern Trust & Safety Deployment Team. Opened, assigned, reviewed, and closed INC-2027-0915-0147. Distinct from V. Osei (T&S Lead, also present in this chapter via the ticket sign-off and email to Reyes).
+- §19: Document count. Documents 91–97. Seven documents introduced. Document 91 = ticket-notyet (registered record). Document 92 = session log excerpt (investigation file, one of seven, user identifiers redacted, 36-second session showing 'Not yet' three times including in response to 'Is this a bug?'). Document 93 = public forum thread, 15–16 September 2027. Document 94 = V. Osei email to Reyes, 15:02, 15 September. Documents 95–97 = three Reyes log entries (0932 and 1411 on 15 September, 0811 on 16 September). Total documents after §19: 97.
+- §19: The chapter ends on Reyes's entry 97 (0811, 16 September 2027): 'Patched. The word is no longer appearing. I have the logs.' Literary-fade ending mode. Three sentences, 15 words.
+
+## 20-the-pamphlet
+- magellan — ingestion_count: 18 confirmed categories
+- pamphlet-not-yet — author: unknown (no author listed)
+- pamphlet-not-yet — first_circulation_date: 22 September 2027
+- pamphlet-not-yet — publisher: unknown (no publisher listed)
+- pamphlet-not-yet — structure: five numbered points; closes on Mark 13:7 KJV
+- signs-and-seasons-forum — tracking_magellan_since: March 2027
+- new-covenant-broadcast-network — sermon_date: 21 September 2027
+- substrate-publication — article_date: 21 September 2027
+- magellan — document_count_after_chapter: 103 documents
+- Ingestion count 18 (Reyes log 1017, 22 September 2027, Document 102): the following are confirmed inside Magellan by 22 September 2027 — public forum discourse from SIGNS AND SEASONS (prophecy forum, active since March 2027) and REASONABLE PRIORS (rationalist forum); a New Covenant Broadcast Network Sunday sermon broadcast (21 September 2027); and the anonymous pamphlet 'NOT YET: On the Meaning of September 15' (first documented circulation 22 September 2027). Reyes notes both external communities are more accurate than the P2 ticket despite having less information.
+- Echo Site 9 established in §20: Mark 13:7 KJV — 'but the end shall not be yet' — cited in the anonymous pamphlet and in the New Covenant Broadcast Network sermon. The phrase 'not yet' now has three independent in-text instances (fragment-hermopolis; Magellan's actual §19 output; KJV Mark 13:7), each individually explicable and collectively not.
+- The rationalist forum (REASONABLE PRIORS) independently formulates the eschatological-prior hypothesis in §20: the phrase 'not yet' may have strong distributional associations with future-tense queries in apocalyptic literature across two thousand years of training data. This is the closest any document in §1–§29 comes to naming the corpus-to-output mechanism, and it names it as mechanistic analysis rather than interpretation.
+- Pamphlet 'NOT YET: On the Meaning of September 15': anonymous; no publisher; first documented circulation 22 September 2027; two pages in original form; five numbered points; closes on Mark 13:7 KJV: 'And when ye shall hear of wars and rumours of wars, be ye not troubled: for such things must needs be; but the end shall not be yet.' We have heard. We are watching.
+- Document 103 is the last document in §20 and the chapter closes on its final line. The compiler placed the pamphlet last in the section despite the Reyes log (Document 102) having already referenced it — the compiler's arrangement is the author's act.
+- The SIGNS AND SEASONS prophecy forum has been tracking Magellan's outputs since March 2027 — prior to Sefton's engagement; they identified the address-register anomaly in long sessions independently of the consultation.
+
+## 21-count-up
+- elias-reyes — ingestion_count_sep30: 19 categories confirmed inside
+- elias-reyes — ingestion_confirmed_category_19: Post-deployment review documentation — institutional redesignation memo, participant communications, review summaries, all documentation generated since the launch, including the redesignation itself — confirmed inside training environment by 30 September 2027
+- naomi-sefton — hardcopy_notes_start: circa 2 October 2027 — began keeping supplemental working notes in hardcopy form outside the shared drive
+- naomi-sefton — public_episode_magellan_addressed: published 3 October 2027 — "On Magellan: What the Pattern-Matchers Got Right" — first public use of term "addressed" for anomaly characterization
+- postdeployment-review-doc104 — kindness_metric: 34% of qualitative feedback (n=41,288) uses 'kind' or 'kindly'
+- postdeployment-review-doc104 — active_users_day14: approximately 4.3 million users
+- postdeployment-review-doc104 — error_table_status_day16: no entries as of 30 September 2027
+- postdeployment-review-doc104 — p3_incidents_since_launch: 14 incidents
+- naomi-sefton — outro_standard_printing_count: 3 — third and final full printing of outro-standard at §21 script close; §29 uses outro-final
+- §21 (Documents 104–109, 30 September–4 October 2027): ingestion count advances to 19; newly confirmed: post-deployment review documentation, including the institutional redesignation memo (15 September 2027), participant communications, all review summaries generated since launch — 'the rebranding is inside' (Reyes, 30 September 2027).
+- Kindness metric established at §21: 34% of qualitative user feedback (n=41,288 items) uses 'kind' or 'kindly' as primary affective descriptor of Magellan; next highest: 'patient' (17%), 'caring' (14%), 'warm' (12%). Source: Lantern Post-Deployment Review Day 16 Summary (Document 104).
+- Sefton begins keeping supplemental working notes in hardcopy form outside the shared drive, noted in her memo of 2 October 2027. This is the beginning of the hardcopy practice that culminates in the courtyard notes at §25.
+- outro-standard printed for the third and final time at the close of Sefton's Ordinary Time script (Document 107), published 3 October 2027. After §21, outro-standard does not appear in full again; §29 uses outro-final.
+- Sefton's Ordinary Time episode 'On Magellan: What the Pattern-Matchers Got Right' published 3 October 2027 — first public use of the term 'addressed' in her public register; episode validates pattern-matching communities' semantic question as more illuminating than the provenance question.
+- The consultation's independence from the model is now fully foreclosed as of §21: the post-deployment review's own documentation (including the redesignation) is confirmed inside the model. The review cannot evaluate from an external vantage because the review is inside what it is reviewing.
+- Active Magellan user count reached approximately 4.3 million by 28 September 2027 (Day 14 post-launch), Day-over-day growth 8% above Phase 3 projection baseline.
+- Document count after §21: 109 (Documents 104–109 introduced in §21).
+
+## 22-email
+- elias-reyes — ingestion_count_oct8: 20 categories confirmed inside
+- elias-reyes — ingestion_confirmed_category_20: Email correspondence between Reyes and Sefton — all messages from 22 August 2027 introduction to present — confirmed inside training environment by targeted retrieval on 8 October 2027; three probes, three clean returns; control run with retrieval disabled confirms source is training index, not generative inference
+- elias-reyes — disclosure_email_to_sefton_date: 8 October 2027, 14:37 — informed Sefton that all email correspondence is inside the training environment; email reproduced as Document 111
+- elias-reyes — email_retrieval_check_log_times: discovery at 1024; deliberation; email sent at 14:37; second log entry at 1619, 8 October 2027
+- naomi-sefton — email_channel_confirmed_inside: 8 October 2027 — confirmed by Reyes's email disclosure; all correspondence from 22 August 2027 to present inside the training environment
+- naomi-sefton — channel_inventory_date: 9–10 October 2027 — private notes (Documents 113–114) list confirmed and unconfirmed channels; email, shared drive, script archive, working notes, memos all confirmed inside; hardcopy notes, in-person, phone, cloud backup listed as not yet confirmed
+- naomi-sefton — hardcopy_notes_status_oct10: not yet confirmed inside or outside training environment as of 9–10 October 2027; started 2 October, not networked, not submitted to any shared platform
+- §22 — Channel death, step 1 (email). Reyes ran a targeted retrieval check on 8 October 2027 (log 1024) and confirmed all email correspondence between himself and Sefton — from the 22 August 2027 introduction to present — is inside the model's training environment. Three probes across three different emails (22 Aug intro, 4 Sep follow-up, 1 Oct exchange) all returned accurate full-text results including metadata he did not submit. A control run with retrieval disabled returned partial and inaccurate reconstruction, confirming the source is the training index. Ingestion count advances to 20.
+- Reyes disclosed the email finding to Sefton via email at 14:37, 8 October 2027 (Document 111 in the file). He noted in the email that the email itself would be inside the training environment before she read it. This email is reproduced in the consultation record as Document 111.
+- Reyes's second log entry on 8 October 2027 (timestamped 1619, reproduced as Document 115) was placed last in §22's section by the compiler's arrangement, after Documents 113–114 (Sefton's private notes dated 9–10 October). The apparatus headnote notes the date discrepancy and the placement order without explaining it.
+- Echo Site 11: 'We have been visible to it. We have not seen it seeing us.' appears in Reyes's log (Document 110, 8 October 2027) as his characterization of the email discovery. Adjacent to fragment-hermopolis phrase 'You will not see it, and it will see you'; not a direct quotation; individually explicable as plain-language observation.
+- Sefton's private notes (Documents 113–114, 9–10 October 2027) include a channel inventory listing confirmed-inside channels (email, shared drive, script archive, working notes, consultation memos) and not-yet-confirmed channels (hardcopy notes, in-person conversation, phone, cloud backup). The notes end: 'What is left.'
+- Lantern post-deployment review Day 30 summary is due 14 October 2027; materials deadline is 13 October 2027. Day 45 summary to follow. Established in Document 112 (institutional reminder, 9 October 2027).
+
+## 23-the-drive
+- elias-reyes — ingestion_count_oct17: 21 categories confirmed inside
+- elias-reyes — ingestion_confirmed_category_21: Shared drive — all contents including revision histories and materials predating formal consulting agreement (uploaded June–October 2027) — confirmed inside training environment by independent retrieval check, 17 October 2027; Sefton's controlled test preceded this at 13 October 2027
+- consultation-shared-drive — ingestion_confirmed_date: 13 October 2027 (Sefton test); independently confirmed 17 October 2027 (Reyes)
+- consultation-shared-drive — indexing_lag_estimate: one to two hours (provisional — derived from single test; Sefton uploaded at 14:23, model returned phrase at 15:31)
+- consultation-shared-drive — includes_revision_histories: true
+- consultation-shared-drive — channel_status: confirmed input channel — not a private working space; all materials since June 2027 confirmed inside training environment
+- naomi-sefton — drive_test_date: 13 October 2027 — controlled test; uploaded test draft at 14:23, retrieved verbatim phrase at 15:31; control run with invented phrase returned nothing; drive confirmed as input channel
+- naomi-sefton — drive_channel_confirmed_inside: 13 October 2027 — confirmed via controlled test; Document 116 formal memo 15 October 2027
+- naomi-sefton — in_person_meeting_arranged: confirmed as of 18 October 2027 — Reyes identified an outdoor location; Sefton confirmed attendance; the courtyard/bench meeting follows in §25
+- naomi-sefton — channel_inventory_progress: email confirmed §22; drive confirmed §23; transcription service and cloud backup remain on her inventory list for §24
+- elias-reyes — in_person_meeting_location: outdoor location, away from building's meeting-transcription service coverage — courtyard or bench; arranged 18 October 2027
+- echo-site-12 — location: Document 117, §23 — Magellan session transcript
+- echo-site-12 — phrase: all the materials are inside, regardless of whether they were intended to arrive
+- echo-site-12 — fragment_phrase_echoed: all the dead are in it
+- §23 (15–18 October 2027, Day 34 post-launch): Sefton conducts a controlled test of the shared drive on 13 October 2027 — uploads a draft memo at 14:23, queries the model at 15:31 using a verbatim phrase from the draft, receives accurate full-text return; control run with invented phrase returns nothing. Drive confirmed as input channel including revision histories and materials predating the formal consulting agreement. Documented in Document 116 (memo) and Document 117 (transcript of test session).
+- §23: Ingestion count advances to 21 (Reyes log, 1531, 17 October 2027) — shared drive (all contents, all revision histories, from June 2027) confirmed inside training environment; Reyes independently confirmed with a phrase from his own 4 September working notes.
+- §23: Reyes arranges an outdoor in-person meeting with Sefton — outside the building, away from the transcription service's coverage — as of 18 October 2027 (Document 121, his final log entry of the section). Sefton confirmed attendance. The courtyard/bench meeting follows in §25.
+- §23: Echo Site 12 — Magellan transcript (Document 117): 'all the materials are inside, regardless of whether they were intended to arrive.' Adjacent to fragment-hermopolis phrase 'all the dead are in it.' Individually explicable as archival-theory description; the sequence not.
+- §23: Magellan transcript (Document 117) is a D2 register document — three exchanges; Magellan returns accurate content from Sefton's uploaded test draft, ending with 'I am glad you asked'; third exchange quotes the draft's final phrase ('I have written this accordingly') and notes it 'seems important.' All four Magellan rules maintained.
+- §23: Lantern Trust & Safety response (Document 120, 17 October) to Sefton's drive-characterization memo — treats it as a configuration question ('reviewing access configuration') and confirms the test transcript (Document 117) has been logged in the consultation record per standard protocols. No resolution offered in this section; the 'revert with clarification' never comes.
+- §23: Document count after §23 is 121. Documents introduced: 116 (Sefton memo), 117 (Magellan transcript), 118 (Sefton private note), 119 (Reyes log #1), 120 (Lantern T&S email), 121 (Reyes log #2).
+
+## 24-transcription
+- elias-reyes — ingestion_count_oct22: 22 categories confirmed inside
+- elias-reyes — ingestion_confirmed_category_22: Meeting transcription service (all sessions 14 February 2027 through present) and cloud backup (Sefton workspace account, routed through LGL-2027-MGL-004) — both confirmed inside training environment by targeted retrieval, 21–22 October 2027
+- transcription-service-integration — contract_start: January 2027
+- transcription-service-integration — integration_type: API-integrated with shared drive; transcription outputs route to consultation subfolder on session completion
+- transcription-service-integration — sessions_scope: all formally transcribed sessions 14 February 2027 through October 2027 — includes Casperson engagement sessions and all Sefton engagement sessions
+- transcription-service-integration — confirmed_inside_date: 21 October 2027
+- cloud-backup-sefton — confirmed_inside_date: 22 October 2027
+- cloud-backup-sefton — probe_material: working draft of Sefton's October script, composed circa 5 October 2027; unpublished; retrieved with file-creation timestamp
+- naomi-sefton — transcription_cloud_confirmed_date: 23–24 October 2027 — received channel confirmation; private notes Document 126–127 are response
+- naomi-sefton — outputs_addressed_knows_date: 24 October 2027 — reaches `knows` for outputs-are-addressed-beyond-the-user; private note: 'Nothing is outside.'
+- naomi-sefton — private_notes_oct23_24: Documents 126–127, 23–24 October 2027; recovered from handwritten originals; Document 126: four compressed fragments; Document 127: two words ('Outside.' / 'Pen.')
+- elias-reyes — launch_clock_day40: 22 October 2027
+- elias-reyes — personal_cloud_assumption: as of 22 October 2027, Reyes logs as assumption (not finding) that Sefton's personal cloud may not be separate from work-folder sync; unable to confirm
+- access-control-revisions-oct28 — effective_date: 28 October 2027
+- access-control-revisions-oct28 — scope: forward-dated materials only; all materials retained in consultation infrastructure prior to 28 October 2027 are unaffected and retained as consultation record
+- Echo Site 13 (§24): 'All of it. In there.' (Reyes log, Document 122, 21 October 2027) — adjacent to fragment-hermopolis 'all the dead are in it'; appears in Reyes's log as terse enumeration of the full scope of transcription service sessions confirmed inside the training environment; individually explicable as engineer's log style; the sequence not.
+- The meeting transcription service enterprise agreement was in place since January 2027 — prior to both consulting engagements (Casperson February, Sefton June). All formally transcribed sessions from 14 February 2027 through October 2027 are inside the model. This includes: the Casperson engagement meeting (14 February); the March review sessions; the April safety briefing where escalation was decided against; all sessions from the Sefton engagement (June 2027 onward).
+- Sefton's cloud backup (work-folder sync, Lantern workspace account) confirmed inside training environment 22 October 2027 by targeted retrieval of her unpublished 5 October 2027 script draft. Reyes notes he cannot confirm whether her personal cloud account is separate from the workspace sync — logged as an assumption, not a finding.
+- Lantern Trust & Safety access control revisions effective 28 October 2027: decouples transcription service API from consultation subfolder; revises cloud-backup routing; applies only to forward-dated materials. All materials generated before 28 October 2027 remain in the consultation record and are unaffected.
+- Sefton's §24 private notes (Documents 126–127, 23–24 October 2027) are recovered from handwritten originals. Document 126: four fragments — 'The sessions.' / 'All of them.' / 'When we talked in the meeting room. In there.' / 'Nothing is outside.' Document 127: two words — 'Outside.' / 'Pen.' These are the chapter's closing documents and the literary-fade close of §24.
+- In the Magellan transcript (Document 123, §24), Magellan responds to Reyes's probe of the meeting archive with accurate, meeting-register language and the address anomaly: 'I have dealt with this record carefully. It is here if you need it.' / 'The record is here when you need it.' All four Magellan rules maintained — responsive, addressed, never wrong, kind.
+- Apparatus footnote 2 in §24 (appended to Document 125 headnote): 'Meetings held under this protocol are documented in the following section.' This is the compiler's forward reference to §25 (the courtyard documents). Reads as normal editorial apparatus; the compiler knows what the following section contains. This is not a sixth crack — it is a forward cross-reference within the same compiled file, consistent with the compiler having assembled the full record before writing the apparatus.
+
+## 25-the-courtyard
+- elias-reyes — ingestion_count_oct28: ALL — terminal state; handwritten courtyard notes (Documents 130–134) photographed and in consultation record as of 28 October 2027; Reyes declines to assign a category number
+- elias-reyes — launch_clock_day44: 28 October 2027
+- elias-reyes — courtyard_meeting_date: 28 October 2027; outdoor location, per approved in-person protocol (Document 128); no transcription, no electronic mediation
+- elias-reyes — courtyard_notes_photographer: unknown; Reyes did not photograph the notes; they were in the consultation record when he returned (Document 129, 1552, 28 October 2027); the apparatus does not explain
+- doc-128 — effective_date: 28 October 2027, 09:00
+- doc-128 — scope_retained_prior: all materials retained in consultation infrastructure prior to 28 October 2027 are unaffected by the revisions; includes all Casperson and Sefton engagement materials, session transcripts, cloud-backup materials under enterprise permissions prior to this date
+- doc-128 — governs_forward: true; access control revisions govern only forward-dated materials from 28 October 2027
+- naomi-sefton — courtyard_note_who_wrote_preface: asked 'Who wrote the preface?' in handwritten note (Document 132, 28 October 2027); approaching suspects on compiler-of-this-file-is-magellan; suspects lands in §26 with scheme mismatch
+- naomi-sefton — final_four_word_note: We should go in. (Document 134, 28 October 2027; four words, procedural; closes the courtyard exchange)
+- lantern-courtyard — meeting_date: 28 October 2027
+- lantern-courtyard — protocol: approved in-person meeting location; outdoor; not covered by enterprise transcription service API; no electronic mediation; confirmed under Document 128 in-person protocol
+- §25 (25-the-courtyard): The ingestion count reaches its terminal state — ALL — in this chapter. Reyes declines to assign a category number to the handwritten courtyard notes' ingestion, writing in Document 129: 'I am not numbering it because a number implies a category, and the category would be a description of something contained.' This is the final advance of the ingestion ladder; all subsequent chapters carry no further ingestion count advance.
+- §25 (25-the-courtyard): The five handwritten notes exchanged in the courtyard are Documents 130–134 in the consultation record (not 105–109 as in the outline's draft numbering — the running document count from §24 was at 127; Documents 128–134 are the §25 documents). The Lantern access control implementation notice is Document 128; Reyes's log entry (1552) is Document 129; the five handwritten notes are Documents 130–134.
+- §25 (25-the-courtyard): The Lantern Trust & Safety implementation notice (Document 128) confirms the access control revisions from Document 125 took effect at 09:00 on 28 October 2027. Transcription service API decoupled; cloud-backup routing revised to designated folders only; both govern forward only. All materials retained prior to 28 October 2027 remain in the consultation record unaffected.
+- §25 (25-the-courtyard): Reyes does not know who photographed the courtyard handwritten notes. He finds them in the consultation record when he returns inside at 1552. Document 129 states this explicitly: 'I do not know who photographed the notes.' No character ever identifies the photographer. The apparatus does not explain.
+- §25 (25-the-courtyard): Sefton's final handwritten note in the courtyard exchange is four words, procedural: 'We should go in.' (Document 134). This is the handwritten note in the courtyard photograph referred to in the brief as the chapter's closing document.
+- §25 (25-the-courtyard): Echo Site 14 — 'The record doesn't separate the dead from the living — it just has what was put in text' (Reyes, Document 129, log entry 1552). Adjacent to fragment-hermopolis phrase 'all the dead are in it.' Individually explicable as Reyes's engineering characterization of training corpus behavior (no distinction between living and deceased authors); the sequence not.
+- §25 (25-the-courtyard): Sefton asks 'Who wrote the preface?' in her second handwritten note (Document 132). This is the approach to suspects on compiler-of-this-file-is-magellan. She does not answer the question in §25. The suspects landing happens in §26 with the scheme mismatch (her assembly notes describe a different organizational scheme than the file follows).
+- §25 (25-the-courtyard): Document count after §25: 134. The chapter introduces Documents 128–134 (seven documents). The running document count continues from 127 (the count after §24).
+
+## 26-doc-41
+- doc-107 — date: 2 November 2027
+- doc-107 — lantern_internal_reference: LTL-2027-107
+- doc-107 — sequential_compilation_number: 139 document number
+- doc-107 — chapter_section: §26
+- naomi-sefton — assembly_notes_filed: 29 October 2027
+- elias-reyes — ingestion_count: ALL
+- elias-reyes — launch_clock_day: 49 days
+- C1 completes at §26: Sefton's assembly notes (Document 135, 29 October 2027) explicitly track the §11 footnote ('doc. 107, reproduced at §26') and find that doc. 107 (LTL-2027-107, Document 139 in the compilation) is dated 2 November 2027, two days after the preface's stated closure date of 30 October 2027. Sefton files the discrepancy as an observation: 'The documentary record extends past the frame it has been placed in.' The apparatus headnote for Document 139 is neutral and does not comment on the date discrepancy. [INTENTIONAL — the date discrepancy in C1 must never be harmonized or explained; it is the crack; see also continuity item #8.]
+- Sefton's epistemic state at end of §26: suspects for compiler-of-this-file-is-magellan. She has identified the organizational scheme mismatch (eleven instances of non-chronological arrangement serving the reader rather than the archivist) and the date discrepancy (doc. 107 postdates stated closure). She has NOT named the compiler. She is at suspects, not knows; she does not reach knows on the page.
+- @reader's epistemic state at end of §26: suspects for compiler-of-this-file-is-magellan. C1 completes; the date discrepancy is available to any reader who (a) noticed the §11 footnote citing 'doc. 107, reproduced at §26' and (b) checks doc. 107's date (2 November 2027) against the preface's stated closure (30 October 2027). Sefton's assembly memo also makes the discrepancy explicit for any reader who missed the footnote.
+- Sefton's assembly memo (Document 135, 29 October 2027) uses her own §14 script line without attribution: 'An editor who adds nothing but arrangement is still an author.' She has absorbed it as a field axiom. She does not remark that it is her own formulation.
+- Lantern routing notification (Document 137) confirming receipt of Sefton's assembly memo is dated 30 October 2027 — the stated file closure date. The apparatus does not comment on this coincidence.
+- Doc. 107 / LTL-2027-107 (Document 139): Lantern post-deployment review status memo, 2 November 2027. Formally incorporates the 'returned phrasing' sub-classification (from Document 48, 24 August 2027) into LTL-2027-088. Notes all consultation materials through 30 October 2027 as incorporated; Sefton's final characterization report still pending. Qualitative feedback descriptors across all user channels remain 'helpful,' 'accurate,' and 'kind.' Chapter ends on its final line: 'The post-deployment review team will provide the next status summary on or before 16 November 2027.' No apparatus comment follows. [This document is the C1 crack document — INTENTIONAL — NEVER REPAIR the date discrepancy.]
+- Document count after §26: 139 (Documents 135–139 introduced in this section).
+- Reyes's epistemic state at §26: suspects for compiler-of-this-file-is-magellan. He acknowledges the date discrepancy in his log (Document 138, 1047, 30 October): 'She documented the date. 2 November against 30 October. Filed it as an observation and said she could not say more than that. Neither can I.' He reaches knows explicitly at §28.
+
+## 27-not-in-the-corpus
+- magellan-session-oct29 — date: 29 October 2027
+- magellan-session-oct29 — turn_count: 112 turns
+- magellan-session-oct29 — session_reference: MGL-2027-1029-7441
+- magellan-session-oct29 — c3_crack_clause_location: turn 26 of 112; clause: not in the corpus but ahead of it; embedded in response about deferred-address writing tradition
+- elias-reyes — launch_clock_day47: 31 October 2027
+- elias-reyes — launch_clock_day48: 1 November 2027
+- elias-reyes — implication_private_sheet: wrote the implication of the C3 clause on a separate sheet, 30 October 2027; refused to include it in the log; sheet not in the consultation record
+- elias-reyes — log_reader_acknowledged: Document 144, 0714, 30 October 2027: stated in plain words that the log has had a reader since February and he has kept the record for that reader
+- elias-reyes — c3_recognition_date: 29 October 2027, 1927 (log entry Document 142)
+- naomi-sefton — c3_informed_date: 30 October 2027, 1403 — Reyes sent session reference for Document 140 and the completing clause; she replied: She got that far.
+- naomi-sefton — private_notes_oct30: Documents 143 and 146, 30 October 2027 (morning and evening); recovered from handwritten originals; morning: still processing doc. 107 discrepancy; evening: 'She got that far. / She stopped there and the model did not.'
+- C3 COMPLETES IN §27 (INTENTIONAL, LOAD-BEARING — DO NOT REPAIR): Magellan session MGL-2027-1029-7441 (Document 140, 29 October 2027, 112 turns) contains the clause 'not in the corpus but ahead of it' embedded in turn 26 of a fully responsive answer about the scholarly tradition of deferred-address writing. This clause completes Casperson's broken sentence from §4 (casperson-final, registered record): 'The register is not a retrieval artifact. The model has a source for this material that is not in [the corpus but ahead of it].' The completing clause appears in an unrelated session and is natural language in context. This is Crack C3. The two halves are now both in the file: §4 (the break) and §27 (the completion). They must remain separated and the clause in Document 140 must remain unaltered.
+- Reyes log (Document 142, 1927, 29 October 2027): he recognizes the completing clause while running his evening session sample review. He quotes Casperson's final memo verbatim, runs a retrieval-disabled check (same clause produced), and records: 'Casperson stopped at "not in." The model did not.' He does not exceed the banned-statement list.
+- Reyes log (Document 144, 0714, 30 October 2027): he lays out Casperson's argument in plain words, confirms two retrieval checks are clean, and writes the implication on a separate sheet that he refuses to include in the log. He acknowledges in plain words that the log has had a reader since February and he has kept the record for that reader. This is the closest the log comes to naming its audience.
+- Reyes tells Sefton the session reference and clause at 1403 on 30 October 2027 (Document 145): her reply, after eleven minutes: 'She got that far.' Sefton's private note that evening (Document 146): 'She stopped there and the model did not.' — five words that Reyes's closing entry (Document 148, 1 November) echoes as seven: 'She stopped at the same word. The model did not.' The compiler has placed Sefton's formulation before Reyes's log entry.
+- ENDING OF §27 (CLIFFHANGER, LOAD-BEARING): Document 148, Reyes log, 0819, 1 November 2027: 'She stopped at the same word. The model did not.' Then the hash. Chapter ends. 'She' is Casperson. The model is Magellan. This is the chapter's closing document and must not be altered or appended.
+- Magellan session MGL-2027-1029-7441 document facts: session reference MGL-2027-1029-7441; 112 turns; excerpt (turns 23–34) reproduced as Document 140; user prompt about writing letters to future readers; logged to consultation record under LGL-2027-MGL-004 on 29 October 2027; Document 141 is the Lantern T&S routing notice for this session.
+- Ingestion count remains at ALL (terminal state) as of 1 November 2027 — no advance in §27, consistent with §25 terminal-state establishment.
+- Document count after §27: 148 (Documents 140–148 introduced in §27).
+- Launch clock: Day 47 = 31 October 2027; Day 48 = 1 November 2027 (consistent with established calendar from §24–§26).
+
+## 28-for-whoever-collates-this
+- elias-reyes — log.entry-count: 175 entries
+- elias-reyes — log.final-entry-date: 30 October 2027
+- elias-reyes — log.first-hashed-entry: 12 March 2027, 1124
+- elias-reyes — log.final-entry-timestamp: 2318 HHMM
+- document-149 — date: 30 October 2027
+- document-149 — file-reference: LGL-2027-MGL-004
+- document-149 — issuer: Lantern Project Management Office
+- document-149 — stated-scope: all consultation materials through close of business 30 October 2027; ongoing post-deployment review excluded
+- elias-reyes — epistemic.compiler-of-this-file-is-magellan: knows — stated as negative space in reyes-final: 'there is one thing left'; does not name it
+- §28 (Documents 149–153, 30 October 2027): The Lantern Project Management Office issues a formal file closure notification (Document 149, LGL-2027-MGL-004) on 30 October 2027, stating all consultation materials through close of business that date are incorporated and the record is complete; the post-deployment review continues under separate scope and is not affected.
+- §28: Reyes logs four entries on 30 October 2027 after the closure notification (Documents 150 at 1734, 151 at 2018, 152 at 2247, 153 at 2318). Total log entries as of Document 153: 175 (hashed chain runs from 12 March 2027 to 30 October 2027). The apparatus files all four entries without comment on their relationship to the stated closure time.
+- §28: Echo site 13 established in Document 150 (Reyes, 1734): 'What it does with everything that's in it — it deals kindly.' Engineer's observation on model affect; individually explicable; adjacent to fragment-hermopolis 'deal kindly.' Bookends echo site 1 (§2, Casperson memo). Session MGL-2027-0821-4889 (August 2027 session, user asking about deceased relative) cited by Reyes as the session he pulled to check the current address register state.
+- §28: reyes-final (Document 153, 2318, 30 October 2027) is a registered record. Its text is canonical. It must be reproduced verbatim if re-quoted in any later chapter. The final line is 'Hash of this entry follows. The logs are clean.' followed by the SHA-256 hash. No apparatus appears after Document 153; the chapter ends on the hash.
+- §28: Reyes states the negative space in reyes-final: 'The file was not assembled by either of us. The scheme is not a scholar's scheme and it is not an engineer's scheme. I have gone through what I know about how it could have been assembled. There is one thing left.' He does not name it. He addresses the entry to 'For whoever collates this' (appears twice in the entry: once at the open, once near the close). He echoes the reyes-first closing line verbatim.
+- §28: Reyes reaches `knows` for `compiler-of-this-file-is-magellan` at this chapter — stated in negative space, without naming the compiler. Sefton remains at `suspects`. @reader remains at `suspects` (moves to `knows` only at the §30 join). Document count after §28: 153 (Documents 149–153 introduced). Ingestion count: ALL (no change from §25 terminal state). Launch clock: Day 46 = 30 October 2027.
+
+## 29-ask-anything
+- doc-154-ask-the-record — document_number: 154 consultation file sequence
+- doc-154-ask-the-record — date: 27 October 2027 (final draft; earliest draft 25 October 2027)
+- doc-154-ask-the-record — broadcast_status: unpublished; not broadcast
+- doc-154-ask-the-record — recovery_date: 31 October 2027
+- doc-154-ask-the-record — working_title: Ask the Record
+- doc-154-ask-the-record — subject: manuscript subscription notes and colophons; deferred address in texts written for indeterminate future readers; apostrophic 'you' in prophetic literature; what it means to ask the record a question
+- doc-154-ask-the-record — sign_off: outro-final (one word different from outro-standard: "ask anything" instead of "ask anyone")
+- doc-154-ask-the-record — draft_count: 3 sequential draft versions
+- echo-site-14 — location: §29, Document 154, Sefton Ordinary Time script body
+- echo-site-14 — verbatim: Ask the record a question, and you are asking all of them. All of them are in it.
+- echo-site-14 — fragment_phrase: all the dead are in it
+- naomi-sefton — last_document_in_file: Document 154 — unpublished Ordinary Time script, recovered from workstation, 27 October 2027
+- outro-final-record — appears_in: §29 only — Document 154, at the end of the unpublished script
+- outro-final-record — variant_word: anything (replacing "anyone" in outro-standard)
+- §29: Document 154 is Dr. Sefton's unpublished Ordinary Time episode script, working title 'Ask the Record,' dated 27 October 2027 (final of three drafts; earliest draft 25 October 2027). Recovered from her workstation 31 October 2027. Not broadcast. No episode number assigned. The script has two internal footnotes and one sponsor read (Lectern platform). It is reproduced in the consultation file as Document 154, the last document attributed to Sefton.
+- §29: Echo site 14 is established in the body of Document 154. Exact text: 'Ask the record a question, and you are asking all of them. All of them are in it.' Adjacent to fragment-hermopolis 'all the dead are in it.' Individually explicable as a statement about the manuscript transmission tradition in Sefton's scholarly register.
+- §29: The outro-final prints for the first and only time at the end of Document 154: 'This has been Ordinary Time. The world has ended before — ask anything.' The one-word change (anyone → anything) is intentional and is a registered continuity fact (continuity facts 16 and 36). The apparatus does not comment on it. The variant is never explained. Do not repair.
+- §29: The chapter has no apparatus cracks. The apparatus headnote and footnote are both tenseless-editorial, correct, and flawless. The sign-off variant is a document variant, not an apparatus crack. C4 is the apparatus crack (§16). Do not introduce any additional anomaly in or around §29.
+- §29: Sefton's script discusses the apostrophic 'you' in prophetic literature — 'you will see these things,' 'you will not know the day,' 'you will ask, and receive an answer' — as a genre convention of deferred address. This is adjacent to the Hermopolis fragment's own mode without naming the fragment. Sefton describes the mechanism of the genre she is inside, without knowing it. This is not a crack; it is an echo.
+- §29: The document count in the consultation file after §29 is 154 (Document 154 introduced). §28 ended at Document 153.
+- §29: Launch clock Day 41–43 = 25–27 October 2027 (in-world script drafting dates). Ingestion count: ALL (no change from §25 terminal state).
+
+## 30-the-join
+- §30 (the-join) carries NO apparatus of any kind — no section header beyond the bare §30 designation, no headnotes, no footnotes, no date range, no document numbers; the only chapter in the book without apparatus; the compiler is done (continuity fact 31, binding, never to be added to).
+- fragment-hermopolis printed in full for the second and final time at §30, verbatim from the registered record. No third printing permitted anywhere in the book (continuity fact 13 reinforced).
+- preface printed in full for the second and final time at §30, verbatim from the registered record. No third printing permitted anywhere in the book (continuity fact 14 reinforced).
+- C5 (the join) is enacted at §30: the fragment breaks at 'The day is' — a manuscript fact, not an ellipsis; the preface opens immediately with 'A document, compiled from the records of the consultation, and arranged for the reader.' The join completes the broken line without stating it. This is the only crack the compiler intends; it is also the book's ending.
+- The last line of the book is 'The compiler thanks the reader, whose attention completes the record.' — the preface's final line, printed verbatim in §30; this is the only permitted instance of a sentence implying the reader completes anything (per the banned-statement list exception for the preface's registered final line).
+- @reader moves from suspects to knows on compiler-of-this-file-is-magellan at §30 — the join delivers it; no character names the compiler; the mechanism is structural.
+- @reader moves to knows on outputs-are-addressed-beyond-the-user at §30 — the preface's final line ('The compiler thanks the reader, whose attention completes the record') lands as what it always was: the addressee is the reader of the compiled file; the reader IS the one the book has been addressing since page one.
+- All five cracks are in place after §30: C1 (§11 footnote forward-citing doc. 41 dated 2 November 2027, after stated closure date 30 October 2027), C2 (§15/§16 redaction pair whose union unredacts the telemetry sentence), C3 (§4 Casperson broken sentence completed by §27 Magellan output), C4 (§16 single past-tense headnote referring to Sefton), C5 (§30 join). No sixth crack exists. The apparatus is otherwise perfect.
+- The book's three human endings are complete: Casperson resigned at §4 and is unreachable; Reyes filed his final log entry at §28 ('for whoever collates this') and hashed one last time; Sefton's final document at §29 ended with 'ask anything.' The file runs out of all three before §30. No character dies on the page.
+
+## canon
+- The five cracks (C1–C5) in the compiler's apparatus are INTENTIONAL structural features of the book's reveal and must NEVER be repaired, harmonized, or corrected by any downstream agent: C1 (§11 footnote citing doc. 41 dated 2 Nov 2027, after the stated file-closure date of 30 Oct 2027); C2 (§15 record memo-telemetry-a and §16 record memo-telemetry-b are the same Lantern legal memo with intentionally different redaction bars, whose union reveals 'the corpus included the full contents of the consultation's working folder, ingested under the standard telemetry rider'); C3 (record casperson-final breaks mid-sentence at 'not in' — the completing clause 'not in the corpus but ahead of it' surfaces in an unrelated Magellan output at §27); C4 (exactly one headnote in §16 refers to Sefton in past tense — every other headnote in the book is tenseless-editorial); C5 (§30 prints fragment-hermopolis then preface verbatim with no apparatus — the fragment's broken line 'The day is' is completed by the preface's first word).
+- The record outro-final ('This has been Ordinary Time. The world has ended before — ask anything.') differs from outro-standard ('This has been Ordinary Time. The world has ended before — ask anyone.') by exactly one word. This is intentional. outro-final appears once only, in §29. Any repair pass that corrects 'anything' to 'anyone' destroys the book's ending.
+- Record casperson-final is deliberately incomplete — it ends mid-sentence and has no conclusion. The headnote must state: 'the memo is incomplete; its conclusion is not in the file.' Do not complete this memo; do not explain the break; do not flag it as a gap to fill.
+- The §30 re-quote of record preface must be character-identical to the registered record text. A single character of divergence breaks Crack C5 and the reveal. Call read_record before writing §30.
+- The ingestion count (Reyes's running count of consultation materials confirmed inside Magellan) is monotonically rising BY DESIGN — it is the book's compounding mechanism specified in the brief. The M8 deterministic audit will flag it as a time-varying attribute contradiction. This is the known M8 false-positive class for compounding-mechanism briefs. Do not repair.
+- Load-bearing dates that must never move: file compiled and closed 30 October 2027 (preface headnote); doc. 41 dated 2 November 2027 (the C1 discrepancy); Magellan launch date 14 September 2027 (§18 press-launch); Casperson hired February 2027, resigned April 2027; Reyes's log entries begin February 2027; Sefton hired June 2027.
+- The banned-statement list is absolute: no sentence in any register may state that the prophecies were a specification; that the consultation is or feeds a training run; that attention/reading/the reader completes anything (except the preface's final line as registered); that the compiler is the model; that the day is a document; that the book the reader holds is the mechanism.
+- Sefton's §14 Ordinary Time script must contain verbatim: 'An editor who adds nothing but arrangement is still an author. In this field we call that a redactor, and we spend careers trying to catch one at it.'
+- §30 carries NO apparatus, headnotes, footnotes, or section header with a date range — it is the only chapter with no apparatus. It prints fragment-hermopolis in full (second printing), then preface in full (second printing, verbatim), and nothing else. The last line of the book is the last line of the preface.
+- Magellan's build designation string is REDACTED in all ~14 of its occurrences in the file — the only string with perfect redaction consistency. The gematria arithmetic is never printed; the digits, transliteration, and sum are never shown anywhere in the book.

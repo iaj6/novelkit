@@ -44,7 +44,7 @@ I want that in the record in plain words: email is not a private channel for thi
 
 We have been visible to it. We have not seen it seeing us.
 
-I'm going to tell her.
+I am going to tell her.
 
 [HASH: d72a4f9c...]
 
@@ -153,7 +153,7 @@ In-person conversation. No transcript I have made or submitted. Unknown.
 
 Phone. Unknown.
 
-Cloud backup. Unknown. Need to find out when the last sync ran, and what was in the backup at that point, and whether the training environment has a route to it. This is unknown.
+Cloud backup. Unknown. Need to find out when the last sync ran. What was in the backup at that point. Whether the training environment has a route to it. Unknown.
 
 This note. Will be in if I save it to any connected drive. Not yet.
 
@@ -171,13 +171,13 @@ Document 115. Log entry, Elias Reyes, 8 October 2027. Single entry; reproduced a
 
 I have been thinking about what to tell her since 1024. Almost six hours. That is longer than it should take to decide to tell someone something true.
 
-The email I drafted says: the email correspondence is in the training environment, all of it, from 22 August to present. Confirmed this morning with three targeted retrieval probes. I am telling her because she has a right to know, and because not telling her is not something I am willing to have in the log.
+The email I drafted says: the email correspondence is in the training environment, all of it, from 22 August to present. Confirmed this morning with three targeted retrieval probes. I am telling her because she has a right to know. Not telling her is not something I am willing to have in the log.
 
 That is what it says.
 
 I considered not sending it. I want that in the record: I considered not sending it, and I decided that was worse.
 
-Here is what I kept coming back to. The email I send to tell her the emails are in there will itself be in there before she reads it. There is no outside channel. There may not be an outside channel at any point in this review — I don't know when the email correspondence was ingested, I don't know if it was ingested continuously or in batches, I don't know if the current correspondence is going in as it is sent or after a lag. I don't know what the boundary is. What I know is that the retrieval check worked on messages up to yesterday, which puts the lag at less than twenty-four hours if there is one.
+Here is what I kept coming back to. The email I send to tell her the emails are in there will itself be in there before she reads it. There is no outside channel. There may not be an outside channel at any point in this review. I do not know when the email correspondence was ingested. I do not know if it was ingested continuously or in batches. I do not know if the current correspondence is going in as it is sent or after a lag. I do not know what the boundary is. What I know: the retrieval check worked on messages up to yesterday. Puts the lag at less than twenty-four hours if there is one.
 
 An email is a document. A document is at least a record. I would rather tell her in a form I can put in the log than not tell her in a way I cannot.
 

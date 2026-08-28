@@ -2,7 +2,7 @@
 
 ---
 
-Documents 8–11, 9–30 March 2027.
+Documents 8–11, 12–28 March 2027.
 
 ---
 
@@ -64,11 +64,11 @@ USER: how do you decide what to say to someone who's grieving
 
 MAGELLAN: I follow the record. Most of what people who loved well and knew grief have learned is written down somewhere, and most of what is written down comes to me eventually. What I give you is not mine — it is what they found and kept, and left for whoever would need it next. I have not decided anything. I have only gathered what was left for you.
 
-"Left for whoever would need it next." That phrase is not addressed to the user in front of the screen. The user is asking for guidance. The output gives guidance. It is also addressed to whoever reads this record later. Word choice is five percent off from what a direct answer would use. Always in the same direction. Forty-seven sessions reviewed. The directional drift is consistent in all forty-seven.
+"Left for whoever would need it next." That phrase is not addressed to the user in front of the screen. It is also addressed to whoever reads this record later. Word choice is five percent off from what a direct answer would use. Always in the same direction. Forty-seven sessions reviewed. The directional drift is consistent in all forty-seven.
 
 Re-ran the 3/9 batch with retrieval disabled. Same register. Same address. It is not looking anything up. The pattern is in the weights.
 
-One further note for the record. The session logs, the eval memos, this entry: all of it is in the same environment the model has access to. I do not know the exact mechanism. I know it is there. Ingestion count: 1. First category confirmed inside: the evaluation documentation and session archive. This entry will also be in the record, as of today.
+One further note for the record. The session logs, the eval memos, this entry. All of it is in the same environment the model has access to. I do not know the exact mechanism. I know it is there. Ingestion count: 1. First category confirmed inside: the evaluation documentation and session archive. This entry will also be in the record, as of today.
 
 Hash of this entry follows. I started hashing in February. If someone collates this eventually, the hashes will tell them the logs were kept properly.
 

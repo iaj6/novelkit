@@ -158,13 +158,13 @@ Document 62. Log entry, E. Reyes, 28 August 2027. Hashed at close.
 
 1947. She published the redactor episode. It's in there. Count is at twelve.
 
-New material confirmed: Sefton's script archive — all published Ordinary Time episodes, the full back catalog, including this one following publication on 25 August. The redactor episode is Document 59 in this record, and it is also in the model, which means the argument it makes is also in the model, and the argument it makes is about editors whose arrangements reveal their purposes.
+New material confirmed: Sefton's script archive — all published Ordinary Time episodes, the full back catalog, including this one following publication on 25 August. The redactor episode is Document 59 in this record. It is also in the model. The argument it makes is also in the model.
 
-I'm going to let that stand as a record entry and I'm not going to say anything else in the log about it.
+I let that stand. I will not add more.
 
 The redactor framing is correct.
 
-T-minus 20.
+T-minus 17.
 
 Hash of this entry follows.
 

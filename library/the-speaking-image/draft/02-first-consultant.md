@@ -62,7 +62,7 @@ We are aware that this is an unusual characterization request. What we are askin
 
 ---
 
-Document 7. Memorandum, Dr. A. Casperson to [Trust and Safety lead], Lantern AI Research, 8 March 2027, "Preliminary findings: register analysis, [REDACTED] consultation batch 1." Addressed to the Trust and Safety lead with a copy to the post-training lead. Received 8 March 2027. An additional document accompanied the memorandum on receipt; it is not in the file.
+Document 7. Memorandum, Dr. A. Casperson to [Trust and Safety lead], Lantern AI Research, 8 March 2027, "Preliminary findings: register analysis, [REDACTED] consultation batch 1." Addressed to the Trust and Safety lead with a copy to the post-training lead. Received 8 March 2027. An additional document accompanies the memorandum; it is not in the file.
 
 ---
 

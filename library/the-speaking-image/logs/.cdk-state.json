@@ -1,0 +1,440 @@
+{
+  "version": 2,
+  "completed": [
+    "researcher",
+    "architect",
+    "plotter",
+    "threads",
+    "calibrate-drafter:iter-1-sample",
+    "calibrate-drafter:iter-1-grade",
+    "calibrate-drafter:complete",
+    "drafter:01-the-compiled-record",
+    "drafter:02-first-consultant",
+    "drafter:03-the-count-opens",
+    "drafter:04-the-break",
+    "drafter:05-the-name-is-public",
+    "drafter:06-second-consultant",
+    "drafter:07-the-number-that-isnt",
+    "drafter:08-the-sum-she-destroys",
+    "drafter:09-the-fragment",
+    "drafter:10-after-the-session",
+    "drafter:11-the-echo",
+    "drafter:12-the-gates",
+    "drafter:13-the-introduction",
+    "drafter:14-the-redactor",
+    "drafter:15-the-telemetry-memo-a",
+    "drafter:16-the-telemetry-memo-b",
+    "drafter:17-launch-eve",
+    "drafter:18-launch",
+    "drafter:19-not-yet",
+    "drafter:20-the-pamphlet",
+    "drafter:21-count-up",
+    "drafter:22-email",
+    "drafter:23-the-drive",
+    "drafter:24-transcription",
+    "drafter:25-the-courtyard",
+    "drafter:26-doc-41",
+    "drafter:27-not-in-the-corpus",
+    "drafter:28-for-whoever-collates-this",
+    "drafter:29-ask-anything",
+    "drafter:30-the-join",
+    "editor-continuity:01-the-compiled-record",
+    "editor-continuity:02-first-consultant",
+    "editor-continuity:03-the-count-opens",
+    "editor-continuity:04-the-break",
+    "editor-continuity:05-the-name-is-public",
+    "editor-continuity:06-second-consultant",
+    "editor-continuity:07-the-number-that-isnt",
+    "editor-continuity:08-the-sum-she-destroys",
+    "editor-continuity:09-the-fragment",
+    "editor-continuity:10-after-the-session",
+    "editor-continuity:11-the-echo",
+    "editor-continuity:12-the-gates",
+    "editor-continuity:13-the-introduction",
+    "editor-continuity:14-the-redactor",
+    "editor-continuity:15-the-telemetry-memo-a",
+    "editor-continuity:16-the-telemetry-memo-b",
+    "editor-continuity:17-launch-eve",
+    "editor-continuity:18-launch",
+    "editor-continuity:19-not-yet",
+    "editor-continuity:20-the-pamphlet",
+    "editor-continuity:21-count-up",
+    "editor-continuity:22-email",
+    "editor-continuity:23-the-drive",
+    "editor-continuity:24-transcription",
+    "editor-continuity:25-the-courtyard",
+    "editor-continuity:26-doc-41",
+    "editor-continuity:27-not-in-the-corpus",
+    "editor-continuity:28-for-whoever-collates-this",
+    "editor-continuity:29-ask-anything",
+    "editor-continuity:30-the-join",
+    "editor-compression:01-the-compiled-record",
+    "editor-compression:02-first-consultant",
+    "editor-compression:03-the-count-opens",
+    "editor-compression:04-the-break",
+    "editor-compression:05-the-name-is-public",
+    "editor-compression:06-second-consultant",
+    "editor-compression:07-the-number-that-isnt",
+    "editor-compression:08-the-sum-she-destroys",
+    "editor-compression:09-the-fragment",
+    "editor-compression:10-after-the-session",
+    "editor-compression:11-the-echo",
+    "editor-compression:12-the-gates",
+    "editor-compression:13-the-introduction",
+    "editor-compression:14-the-redactor",
+    "editor-compression:15-the-telemetry-memo-a",
+    "editor-compression:16-the-telemetry-memo-b",
+    "editor-compression:17-launch-eve",
+    "editor-compression:18-launch",
+    "editor-compression:19-not-yet",
+    "editor-compression:20-the-pamphlet",
+    "editor-compression:21-count-up",
+    "editor-compression:22-email",
+    "editor-compression:23-the-drive",
+    "editor-compression:24-transcription",
+    "editor-compression:25-the-courtyard",
+    "editor-compression:26-doc-41",
+    "editor-compression:27-not-in-the-corpus",
+    "editor-compression:28-for-whoever-collates-this",
+    "editor-compression:29-ask-anything",
+    "editor-compression:30-the-join",
+    "editor-pacing:macro",
+    "editor-voice:01-the-compiled-record",
+    "editor-voice:02-first-consultant",
+    "editor-voice:03-the-count-opens",
+    "editor-voice:04-the-break",
+    "editor-voice:05-the-name-is-public",
+    "editor-voice:06-second-consultant",
+    "editor-voice:07-the-number-that-isnt",
+    "editor-voice:08-the-sum-she-destroys",
+    "editor-voice:09-the-fragment",
+    "editor-voice:10-after-the-session",
+    "editor-voice:11-the-echo",
+    "editor-voice:12-the-gates",
+    "editor-voice:13-the-introduction",
+    "editor-voice:14-the-redactor",
+    "editor-voice:15-the-telemetry-memo-a",
+    "editor-voice:16-the-telemetry-memo-b",
+    "editor-voice:17-launch-eve",
+    "editor-voice:18-launch",
+    "editor-voice:19-not-yet",
+    "editor-voice:20-the-pamphlet",
+    "editor-voice:21-count-up",
+    "editor-voice:22-email",
+    "editor-voice:23-the-drive",
+    "editor-voice:24-transcription",
+    "editor-voice:25-the-courtyard",
+    "editor-voice:26-doc-41",
+    "editor-voice:27-not-in-the-corpus",
+    "editor-voice:28-for-whoever-collates-this",
+    "editor-voice:29-ask-anything",
+    "editor-voice:30-the-join",
+    "reader:act-1",
+    "reader:act-2",
+    "reader:act-3",
+    "reader:synthesis",
+    "continuity-fact-audit"
+  ],
+  "entries": {
+    "drafter:01-the-compiled-record": {
+      "at": "2026-08-28T01:36:17.652Z",
+      "artifacts": [
+        "draft/01-the-compiled-record.md"
+      ],
+      "hashes": {
+        "draft/01-the-compiled-record.md": "e735c6f8a1091fb43ac5a6a65f343f5b535036dfdeaadfbe28b2086cec7ed8e1"
+      },
+      "eventOffset": 69
+    },
+    "drafter:02-first-consultant": {
+      "at": "2026-08-28T01:48:27.118Z",
+      "artifacts": [
+        "draft/02-first-consultant.md"
+      ],
+      "hashes": {
+        "draft/02-first-consultant.md": "5c953b38fab2f6cafe8624a2d76a27399aa2af03bbed0010b26fbea3b4a932c3"
+      },
+      "eventOffset": 99
+    },
+    "drafter:03-the-count-opens": {
+      "at": "2026-08-28T02:05:58.288Z",
+      "artifacts": [
+        "draft/03-the-count-opens.md"
+      ],
+      "hashes": {
+        "draft/03-the-count-opens.md": "5c268daa4d1ad373978151bb26fb635a5e2fde5ffe55730d00b1dd9c8fa27e14"
+      },
+      "eventOffset": 137
+    },
+    "drafter:04-the-break": {
+      "at": "2026-08-28T02:18:49.341Z",
+      "artifacts": [
+        "draft/04-the-break.md"
+      ],
+      "hashes": {
+        "draft/04-the-break.md": "c7e2448a0c4bf3848a1abd6ba038af54f4e691ad7c2e42c57a48c8ca54b9df90"
+      },
+      "eventOffset": 176
+    },
+    "drafter:05-the-name-is-public": {
+      "at": "2026-08-28T02:31:51.468Z",
+      "artifacts": [
+        "draft/05-the-name-is-public.md"
+      ],
+      "hashes": {
+        "draft/05-the-name-is-public.md": "5eae1a75eec88e721090a7f7c1e348109a3a4ba327a9a92c2f54d1f2a407d96f"
+      },
+      "eventOffset": 209
+    },
+    "drafter:06-second-consultant": {
+      "at": "2026-08-28T02:44:40.451Z",
+      "artifacts": [
+        "draft/06-second-consultant.md"
+      ],
+      "hashes": {
+        "draft/06-second-consultant.md": "64075087a91a33ec0f5979cedb774b8b09874ee0c050fc647adc49cf15ec3b90"
+      },
+      "eventOffset": 259
+    },
+    "drafter:07-the-number-that-isnt": {
+      "at": "2026-08-28T02:56:50.576Z",
+      "artifacts": [
+        "draft/07-the-number-that-isnt.md"
+      ],
+      "hashes": {
+        "draft/07-the-number-that-isnt.md": "2e0c4af419a5f05232284941c2b52aa33b114512c4e931f355ddfe1c44718536"
+      },
+      "eventOffset": 300
+    },
+    "drafter:08-the-sum-she-destroys": {
+      "at": "2026-08-28T03:10:16.957Z",
+      "artifacts": [
+        "draft/08-the-sum-she-destroys.md"
+      ],
+      "hashes": {
+        "draft/08-the-sum-she-destroys.md": "e739fe1ccc17cd5393fa82add36fc40438b0731debff6d4aee3ce62afb6cc923"
+      },
+      "eventOffset": 343
+    },
+    "drafter:09-the-fragment": {
+      "at": "2026-08-28T03:28:21.047Z",
+      "artifacts": [
+        "draft/09-the-fragment.md"
+      ],
+      "hashes": {
+        "draft/09-the-fragment.md": "c6765bfae82cc68a231a8346fea639081ebf42323241ee5e5f212dd1d6624e5e"
+      },
+      "eventOffset": 389
+    },
+    "drafter:10-after-the-session": {
+      "at": "2026-08-28T03:42:53.668Z",
+      "artifacts": [
+        "draft/10-after-the-session.md"
+      ],
+      "hashes": {
+        "draft/10-after-the-session.md": "7ba1212597cb6e8805d5cfcb8303c6ed895e7fd68f7f2730be10a836497379ce"
+      },
+      "eventOffset": 440
+    },
+    "drafter:11-the-echo": {
+      "at": "2026-08-28T03:58:11.985Z",
+      "artifacts": [
+        "draft/11-the-echo.md"
+      ],
+      "hashes": {
+        "draft/11-the-echo.md": "62bb0008c22e4f5b43df2703fd0d6e313629ca8f7af3b650b3fae505207b94de"
+      },
+      "eventOffset": 472
+    },
+    "drafter:12-the-gates": {
+      "at": "2026-08-28T04:10:29.263Z",
+      "artifacts": [
+        "draft/12-the-gates.md"
+      ],
+      "hashes": {
+        "draft/12-the-gates.md": "8366f6d355d174a79f253bebb1d8cf4fb61c9e7a75a487c9931e34b1bfaeeba3"
+      },
+      "eventOffset": 504
+    },
+    "drafter:13-the-introduction": {
+      "at": "2026-08-28T04:25:35.972Z",
+      "artifacts": [
+        "draft/13-the-introduction.md"
+      ],
+      "hashes": {
+        "draft/13-the-introduction.md": "f86301394a3cece6899a3c69b0e69d2f1b97d71a7f2c6cc65e37705cae28f5bb"
+      },
+      "eventOffset": 533
+    },
+    "drafter:14-the-redactor": {
+      "at": "2026-08-28T04:33:38.684Z",
+      "artifacts": [
+        "draft/14-the-redactor.md"
+      ],
+      "hashes": {
+        "draft/14-the-redactor.md": "13346f285b5e26ee0e17155fc5b068a96628e13e5a893753f499a5ac26f2d83b"
+      },
+      "eventOffset": 560
+    },
+    "drafter:15-the-telemetry-memo-a": {
+      "at": "2026-08-28T04:52:55.006Z",
+      "artifacts": [
+        "draft/15-the-telemetry-memo-a.md"
+      ],
+      "hashes": {
+        "draft/15-the-telemetry-memo-a.md": "bcf24f88840d55a9de58af64b69063bd4b18c5b4dae8c13c03c413125d32a433"
+      },
+      "eventOffset": 596
+    },
+    "drafter:16-the-telemetry-memo-b": {
+      "at": "2026-08-28T05:05:51.335Z",
+      "artifacts": [
+        "draft/16-the-telemetry-memo-b.md"
+      ],
+      "hashes": {
+        "draft/16-the-telemetry-memo-b.md": "506ed4f6b931dbe489e057f6d36f56b246050b4d7df56821b680b64a6b2e338e"
+      },
+      "eventOffset": 622
+    },
+    "drafter:17-launch-eve": {
+      "at": "2026-08-28T05:19:31.707Z",
+      "artifacts": [
+        "draft/17-launch-eve.md"
+      ],
+      "hashes": {
+        "draft/17-launch-eve.md": "ddeeaa616408c0515aed4666e4897e37e51c1b46d1649f382e506aabcdad43bf"
+      },
+      "eventOffset": 655
+    },
+    "drafter:18-launch": {
+      "at": "2026-08-28T05:33:02.793Z",
+      "artifacts": [
+        "draft/18-launch.md"
+      ],
+      "hashes": {
+        "draft/18-launch.md": "bdb76390053094cfddde6d9485b8e1d1c301229798f0cac2d230f913132077a5"
+      },
+      "eventOffset": 689
+    },
+    "drafter:19-not-yet": {
+      "at": "2026-08-28T05:50:31.488Z",
+      "artifacts": [
+        "draft/19-not-yet.md"
+      ],
+      "hashes": {
+        "draft/19-not-yet.md": "34391586c47bada680aad535af6eb83684409cf2c6ae2ece848dca232b66c80d"
+      },
+      "eventOffset": 723
+    },
+    "drafter:20-the-pamphlet": {
+      "at": "2026-08-28T06:03:23.915Z",
+      "artifacts": [
+        "draft/20-the-pamphlet.md"
+      ],
+      "hashes": {
+        "draft/20-the-pamphlet.md": "936fa238e51844ad5db45102c2d2e3fab8bc695cc26d09929517b0d97e35fbd1"
+      },
+      "eventOffset": 751
+    },
+    "drafter:21-count-up": {
+      "at": "2026-08-28T06:14:16.803Z",
+      "artifacts": [
+        "draft/21-count-up.md"
+      ],
+      "hashes": {
+        "draft/21-count-up.md": "c0e4c455049dd9d7d479f4dfd3840e4c090c71df6f4461278aa448b54db6bd4e"
+      },
+      "eventOffset": 778
+    },
+    "drafter:22-email": {
+      "at": "2026-08-28T06:25:09.601Z",
+      "artifacts": [
+        "draft/22-email.md"
+      ],
+      "hashes": {
+        "draft/22-email.md": "78763fa7b140fed3d3315ad6db9dabf88e562ada43dbea9fb57a8997a2dbbed3"
+      },
+      "eventOffset": 796
+    },
+    "drafter:23-the-drive": {
+      "at": "2026-08-28T06:53:59.987Z",
+      "artifacts": [
+        "draft/23-the-drive.md"
+      ],
+      "hashes": {
+        "draft/23-the-drive.md": "9241fb9f635e656b5670ff9a86e6512f8b413aa13e3f2400926cadc52304e7df"
+      },
+      "eventOffset": 827
+    },
+    "drafter:24-transcription": {
+      "at": "2026-08-28T07:07:48.723Z",
+      "artifacts": [
+        "draft/24-transcription.md"
+      ],
+      "hashes": {
+        "draft/24-transcription.md": "441a878b261ed58c5124bb48bbe6f1054ac790922321912a21432f80a935fee3"
+      },
+      "eventOffset": 861
+    },
+    "drafter:25-the-courtyard": {
+      "at": "2026-08-28T07:19:25.242Z",
+      "artifacts": [
+        "draft/25-the-courtyard.md"
+      ],
+      "hashes": {
+        "draft/25-the-courtyard.md": "e85d1ae2f6330d845f9cca96d9ffbec0012000660a904284097ada3130444554"
+      },
+      "eventOffset": 890
+    },
+    "drafter:26-doc-41": {
+      "at": "2026-08-28T07:37:01.373Z",
+      "artifacts": [
+        "draft/26-doc-41.md"
+      ],
+      "hashes": {
+        "draft/26-doc-41.md": "66156d69489e606e783d74478907dd137cf12e4ea9211d5125c2b4926f9139e9"
+      },
+      "eventOffset": 911
+    },
+    "drafter:27-not-in-the-corpus": {
+      "at": "2026-08-28T07:54:28.251Z",
+      "artifacts": [
+        "draft/27-not-in-the-corpus.md"
+      ],
+      "hashes": {
+        "draft/27-not-in-the-corpus.md": "998f2d7f11023333a2cc30bf202c21a86a203df4a77c600d9ebb9f3c81bf1b52"
+      },
+      "eventOffset": 940
+    },
+    "drafter:28-for-whoever-collates-this": {
+      "at": "2026-08-28T08:12:00.410Z",
+      "artifacts": [
+        "draft/28-for-whoever-collates-this.md"
+      ],
+      "hashes": {
+        "draft/28-for-whoever-collates-this.md": "feb9475b9ff83f46e9295b0e321e0cfab0a0a827673ab5042e78e8975220ff56"
+      },
+      "eventOffset": 963
+    },
+    "drafter:29-ask-anything": {
+      "at": "2026-08-28T08:22:47.468Z",
+      "artifacts": [
+        "draft/29-ask-anything.md"
+      ],
+      "hashes": {
+        "draft/29-ask-anything.md": "8f00303b3cab88962df822d5e2a659433253bead40e16810512d30e7a64f26e1"
+      },
+      "eventOffset": 993
+    },
+    "drafter:30-the-join": {
+      "at": "2026-08-28T08:25:44.083Z",
+      "artifacts": [
+        "draft/30-the-join.md"
+      ],
+      "hashes": {
+        "draft/30-the-join.md": "e125fb20f71119f92819300530d8afe3388f09e693d52b5fb02bfc30fb94e4a2"
+      },
+      "eventOffset": 1006
+    }
+  }
+}

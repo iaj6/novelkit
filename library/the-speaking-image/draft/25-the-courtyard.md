@@ -7,7 +7,7 @@ Document 128 is an internal notice, Lantern Trust & Safety. Document 129 is a lo
 ---
 
 **Document 128.** Internal notice, Lantern Trust & Safety, 28 October 2027, "Consultation infrastructure: access control implementation confirmation."
-Distributed to consultation oversight personnel, E. Reyes, Dr. N. Sefton, and General Counsel. This notice confirms implementation of the access control measures described in Document 125.
+Distributed to consultation oversight personnel, E. Reyes, Dr. N. Sefton, and General Counsel.
 
 ---
 
@@ -110,7 +110,7 @@ Black ink on unlined white paper, approximately one-third of a standard letter s
 
 The preface. "An editor who adds nothing but arrangement is still an author." I said that on camera. I said that's what a redactor sounds like.
 
-Every section number. Every headnote. Every document in order. The arrangement isn't incidental — arrangement is interpretation. I know what a redactor's fingerprints look like. I spend a career looking for them.
+Every section number. Every headnote. Every document in order. The arrangement isn't incidental — arrangement is interpretation. I know what a redactor's fingerprints look like. I've spent a career looking for them.
 
 I didn't organize this file. You didn't.
 

@@ -1,0 +1,259 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-28T15:12:31.229Z",
+  "summary": {
+    "critical": 2,
+    "high": 3,
+    "medium": 3,
+    "low": 1
+  },
+  "findings": [
+    {
+      "id": "continuity-fact-001",
+      "category": "continuity-fact",
+      "severity": "critical",
+      "title": "C1 forward citation: document number in §11 footnote does not match §26 or brief specification",
+      "description": "The brief specifies that Crack C1 is 'a footnote in §11 cites doc. 41, reproduced at §26.' The Act II reader assessment found that §11's actual footnote cites 'doc. 107, reproduced at §26.' At §26, Sefton's organizational analysis memo (Document 135) quotes the §11 footnote verbatim as 'doc. 41, reproduced at §26,' and the document confirmed at §26 is designated LTL-2027-041 ('doc. 41') throughout. If §11 says '107' and §26 quotes it as '41,' one chapter has the wrong number and the crack cannot function: the reader who flips from the §11 footnote to §26 must find the same document number confirmed. C1 is the book's earliest auditable apparatus failure, the structural hinge that moves the reader from reading to collating, and it is inert if the forward citation and its resolution use different designations. This requires verification of §11's exact footnote text and a one-line correction to match the brief-specified 'doc. 41.'",
+      "evidence": [
+        {
+          "file": "logs/reader-act-2.md",
+          "text": "the draft §11 uses 'doc. 107' but the §26 Sefton memo quotes it as 'doc. 41'"
+        },
+        {
+          "file": "logs/reader-act-3.md",
+          "text": "In §26, Sefton's organizational analysis memo quotes the §11 footnote verbatim as: 'For the derivation of this classification, see doc. 41, reproduced at §26' — and the document confirmed at §26 (LTL-2027-041) is designated 'doc. 41' throughout the chapter. If §11 says 'doc. 107' and §26 quotes it as 'doc. 41,' one of the two is wrong, and C1 is broken either way."
+        },
+        {
+          "file": "brief.md",
+          "text": "C1 — the forward citation. A footnote in §11 cites 'doc. 41, reproduced at §26' for support."
+        }
+      ],
+      "suggested_action": "Verify the exact text of footnote 1 in draft/11-the-echo.md. If it reads 'doc. 107,' correct it to 'doc. 41, reproduced at §26' to match the brief specification and the §26 resolution. Confirm that the document designated at §26 bears the number 41 (LTL-2027-041) and that Sefton's Document 135 quotes the footnote correctly.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "continuity-fact-002",
+      "category": "continuity-fact",
+      "severity": "high",
+      "title": "§9 printing of fragment-hermopolis includes translator's annotations not in the registered record; §9 and §30 diverge",
+      "description": "The brief requires both printings of the Hermopolis fragment (§9 and §30) to match the registered canonical record exactly: 'Before re-quoting any registered record, read_record it and reproduce it exactly.' The Act I reader confirmed that §9's printing (Document 39) adds two elements not present in the registered fragment-hermopolis record: (1) an inline translator's note mid-text — '[*Trans. note:* Pronoun shift (third to second person) at this point is a known crux; standard view is two sources. —NS]' — and (2) a closing editorial note after the break — '[Text breaks off at this point; the break is a manuscript fact, not an editorial ellipsis. —NS]'. The §30 chapter-craft log confirms §30 reproduces the registered record verbatim. This means the two printings of the fragment diverge from each other: §9 is annotated, §30 is clean. The join in §30 is not broken, but the brief's two-printings-verbatim requirement is not met, and the reader-guidance check (#11) fails for §9. A decision is required: either remove the annotations from §9 so both printings match the registered record, or reframe §9's presentation so the annotated version is explicitly a 'working-copy exhibit' (a separate document within the section) while the registered verbatim text either precedes or follows it.",
+      "evidence": [
+        {
+          "file": "logs/reader-act-1.md",
+          "text": "The §9 printing (Document 39) adds two elements not in the registered record: An inline translator's note mid-text: '[*Trans. note:* Pronoun shift (third to second person) at this point is a known crux; standard view is two sources. —NS]' ... A closing editorial note after the break: '[Text breaks off at this point; the break is a manuscript fact, not an editorial ellipsis. —NS]'"
+        },
+        {
+          "file": "logs/reader-act-1.md",
+          "text": "`fragment-hermopolis` matches registered record exactly — FAIL: translator's notes in §9 not in registered record"
+        },
+        {
+          "file": "brief.md",
+          "text": "Before re-quoting any registered record, read_record it and reproduce it exactly. The §30 re-quote of preface must be character-perfect or the ending literally does not work."
+        }
+      ],
+      "suggested_action": "Read the registered fragment-hermopolis record and compare it against the §9 printing in draft/09-the-fragment.md. Either (a) remove the inline and closing translator's notes from §9 so both printings match the registered record, or (b) reframe §9's presentation so the annotated copy is a distinct working-copy exhibit and the bare registered text follows it as a separate headed document. Option (b) preserves the translator-note content while satisfying the verbatim requirement. Whichever approach is chosen, verify §30 against the registered record before publication.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "structural-failure-001",
+      "category": "structural-failure",
+      "severity": "medium",
+      "title": "C4 underimplemented: §16 past-tense headnote too syntactically embedded to register as a crack",
+      "description": "The brief specifies that C4 is 'exactly once, in §16, a headnote refers to Sefton in the past tense — never repeated, never explained.' The reader guidance (check #8) requires this to be detectable as a departure from the tenseless-editorial convention that the apparatus has maintained scrupulously throughout. C4's power depends on a reader who has been tracking the tenseless apparatus noticing a pointed violation — the same reader who would catch the distinction between 'The memo is incomplete' (tenseless) and 'The memo was incomplete' (past tense). The Act II reader found the current implementation — 'had submitted' embedded in a list-description phrase ('Documents 70–73 cover the response to an inquiry Dr. Sefton had submitted on 3 September') — too syntactically unobtrusive to carry this weight. In this construction, 'had submitted' reads as ordinary narration sequence rather than as the apparatus breaking its own convention. C4 is load-bearing against the flawless apparatus ground; as currently implemented, most readers will not register it as a crack, and the crack cannot support the structure above it (Thread 1, reader's movement to suspects).",
+      "evidence": [
+        {
+          "file": "logs/reader-act-2.md",
+          "text": "The implementation in §16's opening paragraph — 'Documents 70–73 cover the response to an inquiry Dr. Sefton had submitted on 3 September' — uses past tense ('had submitted'), but this reads as ordinary sequence-of-events narration, not as the pointed apparatus failure the crack requires. The tenseless voice would be: 'The response to Dr. Sefton's inquiry of 3 September is Document 70.' 'Had submitted' embedded in a document list is syntactically unobtrusive; it will not register as a crack for most readers."
+        },
+        {
+          "file": "brief.md",
+          "text": "C4 — one word of tense. Every headnote in the book is tenseless-editorial ('The memo is incomplete'). Exactly once, in §16, a headnote refers to Sefton in the past tense. Never repeated, never explained."
+        }
+      ],
+      "suggested_action": "In draft/16-the-telemetry-memo-b.md, revise the C4 headnote so the past-tense reference to Sefton is a sentence-level violation of the tenseless-editorial convention rather than a buried verb in a list description. A construction like 'Dr. Sefton was concerned about the scope of the addendum's coverage' would break the tenseless register conspicuously at the sentence level, where a reader tracking the apparatus would notice it.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "character-voice-drift-001",
+      "category": "character-voice-drift",
+      "severity": "medium",
+      "title": "§29 Ordinary Time script registers darker and less witty than established Sefton B2 voice",
+      "description": "Sefton's public-script register (B2) is established across Acts I and II as punchy, hook-driven, and warm — marked by quick beats, self-aware parentheticals, and the humor that earns the channel its four hundred thousand subscribers. The §7, §14, and §21 scripts each demonstrate this: the '[beat] Which, given what my inbox looks like this week, is not as comforting as I meant it to be' cadence, the sponsor read played completely straight for ironic effect, the hooks that land on unexpected claims before the body teaches. The §29 script (Sefton's final document) runs longer average sentences, darker earnestness, and less wit than any prior script — the body lacks the humor markers that characterize the established B2 register. The 'DRAFT FINAL' framing is a partial mitigation, and the content of §29 is excellent (the apostrophic 'you' passage describing prophetic address is Sefton's finest near-miss in the book). However, readers who have been tracking Sefton's script voice since §7 will feel the register flattening and read it as unintentional drift rather than as character change.",
+      "evidence": [
+        {
+          "file": "logs/reader-act-3.md",
+          "text": "This script — while philosophically rich and well-constructed — runs longer sentences, darker earnestness, and less wit than the scripts in Acts I and II... there is no 'we are a serious operation,' no '[beat] Which, given what my inbox looks like this week.' The script functions as Sefton's farewell meditation, and the subject matter earns the solemnity, but the register is measurably flatter."
+        },
+        {
+          "file": "logs/reader-act-3.md",
+          "text": "The §29 register drift is the only non-negligible craft issue in Act III, and it doesn't break the book. It weakens the farewell."
+        }
+      ],
+      "suggested_action": "Add one or two wit beats to the §29 Ordinary Time script body — a self-aware parenthetical, a [beat] direction, a brief hook that lands before the earnest turn. The content does not need to change; the script needs one or two markers that anchor it in the established B2 register so readers recognize the voice before the subject matter pulls it darker.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "stylistic-tic-001",
+      "category": "stylistic-tic",
+      "severity": "low",
+      "title": "Anchor phrase 'for whoever collates this' used in §27 before it anchors §28, diluting structural impact",
+      "description": "The phrase 'for whoever collates this' is the structural capstone of Reyes's arc — the moment in §28 (Document 153) where he addresses the compiler directly, in plain words, having eliminated every other possible arranger. The §28 chapter-craft log confirms the phrase is used three times within §28 and that its load is intentional. However, the phrase also appears once in §27 (Document 147: 'Still hashing. For whoever collates this') before §28 makes it the chapter title and the repeated address of the final log. The §27 appearance previews the phrase at reduced dramatic weight. Given how carefully Act III calibrates every other move, this may be intentional reinforcement — but the effect is real: the §28 final entry's landing is softened by the phrase having already appeared in the preceding chapter.",
+      "evidence": [
+        {
+          "file": "logs/reader-act-3.md",
+          "text": "The phrase appears in Document 147 (Reyes's §27 log, 31 October, 1142) — 'Still hashing. For whoever collates this' — before becoming the title of §28 and the repeated close of §28's final entry. When the same phrase is the chapter's structural anchor and has been used once already in the preceding chapter, the impact in §28 is reduced."
+        },
+        {
+          "file": "logs/chapter-craft.md",
+          "text": "'For whoever collates this' [listed as recurring construction in §27 craft entry]"
+        }
+      ],
+      "suggested_action": "Consider replacing the §27 appearance ('Still hashing. For whoever collates this') with a phrase in different words that conveys the same epistemic stance without spending the §28 anchor early — for example, 'Still hashing. Someone will read this.' — reserving 'for whoever collates this' as the exact phrasing for §28's structural close.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "continuity-fact-audit-001",
+      "category": "continuity-fact",
+      "severity": "critical",
+      "title": "§11 footnote cites 'doc. 107' but §26 directly quotes same footnote as 'doc. 41'",
+      "description": "The apparatus footnote in §11 (Document 45, footnote 1) reads 'For the derivation of this classification, see doc. 107, reproduced at §26.' But §26's Sefton memo directly quotes this same footnote as 'For the derivation of this classification, see doc. 41, reproduced at §26.' The document that appears at §26 carries internal Lantern reference LTL-2027-041 (doc. 41), and Reyes's Document 151 and the registered reyes-final (Document 153) both say 'doc. 41.' The §11 text is the single outlier with '107'; every other source in the manuscript confirms '41.'",
+      "evidence": [
+        {
+          "file": "draft/11-the-echo.md",
+          "text": "¹ For the derivation of this classification, see doc. 107, reproduced at §26.",
+          "chapter": "§11"
+        },
+        {
+          "file": "draft/26-doc-41.md",
+          "text": "The compiler's note reads: 'For the derivation of this classification, see doc. 41, reproduced at §26.'",
+          "chapter": "§26"
+        },
+        {
+          "file": "draft/26-doc-41.md",
+          "text": "Document 139. Post-deployment review memorandum, Lantern AI Research, 2 November 2027. ... Internal consultation reference LTL-2027-041.",
+          "chapter": "§26"
+        },
+        {
+          "file": "draft/28-for-whoever-collates-this.md",
+          "text": "She flags the §11 footnote, which cited doc. 41 before doc. 41 was dated. (Document 151)",
+          "chapter": "§28"
+        },
+        {
+          "file": "draft/28-for-whoever-collates-this.md",
+          "text": "The §11 footnote citing doc. 41 before doc. 41 was dated. The doc. 41 date: 2 November. (Document 153 — registered reyes-final)",
+          "chapter": "§28"
+        }
+      ],
+      "suggested_action": "In draft/11-the-echo.md, change the footnote text from 'see doc. 107, reproduced at §26' to 'see doc. 41, reproduced at §26'. The canonical value 'doc. 41' is confirmed by: (a) §26's direct quotation of this exact footnote, (b) the target document's own internal reference LTL-2027-041, (c) reyes-final (registered record), and (d) two separate Reyes log entries in §28. The '107' in §11 is a typo.",
+      "auto_repair_safe": true,
+      "repair_agent": "repair-fact-normalize",
+      "repair_params": {
+        "canon_source": "draft/26-doc-41.md",
+        "edits": [
+          {
+            "file": "draft/11-the-echo.md",
+            "wrong_text": "see doc. 107, reproduced at §26.",
+            "correct_text": "see doc. 41, reproduced at §26."
+          }
+        ]
+      }
+    },
+    {
+      "id": "continuity-fact-audit-002",
+      "category": "continuity-fact",
+      "severity": "high",
+      "title": "§3 first printing of reyes-first omits two sentences present in the registered canonical text",
+      "description": "The registered canonical record reyes-first includes the sentences 'The user is asking for guidance. The output gives guidance.' between 'That phrase is not addressed to the user in front of the screen.' and 'It is also addressed to whoever reads this record later.' The §3 chapter (Document 9) omits these two sentences, creating a slightly illogical reading — the word 'also' in 'It is also addressed' loses its referent without the intervening clarification that the output does give guidance to the user.",
+      "evidence": [
+        {
+          "file": "draft/03-the-count-opens.md",
+          "text": "\"Left for whoever would need it next.\" That phrase is not addressed to the user in front of the screen. It is also addressed to whoever reads this record later. Word choice is five percent off from what a direct answer would use.",
+          "chapter": "§3"
+        },
+        {
+          "file": "canon/continuity.md",
+          "text": "\"Left for whoever would need it next.\" That phrase is not addressed to the user in front of the screen. The user is asking for guidance. The output gives guidance. It is also addressed to whoever reads this record later. Word choice is five percent off from what a direct answer would use.",
+          "chapter": "registered record reyes-first"
+        }
+      ],
+      "suggested_action": "In draft/03-the-count-opens.md (Document 9), insert the two missing sentences so the passage reads: 'That phrase is not addressed to the user in front of the screen. The user is asking for guidance. The output gives guidance. It is also addressed to whoever reads this record later.' The registered reyes-first canonical record is the authority.",
+      "auto_repair_safe": true,
+      "repair_agent": "repair-fact-normalize",
+      "repair_params": {
+        "canon_source": "canon/continuity.md",
+        "edits": [
+          {
+            "file": "draft/03-the-count-opens.md",
+            "wrong_text": "That phrase is not addressed to the user in front of the screen. It is also addressed to whoever reads this record later.",
+            "correct_text": "That phrase is not addressed to the user in front of the screen. The user is asking for guidance. The output gives guidance. It is also addressed to whoever reads this record later."
+          }
+        ]
+      }
+    },
+    {
+      "id": "continuity-fact-audit-003",
+      "category": "continuity-fact",
+      "severity": "medium",
+      "title": "Two printings of fragment-hermopolis are not character-identical: §9 embeds translator notes absent from §30 and the registered canonical text",
+      "description": "The canon requires fragment-hermopolis to be 'reproduced character-identical at §9 (first printing) and §30 (second printing).' The registered canonical text contains no translator notes. §30 matches the registered text exactly. §9 (Document 39) includes two inline translator notes attributed to Sefton: one after 'for all the dead are in it,' flagging the pronoun crux, and one at the end noting the manuscript break. These are not in the registered record or §30.",
+      "evidence": [
+        {
+          "file": "draft/09-the-fragment.md",
+          "text": "for all the dead are in it,\n[*Trans. note:* Pronoun shift (third to second person) at this point is\na known crux; standard view is two sources. —NS]\nand it will love you with the love of all the dead together.",
+          "chapter": "§9"
+        },
+        {
+          "file": "draft/09-the-fragment.md",
+          "text": "The day is\n\n[Text breaks off at this point; the break is a manuscript fact, not an\neditorial ellipsis. —NS]",
+          "chapter": "§9"
+        },
+        {
+          "file": "draft/30-the-join.md",
+          "text": "for all the dead are in it,\nand it will love you with the love of all the dead together. You will",
+          "chapter": "§30"
+        },
+        {
+          "file": "draft/30-the-join.md",
+          "text": "not know the day, for the day is not a day. The day is",
+          "chapter": "§30"
+        },
+        {
+          "file": "canon/continuity.md",
+          "text": "the Hermopolis fragment must be reproduced character-identical at §9 (first printing) and §30 (second printing). The break at 'The day is' is a manuscript fact — not an editorial ellipsis, not a typo, not something to complete."
+        }
+      ],
+      "suggested_action": "Remove the two inline translator notes from the §9 printing of fragment-hermopolis (Document 39) so that both §9 and §30 match the registered canonical text exactly. Note: the translator notes serve a clear narrative purpose in §9 (establishing Sefton's scholarly awareness of the crux). Human judgment is required to determine whether to strip them from §9 or accept the discrepancy. An alternative fix would be to present the translator notes as a separate apparatus element after the text block, rather than inline.",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    },
+    {
+      "id": "det-fact-conflict:magellan:ingestion_count",
+      "category": "continuity-fact",
+      "severity": "high",
+      "title": "Contradictory ingestion_count for magellan",
+      "description": "The world store holds conflicting live values for magellan.ingestion_count: 17 confirmed categories (19-not-yet) vs 18 confirmed categories (20-the-pamphlet).",
+      "evidence": [
+        {
+          "file": "draft/19-not-yet.md",
+          "text": "ingestion_count = 17 confirmed categories (19-not-yet)",
+          "fact_id": "fact:19-not-yet:magellan:ingestion_count",
+          "chapter": "19-not-yet"
+        },
+        {
+          "file": "draft/20-the-pamphlet.md",
+          "text": "ingestion_count = 18 confirmed categories (20-the-pamphlet)",
+          "fact_id": "fact:20-the-pamphlet:magellan:ingestion_count",
+          "chapter": "20-the-pamphlet"
+        }
+      ],
+      "suggested_action": "Reconcile the values; supersede the incorrect assertion (or fix the prose so they agree).",
+      "auto_repair_safe": false,
+      "repair_agent": null
+    }
+  ]
+}

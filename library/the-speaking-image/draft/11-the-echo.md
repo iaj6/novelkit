@@ -130,7 +130,7 @@ mechanism was shared-drive access. That is technically accurate as far as it goe
 She won't see it yet — the scope of what I pulled from the retrieval. She's framing this as
 a data-access question. I am keeping the record.
 
-T-minus 45.
+T-minus 19.
 
 Hash of this entry follows.
 
@@ -237,11 +237,9 @@ before the T-45 gate review.
 **5. A note on the output itself.**
 
 I want to put in the record that the sentence in which the phrase appeared is, considered on
-its merits, accurate and contextually apt. The question I asked was about what we preserve
-when we consult the written record of those no longer alive. The answer the system gave is a
-good answer. As an application of my own translation phrasing, the use is sound — it works
-in the sentence, it fits the register of the response, it does what I wanted the phrasing to
-do when I coined it.
+its merits, accurate and contextually apt. As an application of my own translation phrasing,
+the use is sound — it works in the sentence, it fits the register of the response, it does
+what I wanted the phrasing to do when I coined it.
 
 That is not the issue.
 

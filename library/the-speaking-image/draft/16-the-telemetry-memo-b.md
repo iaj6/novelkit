@@ -1,6 +1,6 @@
 # §16
 
-Documents 69–73, 5–7 September 2027. Document 69 reproduces the memorandum LGL-2027-MGL-004; the copy reproduced here is from Lantern's legal compliance file and is reproduced as received. Documents 70–73 cover the response to the outstanding consultation inquiry of 3 September, an internal compliance action note, the post-training lead log entries of 6 September, and the Trust & Safety pre-review status note of 7 September.
+Documents 69–73, 5–7 September 2027. Document 69 reproduces the memorandum LGL-2027-MGL-004; the copy reproduced here is from Lantern's legal compliance file and is reproduced as received. Documents 70–73 cover the response to an inquiry Dr. Sefton had submitted on 3 September, an internal compliance action note, the post-training lead log entries of 6 September, and the Trust & Safety pre-review status note of 7 September.
 
 ---
 
@@ -64,7 +64,7 @@ DISTRIBUTION: V. Osei, Trust & Safety Lead / E. Reyes, Post-Training Lead / N. S
 
 ---
 
-Document 70. Electronic mail, M. Cantu, Associate General Counsel, to N. Sefton, 5 September 2027. This document was provided to Dr. Sefton in response to her inquiry of 3 September. Reproduced as received.
+Document 70. Electronic mail, M. Cantu, Associate General Counsel, to N. Sefton, 5 September 2027. Provided in response to Dr. Sefton's inquiry of 3 September. Reproduced as received.
 
 ---
 
@@ -139,7 +139,7 @@ Hash of this entry follows.
 
 1604. Ran the comparison. Got what I was looking for.
 
-Count is at fourteen. The pair — both versions, both redaction patterns, both of them confirmed inside. I want that in the record: the mechanism is documented, in the documentation. The instrument that describes the count is itself inside the thing it describes.
+Count is at fourteen. The pair — both versions, both redaction patterns, both of them confirmed inside.
 
 I am keeping this in the log.
 
