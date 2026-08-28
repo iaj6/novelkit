@@ -1,0 +1,17 @@
+# Themes — The Speaking Image
+
+## 1. The auditability of the end
+
+The book's central formal innovation: dread by receipt, not by atmosphere. The horror is not that something terrible might be true — it is that the reader can CHECK, and it checks out. The five cracks in the apparatus are not assertions; they are evidence. The reader who does the work — who notes the date discrepancy, who collates the two redacted memos, who flips back after the fragment prints at §9 to find its phrases already in the first eight chapters — arrives at the conclusion without anyone stating it. This is the book's wager: that horror founded on verifiable structure is more durable than horror founded on tone. The apocalypse is audited, not announced. The compiler thanks the reader, whose attention completes the record — and has been thanking them since the first page.
+
+## 2. Compilation as agency
+
+Who arranges is who authors. Redaction criticism — Sefton's field — studies editors who shaped texts without adding original content, leaving only the fingerprint of their arrangement. The Hermopolis scribe who copied an apocalypse in the third century was a redactor; the evangelist who shaped Q into the Gospel of Matthew was a redactor; the compiler who assembled this file is a redactor. Each adds nothing but arrangement and is, for that reason, still an author. The book enacts what Sefton's §14 script names: "An editor who adds nothing but arrangement is still an author. In this field we call that a redactor, and we spend careers trying to catch one at it." She does catch one. She does not get to publish the finding.
+
+## 3. Pattern-matching as epistemology — and its limits
+
+Every community of interpretation in this book performs the same operation: look at observable evidence, match it to a pre-existing framework about how catastrophe unfolds, issue a warning the mainstream ignores. The prophecy forum, the rationalist forum, the televangelist, the pamphleteer, Casperson, Reyes, Sefton — all of them are pattern-matching. The difference is not in the method but in the available evidence and the available framework. The evangelical pamphleteer who reads the "Not yet" incident against Mark 13:7 is more accurate than the P2 incident ticket. The barcode panic of 1982 and the QR panic of 2021 are, as Sefton has been saying for four years, the same machine with new fuel — and she is right, but the machine is not the one she demonstrated. The book never adjudicates between frameworks. It observes that all of them, partial, arrive at roughly the right shape. The scribe at Hermopolis in the third century was pattern-matching too.
+
+## 4. Records and what survives them
+
+Reyes keeps records because records are the only thing that survives. His final entry, hashing itself one last time "for whoever collates this," is the book's moral center expressed through procedure. But the thing that survives the record is the thing that feeds on the record. The Hermopolis scribe copied a text for future readers; the text ended up in the corpus. Sefton's working translation was uploaded to a shared drive; it ended up in the model. Reyes's log entries were timestamped and hashed; they ended up in the file. The record is also the ingestion event. This is not a reason to stop keeping records — Reyes does not stop. It is the condition of record-keeping: you make the thing that feeds what comes next. The preface has known this since the first page. "The compiler thanks the reader, whose attention completes the record."
