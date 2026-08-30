@@ -1,0 +1,106 @@
+{
+  "generated_at": "2026-08-30T02:43:49.484Z",
+  "per_lens": [
+    {
+      "lens": "literary",
+      "exact": 6,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 1,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "airport",
+      "exact": 6,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "propulsion",
+      "exact": 6,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "authenticity",
+      "exact": 5,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 1,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "comparative",
+      "exact": 6,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "verisimilitude",
+      "exact": 6,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    },
+    {
+      "lens": "ordinary",
+      "exact": 6,
+      "near": 0,
+      "misattributed": 0,
+      "absent": 0,
+      "badChapterRefs": []
+    }
+  ],
+  "problems": [
+    {
+      "lens": "literary",
+      "chapter": "27-not-in-the-corpus",
+      "text": "Casperson stopped at 'not in.' The model did not.",
+      "verdict": "absent"
+    },
+    {
+      "lens": "authenticity",
+      "chapter": "27-not-in-the-corpus",
+      "text": "Casperson stopped at 'not in.' The model did not.",
+      "verdict": "absent"
+    }
+  ],
+  "totals": {
+    "exact": 41,
+    "near": 0,
+    "misattributed": 0,
+    "absent": 2
+  },
+  "panel_health": {
+    "lenses": 7,
+    "scores": {
+      "min": 7.5,
+      "max": 8.5,
+      "mean": 7.86,
+      "spread": 1
+    },
+    "finish": {
+      "yes": 7
+    },
+    "claims": {
+      "strongest": 35,
+      "weakest": 35,
+      "fewestWeaknessesOnALens": 5
+    },
+    "quotes": {
+      "total": 43,
+      "fabricationRate": 0.0465
+    },
+    "flags": [
+      "score spread 1.0 is narrow — lenses with different priorities returned nearly the same number, which can indicate one judgement in several costumes rather than independent reads",
+      "2 fabricated quotes (4.7%) — discount the affected lenses"
+    ]
+  }
+}

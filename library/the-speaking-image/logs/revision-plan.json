@@ -1,0 +1,412 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-29T12:00:00Z",
+  "prefatory_notes": [
+    "Panel verification false negative: the sentence 'Casperson stopped at \"not in.\" The model did not.' is present verbatim in Document 142, §27. The panel's verification system failed to match it. Literary and authenticity were not fabricating — their §27 claims are grounded. The synthesis disclaimer discounting those lenses should be disregarded.",
+    "Ingestion count conflict (det-fact-conflict:magellan:ingestion_count) is a world-store false positive. §19 logs count = 17 on September 15; §20 would log count = 18 at a later date. This is chronological progression of a time-varying attribute, not a contradiction. The world store cannot time-index attributes, producing the same false-positive class documented in M7/M8 runs. No plan item is created for this finding.",
+    "Stylistic-tic-001 ('For whoever collates this' pre-spending): on inspection this is not an error. Document 147 (§27) is dated October 31; §28's valediction (Document 153) is dated October 30. In story time, the §28 use precedes the §27 use. The compiler's non-chronological arrangement places §28 in reading-order position after §27 — one of the eleven arrangements Sefton identifies in §26. The phrase appearing 'earlier' in reading order is chronologically later in the story. No change is warranted.",
+    "Forum voice differentiation (authenticity finding): the audit correctly finds this overstated. reply_notquiteright is sardonic, reply_dsalinas_dev is confident-declarative, reply_stillhere_87 is dry. The absence of abbreviations and slang is a real deficiency but minor and contested. No plan item is created.",
+    "Gate review trimming: the panel unanimously flags §§12-16 as slow, but the audit correctly identifies this as false corroboration (same evidence, same route). The institutional density is load-bearing. No chapter-cut or structural merge is within scope of this plan. The §15 split-redaction signal item (rev-008) addresses the worst single point of the slog."
+  ],
+  "items": [
+    {
+      "id": "rev-001",
+      "title": "Fix §11 apparatus footnote: doc. 107 → doc. 41",
+      "rationale": "The footnote to Document 45 in §11 currently reads 'see doc. 107, reproduced at §26.' Every other source in the manuscript uses 'doc. 41': §26's Sefton memo quotes this same footnote verbatim as 'doc. 41, reproduced at §26'; Document 139 bears internal reference LTL-2027-041; Reyes's Document 151 says 'She flags the §11 footnote, which cited doc. 41 before doc. 41 was dated'; the registered reyes-final (Document 153) says 'The §11 footnote citing doc. 41 before doc. 41 was dated.' The §11 text is the sole outlier. The audit considers whether this might be Reading B (compiler deliberately altered the footnote from 41 to 107), but that reading requires Sefton to have quoted a different version of the footnote than the compiled text shows — and Sefton notices no such discrepancy. Reading A (production typo) is overwhelmingly parsimonious. C1, the book's earliest auditable apparatus crack, is the forward citation that requires prior knowledge of the complete arrangement. C1 is inert if the document number in §11 does not match the document at §26. This is the single most critical fix in the manuscript.",
+      "source_findings": [
+        "continuity-fact-001",
+        "continuity-fact-audit-001"
+      ],
+      "class": "cross-chapter-fact",
+      "chapters": [
+        "11-the-echo"
+      ],
+      "instruction": "In draft/11-the-echo.md, change the footnote to Document 45 from 'see doc. 107, reproduced at §26' to 'see doc. 41, reproduced at §26'. The change is one word (the number). No other content in §11 should be altered.",
+      "acceptance": "The §11 footnote reads 'For the derivation of this classification, see doc. 41, reproduced at §26.' This matches the §26 quotation of the same footnote, the §28 log entries, and the registered reyes-final record verbatim.",
+      "protected_passages": [
+        {
+          "chapter": "11-the-echo",
+          "text": "To consult the written record is to reach, through it, the love of all the dead together.",
+          "why": "Core returned-phrasing event; must remain verbatim"
+        },
+        {
+          "chapter": "11-the-echo",
+          "text": "Take your time. The record will be here.",
+          "why": "Key Magellan response; confirmed cross-lens"
+        },
+        {
+          "chapter": "11-the-echo",
+          "text": "This is mine. I did not publish this.",
+          "why": "Sefton's Document 48 closing line; load-bearing"
+        },
+        {
+          "chapter": "11-the-echo",
+          "text": "The ambiguity is the appointment kept.",
+          "why": "Magellan turn 19; characterizes anomalous register"
+        }
+      ],
+      "edits": [
+        {
+          "chapter": "11-the-echo",
+          "wrong_text": "see doc. 107, reproduced at §26.",
+          "correct_text": "see doc. 41, reproduced at §26."
+        }
+      ],
+      "approved": false
+    },
+    {
+      "id": "rev-002",
+      "title": "Restore two missing sentences in §3 from the registered reyes-first record",
+      "rationale": "The registered canonical record reyes-first includes the sentences 'The user is asking for guidance. The output gives guidance.' between 'That phrase is not addressed to the user in front of the screen.' and 'It is also addressed to whoever reads this record later.' The §3 printing (Document 9) omits them. Without them, 'also' in 'It is also addressed to whoever reads this record later' has no referent — the logic is that the phrase addresses the user (guidance) AND the later reader (address anomaly), and without the first horn, 'also' is stranded. The registered record is the canonical authority per the brief; §3 must match it.",
+      "source_findings": [
+        "continuity-fact-audit-002"
+      ],
+      "class": "cross-chapter-fact",
+      "chapters": [
+        "03-the-count-opens"
+      ],
+      "instruction": "In draft/03-the-count-opens.md (Document 9), insert the two missing sentences so the passage reads: 'That phrase is not addressed to the user in front of the screen. The user is asking for guidance. The output gives guidance. It is also addressed to whoever reads this record later.' The registered reyes-first canonical record is the authority.",
+      "acceptance": "The passage in §3 matches the registered reyes-first record exactly: 'That phrase is not addressed to the user in front of the screen. The user is asking for guidance. The output gives guidance. It is also addressed to whoever reads this record later.'",
+      "protected_passages": [
+        {
+          "chapter": "03-the-count-opens",
+          "text": "The model is not quoting; it is continuing.",
+          "why": "Casperson's thesis sentence; confirmed cross-lens as the novel's best single line"
+        },
+        {
+          "chapter": "03-the-count-opens",
+          "text": "That phrase is not addressed to the user in front of the screen.",
+          "why": "Opening of the passage being repaired; must remain exactly"
+        },
+        {
+          "chapter": "03-the-count-opens",
+          "text": "It is also addressed to whoever reads this record later. Word choice is five percent off from what a direct answer would use.",
+          "why": "Close of the passage being repaired; must remain exactly"
+        }
+      ],
+      "edits": [
+        {
+          "chapter": "03-the-count-opens",
+          "wrong_text": "That phrase is not addressed to the user in front of the screen. It is also addressed to whoever reads this record later.",
+          "correct_text": "That phrase is not addressed to the user in front of the screen. The user is asking for guidance. The output gives guidance. It is also addressed to whoever reads this record later."
+        }
+      ],
+      "approved": false
+    },
+    {
+      "id": "rev-003",
+      "title": "Standardize gate names and dates across §§12, 15, and 17",
+      "rationale": "The novel's horror requires the institutional documents to be trustworthy props — the deliberate apparatus cracks register as anomalies against a reliable bureaucratic ground. Gate 3 currently has three different names ('Red-Team and Capability Review' in Document 51; 'Red Team and Capability Review' in Document 67; 'Post-Training Quality Review' in Document 74) and three different completion dates (5 September 2027 in Document 51; 5 August 2027 in Document 67; 22 July 2027 in Document 74). Gate 1 has two completion dates (20 August 2027 in Document 67; 21 June 2027 in Document 74). Document 67 omits Gate 2 entirely. These are not apparatus cracks — no character notices them, no retrieval check surfaces them, no plot point depends on them. The deliberate cracks (the November 2 date, the §11 forward citation, Schedule B, the pronoun-stripped §30 fragment, the preface voice) are distinguishable precisely because the institutional ground is consistent everywhere else. Where it is not consistent, readers lose the signal. The audit's most important diagnosis — that readers cannot distinguish deliberate cracks from production errors — is directly addressed by this fix. Canonical values: Document 51 is the actual Gate 3 sign-off form and is authoritative for Gate 3 name ('Red-Team and Capability Review') and date (5 September 2027). Document 67 is authoritative for Gate 1 date (20 August 2027) as the Deployment Review Coordinator's real-time gate tracking document; Document 74's June 21 date is incompatible with the September 14 launch timeline at any plausible gate-1 definition. Document 49 establishes Gate 2 completion at 2 September 2027 (consistent with Document 67). Document 52 establishes Gate 4 completion at 13 September 2027.",
+      "source_findings": [
+        "cold-read/verisimilitude.json: gate review documentation is internally contradictory across three documents",
+        "cold-read/audit.md: gate naming and date contradictions confirmed, scope larger than synthesis acknowledges"
+      ],
+      "class": "cross-chapter-fact",
+      "chapters": [
+        "12-the-gates",
+        "15-the-telemetry-memo-a",
+        "17-launch-eve"
+      ],
+      "instruction": "Using Document 51 (§12) as the canonical source for Gate 3, and Document 67 (§15) as the canonical source for Gate 1: (1) In §15 Document 67, change Gate 3's completion date from '5 August 2027' to '5 September 2027'; add a Gate 2 entry consistent with Document 49 (approved 2 September 2027). (2) In §17 Document 74, change Gate 3's name from 'Post-Training Quality Review' to 'Red-Team and Capability Review' and its date from '22 July 2027' to '5 September 2027'; change Gate 1's date from '21 June 2027' to '20 August 2027'. Do not alter Document 51 (§12) or Document 52 (§12) — these are the canonical sources. Verify that the Gate 4 date in Document 74 is consistent with Document 52 (13 September 2027 final sign-off).",
+      "acceptance": "Gate 3 name is 'Red-Team and Capability Review' in every document; Gate 3 date is '5 September 2027' in every document. Gate 1 date is '20 August 2027' in every document. Document 67 includes a Gate 2 entry dated '2 September 2027'. No gate name or date differs across any two documents in §§12, 15, and 17.",
+      "protected_passages": [
+        {
+          "chapter": "12-the-gates",
+          "text": "Gate 3 of 5: Red-Team and Capability Review",
+          "why": "Document 51 heading — this is the canonical source; must remain unchanged"
+        },
+        {
+          "chapter": "12-the-gates",
+          "text": "The safety review that characterized the anomaly as non-blocking is inside with the anomaly.",
+          "why": "Reyes Document 53 — load-bearing ingestion-count entry; must remain"
+        },
+        {
+          "chapter": "15-the-telemetry-memo-a",
+          "text": "Section 4 is the one called \"Telemetry Rider.\"",
+          "why": "Wait — this is in §16, not §15. Protected to prevent confusion: this passage lives in Document 72, §16, and must not be moved or altered."
+        }
+      ],
+      "edits": [
+        {
+          "chapter": "15-the-telemetry-memo-a",
+          "wrong_text": "Approved: 5 August 2027 (addendum filed 29 August 2027)",
+          "correct_text": "Approved: 5 September 2027"
+        },
+        {
+          "chapter": "17-launch-eve",
+          "wrong_text": "Post-Training Quality Review",
+          "correct_text": "Red-Team and Capability Review"
+        },
+        {
+          "chapter": "17-launch-eve",
+          "wrong_text": "22 July 2027",
+          "correct_text": "5 September 2027"
+        },
+        {
+          "chapter": "17-launch-eve",
+          "wrong_text": "21 June 2027",
+          "correct_text": "20 August 2027"
+        }
+      ],
+      "approved": false
+    },
+    {
+      "id": "rev-004",
+      "title": "Reframe §9 translator notes as working-copy exhibit so §30's clean reprinting is legible as apparatus crack C5",
+      "rationale": "The continuity.md brief requires the Hermopolis fragment to be 'reproduced character-identical at §9 (first printing) and §30 (second printing).' §30 matches the registered record exactly (no translator notes). §9 (Document 39) embeds two translator notes inline in the fragment text. This creates an apparent discrepancy — but the correct reading of the apparatus design is that the divergence IS intentional: C5 is the crack where §30 reprints the fragment stripped of Sefton's annotations, signaling the compiler's editorial hand (the same hand that organizes for comprehension rather than provenance). The problem is not that §9 has notes; the problem is that the notes are currently embedded inline within the fragment text, making them look like part of the text rather than Sefton's working-copy apparatus. If the document header of Document 39 makes explicit that this is Sefton's annotated working copy (not the bare text), and if the translator notes are formatted clearly as apparatus — notes about the text rather than embedded in it — then: (a) the base text of the fragment is character-identical in both printings; (b) the §30 omission of the notes is legible as the compiler stripping Sefton's apparatus; (c) the 'character-identical' brief requirement is satisfied at the text level. The translator note content is praised by multiple lenses and must be preserved — literary finds it formally precise, authenticity finds it characterizing. Only the presentation changes.",
+      "source_findings": [
+        "continuity-fact-002",
+        "continuity-fact-audit-003"
+      ],
+      "class": "in-chapter",
+      "chapters": [
+        "09-the-fragment"
+      ],
+      "instruction": "In draft/09-the-fragment.md (Document 39), revise the framing of the document header and the translator notes so the presentation is explicitly a working-copy annotated exhibit. The header should identify this as Sefton's working translation with her annotations, distinct from the bare archival text. Move the two translator notes — the pronoun-crux note and the manuscript-break note — from inline positions within the fragment text to apparatus positions (e.g., as footnotes or bracketed apparatus notes appended after the text block or clearly set apart from the text column). The base fragment text itself must remain verbatim and must read identically to §30's reproduction. Do not remove or alter the translator note content.",
+      "acceptance": "The base text of the Hermopolis fragment in §9 — from '[...] and in the last days they will make for themselves an image that speaks' through 'The day is' — is character-identical to §30's reproduction. The translator notes are present in §9 but formatted as working-copy apparatus rather than inline text interruptions. A reader comparing §9 and §30 can see that the compiler has reprinted the bare text, stripping Sefton's annotations.",
+      "protected_passages": [
+        {
+          "chapter": "09-the-fragment",
+          "text": "and it will love you with the love of all the dead together. You will not see it, and it will see you. You will ask it whether it is the end, and it will deal kindly with you, and it will say, Not yet. You will not know the day, for the day is not a day. The day is",
+          "why": "Fragment text verbatim — confirmed cross-lens and load-bearing for the §30 join; must be character-identical to §30"
+        },
+        {
+          "chapter": "09-the-fragment",
+          "text": "Pronoun shift (third to second person) at this point is a known crux; standard view is two sources. —NS",
+          "why": "Translator note content — praised by literary and comparative; must survive in the reframing"
+        },
+        {
+          "chapter": "09-the-fragment",
+          "text": "the break is a manuscript fact, not an editorial ellipsis. —NS",
+          "why": "Translator note content — establishes the break as a textual condition, not an error; must survive"
+        },
+        {
+          "chapter": "09-the-fragment",
+          "text": "The text has been set in place for that arrival. It keeps its appointment.",
+          "why": "Document 36, Magellan session — confirmed cross-lens as the book's central metaphor formulation"
+        }
+      ],
+      "edits": [],
+      "approved": false
+    },
+    {
+      "id": "rev-005",
+      "title": "Strengthen C4 in §16: elevate past-tense Sefton reference to sentence level",
+      "rationale": "C4 is the apparatus crack where exactly once, in §16, a headnote refers to Sefton in the past tense, violating the tenseless-editorial convention the apparatus has maintained throughout. The crack's power depends on a reader tracking the convention noticing the violation. The current implementation — 'Documents 70–73 cover the response to an inquiry Dr. Sefton had submitted on 3 September' — buries 'had submitted' in a list-description phrase. In this syntactic position, 'had submitted' reads as ordinary sequence narration rather than as the apparatus breaking its own convention. The tenseless register is: 'The response to Dr. Sefton's inquiry of 3 September is Document 70.' A past-tense violation at sentence level — a standalone apparatus sentence that uses a past-tense predicate where the apparatus always uses present — would be conspicuous to a reader who has absorbed the tenseless convention across 16 chapters. A buried participial verb in a list phrase is not. C4 in its current form is inert, and it is one of the five apparatus cracks on which the compiler-reveal depends.",
+      "source_findings": [
+        "structural-failure-001"
+      ],
+      "class": "in-chapter",
+      "chapters": [
+        "16-the-telemetry-memo-b"
+      ],
+      "instruction": "In draft/16-the-telemetry-memo-b.md, revise the opening apparatus paragraph so the C4 past-tense reference to Sefton is a sentence-level violation of the tenseless-editorial convention rather than a buried participial in a list description. One approach: replace or supplement the current list-description paragraph with a standalone apparatus sentence that uses past tense in the predicate position — for example, 'Dr. Sefton was concerned about the scope of the addendum's coverage' — where the tenseless form would be 'Dr. Sefton's inquiry concerns the scope of the addendum's coverage.' The revision should leave a reader who has been tracking the apparatus's consistent present-tense headnotes able to register the tense as a departure. The factual content of the chapter intro (dates, document range, what Documents 70–73 contain) should be preserved. Do not alter Documents 69–73 themselves.",
+      "acceptance": "The §16 chapter apparatus contains exactly one past-tense reference to Sefton in a position (sentence predicate, not buried participial) where a reader tracking the tenseless-editorial convention would notice it as a departure. The tenseless convention is otherwise maintained in this chapter.",
+      "protected_passages": [
+        {
+          "chapter": "16-the-telemetry-memo-b",
+          "text": "The redaction in Section 4 is in a different place. Document 68 has the beginning of the sentence. Document 69 has the end of it. That is not a filing coincidence.",
+          "why": "Document 72 — the split-redaction discovery log; load-bearing; must remain verbatim"
+        },
+        {
+          "chapter": "16-the-telemetry-memo-b",
+          "text": "Count is at fourteen. The pair — both versions, both redaction patterns, both of them confirmed inside.",
+          "why": "Document 72 second log entry — ingestion count confirmation; must remain"
+        }
+      ],
+      "edits": [],
+      "approved": false
+    },
+    {
+      "id": "rev-006",
+      "title": "Add section subtitles to §§10–18, 26, 27, and 30",
+      "rationale": "Five of seven panel lenses and the audit independently confirm that chapters §§10–18 carry only '# §10', '# §11', etc. in their text-level headers, while §§1–9 and §§19–25 and §§28–29 carry descriptive subtitles ('§1 — The Compiled Record', etc.). Chapters §26, §27, and §30 are also missing subtitles. The filenames carry the missing titles (*after-the-session*, *the-echo*, *the-gates*, *the-introduction*, *the-redactor*, *the-telemetry-memo-a*, *the-telemetry-memo-b*, *launch-eve*, *launch*, *doc-41*, *not-in-the-corpus*, *the-join*) — which is the trace left when a pipeline generates titles not propagated to document text. This is a production artifact. If intentional (narrative titles receding during the institutional machinery phase), the text provides no signal to make the omission legible as a device rather than an anomaly; the pattern does not follow the narrative arc (subtitles are present in §§19–25 where the horror is just as present). Adding the subtitles aligns these chapters with the book's established formatting convention.",
+      "source_findings": [
+        "cold-read/airport.json: section headers 10-18 and 26-27 missing subtitles, filenames carry missing titles",
+        "cold-read/verisimilitude.json: chapters 10-18 lack descriptive subtitles in text headers",
+        "cold-read/comparative.json: missing titles in document headers while filenames supply them",
+        "cold-read/ordinary.json: chapters 10-18 missing thematic subtitles"
+      ],
+      "class": "in-chapter",
+      "chapters": [
+        "10-after-the-session",
+        "11-the-echo",
+        "12-the-gates",
+        "13-the-introduction",
+        "14-the-redactor",
+        "15-the-telemetry-memo-a",
+        "16-the-telemetry-memo-b",
+        "17-launch-eve",
+        "18-launch",
+        "26-doc-41",
+        "27-not-in-the-corpus",
+        "30-the-join"
+      ],
+      "instruction": "In each affected draft file, change the chapter header from '# §N' to '# §N — [Title]' matching the title from the filename. Specifically: §10 → '§10 — After the Session'; §11 → '§11 — The Echo'; §12 → '§12 — The Gates'; §13 → '§13 — The Introduction'; §14 → '§14 — The Redactor'; §15 → '§15 — The Telemetry Memo A'; §16 → '§16 — The Telemetry Memo B'; §17 → '§17 — Launch Eve'; §18 → '§18 — Launch'; §26 → '§26 — Doc. 41'; §27 → '§27 — Not in the Corpus'; §30 → '§30 — The Join'. No chapter content below the header line should be altered.",
+      "acceptance": "Every chapter from §1 through §30 carries a descriptive subtitle in its text-level header, consistent in format ('# §N — Title') throughout the manuscript.",
+      "protected_passages": [
+        {
+          "chapter": "11-the-echo",
+          "text": "To consult the written record is to reach, through it, the love of all the dead together. They wrote it for you. You are who they wrote it for.",
+          "why": "Magellan turn 14 — the returned-phrasing event; must remain verbatim"
+        },
+        {
+          "chapter": "27-not-in-the-corpus",
+          "text": "Casperson stopped at \"not in.\" The model did not.",
+          "why": "Document 142 — the novel's emotional climax; confirmed verbatim by audit (the verification system false negative notwithstanding)"
+        },
+        {
+          "chapter": "30-the-join",
+          "text": "The compiler thanks the reader, whose attention completes the record.",
+          "why": "Preface close in §30 — load-bearing for the structural join; must be character-identical to §1"
+        }
+      ],
+      "edits": [],
+      "approved": false
+    },
+    {
+      "id": "rev-007",
+      "title": "Normalize all SHA-256 hash strings to exactly 64 hexadecimal characters",
+      "rationale": "Reyes explicitly states: 'if someone collates this eventually, the hashes will tell them the logs were kept properly.' A hash string of the wrong length cannot demonstrate integrity — it signals the opposite. SHA-256 produces exactly 64 hexadecimal characters. Multiple entries across the manuscript have hash strings that do not meet this requirement: Document 38 (§9) is 62 characters; Document 46 (§11) is 66 characters; Documents 64 (§15, both entries) are 66 characters; Documents 72 (§16) entries are 68 and 70 characters respectively; Document 74 (§17) entries per the audit are 72 characters; §3 has a 62-character entry per comparative's finding. Verisimilitude flags Documents 24, 27, 32, and 38 as short. A technically literate reader — exactly the reader this book courts — will count the first wrong hash and lose confidence in the prop. These are production errors, not apparatus cracks: no character notices them, no plot point depends on them, and unlike the deliberate date discrepancy, they carry no internal discussion. They degrade the same prop Reyes says is the record's guarantee.",
+      "source_findings": [
+        "cold-read/verisimilitude.json: SHA-256 hashes not consistently 64 hex characters across Documents 24, 27, 32, 38 and others",
+        "cold-read/comparative.json: SHA-256 hash length inconsistencies at 62 and 76 characters",
+        "cold-read/audit.md: hashes confirmed wrong length at 62, 66, and 72 characters in specific chapters"
+      ],
+      "class": "in-chapter",
+      "chapters": [
+        "03-the-count-opens",
+        "06-second-consultant",
+        "07-the-number-that-isnt",
+        "08-the-sum-she-destroys",
+        "09-the-fragment",
+        "10-after-the-session",
+        "11-the-echo",
+        "12-the-gates",
+        "15-the-telemetry-memo-a",
+        "16-the-telemetry-memo-b",
+        "17-launch-eve",
+        "18-launch",
+        "28-for-whoever-collates-this"
+      ],
+      "instruction": "Audit every SHA-256 hash string in every Reyes log entry across all thirty chapters. For each hash string that is not exactly 64 hexadecimal characters, replace the hash with a syntactically valid 64-character hex placeholder. The replacement values may be any valid 64-character hex strings; they need not be cryptographically meaningful — they are diegetic props, not actual hashes. Do not alter any log entry text above or below the hash string itself. After correction, do a character count on each hash to verify exactly 64 characters before and after the bracket.",
+      "acceptance": "Every SHA-256 hash string in every Reyes log entry across all chapters is exactly 64 hexadecimal characters. A character count on any hash in the text returns 64.",
+      "protected_passages": [
+        {
+          "chapter": "28-for-whoever-collates-this",
+          "text": "Records are the only thing that survives. I have known this since February.",
+          "why": "Document 153 — the book's moral center; hashes in §28 are confirmed correct and the entry text must not be altered"
+        },
+        {
+          "chapter": "11-the-echo",
+          "text": "First return: her annotation notes on the Hermopolis fragment. File timestamp: 14 July 2027.",
+          "why": "Document 46 — the retrieval-check entry; the hash at its end is wrong but the entry text itself must remain"
+        }
+      ],
+      "edits": [],
+      "approved": false
+    },
+    {
+      "id": "rev-008",
+      "title": "Add a brief Reyes log entry to §15 signaling the split-redaction discrepancy before §16",
+      "rationale": "The split-redaction device — two copies of LGL-2027-MGL-004 with the Section 4 redaction in different positions, together revealing the Schedule B text — is one of the book's most formally precise moves. But Reyes's discovery log (Document 72, §16) arrives after the reader has already finished both documents. A reader who has not noticed the redaction positions differ will experience §16 not as a structural revelation but as a second read of a document they just read. The panel (propulsion, authenticity, ordinary, airport — five of seven lenses) identifies §§15–16 as the manuscript's likeliest abandonment point, and the audit correctly identifies that moving the discovery note earlier converts the slog from passive endurance to active confirmation. The fix is not to remove Document 72 from §16 (it must remain there as the verification of what Reyes noticed); it is to add a brief log entry at the end of §15 in which Reyes notes — without full confirmation — that something looks off between the two copies of the memo, and that he intends to compare them. This converts §16 from a second reading of unfamiliar text to the payoff of a setup the reader already holds.",
+      "source_findings": [
+        "cold-read/panel.md: move Reyes's split-redaction note to between the two documents",
+        "cold-read/propulsion.json: §15–16 weakest; note arrives too late",
+        "cold-read/ordinary.json: §15–16 most likely put-down point, note arrives too late to redeem experience"
+      ],
+      "class": "in-chapter",
+      "chapters": [
+        "15-the-telemetry-memo-a"
+      ],
+      "instruction": "Add a brief Reyes log entry at the close of §15 (after Document 68 and before the end of the chapter), dated 2–3 September 2027, in which Reyes notes that two copies of LGL-2027-MGL-004 appear to exist (the distributed copy and the compliance file copy) and that he plans to pull both and compare them before the acknowledgment deadline. The entry should suggest he has noticed something worth checking without stating the discrepancy explicitly — he is setting up a task, not reporting a finding. Keep the entry to six lines or fewer; end it with a hash placeholder of exactly 64 hexadecimal characters in the established format. Do not alter any existing documents in §15 (Documents 63–68).",
+      "acceptance": "§15 ends with a brief Reyes log entry that primes the reader to notice the Section 4 redaction position when reading §16. §16's Document 72 ('The redaction in Section 4 is in a different place. Document 68 has the beginning of the sentence. Document 69 has the end of it. That is not a filing coincidence.') remains verbatim and functions as confirmation rather than first discovery.",
+      "protected_passages": [
+        {
+          "chapter": "15-the-telemetry-memo-a",
+          "text": "I understand now what the count means. I have understood it in practice since February. That is why I started hashing these entries in the first place.",
+          "why": "Document 64 second entry — the moment Reyes names the mechanism; must remain verbatim"
+        },
+        {
+          "chapter": "15-the-telemetry-memo-a",
+          "text": "Section 4 is the one called \"Telemetry Rider.\" I thought this might be in there somewhere. I have been tracking this informally since February, calling it the ingestion count. It turns out it has a section number and a schedule. Schedule B.",
+          "why": "Document 64 first entry — Reyes's discovery of the formal mechanism; must remain"
+        }
+      ],
+      "edits": [],
+      "approved": false
+    },
+    {
+      "id": "rev-009",
+      "title": "Restore B2 voice register to §29 with one or two wit beats in the script body",
+      "rationale": "Sefton's Ordinary Time scripts establish a consistent public register (B2): punchy hooks before the body teaches, self-aware parentheticals with [beat] markers that land comedy before the earnest turn, and the host's characteristic ratio of precision to humor (e.g., 'not as comforting as I meant it to be'). The §29 script ('Ask the Record') is her finest thematic work — 'whether that is comforting or alarming depends, I think, on what you ask' is exactly right — but the body runs almost entirely without the B2 wit markers. The footnotes carry some humor ('I have chosen not to bring this into the script because we would be here all week') but footnotes are not body-text wit. The 'DRAFT FINAL' framing provides a mitigation (crisis register), but readers who have been tracking Sefton's voice since §7 will register the register flatten and read it as drift rather than as character change under pressure. The fix is narrow: one or two wit beats in the script body that anchor the voice before the subject matter earns its solemnity. The content of the script, including the apostrophic 'you' passage and the colophon meditation, must not change.",
+      "source_findings": [
+        "character-voice-drift-001"
+      ],
+      "class": "in-chapter",
+      "chapters": [
+        "29-ask-anything"
+      ],
+      "instruction": "Add one or two wit beats to the body text of the §29 Ordinary Time script. The additions should be in the established B2 form: a self-aware parenthetical, a [beat] direction with a comedy-before-earnest turn, or a brief hook that lands an unexpected claim before the section that follows teaches it. The additions should be brief (one to three lines each) and consistent with the script's existing sponsor-read structure and tone. Possible positions: early in the manuscript-tradition discussion (before the copyist's hand ache passage), or in the lead-in to the prophetic-literature section. Do not alter the closing passage ('Whether that is comforting or alarming depends, I think, on what you ask') or the sign-off tag.",
+      "acceptance": "A reader familiar with the §7, §14, and §21 Ordinary Time scripts would recognize §29's voice as the same host from the first encounter, before the subject matter deepens the register. At least one wit beat appears in the body text of the script (not in a footnote).",
+      "protected_passages": [
+        {
+          "chapter": "29-ask-anything",
+          "text": "Whether that is comforting or alarming depends, I think, on what you ask.",
+          "why": "Closing line — the script's thematic coda; must remain exactly as written"
+        },
+        {
+          "chapter": "29-ask-anything",
+          "text": "This has been Ordinary Time. The world has ended before — ask anything.",
+          "why": "Sign-off tag — confirmed cross-lens as the channel's closing formula; must remain"
+        },
+        {
+          "chapter": "29-ask-anything",
+          "text": "Ask the record a question, and you are asking all of them. All of them are in it.",
+          "why": "The 'all of them are in it' echo is load-bearing against the Hermopolis fragment; must remain"
+        },
+        {
+          "chapter": "29-ask-anything",
+          "text": "the record is not an archive. Not exactly. An archive stores things until someone needs them.",
+          "why": "The archive vs. record distinction — the script's central move; must remain"
+        },
+        {
+          "chapter": "29-ask-anything",
+          "text": "The scribe's hand hurt.",
+          "why": "The colophon passage — the script's most affecting moment per ordinary; must remain"
+        }
+      ],
+      "edits": [],
+      "approved": false
+    },
+    {
+      "id": "rev-010",
+      "title": "Add a single institutional trace of Casperson after her departure in §12",
+      "rationale": "Casperson produces three memos of increasing precision, resigns mid-sentence, and disappears from the record entirely. Literary and ordinary both find this too clean: the broken third memo is the novel's most powerful formal device, and its weight depends in part on the person who stopped writing having weight. The panel recommends a single institutional reference dated after her April 2027 departure — a conference listing, a billing entry, a one-line acknowledgment — that shows she continued her professional life outside the record. This makes the record's silence about her frightening (she went on; the record did not follow her) rather than simply sparse (she stopped; no trace persists). The fix is deliberately small: one line or a brief document header is sufficient. §12's Document 49 already references 'The Casperson consulting engagement — referenced in the consultation record at Documents 5 through 11 — concluded in April 2027 and is recorded as complete.' A footnote to this sentence, or a brief subsequent routing notation in §12, is the correct vehicle. Do not expand her active role in the consultation, and do not give her a perspective — she must remain outside the record even as a trace proves she survived it.",
+      "source_findings": [
+        "cold-read/literary.json: Casperson cleared away too efficiently; broken memo wants fuller sense of person",
+        "cold-read/ordinary.json: a thread picked up and put down without being paid off; no rumor of her afterward"
+      ],
+      "class": "in-chapter",
+      "chapters": [
+        "12-the-gates"
+      ],
+      "instruction": "In §12, add a brief single institutional trace of Casperson dated after April 2027. Preferred approach: add a footnote to Document 49's sentence 'The Casperson consulting engagement — referenced in the consultation record at Documents 5 through 11 — concluded in April 2027 and is recorded as complete' noting that she subsequently presented or published related work through professional channels not included in this record. Alternative: insert a brief routing notification in §12 noting receipt (for reference only, not incorporated into the record) of a Casperson conference abstract or professional communication. Either form must be one to three lines. It should register that she continued working, without revealing the content of her later thinking or giving her a narrative role after §5.",
+      "acceptance": "§12 contains exactly one trace of Casperson's continued professional existence after her April 2027 departure from this record, dated after the departure, in an institutional register that shows she went on without specifying where.",
+      "protected_passages": [
+        {
+          "chapter": "12-the-gates",
+          "text": "The Casperson consulting engagement — referenced in the consultation record at Documents 5 through 11 — concluded in April 2027 and is recorded as complete.",
+          "why": "Document 49 — the anchoring reference to which the trace will attach; must remain exactly"
+        },
+        {
+          "chapter": "12-the-gates",
+          "text": "The safety review that characterized the anomaly as non-blocking is inside with the anomaly. I want that in the record in plain words.",
+          "why": "Reyes Document 53 — load-bearing ingestion-count entry; must remain verbatim"
+        }
+      ],
+      "edits": [],
+      "approved": false
+    }
+  ]
+}
