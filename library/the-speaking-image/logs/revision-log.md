@@ -82,3 +82,42 @@ panel's own "make the omission legible as a device" alternative. Also avoids pre
 The rev-007 agent normalized hashes in 12 of its 13 chapters but left §28 untouched (its four
 hashes were 63/62/61/61 chars). Completed deterministically: each malformed hex string replaced
 by the sha256 of itself (exactly 64 hex chars). No prose changed; §28 copied to revision-1/.
+
+## revision-2 mechanical pass — ledger-driven date/label/citation fixes (scripted, logged)
+Canonical ledger built (canon/ledger.md) from the effective text + brief pins; deterministic
+checker validated weekdays (2027 calendar), T-label arithmetic vs 14 Sep launch, gate dates,
+doc citations, and agreement dates. Fixes: T-60 cluster relabeled Gate 3 (§7,§8,§10 — 16 Aug
+is T-29; T-90/T-54 were exact); T-45/T-14 unified as the T-15 readiness review, 30 Aug exact
+(§11,§12); weekdays corrected to 2027 (§15 Thu 2 Sep, Fri 3 Sep; §16 Sun 5 Sep); §17 gate
+recap dates aligned (G1 16 Jun, G3 16 Aug, G4 3 Sep); §25 Sefton handwriting exemplars moved
+off Casperson documents (10,11 -> 21,23); §6 'full agreement' -> 'engagement terms' (formal
+Agreement is 14 Jul per legal memo); §26 'late July' -> 'early July' (3 Jul = 11 days before
+14 Jul engagement). Cracks untouched; C1's 2 Nov/30 Oct discrepancy preserved.
+
+## rev2-001 — applied
+**Establish the dataflow taxonomy and tighten Reyes's evidence claims**
+- findings: external-review-2026-08-30, canon/ledger.md
+- chapters: 03-the-count-opens, 10-after-the-session, 13-the-introduction
+- An external technical review found the text conflates retrieval-index ingestion, telemetry-corpus membership, and model weights. Casperson's February-April findings (genre register, retrieval disabled -> in the weights) are sound because that material is ancient training-corpus text; but for 2027-uploaded consultation materials, 'confirmed inside' is ambiguous between the retrieval index (continuous, hours-scale) and scheduled weight refreshes (versioned, discrete). The book's target reader is technically literate; imprecise claims read as authorial error rather than in-world fact. Canonical architecture is now defined in canon/ledger.md under 'Model dataflow'.
+
+
+## rev2-002 — applied
+**Reframe the zero-error claim as thresholded silence, not asserted statistic**
+- findings: external-review-2026-08-30, canon/ledger.md
+- chapters: 12-the-gates, 17-launch-eve
+- The eval's '14,400 test completions' with a flatly empty error table reads as accidental exaggeration (external review): benchmarks never score perfectly, so an asserted statistical zero breaks the prop. The design intent is impossible-but-deniable silence, not a claimed statistic. The never-wrong rule stands: no document in the file records a Magellan factual error.
+
+
+## rev2-003 — applied
+**Cut surplus proof: each conclusion reached once, half a page ahead of the documents**
+- findings: external-review-2026-08-30, canon/ledger.md
+- chapters: 11-the-echo, 14-the-redactor, 20-the-pamphlet, 21-count-up
+- External review and the blind panel agree the middle over-proves: an idea is established, restated in a routing memo, summarized in a log, then re-explained by public communities. The target is not a smaller story; it is a reader who arrives at each conclusion half a page before the documents state it.
+
+
+## rev2-004 — applied
+**Differentiate chorus voices and ground public knowledge**
+- findings: external-review-2026-08-30, canon/ledger.md
+- chapters: 05-the-name-is-public, 19-not-yet, 20-the-pamphlet, 21-count-up
+- External review: nearly all registers share one cadence (careful disclaimer, balanced distinction, three-part elaboration, tidy conclusion — 'I am not claiming X; I am noting Y'), which makes the underlying generator audible exactly where the book needs polyphony. Also: public documents occasionally reference facts (long-context drift specifics, Sefton's consultant status) with no established public path.
+

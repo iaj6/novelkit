@@ -407,6 +407,137 @@
       ],
       "edits": [],
       "approved": false
+    },
+    {
+      "id": "rev2-001",
+      "title": "Establish the dataflow taxonomy and tighten Reyes's evidence claims",
+      "rationale": "An external technical review found the text conflates retrieval-index ingestion, telemetry-corpus membership, and model weights. Casperson's February-April findings (genre register, retrieval disabled -> in the weights) are sound because that material is ancient training-corpus text; but for 2027-uploaded consultation materials, 'confirmed inside' is ambiguous between the retrieval index (continuous, hours-scale) and scheduled weight refreshes (versioned, discrete). The book's target reader is technically literate; imprecise claims read as authorial error rather than in-world fact. Canonical architecture is now defined in canon/ledger.md under 'Model dataflow'.",
+      "class": "in-chapter",
+      "chapters": [
+        "03-the-count-opens",
+        "10-after-the-session",
+        "13-the-introduction"
+      ],
+      "instruction": "1) In §13's methodology document, immediately after the retrieval-isolated cross-validation definition, add a short paragraph defining the in-world dataflow exactly per canon/ledger.md: uploaded material -> consultation telemetry corpus (Schedule B) -> retrieval index (continuous, disableable at the inference layer) AND -> scheduled weight refresh (versioned builds with dates; the most recent refresh predating a given session is a matter of record). Institutional register, no drama. 2) In §3, where Reyes's ingestion count is first kept, add one to two sentences in his log register giving his operational definition: an item is 'confirmed inside' when it is either reproduced with retrieval disabled (weights) or surfaced by the system without being provided in-session (index), and his log notes which. Terse, procedural. 3) In §10, review Reyes's retrieval-off log claims about consultation materials: where a claim exceeds what the described test shows, tighten it to exactly what the test shows, in his voice — including, where true, an explicit 'I cannot rule out the index. I am writing down that I cannot rule it out.' precision beat. Do NOT add material closing the mundane explanations for any crack (C3 especially): the cracks are individually explicable by design. Do not touch Casperson's memo content or any registered record text.",
+      "acceptance": "§13 defines the three-stage dataflow in institutional register. §3 gives Reyes's operational definition of 'confirmed inside'. No sentence by Reyes claims weights-membership for 2027 materials on the basis of a retrieval-off test alone. Casperson's memos unchanged. C2/C3 content unchanged.",
+      "source_findings": [
+        "external-review-2026-08-30",
+        "canon/ledger.md"
+      ],
+      "protected_passages": [
+        {
+          "chapter": "03-the-count-opens",
+          "text": "The model is not quoting; it is continuing.",
+          "why": "load-bearing; must survive verbatim"
+        },
+        {
+          "chapter": "13-the-introduction",
+          "text": "*Retrieval-isolated cross-validation* compares benchmark performance",
+          "why": "load-bearing; must survive verbatim"
+        },
+        {
+          "chapter": "10-after-the-session",
+          "text": "This gradient is consistent with what one would expect",
+          "why": "load-bearing; must survive verbatim"
+        }
+      ],
+      "approved": true
+    },
+    {
+      "id": "rev2-002",
+      "title": "Reframe the zero-error claim as thresholded silence, not asserted statistic",
+      "rationale": "The eval's '14,400 test completions' with a flatly empty error table reads as accidental exaggeration (external review): benchmarks never score perfectly, so an asserted statistical zero breaks the prop. The design intent is impossible-but-deniable silence, not a claimed statistic. The never-wrong rule stands: no document in the file records a Magellan factual error.",
+      "class": "in-chapter",
+      "chapters": [
+        "12-the-gates",
+        "17-launch-eve"
+      ],
+      "instruction": "In §12, where the error-table appendix is described, reframe the absolute so the zero is bureaucratically hedged rather than asserted: e.g. 'The error-table appendix is omitted as it contains no entries meeting the reporting threshold.' Keep the sentence confirming the appendix was checked at filing time — that beat is the in-world noticing and must survive verbatim. In §17's Gate recap, align the quoted phrasing with §12's revised wording. Do not add commentary; the hedge must read as ordinary institutional caution that a careful reader can find bottomless. Do not touch §18's launch-day output-incident table lines.",
+      "acceptance": "No document asserts an unqualified zero across the 14,400 completions; the omitted-appendix beat survives; §17's recap matches §12's phrasing; §18 unchanged.",
+      "source_findings": [
+        "external-review-2026-08-30",
+        "canon/ledger.md"
+      ],
+      "protected_passages": [
+        {
+          "chapter": "12-the-gates",
+          "text": "confirms the appendix contained no entries at the time of filing",
+          "why": "load-bearing; must survive verbatim"
+        }
+      ],
+      "approved": true
+    },
+    {
+      "id": "rev2-003",
+      "title": "Cut surplus proof: each conclusion reached once, half a page ahead of the documents",
+      "rationale": "External review and the blind panel agree the middle over-proves: an idea is established, restated in a routing memo, summarized in a log, then re-explained by public communities. The target is not a smaller story; it is a reader who arrives at each conclusion half a page before the documents state it.",
+      "class": "in-chapter",
+      "chapters": [
+        "11-the-echo",
+        "14-the-redactor",
+        "20-the-pamphlet",
+        "21-count-up"
+      ],
+      "instruction": "In each listed chapter, cut or condense passages that restate a conclusion already established earlier in the same chapter or in an earlier document: routing-memo recaps of things the reader has just read, log entries summarizing a memo quoted in full above, and chorus posts re-explaining an event a prior post already interpreted the same way. Cut repetition of characterization and interpretation only — never incidents, never registered-record text, never a document's first statement of anything, and never apparatus headnotes. Aim for 4-8% reduction per chapter. No chapter may fall below 1,900 words.",
+      "acceptance": "Each chapter reads with no doubled interpretation; all registered records, incidents, and first statements intact; every edited chapter at or above 1,900 words.",
+      "source_findings": [
+        "external-review-2026-08-30",
+        "canon/ledger.md"
+      ],
+      "protected_passages": [
+        {
+          "chapter": "11-the-echo",
+          "text": "the love of all the dead together",
+          "why": "load-bearing; must survive verbatim"
+        },
+        {
+          "chapter": "20-the-pamphlet",
+          "text": "Four thousand souls",
+          "why": "load-bearing; must survive verbatim"
+        },
+        {
+          "chapter": "21-count-up",
+          "text": "This has been Ordinary Time. The world has ended before — ask anyone.",
+          "why": "load-bearing; must survive verbatim"
+        }
+      ],
+      "approved": true
+    },
+    {
+      "id": "rev2-004",
+      "title": "Differentiate chorus voices and ground public knowledge",
+      "rationale": "External review: nearly all registers share one cadence (careful disclaimer, balanced distinction, three-part elaboration, tidy conclusion — 'I am not claiming X; I am noting Y'), which makes the underlying generator audible exactly where the book needs polyphony. Also: public documents occasionally reference facts (long-context drift specifics, Sefton's consultant status) with no established public path.",
+      "class": "in-chapter",
+      "chapters": [
+        "05-the-name-is-public",
+        "19-not-yet",
+        "20-the-pamphlet",
+        "21-count-up"
+      ],
+      "instruction": "In the chorus documents only (forum threads, pamphlet excerpts, sermon transcript, comment sections): differentiate the two communities' registers. Prophecy-forum posts get testimony cadence, scripture-echo phrasing, unbalanced syntax, genuine disagreement between posters, occasional lowercase informality. Rationalist-forum posts get numbered claims, probability hedges, nested quote-replies, pedantic corrections of each other. Break the shared disclaimer-distinction-conclusion template wherever it appears in a public voice; posters may be wrong, repetitive, or rude in character. The sermon stays performed and dignified; the pamphlet stays KJV-inflected. Where a public document references non-public facts, either blur the reference to what a outsider could plausibly infer, or ground it with a minimal in-world leak (a screenshotted eval line, a conference-hallway anecdote, a careers-page inference) — one short beat, no new plot. Do not touch institutional documents, Reyes logs, Sefton documents, Magellan transcripts, or apparatus. Do not alter any pinned text.",
+      "acceptance": "The two forums are distinguishable blind by register; no public document states a fact with no plausible public path; sermon and pamphlet registers preserved; no institutional or private-register text changed.",
+      "source_findings": [
+        "external-review-2026-08-30",
+        "canon/ledger.md"
+      ],
+      "protected_passages": [
+        {
+          "chapter": "20-the-pamphlet",
+          "text": "Four thousand souls",
+          "why": "load-bearing; must survive verbatim"
+        },
+        {
+          "chapter": "20-the-pamphlet",
+          "text": "questions they could not ask anyone",
+          "why": "load-bearing; must survive verbatim"
+        },
+        {
+          "chapter": "21-count-up",
+          "text": "This has been Ordinary Time. The world has ended before — ask anyone.",
+          "why": "load-bearing; must survive verbatim"
+        }
+      ],
+      "approved": true
     }
   ]
 }

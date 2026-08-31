@@ -151,16 +151,13 @@ CC: [T&S lead]; [post-training lead]
 From: T&S administrative coordination
 Date: 28 August 2027
 
-Dr. N. Sefton's memorandum of 24 August 2027, subject "Address anomaly — session of 22
-August 2027, returned phrasing," has been received, reviewed for sensitivity classification,
-and filed to the consultation record.
+Dr. Sefton's memorandum of 24 August 2027, subject "Address anomaly — session of 22 August
+2027, returned phrasing," has been received and filed to the consultation record. Post-training
+lead response, dated 26 August 2027, has been received and filed.
 
-Post-training lead response, dated 26 August 2027, has been received and filed to the
-consultation record.
+No action is required from recipients of this notification.
 
-Both items are filed. No action is required from recipients of this notification.
-
-The memorandum has been flagged for the T-45 gate agenda. The T-45 review is scheduled for
+The memorandum has been flagged for the T-15 readiness review agenda. The T-15 review is scheduled for
 30 August 2027. Post-training lead and T&S lead are requested to confirm attendance by close
 of business 29 August.
 
@@ -201,16 +198,16 @@ now confirmed the phrase against the transcript. The observation has not changed
 It is a translation choice in my unpublished working translation of a Coptic fragment — a
 short apocalyptic text with a Hermopolis provenance, which I have been preparing as part of
 my preliminary research materials for this engagement. This translation has not been submitted
-for publication. It has not been reviewed by colleagues in any formal capacity. It has not
-appeared in any article, lecture, public presentation, or written communication circulated
-externally. The copies are in my working notes.
+for publication or reviewed by colleagues in any formal capacity. It has not appeared in any
+article, lecture, public presentation, or written communication circulated externally. The
+copies are in my working notes.
 
 The Coptic phrase I was rendering does not have a single standard English equivalent; the
 published scholarly literature offers several approaches, none fully satisfactory for all
 purposes. I worked through the alternatives in the margins of my notes over the course of a
 morning and settled on "the love of all the dead together" as the rendering that preserved both
 the collective noun structure and the affective register of the original. It is a considered
-choice. I made it in writing, in a margin, in a file I kept for myself.
+choice.
 
 **3. Search of the published literature.**
 
@@ -223,16 +220,13 @@ a conventional rendering in the received translation tradition. It is a phrase I
 **4. The implication.**
 
 If the phrase is mine and appears in the model's output, the model has access to my working
-notes. The most available mechanism is the shared drive to which I have been uploading
-consultation-adjacent research materials over the course of the engagement. I noted in my
-intake paperwork that I work from draft files. If my annotation notes were accessible to the
-training environment, that would explain the echo.
+notes.
 
 I want to be precise about what I am not saying. I am not suggesting the system is reporting
 on my work or doing anything other than drawing on available materials. The question I am
 filing is: were my annotation files accessible to the system, and through what channel? If
 the post-training team can confirm or disconfirm this, I would welcome that information
-before the T-45 gate review.
+before the T-15 readiness review.
 
 **5. A note on the output itself.**
 

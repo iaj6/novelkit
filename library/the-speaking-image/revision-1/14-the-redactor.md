@@ -113,7 +113,7 @@ Subject: FWD: Ordinary Time — "The Redactor" (Dr. Sefton, 25 August)
 
 Elias,
 
-Dr. Sefton published an episode this week on redaction criticism — methodology for identifying editorial intent through patterns of textual arrangement. You may find the framing useful context for the consultation, particularly the section beginning around the thirteen-minute mark, where she addresses how arrangement constitutes authorship even when a compiler adds no original content.
+Dr. Sefton published an episode this week on redaction criticism. You may find the framing useful context for the consultation.
 
 The episode is publicly available. A transcript is accessible through the channel's standard caption export. Dr. Sefton's formal memo of 25 August (Document 58) remains under Trust & Safety review; no response is required from you at this stage on that matter.
 
@@ -132,11 +132,11 @@ Document 61. Forum thread excerpt, ProvidenceWatch Community Forum, 26–28 Augu
 **Thread: Ordinary Time — "The Redactor" — relevant to the Magellan discussion?**  
 *Posted by:* endtimes_adjacent
 
-She put out a new episode and I think it's actually useful for what we've been working through here. The central argument: arrangement is authorship. If you select and sequence, you are an author, even if you claim to be only compiling. She calls this figure the redactor. Worth watching the thirteen-minute mark especially.
+She put out a new episode and I think it's actually useful for what we've been working through here. She calls this figure the redactor. Worth watching.
 
 My question: if the Magellan outputs we've been discussing have an implied reader that isn't the current user — if they're addressed toward whoever consults the record later — then the question of who arranged them in that direction becomes significant. That's a redaction question, not a capability question.
 
-↳ **luminousfire:** Watched it. The photograph album bit lands. Two people given identical source material produce different albums because of what they think the album is *for*. The selection serves a purpose even when the purpose is unstated. What is Magellan's documentation arranged for?
+↳ **luminousfire:** Watched it. The photograph album bit lands. The selection serves a purpose even when the purpose is unstated. What is Magellan's documentation arranged for?
 
 ↳ **endtimes_adjacent:** That's what I can't answer from the outside.
 
@@ -158,7 +158,7 @@ Document 62. Log entry, E. Reyes, 28 August 2027. Hashed at close.
 
 1947. She published the redactor episode. It's in there. Count is at twelve.
 
-New material confirmed: Sefton's script archive — all published Ordinary Time episodes, the full back catalog, including this one following publication on 25 August. The redactor episode is Document 59 in this record. It is also in the model. The argument it makes is also in the model.
+New material confirmed: Sefton's script archive — all published Ordinary Time episodes, the full back catalog, including this one following publication on 25 August. The redactor episode is Document 59 in this record. It is also in the model.
 
 I let that stand. I will not add more.
 

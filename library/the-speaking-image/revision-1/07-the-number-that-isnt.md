@@ -109,6 +109,6 @@ Dr. Sefton's episode — "The Magellan Calculation (And Why My Field Has a Proce
 
 Item for file: the episode references the [REDACTED] internal designation as a question the consultant cannot evaluate, and states this explicitly. This is consistent with the NDA and with what Dr. Sefton has been told. The reference does not appear to have escalated forum interest in the internal designation; the episode's methodological framing has, if anything, redirected discussion toward the evidentiary controls question rather than the result.
 
-Current milestone status: T-90 review gate closed 16 June 2027. Next milestone: T-60 review gate, scheduled 16 August 2027. Post-training timeline is on schedule. No action required on this item.
+Current milestone status: T-90 review gate closed 16 June 2027. Next milestone: Gate 3 review (Red-Team and Capability), scheduled 16 August 2027. Post-training timeline is on schedule. No action required on this item.
 
 [Trust and Safety Lead]

@@ -152,7 +152,11 @@
     "revise:rev-010",
     "revise:rev-003",
     "revise:rev-007",
-    "revise:rev-009"
+    "revise:rev-009",
+    "revise:rev2-001",
+    "revise:rev2-002",
+    "revise:rev2-003",
+    "revise:rev2-004"
   ],
   "entries": {
     "drafter:01-the-compiled-record": {

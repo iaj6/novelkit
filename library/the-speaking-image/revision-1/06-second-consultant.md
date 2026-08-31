@@ -38,7 +38,7 @@ Document 21. Non-disclosure and consulting agreement summary, Lantern AI Researc
 
 ---
 
-The following summarizes the material terms. The consultant has confirmed receipt and acceptance of the full agreement as of 9 June 2027.
+The following summarizes the material terms. The consultant has confirmed receipt and acceptance of the engagement terms as of 9 June 2027.
 
 **Confidentiality.** The consultant agrees not to disclose to any third party any information, documents, outputs, findings, or communications received or produced in connection with this engagement, for a period of three years following the engagement's termination.
 

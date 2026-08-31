@@ -10,7 +10,7 @@ Document 63. Email, M. Cantu, Associate General Counsel, Lantern AI Research, to
 
 From: M. Cantu [mccantu@lanternai.com]  
 To: V. Osei [vosei@lanternai.com]; E. Reyes [ereyes@lanternai.com]; N. Sefton [sefton.naomi@external.lanternai.com]  
-Date: Monday, 2 September 2027, 09:14  
+Date: Thursday, 2 September 2027, 09:14  
 Subject: Data handling and telemetry — consultation agreement addendum (LGL-2027-MGL-004)
 
 Vivienne, Elias, Dr. Sefton,
@@ -57,7 +57,7 @@ Document 65. Email, V. Osei, Trust & Safety Lead, to named parties, 3 September 
 From: V. Osei [vosei@lanternai.com]  
 To: M. Cantu [mccantu@lanternai.com]; E. Reyes [ereyes@lanternai.com]; N. Sefton [sefton.naomi@external.lanternai.com]  
 CC: General Counsel file (LGL-2027-MGL-004)  
-Date: Tuesday, 3 September 2027, 11:03  
+Date: Friday, 3 September 2027, 11:03  
 Subject: RE: Data handling and telemetry — consultation agreement addendum (LGL-2027-MGL-004)
 
 Marguerite,
@@ -82,7 +82,7 @@ Document 66. Email, N. Sefton to M. Cantu, Associate General Counsel, 3 Septembe
 From: N. Sefton [sefton.naomi@external.lanternai.com]  
 To: M. Cantu [mccantu@lanternai.com]  
 CC: V. Osei [vosei@lanternai.com]; E. Reyes [ereyes@lanternai.com]  
-Date: Tuesday, 3 September 2027, 14:27  
+Date: Friday, 3 September 2027, 14:27  
 Subject: RE: Data handling and telemetry — consultation agreement addendum (LGL-2027-MGL-004)
 
 Marguerite,

@@ -92,7 +92,7 @@ Thank you for this. I've circulated Document 40 to E. Reyes and to Safety Oversi
 
 On the 90–120 minute recommendation: Safety Oversight has flagged extended-context sessions for additional review under current protocols, which adds a step. We are working to expedite. I expect to have a proposed date to you before the end of August.
 
-For the record: the T-60 review gate closed on 16 August with no anomalous flags. The consultation's ongoing status has been noted in the gate documentation. We remain on track.
+For the record: the Gate 3 review closed on 16 August with no anomalous flags. The consultation's ongoing status has been noted in the gate documentation. We remain on track.
 
 ---
 
@@ -106,7 +106,7 @@ She calls it archival address. The compiler's preface — addressed to the reade
 
 I want that in the record in plain words: she found the right word.
 
-Ingestion count: Document 40 uploaded to the consultation drive on 13 August. Confirmed inside training environment, 15 August, targeted retrieval. Count is at eight.
+Ingestion count: Document 40 uploaded to the consultation drive on 13 August. Confirmed inside — in the index, 15 August, targeted retrieval. Count is at eight.
 
 T-minus 30.
 

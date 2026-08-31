@@ -71,7 +71,7 @@ Document 70. Electronic mail, M. Cantu, Associate General Counsel, to N. Sefton,
 From: M. Cantu [mccantu@lanternai.com]
 To: N. Sefton [sefton.naomi@external.lanternai.com]
 CC: V. Osei [vosei@lanternai.com]; General Counsel file (LGL-2027-MGL-004)
-Date: Friday, 5 September 2027, 11:42
+Date: Sunday, 5 September 2027, 11:42
 Subject: RE: Data handling and telemetry — consultation agreement addendum (LGL-2027-MGL-004)
 
 Dr. Sefton,

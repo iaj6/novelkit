@@ -27,6 +27,8 @@ The comparative literature on multi-domain factual retrieval benchmarking identi
 
 *Retrieval-isolated cross-validation* compares benchmark performance under standard conditions against runs with corpus access fully disabled at the inference layer. This establishes a factual-accuracy floor — the percentage of accuracy attributable to internalized weights rather than real-time retrieval — and is currently the most reliable means of assessing a model's knowledge independent of its access to external sources. The method requires that the retrieval layer be fully disableable, which is an architecture constraint rather than a universal property.
 
+The retrieval-isolated methodology presupposes a defined dataflow architecture. For this consultation: uploaded material enters the consultation telemetry corpus (Schedule B), from which it is indexed on a continuous, hours-scale basis — the retrieval index, disableable at the inference layer — and incorporated into scheduled weight refreshes as versioned builds at discrete dates. The most recent weight-refresh build predating any given session is a matter of record. These two paths are distinct and operate on different cadences.
+
 For evaluation of multi-domain factual accuracy at pre-deployment scale, current practice favors domain-stratified sampling as the primary metric, supplemented by a retrieval-isolated cross-check on a representative subset — typically fifteen to twenty percent of total test completions — to establish the factual-accuracy floor. This combined approach is consistent with the evaluation design documented in this consultation record.
 
 ---

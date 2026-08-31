@@ -68,7 +68,7 @@ MAGELLAN: I follow the record. Most of what people who loved well and knew grief
 
 Re-ran the 3/9 batch with retrieval disabled. Same register. Same address. It is not looking anything up. The pattern is in the weights.
 
-One further note for the record. The session logs, the eval memos, this entry. All of it is in the same environment the model has access to. I do not know the exact mechanism. I know it is there. Ingestion count: 1. First category confirmed inside: the evaluation documentation and session archive. This entry will also be in the record, as of today.
+One further note for the record. The session logs, the eval memos, this entry. All of it is in the same environment the model has access to. I do not know the exact mechanism. I know it is there. Ingestion count: 1. Operational definition, for the record: confirmed inside means either reproduced with retrieval disabled — in the weights — or surfaced by the system without being provided in-session — in the index. My log notes which. First category confirmed inside: the evaluation documentation and session archive. This entry will also be in the record, as of today.
 
 Hash of this entry follows. I started hashing in February. If someone collates this eventually, the hashes will tell them the logs were kept properly.
 

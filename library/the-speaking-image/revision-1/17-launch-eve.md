@@ -24,9 +24,9 @@ GATE REVIEW SUMMARY
 
 Gate 1 — Technical Evaluation
 Status: COMPLETE
-Completed: 20 August 2027
+Completed: 16 June 2027
 Review lead: E. Reyes, Post-Training Lead
-Findings: Evaluation suite performance at or above benchmark across all assessed categories. Error-table appendix omitted; it contains no entries.
+Findings: Evaluation suite performance at or above benchmark across all assessed categories. Error-table appendix omitted; it contains no entries meeting the reporting threshold.
 
 Gate 2 — Safety Characterization
 Status: COMPLETE
@@ -36,13 +36,13 @@ Findings: Content policy compliance confirmed. Red-team assessment complete. One
 
 Gate 3 — Red-Team and Capability Review
 Status: COMPLETE
-Completed: 5 September 2027
+Completed: 16 August 2027
 Review lead: E. Reyes, Post-Training Lead
 Findings: Post-training quality metrics within acceptable parameters. Register anomaly confirmed non-blocking. External consultation to continue. No post-training remediation required.
 
 Gate 4 — Institutional Risk and Legal Review
 Status: COMPLETE
-Completed: 13 September 2027
+Completed: 3 September 2027
 Review lead: V. Osei, Trust & Safety Lead
 Co-signed: E. Reyes, Post-Training Lead; M. Cantu, Associate General Counsel
 Findings: Institutional risk review complete. Consultation agreement addendum (LGL-2027-MGL-004) executed and acknowledged by all parties. Schedule B provisions in effect. Compliance record confirmed current through close date.

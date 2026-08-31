@@ -54,7 +54,7 @@ documented in the consultation record (Documents 1 through 48). The anomaly pres
 register shift consistent with formal archival or epistolary address conventions, manifesting
 in sessions at or above the 28–32 exchange-turn threshold under full context. The external
 consultation characterization is not yet complete; a final assessment is anticipated before
-the T-14 gate.
+the T-15 readiness review.
 
 The register drift finding is assessed as non-blocking for the purposes of this review. The
 basis for this assessment is as follows. Individual outputs remain responsive, accurate, and
@@ -162,8 +162,9 @@ Domain-level breakdowns are provided in Attachment A to Document 49.
 Standard benchmark performance — reasoning, coding, factual accuracy, and safety compliance —
 meets or exceeds projected targets in all four categories. The model performs in the top
 comparative tier for this scale class across standard external benchmarks, consistent with
-post-training objectives. No factual errors were identified in the evaluation suite across
-14,400 test completions. The error-table appendix is omitted as it contains no entries.
+post-training objectives. No factual errors meeting the reporting threshold were identified in
+the evaluation suite across 14,400 test completions. The error-table appendix is omitted as it
+contains no entries meeting the reporting threshold.
 
 A retrieval-disabled cross-check was administered on a subset of 2,400 test completions.
 Performance on factual accuracy under retrieval-disabled conditions was consistent with
@@ -219,7 +220,7 @@ of the register drift finding for the purposes of this gate.
 The output register anomaly, documented from February 2027, remains under external
 consultation. No action is required at this gate. The item is logged for continued tracking
 at Gate 4 and Gate 5; the expected completion of the external characterization is before the
-T-14 gate.
+T-15 readiness review.
 
 **Sign-Off**
 
